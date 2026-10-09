@@ -1,0 +1,307 @@
+{
+  "checked_at": "2026-10-08T07:04:04.693496+00:00",
+  "status": "postgresql_verified_vastbase_deferred",
+  "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "prepared_release": "var/prepared/5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "counts": {
+    "dataset": 2,
+    "source_record": 197287,
+    "entity": 20374,
+    "alias": 2972,
+    "edge": 179502,
+    "evidence": 291305,
+    "business_records": 199876,
+    "entity_types": {
+      "formula": 112,
+      "herb": 365,
+      "herbal_piece": 6207,
+      "icd11_code": 2758,
+      "medicinal_property": 23,
+      "patent_medicine": 8977,
+      "pattern": 84,
+      "tcm_term": 1810,
+      "text": 38
+    },
+    "relations": {
+      "ASSOCIATED_WITH_PATTERN": 86,
+      "ASSOCIATED_WITH_TERM": 11184,
+      "CITED_IN": 449,
+      "CONTAINS": 751,
+      "HAS_HERBAL_PIECE": 74084,
+      "HAS_MEDICINAL_PROPERTY": 23517,
+      "MAPPED_TO_ICD11": 69431
+    },
+    "entities_by_dataset": {
+      "bencaodian": 599,
+      "tcm-mkg": 19775
+    },
+    "edges_by_dataset": {
+      "bencaodian": 1286,
+      "tcm-mkg": 178216
+    }
+  },
+  "files": {
+    "D1_TCM_terminology.tsv": {
+      "raw": 1810,
+      "accepted": 1810,
+      "rejected": 0,
+      "unique_business": 1810
+    },
+    "D2_Chinese_patent_medicine.tsv": {
+      "raw": 8977,
+      "accepted": 8977,
+      "rejected": 0,
+      "unique_business": 8977
+    },
+    "D3_CPM_TCMT.tsv": {
+      "raw": 11185,
+      "accepted": 11185,
+      "rejected": 0,
+      "unique_business": 11184
+    },
+    "D4_CPM_CHP.tsv": {
+      "raw": 74084,
+      "accepted": 74084,
+      "rejected": 0,
+      "unique_business": 74084
+    },
+    "D5_CPM_ICD11.tsv": {
+      "raw": 69431,
+      "accepted": 69431,
+      "rejected": 0,
+      "unique_business": 69431
+    },
+    "D6_Chinese_herbal_pieces.tsv": {
+      "raw": 6207,
+      "accepted": 6207,
+      "rejected": 0,
+      "unique_business": 6207
+    },
+    "D7_CHP_Medicinal_properties.tsv": {
+      "raw": 23517,
+      "accepted": 23517,
+      "rejected": 0,
+      "unique_business": 23517
+    }
+  },
+  "quality": {
+    "invalid_endpoint_types": 0,
+    "missing_entity_evidence": 0,
+    "missing_edge_evidence": 0,
+    "entity_source_dataset_mismatch": 0
+  },
+  "issue_counts": {
+    "repaired_extra_column": 1,
+    "duplicate_relation": 1
+  },
+  "core_issue_counts": {
+    "unresolved_reference": 35,
+    "conflicting_claim": 1
+  },
+  "issues": [
+    {
+      "code": "repaired_extra_column",
+      "filename": "D6_Chinese_herbal_pieces.tsv",
+      "source_record_id": "source:8f9c877678056cf0bcba0b8be979a0a30403c95356923de7f9d2d106489829cd",
+      "locator": "record:1717;lines:1718-1718",
+      "raw_value": [
+        "CHP01717",
+        "黄芪",
+        "蒙古黄芪|膜荚黄芪|沙苑子|生黄芪|白芪|炙黄芪|蜜黄芪|蜜芪|黄耆",
+        "",
+        "huang qi",
+        "root of Membranous Milkvetch",
+        "Viridiplantae"
+      ],
+      "action": "remove_exact_extra_empty_column_4"
+    },
+    {
+      "code": "duplicate_relation",
+      "edge_id": "edge:7998377175012e4dc118f0887365b635a8fea273446d6ebe613e4c5f7618a669",
+      "sources": [
+        "source:1138b403390f0239d2fe7885230b9a44ae6df68ded21f4bc14ff586d221ad4eb",
+        "source:bf136904ae1b5e5e480df90d504f43915300bc34a524e0b62cd452fe8bc70ba7"
+      ],
+      "conflicts": {},
+      "action": "merge_nonempty_fields_keep_all_evidence"
+    }
+  ],
+  "core_table_sha256": {
+    "dataset": "e0c0737b68e32f732030988ab4c557d8df403b850a13eb306a807d5ec64e9cea",
+    "source_record": "39d10e43bc624f9c42ed1cb45290ba44d667282eb4ee81afcaafe187392beaec",
+    "entity": "3c5aff04a488069ab5c5fda9a8128b57ecb353fdbfd69a4a038262636701df9c",
+    "alias": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "edge": "7e84482dff90d86c2f8db208ddcdaa69ae0e0b339bf94e56d930ae21b2d027ca",
+    "evidence": "06d1a27e85f7e48d0129607a8613bf2f0e4c0a8dbb47724ac75e9b0bb41d8120"
+  },
+  "table_sha256": {
+    "dataset": "0a6b29e7dc0ffcb3f590560ed8bc33554500eb56e75087b7639ce4182cdf7a9d",
+    "source_record": "b81d1b6fb309c36d862e1baf14ea87f1e85b12db82336c2ed59f0ee92bb71497",
+    "entity": "3f6f9149b48f25c07e89f327712f69eb65e8f8b7b5b7b70fdf64c9a0c12dfcf5",
+    "alias": "15a0003522bfc7579441409fcc5f9eec394fa4845e7ad0d430bdb34cf2999c78",
+    "edge": "64b22666e0955eaa240b7699ff80f231ef1e4c6345506d3c35bb3b866d88ff88",
+    "evidence": "8398f361e832946dc326b4ffc11eea91985ee3e557ca4386fdae9f96fc3cfc4e"
+  },
+  "checks": {
+    "core_row_equality": "passed",
+    "foreign_keys": "passed",
+    "endpoint_types": "passed",
+    "entity_evidence_coverage": "passed",
+    "dataset_provenance": "passed",
+    "evidence_pointers": "passed",
+    "raw_preservation": "passed",
+    "business_count": "passed",
+    "table_content_matches_previous_release": "passed",
+    "core_import_regression": "passed",
+    "data_pipeline_regression": "passed",
+    "wrong_id_prefix_rejection": "passed",
+    "quality_failure_rejection": "passed",
+    "postgresql_full_import": "passed",
+    "postgresql_repeat_import": "passed",
+    "postgresql_validation_failure_rollback": "passed",
+    "copy_null_control_character_roundtrip": "passed",
+    "postgresql_tamper_rejection": "passed",
+    "postgresql_rejected_in_vastbase_mode": "passed",
+    "temporary_sql_test_database_removed": "passed",
+    "database_config_regression": "passed",
+    "actual_database_api_regression": "passed",
+    "markdown_lint": "passed"
+  },
+  "environment": {
+    "status": "passed",
+    "checked_at": "2026-10-08T07:03:07.388995+00:00",
+    "engine": "postgresql",
+    "purpose": "development",
+    "local": {
+      "python": "3.12.15",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "disk_free_bytes": 126545080320
+    },
+    "database": {
+      "engine": "postgresql",
+      "version": "PostgreSQL 18.6 (Debian 18.6-1.pgdg12+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+      "compatibility": "native",
+      "encoding": "UTF8"
+    },
+    "vastbase": null,
+    "import_result": {
+      "status": "imported",
+      "schema": "qihuang_5a76218e52001d45e4bd75e0",
+      "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+      "verification": {
+        "counts": {
+          "dataset": 2,
+          "source_record": 197287,
+          "entity": 20374,
+          "alias": 2972,
+          "edge": 179502,
+          "evidence": 291305
+        },
+        "table_sha256": {
+          "dataset": "0a6b29e7dc0ffcb3f590560ed8bc33554500eb56e75087b7639ce4182cdf7a9d",
+          "source_record": "b81d1b6fb309c36d862e1baf14ea87f1e85b12db82336c2ed59f0ee92bb71497",
+          "entity": "3f6f9149b48f25c07e89f327712f69eb65e8f8b7b5b7b70fdf64c9a0c12dfcf5",
+          "alias": "15a0003522bfc7579441409fcc5f9eec394fa4845e7ad0d430bdb34cf2999c78",
+          "edge": "64b22666e0955eaa240b7699ff80f231ef1e4c6345506d3c35bb3b866d88ff88",
+          "evidence": "8398f361e832946dc326b4ffc11eea91985ee3e557ca4386fdae9f96fc3cfc4e"
+        },
+        "quality": {
+          "invalid_endpoint_types": 0,
+          "missing_entity_evidence": 0,
+          "missing_edge_evidence": 0,
+          "entity_source_dataset_mismatch": 0
+        },
+        "business_records": 199876,
+        "entities_by_dataset": {
+          "tcm-mkg": 19775,
+          "bencaodian": 599
+        },
+        "edges_by_dataset": {
+          "tcm-mkg": 178216,
+          "bencaodian": 1286
+        },
+        "sample_composition": [
+          [
+            "人参",
+            {
+              "dosage_raw": "9g",
+              "missing_claim_fields": [],
+              "position": 0,
+              "position_source": "composition",
+              "role": "jun"
+            }
+          ],
+          [
+            "白术",
+            {
+              "dosage_raw": "9g",
+              "missing_claim_fields": [],
+              "position": 1,
+              "position_source": "composition",
+              "role": "chen"
+            }
+          ],
+          [
+            "茯苓",
+            {
+              "dosage_raw": "9g",
+              "missing_claim_fields": [],
+              "position": 2,
+              "position_source": "composition",
+              "role": "zuo"
+            }
+          ],
+          [
+            "甘草",
+            {
+              "dosage_raw": "6g",
+              "missing_claim_fields": [],
+              "position": 3,
+              "position_source": "composition",
+              "role": "shi"
+            }
+          ]
+        ]
+      }
+    },
+    "driver": {
+      "name": "psycopg2",
+      "version": "2.9.13 (dt dec pq3 ext lo64)"
+    },
+    "probe": {
+      "status": "passed",
+      "checks": [
+        "target_ddl",
+        "unicode",
+        "parameters",
+        "text_json",
+        "copy_batch",
+        "unique",
+        "foreign_key",
+        "savepoint_rollback",
+        "ddl_rollback",
+        "pagination",
+        "index_plan"
+      ],
+      "plan": [
+        "Index Scan using probe_parent_pkey on probe_parent  (cost=0.15..8.17 rows=1 width=68)",
+        "  Index Cond: (id = 50)"
+      ]
+    }
+  },
+  "application_selection": {
+    "database_engine": "postgresql",
+    "schema": "qihuang_1fe2300d6005081f99274e8b",
+    "build_id": "1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054"
+  },
+  "runtime_repair": {
+    "python": "3.12.15",
+    "dependencies": "requirements.lock",
+    "previous_environment_backup": "var/venv-before-runtime-repair"
+  },
+  "remaining": [
+    "在真实 Vastbase 上验证同批次数据及驱动兼容性，作为最终交付验收。",
+    "35 条书目缺失和 1 处角色冲突保留原值与标记，尚未完成内容复核。",
+    "应用与 Neo4j 样例仍使用原批次；新校验批次单独入库，两批业务内容摘要相同。"
+  ]
+}

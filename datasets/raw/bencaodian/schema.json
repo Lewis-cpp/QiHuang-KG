@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bencao Dian — Open Data v1",
+  "description": "Schema overview for the Bencao Dian seed dataset. The authoritative TypeScript types are in src/lib/data/types.ts in the source repository.",
+  "files": [
+    {
+      "filename": "herbs.json",
+      "description": "Herb entries — nature, flavor, channel entry, actions, indications, processing, dosage, contraindications, classical citations, Wikidata cross-references."
+    },
+    {
+      "filename": "formulas.json",
+      "description": "Formula entries — sovereign-minister-assistant-courier composition, modifications, treatment principle, source text."
+    },
+    {
+      "filename": "patterns.json",
+      "description": "Pattern entries — cardinal and secondary symptoms, tongue and pulse, etiology, pathomechanism, treatment principle."
+    },
+    {
+      "filename": "meridians.json",
+      "description": "Meridian entries — the twelve regular channels plus the Conception and Governing Vessels."
+    },
+    {
+      "filename": "acupoints.json",
+      "description": "Acupoint entries — location, needling depth and method, special-category memberships, actions, indications."
+    },
+    {
+      "filename": "classical_texts.json",
+      "description": "Classical text entries — author, dynasty, tradition, annotated source passages."
+    },
+    {
+      "filename": "concepts.json",
+      "description": "Concept essays — yin-yang, five phases, zang-fu, eight principles, four natures and five flavors, sovereign-minister-assistant-courier hierarchy, and other foundational theory."
+    },
+    {
+      "filename": "relationships.json",
+      "description": "The relationship graph — herb_in_formula, formula_treats_pattern, pattern_differential_with, and ten other edge types."
+    },
+    {
+      "filename": "case_records.json",
+      "description": "Classical 医案 case records — famous historical cases from Ye Tianshi, Wu Jutong, Shanghan Lun, and other masters."
+    },
+    {
+      "filename": "tongue_states.json",
+      "description": "Tongue atlas — tongue body, shape, coating, clinical significance, with hand-authored SVG paths."
+    },
+    {
+      "filename": "pulses.json",
+      "description": "28 classical pulses — classical descriptions, modern descriptions, and clinical significance."
+    },
+    {
+      "filename": "symptom_synonyms.json",
+      "description": "Symptom synonym ontology — 155 canonical symptoms each with ZH + EN aliases, powering symptom search and pattern differentiation."
+    },
+    {
+      "filename": "interactions.json",
+      "description": "Herb–drug interaction dataset — mechanism, clinical recommendation, and source citation."
+    },
+    {
+      "filename": "conditions.json",
+      "description": "Modern-condition index — cross-framework lookup from biomedical diagnosis to TCM pattern."
+    }
+  ],
+  "common_fields": {
+    "key": "Stable identifier (snake_case). Never changes after publication.",
+    "slug": "URL segment (kebab-case). Never changes after publication.",
+    "name_zh": "Chinese name (simplified or traditional, as appropriate).",
+    "name_pinyin": "Tone-marked Hanyu Pinyin.",
+    "name_en": "English name (Wiseman / PD terminology).",
+    "wikidata_id": "Wikidata Q-identifier where a confident species or text mapping exists.",
+    "verification": {
+      "status": "verified | draft | needs-review",
+      "reviewer": "'Bencaodian Editorial / 本草典编辑部' or named reviewer",
+      "last_reviewed": "ISO date string (YYYY-MM-DD)"
+    }
+  }
+}

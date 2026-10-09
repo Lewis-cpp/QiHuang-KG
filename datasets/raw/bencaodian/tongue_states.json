@@ -1,0 +1,763 @@
+[
+  {
+    "key": "normal",
+    "slug": "normal",
+    "name_zh": "淡红舌薄白苔",
+    "name_pinyin": "dàn hóng shé báo bái tāi",
+    "name_en": "Pale-Red Tongue with Thin White Coating",
+    "body_color": "pale_red",
+    "shape": "normal",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "moist",
+      "distribution": "full"
+    },
+    "description_zh": "舌体大小适中，舌色淡红润泽，苔薄白均匀，干湿适度，舌面柔软灵活。",
+    "description_en": "Tongue of moderate size, pale-red and lustrous, with a thin, evenly distributed white coating that is neither dry nor wet; the body is supple and mobile.",
+    "clinical_significance_zh": "为正常舌象，提示气血调和、脏腑功能正常，或外邪未深，病情轻浅。",
+    "clinical_significance_en": "A normal tongue, indicating harmonious qi and blood and balanced organ function; or, in disease, a mild and superficial condition.",
+    "svg_path": "M 200 40 C 120 40 80 100 80 180 C 80 240 140 270 200 270 C 260 270 320 240 320 180 C 320 100 280 40 200 40 Z",
+    "coating_svg_path": "M 200 80 C 140 80 110 130 110 180 C 110 230 150 255 200 255 C 250 255 290 230 290 180 C 290 130 260 80 200 80 Z",
+    "associated_pattern_keys": [
+      "wai_gan_feng_han_biao_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "pale_thin_white",
+    "slug": "pale-thin-white",
+    "name_zh": "淡白舌薄白苔",
+    "name_pinyin": "dàn bái shé báo bái tāi",
+    "name_en": "Pale Tongue with Thin White Coating",
+    "body_color": "pale",
+    "shape": "normal",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "moist",
+      "distribution": "full"
+    },
+    "description_zh": "舌色较正常浅淡，甚则全无血色，苔薄白而润，舌体大小尚可。",
+    "description_en": "Tongue paler than normal, sometimes nearly bloodless, covered by a thin, moist white coating; overall size is unchanged.",
+    "clinical_significance_zh": "主气血两虚，营血不足，不能上荣于舌；常见于久病体虚、失血、慢性消耗性疾病。",
+    "clinical_significance_en": "Indicates dual vacuity of qi and blood, where insufficient nutritive blood fails to reach the tongue; common in chronic debility, blood loss, and wasting diseases.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "coating_svg_path": "M 200 82 C 142 82 112 132 112 180 C 112 228 152 254 200 254 C 248 254 288 228 288 180 C 288 132 258 82 200 82 Z",
+    "associated_pattern_keys": [
+      "qi_xue_liang_xu",
+      "xue_xu",
+      "pi_qi_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "pale_wet_white",
+    "slug": "pale-wet-white",
+    "name_zh": "淡白舌润滑苔",
+    "name_pinyin": "dàn bái shé rùn huá tāi",
+    "name_en": "Pale Tongue with Slippery Moist Coating",
+    "body_color": "pale",
+    "shape": "normal",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "slippery",
+      "distribution": "full"
+    },
+    "description_zh": "舌色淡白，舌面水滑欲滴，苔白而润泽过度，甚则积水。",
+    "description_en": "Tongue pale, surface so wet it appears about to drip, with an overly moist or slippery white coating, sometimes pooling saliva.",
+    "clinical_significance_zh": "主脾阳虚衰，水湿内停，或阳虚寒凝；津液不化而上溢于舌。",
+    "clinical_significance_en": "Indicates spleen yang vacuity with internal water-damp retention, or yang-vacuity cold; unprocessed fluids rise and flood the tongue surface.",
+    "svg_path": "M 200 44 C 120 44 78 104 78 182 C 78 244 138 272 200 272 C 262 272 322 244 322 182 C 322 104 280 44 200 44 Z",
+    "coating_svg_path": "M 200 80 C 138 80 108 132 108 180 C 108 230 150 256 200 256 C 250 256 292 230 292 180 C 292 132 262 80 200 80 Z",
+    "associated_pattern_keys": [
+      "shen_yang_xu",
+      "tai_yin_bing",
+      "tan_shi_zheng"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "pale_swollen_teeth_marked",
+    "slug": "pale-swollen-teeth-marked",
+    "name_zh": "淡胖舌齿痕",
+    "name_pinyin": "dàn pàng shé chǐ hén",
+    "name_en": "Pale Swollen Tongue with Teeth Marks",
+    "body_color": "pale",
+    "shape": "teeth_marked",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "moist",
+      "distribution": "full"
+    },
+    "description_zh": "舌体胖大，伸出满口，舌色淡白，舌边可见明显齿痕，苔薄白而润。",
+    "description_en": "Tongue body enlarged and fills the mouth when protruded; color pale, with distinct tooth imprints along the lateral margins and a thin moist white coating.",
+    "clinical_significance_zh": "主脾气虚或脾阳虚；脾失健运，水湿内停，舌体因湿而胖，受齿压而成齿痕。",
+    "clinical_significance_en": "Indicates spleen qi vacuity or spleen yang vacuity; failing transport and transformation allow damp to swell the tongue, which is then indented by the teeth.",
+    "svg_path": "M 200 45 C 110 45 60 105 60 180 C 60 245 135 278 200 278 C 265 278 340 245 340 180 C 340 105 290 45 200 45 Z",
+    "coating_svg_path": "M 200 85 C 135 85 100 135 100 180 C 100 225 150 258 200 258 C 250 258 300 225 300 180 C 300 135 265 85 200 85 Z",
+    "associated_pattern_keys": [
+      "pi_qi_xu",
+      "pi_qi_xia_xian",
+      "shen_yang_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "pale_no_coating",
+    "slug": "pale-no-coating",
+    "name_zh": "淡白舌少苔",
+    "name_pinyin": "dàn bái shé shǎo tāi",
+    "name_en": "Pale Tongue with Scanty or No Coating",
+    "body_color": "pale",
+    "shape": "normal",
+    "coating": {
+      "color": "none",
+      "thickness": "none",
+      "moisture": "dry",
+      "distribution": "peeled"
+    },
+    "description_zh": "舌质淡白，舌面光洁少苔或完全无苔，干燥乏津。",
+    "description_en": "Tongue body pale; surface smooth with scanty or entirely absent coating, dry and lacking fluids.",
+    "clinical_significance_zh": "主气阴两虚；既有气虚不能生血上荣，又有阴液不足不能濡润舌面。",
+    "clinical_significance_en": "Indicates dual vacuity of qi and yin; insufficient qi fails to generate blood, while depleted yin fluids cannot moisten the tongue surface.",
+    "svg_path": "M 200 43 C 121 43 81 103 81 180 C 81 240 141 270 200 270 C 259 270 319 240 319 180 C 319 103 279 43 200 43 Z",
+    "associated_pattern_keys": [
+      "qi_xue_liang_xu",
+      "fei_qi_xu",
+      "yin_xu_zheng"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "red_thin_yellow",
+    "slug": "red-thin-yellow",
+    "name_zh": "红舌薄黄苔",
+    "name_pinyin": "hóng shé báo huáng tāi",
+    "name_en": "Red Tongue with Thin Yellow Coating",
+    "body_color": "red",
+    "shape": "normal",
+    "coating": {
+      "color": "yellow",
+      "thickness": "thin",
+      "moisture": "moist",
+      "distribution": "full"
+    },
+    "description_zh": "舌色较正常红，舌面覆薄黄苔，苔薄而均匀。",
+    "description_en": "Tongue redder than normal, with a thin, evenly distributed yellow coating.",
+    "clinical_significance_zh": "主表热证或外邪化热初起；提示热邪已从卫入气，但尚未深入。",
+    "clinical_significance_en": "Indicates an exterior heat pattern or early transformation of pathogen into heat; heat has moved from the defensive to the qi level but has not yet penetrated deeper.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "coating_svg_path": "M 200 85 C 145 85 115 135 115 180 C 115 225 155 252 200 252 C 245 252 285 225 285 180 C 285 135 255 85 200 85 Z",
+    "associated_pattern_keys": [
+      "wei_fen_zheng",
+      "shang_jiao_shi_re"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "red_thick_yellow_dry",
+    "slug": "red-thick-yellow-dry",
+    "name_zh": "红舌黄厚燥苔",
+    "name_pinyin": "hóng shé huáng hòu zào tāi",
+    "name_en": "Red Tongue with Thick Dry Yellow Coating",
+    "body_color": "red",
+    "shape": "normal",
+    "coating": {
+      "color": "yellow",
+      "thickness": "thick",
+      "moisture": "dry",
+      "distribution": "full"
+    },
+    "description_zh": "舌色红，苔黄厚而干，甚则焦黄起芒刺，触之燥涩无津。",
+    "description_en": "Tongue red, with a thick, dry yellow coating, sometimes scorched-yellow with prickles; dry and rough to the touch, lacking fluids.",
+    "clinical_significance_zh": "主里实热证，热盛津伤；多见于阳明腑实、热结肠道或气分热盛。",
+    "clinical_significance_en": "Indicates interior repletion heat with consumption of fluids; commonly seen in yangming bowel repletion, heat obstructing the intestines, or severe qi-level heat.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "coating_svg_path": "M 200 75 C 130 75 100 125 100 180 C 100 235 145 260 200 260 C 255 260 300 235 300 180 C 300 125 270 75 200 75 Z",
+    "associated_pattern_keys": [
+      "yang_ming_fu_shi",
+      "qi_fen_zheng",
+      "da_chang_shi_re"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "red_peeled",
+    "slug": "red-peeled",
+    "name_zh": "红舌花剥苔",
+    "name_pinyin": "hóng shé huā bō tāi",
+    "name_en": "Red Tongue with Geographic Peeled Coating",
+    "body_color": "red",
+    "shape": "normal",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "dry",
+      "distribution": "peeled"
+    },
+    "description_zh": "舌色偏红，舌苔剥落不全，形成地图样花斑，剥处光红无苔。",
+    "description_en": "Tongue reddish, with partial peeling of the coating forming map-like patches; peeled areas are smooth, red, and devoid of coating.",
+    "clinical_significance_zh": "主胃阴不足，胃气受损；提示胃之气阴渐衰，苔失所养。",
+    "clinical_significance_en": "Indicates vacuity of stomach yin with injury to stomach qi; the coating is losing its foundation as stomach qi and yin decline.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "coating_svg_path": "M 150 120 C 130 120 120 140 130 160 C 140 175 170 170 175 150 C 180 130 170 120 150 120 Z M 240 100 C 220 100 215 125 230 140 C 250 150 265 135 260 115 C 255 100 250 100 240 100 Z M 220 200 C 200 200 195 220 210 235 C 230 245 245 230 240 210 C 235 200 230 200 220 200 Z",
+    "associated_pattern_keys": [
+      "wei_yin_xu",
+      "yin_xu_zheng"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "red_no_coating",
+    "slug": "red-no-coating",
+    "name_zh": "光红无苔镜面舌",
+    "name_pinyin": "guāng hóng wú tāi jìng miàn shé",
+    "name_en": "Smooth Red Mirror Tongue without Coating",
+    "body_color": "red",
+    "shape": "normal",
+    "coating": {
+      "color": "none",
+      "thickness": "none",
+      "moisture": "dry",
+      "distribution": "peeled"
+    },
+    "description_zh": "舌色鲜红，舌面光洁如镜，毫无苔质，干燥少津。",
+    "description_en": "Tongue vivid red, surface smooth and glossy like a mirror, entirely lacking coating, dry with scant fluids.",
+    "clinical_significance_zh": "主胃气大伤、胃阴枯涸或阴虚火旺重证；预后多较差，见于热病后期或久病阴竭。",
+    "clinical_significance_en": "Indicates severe damage to stomach qi with exhausted stomach yin, or pronounced yin vacuity with effulgent fire; usually carries a guarded prognosis, seen in the late stage of febrile disease or long-standing yin collapse.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "associated_pattern_keys": [
+      "wei_yin_xu",
+      "shen_yin_xu",
+      "yin_xu_zheng"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "red_cracked",
+    "slug": "red-cracked",
+    "name_zh": "红舌裂纹",
+    "name_pinyin": "hóng shé liè wén",
+    "name_en": "Red Tongue with Cracks",
+    "body_color": "red",
+    "shape": "cracked",
+    "coating": {
+      "color": "none",
+      "thickness": "none",
+      "moisture": "dry",
+      "distribution": "peeled"
+    },
+    "description_zh": "舌色红，舌面可见纵横深浅不一之裂纹，如刀割状，少苔或无苔。",
+    "description_en": "Tongue red, with longitudinal and transverse fissures of varying depth on the surface, as if cut by a knife; coating scanty or absent.",
+    "clinical_significance_zh": "主阴液亏耗，津不上承；常见于热病伤阴或久病阴虚之证。",
+    "clinical_significance_en": "Indicates depletion of yin fluids failing to ascend and moisten the tongue; commonly seen after febrile disease has damaged yin or in chronic yin vacuity.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z M 200 80 L 200 260 M 160 120 L 240 120 M 150 180 L 250 180 M 170 220 L 230 220",
+    "associated_pattern_keys": [
+      "yin_xu_zheng",
+      "wei_yin_xu",
+      "shen_yin_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "crimson_no_coating",
+    "slug": "crimson-no-coating",
+    "name_zh": "绛舌无苔",
+    "name_pinyin": "jiàng shé wú tāi",
+    "name_en": "Crimson Tongue without Coating",
+    "body_color": "crimson",
+    "shape": "normal",
+    "coating": {
+      "color": "none",
+      "thickness": "none",
+      "moisture": "dry",
+      "distribution": "peeled"
+    },
+    "description_zh": "舌色深红如绛，鲜明而艳，舌面光净无苔。",
+    "description_en": "Tongue deep crimson, bright and vivid, with a smooth surface devoid of coating.",
+    "clinical_significance_zh": "主温病热入营分；营阴受灼，血络受扰，为温病传变关键征象。",
+    "clinical_significance_en": "Indicates warm-disease heat entering the nutritive level; nutritive yin is scorched and the blood vessels disturbed—a critical turning point in febrile disease progression.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "associated_pattern_keys": [
+      "ying_fen_zheng",
+      "xue_fen_zheng"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "crimson_dry",
+    "slug": "crimson-dry",
+    "name_zh": "绛舌干燥少津",
+    "name_pinyin": "jiàng shé gān zào shǎo jīn",
+    "name_en": "Crimson Tongue Dry with Scant Fluids",
+    "body_color": "crimson",
+    "shape": "normal",
+    "coating": {
+      "color": "none",
+      "thickness": "none",
+      "moisture": "dry",
+      "distribution": "peeled"
+    },
+    "description_zh": "舌色绛红，舌面干瘪无津，甚则枯晦无光，望之如干涸之田。",
+    "description_en": "Tongue crimson, surface shriveled and devoid of fluids, sometimes withered and lusterless, resembling a parched field.",
+    "clinical_significance_zh": "主热盛伤阴，阴液枯涸；提示热邪深入血分或肾阴将竭之重证。",
+    "clinical_significance_en": "Indicates intense heat damaging yin with severe depletion of fluids; signals heat penetrating the blood level or near-exhaustion of kidney yin.",
+    "svg_path": "M 200 45 C 125 45 88 105 88 180 C 88 238 145 268 200 268 C 255 268 312 238 312 180 C 312 105 275 45 200 45 Z",
+    "associated_pattern_keys": [
+      "xue_fen_zheng",
+      "shen_yin_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "crimson_with_thorns",
+    "slug": "crimson-with-thorns",
+    "name_zh": "绛舌芒刺",
+    "name_pinyin": "jiàng shé máng cì",
+    "name_en": "Crimson Tongue with Prickles",
+    "body_color": "crimson",
+    "shape": "normal",
+    "coating": {
+      "color": "none",
+      "thickness": "none",
+      "moisture": "dry",
+      "distribution": "peeled"
+    },
+    "description_zh": "舌质绛红，舌面可见红色点刺突起，状如草莓，多集中于舌尖或舌边。",
+    "description_en": "Tongue crimson with raised red prickles resembling strawberry seeds, typically concentrated at the tip or lateral margins.",
+    "clinical_significance_zh": "主热极动血或脏腑邪热亢盛；芒刺所在部位提示热邪所在脏腑。",
+    "clinical_significance_en": "Indicates extreme heat stirring the blood or severe organ heat repletion; the location of the prickles reflects which organ the heat affects.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z M 195 250 L 200 260 L 205 250 Z M 175 245 L 180 255 L 185 245 Z M 215 245 L 220 255 L 225 245 Z",
+    "associated_pattern_keys": [
+      "xue_fen_zheng",
+      "ying_fen_zheng",
+      "gan_yang_shang_kang"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "purple_dark",
+    "slug": "purple-dark",
+    "name_zh": "紫黯舌",
+    "name_pinyin": "zǐ àn shé",
+    "name_en": "Dark Purple Tongue",
+    "body_color": "purple",
+    "shape": "normal",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "moist",
+      "distribution": "full"
+    },
+    "description_zh": "舌色青紫晦暗，甚则如猪肝色，舌下络脉迂曲怒张。",
+    "description_en": "Tongue dark bluish-purple, sometimes resembling the color of liver, with tortuous, engorged sublingual veins.",
+    "clinical_significance_zh": "主血瘀证；气血运行不畅，瘀阻脉络，常见于心脉痹阻、瘀血内停诸证。",
+    "clinical_significance_en": "Indicates blood stasis; obstructed qi and blood circulation with stasis in the vessels—commonly seen in heart-vessel obstruction and patterns of internal static blood.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "coating_svg_path": "M 200 85 C 145 85 115 135 115 180 C 115 225 155 252 200 252 C 245 252 285 225 285 180 C 285 135 255 85 200 85 Z",
+    "associated_pattern_keys": [
+      "xin_xue_xu",
+      "xin_yang_xu",
+      "gan_qi_yu_jie"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "purple_with_petechiae",
+    "slug": "purple-with-petechiae",
+    "name_zh": "舌有瘀斑瘀点",
+    "name_pinyin": "shé yǒu yū bān yū diǎn",
+    "name_en": "Tongue with Stasis Macules and Petechiae",
+    "body_color": "purple",
+    "shape": "normal",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "moist",
+      "distribution": "patchy"
+    },
+    "description_zh": "舌体颜色可正常或偏暗，舌面局部散在青紫色瘀斑或瘀点，边界清楚。",
+    "description_en": "Tongue body of normal or slightly dusky color, with scattered bluish-purple stasis macules or petechiae of clear outline over parts of the surface.",
+    "clinical_significance_zh": "主局部血瘀或瘀血内停；斑点所在部位常与瘀阻脏腑相应。",
+    "clinical_significance_en": "Indicates localized blood stasis or static blood; the location of the spots often corresponds to the organ where stasis resides.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "coating_svg_path": "M 155 140 Q 160 135 165 140 Q 160 145 155 140 Z M 240 155 Q 248 148 255 155 Q 248 162 240 155 Z M 180 210 Q 186 205 192 210 Q 186 215 180 210 Z M 225 120 Q 230 116 235 120 Q 230 124 225 120 Z",
+    "associated_pattern_keys": [
+      "gan_qi_yu_jie",
+      "xin_xue_xu",
+      "xue_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "purple_swollen_pale",
+    "slug": "purple-swollen-pale",
+    "name_zh": "淡紫舌",
+    "name_pinyin": "dàn zǐ shé",
+    "name_en": "Pale Purple Tongue",
+    "body_color": "purple",
+    "shape": "swollen",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "slippery",
+      "distribution": "full"
+    },
+    "description_zh": "舌色淡而泛紫，舌体稍胖，苔薄白而润。",
+    "description_en": "Tongue pale with a purplish cast, body slightly swollen, covered by a thin, moist white coating.",
+    "clinical_significance_zh": "主阳虚寒凝血瘀；阳气不足，寒自内生，血失温运而凝滞。",
+    "clinical_significance_en": "Indicates yang vacuity with cold congealing and blood stasis; insufficient yang gives rise to internal cold, and blood, losing its warming movement, congeals.",
+    "svg_path": "M 200 44 C 115 44 70 104 70 180 C 70 244 140 274 200 274 C 260 274 330 244 330 180 C 330 104 285 44 200 44 Z",
+    "coating_svg_path": "M 200 85 C 140 85 105 135 105 180 C 105 228 150 256 200 256 C 250 256 295 228 295 180 C 295 135 260 85 200 85 Z",
+    "associated_pattern_keys": [
+      "xin_yang_xu",
+      "shen_yang_xu",
+      "shao_yin_han_hua"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "blue_green",
+    "slug": "blue-green",
+    "name_zh": "青舌",
+    "name_pinyin": "qīng shé",
+    "name_en": "Blue-Green Tongue",
+    "body_color": "blue_green",
+    "shape": "normal",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "slippery",
+      "distribution": "full"
+    },
+    "description_zh": "舌色青晦，如水牛之舌，苔白润滑，或带灰滑之象。",
+    "description_en": "Tongue a dark blue-green, resembling the tongue of a water buffalo, with a moist-slippery white coating that may appear grayish.",
+    "clinical_significance_zh": "主寒凝经脉或重证血瘀；阳气不达，血行凝涩，病多危重。",
+    "clinical_significance_en": "Indicates cold congealing the channels or severe blood stasis; yang fails to reach the periphery and blood flow stagnates—usually a serious or critical condition.",
+    "svg_path": "M 200 44 C 120 44 80 104 80 180 C 80 240 140 272 200 272 C 260 272 320 240 320 180 C 320 104 280 44 200 44 Z",
+    "coating_svg_path": "M 200 85 C 145 85 115 135 115 180 C 115 225 155 252 200 252 C 245 252 285 225 285 180 C 285 135 255 85 200 85 Z",
+    "associated_pattern_keys": [
+      "jue_yin_bing",
+      "shao_yin_han_hua",
+      "xin_yang_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "swollen_moist_white",
+    "slug": "swollen-moist-white",
+    "name_zh": "胖大舌苔白腻",
+    "name_pinyin": "pàng dà shé tāi bái nì",
+    "name_en": "Swollen Tongue with Greasy White Coating",
+    "body_color": "pale_red",
+    "shape": "swollen",
+    "coating": {
+      "color": "white",
+      "thickness": "thick",
+      "moisture": "slippery",
+      "distribution": "full"
+    },
+    "description_zh": "舌体胖大满口，舌色淡红或偏淡，苔白厚腻而润滑，刮之不尽。",
+    "description_en": "Tongue body enlarged filling the mouth, color pale-red or somewhat pale, covered with a thick, greasy, slippery white coating that cannot be scraped off.",
+    "clinical_significance_zh": "主痰湿内盛；脾失健运，湿聚成痰，痰湿上泛于舌。",
+    "clinical_significance_en": "Indicates internal accumulation of phlegm-damp; the spleen fails to transform and transport, damp gathers into phlegm which then floods upward to the tongue.",
+    "svg_path": "M 200 45 C 108 45 58 105 58 180 C 58 248 135 280 200 280 C 265 280 342 248 342 180 C 342 105 292 45 200 45 Z",
+    "coating_svg_path": "M 200 80 C 130 80 95 130 95 180 C 95 232 145 260 200 260 C 255 260 305 232 305 180 C 305 130 270 80 200 80 Z",
+    "associated_pattern_keys": [
+      "tan_shi_zheng",
+      "shi_zu_zhong_jiao",
+      "pi_qi_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "thin_pale_dry",
+    "slug": "thin-pale-dry",
+    "name_zh": "瘦薄舌苔少",
+    "name_pinyin": "shòu bó shé tāi shǎo",
+    "name_en": "Thin Pale Tongue with Scanty Coating",
+    "body_color": "pale",
+    "shape": "thin",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "dry",
+      "distribution": "patchy"
+    },
+    "description_zh": "舌体瘦小薄弱，舌色淡白，苔少而干，舌面少津。",
+    "description_en": "Tongue body thin and small, color pale, with scanty dry coating and scant fluids on the surface.",
+    "clinical_significance_zh": "主气血不足，不能充养舌体；久病体虚，气血耗伤之象。",
+    "clinical_significance_en": "Indicates insufficient qi and blood failing to fill out the tongue body; typically seen in chronic debility with depletion of qi and blood.",
+    "svg_path": "M 200 50 C 150 50 115 110 115 180 C 115 240 160 265 200 265 C 240 265 285 240 285 180 C 285 110 250 50 200 50 Z",
+    "associated_pattern_keys": [
+      "qi_xue_liang_xu",
+      "xue_xu",
+      "xin_qi_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "thin_red_peeled",
+    "slug": "thin-red-peeled",
+    "name_zh": "瘦薄红舌少苔",
+    "name_pinyin": "shòu bó hóng shé shǎo tāi",
+    "name_en": "Thin Red Tongue with Scanty Coating",
+    "body_color": "red",
+    "shape": "thin",
+    "coating": {
+      "color": "none",
+      "thickness": "none",
+      "moisture": "dry",
+      "distribution": "peeled"
+    },
+    "description_zh": "舌体瘦薄，舌色红绛，舌面少苔或无苔，干燥乏津。",
+    "description_en": "Tongue body thin and emaciated, color red to crimson, with little or no coating and a dry surface lacking fluids.",
+    "clinical_significance_zh": "主阴虚火旺；阴液亏损，虚火内炽，舌体失养而瘦。",
+    "clinical_significance_en": "Indicates yin vacuity with effulgent fire; depleted yin fluids leave empty fire flaring internally, starving the tongue body until it wastes.",
+    "svg_path": "M 200 52 C 155 52 120 112 120 180 C 120 240 162 262 200 262 C 238 262 280 240 280 180 C 280 112 245 52 200 52 Z",
+    "associated_pattern_keys": [
+      "shen_yin_xu",
+      "gan_yin_xu",
+      "xin_yin_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "white_greasy",
+    "slug": "white-greasy",
+    "name_zh": "淡红舌白腻苔",
+    "name_pinyin": "dàn hóng shé bái nì tāi",
+    "name_en": "Pale-Red Tongue with Greasy White Coating",
+    "body_color": "pale_red",
+    "shape": "normal",
+    "coating": {
+      "color": "white",
+      "thickness": "thick",
+      "moisture": "slippery",
+      "distribution": "full"
+    },
+    "description_zh": "舌色淡红，舌面覆白色厚腻苔，苔质细腻紧贴舌面，如涂油脂。",
+    "description_en": "Tongue pale-red, covered by a thick, greasy white coating that clings tightly to the surface like a film of grease.",
+    "clinical_significance_zh": "主寒湿或痰湿内停；中焦湿浊壅滞，阻遏气机。",
+    "clinical_significance_en": "Indicates internal cold-damp or phlegm-damp retention; turbid damp congests the middle burner and obstructs the qi dynamic.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "coating_svg_path": "M 200 78 C 132 78 96 128 96 180 C 96 232 148 258 200 258 C 252 258 304 232 304 180 C 304 128 268 78 200 78 Z",
+    "associated_pattern_keys": [
+      "tan_shi_zheng",
+      "shi_zu_zhong_jiao",
+      "wei_han"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "yellow_greasy",
+    "slug": "yellow-greasy",
+    "name_zh": "红舌黄腻苔",
+    "name_pinyin": "hóng shé huáng nì tāi",
+    "name_en": "Red Tongue with Greasy Yellow Coating",
+    "body_color": "red",
+    "shape": "normal",
+    "coating": {
+      "color": "yellow",
+      "thickness": "thick",
+      "moisture": "moist",
+      "distribution": "full"
+    },
+    "description_zh": "舌色偏红，舌面覆黄色厚腻苔，苔质油腻紧贴，或黄中带灰。",
+    "description_en": "Tongue somewhat red, covered by a thick, greasy yellow coating that adheres tightly; sometimes with a grayish tinge.",
+    "clinical_significance_zh": "主湿热内蕴；湿与热合，盘踞中下二焦，气机壅遏。",
+    "clinical_significance_en": "Indicates internal damp-heat; damp and heat combine to lodge in the middle and lower burners, obstructing the qi dynamic.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "coating_svg_path": "M 200 78 C 132 78 96 128 96 180 C 96 232 148 258 200 258 C 252 258 304 232 304 180 C 304 128 268 78 200 78 Z",
+    "associated_pattern_keys": [
+      "zhong_jiao_shi_re",
+      "xia_jiao_shi_re",
+      "pang_guang_shi_re"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "black_dry",
+    "slug": "black-dry",
+    "name_zh": "舌苔焦黑干燥",
+    "name_pinyin": "shé tāi jiāo hēi gān zào",
+    "name_en": "Scorched-Black Dry Coating",
+    "body_color": "crimson",
+    "shape": "cracked",
+    "coating": {
+      "color": "black",
+      "thickness": "thick",
+      "moisture": "dry",
+      "distribution": "full"
+    },
+    "description_zh": "舌苔焦黑如煤炭，干燥起裂，甚则芒刺满布；舌质多绛红而干。",
+    "description_en": "Coating scorched-black like coal, dry and cracked, sometimes covered with prickles; tongue body usually crimson and dry.",
+    "clinical_significance_zh": "主热极伤阴，肾水涸竭；属危重之候，预后须慎。",
+    "clinical_significance_en": "Indicates extreme heat consuming yin with exhaustion of kidney water; a critical sign demanding a guarded prognosis.",
+    "svg_path": "M 200 42 C 122 42 82 102 82 180 C 82 240 142 270 200 270 C 258 270 318 240 318 180 C 318 102 278 42 200 42 Z",
+    "coating_svg_path": "M 200 75 C 130 75 100 125 100 180 C 100 232 148 258 200 258 C 252 258 300 232 300 180 C 300 125 270 75 200 75 Z",
+    "associated_pattern_keys": [
+      "yang_ming_fu_shi",
+      "xue_fen_zheng",
+      "shen_yin_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "black_wet",
+    "slug": "black-wet",
+    "name_zh": "舌苔黑润",
+    "name_pinyin": "shé tāi hēi rùn",
+    "name_en": "Moist Black Coating",
+    "body_color": "pale",
+    "shape": "swollen",
+    "coating": {
+      "color": "black",
+      "thickness": "thick",
+      "moisture": "slippery",
+      "distribution": "full"
+    },
+    "description_zh": "舌苔灰黑而润滑多津，苔质腻或水滑，舌体多淡胖。",
+    "description_en": "Coating grayish-black, slippery with abundant fluids, greasy or water-slick; tongue body typically pale and swollen.",
+    "clinical_significance_zh": "主阳虚寒盛；肾阳衰微，寒水上泛，阴寒极盛之象。",
+    "clinical_significance_en": "Indicates yang vacuity with exuberant cold; declining kidney yang allows cold water to rise—a sign of extreme internal cold.",
+    "svg_path": "M 200 45 C 112 45 62 105 62 180 C 62 246 138 278 200 278 C 262 278 338 246 338 180 C 338 105 288 45 200 45 Z",
+    "coating_svg_path": "M 200 80 C 130 80 98 130 98 180 C 98 232 148 260 200 260 C 252 260 302 232 302 180 C 302 130 270 80 200 80 Z",
+    "associated_pattern_keys": [
+      "shen_yang_xu",
+      "shao_yin_han_hua",
+      "tai_yin_bing"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "trembling",
+    "slug": "trembling",
+    "name_zh": "舌体颤动",
+    "name_pinyin": "shé tǐ chàn dòng",
+    "name_en": "Trembling Tongue",
+    "body_color": "pale_red",
+    "shape": "trembling",
+    "coating": {
+      "color": "white",
+      "thickness": "thin",
+      "moisture": "moist",
+      "distribution": "full"
+    },
+    "description_zh": "伸舌时舌体不自主颤抖摇动，不能自持，舌色或淡或红，苔薄。",
+    "description_en": "On protrusion the tongue involuntarily trembles and quivers and cannot be held still; color may be pale or red, with a thin coating.",
+    "clinical_significance_zh": "舌淡而颤者，多属气血两虚；舌红绛而颤者，多属热极动风或肝阳化风。",
+    "clinical_significance_en": "Trembling with a pale tongue usually indicates dual vacuity of qi and blood; trembling with a red-crimson tongue typically indicates extreme heat stirring wind or liver-yang transforming into wind.",
+    "svg_path": "M 200 42 Q 155 48 122 78 Q 82 118 82 180 Q 82 242 145 272 Q 200 282 255 272 Q 318 242 318 180 Q 318 118 278 78 Q 245 48 200 42 Z",
+    "coating_svg_path": "M 200 85 Q 158 90 128 120 Q 108 150 108 180 Q 108 220 150 250 Q 200 260 250 250 Q 292 220 292 180 Q 292 150 272 120 Q 242 90 200 85 Z",
+    "associated_pattern_keys": [
+      "qi_xue_liang_xu",
+      "gan_yang_shang_kang",
+      "gan_xue_xu"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  }
+]

@@ -1,0 +1,1236 @@
+[
+  {
+    "key": "ye_tianshi_feng_wen_fei_wei_shi_xuan",
+    "slug": "ye-tianshi-feng-wen-fei-wei-shi-xuan",
+    "title_zh": "叶天士治风温犯卫 肺卫失宣案",
+    "title_en": "Ye Tianshi: Wind-Warmth Invading the Defensive with Failure of Lung Diffusion",
+    "author_zh": "叶天士",
+    "author_en": "Ye Tianshi",
+    "source_text_key": "lin_zheng_zhi_nan_yi_an",
+    "source_chapter": "卷五 风温门 (composite case faithful to Ye's clinical style)",
+    "presenting_picture": {
+      "zh": "某，春月感受风温。症见身热微恶风，头胀咽痛，口微渴，咳嗽痰少而黏，舌边尖红，苔薄白微黄，脉浮数。",
+      "en": "A patient in early spring contracted wind-warmth. Presenting with mild fever and slight aversion to wind, head distension and sore throat, mild thirst, cough with scant sticky phlegm, red tongue tip and edges with a thin white coating tinged yellow, and a pulse that is floating and rapid."
+    },
+    "diagnosis": {
+      "zh": "风温袭肺，卫分失宣。属温病初起，邪在上焦手太阴。",
+      "en": "Wind-warmth assailing the Lung, with failure of defensive-level diffusion. Early-stage warm disease lodged in the Upper Burner Hand-Taiyin."
+    },
+    "formula_used_key": "yin_qiao_san",
+    "herbs_modified": [
+      "jin_yin_hua",
+      "lian_qiao",
+      "bo_he",
+      "niu_bang_zi",
+      "jie_geng",
+      "lu_gen",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "投银翘散辛凉轻剂，加芦根以生津止咳。二剂后热退身凉，咳嗽大减，再进一剂而愈。",
+      "en": "After administering Yin Qiao San as a light acrid-cool dose, Lu Gen was added to generate fluids and arrest cough. After two doses the fever resolved and the body cooled; cough diminished markedly; one further dose effected recovery."
+    },
+    "linked_pattern_keys": [
+      "wei_fen_zheng"
+    ],
+    "teaching_point": {
+      "zh": "温邪上受，首先犯肺。叶氏立法以辛凉轻剂疏风透热，忌用辛温发汗以助热伤津。此即'在卫汗之可也'之活法，汗不在强发，而在疏透。",
+      "en": "Warm pathogens are received from above and first assail the Lung. Ye's method uses light acrid-cool formulas to disperse wind and vent heat, strictly avoiding acrid-warm diaphoretics that would aid the heat and injure fluids. This embodies 'at the defensive level, sweating is permissible' — not by forced diaphoresis but by gentle dispersing and venting."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "ye_tianshi_wen_re_ru_ying",
+    "slug": "ye-tianshi-wen-re-ru-ying",
+    "title_zh": "叶天士治温热入营神昏案",
+    "title_en": "Ye Tianshi: Warm-Heat Entering the Nutritive with Clouded Sensorium",
+    "author_zh": "叶天士",
+    "author_en": "Ye Tianshi",
+    "source_text_key": "lin_zheng_zhi_nan_yi_an",
+    "source_chapter": "卷五 温热门 (composite case faithful to Ye's clinical style)",
+    "presenting_picture": {
+      "zh": "某妇，患温病旬日，壮热不退，入夜尤甚，烦躁不安，时有谵语，口干反不甚渴饮，肌肤隐隐斑疹，舌质红绛无苔，脉细数。",
+      "en": "A woman, ill with warm disease for some ten days, with robust fever that would not abate, worse at night, restless and agitated with intermittent delirious speech; mouth dry yet paradoxically not craving drink; faint macular rash dimly visible beneath the skin; tongue crimson and denuded; pulse thin and rapid."
+    },
+    "diagnosis": {
+      "zh": "温热之邪内陷心营，热灼营阴，神明受扰。属营分证。",
+      "en": "Warm-heat pathogen sinking inward into the Heart's nutritive aspect, scorching nutritive yin, and disturbing the spirit-brightness. Nutritive-level pattern."
+    },
+    "formula_used_key": "qing_ying_tang",
+    "herbs_modified": [
+      "sheng_di_huang",
+      "xuan_shen",
+      "mai_dong",
+      "jin_yin_hua",
+      "lian_qiao",
+      "huang_lian",
+      "dan_shen",
+      "zhu_ru"
+    ],
+    "outcome": {
+      "zh": "投清营汤清营透热，加竹茹以清心化痰。三剂后神清语正，斑疹消退；继以育阴之品调理，旬日而安。",
+      "en": "Clear-the-Nutritive Decoction was given to clear the nutritive and vent heat, with Zhu Ru added to clear the Heart and transform phlegm. After three doses the spirit cleared and speech became rational and the rash receded; subsequent yin-nurturing regulation brought recovery within ten days."
+    },
+    "linked_pattern_keys": [
+      "ying_fen_zheng"
+    ],
+    "teaching_point": {
+      "zh": "叶氏曰：'入营犹可透热转气。'口干不甚渴饮，正是营热蒸腾津液上潮之征，与气分大渴引饮迥别。透热之关键在于金银花、连翘之轻清，引营分之邪复转气分而解。",
+      "en": "Ye declared: 'Once heat enters the nutritive, one may still vent it back out to the qi level.' The dry mouth without marked thirst is precisely the sign of nutritive heat steaming fluids upward — quite different from the great thirst of qi-level heat. The pivot of venting heat lies in the light clearing action of Jin Yin Hua and Lian Qiao, which lead the nutritive pathogen back to the qi level for resolution."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "ye_tianshi_pi_wei_xu_ruo",
+    "slug": "ye-tianshi-pi-wei-xu-ruo",
+    "title_zh": "叶天士治脾胃虚弱纳呆便溏案",
+    "title_en": "Ye Tianshi: Spleen-Stomach Vacuity with Poor Appetite and Loose Stools",
+    "author_zh": "叶天士",
+    "author_en": "Ye Tianshi",
+    "source_text_key": "lin_zheng_zhi_nan_yi_an",
+    "source_chapter": "卷二 脾胃门 (composite case faithful to Ye's clinical style)",
+    "presenting_picture": {
+      "zh": "某男，年四十，久病之后，面色萎黄，食少纳呆，食后脘腹胀满，大便溏薄日二三行，四肢倦怠乏力，舌淡苔白，脉濡缓。",
+      "en": "A man of forty, convalescing from prolonged illness, with a withered sallow complexion, scant appetite and poor intake, epigastric and abdominal fullness after meals, loose thin stools two or three times daily, fatigue of the four limbs, pale tongue with a white coating, and a soggy moderate pulse."
+    },
+    "diagnosis": {
+      "zh": "脾胃虚弱，运化无权，中气不健，湿从内生。",
+      "en": "Vacuity of the Spleen and Stomach with impaired transformation and conveyance; the middle qi fails to function, generating internal dampness."
+    },
+    "formula_used_key": "shen_ling_bai_zhu_san",
+    "herbs_modified": [
+      "dang_shen",
+      "bai_zhu",
+      "fu_ling",
+      "shan_yao",
+      "yi_yi_ren",
+      "sha_ren",
+      "chen_pi",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "以参苓白术散益气健脾、渗湿止泻，加陈皮以理气醒胃。连服十余剂，纳食渐增，便溏已止，精神亦振；继以丸剂缓图，两月康复。",
+      "en": "Shen Ling Bai Zhu San was used to augment qi, fortify the Spleen, percolate dampness and arrest diarrhea, with Chen Pi added to rectify qi and awaken the Stomach. After more than ten doses appetite gradually increased, loose stools ceased, and the spirit revived; a subsequent pill form was used for gradual restoration, with full recovery in two months."
+    },
+    "linked_pattern_keys": [
+      "pi_qi_xu"
+    ],
+    "teaching_point": {
+      "zh": "叶氏治脾胃分阴阳：'太阴湿土，得阳始运；阳明燥土，得阴自安。'此案脾阳不振，湿浊内停，故用参苓白术散甘淡渗湿，不用峻补刚燥之品。脾运一健，诸证自除。",
+      "en": "Ye distinguished yin and yang in Spleen-Stomach treatment: 'The damp earth of Taiyin moves only when it receives yang; the dry earth of Yangming rests only when it receives yin.' Here Spleen yang is unrouse with damp turbidity retained internally, so Shen Ling Bai Zhu San is used to percolate dampness with sweet-bland herbs, avoiding forceful warming or harsh drying. Once Spleen conveyance is restored, all signs resolve of themselves."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "ye_tianshi_gan_yang_hua_feng",
+    "slug": "ye-tianshi-gan-yang-hua-feng",
+    "title_zh": "叶天士治肝阳化风眩晕案",
+    "title_en": "Ye Tianshi: Liver Yang Transforming into Wind with Dizziness",
+    "author_zh": "叶天士",
+    "author_en": "Ye Tianshi",
+    "source_text_key": "lin_zheng_zhi_nan_yi_an",
+    "source_chapter": "卷一 中风门 (composite case faithful to Ye's clinical style)",
+    "presenting_picture": {
+      "zh": "某翁，年逾六旬，素有头眩耳鸣，近因恼怒之后，眩晕陡作，头重脚轻，肢麻欲仆，胸闷泛恶，痰多粘腻，舌红苔白腻，脉弦滑。",
+      "en": "An elderly man over sixty, habitually troubled by dizziness and tinnitus, after a bout of anger suddenly developed severe vertigo, with a heavy head and light feet, numb limbs and the sensation of impending fall, chest oppression and nausea, copious sticky phlegm, red tongue with a slimy white coating, and a wiry slippery pulse."
+    },
+    "diagnosis": {
+      "zh": "肝阳上亢，化风挟痰上扰清空。",
+      "en": "Liver yang ascending hyperactively, transforming into wind and, together with phlegm, harassing the clear orifices above."
+    },
+    "formula_used_key": "ban_xia_bai_zhu_tian_ma_tang",
+    "herbs_modified": [
+      "ban_xia",
+      "tian_ma",
+      "bai_zhu",
+      "fu_ling",
+      "chen_pi",
+      "gou_teng",
+      "mu_li",
+      "dai_zhe_shi"
+    ],
+    "outcome": {
+      "zh": "以半夏白术天麻汤燥湿化痰、平肝息风，加钩藤、牡蛎、代赭石以潜镇肝阳。五剂后眩晕大减，肢麻渐复；续进十剂，诸症悉平。",
+      "en": "Ban Xia Bai Zhu Tian Ma Tang was used to dry dampness, transform phlegm, and calm the Liver to extinguish wind, with Gou Teng, Mu Li, and Dai Zhe Shi added to subdue and anchor ascendant Liver yang. After five doses vertigo markedly diminished and numbness gradually resolved; a further ten doses settled all signs."
+    },
+    "linked_pattern_keys": [
+      "gan_yang_shang_kang"
+    ],
+    "teaching_point": {
+      "zh": "叶氏论中风，谓'阳化内风'，非外感之风。此证本虚标实，痰湿内蕴为标，肝肾阴亏、阳亢风动为本。治法须潜镇与化痰并举，切忌辛散动风之品。",
+      "en": "In discussing wind-stroke, Ye maintained that 'yang transforms into internal wind' — not an externally contracted wind. The pattern is root-vacuity with branch-repletion: phlegm-damp internally retained as the branch, Liver-Kidney yin depletion with ascendant yang stirring wind as the root. Treatment must combine subduing-anchoring with phlegm-transforming, strictly avoiding acrid-dispersing herbs that would stir wind."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "ye_tianshi_zao_xie_shang_fei",
+    "slug": "ye-tianshi-zao-xie-shang-fei",
+    "title_zh": "叶天士治秋燥伤肺干咳案",
+    "title_en": "Ye Tianshi: Autumn Dryness Damaging the Lung with Dry Cough",
+    "author_zh": "叶天士",
+    "author_en": "Ye Tianshi",
+    "source_text_key": "lin_zheng_zhi_nan_yi_an",
+    "source_chapter": "卷五 燥门 (composite case faithful to Ye's clinical style)",
+    "presenting_picture": {
+      "zh": "某妇，秋分之后，干咳少痰，痰黏难咯，咽干鼻燥，口唇干裂，胸闷微痛，舌红而干，苔薄白欠润，脉浮细数。",
+      "en": "A woman, after the autumnal equinox, with dry cough and scant phlegm — sticky and difficult to expectorate — dry throat and parched nostrils, dry cracked lips, mild chest oppression with slight pain, a red dry tongue with a thin white coating lacking moisture, and a floating thin rapid pulse."
+    },
+    "diagnosis": {
+      "zh": "温燥外袭，肺津受灼，肺失清润。",
+      "en": "Warm dryness assailing from without, scorching Lung fluids, so that the Lung loses its clear moistening quality."
+    },
+    "formula_used_key": "sang_xing_tang",
+    "herbs_modified": [
+      "sang_ye",
+      "xing_ren",
+      "sha_shen",
+      "zhe_bei_mu",
+      "dan_shen",
+      "zhi_zi",
+      "lu_gen"
+    ],
+    "outcome": {
+      "zh": "投桑杏汤辛凉甘润，轻宣燥邪，润肺止咳，加芦根以生津。三剂后咳减痰润，咽鼻得滋；五剂而安。",
+      "en": "Sang Xing Tang was given as a light acrid-cool, sweet-moistening formula to gently diffuse the dry pathogen, moisten the Lung, and arrest cough, with Lu Gen added to generate fluids. After three doses cough diminished and phlegm became moist, throat and nose regained moisture; after five doses all settled."
+    },
+    "linked_pattern_keys": [
+      "fei_yin_xu"
+    ],
+    "teaching_point": {
+      "zh": "燥邪伤肺，当分温凉。此属温燥，治宜辛凉甘润，不可过用苦寒以伤中阳，亦不可纯用滋腻以碍肺气。桑杏汤轻清灵动，正合'上焦如羽，非轻不举'之旨。",
+      "en": "Dryness damaging the Lung must be distinguished as warm or cool in type. This case is warm dryness, properly treated with acrid-cool and sweet-moistening herbs; one must not over-employ bitter cold lest middle yang be injured, nor purely rely on cloying enrichment lest Lung qi be encumbered. Sang Xing Tang is light, clear, and nimble — fitting the maxim 'The Upper Burner is like a feather: only the light will rise to reach it.'"
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "ye_tianshi_shi_wen_kun_pi",
+    "slug": "ye-tianshi-shi-wen-kun-pi",
+    "title_zh": "叶天士治湿温困脾案",
+    "title_en": "Ye Tianshi: Damp-Warmth Encumbering the Spleen",
+    "author_zh": "叶天士",
+    "author_en": "Ye Tianshi",
+    "source_text_key": "lin_zheng_zhi_nan_yi_an",
+    "source_chapter": "卷五 湿门 (composite case faithful to Ye's clinical style)",
+    "presenting_picture": {
+      "zh": "某，长夏之月，身热不扬，头重如裹，胸脘痞闷，纳呆泛恶，肢体困倦沉重，大便溏而不爽，舌苔白腻，脉濡缓。",
+      "en": "A patient in late summer with smoldering fever lacking vigor, head as if swathed in cloth, chest and epigastric glomus and oppression, poor appetite with nausea, body heavy and fatigued, loose but unsatisfying stools, a slimy white tongue coating, and a soggy moderate pulse."
+    },
+    "diagnosis": {
+      "zh": "湿温初起，湿邪困遏中焦脾胃，阳气不伸。",
+      "en": "Early damp-warmth disease: damp pathogen encumbering the middle-burner Spleen and Stomach, so that yang qi cannot extend."
+    },
+    "formula_used_key": "huo_xiang_zheng_qi_san",
+    "herbs_modified": [
+      "huo_xiang",
+      "zi_su_ye",
+      "hou_po",
+      "chen_pi",
+      "bai_zhu",
+      "fu_ling",
+      "ban_xia"
+    ],
+    "outcome": {
+      "zh": "以藿香正气散芳香化湿、理气和中。三剂后头重胸闷大减，纳食渐开；继以平胃散加减调理，旬日而瘥。",
+      "en": "Huo Xiang Zheng Qi San was used to aromatically transform dampness and rectify qi to harmonize the middle. After three doses the head-heaviness and chest oppression much reduced, appetite gradually opened; subsequently a Ping Wei San modification was used for regulation, with recovery in ten days."
+    },
+    "linked_pattern_keys": [
+      "shi_zu_zhong_jiao"
+    ],
+    "teaching_point": {
+      "zh": "湿温之病，徒清热则湿不去，纯祛湿则热愈炽。叶氏示以芳香辛散之法先开中焦气机，使湿有出路，湿去则热孤而易清。此即'治湿不利小便非其治也'以外的另一捷径。",
+      "en": "In damp-warmth disease, clearing heat alone will not remove the dampness, while purely expelling dampness makes the heat more intense. Ye demonstrates that aromatic acrid-dispersing methods should first open the middle-burner qi dynamic so that dampness has a way out; once dampness leaves, the heat stands alone and is easily cleared. This is a shortcut alongside the familiar rule 'in treating dampness, failing to free the urine is not treatment.'"
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "ye_tianshi_xu_lao_shen_yin",
+    "slug": "ye-tianshi-xu-lao-shen-yin",
+    "title_zh": "叶天士治虚劳肾阴亏虚案",
+    "title_en": "Ye Tianshi: Consumptive Vacuity with Kidney Yin Depletion",
+    "author_zh": "叶天士",
+    "author_en": "Ye Tianshi",
+    "source_text_key": "lin_zheng_zhi_nan_yi_an",
+    "source_chapter": "卷一 虚劳门 (composite case faithful to Ye's clinical style)",
+    "presenting_picture": {
+      "zh": "某生，年二十余，读书劳神，形体瘦削，两颧潮红，腰膝酸软，五心烦热，盗汗遗精，夜寐不宁，舌红少苔，脉细数。",
+      "en": "A young scholar in his twenties, exhausting his spirit by study, emaciated in body, with crimson flushing over both cheekbones, aching weakness of the lower back and knees, heat vexation in the five centers, night sweats and seminal loss, restless sleep, red tongue with scant coating, and a thin rapid pulse."
+    },
+    "diagnosis": {
+      "zh": "肾阴亏虚，虚火内炽，水不济火。",
+      "en": "Kidney yin depletion with internal stirring of empty fire; water fails to meet and counterbalance fire."
+    },
+    "formula_used_key": "liu_wei_di_huang_wan",
+    "herbs_modified": [
+      "shu_di_huang",
+      "shan_zhu_yu",
+      "shan_yao",
+      "ze_xie",
+      "mu_dan_pi",
+      "fu_ling",
+      "zhi_mu",
+      "huang_bai"
+    ],
+    "outcome": {
+      "zh": "以六味地黄丸壮水之主，以制阳光，加知母、黄柏为知柏地黄丸，以清相火。连服月余，潮热盗汗渐止，精神日复。",
+      "en": "Liu Wei Di Huang Wan was used to reinforce the ruler of water so as to restrain yang-light, with Zhi Mu and Huang Bai added to form Zhi Bai Di Huang Wan, clearing ministerial fire. After more than a month's continued use tidal heat and night sweats gradually ceased, and vigor was restored day by day."
+    },
+    "linked_pattern_keys": [
+      "shen_yin_xu"
+    ],
+    "teaching_point": {
+      "zh": "叶氏论虚劳，谓'久病入络'、'阴虚之体，最忌辛燥'。此案宜甘润填下，缓以图功，切忌峻补温燥。六味地黄丸三补三泻，补而不腻，最合其体。",
+      "en": "On consumptive disease Ye held that 'prolonged illness enters the collaterals' and that 'a yin-vacuous constitution most abhors acrid-drying herbs.' Here sweet-moistening lower-filling methods are appropriate, aiming for gradual effect; forceful tonification and warm drying are strictly forbidden. Liu Wei Di Huang Wan, with its three-tonify-three-drain structure, supplements without cloying — ideally suited to such a constitution."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "wu_jutong_yin_qiao_san_zheng",
+    "slug": "wu-jutong-yin-qiao-san-zheng",
+    "title_zh": "吴鞠通治上焦风温银翘散证案",
+    "title_en": "Wu Jutong: Upper Burner Wind-Warmth Treated with Yin Qiao San",
+    "author_zh": "吴鞠通",
+    "author_en": "Wu Jutong",
+    "source_text_key": "wen_bing_tiao_bian",
+    "source_chapter": "上焦篇 风温第四条 (composite case illustrating 《温病条辨》 rubric)",
+    "presenting_picture": {
+      "zh": "某童子，初春受寒转温，症见发热无汗，微恶风寒，头痛咽痛，口渴欲饮，咳嗽声重，舌尖红，苔薄白，脉浮数。",
+      "en": "A young boy in early spring contracted cold that converted to warmth: fever without sweating, slight aversion to wind and cold, headache and sore throat, thirst with desire to drink, cough with a heavy voice, red tongue tip, thin white coating, and a floating rapid pulse."
+    },
+    "diagnosis": {
+      "zh": "太阴风温，邪在上焦卫分。",
+      "en": "Taiyin wind-warmth, pathogen lodged at the Upper Burner defensive level."
+    },
+    "formula_used_key": "yin_qiao_san",
+    "herbs_modified": [
+      "jin_yin_hua",
+      "lian_qiao",
+      "jing_jie",
+      "niu_bang_zi",
+      "bo_he",
+      "jie_geng",
+      "lu_gen",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "按《温病条辨》原方煎服，香气大出即取服，勿过煎。一剂微汗出，热退大半；二剂身凉咳减；三剂诸症悉平。",
+      "en": "The formula was prepared exactly per the Wen Bing Tiao Bian protocol — taken as soon as the aromatic fragrance emerged, avoiding over-decoction. One dose brought mild perspiration and resolved much of the fever; the second cooled the body and eased the cough; the third settled all signs."
+    },
+    "linked_pattern_keys": [
+      "wei_fen_zheng"
+    ],
+    "teaching_point": {
+      "zh": "鞠通立银翘散为'辛凉平剂'，治太阴风温之咽痛口渴者。煎法贵在'勿过煎'——过煎则味厚入中焦，失其轻清透表之性。此法度之精微处，学者不可忽也。",
+      "en": "Wu Jutong established Yin Qiao San as a 'balanced acrid-cool formula' for Taiyin wind-warmth with sore throat and thirst. The crucial point in decoction is 'do not over-cook' — over-decoction thickens the flavor so that it enters the Middle Burner, losing its light-clear outward-venting nature. In such fine points of method the student must not be careless."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "wu_jutong_sang_ju_yin_zheng",
+    "slug": "wu-jutong-sang-ju-yin-zheng",
+    "title_zh": "吴鞠通治风温咳嗽桑菊饮证案",
+    "title_en": "Wu Jutong: Wind-Warmth Cough Treated with Sang Ju Yin",
+    "author_zh": "吴鞠通",
+    "author_en": "Wu Jutong",
+    "source_text_key": "wen_bing_tiao_bian",
+    "source_chapter": "上焦篇 风温第六条 (composite case illustrating 《温病条辨》 rubric)",
+    "presenting_picture": {
+      "zh": "某女，春月感冒风温。症见身热不甚，微有汗出，咳嗽声声不已，口微渴，咽痒不痛，舌尖略红，苔薄白，脉浮数而不大。",
+      "en": "A woman in spring contracted wind-warmth: fever not severe, with slight sweating, an incessant cough, mild thirst, an itchy but not painful throat, slightly red tongue tip with a thin white coating, and a floating rapid pulse that was not large."
+    },
+    "diagnosis": {
+      "zh": "风温犯肺，邪浅病轻，肺失清肃，但咳为主。",
+      "en": "Wind-warmth affecting the Lung; the pathogen is shallow and the illness mild, with the Lung failing to depurate and cough as the chief sign."
+    },
+    "formula_used_key": "sang_ju_yin",
+    "herbs_modified": [
+      "sang_ye",
+      "ju_hua",
+      "xing_ren",
+      "lian_qiao",
+      "bo_he",
+      "jie_geng",
+      "lu_gen",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "投桑菊饮辛凉轻剂以宣肺止咳。一剂咳减过半，二剂身凉咳止，不需三剂。",
+      "en": "Sang Ju Yin was given as a light acrid-cool dose to diffuse the Lung and arrest cough. One dose reduced the cough by more than half, and with the second the body cooled and the cough stopped — no third dose was needed."
+    },
+    "linked_pattern_keys": [
+      "wei_fen_zheng"
+    ],
+    "teaching_point": {
+      "zh": "鞠通谓桑菊饮为'辛凉轻剂'，主治风温但咳、身不甚热、微渴者。银翘散治卫分表热较重，桑菊饮则专主轻宣肺气。二方分量虽近，其治略异，临证当细审。",
+      "en": "Wu Jutong designated Sang Ju Yin as a 'light acrid-cool formula,' principally for wind-warmth with only cough, mild fever, and slight thirst. Yin Qiao San treats more pronounced defensive-level surface heat; Sang Ju Yin specializes in lightly diffusing the Lung qi. Though similar in dose the two differ in scope, and clinical discrimination must be careful."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "wu_jutong_bai_hu_tang_zheng",
+    "slug": "wu-jutong-bai-hu-tang-zheng",
+    "title_zh": "吴鞠通治中焦阳明白虎汤证案",
+    "title_en": "Wu Jutong: Middle Burner Yangming Treated with Bai Hu Tang",
+    "author_zh": "吴鞠通",
+    "author_en": "Wu Jutong",
+    "source_text_key": "wen_bing_tiao_bian",
+    "source_chapter": "中焦篇 温病气分 (composite case illustrating 《温病条辨》 rubric)",
+    "presenting_picture": {
+      "zh": "某男，温病旬日，壮热不恶寒反恶热，面赤汗多，大渴引饮，喜冷恶热，气粗口燥，舌红苔黄燥，脉洪大有力。",
+      "en": "A man ten days into warm disease: robust heat with no aversion to cold but rather aversion to heat, red face and profuse sweating, great thirst with copious drinking, preference for cold and dislike of warmth, coarse breathing and parched mouth, red tongue with a dry yellow coating, and a surging large forceful pulse."
+    },
+    "diagnosis": {
+      "zh": "温病邪入中焦，阳明气分热盛，为'四大证'俱备。",
+      "en": "Warm disease pathogen entering the Middle Burner, with exuberant Yangming qi-level heat — the 'four great signs' all present."
+    },
+    "formula_used_key": "bai_hu_tang",
+    "herbs_modified": [
+      "shi_gao",
+      "zhi_mu",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "投白虎汤清气分大热，石膏用至二两，知母八钱。一剂大热渐退，二剂汗收渴减，三剂身凉脉静，后以沙参麦冬汤养阴善后。",
+      "en": "Bai Hu Tang was given to clear exuberant qi-level heat, with Shi Gao at two liang and Zhi Mu at eight qian. One dose saw the great heat gradually recede, the second stopped the sweating and eased the thirst, and by the third the body cooled and the pulse grew quiet; afterward Sha Shen Mai Dong Tang was used to nourish yin as follow-up."
+    },
+    "linked_pattern_keys": [
+      "yang_ming_jing_zheng"
+    ],
+    "teaching_point": {
+      "zh": "鞠通用白虎有四禁：脉浮弦而细者不可与，脉沉者不可与，不渴者不可与，汗不出者不可与。此案四大证（大热、大汗、大渴、脉洪大）齐备，是为正治，可投无疑。",
+      "en": "Wu Jutong laid down four prohibitions for Bai Hu Tang: do not give it when the pulse is floating, wiry and thin; do not give it when the pulse is sunken; do not give it when there is no thirst; do not give it when sweat does not appear. Here the 'four greats' — great heat, great sweating, great thirst, and a surging large pulse — were all present, so it was the proper treatment, given without hesitation."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "wu_jutong_fu_mai_tang_xia_jiao",
+    "slug": "wu-jutong-fu-mai-tang-xia-jiao",
+    "title_zh": "吴鞠通治下焦温病真阴欲竭案",
+    "title_en": "Wu Jutong: Lower Burner Warm Disease with Impending Collapse of True Yin",
+    "author_zh": "吴鞠通",
+    "author_en": "Wu Jutong",
+    "source_text_key": "wen_bing_tiao_bian",
+    "source_chapter": "下焦篇 温病第一条 (composite case illustrating 《温病条辨》 rubric)",
+    "presenting_picture": {
+      "zh": "某妇，温病后期，热势已低，但身热夜甚，心烦不寐，口干咽燥，唇齿干枯，手足心热甚于手足背，舌绛无苔，脉虚大按之无力。",
+      "en": "A woman in the late stage of warm disease: the heat had subsided somewhat but fever was worse at night, with vexation and insomnia, dry mouth and parched throat, withered lips and teeth, palms and soles hotter than their dorsa, a crimson denuded tongue, and a vacuous large pulse without strength upon pressure."
+    },
+    "diagnosis": {
+      "zh": "温邪深入下焦，耗伤肝肾真阴，邪少虚多。",
+      "en": "Warm pathogen penetrating to the Lower Burner, exhausting true yin of Liver and Kidney; pathogen scant, vacuity predominant."
+    },
+    "formula_used_key": "zhi_gan_cao_tang",
+    "herbs_modified": [
+      "gan_cao",
+      "sheng_di_huang",
+      "mai_dong",
+      "e_jiao",
+      "bai_shao",
+      "huo_ma_ren"
+    ],
+    "outcome": {
+      "zh": "遵鞠通法以加减复脉汤（即炙甘草汤去参桂姜枣加白芍）咸寒甘润，填补真阴。服五剂神安寐稳，舌上津回；续服十余剂，精神渐复。",
+      "en": "Following Wu Jutong's method, a Jia Jian Fu Mai Tang (Zhi Gan Cao Tang minus Ren Shen, Gui Zhi, Sheng Jiang, and Da Zao, with Bai Shao added) was used to provide salty-cold, sweet-moistening replenishment of true yin. After five doses the spirit settled and sleep steadied, and moisture returned to the tongue; a further ten-odd doses saw vigor gradually restored."
+    },
+    "linked_pattern_keys": [
+      "shen_yin_xu",
+      "xia_jiao_shi_re"
+    ],
+    "teaching_point": {
+      "zh": "鞠通论下焦温病：'热邪深入，或在少阴，或在厥阴，均宜复脉。'去参、桂、姜、枣之温燥，加白芍以敛阴，易名'加减复脉汤'，正是因证立方之变。虚热不可苦寒直折，宜甘润咸寒以滋其真阴。",
+      "en": "On Lower Burner warm disease Wu Jutong stated: 'When heat pathogen penetrates deeply — whether in Shaoyin or Jueyin — Fu Mai Tang is appropriate in every case.' Removing the warming-drying Ren Shen, Gui Zhi, Sheng Jiang and Da Zao and adding Bai Shao to astringe yin, renaming it 'Modified Fu Mai Decoction,' is precisely formula-modification tailored to the pattern. Vacuity heat cannot be checked by bitter cold; it demands sweet-moistening and salty-cold nourishment of true yin."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "wu_jutong_san_ren_tang_zheng",
+    "slug": "wu-jutong-san-ren-tang-zheng",
+    "title_zh": "吴鞠通治湿温初起三仁汤证案",
+    "title_en": "Wu Jutong: Early-Stage Damp-Warmth Treated with San Ren Tang",
+    "author_zh": "吴鞠通",
+    "author_en": "Wu Jutong",
+    "source_text_key": "wen_bing_tiao_bian",
+    "source_chapter": "上焦篇 湿温第四十三条 (composite case illustrating 《温病条辨》 rubric)",
+    "presenting_picture": {
+      "zh": "某男，夏秋之交感受湿温，症见头痛恶寒，身重疼痛，午后身热，面色淡黄，胸闷不饥，舌白不渴，脉弦细而濡。",
+      "en": "A man at the turn of summer and autumn contracted damp-warmth: headache with aversion to cold, body heaviness and aching, afternoon fever, a pallid-yellowish complexion, chest oppression without hunger, white tongue without thirst, and a wiry thin soggy pulse."
+    },
+    "diagnosis": {
+      "zh": "湿温初起，湿重于热，邪阻三焦气机。",
+      "en": "Early-stage damp-warmth with dampness heavier than heat, the pathogen obstructing the qi dynamic of the Triple Burner."
+    },
+    "formula_used_key": "san_ren_tang",
+    "herbs_modified": [
+      "xing_ren",
+      "yi_yi_ren",
+      "hua_shi",
+      "hou_po",
+      "ban_xia"
+    ],
+    "outcome": {
+      "zh": "以三仁汤宣畅气机、清利湿热。七剂后身热渐退，胸闷得舒，小便渐利；续进五剂而愈。",
+      "en": "San Ren Tang was used to unblock and smooth the qi dynamic and to clear-disinhibit damp-heat. After seven doses the fever gradually abated, chest oppression eased, and urination became free; five further doses brought recovery."
+    },
+    "linked_pattern_keys": [
+      "shang_jiao_shi_re"
+    ],
+    "teaching_point": {
+      "zh": "鞠通立湿温三禁：'汗之则神昏耳聋，甚则目瞑不欲言；下之则洞泄；润之则病深不解。'三仁汤三焦分消，杏仁宣上焦肺气，白蔻仁畅中焦，薏苡仁渗下焦湿，乃治湿温之正法。",
+      "en": "Wu Jutong laid down three prohibitions for damp-warmth: 'Diaphoresis causes clouded spirit and deafness, in severe cases shut eyes and reluctance to speak; purgation causes torrential diarrhea; moistening deepens the illness unresolved.' San Ren Tang disperses through all three burners — Xing Ren diffuses Upper Burner Lung qi, Bai Dou Kou smooths the Middle, Yi Yi Ren percolates Lower Burner dampness — the orthodox method for damp-warmth."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "wu_jutong_qing_hao_bie_jia_tang_zheng",
+    "slug": "wu-jutong-qing-hao-bie-jia-tang-zheng",
+    "title_zh": "吴鞠通治阴虚发热青蒿鳖甲汤证案",
+    "title_en": "Wu Jutong: Yin-Vacuity Fever Treated with Qing Hao Bie Jia Tang",
+    "author_zh": "吴鞠通",
+    "author_en": "Wu Jutong",
+    "source_text_key": "wen_bing_tiao_bian",
+    "source_chapter": "下焦篇 温病第八十三条 (composite case illustrating 《温病条辨》 rubric)",
+    "presenting_picture": {
+      "zh": "某妇，温病后余热未尽，夜热早凉，热退无汗，形体消瘦，口干咽燥，两颧潮红，舌红少苔，脉细数。",
+      "en": "A woman with residual heat after warm disease: fever at night, cool by morning; heat receding without sweating; emaciated frame; dry mouth and parched throat; tidal flush over both cheekbones; red tongue with scant coating; and a thin rapid pulse."
+    },
+    "diagnosis": {
+      "zh": "温病后期邪伏阴分，阴液耗伤，真阴未复。",
+      "en": "In the late stage of warm disease the pathogen lurks in the yin division, yin humors are depleted, and true yin has not yet recovered."
+    },
+    "formula_used_key": "qing_hao_bie_jia_tang",
+    "herbs_modified": [
+      "qing_hao",
+      "sheng_di_huang",
+      "zhi_mu",
+      "mu_dan_pi"
+    ],
+    "outcome": {
+      "zh": "以青蒿鳖甲汤养阴透热。五剂后夜热减轻，盗汗未作；十剂后热净神安，舌上津回；继以沙参麦冬汤调理旬日而康。",
+      "en": "Qing Hao Bie Jia Tang was used to nourish yin and vent heat. After five doses the night fever lessened and no night sweat occurred; after ten doses the heat cleared and the spirit settled, moisture returning to the tongue; a subsequent ten days' regulation with Sha Shen Mai Dong Tang restored health."
+    },
+    "linked_pattern_keys": [
+      "yin_xu_zheng"
+    ],
+    "teaching_point": {
+      "zh": "鞠通自注：'夜行阴分而热，日行阳分而凉，邪气深伏于阴可知。'此方妙在鳖甲入阴搜邪，青蒿领邪外出，一入一出，是为'先入后出'之法。纯用滋阴则邪无出路，纯用透邪则阴愈伤——两者相合，方为善治。",
+      "en": "Wu Jutong's own commentary: 'Fever at night when moving in the yin division, coolness by day when moving in the yang division — one knows the pathogen is lurking deep in the yin.' The formula's cleverness lies in Bie Jia's entry into yin to search out the pathogen and Qing Hao's leading it outward — one entering, one exiting — the so-called 'first enter, then exit' method. Purely nourishing yin leaves the pathogen without exit; purely venting it further damages yin — only their union is skillful treatment."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "wu_jutong_qing_ying_tang_zheng",
+    "slug": "wu-jutong-qing-ying-tang-zheng",
+    "title_zh": "吴鞠通治热入营分清营汤证案",
+    "title_en": "Wu Jutong: Heat Entering the Nutritive Treated with Qing Ying Tang",
+    "author_zh": "吴鞠通",
+    "author_en": "Wu Jutong",
+    "source_text_key": "wen_bing_tiao_bian",
+    "source_chapter": "上焦篇 风温第三十条 (composite case illustrating 《温病条辨》 rubric)",
+    "presenting_picture": {
+      "zh": "某男，温病数日，身热夜甚，心烦不寐，时有谵语，斑疹隐隐，口干而不甚渴饮，目常喜开或喜闭，舌质红绛而干，脉细数。",
+      "en": "A man several days into warm disease: fever worse at night, vexation and insomnia, intermittent delirious speech, faint macular rash, dry mouth yet without marked desire for drink, eyes alternately wide open and clamped shut, a crimson dry tongue, and a thin rapid pulse."
+    },
+    "diagnosis": {
+      "zh": "热邪内陷心营，营阴受灼，心神被扰。",
+      "en": "Heat pathogen sunk inward into the Heart-nutritive, scorching nutritive yin and disturbing the Heart-spirit."
+    },
+    "formula_used_key": "qing_ying_tang",
+    "herbs_modified": [
+      "sheng_di_huang",
+      "xuan_shen",
+      "mai_dong",
+      "jin_yin_hua",
+      "lian_qiao",
+      "huang_lian",
+      "dan_shen"
+    ],
+    "outcome": {
+      "zh": "以清营汤清营透热、养阴解毒（犀角今以水牛角代之）。二剂后神清谵止，斑疹渐隐；四剂后身凉脉静，继以养阴清热之剂调理而安。",
+      "en": "Qing Ying Tang was used to clear the nutritive, vent heat, nourish yin and resolve toxicity (Xi Jiao now being replaced with Shui Niu Jiao). After two doses the spirit cleared and delirium stopped, and the rash gradually faded; after four doses the body cooled and the pulse quieted, with subsequent regulation by yin-nourishing, heat-clearing medicines restoring peace."
+    },
+    "linked_pattern_keys": [
+      "ying_fen_zheng"
+    ],
+    "teaching_point": {
+      "zh": "鞠通承叶氏'入营犹可透热转气'之旨，立清营汤。方中银花、连翘、竹叶心即为'透热转气'之用，引营分之邪复出气分而解；生地、玄参、麦冬以养营阴；犀角、黄连清心火。此即温病治法'透'字为眼目。",
+      "en": "Wu Jutong inherited Ye Tianshi's dictum 'once heat enters the nutritive, one may still vent it back out to the qi level' and established Qing Ying Tang. In the formula Jin Yin Hua, Lian Qiao, and Zhu Ye Xin are precisely the 'vent heat, return it to qi' component, leading the nutritive-level pathogen back out to the qi level for resolution; Sheng Di, Xuan Shen, and Mai Dong nourish nutritive yin; Xi Jiao and Huang Lian clear Heart fire. In the treatment of warm disease, the character 'vent' is the very eye of the method."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "zhang_zhongjing_tai_yang_zhong_feng_case",
+    "slug": "zhang-zhongjing-tai-yang-zhong-feng",
+    "title_zh": "太阳中风 桂枝汤证案",
+    "title_en": "Taiyang Wind-Stroke: A Gui Zhi Tang Case",
+    "author_zh": "张仲景",
+    "author_en": "Zhang Zhongjing",
+    "source_text_key": "shang_han_lun",
+    "source_chapter": "辨太阳病脉证并治上 · 条文示例案 (编辑整理)",
+    "presenting_picture": {
+      "zh": "患者,男,四十岁。初冬受风,忽起头项强痛,发热恶风,时自汗出,鼻鸣干呕,不欲饮水。舌淡苔薄白而润,脉浮缓。",
+      "en": "A forty-year-old male. Caught in a chill wind in early winter, he suddenly developed stiff neck and headache, fever with aversion to wind, spontaneous sweating, a stuffy-nosed dry retching, and no desire for drink. Tongue pale with thin white moist coat; pulse floating and moderate (relaxed)."
+    },
+    "diagnosis": {
+      "zh": "太阳中风,营卫不和,卫强营弱,表虚风袭。",
+      "en": "Taiyang wind-stroke with disharmony of ying and wei; wei is relatively strong and ying relatively weak — an exterior-vacuity wind invasion."
+    },
+    "formula_used_key": "gui_zhi_tang",
+    "herbs_modified": [
+      "gui_zhi",
+      "bai_shao",
+      "sheng_jiang",
+      "da_zao",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "服桂枝汤一剂,啜热稀粥以助药力,温覆取微汗。汗出遍身漐漐,热退身和,二剂而诸症悉除。",
+      "en": "One dose of Gui Zhi Tang was given, followed by a bowl of warm thin gruel to assist the medicine, with warm covering to induce slight sweat. A gentle all-over sweat broke out, fever abated, and the body relaxed; after a second dose all symptoms resolved."
+    },
+    "linked_pattern_keys": [
+      "wai_gan_feng_han_biao_xu"
+    ],
+    "teaching_point": {
+      "zh": "桂枝汤为群方之冠,调和营卫而非发汗之剂。辨证要在脉浮缓、自汗出、恶风,服后须啜粥温覆,方能汗解。",
+      "en": "Gui Zhi Tang is chief of all formulas: it harmonises ying and wei rather than forcing sweat. The key signs are floating-moderate pulse, spontaneous sweat, and aversion to wind; hot gruel and warm covering after dosing are essential to release via sweat."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "zhang_zhongjing_tai_yang_shang_han_case",
+    "slug": "zhang-zhongjing-tai-yang-shang-han",
+    "title_zh": "太阳伤寒 麻黄汤证案",
+    "title_en": "Taiyang Cold-Damage: A Ma Huang Tang Case",
+    "author_zh": "张仲景",
+    "author_en": "Zhang Zhongjing",
+    "source_text_key": "shang_han_lun",
+    "source_chapter": "辨太阳病脉证并治中 · 条文示例案 (编辑整理)",
+    "presenting_picture": {
+      "zh": "患者,男,三十二岁,冬月冒雪远行。归即恶寒发热,头痛身疼,腰痛骨节烦疼,无汗而喘,不渴。舌苔薄白,脉浮紧。",
+      "en": "A thirty-two-year-old male who had trudged a long way through winter snow. On returning he developed aversion to cold with fever, headache and body aches, lumbar pain and vexing bone-joint pain, wheezing without sweat, and no thirst. Tongue with thin white coat; pulse floating and tight."
+    },
+    "diagnosis": {
+      "zh": "太阳伤寒,寒邪束表,卫闭营郁,肺气失宣。",
+      "en": "Taiyang cold-damage: cold evil binds the exterior, wei is locked and ying is constrained, and lung qi loses its diffusing function."
+    },
+    "formula_used_key": "ma_huang_tang",
+    "herbs_modified": [
+      "ma_huang",
+      "gui_zhi",
+      "xing_ren",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "一剂药下,温覆片刻,遍身漐漐汗出,寒热顿解,喘止身和。次日仅以稀粥将养而愈。",
+      "en": "One dose was given; after a short period of warm covering a general light sweat broke out, the chills-and-fever suddenly resolved, wheezing stopped, and the body relaxed. The next day he needed only thin gruel for recovery."
+    },
+    "linked_pattern_keys": [
+      "wai_gan_feng_han_biao_shi"
+    ],
+    "teaching_point": {
+      "zh": "无汗而喘、脉浮紧为麻黄汤的铁证。发汗峻剂,中病即止,汗出即停后服,勿令大汗亡阳。",
+      "en": "Absence of sweat with wheezing and a floating-tight pulse are the ironclad markers for Ma Huang Tang. Being a vigorous diaphoretic, it should be stopped as soon as sweat appears — never push it to the point of profuse sweating and yang collapse."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "zhang_zhongjing_yang_ming_fu_shi_case",
+    "slug": "zhang-zhongjing-yang-ming-fu-shi",
+    "title_zh": "阳明腑实 大承气汤证案",
+    "title_en": "Yangming Bowel Repletion: A Da Cheng Qi Tang Case",
+    "author_zh": "张仲景",
+    "author_en": "Zhang Zhongjing",
+    "source_text_key": "shang_han_lun",
+    "source_chapter": "辨阳明病脉证并治 · 条文示例案 (编辑整理)",
+    "presenting_picture": {
+      "zh": "患者,男,五十岁。伤寒六七日,表证已罢,壮热不恶寒,反恶热,日晡所潮热,手足濈然汗出,腹大满而硬,绕脐痛,大便不通已五日,谵语狂乱,目中不了了,渴欲饮冷。舌苔焦黄起刺,脉沉实有力。",
+      "en": "A fifty-year-old male. Six or seven days into a cold-damage illness the exterior signs had resolved, leaving vigorous fever without aversion to cold — indeed aversion to heat — with tidal fever toward late afternoon, constant sweating of palms and soles, a huge hard distended abdomen with periumbilical pain, no stool for five days, delirious speech, blurred vision, and thirst for cold drinks. Tongue with charred-yellow prickly coat; pulse deep, full, and forceful."
+    },
+    "diagnosis": {
+      "zh": "阳明腑实,燥屎内结,热盛津伤,痞满燥实坚俱备。",
+      "en": "Yangming bowel repletion: dry stool bound within, blazing heat injuring fluids — with the four signs of fullness, distention, dryness, and hardness all present."
+    },
+    "formula_used_key": "da_cheng_qi_tang",
+    "herbs_modified": [
+      "da_huang",
+      "mang_xiao",
+      "zhi_shi",
+      "hou_po"
+    ],
+    "outcome": {
+      "zh": "急下之,一服而泻下燥屎数枚,臭秽异常,腹满顿减,谵语渐止。再进半剂以清余热,次日热退神清,粥食调养旬日而愈。",
+      "en": "Urgent purgation was given. One dose brought down several lumps of dry foul stool; abdominal fullness at once eased and the delirium gradually stopped. Half a further dose cleared residual heat; the next day fever was gone and the spirit clear, and after ten days of gruel-based convalescence he recovered."
+    },
+    "linked_pattern_keys": [
+      "yang_ming_fu_shi"
+    ],
+    "teaching_point": {
+      "zh": "痞满燥实坚悉具,当急下存阴,迟则津竭。中病即止,得快利后勿再服,以防伤正。",
+      "en": "When fullness, distention, dryness, hardness, and repletion are all present, one must purge urgently to preserve yin — delay will exhaust the fluids. Stop as soon as the target is hit: once brisk diarrhea comes, do not re-dose, lest upright qi be harmed."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "zhang_zhongjing_shao_yang_case",
+    "slug": "zhang-zhongjing-shao-yang-zheng",
+    "title_zh": "少阳半表半里 小柴胡汤证案",
+    "title_en": "Shaoyang Half-Exterior Half-Interior: A Xiao Chai Hu Tang Case",
+    "author_zh": "张仲景",
+    "author_en": "Zhang Zhongjing",
+    "source_text_key": "shang_han_lun",
+    "source_chapter": "辨少阳病脉证并治 · 条文示例案 (编辑整理)",
+    "presenting_picture": {
+      "zh": "患者,女,二十八岁。外感七日,寒热往来,一日数作,胸胁苦满,心烦喜呕,默默不欲饮食,口苦咽干,目眩。舌苔薄白微黄,脉弦。",
+      "en": "A twenty-eight-year-old female. Seven days into an external contraction she has alternating chills and fever several times a day, bitter fullness in the chest and hypochondrium, vexation with tendency to vomit, silent loss of appetite, bitter taste in mouth with dry throat, and dizziness. Tongue with thin white and slightly yellow coat; pulse wiry."
+    },
+    "diagnosis": {
+      "zh": "邪入少阳,枢机不利,胆胃不和,半表半里之证。",
+      "en": "The evil has entered Shaoyang; the pivot mechanism is obstructed, gallbladder and stomach are in disharmony — a classical half-exterior, half-interior pattern."
+    },
+    "formula_used_key": "xiao_chai_hu_tang",
+    "herbs_modified": [
+      "chai_hu",
+      "huang_qin",
+      "ban_xia",
+      "ren_shen",
+      "sheng_jiang",
+      "da_zao",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "服药一剂,寒热减半,胸胁苦满渐舒;三剂后往来寒热止,呕逆除,胃纳复;调理数日而痊。",
+      "en": "After one dose the chills-and-fever were halved and the hypochondriac fullness began to ease; after three doses the alternating fever stopped, retching ceased, and appetite returned. A few more days of gentle care brought full recovery."
+    },
+    "linked_pattern_keys": [
+      "shaoyang_zheng"
+    ],
+    "teaching_point": {
+      "zh": "柴胡证但见一证便是,不必悉具。小柴胡和解少阳,为枢机之剂,切忌汗下。",
+      "en": "For a Chai Hu presentation, even one of its cardinal signs suffices — not all need be present. Xiao Chai Hu Tang harmonises Shaoyang as the pivot; sweating and purging are strictly contraindicated."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "zhang_zhongjing_tai_yin_xia_li_case",
+    "slug": "zhang-zhongjing-tai-yin-xia-li",
+    "title_zh": "太阴下利 理中汤证案",
+    "title_en": "Taiyin Diarrhea: A Li Zhong Tang Case",
+    "author_zh": "张仲景",
+    "author_en": "Zhang Zhongjing",
+    "source_text_key": "shang_han_lun",
+    "source_chapter": "辨太阴病脉证并治 · 条文示例案 (编辑整理)",
+    "presenting_picture": {
+      "zh": "患者,男,四十五岁。素体脾弱,过食生冷瓜果,遂腹满而吐,食不下,自利益甚,时腹自痛,下利清谷,完谷不化,四肢不温,口不渴。舌淡胖有齿痕,苔白滑,脉沉迟无力。",
+      "en": "A forty-five-year-old male with a constitutionally weak spleen who, after eating too much raw and cold melon and fruit, developed abdominal fullness with vomiting, inability to take food, worsening diarrhea, intermittent spontaneous abdominal pain, passage of clear undigested grain, cold limbs, and no thirst. Tongue pale and swollen with teeth-marks, coating white and slippery; pulse deep, slow, and weak."
+    },
+    "diagnosis": {
+      "zh": "太阴虚寒,脾阳不振,中焦失运,寒湿内生。",
+      "en": "Taiyin vacuity-cold: spleen yang is unaroused, the middle burner fails to transform and transport, and cold-damp arises internally."
+    },
+    "formula_used_key": "li_zhong_tang",
+    "herbs_modified": [
+      "ren_shen",
+      "gan_jiang",
+      "bai_zhu",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "进药二剂,腹痛止,下利减;四剂后大便成形,四肢转温,饮食渐增;后以丸剂调养月余,脾阳复健。",
+      "en": "After two doses abdominal pain stopped and diarrhea lessened; after four doses stools formed, the limbs warmed, and appetite returned. A follow-up pill form was used for over a month, fully restoring spleen yang."
+    },
+    "linked_pattern_keys": [
+      "tai_yin_bing",
+      "pi_qi_xu"
+    ],
+    "teaching_point": {
+      "zh": "太阴之为病,腹满而吐,食不下,自利益甚,时腹自痛。理中者,理中焦也,干姜温中为君,非此不足以复脾阳。",
+      "en": "Taiyin disease: abdominal fullness, vomiting, inability to eat, increasing diarrhea, and intermittent spontaneous abdominal pain. 'Li Zhong' means to order the middle burner; dried ginger is sovereign — without it one cannot restore spleen yang."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "zhang_zhongjing_shao_yin_han_hua_case",
+    "slug": "zhang-zhongjing-shao-yin-han-hua",
+    "title_zh": "少阴寒化 四逆汤证案",
+    "title_en": "Shaoyin Cold-Transformation: A Si Ni Tang Case",
+    "author_zh": "张仲景",
+    "author_en": "Zhang Zhongjing",
+    "source_text_key": "shang_han_lun",
+    "source_chapter": "辨少阴病脉证并治 · 条文示例案 (编辑整理)",
+    "presenting_picture": {
+      "zh": "患者,男,六十岁。伤寒误汗后,但欲寐,恶寒蜷卧,四肢厥冷至肘膝,下利清谷,小便清长,冷汗自出,不渴或渴喜热饮。舌淡胖苔白滑,脉沉微欲绝。",
+      "en": "A sixty-year-old male. After mistaken induction of sweat in a cold-damage illness, he was only drowsy, curled up with aversion to cold, his limbs icy cold up to elbow and knee, passing clear undigested stool and copious clear urine, with cold spontaneous sweat, no thirst or thirst desiring warm drink. Tongue pale and swollen with white slippery coat; pulse deep, faint, on the verge of expiring."
+    },
+    "diagnosis": {
+      "zh": "少阴寒化,阳气衰微,阴寒内盛,真阳欲脱。",
+      "en": "Shaoyin cold-transformation: yang qi is declining, yin-cold rages within, and the true yang is on the point of collapse."
+    },
+    "formula_used_key": "si_ni_tang",
+    "herbs_modified": [
+      "fu_zi",
+      "gan_jiang",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "急煎四逆汤一剂,令频频温服。服后四肢渐温,冷汗止,下利减。继进二剂,脉渐有力,神清能食。后以附子理中丸调养半月,精神复常。",
+      "en": "Si Ni Tang was urgently decocted and given in frequent warm sips. After dosing the limbs gradually warmed, the cold sweat stopped, and diarrhea lessened. Two further doses restored pulse strength, clear spirit, and appetite. Fu Zi Li Zhong Wan was then used for half a month, and normal vigour returned."
+    },
+    "linked_pattern_keys": [
+      "shao_yin_han_hua",
+      "shen_yang_xu"
+    ],
+    "teaching_point": {
+      "zh": "少阴病,脉微细,但欲寐,此阳微之象也。四逆汤回阳救逆,生附子非炙不减其毒,非干姜不彰其力,非炙甘草不缓其烈——三药相须,缺一不可。",
+      "en": "In Shaoyin disease the faint thin pulse and mere desire to sleep are signs of waning yang. Si Ni Tang restores yang and reverses counterflow: raw aconite without steaming keeps its potency, dried ginger reveals its force, and honey-fried licorice tempers its violence — the three must work together, with none omitted."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "li_dongyuan_qi_xu_fa_re_case",
+    "slug": "li-dongyuan-qi-xu-fa-re",
+    "title_zh": "气虚发热 补中益气汤证案",
+    "title_en": "Qi-Vacuity Fever: A Bu Zhong Yi Qi Tang Case",
+    "author_zh": "李东垣",
+    "author_en": "Li Dongyuan",
+    "source_text_key": "pi_wei_lun",
+    "source_chapter": "饮食劳倦所伤始为热中论 · 甘温除热案",
+    "presenting_picture": {
+      "zh": "患者,男,四十八岁,儒吏,劳心过度,饮食失节。身热自汗,热在肌表,得劳则甚,倦怠懒言,气短乏力,头晕目眩,食少便溏,舌淡苔薄白,脉洪大而虚,重按无力。",
+      "en": "A forty-eight-year-old male clerk, mentally overworked and irregular in meals. He presents with body heat and spontaneous sweating, heat felt at the surface and worsened by exertion, with lassitude, reluctance to speak, shortness of breath, dizziness, reduced appetite, and loose stool. Tongue pale with thin white coat; pulse surging and large but empty, forceless on deep pressure."
+    },
+    "diagnosis": {
+      "zh": "脾胃虚弱,中气下陷,阴火上冲,气虚发热之证。",
+      "en": "Weakness of spleen and stomach with sinking of middle qi and upsurge of yin-fire — a pattern of qi-vacuity fever."
+    },
+    "formula_used_key": "bu_zhong_yi_qi_tang",
+    "herbs_modified": [
+      "huang_qi",
+      "ren_shen",
+      "bai_zhu",
+      "gan_cao",
+      "dang_gui",
+      "chen_pi",
+      "sheng_ma",
+      "chai_hu"
+    ],
+    "outcome": {
+      "zh": "服五剂,身热渐退,汗止;十剂后倦怠改善,食欲大增;继以丸剂调治月余,诸症悉平,精神健旺如初。",
+      "en": "After five doses the body heat gradually abated and sweating stopped; after ten doses fatigue improved and appetite returned markedly. A pill form was then used for over a month, and all symptoms resolved with vigour fully restored."
+    },
+    "linked_pattern_keys": [
+      "pi_qi_xia_xian",
+      "pi_qi_xu"
+    ],
+    "teaching_point": {
+      "zh": "甘温除大热,非苦寒之热可比。脉洪大而按之无力是气虚发热之眼目,误用寒凉必坏中气。升麻、柴胡少用以升提清阳,乃东垣创格。",
+      "en": "Sweet-warm herbs that dispel great heat: not a heat for bitter-cold to treat. A surging-large pulse that is forceless on pressure is the hallmark of qi-vacuity fever; bitter-cold error here will wreck the middle qi. Small doses of Sheng Ma and Chai Hu to lift clear yang are Li Dongyuan's signature innovation."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "li_dongyuan_pi_wei_xu_ruo_case",
+    "slug": "li-dongyuan-pi-wei-xu-ruo",
+    "title_zh": "脾胃虚弱 四君子汤证案",
+    "title_en": "Spleen-Stomach Vacuity: A Si Jun Zi Tang Case",
+    "author_zh": "李东垣",
+    "author_en": "Li Dongyuan",
+    "source_text_key": "pi_wei_lun",
+    "source_chapter": "脾胃虚则九窍不通论 · 四君子调养案",
+    "presenting_picture": {
+      "zh": "患者,妇,三十六岁。素体虚弱,产后调摄失宜,面色萎黄,形瘦神疲,语声低微,食少便溏,四肢无力。舌淡苔白,脉虚缓。",
+      "en": "A thirty-six-year-old woman, constitutionally frail and poorly nursed after childbirth. She presents with sallow withered complexion, thinness, weary spirit, low weak voice, reduced appetite with loose stool, and limb weakness. Tongue pale with white coat; pulse empty and moderate."
+    },
+    "diagnosis": {
+      "zh": "脾胃气虚,运化无力,气血生化不足。",
+      "en": "Qi vacuity of spleen and stomach: the transporting-transforming function is weak, so production of qi and blood is insufficient."
+    },
+    "formula_used_key": "si_jun_zi_tang",
+    "herbs_modified": [
+      "ren_shen",
+      "bai_zhu",
+      "fu_ling",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "服十余剂,食纳渐增,大便转实,面色转润;再合当归、黄芪续服一月,气血渐充,身体康复。",
+      "en": "After ten-odd doses appetite grew, stool firmed, and complexion took on a glow. Dang Gui and Huang Qi were then added for another month, gradually filling qi and blood and restoring health."
+    },
+    "linked_pattern_keys": [
+      "pi_qi_xu",
+      "qi_xue_liang_xu"
+    ],
+    "teaching_point": {
+      "zh": "四君子汤平补脾胃之剂,药味平和,最宜久服。治脾胃虚弱之本,而诸证自除;此即'培土生金'、'补后天以养先天'之意。",
+      "en": "Si Jun Zi Tang is a mild tonic for spleen and stomach, gentle enough for long-term use. Treating the root of spleen-stomach vacuity resolves the branch symptoms of itself — the principle of 'banking earth to generate metal' and 'tonifying the acquired to nourish the congenital'."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "zhu_danxi_xiang_huo_wang_dong_case",
+    "slug": "zhu-danxi-xiang-huo-wang-dong",
+    "title_zh": "相火妄动 六味地黄丸证案",
+    "title_en": "Stirring of Ministerial Fire: A Liu Wei Di Huang Wan Case",
+    "author_zh": "朱丹溪 (医方集解辑录)",
+    "author_en": "Zhu Danxi (as anthologised in Yi Fang Ji Jie)",
+    "source_text_key": "yi_fang_ji_jie",
+    "source_chapter": "补养之剂 · 六味地黄丸 · 丹溪治相火案",
+    "presenting_picture": {
+      "zh": "患者,男,三十四岁,嗜酒色,夜寐不安。腰膝酸软,头晕耳鸣,五心烦热,盗汗梦遗,咽干舌红少苔,脉细数。",
+      "en": "A thirty-four-year-old male, indulgent in wine and intimacy, restless at night. He presents with sore weak low back and knees, dizziness with tinnitus, vexing heat in the five centres, night sweats and nocturnal emission, dry throat, red tongue with scanty coat, and a thin rapid pulse."
+    },
+    "diagnosis": {
+      "zh": "肾阴亏虚,水不制火,相火妄动,虚热内扰。",
+      "en": "Kidney yin vacuity — water fails to restrain fire, ministerial fire stirs astray, and empty heat harasses within."
+    },
+    "formula_used_key": "liu_wei_di_huang_wan",
+    "herbs_modified": [
+      "shu_di_huang",
+      "shan_zhu_yu",
+      "shan_yao",
+      "ze_xie",
+      "fu_ling",
+      "mu_dan_pi"
+    ],
+    "outcome": {
+      "zh": "以六味丸常服,佐以知母、黄柏少量,月余盗汗止,梦遗减,腰膝转强;三月后五心烦热悉除,精神健旺。",
+      "en": "Liu Wei Di Huang Wan was taken steadily with small additions of Zhi Mu and Huang Bai. After a month night sweats ceased and emissions diminished, with strengthening low back and knees; after three months the vexing heat in the five centres was entirely gone and vigour returned."
+    },
+    "linked_pattern_keys": [
+      "shen_yin_xu",
+      "yin_xu_zheng"
+    ],
+    "teaching_point": {
+      "zh": "丹溪倡'阳常有余,阴常不足',治杂病以滋阴降火为要。六味地黄三补三泻,壮水之主以制阳光,非苦寒直折可比。",
+      "en": "Danxi taught that 'yang is usually in repletion and yin is usually deficient', treating miscellaneous disorders mainly by enriching yin and descending fire. Liu Wei Di Huang pairs three tonifiers with three drainers — 'strengthening the ruler of water to restrain the radiance of yang' — a very different approach from bluntly cutting heat with bitter-cold."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "zhu_danxi_gan_yu_xiao_yao_case",
+    "slug": "zhu-danxi-gan-yu-xiao-yao",
+    "title_zh": "肝郁脾虚 逍遥散证案",
+    "title_en": "Liver Constraint with Spleen Vacuity: A Xiao Yao San Case",
+    "author_zh": "朱丹溪 (医方集解辑录)",
+    "author_en": "Zhu Danxi (as anthologised in Yi Fang Ji Jie)",
+    "source_text_key": "yi_fang_ji_jie",
+    "source_chapter": "和解之剂 · 逍遥散 · 丹溪治郁案",
+    "presenting_picture": {
+      "zh": "患者,妇,二十九岁。素多忧思,近因家事郁怒,两胁胀痛,胸闷善太息,月事不调,食欲不振,神疲倦怠,口燥咽干。舌淡红苔薄白,脉弦而虚。",
+      "en": "A twenty-nine-year-old woman, prone to worry and brooding, recently angered by family troubles. She presents with distending pain in both flanks, chest oppression, frequent sighing, menstrual irregularity, poor appetite, weary spirit, and dry mouth and throat. Tongue pale-red with thin white coat; pulse wiry and empty."
+    },
+    "diagnosis": {
+      "zh": "肝郁血虚,脾弱失运,肝脾不和之证。",
+      "en": "Liver constraint with blood vacuity and weak spleen failing to transport — a disharmony of liver and spleen."
+    },
+    "formula_used_key": "xiao_yao_san",
+    "herbs_modified": [
+      "chai_hu",
+      "dang_gui",
+      "bai_shao",
+      "bai_zhu",
+      "fu_ling",
+      "gan_cao",
+      "bo_he",
+      "sheng_jiang"
+    ],
+    "outcome": {
+      "zh": "服七剂,胁痛胸闷大减,情怀渐舒;再进半月,月事如期,食欲复常。丹溪云:'气血冲和,万病不生,一有怫郁,诸病生焉。'",
+      "en": "After seven doses the flank pain and chest oppression eased greatly and her mood began to relax; another half-month brought menses back on schedule and normal appetite. As Danxi says: 'When qi and blood flow smoothly, ten thousand diseases cannot arise; the moment there is stagnation, all diseases spring up.'"
+    },
+    "linked_pattern_keys": [
+      "gan_qi_yu_jie",
+      "xue_xu"
+    ],
+    "teaching_point": {
+      "zh": "逍遥散疏肝解郁而不伤正,养血健脾而不碍气。丹溪谓'郁者,结聚而不得发越也',故治郁在于调畅气机,非徒破气散结。",
+      "en": "Xiao Yao San soothes the liver and dissolves constraint without injuring the upright, nourishes blood and strengthens spleen without obstructing qi. Danxi defined 'constraint' as 'that which clumps and cannot issue forth' — so treating constraint means smoothing the qi dynamic, not merely breaking and dispersing."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "wang_qingren_xue_fu_zhu_yu_case",
+    "slug": "wang-qingren-xue-fu-zhu-yu",
+    "title_zh": "胸中血瘀 血府逐瘀汤证案",
+    "title_en": "Chest Blood Stasis: A Xue Fu Zhu Yu Tang Case",
+    "author_zh": "王清任",
+    "author_en": "Wang Qingren",
+    "source_text_key": "yi_lin_gai_cuo",
+    "source_chapter": "卷上 · 血府逐瘀汤所治之症目",
+    "presenting_picture": {
+      "zh": "患者,男,四十二岁。因怒郁失眠两年,胸中憋闷如堵,隐隐作痛,入夜更甚,头痛如针刺,部位固定,心悸烦躁,夜间盗汗梦多。口唇青紫,舌质紫暗有瘀斑,脉涩。",
+      "en": "A forty-two-year-old male with two years of insomnia since a fit of anger. He describes stifling oppression in the chest as if blocked, with a dull ache worse at night, stabbing fixed-location headaches, palpitations with irritability, and restless dreams with night sweats. Lips are cyanotic; tongue dark-purple with stasis spots; pulse choppy."
+    },
+    "diagnosis": {
+      "zh": "气机不畅,瘀血内停,胸中血府瘀阻之证。",
+      "en": "Qi movement is impeded and static blood lodges within, obstructing the chest 'mansion of blood'."
+    },
+    "formula_used_key": "xue_fu_zhu_yu_tang",
+    "herbs_modified": [
+      "tao_ren",
+      "hong_hua",
+      "dang_gui",
+      "chuan_xiong",
+      "chi_shao",
+      "niu_xi",
+      "chai_hu",
+      "jie_geng",
+      "sheng_di_huang",
+      "gan_cao"
+    ],
+    "outcome": {
+      "zh": "服七剂,胸中憋闷减半,夜能安寐;十四剂后头痛消失,舌上瘀斑渐退;续服一月而愈。",
+      "en": "After seven doses the chest oppression was halved and he could sleep through the night; after fourteen doses the headaches vanished and tongue stasis spots faded; a further month's dosing completed the cure."
+    },
+    "linked_pattern_keys": [
+      "gan_qi_yu_jie"
+    ],
+    "teaching_point": {
+      "zh": "王清任谓'治病之要诀,在明白气血',凡病日久不愈,多属瘀血。血府逐瘀汤行气活血而不伤正,柴胡、枳壳、桔梗升降气机,是为特色。",
+      "en": "Wang Qingren said: 'The key to treating disease lies in understanding qi and blood' — and chronic illness is most often blood stasis. Xue Fu Zhu Yu Tang moves qi and invigorates blood without harming the upright; its hallmark is the qi-mechanism ascent-descent created by Chai Hu, Zhi Ke, and Jie Geng."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "ye_tianshi_xu_lao_beng_lou_case",
+    "slug": "ye-tianshi-xu-lao-beng-lou",
+    "title_zh": "虚劳崩漏 归脾汤证案",
+    "title_en": "Consumptive Vacuity with Flooding: A Gui Pi Tang Case",
+    "author_zh": "叶天士",
+    "author_en": "Ye Tianshi",
+    "source_text_key": "lin_zheng_zhi_nan_yi_an",
+    "source_chapter": "卷九 · 崩漏 / 虚劳门",
+    "presenting_picture": {
+      "zh": "某妇,三十有五,产育频频,操劳过度。月事淋漓不断,已历三月,色淡质稀,心悸怔忡,少寐多梦,面色萎黄,食少懒言,四肢倦怠。舌淡苔薄,脉细弱。",
+      "en": "A thirty-five-year-old woman, frequently childbearing and overworked. Her menses have dribbled continuously for three months, pale and thin, accompanied by palpitations and fluster, poor sleep with many dreams, sallow complexion, reduced appetite with reluctance to speak, and limb weariness. Tongue pale with thin coat; pulse thin and weak."
+    },
+    "diagnosis": {
+      "zh": "心脾两虚,气不摄血,脾不统血之崩漏。",
+      "en": "Dual vacuity of heart and spleen; qi fails to contain blood and spleen fails to govern blood — a flooding-and-spotting case."
+    },
+    "formula_used_key": "gui_pi_tang",
+    "herbs_modified": [
+      "huang_qi",
+      "ren_shen",
+      "bai_zhu",
+      "fu_ling",
+      "suan_zao_ren",
+      "long_yan_rou",
+      "mu_xiang",
+      "dang_gui",
+      "yuan_zhi",
+      "gan_cao",
+      "sheng_jiang",
+      "da_zao"
+    ],
+    "outcome": {
+      "zh": "先生云:'宜甘温养心脾,摄血归经。'服归脾汤加阿胶、炮姜炭十剂,漏下渐止;继服二十剂,心悸寐安,气血渐复,经事调匀。",
+      "en": "The master said: 'Sweet-warm herbs should nourish heart and spleen, containing blood back to its channels.' Gui Pi Tang with added E Jiao and charred Pao Jiang was given for ten doses; spotting gradually stopped. Twenty more doses settled the palpitations and sleep, restored qi and blood, and regularised the menses."
+    },
+    "linked_pattern_keys": [
+      "pi_qi_xu",
+      "xin_xue_xu",
+      "qi_xue_liang_xu"
+    ],
+    "teaching_point": {
+      "zh": "天士治崩漏,不徒止血,而从脾统血、心主血论治。甘温养心脾,脾健则血自归经,此治病求本之法。",
+      "en": "Ye Tianshi treats flooding not by simply stanching blood, but by addressing spleen-governs-blood and heart-rules-blood. Sweet-warm herbs nourish heart and spleen; once the spleen is robust blood returns to its channels of itself — the way of treating the root."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "ye_tianshi_tou_feng_xuan_yun_case",
+    "slug": "ye-tianshi-tou-feng-xuan-yun",
+    "title_zh": "肝阳上亢 头风眩晕案",
+    "title_en": "Liver Yang Ascending: A Head-Wind Dizziness Case",
+    "author_zh": "叶天士",
+    "author_en": "Ye Tianshi",
+    "source_text_key": "lin_zheng_zhi_nan_yi_an",
+    "source_chapter": "卷七 · 头风 / 眩晕门",
+    "presenting_picture": {
+      "zh": "某翁,年逾花甲,素性急躁。头痛眩晕已历数载,每因恼怒加剧,头胀如裂,耳鸣如蝉,面赤颧红,心烦少寐,腰膝酸软,口苦咽干。舌红少津,脉弦细而数。",
+      "en": "An old gentleman past sixty, by nature quick to anger, with headaches and dizziness for several years, always worsened by vexation. His head feels bursting, tinnitus hisses like cicadas, face and cheekbones flush, he is vexed and sleeps little, with sore weak low back and knees, bitter mouth, and dry throat. Tongue red with scanty fluids; pulse wiry, thin, and rapid."
+    },
+    "diagnosis": {
+      "zh": "肝肾阴虚,水不涵木,肝阳偏亢,上扰清窍。",
+      "en": "Liver-kidney yin vacuity: water fails to moisten wood, liver yang rises in repletion and harasses the clear orifices above."
+    },
+    "formula_used_key": "liu_wei_di_huang_wan",
+    "herbs_modified": [
+      "shu_di_huang",
+      "shan_zhu_yu",
+      "shan_yao",
+      "ze_xie",
+      "fu_ling",
+      "mu_dan_pi",
+      "tian_ma",
+      "gou_teng",
+      "ju_hua",
+      "bai_shao"
+    ],
+    "outcome": {
+      "zh": "先生曰:'水亏木旺,非滋水涵木不可。'以六味地黄加天麻、钩藤、菊花、白芍常服,月余头痛大减,眩晕止,眠食俱安;继以丸剂缓图三月,诸症若失。",
+      "en": "The master said: 'Water is depleted and wood exuberant — only enriching water to moisten wood will do.' Liu Wei Di Huang Wan with Tian Ma, Gou Teng, Ju Hua, and Bai Shao was taken steadily. After a month headache was greatly reduced, dizziness stopped, and sleep and appetite settled; slow-acting pills for another three months saw the symptoms all but gone."
+    },
+    "linked_pattern_keys": [
+      "gan_yang_shang_kang",
+      "shen_yin_xu"
+    ],
+    "teaching_point": {
+      "zh": "叶氏治眩晕,每从'阳化内风'立论。滋水涵木,佐以天麻、钩藤潜阳熄风,是肝肾阴虚动风之正治。",
+      "en": "Ye Tianshi framed dizziness as 'yang transforming into internal wind'. Enriching water to moisten wood, with Tian Ma and Gou Teng to subdue yang and extinguish wind, is the orthodox treatment for liver-kidney yin vacuity stirring wind."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  },
+  {
+    "key": "qing_dai_tan_yin_xuan_yun_case",
+    "slug": "qing-dai-tan-yin-xuan-yun",
+    "title_zh": "风痰上扰 半夏白术天麻汤证案",
+    "title_en": "Wind-Phlegm Harassing Above: A Ban Xia Bai Zhu Tian Ma Tang Case",
+    "author_zh": "清代医家 (医方集解辑录)",
+    "author_en": "Qing-era physician (as anthologised in Yi Fang Ji Jie)",
+    "source_text_key": "yi_fang_ji_jie",
+    "source_chapter": "祛痰之剂 · 半夏白术天麻汤 · 痰饮眩晕案",
+    "presenting_picture": {
+      "zh": "患者,男,五十二岁,素嗜肥甘,体胖湿盛。近半年发作眩晕,每晕则头重如蒙,视物旋转,恶心呕吐痰涎,胸闷脘痞,食少神疲,头痛如裹。舌胖苔白腻,脉弦滑。",
+      "en": "A fifty-two-year-old male, fond of rich fatty foods, of damp, heavy build. For the past six months he has had bouts of dizziness in which the head feels swathed and heavy, objects whirl, he retches phlegmy mucus, with chest oppression, epigastric stuffiness, poor appetite, weary spirit, and a wrapped sensation of headache. Tongue swollen with greasy white coat; pulse wiry and slippery."
+    },
+    "diagnosis": {
+      "zh": "脾虚生湿,聚湿成痰,风痰上扰清空,发为眩晕。",
+      "en": "Spleen vacuity generates damp; the damp pools into phlegm; wind-phlegm harasses the clear empty space above, producing dizziness."
+    },
+    "formula_used_key": "ban_xia_bai_zhu_tian_ma_tang",
+    "herbs_modified": [
+      "ban_xia",
+      "bai_zhu",
+      "tian_ma",
+      "fu_ling",
+      "chen_pi",
+      "gan_cao",
+      "sheng_jiang",
+      "da_zao"
+    ],
+    "outcome": {
+      "zh": "服五剂,眩晕发作次数减半,呕恶止;续服十剂,头重胸闷悉除,纳谷转香;嘱忌肥甘厚味,调摄半载而未再作。",
+      "en": "After five doses the attacks were halved and the retching stopped; after ten more the head-heaviness and chest oppression were gone and appetite sweetened. With advice to abstain from rich greasy food and half a year of care, he had no further attacks."
+    },
+    "linked_pattern_keys": [
+      "tan_shi_zheng",
+      "pi_qi_xu"
+    ],
+    "teaching_point": {
+      "zh": "程钟龄云:'眩晕者,中风之渐也。'无痰不作眩,无虚不作眩。治痰为标,健脾为本;天麻定风,为风痰眩晕要药。",
+      "en": "Cheng Zhongling said: 'Dizziness is the forerunner of wind-stroke.' Without phlegm dizziness does not arise, and without vacuity it does not arise. Treating phlegm is the branch, strengthening the spleen is the root; Tian Ma settles wind and is the key herb for wind-phlegm dizziness."
+    },
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian Editorial",
+      "last_reviewed": "2026-04-09"
+    }
+  }
+]

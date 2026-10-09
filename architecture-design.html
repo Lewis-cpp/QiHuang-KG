@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="QiHuang-KG 架构设计：系统边界、数据模型、来源追溯、接口、导入发布、部署和验收。"><title>QiHuang-KG · 架构设计</title><style>
+:root{color-scheme:light;--bg:#f5f4ee;--paper:#fffefb;--ink:#213b32;--muted:#5b6b61;--line:#dbe2d8;--jade:#176650;--soft:#eaf2eb;--rust:#91563d;font-family:"Noto Sans SC","Microsoft YaHei",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:25px}body{margin:0;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.85}a{color:var(--jade);text-underline-offset:4px}a:hover{color:#073d2b}a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:3px solid #af7c31;outline-offset:4px}::selection{background:#d1e7d5}.wrap{max-width:1450px;margin:auto;padding:0 42px}.skip{position:absolute;top:-100px;left:16px;background:white;padding:10px;z-index:9}.skip:focus{top:10px}.masthead{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:25px 0;border-bottom:1px solid var(--line)}.brand{font-size:20px;font-weight:750;letter-spacing:.025em}.brand span{font-size:12px;color:var(--muted);font-weight:400;margin-left:15px;letter-spacing:.15em}.meta{font-size:12px;color:var(--muted)}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:50px;padding:47px 0 34px;align-items:center}.eyebrow{font-size:11px;color:var(--jade);letter-spacing:.15em;font-weight:700;margin:0 0 13px}.hero h1{font-size:clamp(33px,3.7vw,49px);line-height:1.28;letter-spacing:-.025em;margin:0 0 18px}.hero h1 span{display:block;color:var(--jade)}.hero .lead{font-size:15px;max-width:630px;color:var(--muted);margin:0}.decision{border-left:3px solid var(--jade);padding:7px 0 7px 24px}.decision strong{font-size:22px;line-height:1.6}.decision p{font-size:13px;color:var(--muted);margin:12px 0}.badge{display:inline-block;background:var(--soft);padding:3px 10px;border-radius:20px;color:var(--jade);font-size:11px}.quick{display:flex;flex-wrap:wrap;gap:15px;margin:20px 0 0;font-size:12px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:27px}.metric{background:var(--paper);border:1px solid var(--line);padding:17px 20px;border-top:3px solid var(--jade);border-radius:4px}.metric strong{display:block;font-size:29px;font-weight:650;line-height:1.35;letter-spacing:-.04em}.metric span{display:block;font-size:12px;color:var(--muted);margin-top:4px}
+.overview{background:#eaf0e8;border:1px solid #d3dfd2;border-radius:6px;padding:23px 27px;margin:0 0 35px}.overview figcaption{font-size:12px;color:var(--jade);font-weight:650;margin-bottom:19px}.flow{display:grid;grid-template-columns:1fr 30px 1fr 30px 1.15fr 30px 1fr;gap:9px;align-items:center}.node{border:1px solid #c5d6c8;border-radius:5px;background:#fffefb;padding:13px 16px;min-height:84px}.node b{display:block;font-size:15px}.node small{display:block;font-size:11px;color:var(--muted);margin-top:4px}.node.db{background:var(--jade);color:#fff;border-color:var(--jade)}.node.db small{color:#dcf0e3}.arrow{text-align:center;color:var(--jade);font-size:24px}.offline{margin-top:16px;padding-top:16px;border-top:1px dashed #bfcfbd;display:flex;justify-content:space-between;gap:20px;font-size:12px;color:var(--muted)}.offline b{color:var(--ink)}
+.layout{display:grid;grid-template-columns:202px minmax(0,1fr);gap:31px;align-items:start}.toc{position:sticky;top:24px;font-size:12px;max-height:calc(100vh - 48px);overflow:auto;padding-bottom:16px}.toc p{font-size:10px;letter-spacing:.17em;color:var(--muted);margin:0 0 14px}.toc a{display:block;text-decoration:none;color:var(--muted);padding:6px 0 6px 11px;border-left:2px solid var(--line)}.toc a:hover{border-color:var(--jade);color:var(--jade);background:var(--soft)}.toc span{color:#788a7c;font-size:10px;display:inline-block;width:24px}.toc .button{margin-top:19px;font:inherit;padding:7px 14px;background:var(--paper);border:1px solid var(--line);color:var(--jade);border-radius:4px;cursor:pointer}.toc .note{margin-top:14px;font-size:11px;letter-spacing:0;line-height:1.8}
+main{min-width:0}section{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:26px 30px;margin-bottom:22px;overflow-wrap:anywhere}section.introduction{border-left:3px solid var(--jade);font-size:14px}section.introduction p:first-child{font-size:11px;color:var(--muted);margin-top:0}h2{font-size:24px;line-height:1.45;margin:0 0 22px;padding-bottom:16px;border-bottom:1px solid var(--line);scroll-margin-top:22px}h3{font-size:17px;line-height:1.55;margin:26px 0 11px}p{margin:13px 0}section p:last-child{margin-bottom:0}ul,ol{padding-left:23px}li{margin:8px 0}li p{margin:4px 0}.table-wrap{overflow-x:auto;margin:18px 0;border-radius:3px}table{border-collapse:collapse;width:100%;text-align:left;font-size:12.5px;line-height:1.8;min-width:620px}th,td{padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}thead th{background:#eef2e9;color:#516555;font-size:11px;font-weight:650;letter-spacing:.02em}tbody td:first-child{font-weight:600;color:#244d3c;min-width:135px}tbody td{min-width:150px}code{font-family:"Noto Sans Mono","DejaVu Sans Mono",monospace;font-size:.84em;background:#edf1e8;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}pre{margin:18px 0;padding:19px 21px;background:#eff2eb;border:1px solid #dde5d8;border-radius:5px;overflow-x:auto;font-size:12px;line-height:1.85;tab-size:2}pre code{font-size:inherit;background:none;padding:0;white-space:pre;overflow-wrap:normal}strong{font-weight:650}.footer{border-top:1px solid var(--line);margin:20px 0 0;padding:24px 0 30px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:20px}
+@media(max-width:1050px){.wrap{padding:0 25px}.layout{grid-template-columns:178px minmax(0,1fr);gap:22px}.hero{gap:30px}.flow{grid-template-columns:1fr 20px 1fr 20px 1fr 20px 1fr;gap:5px}.node{padding:12px}.node b{font-size:13px}section{padding:24px}.overview{padding:20px}}
+@media(max-width:760px){.wrap{padding:0 17px}.masthead{padding:17px 0}.brand span{display:none}.meta{font-size:10px}.hero{grid-template-columns:1fr;gap:23px;padding-top:30px}.hero h1{font-size:34px}.decision{padding-left:17px}.decision strong{font-size:19px}.metrics{grid-template-columns:1fr 1fr;gap:10px}.metric{padding:14px 16px}.metric strong{font-size:26px}.overview{padding:18px;margin-bottom:23px}.flow{grid-template-columns:1fr;gap:5px}.node{min-height:0;display:flex;gap:15px;justify-content:space-between;align-items:center;padding:11px 14px}.node small{margin:0}.arrow{font-size:18px;line-height:18px;transform:rotate(90deg)}.offline{flex-direction:column;gap:6px}.layout{display:block}.toc{position:static;max-height:none;display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.toc p{display:none}.toc a{border:1px solid var(--line);padding:5px 9px;border-radius:3px;font-size:11px}.toc span{display:none}.toc .button{margin:0;padding:5px 9px}.toc .note{display:none}section{padding:21px 17px}h2{font-size:21px}h3{font-size:16px}body{font-size:14px}pre{padding:15px;font-size:11px}.footer{display:block;font-size:11px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{@page{size:A4;margin:16mm 13mm}html{scroll-behavior:auto}body{background:white;font-size:9.5pt;line-height:1.65;color:#182c23}.wrap{max-width:none;padding:0}.masthead{padding:0 0 10px}.hero{padding:20px 0;gap:22px}.hero h1{font-size:25pt}.hero .lead{font-size:9pt}.decision strong{font-size:13pt}.decision p{font-size:9pt}.quick,.skip,.toc{display:none}.metrics{gap:8px;margin-bottom:15px}.metric{padding:10px}.metric strong{font-size:20pt}.metric span{font-size:8pt}.overview{padding:14px;margin-bottom:16px;break-inside:avoid}.flow{grid-template-columns:1fr 15px 1fr 15px 1fr 15px 1fr;gap:5px}.node{padding:8px;min-height:63px}.node b{font-size:9pt}.node small{font-size:7pt}.offline{font-size:8pt;gap:10px}.layout{display:block}section{border:0;border-top:1px solid #b8c7b9;border-radius:0;padding:16px 0;margin:0 0 12px}section.introduction{border-left:0;font-size:9.5pt}h2{font-size:16pt;padding:0 0 10px;margin-bottom:14px}h3{font-size:11pt;margin:18px 0 8px}h2,h3{break-after:avoid}.table-wrap{overflow:visible;margin:12px 0}table{min-width:0;font-size:8pt;table-layout:fixed}td,th{padding:8px 6px;min-width:0!important;overflow-wrap:anywhere}tr{break-inside:avoid}thead{display:table-header-group}pre{font-size:7pt;padding:10px;white-space:pre-wrap;overflow:visible;break-inside:avoid}pre code{white-space:pre-wrap;overflow-wrap:anywhere}a{color:inherit;text-decoration:none}.footer{font-size:8pt;padding-bottom:0}}
+</style></head><body>
+<a class="skip" href="#main">跳转到架构正文</a><div class="wrap">
+<header class="masthead"><div class="brand">QiHuang-KG <span>岐黄 · 知识图谱</span></div><div class="meta">架构设计 v1.0 / 2026.10.04</div></header>
+<div class="hero"><div><p class="eyebrow">ARCHITECTURE / 系统与数据设计</p><h1>架构设计<span>让知识与依据相连。</span></h1><p class="lead">从现有数据出发，定义检索、图谱与证据之间的完整链路。首版采用单体应用与只读知识库，按完成条件逐步交付。</p><div class="quick"><a href="docs/architecture.md">设计正文 ↗</a><a href="docs/schema.sql">建表脚本 ↗</a><a href="docs/data-profile.json">数据审计 ↗</a></div></div><aside class="decision"><span class="badge">数据已入库 · 应用待实现</span><p><strong>Vue 3 + FastAPI + SQLite</strong></p><p>Cytoscape.js 展示局部图谱。实体、关系与证据共享一份发布快照；离线构建后校验，再切换版本。</p></aside></div>
+<div class="metrics"><div class="metric"><strong>599</strong><span>核心实体 · 四类知识</span></div><div class="metric"><strong>1,286</strong><span>预计去重图边 · 三类关系</span></div><div class="metric"><strong>7</strong><span>数据表 · 保留完整来源链</span></div><div class="metric"><strong>6</strong><span>MVP 功能 · 逐项定义验收</span></div></div>
+<figure class="overview"><figcaption>架构总览 / 在线查询与离线发布</figcaption><div class="flow"><div class="node"><b>学习者</b><small>查知识 · 看关系 · 找依据</small></div><div class="arrow" aria-hidden="true">→</div><div class="node"><b>Vue 页面</b><small>检索 / 详情 / 图谱 / 来源</small></div><div class="arrow" aria-hidden="true">→</div><div class="node"><b>FastAPI</b><small>输入校验 · 查询 · 证据定位</small></div><div class="arrow" aria-hidden="true">→</div><div class="node db"><b>SQLite 快照</b><small>实体 + 关系 + 证据</small></div></div><div class="offline"><span><b>离线发布</b>　原始资料 → 清洗与去重 → 证据映射 → 校验 → 新快照</span><span>每条关系可追溯 · 每次发布有版本</span></div></figure>
+<div class="layout"><nav class="toc" aria-label="架构文档目录"><p>CONTENTS / 设计目录</p><a href="#section-1"><span>01</span>范围与架构决策</a><a href="#section-2"><span>02</span>本地数据基线与问题处理</a><a href="#section-3"><span>03</span>系统结构与技术栈</a><a href="#section-4"><span>04</span>模块边界与页面</a><a href="#section-5"><span>05</span>领域模型与存储设计</a><a href="#section-6"><span>06</span>导入、校验与发布流程</a><a href="#section-7"><span>07</span>检索、图查询与解释</a><a href="#section-8"><span>08</span>HTTP 接口契约</a><a href="#section-9"><span>09</span>一条完整查询链路</a><a href="#section-10"><span>10</span>部署、可靠性与安全边界</a><a href="#section-11"><span>11</span>验收与验证计划</a><a href="#section-12"><span>12</span>演进触发条件</a><a href="#section-13"><span>13</span>实施顺序与目录</a><a href="#section-14"><span>14</span>设计依据与交付物</a><button class="button" type="button" onclick="window.print()">打印 / 保存 PDF</button><p class="note">数据导入已验证；应用功能与性能仍待实现。</p></nav><main id="main"><section class="introduction">
+<p>版本：1.0 · 设计日期：2026-10-04 · 状态：可进入 MVP 实现</p>
+<p>本设计承接<a href="project-scope-analysis.html">项目范围分析</a>，面向中医药学习者，完成“检索知识 → 阅读详情 → 探索关系 → 核对来源”的学习流程。首版采用 <strong>Vue 3 + TypeScript + Cytoscape.js、FastAPI、SQLite</strong>：一个 Web 应用、一个后端进程、一份只读知识库，通过离线导入工具发布数据。</p>
+<p>架构、建表脚本、结构审计及核心数据导入已完成。当前 SQLite 快照实际包含 599 条实体、1,286 条关系和 3,146 条证据；数据处理说明见<a href="docs/data-processing.md">运行说明</a>。应用接口与页面尚未实现，性能指标仍属于验收目标。未指定团队人数或交付日期，继续沿用范围分析中的单人毕业设计假设。</p>
+</section><section><h2 id="section-1">1. 范围与架构决策</h2>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">决策</th>
+<th scope="col">首版采用</th>
+<th scope="col">理由与重新考虑条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统形态</td>
+<td>模块化单体，公开只读查询、命令行离线维护</td>
+<td>六项核心功能共享数据与证据；出现独立团队或独立扩容需求后再拆服务</td>
+</tr>
+<tr>
+<td>数据范围</td>
+<td>本草典中药、方剂、证候、古籍四类实体</td>
+<td>先完成一组数据的完整链路；其余五组数据按明确场景接入</td>
+</tr>
+<tr>
+<td>存储</td>
+<td>SQLite 存实体、关系与证据，固定 SQL 查询一至两跳</td>
+<td>599 个实体、有限关系足以用单库表达图模型；多实例在线写入时评估 PostgreSQL</td>
+</tr>
+<tr>
+<td>图谱</td>
+<td>节点表与有向边表作为统一模型，浏览器渲染局部图</td>
+<td>图谱能力由关系模型、查询及解释体现；不把图库软件作为项目成果的替代</td>
+</tr>
+<tr>
+<td>数据发布</td>
+<td>新文件构建、校验、停服切换、保留旧版本</td>
+<td>避免原库被导入中断污染；首版允许短暂停机，不建设实时同步</td>
+</tr>
+<tr>
+<td>中文搜索</td>
+<td>规范化名称、可核实别名及字段子串匹配</td>
+<td>不依赖分词服务；召回或延迟不达标后再评估中文分词和全文索引</td>
+</tr>
+<tr>
+<td>问答与创新</td>
+<td>MVP 使用固定关系查询；后续优先可解释检索实验 I01</td>
+<td>复用图谱和证据；大模型、向量库、规则推理均为后续可选项</td>
+</tr>
+<tr>
+<td>用户体系</td>
+<td>浏览无需登录，无线上写接口</td>
+<td>出现在线维护或跨设备个人数据需求时再建设身份认证</td>
+</tr>
+</tbody>
+</table></div>
+<p>不引入 Redis、消息队列、微服务、双库同步和通用工作流引擎。Vastbase、Neo4j 或智能问答若成为任务书硬性要求，按第 12 节调整；当前设计不假设这些约束已存在。</p>
+</section><section><h2 id="section-2">2. 本地数据基线与问题处理</h2>
+<p>统计由<a href="scripts/audit_core_data.py">数据审计脚本</a>复现，完整结果与五个输入文件的 SHA-256 见<a href="docs/data-profile.json">结构审计报告</a>。统计只验证结构、引用和字段差异，不代表医学内容已核实。</p>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">项目</th>
+<th scope="col">本次实测</th>
+<th scope="col">设计含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中药 / 方剂 / 证候 / 古籍</td>
+<td>365 / 112 / 84 / 38，共 599 条</td>
+<td>四种实体类型分别保存，古籍标题取 <code>title_zh</code></td>
+</tr>
+<tr>
+<td>审核状态</td>
+<td>599 条均为 <code>editor-reviewed</code></td>
+<td>显示“来源编辑审核”，保存原始状态；不能按 <code>verified</code> 过滤</td>
+</tr>
+<tr>
+<td>原关系文件</td>
+<td>12 个数组，共 1,477 个记录对象</td>
+<td>部分记录含多个目标；原始对象数不能当作最终图边数</td>
+</tr>
+<tr>
+<td>方剂组成</td>
+<td>实体字段 751 条，关系数组 751 条，端点集合相同</td>
+<td>合并同一关系的证据，不能导入为 1,502 条边</td>
+</tr>
+<tr>
+<td>方剂关联证候</td>
+<td>86 条</td>
+<td>直接支持固定关系查询</td>
+</tr>
+<tr>
+<td>方剂书目来源</td>
+<td>主表 112 条，关系数组 48 条，合并后 113 对</td>
+<td>同一方剂可关联多部古籍，证据保留字段语义</td>
+</tr>
+<tr>
+<td>中药古籍引文</td>
+<td>371 条，其中 336 对可连接当前古籍节点</td>
+<td>10 条缺少 <code>text_key</code>，25 条引用的古籍不在核心实体中</td>
+</tr>
+<tr>
+<td>古籍原文段落</td>
+<td>57 段</td>
+<td>保留书目、章节、原文、译文、注释的区分</td>
+</tr>
+</tbody>
+</table></div>
+<p>按本设计的三个关系类型展开并去重，预计生成 <strong>1,286 条边</strong>：组成 751、方剂关联证候 86、方剂书目 113、中药书目 336。数据处理阶段已完成实际导入，结果与上述数量一致。药对、方剂衍生、证候鉴别和穴位经络关系暂缓导入，原始记录保留。</p>
+<h3>2.1 已发现的具体差异</h3>
+<ul>
+<li><code>zhu_ling_tang → ze_xie</code>：<code>formulas.json</code> 中角色为 <code>chen</code>，<code>relationships.json</code> 中为 <code>jun</code>，剂量均为 <code>9g</code>。组成边保留，<code>quality_state=conflicting</code>；共同剂量可显示，规范化角色为空，两项原始值随证据展示，等待人工确认。</li>
+<li><code>xiao_jian_zhong_tang</code>：实体的 <code>source_text_key</code> 指向《伤寒论》，关系文件另记《金匮要略》。两条书目关联并存，不自动判断某条错误，不把“另有记载”解释为唯一首出。</li>
+<li>35 条无法连接当前古籍实体的中药引文：原始段落和来源文字继续出现在中药详情中，标记“书目未关联”；不猜测古籍 ID，不创建带空名称的占位节点。</li>
+<li><code>schema.json</code> 的审核枚举说明与实际数据不一致。导入器以显式兼容规则识别当前值；未知值保存原文并映射为 <code>unknown</code>，列入报告。</li>
+</ul>
+<h3>2.2 空值、别名与剂量</h3>
+<p>当前四份核心文件没有统一别名字段。首版提供别名表与查询能力，初始可为空；需要补充时使用带来源定位和人工确认记录的整理文件。不能把古籍注释中的词、炮制品名称或相近词自动当成等价别名。</p>
+<p>缺失值使用 <code>null</code>，前端显示“来源未提供”。历史剂量按原始字符串展示，不统一折算古今单位，不根据通用剂量填补方剂剂量。四君子汤整理字段中的克数和古籍段落中的“各等分”分别引用各自位置；书中有该方不等于书中支持整理字段的全部数值。</p>
+</section><section><h2 id="section-3">3. 系统结构与技术栈</h2>
+<pre><code class="language-text">学习者浏览器
+  Vue 页面：检索目录 / 实体详情 / 局部图谱与关系查询 / 来源说明
+                    │ 同源 HTTP JSON，携带 build_id
+                    ▼
+FastAPI 单体：输入校验 → 知识查询 / 图查询 / 证据查询 → 响应模型
+                    │ 参数化 SQL，每请求独立只读连接
+                    ▼
+SQLite 发布快照：entity / alias / edge / evidence / source_record
+                dataset / build
+                    ▲ 离线生成并发布，Web 进程不写入
+导入工具：原始文件 → 标准化 → 去重与证据映射 → 完整性检查 → 新快照
+                    ▲
+datasets/raw（只读）+ datasets/curated（人工整理，后续按需增加）
+</code></pre>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">层次</th>
+<th scope="col">技术与职责</th>
+<th scope="col">约束</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>页面</td>
+<td>Vue 3、TypeScript、Vite；Vue Router 管理四类页面</td>
+<td>使用原生 <code>fetch</code>；暂不增加全局状态框架和大型组件库</td>
+</tr>
+<tr>
+<td>图谱视图</td>
+<td>Cytoscape.js：节点、边、布局、缩放及点击事件</td>
+<td>节点有形状和文字区分；同步提供可访问的关系列表</td>
+</tr>
+<tr>
+<td>HTTP 服务</td>
+<td>Python、FastAPI、Pydantic、Uvicorn</td>
+<td>校验参数与响应；OpenAPI 随实际路由生成，不手写第二套规范</td>
+</tr>
+<tr>
+<td>数据访问</td>
+<td>Python 标准库 <code>sqlite3</code>，少量参数化 SQL</td>
+<td>不预建通用 Repository、ORM 或数据库适配器</td>
+</tr>
+<tr>
+<td>导入与审计</td>
+<td>Python 的 <code>json</code>、<code>hashlib</code>、<code>pathlib</code>、<code>sqlite3</code></td>
+<td>导入失败有明确退出码，生成机器可读问题清单</td>
+</tr>
+<tr>
+<td>交付</td>
+<td>前端构建产物由后端提供，单机单进程启动</td>
+<td>Node 仅在构建时使用；发布后无运行时 CDN 依赖</td>
+</tr>
+</tbody>
+</table></div>
+<p>FastAPI 提供基于 OpenAPI 的接口说明与输入模型支持，适合把本设计契约落实为可验证路由。<a href="https://fastapi.tiangolo.com/features/" rel="noopener noreferrer">官方功能说明</a></p>
+<p>SQLite 官方说明其适合本地存储及低写入并发场景，同一数据库同时只有一个写入者。将导入与在线只读服务分开，是本项目的设计选择，不是数据库性能承诺。<a href="https://www.sqlite.org/whentouse.html" rel="noopener noreferrer">SQLite 适用场景</a></p>
+<p><code>sqlite3</code> 支持参数绑定和 URI 方式打开数据库，使用 <code>mode=ro</code> 限制服务写入；每个同步路由在当前执行线程创建和关闭连接，不在不同请求间共享一个连接。<a href="https://docs.python.org/3/library/sqlite3.html" rel="noopener noreferrer">Python 官方文档</a></p>
+<p>Vue 用于响应式页面，Cytoscape.js 专门承载图数据和交互。版本在实现启动时锁定到依赖锁文件；本设计不虚构“最新版本”。<a href="https://vuejs.org/guide/introduction.html" rel="noopener noreferrer">Vue 官方说明</a>、<a href="https://js.cytoscape.org/" rel="noopener noreferrer">Cytoscape.js 官方文档</a></p>
+</section><section><h2 id="section-4">4. 模块边界与页面</h2>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">模块</th>
+<th scope="col">负责的输入与输出</th>
+<th scope="col">对应范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>离线导入</td>
+<td>原始记录 → 数据快照、清洗报告、清单</td>
+<td>M01</td>
+</tr>
+<tr>
+<td>知识查询</td>
+<td>关键词、类型、ID → 列表、详情、已收录属性</td>
+<td>M02、M03</td>
+</tr>
+<tr>
+<td>图与关系查询</td>
+<td>中心实体、固定模板 → 节点、边、路径、证据 ID</td>
+<td>M04、M05</td>
+</tr>
+<tr>
+<td>证据查询</td>
+<td>证据 ID → 数据集、文件、记录、字段值及引文</td>
+<td>M06</td>
+</tr>
+<tr>
+<td>Web 展示</td>
+<td>页面状态与选择 → 请求；响应 → 文本、表格、局部图</td>
+<td>M02—M06</td>
+</tr>
+</tbody>
+</table></div>
+<p>模块是同一进程中的普通文件和函数，不是独立服务。查询 SQL 只存在于后端；页面从 API 获取数据，不能直接读取原始目录或访问数据库。</p>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">路由</th>
+<th scope="col">页面</th>
+<th scope="col">必须覆盖的状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>关键词检索、四类目录、类型筛选、分页</td>
+<td>首次进入、加载、空结果、错误、返回后保留条件</td>
+</tr>
+<tr>
+<td><code>/entities/:id</code></td>
+<td>名称属性、组成或关联、来源与证据抽屉</td>
+<td>缺失字段、角色冲突、未关联书目、实体不存在</td>
+</tr>
+<tr>
+<td><code>/explore?center=…</code></td>
+<td>一跳图、固定问题表单、路径解释</td>
+<td>单节点、截断、继续展开、无路径、键盘可操作列表</td>
+</tr>
+<tr>
+<td><code>/sources</code></td>
+<td>数据集说明、审核标识含义、当前发布版本</td>
+<td>原文与书目区别、来源说明、版本刷新提示</td>
+</tr>
+</tbody>
+</table></div>
+<p>筛选条件存 URL；返回页面恢复条件，关键字输入提交后再请求。实体详情、图节点、查询结果共用名称和证据展示组件。关系边点击打开其证据列表；证据详情通过抽屉展示，不必增加独立页面体系。</p>
+</section><section><h2 id="section-5">5. 领域模型与存储设计</h2>
+<h3>5.1 实体与关系</h3>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">实体类型</th>
+<th scope="col">规范化字段</th>
+<th scope="col">保留的类型属性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>herb</code> 中药</td>
+<td><code>key → source_key</code>、<code>name_zh → label</code></td>
+<td>性味、分类、功效、主治、炮制、原始剂量与引文</td>
+</tr>
+<tr>
+<td><code>formula</code> 方剂</td>
+<td>同上</td>
+<td>分类、治法、制法、描述；组成展示以规范化边为准</td>
+</tr>
+<tr>
+<td><code>pattern</code> 证候</td>
+<td>同上</td>
+<td>主症、兼症、舌脉、病因病机；症状暂作属性</td>
+</tr>
+<tr>
+<td><code>text</code> 古籍</td>
+<td><code>key → source_key</code>、<code>title_zh → label</code></td>
+<td>作者、朝代、年份、段落、译文和注释</td>
+</tr>
+</tbody>
+</table></div>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">关系</th>
+<th scope="col">固定方向</th>
+<th scope="col">来源映射</th>
+<th scope="col">属性与解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CONTAINS</code></td>
+<td>方剂 → 中药</td>
+<td><code>composition[]</code> 与反向转换的 <code>herb_in_formula[]</code></td>
+<td><code>role</code>、<code>dosage_raw</code>、<code>position</code>；冲突字段不择一覆盖</td>
+</tr>
+<tr>
+<td><code>ASSOCIATED_WITH_PATTERN</code></td>
+<td>方剂 → 证候</td>
+<td><code>formula_treats_pattern[]</code></td>
+<td>页面显示“关联证候”；仅表示来源记录的知识关联</td>
+</tr>
+<tr>
+<td><code>CITED_IN</code></td>
+<td>方剂或中药 → 古籍</td>
+<td>方剂 <code>source_text_key</code>、<code>formula_cited_in_text[]</code>、可解析的中药 <code>classical_references[]</code></td>
+<td>只承诺书目关联；具体字段是否有原文支持由证据决定</td>
+</tr>
+</tbody>
+</table></div>
+<p>原始 <code>formula_treats_pattern</code> 名称保存在来源记录中；规范化关系避免将资料中的关联呈现为临床效果保证。所有关系有向保存；反向查询使用目标端索引，不重复插入反向边。</p>
+<h3>5.2 七张表及关联</h3>
+<p><a href="docs/schema.sql">建表脚本</a>是本设计的物理结构依据，可在 SQLite 中直接执行。</p>
+<pre><code class="language-text">dataset 1 ── N source_record 1 ── N evidence
+   │                 │                  │
+   └── N entity ─────┘                  ├── N:1 entity（实体证据）
+            │                           └── N:1 edge（关系证据）
+            ├── 1:N alias ── N:1 source_record
+            └── 1:N edge(source_id / target_id)
+
+build：每份数据库恰好一条发布清单；导入完成后校验数量。
+evidence：每条只关联一个 entity 或一个 edge，不同时关联两者。
+</code></pre>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">表</th>
+<th scope="col">主要字段</th>
+<th scope="col">唯一性和职责</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>build</code></td>
+<td><code>id</code>、<code>schema_version</code>、<code>transform_version</code>、<code>created_at</code>、<code>manifest_json</code></td>
+<td>清单含所有输入哈希、规则版本、行数、异常摘要</td>
+</tr>
+<tr>
+<td><code>dataset</code></td>
+<td><code>id</code>、标题、来源版本、URL、许可声明、署名</td>
+<td>逐来源登记；声明来自本地材料，公开分发前核对原始条款</td>
+</tr>
+<tr>
+<td><code>source_record</code></td>
+<td>来源、文件、文件哈希、记录键、记录位置、原始对象 JSON</td>
+<td>唯一 <code>(dataset_id, filename, record_key)</code>；支持离线追溯</td>
+</tr>
+<tr>
+<td><code>entity</code></td>
+<td>类型、稳定 ID、源键、名称、分类、检索字段、属性 JSON、审核原值、来源记录</td>
+<td>唯一 <code>(dataset_id, type, source_key)</code>，名称可以重复</td>
+</tr>
+<tr>
+<td><code>alias</code></td>
+<td>实体、别名、规范化别名、来源记录、字段路径</td>
+<td>同名可指向多个实体，保留歧义；只收录已核对映射</td>
+</tr>
+<tr>
+<td><code>edge</code></td>
+<td>两端 ID、关系类型、属性 JSON、质量状态</td>
+<td>唯一 <code>(source_id, relation, target_id)</code>，证据独立合并</td>
+</tr>
+<tr>
+<td><code>evidence</code></td>
+<td>实体或边、来源记录、字段路径、证据类别、摘录</td>
+<td>一项主张可有多条证据；引文必须有非空摘录</td>
+</tr>
+</tbody>
+</table></div>
+<p>高频筛选字段独立建列；嵌套且暂不筛选的属性保存在 JSON 文本中。<code>source_record.content_json</code> 保存原对象，<code>attributes_json</code> 保存页面需要的规范化属性；不得在 UI 中绕过冲突规则直接用原始 composition 作为确定结论。</p>
+<h3>5.3 ID、索引与一致性</h3>
+<ul>
+<li>实体 ID 为 <code>数据集命名空间:类型:源键</code>，例如 <code>bencaodian:formula:si_jun_zi_tang</code>。只有数据集与类型内的源键可用于身份判断，同名实体不自动合并。</li>
+<li>边 ID 为 <code>edge:</code> 加规范化三元组 JSON 的 SHA-256。三元组格式固定为 <code>[source_id, relation, target_id]</code>，UTF-8、无多余空白；属性变化不改变边 ID。</li>
+<li>来源记录有源键时使用源键；无源键关系对象使用排序键、固定分隔符的对象 JSON 哈希。<code>record_locator</code> 保存整份文件中的 JSON Pointer；文件哈希变化后定位必须重新校验。</li>
+<li>证据 ID 由目标实体或边 ID、来源记录 ID、<code>field_path</code>、类别计算哈希。<code>field_path</code> 是相对于原始对象的 JSON Pointer，空字符串表示整个对象；不会误用为整份文件的行号。</li>
+<li><code>entity(name_norm)</code> 支持精确名称匹配；<code>alias(name_norm, entity_id)</code> 支持别名；<code>edge(source_id, relation, target_id)</code> 和反向索引支持邻接查询。子串检索仍会扫描，当前规模可接受，不能宣称普通索引加速任意中文模糊查询。</li>
+<li>每个数据库连接启用外键。DDL 限定三种边的端点类型及证据唯一归属；发布前再检查实体与原始记录属于同一数据集、JSON Pointer 可解析、每条边有证据。</li>
+</ul>
+<p>数据集跨文件同键不冲突，来源记录 ID 同时包含来源及文件身份。未来换数据源只新增命名空间；跨来源对齐通过显式映射表示，不改写原始实体身份。</p>
+</section><section><h2 id="section-6">6. 导入、校验与发布流程</h2>
+<h3>6.1 一次完整构建</h3>
+<ol>
+<li>为核心五份输入文件、实际使用的来源元数据和所有整理文件计算 SHA-256，连同 schema/转换规则版本生成 <code>build_id</code>。同样输入和规则版本得到同一 ID。</li>
+<li>只读解析原始文件。四类实体要求源键唯一、名称非空；没有源键或不能解析的核心文件导致构建失败。</li>
+<li>写入新临时 SQLite 文件的 <code>dataset</code>、<code>source_record</code>、<code>entity</code>。标准化只作用于处理结果；原文件不变。</li>
+<li>展开三个关系类型、检查端点、按三元组去重；合并证据。组成边的 <code>position</code> 取实体 composition 的数组下标，只有关系文件提供时按目标 ID 排序并保留“未提供原始顺序”标识。</li>
+<li>比较重复主张的角色和剂量。完全相同则合并；值不同则该字段设空、边记冲突、两项原值保留；一方缺失则采用已提供值，同时保留缺失来源，不把它误标成一致支持。</li>
+<li>把原文和来源信息写入证据。35 条无法关联古籍的中药引文挂在中药实体上，输出 <code>unresolved_reference</code>，不为其插入悬空边。</li>
+<li>完成事务后校验外键、图端点类型、证据覆盖、字段定位、计数与清单。执行 <code>PRAGMA integrity_check</code> 和 <code>PRAGMA foreign_key_check</code>，确认 <code>build</code> 恰好一条。</li>
+<li>输出新快照、发布清单和问题报告。运行固定查询用例；只有全部硬性检查通过，且本批已知警告与审核清单一致，才允许发布。</li>
+<li>首版进入短暂维护窗口：停止服务，把新文件放入 <code>var/releases/&lt;build_id&gt;/kg.sqlite</code>，以新的绝对路径重启服务；验证 readiness 和演示链路，失败则恢复旧路径。</li>
+</ol>
+<p>同一快照重复构建是重建，不是向旧库不断追加。发布文件不可覆盖；同一 <code>build_id</code> 已存在时校验清单并复用。应用数据一致及 ID 一致是幂等标准，不要求生成时间或 SQLite 文件字节完全相同。</p>
+<h3>6.2 失败等级</h3>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">情况</th>
+<th scope="col">动作</th>
+<th scope="col">对外可见结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JSON 损坏、重复源键、必填字段缺失、未知关系映射</td>
+<td>终止构建，临时产物不发布</td>
+<td>在线版本继续可用</td>
+</tr>
+<tr>
+<td>核心组成或证候关系端点不存在</td>
+<td>终止构建，报告原始位置</td>
+<td>不插入孤立边</td>
+</tr>
+<tr>
+<td>引文未提供古籍键、古籍未在首版收录</td>
+<td>保留实体证据，报告警告</td>
+<td>显示原文及“书目未关联”</td>
+</tr>
+<tr>
+<td>重复主张属性冲突</td>
+<td>保留边，冲突字段为空，记录双方证据</td>
+<td>显示“存在差异，待核对”</td>
+</tr>
+<tr>
+<td>同一方剂有多条古籍记载</td>
+<td>保留多条合法书目关联</td>
+<td>并列展示，区分字段出处</td>
+</tr>
+<tr>
+<td>新增未识别审核状态</td>
+<td>保留原始值，规范化为 <code>unknown</code>，报告警告</td>
+<td>显示“审核状态未识别”</td>
+</tr>
+</tbody>
+</table></div>
+<p>问题报告至少含 <code>severity</code>、<code>code</code>、<code>filename</code>、<code>record_key</code>、<code>field_path</code>、<code>raw_value</code>、<code>action</code>；不得只输出“跳过若干条”。当前已知警告应按具体记录与字段登记，不能用“允许任意 35 条错误”这样的数量豁免。</p>
+<h3>6.3 来源与证据的层级</h3>
+<p>来源链为：<strong>页面中的属性或关系 → evidence → source_record → dataset 与输入文件哈希</strong>。读者可以定位到本地原始对象及字段。</p>
+<p><code>curated</code> 表示数据集整理内容；<code>source_quote</code> 表示数据集中提供的原文摘录，不代表本项目已核对原版影印本；<code>bibliographic</code> 只支持书目关联。<code>auto_extracted</code> 与 <code>rule_inferred</code> 为后续来源预留类别，首版不生成此类主张。来源审核状态与证据类别是两个维度，不能由“编辑审核”推导出“原文已核验”。</p>
+<p>古籍条目中的任意段落不能自动作为该书关联的所有药物或剂量的证据。只有来源中存在明确记录定位或人工核对的映射时，才将具体段落关联到对应主张。</p>
+</section><section><h2 id="section-7">7. 检索、图查询与解释</h2>
+<h3>7.1 检索规则</h3>
+<p>查询词执行 Unicode NFKC、去首尾空格及英文大小写折叠；展示原文不变。对名称、别名、拼音、英文名及白名单描述字段构建规范化搜索文本，原始 JSON 字段名、ID、网址和剂量不混入全文匹配。</p>
+<p>排序采用明确优先级：名称精确命中 → 已审核别名精确命中 → 名称或别名前缀命中 → 名称、别名或搜索文本子串命中；同级按 <code>label, id</code> 稳定排序。返回命中字段及文本，不计算没有标定意义的“医学相关度”。搜索先以实体去重，再分页，防止多个别名让结果重复。</p>
+<p><code>q</code> 空缺或清理后为空时展示目录；非空长度上限 100 字符。<code>page_size</code> 默认 20、上限 50，<code>page</code> 为正整数。<code>LIKE</code> 中的 <code>%</code>、<code>_</code> 和转义符作为文字处理，同时使用 SQL 参数绑定；查询列与排序方式只能从固定白名单选择。输入不能直接拼接成 SQL。</p>
+<h3>7.2 一跳图</h3>
+<p>中心实体查出入边，默认包括全部三个关系类型，按关系类型、邻居名称、边 ID 排序。服务端一次最多返回 50 个节点（含中心）、100 条边；端点必须都包含在返回节点集合中。查询最多读取上限外一条候选边，以判断是否截断；若节点预算先耗尽，也标记截断。</p>
+<p>返回 <code>truncated</code> 和限制值；不把局部边数叫作全图总数。不支持请求任意深度。用户点击节点展开即发起另一条一跳请求，前端按 ID 合并；当前画布上限 100 节点、200 边，达到上限提示清空或切换中心。展开和清空都能从关系列表操作，颜色不是唯一标识。</p>
+<h3>7.3 固定查询模板</h3>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col"><code>template</code></th>
+<th scope="col">输入类型</th>
+<th scope="col">路径</th>
+<th scope="col">展示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>formula_herbs</code></td>
+<td>方剂</td>
+<td>方剂 → <code>CONTAINS</code> → 中药</td>
+<td>组成、原始剂量、角色与证据；按 position 排序</td>
+</tr>
+<tr>
+<td><code>herb_formulas</code></td>
+<td>中药</td>
+<td>中药 ← <code>CONTAINS</code> ← 方剂</td>
+<td>收录该药的方剂与证据</td>
+</tr>
+<tr>
+<td><code>formula_patterns</code></td>
+<td>方剂</td>
+<td>方剂 → <code>ASSOCIATED_WITH_PATTERN</code> → 证候</td>
+<td>关联证候及来源</td>
+</tr>
+<tr>
+<td><code>herb_patterns_via_formula</code></td>
+<td>中药</td>
+<td>中药 ← 方剂 → 证候</td>
+<td>两跳的完整节点、边和每条边的证据</td>
+</tr>
+</tbody>
+</table></div>
+<p>前三个满足 M05 最低要求，第四个提供两跳演示。两跳是两个边表联接，按完整路径去重；同一证候经不同方剂连接时保留不同路径。结果分页默认 20、上限 50，按路径 ID 元组稳定排序。没有路径返回空列表。</p>
+<p>两跳解释只能说“该药出现在某方剂中，该方剂在来源数据中关联某证候”，不能直接生成“该药治疗该证候”这一新边。路径查询只接受模板名和实体 ID，不暴露任意 SQL、Cypher 或规则表达式。</p>
+</section><section><h2 id="section-8">8. HTTP 接口契约</h2>
+<p>所有业务接口使用 <code>/api/v1</code>、UTF-8 JSON。以下为待实现契约；实现时由 FastAPI 响应模型生成 OpenAPI，并用契约测试验证。公开读接口使用 GET，不设置注册、上传或管理写接口。</p>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">方法与路径</th>
+<th scope="col">参数</th>
+<th scope="col">响应主体</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /entities</code></td>
+<td><code>q?</code>、<code>type?</code>、<code>page=1</code>、<code>page_size=20</code></td>
+<td>实体摘要列表、命中信息、分页</td>
+</tr>
+<tr>
+<td><code>GET /entities/{id}</code></td>
+<td>完整实体 ID</td>
+<td>实体类型、名称、属性、审核状态、实体证据 ID；组成通过固定查询获取</td>
+</tr>
+<tr>
+<td><code>GET /graph</code></td>
+<td><code>center</code>、<code>relation?</code></td>
+<td><code>nodes[]</code>、<code>edges[]</code>、<code>truncated</code>、限制值；边含质量状态及证据 ID</td>
+</tr>
+<tr>
+<td><code>GET /relation-queries</code></td>
+<td><code>template</code>、<code>entity_id</code>、分页参数</td>
+<td><code>paths[]</code>：有序节点 ID、边 ID、解释；附本页节点和边字典</td>
+</tr>
+<tr>
+<td><code>GET /evidence/{id}</code></td>
+<td>证据 ID</td>
+<td>原始字段值、摘录、证据类别、记录定位、文件哈希、数据集摘要</td>
+</tr>
+<tr>
+<td><code>GET /datasets</code></td>
+<td>无</td>
+<td>来源名称、版本、署名、原始许可声明及当前快照摘要</td>
+</tr>
+<tr>
+<td><code>GET /health/live</code></td>
+<td>无</td>
+<td>进程可服务，<code>200</code></td>
+</tr>
+<tr>
+<td><code>GET /health/ready</code></td>
+<td>无</td>
+<td>数据库可读、schema 受支持、清单有效；正常 <code>200</code>，否则 <code>503</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>业务接口均接受可选 <code>build_id</code>。首次读取不传，响应 <code>meta.build_id</code> 后前端在后续请求中携带；若已发布新版本，后端返回 <code>409 snapshot_changed</code>，前端清空旧图和证据缓存并提示刷新。不能把旧详情与新证据静默混在一起。健康检查无需快照参数。</p>
+<h3>8.1 通用响应</h3>
+<p>成功响应为 <code>data</code> 加 <code>meta</code>；分页响应包含 <code>page</code>、<code>page_size</code>、<code>total</code>，这里的 <code>total</code> 指去重后符合条件的结果数。图响应不提供未经计算的 <code>total</code>。下面是结构示例，示例发布 ID 不是已运行系统的 ID。</p>
+<pre><code class="language-json">{
+  "data": {
+    "id": "bencaodian:formula:si_jun_zi_tang",
+    "type": "formula",
+    "label": "四君子汤",
+    "review_status": "editor_reviewed",
+    "review_status_raw": "editor-reviewed"
+  },
+  "meta": {
+    "build_id": "example-build-id",
+    "request_id": "example-request-id"
+  }
+}
+</code></pre>
+<p>节点最小字段为 <code>id,type,label</code>；边最小字段为 <code>id,source_id,target_id,relation,properties,quality_state,evidence_ids</code>。实体详情另外含 <code>attributes,evidence_ids</code>。路径解释引用真实边 ID，不能只返回一段无法回查的文字。</p>
+<p>证据详情至少含 <code>id,kind,field_path,raw_value,excerpt,source_record,dataset</code>。其中 <code>source_record</code> 为 <code>id,filename,record_key,record_locator,file_sha256</code>；文件名只返回数据集内相对路径，不暴露服务器绝对路径。正文由数据库中保存的原始对象解析得到，不允许客户端传文件路径让服务读取任意本地文件。</p>
+<h3>8.2 错误与边界</h3>
+<p>统一错误体为 <code>{"error":{"code":"…","message":"…"},"meta":{"request_id":"…","build_id":"…"}}</code>；数据库未就绪时 <code>build_id</code> 可以为空。</p>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">状态</th>
+<th scope="col">错误码</th>
+<th scope="col">触发与页面动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>404</code></td>
+<td><code>entity_not_found</code> / <code>evidence_not_found</code></td>
+<td>ID 不存在，显示返回入口</td>
+</tr>
+<tr>
+<td><code>409</code></td>
+<td><code>snapshot_changed</code></td>
+<td>版本不一致，提示刷新并重新查询</td>
+</tr>
+<tr>
+<td><code>422</code></td>
+<td><code>invalid_query</code></td>
+<td>无效类型、模板、页码、过长输入或模板实体类型错误</td>
+</tr>
+<tr>
+<td><code>503</code></td>
+<td><code>knowledge_unavailable</code></td>
+<td>数据库损坏、丢失、版本不支持或查询超时，提示稍后重试</td>
+</tr>
+<tr>
+<td><code>500</code></td>
+<td><code>internal_error</code></td>
+<td>意外异常，对外隐藏栈和本地路径，日志保留 request_id</td>
+</tr>
+</tbody>
+</table></div>
+<p>实体存在但搜索或关系无结果返回 <code>200</code> 和空列表，不返回 <code>404</code>。FastAPI 默认校验错误需要转换为上述错误格式；未知 <code>/api/*</code> 返回 JSON 404，不能被 SPA 的页面回退规则吞掉。</p>
+</section><section><h2 id="section-9">9. 一条完整查询链路</h2>
+<pre><code class="language-text">浏览器                    FastAPI                 SQLite
+输入“四君子汤” ────────→ 名称匹配 ──────────────→ entity
+显示结果及 build_id ←─── 摘要与审核标识 ←──────── 查询结果
+打开详情 ──────────────→ 实体与属性 ────────────→ entity + source_record
+查看组成 ──────────────→ formula_herbs ─────────→ edge + entity + evidence
+打开局部图 ────────────→ 查询出入边 ────────────→ 有端点上限的子图
+点击证据 ──────────────→ 解析原始字段路径 ──────→ evidence + source_record + dataset
+显示原文/书目/整理字段 ← 证据类别与精确定位 ←──── 原始值和输入文件哈希
+</code></pre>
+<p>每次业务请求均独立连接到同一已发布快照。应用层只使用规范化边回答组成和关系问题，原始记录用于解释与对照。前端不能根据两次不同接口的字符串名称自行推断实体相同。</p>
+</section><section><h2 id="section-10">10. 部署、可靠性与安全边界</h2>
+<h3>10.1 首版部署</h3>
+<p>本地开发为 Vite 开发服务代理 <code>/api</code> 到 FastAPI；发布时构建前端静态资源，Uvicorn 启动一个进程，由 FastAPI 提供 <code>/assets</code>、业务 API 和 SPA 页面。同源部署避免额外跨域配置。应用路由优先于 SPA 回退；深链接刷新返回页面入口。</p>
+<p>只配置确实会变的值：<code>KG_DB_PATH</code> 指向发布快照绝对路径，<code>KG_LOG_LEVEL</code> 控制日志；监听地址和端口由启动参数提供。Node 和联网下载只在准备构建时需要，已构建系统在断网状态下完成六项 MVP 功能。若需要离线接口文档，Swagger UI 资源也需随包保存。</p>
+<p>演示环境默认只监听本机。需要公开访问时在反向代理配置 HTTPS、请求速率和访问日志，数据库文件及 <code>datasets/raw</code> 不作为静态目录暴露。首版不要求容器；若交付方需要 Docker，再以同一应用和只读数据卷打包。</p>
+<h3>10.2 故障与恢复</h3>
+<ul>
+<li>数据服务启动时验证文件存在、schema 版本和清单，失败时 readiness 为 <code>503</code>；不会自动新建空数据库假装启动成功。</li>
+<li>连接以 <code>mode=ro</code> 打开，并启用 <code>query_only</code> 和外键。同步路由每请求独立连接；查询设 2 秒执行预算，可用 SQLite progress handler 中止超时工作，返回明确错误。</li>
+<li>发布允许短暂不可用。保存当前和上一份完整快照、清单与处理规则；切换失败就使用旧路径重启。备份包括整理文件，避免人工确认记录丢失。</li>
+<li>日志记录 request_id、路由模板、状态码、耗时、build_id；不默认记录用户完整搜索词，不记录病历信息。性能统计区分成功响应和超时，不能删除超时样本后报告漂亮的 P95。</li>
+</ul>
+<h3>10.3 输入与内容边界</h3>
+<p>所有类型、关系、查询模板和排序字段使用白名单；数值范围由服务端校验。用户输入和数据集文本均按纯文本渲染，不使用 <code>v-html</code> 拼接。外链只接受 HTTP/HTTPS，打开新标签时使用隔离属性。</p>
+<p>系统展示已有知识、来源和历史记录，不接收个体病例、不生成个体处方。这个范围来自既有范围分析，而不是额外新增的产品流程。未来若有在线写接口，身份认证、权限检查与修改审计必须随该接口一起交付。</p>
+</section><section><h2 id="section-11">11. 验收与验证计划</h2>
+<h3>11.1 六项 MVP 的完成条件</h3>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">项目</th>
+<th scope="col">可复现验收</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M01 导入</td>
+<td>原始文件哈希不变；重复构建逻辑 ID 与计数一致；实体/边零悬空引用；错误和警告可定位</td>
+</tr>
+<tr>
+<td>M02 详情</td>
+<td>完成“方剂 → 药味 → 方剂”；古籍标题和缺失字段正确；冲突角色不被默认覆盖</td>
+</tr>
+<tr>
+<td>M03 检索</td>
+<td>固定名称和人工收录别名命中；类型、分页、歧义、空结果行为正确</td>
+</tr>
+<tr>
+<td>M04 图谱</td>
+<td>与规范化边一致；默认不超过 50 节点/100 边；截断提示与可访问列表可用</td>
+</tr>
+<tr>
+<td>M05 查询</td>
+<td>三个一跳模板和一个两跳模板正确；每步返回真实边 ID 与证据；无关系不编造</td>
+</tr>
+<tr>
+<td>M06 追溯</td>
+<td>每条已发布边有证据；每个证据路径可解析到对应快照；书目、引文、整理值分别标明</td>
+</tr>
+</tbody>
+</table></div>
+<h3>11.2 约 30 个固定用例</h3>
+<p>建议分为名称与别名检索 7 例、详情与缺失字段 5 例、图与固定关系查询 8 例、证据与导入一致性 7 例、部署与版本切换 3 例。没有真实别名数据时，用来源明确的测试夹具验证别名逻辑，不把夹具发布为医学知识。</p>
+<p>关键样本包括：四君子汤完整链路、猪苓汤角色冲突、小建中汤多出处、缺少古籍键的羌活引文、古籍未收录的玫瑰花引文、同名不同来源夹具、无结果、错误端点、同批重复导入、HTML 文本注入、通配符和过长输入、图截断、版本切换后旧证据请求。</p>
+<p>实体完整性由数据库约束与导入后检查共同验证；API 用响应模型和请求测试验证；浏览器测试只覆盖核心流程与交互。测试以可观察业务行为为目标，不为每个普通函数写重复实现的测试。</p>
+<h3>11.3 性能目标与当前验证结果</h3>
+<p>目标沿用范围分析：599 实体、预计 1,286 边，常用检索与局部图查询的端到端 P95 不超过 2 秒。实施后记录 CPU、内存、操作系统、依赖版本、快照 ID、并发数和响应大小；建议分别测试单用户及 5 个并发用户，预热 20 次后各采样 200 次，冷启动单独报告。</p>
+<p>已完成真实数据建表与导入、独立重复构建和快照复用、原始文件哈希保留、证据定位与覆盖、已知问题逐项匹配、典型关系查询、错误输入隔离及快照篡改拒绝检查；DDL 约束检查保留。具体结果见数据处理说明。尚未运行 API、页面或应用性能测试。</p>
+<p>重新核验当前设计附件：</p>
+<pre><code class="language-sh">python3 scripts/audit_core_data.py --check
+</code></pre>
+</section><section><h2 id="section-12">12. 演进触发条件</h2>
+<div aria-label="设计表格，可横向滚动" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th scope="col">真实需求或瓶颈</th>
+<th scope="col">最小演进</th>
+<th scope="col">保持的契约</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已定位到中文检索召回不足</td>
+<td>增加审核别名，评估分词与全文索引</td>
+<td>实体 ID、来源和命中字段语义不变</td>
+</tr>
+<tr>
+<td>只读数据扩大到十万级</td>
+<td>先测索引、查询与子串扫描，按证据决定搜索引擎或数据库迁移</td>
+<td>数据量按实体、关系、原始行分开报告</td>
+</tr>
+<tr>
+<td>多维护者并发写入或多应用实例需要共享写库</td>
+<td>迁移 PostgreSQL，增加迁移脚本、认证与写审计</td>
+<td>API 不暴露存储实现；JSON 字段显式迁移</td>
+</tr>
+<tr>
+<td>任务书指定 Vastbase</td>
+<td>先验证产品版本、兼容模式、JSON、驱动和约束行为</td>
+<td>不假设 PostgreSQL 语法可原样运行</td>
+</tr>
+<tr>
+<td>必须用 Neo4j 或需复杂多跳查询且现方案实测不足</td>
+<td>同一标准化产物按批次构建图投影</td>
+<td>主记录和证据仍有唯一权威来源；双库报告相同 build_id</td>
+</tr>
+<tr>
+<td>需要带引用问答</td>
+<td>先增加证据检索与回答评估，再接模型</td>
+<td>回答引用现有 evidence ID；无法支持则说明不足</td>
+</tr>
+<tr>
+<td>需要第二来源对照</td>
+<td>新增适配脚本与命名空间，人工核对映射</td>
+<td>中药、饮片、中成药与经典方剂保持类型差异</td>
+</tr>
+</tbody>
+</table></div>
+<p>若使用双库，SQLite 或后续关系库保存实体、来源和证据，Neo4j 保存可重建的图投影；发布时校验节点与边计数及版本一致，停服切换两者；查询发现 build_id 不一致即暂停图接口。首版无需实时双向同步。</p>
+<p>扩展 TCM-MKG 前修正处理副本中的已知列数异常；语义图谱按实测编码读取；功效数据区分显式和规则推断；古籍候选片段保持自动抽取身份。174 首方剂仅作补充对照材料，未经独立核对不能直接称为金标准。</p>
+</section><section><h2 id="section-13">13. 实施顺序与目录</h2>
+<p>按完成条件推进，不在缺少周期信息时承诺日期：</p>
+<ol>
+<li>数据闭环：实现五文件导入、规范化模型、证据与异常报告，产出可发布快照。出口：重复构建稳定、零悬空边、所有边有证据。</li>
+<li>查询闭环：实体列表、详情、名称检索与来源接口。出口：四君子汤可从搜索进入组成、药味和来源。</li>
+<li>图谱闭环：一跳子图、三个一跳模板、一个两跳模板、限制和文本解释。出口：所有结果边可回查，截断可见。</li>
+<li>交付闭环：四类页面、错误状态、断网运行、约 30 个用例、性能记录及回滚演示。出口：六项 MVP 全部验收。</li>
+<li>创新实验：选择 I01，比对直接检索与一至两跳关系扩展；固定问题集、实体级相关性标注、候选排序和相同返回数量，报告 Recall@5、路径有效率及耗时。开发集与保留测试集分开，不把检索得出的关系反过来当独立标注。</li>
+</ol>
+<p>以下是实现目标目录；<code>backend/</code>、<code>frontend/</code> 尚未创建，导入工具、数据验收脚本与 <code>var/</code> 快照已生成。首版直接按业务拆文件，文件变大后再拆包。</p>
+<pre><code class="language-text">QiHuang-KG/
+  docs/architecture.md          架构正文
+  docs/schema.sql               建表脚本
+  docs/data-profile.json        结构审计、差异与输入哈希
+  scripts/audit_core_data.py    当前已提供的核验脚本
+  scripts/import_core.py       已实现：离线导入与发布校验
+  backend/app/
+    main.py                    应用装配、路由、静态资源和错误处理
+    models.py                  参数与响应类型
+    db.py                      请求连接、版本与只读设置
+    knowledge.py               搜索、详情、证据、来源查询
+    graph.py                   邻接与固定路径查询
+  frontend/src/
+    pages/                     四类页面
+    components/                实体摘要、证据抽屉、图与关系列表
+    api.ts                     fetch、响应类型、版本变化处理
+    router.ts                  页面路由
+  tests/test_import_core.py    已实现：数据导入与失败隔离验收
+  datasets/raw/                已有输入，保持只读
+  datasets/curated/            已提供：数据集元数据与逐项问题清单
+  datasets/processed/          已生成：质量报告，不入版本库
+  var/releases/&lt;build_id&gt;/     已生成：标准化数据库、清单、报告，不入版本库
+</code></pre>
+<p>原始数据目前属于工作区已有文件；本次不提交或改写这些文件。后续版本控制应保存源码、整理规则、清单和可复现说明，发布数据库与运行日志保持独立。</p>
+</section><section><h2 id="section-14">14. 设计依据与交付物</h2>
+<ul>
+<li><a href="project-scope-analysis.html">项目范围分析</a>：首版目标、六项 MVP、分期和验收口径；比数据指南中的早期双库用途建议更新。</li>
+<li><a href="datasets/dataset-guide.html">数据指南</a>：六组来源与格式问题；其技术建议不是强制架构约束。</li>
+<li><a href="datasets/raw/bencaodian/schema.json">核心字段说明</a>、<a href="datasets/raw/bencaodian/relationships.json">关系文件</a>：字段映射参考；差异以实测和审计报告为准。</li>
+<li><a href="docs/schema.sql">物理模型</a>：七张表、索引、关系端点和证据约束。</li>
+<li><a href="docs/data-profile.json">可复现结构审计</a>：实体数量、预计图边、冲突和未关联书目、输入哈希。</li>
+<li><a href="architecture-design.html">架构阅读版</a>：用于浏览、评审及打印；与本文同版。</li>
+</ul>
+<p>设计中已核对官方技术文档，数据语义和来源使用说明仍以本地资料为依据。本次没有开展医学校验、原版古籍逐段校勘、外部文献查新或新增数据授权核验。</p>
+</section></main></div>
+<footer class="footer"><span>QiHuang-KG · 面向中医药学习者的知识图谱系统</span><span>架构 v1.0 · <a href="project-scope-analysis.html">范围分析</a> · <a href="datasets/dataset-guide.html">数据指南</a></span></footer></div></body></html>

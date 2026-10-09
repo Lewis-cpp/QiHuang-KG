@@ -1,0 +1,2497 @@
+[
+  {
+    "key": "tou_tong",
+    "slug": "tou-tong",
+    "name_zh": "头痛",
+    "name_pinyin": "Tou Tong",
+    "name_en": "Headache",
+    "category_zh": "痛症",
+    "category_en": "Pain Conditions",
+    "aliases_zh": [
+      "头疼",
+      "偏头痛"
+    ],
+    "aliases_en": [
+      "cephalalgia",
+      "migraine"
+    ],
+    "description_zh": "头痛为临床常见症状，可由外感六淫或内伤脏腑引起。中医辨治头痛首重辨外感与内伤，次辨经络部位与寒热虚实，选方用药随证而异。",
+    "description_en": "Headache is among the most common presentations in clinical practice. In TCM, it may arise from external pathogenic invasion or internal organ dysfunction. Differentiation focuses first on external vs. internal origin, then on channel location and the nature of repletion or vacuity.",
+    "related_patterns": [
+      "gan_yang_shang_kang",
+      "xue_xu",
+      "tan_shi_zheng",
+      "gan_qi_yu_jie"
+    ],
+    "related_herbs": [
+      "chuan_xiong",
+      "tian_ma",
+      "bai_zhi",
+      "gou_teng",
+      "ju_hua"
+    ],
+    "related_formulas": [
+      "chuan_xiong_cha_tiao_san",
+      "tian_ma_gou_teng_yin",
+      "ban_xia_bai_zhu_tian_ma_tang"
+    ],
+    "related_acupoints": [
+      "bai_hui",
+      "feng_chi",
+      "he_gu",
+      "tai_chong"
+    ],
+    "differentiation_guide_zh": "辨证要点：外感头痛起病急、病程短，多兼表证；内伤头痛起病缓、病程长，多兼脏腑证候。前额痛属阳明，侧头痛属少阳，后枕痛属太阳，巅顶痛属厥阴。",
+    "differentiation_guide_en": "Key differentiation: External headaches have acute onset with exterior signs; internal headaches are chronic with organ-pattern features. Frontal pain relates to Yangming, temporal to Shaoyang, occipital to Taiyang, and vertex to Jueyin.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "yao_tong",
+    "slug": "yao-tong",
+    "name_zh": "腰痛",
+    "name_pinyin": "Yao Tong",
+    "name_en": "Lower Back Pain",
+    "category_zh": "痛症",
+    "category_en": "Pain Conditions",
+    "aliases_zh": [
+      "腰酸",
+      "腰膝酸软"
+    ],
+    "aliases_en": [
+      "lumbago",
+      "lumbar pain"
+    ],
+    "description_zh": "腰痛是以腰部疼痛为主症的病证。腰为肾之府，故腰痛与肾脏关系最为密切。临床常见寒湿腰痛、湿热腰痛、瘀血腰痛及肾虚腰痛。",
+    "description_en": "Lower back pain centers on the lumbar region, which is considered the residence of the Kidneys. It is most closely associated with Kidney function. Common clinical patterns include cold-damp, damp-heat, blood stasis, and Kidney vacuity types.",
+    "related_patterns": [
+      "shen_yang_xu",
+      "shen_yin_xu",
+      "tan_shi_zheng"
+    ],
+    "related_herbs": [
+      "du_zhong",
+      "niu_xi",
+      "xu_duan",
+      "sang_ji_sheng",
+      "du_huo"
+    ],
+    "related_formulas": [
+      "du_huo_ji_sheng_tang",
+      "jin_gui_shen_qi_wan",
+      "zuo_gui_wan"
+    ],
+    "related_acupoints": [
+      "shen_shu",
+      "yao_yang_guan",
+      "wei_zhong",
+      "ming_men",
+      "da_chang_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：肾虚腰痛绵绵不休，劳累后加重；寒湿腰痛重着冷痛，遇寒加重；湿热腰痛痛处灼热；瘀血腰痛刺痛固定，不可俯仰。",
+    "differentiation_guide_en": "Key differentiation: Kidney vacuity presents as dull persistent pain worsened by exertion; cold-damp shows heavy cold pain worsened by cold; damp-heat has burning pain; blood stasis causes fixed stabbing pain with limited range of motion.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "wei_tong",
+    "slug": "wei-tong",
+    "name_zh": "胃痛",
+    "name_pinyin": "Wei Tong",
+    "name_en": "Stomachache",
+    "category_zh": "痛症",
+    "category_en": "Pain Conditions",
+    "aliases_zh": [
+      "胃脘痛",
+      "心下痛"
+    ],
+    "aliases_en": [
+      "epigastric pain",
+      "gastralgia"
+    ],
+    "description_zh": "胃痛又称胃脘痛，是以上腹部近心窝处疼痛为主症的病证。胃主受纳腐熟水谷，喜润恶燥，以降为顺。凡情志不畅、饮食不节、感受外邪、脾胃虚弱均可导致胃痛。",
+    "description_en": "Stomachache refers to pain in the epigastric region. The Stomach governs reception and decomposition of food, preferring moisture and downward movement. Emotional disturbance, dietary irregularity, external pathogen invasion, and Spleen-Stomach weakness can all cause stomach pain.",
+    "related_patterns": [
+      "gan_qi_yu_jie",
+      "wei_han",
+      "wei_re",
+      "pi_qi_xu"
+    ],
+    "related_herbs": [
+      "chen_pi",
+      "ban_xia",
+      "huang_lian",
+      "wu_zhu_yu",
+      "bai_shao"
+    ],
+    "related_formulas": [
+      "ban_xia_xie_xin_tang",
+      "xiao_jian_zhong_tang",
+      "wu_zhu_yu_tang",
+      "si_ni_san"
+    ],
+    "related_acupoints": [
+      "zhong_wan",
+      "zu_san_li",
+      "nei_guan",
+      "gong_sun",
+      "wei_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：寒证胃痛遇寒加重、得温则减；热证胃痛有灼热感、口苦口臭；气滞胃痛胀痛为主、嗳气后减；虚证胃痛隐痛绵绵、喜温喜按。",
+    "differentiation_guide_en": "Key differentiation: Cold-type worsens with cold and improves with warmth; heat-type has burning sensation with bitter taste; qi stagnation presents as distending pain relieved by belching; vacuity type shows dull pain that prefers warmth and pressure.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "tong_jing",
+    "slug": "tong-jing",
+    "name_zh": "痛经",
+    "name_pinyin": "Tong Jing",
+    "name_en": "Dysmenorrhea",
+    "category_zh": "痛症",
+    "category_en": "Pain Conditions",
+    "aliases_zh": [
+      "经行腹痛",
+      "月经痛"
+    ],
+    "aliases_en": [
+      "menstrual cramps",
+      "period pain"
+    ],
+    "description_zh": "痛经是指妇女在经期或经行前后出现周期性小腹疼痛的病证。其病机不外乎不通则痛与不荣则痛两大类，前者属实，后者属虚。",
+    "description_en": "Dysmenorrhea refers to periodic lower abdominal pain occurring during or around menstruation. The pathomechanism falls into two broad categories: pain from obstruction (repletion) and pain from malnourishment (vacuity).",
+    "related_patterns": [
+      "gan_qi_yu_jie",
+      "xue_xu",
+      "shen_yang_xu"
+    ],
+    "related_herbs": [
+      "dang_gui",
+      "chuan_xiong",
+      "yan_hu_suo",
+      "xiang_fu",
+      "yi_mu_cao"
+    ],
+    "related_formulas": [
+      "xiao_yao_san",
+      "tao_hong_si_wu_tang",
+      "sheng_hua_tang"
+    ],
+    "related_acupoints": [
+      "guan_yuan",
+      "san_yin_jiao",
+      "di_ji",
+      "qi_hai",
+      "zhong_ji"
+    ],
+    "differentiation_guide_zh": "辨证要点：经前痛甚多属实（气滞血瘀、寒凝），经后痛甚多属虚（气血亏虚、肝肾不足）。实证拒按，虚证喜按。",
+    "differentiation_guide_en": "Key differentiation: Pain predominantly before the period suggests repletion (qi stagnation, blood stasis, cold congelation); pain predominantly after suggests vacuity (qi-blood insufficiency, Liver-Kidney vacuity). Repletion resists pressure; vacuity prefers pressure.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xiong_bi",
+    "slug": "xiong-bi",
+    "name_zh": "胸痹",
+    "name_pinyin": "Xiong Bi",
+    "name_en": "Chest Bi Pattern",
+    "category_zh": "痛症",
+    "category_en": "Pain Conditions",
+    "aliases_zh": [
+      "胸痛",
+      "心胸痹痛"
+    ],
+    "aliases_en": [
+      "chest pain",
+      "thoracic obstruction"
+    ],
+    "description_zh": "胸痹是以胸部闷痛甚至胸痛彻背为主症的病证。其病机为心脉痹阻，与现代医学之冠心病、心绞痛相对应。本虚标实为其病理特点。",
+    "description_en": "Chest Bi pattern presents with chest oppression and pain that may radiate to the back. The pathomechanism involves obstruction of the Heart vessels. It corresponds roughly to coronary heart disease and angina in modern medicine, typically featuring root vacuity with branch repletion.",
+    "related_patterns": [
+      "xin_qi_xu",
+      "xin_yang_xu",
+      "xin_xue_xu"
+    ],
+    "related_herbs": [
+      "dan_shen",
+      "san_qi",
+      "xie_bai",
+      "gua_lou",
+      "gui_zhi"
+    ],
+    "related_formulas": [
+      "xue_fu_zhu_yu_tang",
+      "gui_zhi_tang"
+    ],
+    "related_acupoints": [
+      "dan_zhong",
+      "nei_guan",
+      "xin_shu",
+      "jue_yin_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：气滞型胸闷为主、痛无定处；血瘀型刺痛固定、舌紫暗；痰浊型胸闷如窒、体胖痰多；阳虚型胸痛畏寒、四肢不温。",
+    "differentiation_guide_en": "Key differentiation: Qi stagnation shows mainly chest oppression with wandering pain; blood stasis has fixed stabbing pain with purple tongue; phlegm-turbidity presents as suffocating tightness in obese patients; yang vacuity shows pain with cold aversion and cold limbs.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xie_xie",
+    "slug": "xie-xie",
+    "name_zh": "泄泻",
+    "name_pinyin": "Xie Xie",
+    "name_en": "Diarrhea",
+    "category_zh": "脾胃病",
+    "category_en": "Digestive Conditions",
+    "aliases_zh": [
+      "腹泻",
+      "拉肚子"
+    ],
+    "aliases_en": [
+      "loose stools",
+      "diarrhea"
+    ],
+    "description_zh": "泄泻是以排便次数增多、粪质稀薄或如水样为主症的病证。其病位在肠，关键脏腑在脾。脾虚湿盛为泄泻之基本病机。",
+    "description_en": "Diarrhea presents with increased frequency of bowel movements and loose or watery stools. The disease site is the intestines, but the key organ is the Spleen. Spleen vacuity with dampness predominance is the fundamental pathomechanism.",
+    "related_patterns": [
+      "pi_qi_xu",
+      "pi_qi_xia_xian",
+      "shi_zu_zhong_jiao",
+      "shen_yang_xu"
+    ],
+    "related_herbs": [
+      "bai_zhu",
+      "fu_ling",
+      "shan_yao",
+      "yi_yi_ren",
+      "ge_gen"
+    ],
+    "related_formulas": [
+      "shen_ling_bai_zhu_san",
+      "si_shen_wan",
+      "tong_xie_yao_fang",
+      "ping_wei_san"
+    ],
+    "related_acupoints": [
+      "tian_shu",
+      "zu_san_li",
+      "pi_shu",
+      "zhong_wan",
+      "guan_yuan"
+    ],
+    "differentiation_guide_zh": "辨证要点：急性泄泻多属实，以湿邪为主；慢性泄泻多属虚，以脾虚为主。大便清稀属寒，黄褐臭秽属热。五更泄泻多属肾阳虚。",
+    "differentiation_guide_en": "Key differentiation: Acute diarrhea is mostly repletion, primarily dampness; chronic diarrhea is mostly vacuity, primarily Spleen weakness. Clear watery stools indicate cold; yellow foul-smelling stools indicate heat. Pre-dawn diarrhea often indicates Kidney yang vacuity.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "bian_mi",
+    "slug": "bian-mi",
+    "name_zh": "便秘",
+    "name_pinyin": "Bian Mi",
+    "name_en": "Constipation",
+    "category_zh": "脾胃病",
+    "category_en": "Digestive Conditions",
+    "aliases_zh": [
+      "大便秘结",
+      "大便难"
+    ],
+    "aliases_en": [
+      "difficulty passing stool"
+    ],
+    "description_zh": "便秘是指大便秘结不通、排便间隔时间延长或虽有便意而排出困难的病证。其病位在大肠，与肺、脾、胃、肝、肾均有关。",
+    "description_en": "Constipation refers to difficulty passing stools, prolonged intervals between bowel movements, or straining despite the urge. The disease site is the Large Intestine, but it involves the Lung, Spleen, Stomach, Liver, and Kidneys.",
+    "related_patterns": [
+      "yang_ming_fu_shi",
+      "yin_xu_zheng",
+      "pi_qi_xu",
+      "gan_qi_yu_jie"
+    ],
+    "related_herbs": [
+      "da_huang",
+      "huo_ma_ren",
+      "mang_xiao",
+      "zhi_shi",
+      "xing_ren"
+    ],
+    "related_formulas": [
+      "ma_zi_ren_wan",
+      "da_cheng_qi_tang",
+      "liu_wei_di_huang_wan"
+    ],
+    "related_acupoints": [
+      "tian_shu",
+      "da_chang_shu",
+      "zhi_gou",
+      "shang_ju_xu",
+      "zu_san_li"
+    ],
+    "differentiation_guide_zh": "辨证要点：热秘大便干结、面赤身热；气秘排便困难、嗳气频频；虚秘便质不硬但排出无力；冷秘大便艰涩、面白畏寒。",
+    "differentiation_guide_en": "Key differentiation: Heat constipation has dry hard stools with flushing and heat signs; qi constipation has difficulty despite desire with frequent belching; vacuity type has soft stools but no power to expel; cold constipation has difficult passage with pale face and cold aversion.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "ou_tu",
+    "slug": "ou-tu",
+    "name_zh": "呕吐",
+    "name_pinyin": "Ou Tu",
+    "name_en": "Vomiting",
+    "category_zh": "脾胃病",
+    "category_en": "Digestive Conditions",
+    "aliases_zh": [
+      "恶心呕吐",
+      "吐逆"
+    ],
+    "aliases_en": [
+      "nausea and vomiting",
+      "emesis"
+    ],
+    "description_zh": "呕吐是胃失和降、气逆于上所致的病证。实证多因外邪、食滞、痰饮、肝气犯胃；虚证多因脾胃虚弱、胃阴不足。",
+    "description_en": "Vomiting results from the Stomach failing to descend and qi rebelling upward. Repletion types arise from external pathogens, food stagnation, phlegm-fluid retention, or Liver qi invading the Stomach; vacuity types arise from Spleen-Stomach weakness or Stomach yin insufficiency.",
+    "related_patterns": [
+      "wei_han",
+      "wei_re",
+      "pi_qi_xu",
+      "gan_qi_yu_jie"
+    ],
+    "related_herbs": [
+      "ban_xia",
+      "sheng_jiang",
+      "chen_pi",
+      "zhu_ru",
+      "huo_xiang"
+    ],
+    "related_formulas": [
+      "er_chen_tang",
+      "xiao_chai_hu_tang",
+      "huo_xiang_zheng_qi_san",
+      "xuan_fu_dai_zhe_tang"
+    ],
+    "related_acupoints": [
+      "zhong_wan",
+      "nei_guan",
+      "zu_san_li",
+      "gong_sun",
+      "pi_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：寒呕吐清水、畏寒喜暖；热呕吐酸苦、口臭便秘；食滞呕吐酸腐、嗳气厌食；痰饮呕吐清水痰涎。",
+    "differentiation_guide_en": "Key differentiation: Cold vomiting produces clear fluids with cold aversion; heat vomiting produces sour bitter fluid with foul breath; food stagnation vomiting has sour rotten smell with belching; phlegm-fluid vomiting produces clear watery phlegm.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "fu_zhang",
+    "slug": "fu-zhang",
+    "name_zh": "腹胀",
+    "name_pinyin": "Fu Zhang",
+    "name_en": "Abdominal Distension",
+    "category_zh": "脾胃病",
+    "category_en": "Digestive Conditions",
+    "aliases_zh": [
+      "胀满",
+      "腹部胀满"
+    ],
+    "aliases_en": [
+      "bloating",
+      "abdominal bloating"
+    ],
+    "description_zh": "腹胀是指腹部胀满不适的病证，以脘腹或少腹胀满为主症。多因脾失健运、气机壅滞、湿浊中阻所致。",
+    "description_en": "Abdominal distension presents with uncomfortable fullness in the abdomen. It is usually caused by impaired Spleen transportation, qi stagnation, or dampness-turbidity obstructing the middle burner.",
+    "related_patterns": [
+      "pi_qi_xu",
+      "shi_zu_zhong_jiao",
+      "gan_qi_yu_jie"
+    ],
+    "related_herbs": [
+      "hou_po",
+      "chen_pi",
+      "zhi_shi",
+      "mu_xiang",
+      "sha_ren"
+    ],
+    "related_formulas": [
+      "ping_wei_san",
+      "bao_he_wan"
+    ],
+    "related_acupoints": [
+      "zhong_wan",
+      "tian_shu",
+      "qi_hai",
+      "zu_san_li",
+      "nei_guan"
+    ],
+    "differentiation_guide_zh": "辨证要点：实胀满而不减、按之痛甚；虚胀时胀时消、喜按喜温。食后胀甚多属食积；情志不畅后胀甚多属肝郁。",
+    "differentiation_guide_en": "Key differentiation: Repletion distension is constant and worsens with pressure; vacuity distension fluctuates and improves with warmth and pressure. Post-meal worsening suggests food stagnation; worsening after emotional upset suggests Liver qi stagnation.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "shi_yu_bu_zhen",
+    "slug": "shi-yu-bu-zhen",
+    "name_zh": "食欲不振",
+    "name_pinyin": "Shi Yu Bu Zhen",
+    "name_en": "Poor Appetite",
+    "category_zh": "脾胃病",
+    "category_en": "Digestive Conditions",
+    "aliases_zh": [
+      "纳呆",
+      "不欲食"
+    ],
+    "aliases_en": [
+      "anorexia",
+      "loss of appetite"
+    ],
+    "description_zh": "食欲不振是以不思饮食或食而无味为主症的病证。脾主运化，胃主受纳，二者功能失常均可导致食欲不振。",
+    "description_en": "Poor appetite presents with lack of desire to eat or finding food tasteless. The Spleen governs transportation and the Stomach governs reception; dysfunction of either can cause appetite loss.",
+    "related_patterns": [
+      "pi_qi_xu",
+      "shi_zu_zhong_jiao",
+      "wei_yin_xu"
+    ],
+    "related_herbs": [
+      "shan_zha",
+      "mai_ya",
+      "shen_qu",
+      "ji_nei_jin",
+      "chen_pi"
+    ],
+    "related_formulas": [
+      "bao_he_wan",
+      "shen_ling_bai_zhu_san",
+      "si_jun_zi_tang"
+    ],
+    "related_acupoints": [
+      "zu_san_li",
+      "zhong_wan",
+      "pi_shu",
+      "wei_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：脾气虚者食少便溏、神疲乏力；湿阻中焦者不饥不食、口腻苔厚；食积者厌食腹胀、嗳腐吞酸；胃阴虚者饥不欲食、口干。",
+    "differentiation_guide_en": "Key differentiation: Spleen qi vacuity shows reduced food intake with loose stools and fatigue; dampness obstruction shows lack of hunger with sticky mouth and thick coating; food stagnation shows aversion to food with sour belching; Stomach yin vacuity shows hunger without desire to eat.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "nie_zheng",
+    "slug": "nie-zheng",
+    "name_zh": "呃逆",
+    "name_pinyin": "E Ni",
+    "name_en": "Hiccup",
+    "category_zh": "脾胃病",
+    "category_en": "Digestive Conditions",
+    "aliases_zh": [
+      "打嗝"
+    ],
+    "aliases_en": [
+      "hiccough",
+      "singultus"
+    ],
+    "description_zh": "呃逆是以气从胃中上逆、喉间频频发出短促呃声、声短而频、不能自制为主症的病证。其病机为胃气上逆动膈。",
+    "description_en": "Hiccup presents with qi rebelling upward from the Stomach, producing frequent short involuntary sounds in the throat. The pathomechanism is Stomach qi rebelliously rising to agitate the diaphragm.",
+    "related_patterns": [
+      "wei_han",
+      "wei_re",
+      "pi_qi_xu"
+    ],
+    "related_herbs": [
+      "ding_xiang",
+      "ban_xia",
+      "sheng_jiang",
+      "xuan_fu_hua",
+      "chen_pi"
+    ],
+    "related_formulas": [
+      "xuan_fu_dai_zhe_tang",
+      "si_jun_zi_tang"
+    ],
+    "related_acupoints": [
+      "zhong_wan",
+      "nei_guan",
+      "zu_san_li",
+      "ge_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：寒呃声音低沉、得热则减；热呃声音洪亮、口臭烦躁；虚呃声音低弱、气不接续。久病重病出现呃逆不止属危候。",
+    "differentiation_guide_en": "Key differentiation: Cold hiccup has low dull sound improved by warmth; heat hiccup has loud strong sound with halitosis and restlessness; vacuity hiccup has weak feeble sound with discontinuous breath. Intractable hiccup in severe chronic illness is a critical sign.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "ke_sou",
+    "slug": "ke-sou",
+    "name_zh": "咳嗽",
+    "name_pinyin": "Ke Sou",
+    "name_en": "Cough",
+    "category_zh": "肺系病",
+    "category_en": "Respiratory Conditions",
+    "aliases_zh": [
+      "咳",
+      "嗽"
+    ],
+    "aliases_en": [
+      "tussis"
+    ],
+    "description_zh": "咳嗽是肺气上逆作声、咯吐痰液的病证。有外感与内伤之分。外感咳嗽因六淫外邪犯肺，内伤咳嗽因脏腑功能失调、内邪干肺所致。",
+    "description_en": "Cough is the upward rebellion of Lung qi producing sound and expectoration. It is divided into external contraction and internal injury types. External cough results from pathogenic invasion of the Lung; internal cough results from organ dysfunction affecting the Lung.",
+    "related_patterns": [
+      "fei_qi_xu",
+      "fei_yin_xu",
+      "wai_gan_feng_han_biao_shi",
+      "tan_shi_zheng"
+    ],
+    "related_herbs": [
+      "xing_ren",
+      "chuan_bei_mu",
+      "jie_geng",
+      "zi_wan",
+      "kuan_dong_hua"
+    ],
+    "related_formulas": [
+      "sang_xing_tang",
+      "xiao_qing_long_tang",
+      "er_chen_tang",
+      "mai_men_dong_tang"
+    ],
+    "related_acupoints": [
+      "lie_que",
+      "fei_shu",
+      "zhong_fu",
+      "chi_ze",
+      "tian_tu"
+    ],
+    "differentiation_guide_zh": "辨证要点：风寒咳嗽痰稀白、恶寒；风热咳嗽痰稠黄、咽痛；燥咳干咳少痰、咽干；痰湿咳嗽痰多白粘、胸闷；阴虚咳嗽干咳少痰、口干。",
+    "differentiation_guide_en": "Key differentiation: Wind-cold cough has thin white sputum with chills; wind-heat has thick yellow sputum with sore throat; dryness shows dry cough with little sputum; phlegm-damp has copious white sticky sputum; yin vacuity shows dry cough with scanty sputum and dry mouth.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xiao_chuan",
+    "slug": "xiao-chuan",
+    "name_zh": "哮喘",
+    "name_pinyin": "Xiao Chuan",
+    "name_en": "Asthma",
+    "category_zh": "肺系病",
+    "category_en": "Respiratory Conditions",
+    "aliases_zh": [
+      "喘证",
+      "哮证"
+    ],
+    "aliases_en": [
+      "wheezing",
+      "dyspnea"
+    ],
+    "description_zh": "哮喘以反复发作性喘息、呼吸困难、胸闷、咳嗽为主症。哮以声响言，喘以气息言。宿痰伏于肺为发病之夙根，外感、饮食、情志为诱因。",
+    "description_en": "Asthma presents with recurrent episodes of wheezing, dyspnea, chest tightness, and cough. Latent phlegm lodged in the Lung is the root predisposition, while external pathogens, diet, and emotions are triggering factors.",
+    "related_patterns": [
+      "fei_qi_xu",
+      "shen_yang_xu",
+      "tan_shi_zheng"
+    ],
+    "related_herbs": [
+      "ma_huang",
+      "xing_ren",
+      "zi_su_zi",
+      "ban_xia",
+      "kuan_dong_hua"
+    ],
+    "related_formulas": [
+      "ding_chuan_tang",
+      "su_zi_jiang_qi_tang",
+      "xiao_qing_long_tang"
+    ],
+    "related_acupoints": [
+      "fei_shu",
+      "tian_tu",
+      "dan_zhong",
+      "lie_que"
+    ],
+    "differentiation_guide_zh": "辨证要点：发作期分寒哮与热哮：寒哮痰白清稀、畏寒；热哮痰黄稠粘、烦渴。缓解期以肺、脾、肾虚为主，当补虚固本。",
+    "differentiation_guide_en": "Key differentiation: During attacks, cold asthma has thin white sputum with chills; heat asthma has thick yellow sputum with thirst. During remission, Lung, Spleen, and Kidney vacuity predominate, requiring tonification of the root.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "gan_mao",
+    "slug": "gan-mao",
+    "name_zh": "感冒",
+    "name_pinyin": "Gan Mao",
+    "name_en": "Common Cold",
+    "category_zh": "肺系病",
+    "category_en": "Respiratory Conditions",
+    "aliases_zh": [
+      "伤风",
+      "伤寒"
+    ],
+    "aliases_en": [
+      "cold",
+      "influenza",
+      "flu"
+    ],
+    "description_zh": "感冒是感受外邪引起的常见外感病，以鼻塞、流涕、喷嚏、头痛、恶寒、发热、全身不适等为主要表现。四时均可发生，以冬春季多见。",
+    "description_en": "The common cold is caused by external pathogenic invasion, presenting with nasal congestion, runny nose, sneezing, headache, chills, fever, and general malaise. It occurs year-round but is most common in winter and spring.",
+    "related_patterns": [
+      "wai_gan_feng_han_biao_shi",
+      "wai_gan_feng_han_biao_xu",
+      "wei_fen_zheng"
+    ],
+    "related_herbs": [
+      "gui_zhi",
+      "ma_huang",
+      "jing_jie",
+      "fang_feng",
+      "jin_yin_hua"
+    ],
+    "related_formulas": [
+      "gui_zhi_tang",
+      "ma_huang_tang",
+      "yin_qiao_san",
+      "sang_ju_yin"
+    ],
+    "related_acupoints": [
+      "feng_chi",
+      "da_zhui",
+      "he_gu",
+      "lie_que",
+      "feng_men"
+    ],
+    "differentiation_guide_zh": "辨证要点：风寒感冒恶寒重发热轻、鼻流清涕、脉浮紧；风热感冒发热重恶寒轻、咽痛口渴、脉浮数。暑湿感冒兼见身热不扬、头重如裹。",
+    "differentiation_guide_en": "Key differentiation: Wind-cold shows predominant chills with mild fever, clear nasal discharge, and tight floating pulse; wind-heat shows predominant fever with mild chills, sore throat, thirst, and rapid floating pulse. Summer-damp adds lingering low fever with heavy-headed sensation.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "shi_mian",
+    "slug": "shi-mian",
+    "name_zh": "失眠",
+    "name_pinyin": "Shi Mian",
+    "name_en": "Insomnia",
+    "category_zh": "神志病",
+    "category_en": "Neurological & Emotional Conditions",
+    "aliases_zh": [
+      "不寐",
+      "不得眠"
+    ],
+    "aliases_en": [
+      "sleeplessness"
+    ],
+    "description_zh": "失眠以经常不能获得正常睡眠为特征。主要表现为入睡困难、睡而易醒、醒后不能再睡或时睡时醒。其病机总属阳盛阴衰、阳不入阴。",
+    "description_en": "Insomnia is characterized by the persistent inability to obtain normal sleep, manifesting as difficulty falling asleep, frequent waking, inability to return to sleep, or intermittent sleep. The core pathomechanism is yang repletion with yin vacuity, preventing yang from entering yin.",
+    "related_patterns": [
+      "xin_xue_xu",
+      "xin_yin_xu",
+      "gan_yang_shang_kang",
+      "gan_qi_yu_jie"
+    ],
+    "related_herbs": [
+      "suan_zao_ren",
+      "bai_zi_ren",
+      "yuan_zhi",
+      "he_huan_pi",
+      "ye_jiao_teng"
+    ],
+    "related_formulas": [
+      "suan_zao_ren_tang",
+      "gui_pi_tang",
+      "huang_lian_jie_du_tang"
+    ],
+    "related_acupoints": [
+      "shen_men",
+      "bai_hui",
+      "nei_guan",
+      "san_yin_jiao"
+    ],
+    "differentiation_guide_zh": "辨证要点：心脾两虚者多梦易醒、心悸健忘；阴虚火旺者心烦不寐、手足心热；肝郁化火者急躁易怒、目赤耳鸣；痰热内扰者胸闷恶心、口苦痰多。",
+    "differentiation_guide_en": "Key differentiation: Heart-Spleen vacuity shows excessive dreaming with easy waking and palpitations; yin vacuity fire has vexation with hot palms and soles; Liver fire has irritability with red eyes; phlegm-heat has chest oppression with nausea and bitter taste.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "jiao_lv",
+    "slug": "jiao-lv",
+    "name_zh": "焦虑",
+    "name_pinyin": "Jiao Lv",
+    "name_en": "Anxiety",
+    "category_zh": "神志病",
+    "category_en": "Neurological & Emotional Conditions",
+    "aliases_zh": [
+      "心烦",
+      "惊悸",
+      "怔忡"
+    ],
+    "aliases_en": [
+      "nervousness",
+      "apprehension"
+    ],
+    "description_zh": "焦虑在中医属郁证和惊悸范畴，以心烦不安、坐卧不宁、多虑善忧为主要表现。多因七情内伤，使气机郁滞、化火扰心。",
+    "description_en": "Anxiety falls within the TCM categories of constraint pattern and palpitation with fright. It presents with restlessness, inability to settle, and excessive worry. It typically arises from emotional injury causing qi stagnation that transforms into fire disturbing the Heart.",
+    "related_patterns": [
+      "gan_qi_yu_jie",
+      "xin_qi_xu",
+      "xin_xue_xu",
+      "xin_yin_xu"
+    ],
+    "related_herbs": [
+      "chai_hu",
+      "bai_shao",
+      "suan_zao_ren",
+      "fu_ling",
+      "yuan_zhi"
+    ],
+    "related_formulas": [
+      "xiao_yao_san",
+      "gui_pi_tang",
+      "suan_zao_ren_tang"
+    ],
+    "related_acupoints": [
+      "shen_men",
+      "nei_guan",
+      "bai_hui",
+      "tai_chong",
+      "san_yin_jiao"
+    ],
+    "differentiation_guide_zh": "辨证要点：肝郁气滞型焦虑伴胸胁胀痛、善太息；心脾两虚型伴心悸失眠、纳少便溏；阴虚火旺型伴口干盗汗、五心烦热。",
+    "differentiation_guide_en": "Key differentiation: Liver qi stagnation type has anxiety with hypochondriac distension and sighing; Heart-Spleen vacuity type has palpitations, insomnia, and poor appetite; yin vacuity fire type has dry mouth, night sweating, and five-center heat.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "yi_yu",
+    "slug": "yi-yu",
+    "name_zh": "抑郁",
+    "name_pinyin": "Yi Yu",
+    "name_en": "Depression",
+    "category_zh": "神志病",
+    "category_en": "Neurological & Emotional Conditions",
+    "aliases_zh": [
+      "郁证",
+      "脏躁"
+    ],
+    "aliases_en": [
+      "depressive disorder",
+      "melancholia"
+    ],
+    "description_zh": "抑郁属中医郁证范畴，以情志抑郁、心境低落、兴趣减退为主症。病机以肝气郁结为核心，日久可化火、伤阴、耗气，累及心、脾。",
+    "description_en": "Depression falls within the TCM category of constraint pattern, presenting with depressed mood, low spirits, and diminished interest. Liver qi stagnation is the core pathomechanism, which over time may transform into fire, damage yin, or consume qi, affecting the Heart and Spleen.",
+    "related_patterns": [
+      "gan_qi_yu_jie",
+      "xin_xue_xu",
+      "pi_qi_xu"
+    ],
+    "related_herbs": [
+      "chai_hu",
+      "xiang_fu",
+      "he_huan_pi",
+      "yu_jin",
+      "bai_shao"
+    ],
+    "related_formulas": [
+      "xiao_yao_san",
+      "jia_wei_xiao_yao_san",
+      "gui_pi_tang",
+      "yue_ju_wan"
+    ],
+    "related_acupoints": [
+      "tai_chong",
+      "nei_guan",
+      "bai_hui",
+      "shen_men",
+      "qi_men"
+    ],
+    "differentiation_guide_zh": "辨证要点：肝气郁结型情绪抑郁、胸胁胀满、善太息；气郁化火型急躁易怒、头痛目赤；心脾两虚型多思善虑、心悸失眠、纳少；痰气郁结型咽中如有物阻。",
+    "differentiation_guide_en": "Key differentiation: Liver qi stagnation shows depressed mood with chest and flank distension and sighing; qi transforming into fire shows irritability with headache; Heart-Spleen vacuity shows excessive worrying with insomnia and poor appetite; phlegm-qi constraint shows plum-pit qi sensation.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "yue_jing_bu_tiao",
+    "slug": "yue-jing-bu-tiao",
+    "name_zh": "月经不调",
+    "name_pinyin": "Yue Jing Bu Tiao",
+    "name_en": "Irregular Menstruation",
+    "category_zh": "妇科病",
+    "category_en": "Gynecological Conditions",
+    "aliases_zh": [
+      "经期不准",
+      "月经紊乱"
+    ],
+    "aliases_en": [
+      "menstrual irregularity",
+      "abnormal uterine bleeding"
+    ],
+    "description_zh": "月经不调是指月经的周期、经量、经色、经质发生异常，或伴随月经周期出现明显不适症状的病证。包括月经先期、后期、先后不定期以及经量过多、过少等。",
+    "description_en": "Irregular menstruation encompasses abnormalities in cycle length, flow volume, color, and quality, or marked discomfort associated with the menstrual cycle.",
+    "related_patterns": [
+      "xue_xu",
+      "gan_qi_yu_jie",
+      "shen_yin_xu",
+      "pi_qi_xu"
+    ],
+    "related_herbs": [
+      "dang_gui",
+      "bai_shao",
+      "shu_di_huang",
+      "chuan_xiong",
+      "xiang_fu"
+    ],
+    "related_formulas": [
+      "si_wu_tang",
+      "xiao_yao_san",
+      "gui_pi_tang",
+      "liu_wei_di_huang_wan"
+    ],
+    "related_acupoints": [
+      "san_yin_jiao",
+      "guan_yuan",
+      "xue_hai",
+      "qi_hai",
+      "zu_san_li"
+    ],
+    "differentiation_guide_zh": "辨证要点：月经先期多属热或气虚；月经后期多属寒、血虚或气滞；经量过多多属气虚或血热；经量过少多属血虚、肾虚或血瘀。",
+    "differentiation_guide_en": "Key differentiation: Early periods often indicate heat or qi vacuity; delayed periods suggest cold, blood vacuity, or qi stagnation; excessive flow points to qi vacuity or blood heat; scanty flow suggests blood vacuity, Kidney vacuity, or blood stasis.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "dai_xia",
+    "slug": "dai-xia",
+    "name_zh": "带下",
+    "name_pinyin": "Dai Xia",
+    "name_en": "Leukorrhea",
+    "category_zh": "妇科病",
+    "category_en": "Gynecological Conditions",
+    "aliases_zh": [
+      "白带异常",
+      "带下病"
+    ],
+    "aliases_en": [
+      "vaginal discharge",
+      "leucorrhea"
+    ],
+    "description_zh": "带下病是指带下量明显增多，色质气味异常，或伴全身或局部症状的病证。病机以湿邪为主，分为湿热下注和寒湿下注两大类。",
+    "description_en": "Leukorrhea refers to abnormally increased vaginal discharge with changes in color, consistency, or odor. Dampness is the primary pathogenic factor, divided into damp-heat and cold-damp types.",
+    "related_patterns": [
+      "shi_zu_zhong_jiao",
+      "pi_qi_xu",
+      "shen_yang_xu",
+      "pang_guang_shi_re"
+    ],
+    "related_herbs": [
+      "bai_zhu",
+      "shan_yao",
+      "yi_yi_ren",
+      "che_qian_zi",
+      "huang_bai"
+    ],
+    "related_formulas": [
+      "wan_dai_tang",
+      "long_dan_xie_gan_tang",
+      "shen_ling_bai_zhu_san"
+    ],
+    "related_acupoints": [
+      "dai_mai",
+      "san_yin_jiao",
+      "yin_ling_quan",
+      "qi_hai",
+      "zhong_ji"
+    ],
+    "differentiation_guide_zh": "辨证要点：白带清稀量多、无臭多属脾虚湿盛；带下色黄粘稠、有臭味多属湿热下注；带下清冷如水多属肾阳虚。",
+    "differentiation_guide_en": "Key differentiation: Clear copious odorless discharge suggests Spleen vacuity with dampness; yellow thick foul-smelling discharge suggests damp-heat; cold watery discharge suggests Kidney yang vacuity.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "bu_yun",
+    "slug": "bu-yun",
+    "name_zh": "不孕",
+    "name_pinyin": "Bu Yun",
+    "name_en": "Infertility",
+    "category_zh": "妇科病",
+    "category_en": "Gynecological Conditions",
+    "aliases_zh": [
+      "不孕症",
+      "求子"
+    ],
+    "aliases_en": [
+      "infertility",
+      "subfertility"
+    ],
+    "description_zh": "不孕是指育龄妇女婚后未避孕、有正常性生活、同居二年以上而未受孕的病证。中医认为与肾、肝、脾功能失调及冲任气血不和密切相关。",
+    "description_en": "Infertility refers to the inability to conceive after two or more years of regular unprotected intercourse. TCM considers it closely related to dysfunction of the Kidneys, Liver, and Spleen, and disharmony of qi and blood in the Chong and Ren vessels.",
+    "related_patterns": [
+      "shen_yang_xu",
+      "shen_yin_xu",
+      "xue_xu",
+      "gan_qi_yu_jie"
+    ],
+    "related_herbs": [
+      "shu_di_huang",
+      "dang_gui",
+      "tu_si_zi",
+      "xu_duan",
+      "yin_yang_huo"
+    ],
+    "related_formulas": [
+      "you_gui_wan",
+      "zuo_gui_wan",
+      "si_wu_tang"
+    ],
+    "related_acupoints": [
+      "guan_yuan",
+      "qi_hai",
+      "san_yin_jiao",
+      "shen_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：肾阳虚者婚久不孕、月经后期、量少色淡、腰膝酸软；肾阴虚者月经先期、量少色红；肝郁者月经先后不定、经前乳胀；痰湿者体胖、月经后期或闭经。",
+    "differentiation_guide_en": "Key differentiation: Kidney yang vacuity shows long-term infertility with delayed scanty pale periods; Kidney yin vacuity shows early scanty red periods; Liver stagnation shows irregular timing with premenstrual breast distension; phlegm-damp shows obesity with delayed periods or amenorrhea.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "shui_zhong",
+    "slug": "shui-zhong",
+    "name_zh": "水肿",
+    "name_pinyin": "Shui Zhong",
+    "name_en": "Edema",
+    "category_zh": "肾与膀胱病",
+    "category_en": "Urological Conditions",
+    "aliases_zh": [
+      "浮肿",
+      "肿胀"
+    ],
+    "aliases_en": [
+      "fluid retention",
+      "swelling"
+    ],
+    "description_zh": "水肿是体内水液潴留、泛滥肌肤引起头面、眼睑、四肢、腹背甚至全身浮肿的病证。其病机在于肺失通调、脾失转输、肾失开合。",
+    "description_en": "Edema presents with fluid retention manifesting as swelling of the face, eyelids, limbs, abdomen, or the entire body. The pathomechanism involves the Lung failing to regulate water passages, the Spleen failing to transport, and the Kidneys failing to open and close properly.",
+    "related_patterns": [
+      "shen_yang_xu",
+      "pi_qi_xu",
+      "fei_qi_xu"
+    ],
+    "related_herbs": [
+      "fu_ling",
+      "zhu_ling",
+      "ze_xie",
+      "yi_yi_ren",
+      "che_qian_zi"
+    ],
+    "related_formulas": [
+      "wu_ling_san",
+      "zhen_wu_tang",
+      "fang_ji_huang_qi_tang"
+    ],
+    "related_acupoints": [
+      "shui_fen",
+      "yin_ling_quan",
+      "san_yin_jiao",
+      "shen_shu",
+      "zu_san_li"
+    ],
+    "differentiation_guide_zh": "辨证要点：阳水起病急、眼睑头面先肿、多属实证；阴水起病缓、足跗先肿渐及全身、多属虚证。",
+    "differentiation_guide_en": "Key differentiation: Yang edema has acute onset starting from the face (repletion); yin edema has gradual onset starting from the feet (vacuity).",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "lin_zheng",
+    "slug": "lin-zheng",
+    "name_zh": "淋证",
+    "name_pinyin": "Lin Zheng",
+    "name_en": "Stranguria",
+    "category_zh": "肾与膀胱病",
+    "category_en": "Urological Conditions",
+    "aliases_zh": [
+      "小便淋沥",
+      "尿痛"
+    ],
+    "aliases_en": [
+      "painful urination",
+      "urinary tract infection"
+    ],
+    "description_zh": "淋证是以小便频急、淋沥涩痛、小腹拘急引痛为主症的病证。其病位在膀胱和肾，基本病机为湿热蕴结下焦、膀胱气化不利。",
+    "description_en": "Stranguria presents with urinary frequency, urgency, painful dribbling urination, and lower abdominal cramping. The disease site is the Bladder and Kidneys, with damp-heat accumulating in the Lower Burner.",
+    "related_patterns": [
+      "pang_guang_shi_re",
+      "shen_yin_xu"
+    ],
+    "related_herbs": [
+      "che_qian_zi",
+      "qu_mai",
+      "bian_xu",
+      "hua_shi",
+      "jin_qian_cao"
+    ],
+    "related_formulas": [
+      "ba_zheng_san",
+      "zhu_ling_tang",
+      "liu_wei_di_huang_wan"
+    ],
+    "related_acupoints": [
+      "zhong_ji",
+      "pang_guang_shu",
+      "san_yin_jiao",
+      "yin_ling_quan"
+    ],
+    "differentiation_guide_zh": "辨证要点：热淋小便灼热刺痛、尿色黄赤；石淋排尿中断、尿中砂石；血淋尿血疼痛明显；气淋少腹胀满、排尿不畅。",
+    "differentiation_guide_en": "Key differentiation: Heat stranguria has burning painful urination with dark urine; stone stranguria has interrupted urination with gravel; blood stranguria has hematuria with obvious pain; qi stranguria has lower abdominal fullness with difficult voiding.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "yi_jing",
+    "slug": "yi-jing",
+    "name_zh": "遗精",
+    "name_pinyin": "Yi Jing",
+    "name_en": "Seminal Emission",
+    "category_zh": "肾与膀胱病",
+    "category_en": "Urological Conditions",
+    "aliases_zh": [
+      "梦遗",
+      "滑精"
+    ],
+    "aliases_en": [
+      "nocturnal emission",
+      "spermatorrhea"
+    ],
+    "description_zh": "遗精是指不因性交而精液自行外泄的病证。有梦而遗者名梦遗，无梦而遗甚至清醒时精液自出者名滑精。其病机主要为肾失封藏。",
+    "description_en": "Seminal emission refers to involuntary discharge of semen outside of intercourse. The core pathomechanism is the Kidneys failing to store and secure.",
+    "related_patterns": [
+      "shen_yin_xu",
+      "shen_yang_xu",
+      "xin_xue_xu"
+    ],
+    "related_herbs": [
+      "shan_zhu_yu",
+      "lian_zi",
+      "qian_shi",
+      "jin_ying_zi",
+      "mu_li"
+    ],
+    "related_formulas": [
+      "liu_wei_di_huang_wan",
+      "jin_gui_shen_qi_wan",
+      "sang_piao_xiao_san"
+    ],
+    "related_acupoints": [
+      "guan_yuan",
+      "shen_shu",
+      "san_yin_jiao",
+      "tai_xi"
+    ],
+    "differentiation_guide_zh": "辨证要点：肾阴虚型遗精频作、腰膝酸软、潮热盗汗；肾气不固型滑精、神疲乏力；心肾不交型心烦失眠、多梦遗精。",
+    "differentiation_guide_en": "Key differentiation: Kidney yin vacuity has frequent emissions with lumbar weakness and night sweats; Kidney qi insecurity has spermatorrhea with fatigue; Heart-Kidney disharmony has insomnia with dream emissions.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "ye_niao",
+    "slug": "ye-niao",
+    "name_zh": "遗尿",
+    "name_pinyin": "Yi Niao",
+    "name_en": "Enuresis",
+    "category_zh": "肾与膀胱病",
+    "category_en": "Urological Conditions",
+    "aliases_zh": [
+      "尿床",
+      "小便不禁"
+    ],
+    "aliases_en": [
+      "bedwetting",
+      "urinary incontinence"
+    ],
+    "description_zh": "遗尿是指3岁以上小儿或成人睡眠中不自觉排尿的病证。其病机为膀胱失约、肾气不固。",
+    "description_en": "Enuresis refers to involuntary urination during sleep. The pathomechanism is the Bladder losing restraint and Kidney qi failing to secure.",
+    "related_patterns": [
+      "shen_yang_xu",
+      "pi_qi_xu",
+      "fei_qi_xu"
+    ],
+    "related_herbs": [
+      "sang_piao_xiao",
+      "yi_zhi_ren",
+      "tu_si_zi",
+      "fu_pen_zi",
+      "shan_yao"
+    ],
+    "related_formulas": [
+      "sang_piao_xiao_san",
+      "jin_gui_shen_qi_wan",
+      "bu_zhong_yi_qi_tang"
+    ],
+    "related_acupoints": [
+      "guan_yuan",
+      "zhong_ji",
+      "shen_shu",
+      "pang_guang_shu",
+      "san_yin_jiao"
+    ],
+    "differentiation_guide_zh": "辨证要点：肾气不固型遗尿频繁、尿色清长；脾肺气虚型遗尿伴面色苍白、食少便溏。",
+    "differentiation_guide_en": "Key differentiation: Kidney qi insecurity has frequent enuresis with clear copious urine; Spleen-Lung qi vacuity has enuresis with pale face and loose stools.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "shi_zhen",
+    "slug": "shi-zhen",
+    "name_zh": "湿疹",
+    "name_pinyin": "Shi Zhen",
+    "name_en": "Eczema",
+    "category_zh": "皮肤病",
+    "category_en": "Dermatological Conditions",
+    "aliases_zh": [
+      "湿疮",
+      "浸淫疮"
+    ],
+    "aliases_en": [
+      "atopic dermatitis"
+    ],
+    "description_zh": "湿疹以皮损多形性、对称分布、剧烈瘙痒、反复发作、易演变为慢性为临床特点。内因为禀赋不耐、脾失健运，外因为风湿热邪侵袭。",
+    "description_en": "Eczema is characterized by polymorphic skin lesions, symmetrical distribution, intense itching, recurrent episodes, and tendency to become chronic.",
+    "related_patterns": [
+      "shi_zu_zhong_jiao",
+      "xue_xu",
+      "da_chang_shi_re"
+    ],
+    "related_herbs": [
+      "bai_xian_pi",
+      "ku_shen",
+      "di_fu_zi",
+      "yi_yi_ren",
+      "huang_bai"
+    ],
+    "related_formulas": [
+      "xiao_feng_san",
+      "long_dan_xie_gan_tang",
+      "si_wu_tang"
+    ],
+    "related_acupoints": [
+      "qu_chi",
+      "xue_hai",
+      "san_yin_jiao",
+      "he_gu",
+      "zu_san_li"
+    ],
+    "differentiation_guide_zh": "辨证要点：急性期多属湿热浸淫；亚急性期多属脾虚湿蕴；慢性期多属血虚风燥。",
+    "differentiation_guide_en": "Key differentiation: Acute phase is mostly damp-heat; subacute phase is Spleen vacuity dampness; chronic phase is blood vacuity wind-dryness.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xun_ma_zhen",
+    "slug": "xun-ma-zhen",
+    "name_zh": "荨麻疹",
+    "name_pinyin": "Xun Ma Zhen",
+    "name_en": "Urticaria",
+    "category_zh": "皮肤病",
+    "category_en": "Dermatological Conditions",
+    "aliases_zh": [
+      "瘾疹",
+      "风疹块"
+    ],
+    "aliases_en": [
+      "hives"
+    ],
+    "description_zh": "荨麻疹以突然发作的皮肤风团、瘙痒为特征，发无定处，时隐时现。中医称为瘾疹，多因禀赋不耐、风邪客于肌表所致。",
+    "description_en": "Urticaria is characterized by suddenly appearing wheals with itching, occurring at unpredictable locations and appearing and disappearing intermittently.",
+    "related_patterns": [
+      "xue_xu",
+      "wei_fen_zheng"
+    ],
+    "related_herbs": [
+      "fang_feng",
+      "jing_jie",
+      "chan_tui",
+      "bai_xian_pi",
+      "di_fu_zi"
+    ],
+    "related_formulas": [
+      "xiao_feng_san",
+      "yu_ping_feng_san",
+      "gui_zhi_tang"
+    ],
+    "related_acupoints": [
+      "qu_chi",
+      "he_gu",
+      "xue_hai",
+      "feng_shi",
+      "zu_san_li"
+    ],
+    "differentiation_guide_zh": "辨证要点：风寒型遇冷加重、风团色白；风热型遇热加重、风团色红；血虚风燥型反复发作、午后加重。",
+    "differentiation_guide_en": "Key differentiation: Wind-cold type worsens with cold and has pale wheals; wind-heat type worsens with heat and has red wheals; blood vacuity wind-dryness type recurs frequently.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "cuo_chuang",
+    "slug": "cuo-chuang",
+    "name_zh": "痤疮",
+    "name_pinyin": "Cuo Chuang",
+    "name_en": "Acne",
+    "category_zh": "皮肤病",
+    "category_en": "Dermatological Conditions",
+    "aliases_zh": [
+      "粉刺",
+      "青春痘"
+    ],
+    "aliases_en": [
+      "acne vulgaris",
+      "pimples"
+    ],
+    "description_zh": "痤疮是发生于面部及胸背部的毛囊皮脂腺的慢性炎症性皮肤病。中医认为多因肺经风热、胃肠湿热、痰湿凝结、冲任不调所致。",
+    "description_en": "Acne is a chronic inflammatory skin condition affecting the pilosebaceous units of the face, chest, and back.",
+    "related_patterns": [
+      "da_chang_shi_re",
+      "tan_shi_zheng",
+      "xue_xu"
+    ],
+    "related_herbs": [
+      "jin_yin_hua",
+      "lian_qiao",
+      "huang_qin",
+      "zhi_zi",
+      "pu_gong_ying"
+    ],
+    "related_formulas": [
+      "huang_lian_jie_du_tang",
+      "xiao_feng_san"
+    ],
+    "related_acupoints": [
+      "he_gu",
+      "qu_chi",
+      "zu_san_li",
+      "da_zhui"
+    ],
+    "differentiation_guide_zh": "辨证要点：肺经风热型以粉刺为主；胃肠湿热型以脓疱为主、口臭便秘；痰湿凝结型以结节囊肿为主。",
+    "differentiation_guide_en": "Key differentiation: Lung channel wind-heat shows comedones; Stomach-Intestine damp-heat shows pustules with halitosis; phlegm-damp congelation shows persistent nodules and cysts.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xuan_yun",
+    "slug": "xuan-yun",
+    "name_zh": "眩晕",
+    "name_pinyin": "Xuan Yun",
+    "name_en": "Dizziness",
+    "category_zh": "虚损杂病",
+    "category_en": "Constitutional & Miscellaneous Conditions",
+    "aliases_zh": [
+      "头晕",
+      "目眩"
+    ],
+    "aliases_en": [
+      "vertigo",
+      "lightheadedness"
+    ],
+    "description_zh": "眩晕是以头晕目眩为主症的病证。眩为眼花或眼前发黑，晕为头晕甚或感觉自身或外界景物旋转。病因不外乎风、火、痰、虚四端。",
+    "description_en": "Dizziness presents with a sensation of lightheadedness and visual disturbance. The causes are classified into four categories: wind, fire, phlegm, and vacuity.",
+    "related_patterns": [
+      "gan_yang_shang_kang",
+      "tan_shi_zheng",
+      "qi_xue_liang_xu",
+      "shen_yin_xu"
+    ],
+    "related_herbs": [
+      "tian_ma",
+      "gou_teng",
+      "ju_hua",
+      "bai_zhu",
+      "ban_xia"
+    ],
+    "related_formulas": [
+      "tian_ma_gou_teng_yin",
+      "ban_xia_bai_zhu_tian_ma_tang",
+      "liu_wei_di_huang_wan"
+    ],
+    "related_acupoints": [
+      "bai_hui",
+      "feng_chi",
+      "tai_chong",
+      "tai_xi",
+      "zu_san_li"
+    ],
+    "differentiation_guide_zh": "辨证要点：肝阳上亢型眩晕头胀、面红易怒；痰湿中阻型头重如蒙、胸闷恶心；气血亏虚型动则加剧、面色苍白；肾精不足型耳鸣腰膝酸软。",
+    "differentiation_guide_en": "Key differentiation: Liver yang rising shows dizziness with head distension and irritability; phlegm-damp shows heavy head with chest oppression; qi-blood vacuity worsens with movement; Kidney essence vacuity shows tinnitus with lumbar weakness.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "pi_lao",
+    "slug": "pi-lao",
+    "name_zh": "疲劳",
+    "name_pinyin": "Pi Lao",
+    "name_en": "Fatigue",
+    "category_zh": "虚损杂病",
+    "category_en": "Constitutional & Miscellaneous Conditions",
+    "aliases_zh": [
+      "乏力",
+      "虚劳",
+      "倦怠"
+    ],
+    "aliases_en": [
+      "tiredness",
+      "lassitude",
+      "chronic fatigue"
+    ],
+    "description_zh": "疲劳以身体倦怠、精神不振、少气懒言为主症。中医称虚劳，多因先天不足、后天失养、劳倦过度、久病失治所致，以气虚为核心。",
+    "description_en": "Fatigue presents with bodily weariness, low spirits, and disinclination to speak. Qi vacuity is the core pathomechanism.",
+    "related_patterns": [
+      "pi_qi_xu",
+      "qi_xue_liang_xu",
+      "shen_yang_xu",
+      "xin_qi_xu"
+    ],
+    "related_herbs": [
+      "huang_qi",
+      "ren_shen",
+      "bai_zhu",
+      "dang_shen",
+      "shan_yao"
+    ],
+    "related_formulas": [
+      "si_jun_zi_tang",
+      "bu_zhong_yi_qi_tang",
+      "gui_pi_tang",
+      "shi_quan_da_bu_tang"
+    ],
+    "related_acupoints": [
+      "zu_san_li",
+      "qi_hai",
+      "guan_yuan",
+      "pi_shu",
+      "shen_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：气虚型神疲乏力、少气懒言、自汗；血虚型面色萎黄、头晕心悸；阳虚型畏寒肢冷；阴虚型口干潮热。",
+    "differentiation_guide_en": "Key differentiation: Qi vacuity shows fatigue with shortness of breath and spontaneous sweating; blood vacuity shows sallow complexion; yang vacuity shows cold aversion; yin vacuity shows dry mouth with afternoon heat.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "zi_han_dao_han",
+    "slug": "zi-han-dao-han",
+    "name_zh": "自汗盗汗",
+    "name_pinyin": "Zi Han Dao Han",
+    "name_en": "Spontaneous and Night Sweating",
+    "category_zh": "虚损杂病",
+    "category_en": "Constitutional & Miscellaneous Conditions",
+    "aliases_zh": [
+      "多汗",
+      "出汗异常"
+    ],
+    "aliases_en": [
+      "hyperhidrosis",
+      "excessive sweating"
+    ],
+    "description_zh": "自汗是指不因劳动或天热而自然出汗的病证；盗汗是指入睡后汗出、醒来即止的病证。自汗多属气虚或阳虚，盗汗多属阴虚内热。",
+    "description_en": "Spontaneous sweating occurs without exertion or heat; night sweating occurs during sleep and stops upon waking. Spontaneous sweating is usually attributed to qi or yang vacuity, while night sweating is typically attributed to yin vacuity with internal heat.",
+    "related_patterns": [
+      "pi_qi_xu",
+      "fei_qi_xu",
+      "yin_xu_zheng",
+      "shen_yin_xu"
+    ],
+    "related_herbs": [
+      "huang_qi",
+      "bai_zhu",
+      "ma_huang_gen",
+      "wu_wei_zi",
+      "mu_li"
+    ],
+    "related_formulas": [
+      "yu_ping_feng_san",
+      "mu_li_san",
+      "liu_wei_di_huang_wan"
+    ],
+    "related_acupoints": [
+      "he_gu",
+      "fu_liu",
+      "zu_san_li",
+      "qi_hai",
+      "shen_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：自汗属气虚卫外不固者汗出恶风、易感冒；盗汗属阴虚内热者潮热颧红、口干舌红。",
+    "differentiation_guide_en": "Key differentiation: Spontaneous sweating from qi vacuity shows sweating with wind aversion; night sweating from yin vacuity shows tidal heat with malar flush.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "er_ming",
+    "slug": "er-ming",
+    "name_zh": "耳鸣",
+    "name_pinyin": "Er Ming",
+    "name_en": "Tinnitus",
+    "category_zh": "虚损杂病",
+    "category_en": "Constitutional & Miscellaneous Conditions",
+    "aliases_zh": [
+      "耳聋",
+      "耳鸣耳聋"
+    ],
+    "aliases_en": [
+      "ringing in ears"
+    ],
+    "description_zh": "耳鸣是指自觉耳中鸣响的病证。实证多因肝火、痰火上扰清窍；虚证多因肾精不足、气血亏虚。肾开窍于耳，故耳鸣与肾关系最为密切。",
+    "description_en": "Tinnitus is the subjective perception of ringing or buzzing in the ears. The Kidneys open to the ears, making tinnitus most closely related to Kidney function.",
+    "related_patterns": [
+      "shen_yin_xu",
+      "gan_yang_shang_kang",
+      "qi_xue_liang_xu"
+    ],
+    "related_herbs": [
+      "shan_zhu_yu",
+      "shu_di_huang",
+      "gou_qi_zi",
+      "shi_chang_pu",
+      "tian_ma"
+    ],
+    "related_formulas": [
+      "liu_wei_di_huang_wan",
+      "tian_ma_gou_teng_yin",
+      "gui_pi_tang"
+    ],
+    "related_acupoints": [
+      "er_men",
+      "ting_gong",
+      "ting_hui",
+      "tai_xi",
+      "shen_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：实证耳鸣声大如潮、突然发作；虚证耳鸣声细如蝉、渐渐加重。",
+    "differentiation_guide_en": "Key differentiation: Repletion tinnitus is loud like rushing water with sudden onset; vacuity tinnitus is fine like cicada sounds with gradual worsening.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xiao_er_fa_re",
+    "slug": "xiao-er-fa-re",
+    "name_zh": "小儿发热",
+    "name_pinyin": "Xiao Er Fa Re",
+    "name_en": "Pediatric Fever",
+    "category_zh": "儿科病",
+    "category_en": "Pediatric Conditions",
+    "aliases_zh": [
+      "小儿高热",
+      "儿童发烧"
+    ],
+    "aliases_en": [
+      "childhood fever"
+    ],
+    "description_zh": "小儿发热是儿科最常见症状之一。小儿脏腑娇嫩、形气未充，易感外邪，且传变迅速。",
+    "description_en": "Pediatric fever is one of the most common symptoms in pediatrics. Children have delicate organs and immature constitution, making them susceptible to external pathogens with rapid disease transmission.",
+    "related_patterns": [
+      "wai_gan_feng_han_biao_shi",
+      "wei_fen_zheng",
+      "qi_fen_zheng"
+    ],
+    "related_herbs": [
+      "jin_yin_hua",
+      "lian_qiao",
+      "bo_he",
+      "chai_hu",
+      "ge_gen"
+    ],
+    "related_formulas": [
+      "yin_qiao_san",
+      "sang_ju_yin",
+      "bao_he_wan"
+    ],
+    "related_acupoints": [
+      "da_zhui",
+      "qu_chi",
+      "he_gu",
+      "wai_guan"
+    ],
+    "differentiation_guide_zh": "辨证要点：风寒发热恶寒重、鼻流清涕；风热发热重、咽红肿痛；食积发热腹胀纳呆、手足心热。",
+    "differentiation_guide_en": "Key differentiation: Wind-cold shows prominent chills with clear discharge; wind-heat shows prominent fever with sore throat; food stagnation fever shows abdominal distension with hot palms.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xiao_er_xie_xie",
+    "slug": "xiao-er-xie-xie",
+    "name_zh": "小儿泄泻",
+    "name_pinyin": "Xiao Er Xie Xie",
+    "name_en": "Pediatric Diarrhea",
+    "category_zh": "儿科病",
+    "category_en": "Pediatric Conditions",
+    "aliases_zh": [
+      "婴幼儿腹泻",
+      "小儿腹泻"
+    ],
+    "aliases_en": [
+      "infant diarrhea",
+      "childhood diarrhea"
+    ],
+    "description_zh": "小儿泄泻是儿科常见病证，以大便次数增多和性状改变为主症。小儿脾常不足，故脾虚湿盛为本病之根本病机。",
+    "description_en": "Pediatric diarrhea is a common childhood condition. Children have constitutionally insufficient Spleen function, making Spleen vacuity with dampness the fundamental pathomechanism.",
+    "related_patterns": [
+      "pi_qi_xu",
+      "shi_zu_zhong_jiao",
+      "pi_qi_xia_xian"
+    ],
+    "related_herbs": [
+      "bai_zhu",
+      "fu_ling",
+      "shan_yao",
+      "ge_gen",
+      "chen_pi"
+    ],
+    "related_formulas": [
+      "shen_ling_bai_zhu_san",
+      "bao_he_wan",
+      "si_jun_zi_tang"
+    ],
+    "related_acupoints": [
+      "zu_san_li",
+      "tian_shu",
+      "pi_shu",
+      "zhong_wan"
+    ],
+    "differentiation_guide_zh": "辨证要点：伤食泻便酸臭；风寒泻便稀如水；湿热泻便黄褐臭秽；脾虚泻食后即泻。",
+    "differentiation_guide_en": "Key differentiation: Food damage has sour-smelling stools; wind-cold has watery stools; damp-heat has yellow foul stools; Spleen vacuity occurs right after eating.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "jing_feng",
+    "slug": "jing-feng",
+    "name_zh": "惊风",
+    "name_pinyin": "Jing Feng",
+    "name_en": "Infantile Convulsions",
+    "category_zh": "儿科病",
+    "category_en": "Pediatric Conditions",
+    "aliases_zh": [
+      "小儿惊风",
+      "抽搐"
+    ],
+    "aliases_en": [
+      "febrile seizures",
+      "childhood convulsions"
+    ],
+    "description_zh": "惊风是小儿时期常见的急危重症，以抽搐、神昏为主症。分急惊风和慢惊风。",
+    "description_en": "Infantile convulsions are a serious pediatric emergency presenting with convulsions and clouded consciousness. They are divided into acute and chronic types.",
+    "related_patterns": [
+      "wei_fen_zheng",
+      "qi_fen_zheng",
+      "pi_qi_xu",
+      "shen_yang_xu"
+    ],
+    "related_herbs": [
+      "gou_teng",
+      "tian_ma",
+      "jiang_can",
+      "quan_xie",
+      "di_long"
+    ],
+    "related_formulas": [
+      "ling_jiao_gou_teng_tang",
+      "si_jun_zi_tang"
+    ],
+    "related_acupoints": [
+      "bai_hui",
+      "da_zhui",
+      "qu_chi",
+      "he_gu",
+      "yong_quan"
+    ],
+    "differentiation_guide_zh": "辨证要点：急惊风起病急骤、高热抽搐、属实热；慢惊风起病缓慢、反复抽搐、属虚寒。",
+    "differentiation_guide_en": "Key differentiation: Acute convulsions have sudden onset with high fever (repletion heat); chronic convulsions have gradual onset with recurrent convulsions (vacuity cold).",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "gao_xue_ya",
+    "slug": "gao-xue-ya",
+    "name_zh": "高血压",
+    "name_pinyin": "Gao Xue Ya",
+    "name_en": "Hypertension",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "血压升高",
+      "高血压病"
+    ],
+    "aliases_en": [
+      "high blood pressure"
+    ],
+    "description_zh": "高血压在中医多归属于眩晕、头痛范畴。其病机多为肝肾阴虚、肝阳上亢，或痰湿壅盛、瘀血内阻。",
+    "description_en": "Hypertension in TCM is usually categorized under dizziness and headache. The pathomechanism typically involves Liver-Kidney yin vacuity with Liver yang rising, or phlegm-dampness with blood stasis.",
+    "related_patterns": [
+      "gan_yang_shang_kang",
+      "shen_yin_xu",
+      "tan_shi_zheng",
+      "gan_yin_xu"
+    ],
+    "related_herbs": [
+      "tian_ma",
+      "gou_teng",
+      "xia_ku_cao",
+      "ju_hua",
+      "niu_xi"
+    ],
+    "related_formulas": [
+      "tian_ma_gou_teng_yin",
+      "zhen_gan_xi_feng_tang",
+      "liu_wei_di_huang_wan"
+    ],
+    "related_acupoints": [
+      "tai_chong",
+      "feng_chi",
+      "qu_chi",
+      "zu_san_li",
+      "bai_hui"
+    ],
+    "differentiation_guide_zh": "辨证要点：肝阳上亢型头痛眩晕、面红易怒；阴虚阳亢型眩晕耳鸣、腰膝酸软；痰湿壅盛型头重如蒙；瘀血阻络型头痛如刺。",
+    "differentiation_guide_en": "Key differentiation: Liver yang rising shows headache with flushing and irritability; yin vacuity yang repletion shows tinnitus with lumbar weakness; phlegm-damp shows heavy head; blood stasis shows stabbing headache.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "tang_niao_bing",
+    "slug": "tang-niao-bing",
+    "name_zh": "糖尿病",
+    "name_pinyin": "Tang Niao Bing",
+    "name_en": "Diabetes",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "消渴",
+      "消渴病"
+    ],
+    "aliases_en": [
+      "diabetes mellitus",
+      "xiao ke"
+    ],
+    "description_zh": "糖尿病在中医属消渴范畴。以多饮、多食、多尿、消瘦为主要临床表现。基本病机为阴虚燥热，病位在肺、胃、肾，以肾为根本。",
+    "description_en": "Diabetes falls within the TCM category of wasting-thirst. It presents with excessive thirst, hunger, urination, and weight loss. The basic pathomechanism is yin vacuity with dryness-heat.",
+    "related_patterns": [
+      "yin_xu_zheng",
+      "shen_yin_xu",
+      "wei_yin_xu",
+      "qi_xue_liang_xu"
+    ],
+    "related_herbs": [
+      "sheng_di_huang",
+      "shan_yao",
+      "zhi_mu",
+      "gou_qi_zi",
+      "mai_dong"
+    ],
+    "related_formulas": [
+      "liu_wei_di_huang_wan",
+      "yu_nu_jian",
+      "bai_hu_tang"
+    ],
+    "related_acupoints": [
+      "tai_xi",
+      "san_yin_jiao",
+      "shen_shu",
+      "zu_san_li",
+      "fei_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：上消口渴多饮为主；中消多食易饥为主；下消多尿为主。日久气阴两虚。",
+    "differentiation_guide_en": "Key differentiation: Upper wasting presents mainly with excessive thirst; middle wasting with excessive hunger; lower wasting with excessive urination.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "zhong_feng",
+    "slug": "zhong-feng",
+    "name_zh": "中风",
+    "name_pinyin": "Zhong Feng",
+    "name_en": "Stroke",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "卒中",
+      "脑卒中"
+    ],
+    "aliases_en": [
+      "apoplexy",
+      "cerebrovascular accident"
+    ],
+    "description_zh": "中风以猝然昏仆、不省人事、半身不遂、口眼歪斜、语言不利为主症。其病机为气血逆乱、上犯于脑。",
+    "description_en": "Stroke presents with sudden collapse, loss of consciousness, hemiplegia, facial deviation, and speech impairment. The pathomechanism involves chaotic rebellion of qi and blood ascending to assault the brain.",
+    "related_patterns": [
+      "gan_yang_shang_kang",
+      "tan_shi_zheng",
+      "qi_xue_liang_xu"
+    ],
+    "related_herbs": [
+      "tian_ma",
+      "gou_teng",
+      "dan_shen",
+      "di_long",
+      "huang_qi"
+    ],
+    "related_formulas": [
+      "bu_yang_huan_wu_tang",
+      "an_gong_niu_huang_wan",
+      "tian_ma_gou_teng_yin",
+      "zhen_gan_xi_feng_tang"
+    ],
+    "related_acupoints": [
+      "bai_hui",
+      "qu_chi",
+      "he_gu",
+      "zu_san_li",
+      "san_yin_jiao"
+    ],
+    "differentiation_guide_zh": "辨证要点：中经络者半身不遂但神志清醒；中脏腑者突然昏仆、不省人事。闭证牙关紧闭（实）；脱证目合口张（虚）。",
+    "differentiation_guide_en": "Key differentiation: Channel-network stroke has hemiplegia with clear consciousness; organ-bowel stroke has collapse with unconsciousness. Closed pattern (repletion); abandoned pattern (vacuity).",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "bi_zheng",
+    "slug": "bi-zheng",
+    "name_zh": "痹证",
+    "name_pinyin": "Bi Zheng",
+    "name_en": "Bi Pattern",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "风湿痹痛",
+      "关节痹痛"
+    ],
+    "aliases_en": [
+      "rheumatic arthralgia",
+      "painful obstruction"
+    ],
+    "description_zh": "痹证是由风、寒、湿三邪侵袭人体、闭阻经络、气血运行不畅所致的病证。以肢体关节疼痛、酸楚、麻木、重着、屈伸不利为主症。",
+    "description_en": "Bi pattern results from invasion of wind, cold, and dampness that block the channels and impair qi-blood flow.",
+    "related_patterns": [
+      "shi_zu_zhong_jiao",
+      "xue_xu"
+    ],
+    "related_herbs": [
+      "du_huo",
+      "qiang_huo",
+      "fang_feng",
+      "sang_ji_sheng",
+      "wei_ling_xian"
+    ],
+    "related_formulas": [
+      "du_huo_ji_sheng_tang",
+      "huang_qi_gui_zhi_wu_wu_tang",
+      "jiu_wei_qiang_huo_tang"
+    ],
+    "related_acupoints": [
+      "qu_chi",
+      "he_gu",
+      "zu_san_li",
+      "yang_ling_quan",
+      "xue_hai"
+    ],
+    "differentiation_guide_zh": "辨证要点：行痹关节游走疼痛；痛痹疼痛剧烈固定、遇寒加重；着痹关节酸痛重着、遇阴雨加重；热痹关节红肿热痛。",
+    "differentiation_guide_en": "Key differentiation: Wandering Bi has migratory pain; Painful Bi has severe fixed pain worsened by cold; Fixed Bi has heavy aching worse in damp weather; Heat Bi has red swollen hot joints.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xin_ji",
+    "slug": "xin-ji",
+    "name_zh": "心悸",
+    "name_pinyin": "Xin Ji",
+    "name_en": "Palpitation",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "怔忡",
+      "心慌"
+    ],
+    "aliases_en": [
+      "heart palpitations",
+      "cardiac arrhythmia"
+    ],
+    "description_zh": "心悸是指患者自觉心中悸动不安、甚至不能自主的病证。病位在心，与肝脾肾肺均有关。",
+    "description_en": "Palpitation refers to an uncomfortable awareness of the heartbeat, sometimes uncontrollable. The disease site is the Heart, but it also involves the Liver, Spleen, Kidneys, and Lungs.",
+    "related_patterns": [
+      "xin_qi_xu",
+      "xin_xue_xu",
+      "xin_yang_xu",
+      "xin_yin_xu"
+    ],
+    "related_herbs": [
+      "suan_zao_ren",
+      "bai_zi_ren",
+      "long_gu",
+      "mu_li",
+      "dan_shen"
+    ],
+    "related_formulas": [
+      "gui_pi_tang",
+      "zhi_gan_cao_tang",
+      "suan_zao_ren_tang"
+    ],
+    "related_acupoints": [
+      "shen_men",
+      "nei_guan",
+      "xin_shu",
+      "dan_zhong",
+      "zu_san_li"
+    ],
+    "differentiation_guide_zh": "辨证要点：心气虚者心悸气短、活动后加重；心血虚者心悸失眠；心阳虚者心悸胸闷、畏寒；瘀阻心脉者心悸胸痛。",
+    "differentiation_guide_en": "Key differentiation: Heart qi vacuity shows palpitations with shortness of breath worsened by activity; Heart blood vacuity with insomnia; Heart yang vacuity with chest oppression and cold; blood stasis with chest pain.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "mei_he_qi",
+    "slug": "mei-he-qi",
+    "name_zh": "梅核气",
+    "name_pinyin": "Mei He Qi",
+    "name_en": "Plum-Pit Qi",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "咽中如有物阻",
+      "癔球症"
+    ],
+    "aliases_en": [
+      "globus pharyngeus",
+      "globus sensation"
+    ],
+    "description_zh": "梅核气是指自觉咽中有异物阻塞、咯之不出、咽之不下的病证，但不影响饮食。病机为痰气交阻于咽喉。",
+    "description_en": "Plum-pit qi refers to the subjective sensation of a foreign body stuck in the throat that can neither be coughed up nor swallowed, but does not affect eating. The pathomechanism is phlegm and qi mutually obstructing the throat.",
+    "related_patterns": [
+      "mei_he_qi",
+      "gan_qi_yu_jie",
+      "tan_shi_zheng"
+    ],
+    "related_herbs": [
+      "ban_xia",
+      "hou_po",
+      "fu_ling",
+      "zi_su_ye",
+      "sheng_jiang"
+    ],
+    "related_formulas": [
+      "ban_xia_hou_po_tang",
+      "xiao_yao_san"
+    ],
+    "related_acupoints": [
+      "tian_tu",
+      "lian_quan",
+      "nei_guan",
+      "tai_chong",
+      "feng_long"
+    ],
+    "differentiation_guide_zh": "辨证要点：痰气互结型咽中梗阻感明显、情绪波动时加重；肝郁气滞型伴胸胁胀痛。",
+    "differentiation_guide_en": "Key differentiation: Phlegm-qi binding has prominent globus sensation worsened by emotional fluctuation; Liver qi stagnation has hypochondriac distension.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "wei_bi",
+    "slug": "wei-bi",
+    "name_zh": "痿痹",
+    "name_pinyin": "Wei Bi",
+    "name_en": "Atrophy-Flaccidity Pattern",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "痿证",
+      "肢体痿软"
+    ],
+    "aliases_en": [
+      "flaccidity pattern",
+      "muscular atrophy"
+    ],
+    "description_zh": "痿证是以肢体筋脉弛缓、软弱无力、甚至肌肉萎缩或瘫痪为主症的病证。其病机总属筋脉肌肉失于濡养。",
+    "description_en": "Atrophy-flaccidity pattern presents with relaxation and weakness of the sinews and vessels, possibly progressing to muscular atrophy or paralysis.",
+    "related_patterns": [
+      "fei_yin_xu",
+      "pi_qi_xu",
+      "shen_yin_xu",
+      "gan_xue_xu"
+    ],
+    "related_herbs": [
+      "huang_qi",
+      "dang_gui",
+      "niu_xi",
+      "du_zhong",
+      "sang_ji_sheng"
+    ],
+    "related_formulas": [
+      "bu_zhong_yi_qi_tang",
+      "liu_wei_di_huang_wan",
+      "bu_yang_huan_wu_tang"
+    ],
+    "related_acupoints": [
+      "zu_san_li",
+      "yang_ling_quan",
+      "xuan_zhong",
+      "san_yin_jiao",
+      "qu_chi"
+    ],
+    "differentiation_guide_zh": "辨证要点：肺热津伤型发病急伴发热；湿热浸淫型肢体困重；脾胃虚弱型起病缓纳少便溏；肝肾亏损型腰膝酸软。",
+    "differentiation_guide_en": "Key differentiation: Lung heat has acute onset with fever; damp-heat shows heavy limbs; Spleen-Stomach weakness has gradual onset with poor appetite; Liver-Kidney vacuity has lumbar weakness.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "huang_dan",
+    "slug": "huang-dan",
+    "name_zh": "黄疸",
+    "name_pinyin": "Huang Dan",
+    "name_en": "Jaundice",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "发黄",
+      "目黄"
+    ],
+    "aliases_en": [
+      "icterus"
+    ],
+    "description_zh": "黄疸以目黄、身黄、小便黄为主症。其病机为湿邪困脾、肝胆疏泄失常导致胆汁外溢。分为阳黄与阴黄两大类。",
+    "description_en": "Jaundice presents with yellowing of the eyes, skin, and urine. The pathomechanism involves dampness encumbering the Spleen and impaired Liver-Gallbladder function.",
+    "related_patterns": [
+      "shi_zu_zhong_jiao",
+      "pi_qi_xu",
+      "da_chang_shi_re"
+    ],
+    "related_herbs": [
+      "yin_chen",
+      "zhi_zi",
+      "da_huang",
+      "huang_bai",
+      "fu_ling"
+    ],
+    "related_formulas": [
+      "yin_chen_hao_tang",
+      "si_jun_zi_tang"
+    ],
+    "related_acupoints": [
+      "dan_shu",
+      "ri_yue",
+      "yang_ling_quan",
+      "zu_san_li",
+      "yin_ling_quan"
+    ],
+    "differentiation_guide_zh": "辨证要点：阳黄色鲜明如橘、属湿热；阴黄色晦暗如烟熏、属寒湿。",
+    "differentiation_guide_en": "Key differentiation: Yang jaundice is bright orange-yellow (damp-heat); yin jaundice is dull smoky yellow (cold-damp).",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xue_zheng",
+    "slug": "xue-zheng",
+    "name_zh": "血证",
+    "name_pinyin": "Xue Zheng",
+    "name_en": "Bleeding Disorders",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "吐血衄血",
+      "出血"
+    ],
+    "aliases_en": [
+      "hemorrhage",
+      "bleeding pattern"
+    ],
+    "description_zh": "血证是以出血为主要表现的一类病证，包括吐血、咳血、衄血、便血、尿血、崩漏等。其病机不外乎火热迫血妄行和气虚不能摄血两大类。",
+    "description_en": "Bleeding disorders present primarily with hemorrhage. The pathomechanism is either fire-heat forcing blood to move recklessly or qi vacuity failing to contain blood.",
+    "related_patterns": [
+      "xue_xu",
+      "pi_qi_xu",
+      "yin_xu_zheng"
+    ],
+    "related_herbs": [
+      "san_qi",
+      "bai_ji",
+      "xian_he_cao",
+      "ce_bai_ye",
+      "ai_ye"
+    ],
+    "related_formulas": [
+      "si_sheng_wan",
+      "gui_pi_tang",
+      "xiao_ji_yin_zi"
+    ],
+    "related_acupoints": [
+      "xue_hai",
+      "ge_shu",
+      "zu_san_li",
+      "san_yin_jiao",
+      "guan_yuan"
+    ],
+    "differentiation_guide_zh": "辨证要点：实证出血量多色鲜红、来势急属血热；虚证出血量少色淡、来势缓属气不摄血。",
+    "differentiation_guide_en": "Key differentiation: Repletion bleeding is copious and bright red (blood heat); vacuity bleeding is scanty and pale (qi failing to contain blood).",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "kou_chuang",
+    "slug": "kou-chuang",
+    "name_zh": "口疮",
+    "name_pinyin": "Kou Chuang",
+    "name_en": "Oral Ulcers",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "口腔溃疡",
+      "口糜"
+    ],
+    "aliases_en": [
+      "aphthous ulcers",
+      "canker sores"
+    ],
+    "description_zh": "口疮是以口腔内唇、颊、舌、上腭等处黏膜反复出现圆形或椭圆形溃疡，灼痛妨食为特征的病证。口为脾之窍，舌为心之苗，故口疮与心、脾、胃关系最为密切。实证多因心脾积热上攻，或过食辛辣厚味，胃火炽盛；虚证多因阴液亏耗，虚火上炎。病情每因劳累、情志或饮食失宜而反复。",
+    "description_en": "Oral ulcers are characterized by recurrent round or oval ulcerations of the mucosa of the lips, cheeks, tongue, or palate, with burning pain that interferes with eating. Because the mouth is the orifice of the Spleen and the tongue is the sprout of the Heart, the condition is most closely linked to Heart, Spleen, and Stomach. Repletion patterns arise from Heart-Spleen accumulated heat or Stomach fire from rich spicy diet; vacuity patterns arise from yin depletion with floating vacuous fire. Relapses are often triggered by overwork, emotional strain, or dietary irregularity.",
+    "related_patterns": [
+      "xin_yin_xu",
+      "yin_xu_zheng",
+      "wei_re"
+    ],
+    "related_herbs": [
+      "huang_lian",
+      "zhi_zi",
+      "sheng_di_huang",
+      "mai_dong",
+      "dan_zhu_ye"
+    ],
+    "related_formulas": [
+      "dao_chi_san",
+      "liu_wei_di_huang_wan",
+      "qing_wei_san"
+    ],
+    "related_acupoints": [
+      "he_gu",
+      "zu_san_li",
+      "san_yin_jiao",
+      "nei_ting"
+    ],
+    "differentiation_guide_zh": "辨证要点：心火上炎型溃疡多发于舌尖舌边，色红灼痛，伴心烦失眠、小便短赤；脾胃积热型溃疡多而大，周围红肿明显，伴口臭便秘、舌苔黄厚；阴虚火旺型溃疡反复发作、经久不愈，色淡疼痛较轻，伴口干咽燥、五心烦热、舌红少苔。实证起病急、局部红肿明显；虚证病程长、症状反复。",
+    "differentiation_guide_en": "Key differentiation: Heart fire flaming upward presents with ulcers on the tip or edges of the tongue, red and burning, with vexation, insomnia, and short reddish urine. Spleen-Stomach accumulated heat shows numerous large ulcers with pronounced surrounding redness, foul breath, constipation, and a thick yellow tongue coating. Yin vacuity with flaming fire shows recurrent, slow-healing ulcers that are paler with milder pain, accompanied by dry mouth and throat, five-center heat, and a red tongue with scant coating. Repletion patterns have acute onset with marked local redness; vacuity patterns are chronic and relapsing.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "bian_xue",
+    "slug": "bian-xue",
+    "name_zh": "便血",
+    "name_pinyin": "Bian Xue",
+    "name_en": "Rectal Bleeding",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "下血",
+      "血便"
+    ],
+    "aliases_en": [
+      "hematochezia",
+      "bloody stool"
+    ],
+    "description_zh": "便血是指血自肛门而出，随大便而下，或便前便后下血的病证。古人依出血部位分远血与近血：先便后血、血色暗者为远血，出自胃或小肠；先血后便、血色鲜红者为近血，出自大肠或肛门。其病机不外乎热伤血络、脾虚不摄、瘀阻肠络三端，与脾、胃、大肠关系最为密切。",
+    "description_en": "Rectal bleeding denotes blood passing from the anus with or around defecation. Classical texts distinguish distant and nearby bleeding: dark blood passed after stool is considered distant bleeding originating from the Stomach or small intestine, while bright red blood passed before stool is nearby bleeding from the large intestine or anus. Pathomechanisms fall into three groups: heat damaging the blood collaterals, Spleen vacuity failing to contain blood, and stasis obstructing the intestinal vessels. The condition is most closely linked to the Spleen, Stomach, and Large Intestine.",
+    "related_patterns": [
+      "da_chang_shi_re",
+      "pi_qi_xu",
+      "pi_qi_xia_xian"
+    ],
+    "related_herbs": [
+      "di_yu",
+      "huai_hua",
+      "ce_bai_ye",
+      "xian_he_cao",
+      "san_qi"
+    ],
+    "related_formulas": [
+      "huai_hua_san",
+      "gui_pi_tang"
+    ],
+    "related_acupoints": [
+      "chang_qiang",
+      "cheng_shan",
+      "zu_san_li",
+      "xue_hai",
+      "pi_shu"
+    ],
+    "differentiation_guide_zh": "辨证要点：肠道湿热型便血鲜红量多，血下如溅，肛门灼热，伴口苦口黏、舌苔黄腻；脾胃虚寒型便血暗红或紫黑，血随便下，面色萎黄、畏寒肢冷、神疲乏力，舌淡苔白；气不摄血型便血反复、色淡而稀，伴气短心悸、食少便溏、舌淡脉细弱；瘀阻肠络者血色紫黑夹有血块，腹痛固定拒按。出血急骤量多者需警惕危象，及时参合现代医学诊查。",
+    "differentiation_guide_en": "Key differentiation: Intestinal damp-heat shows copious bright red blood that may spurt, with burning at the anus, bitter sticky mouth, and a yellow greasy tongue coating. Spleen-Stomach cold vacuity shows dark red or purplish-black blood mixed with stool, sallow complexion, cold limbs, fatigue, and a pale tongue with white coating. Qi failing to contain blood shows recurrent, pale, thin bleeding with shortness of breath, palpitations, poor appetite, loose stools, and a thin weak pulse. Stasis obstructing the intestinal collaterals presents with dark purplish blood and clots with fixed abdominal pain refusing pressure. Sudden heavy bleeding is a red flag requiring concurrent biomedical evaluation.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "tan_yin",
+    "slug": "tan-yin",
+    "name_zh": "痰饮",
+    "name_pinyin": "Tan Yin",
+    "name_en": "Phlegm-Fluid Retention",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "痰湿",
+      "水饮"
+    ],
+    "aliases_en": [
+      "phlegm retention",
+      "fluid retention"
+    ],
+    "description_zh": "痰饮是体内水液代谢障碍所形成的病理产物及致病因素。稠浊者为痰，清稀者为饮。脾为生痰之源，肺为储痰之器。",
+    "description_en": "Phlegm-fluid retention encompasses pathological products formed by impaired fluid metabolism. The Spleen is the source of phlegm production, the Lung is its container.",
+    "related_patterns": [
+      "tan_shi_zheng",
+      "pi_qi_xu",
+      "shen_yang_xu",
+      "fei_qi_xu"
+    ],
+    "related_herbs": [
+      "ban_xia",
+      "chen_pi",
+      "fu_ling",
+      "bai_zhu",
+      "zhu_ru"
+    ],
+    "related_formulas": [
+      "er_chen_tang",
+      "wen_dan_tang",
+      "wu_ling_san",
+      "xiao_qing_long_tang"
+    ],
+    "related_acupoints": [
+      "feng_long",
+      "zhong_wan",
+      "pi_shu",
+      "zu_san_li",
+      "yin_ling_quan"
+    ],
+    "differentiation_guide_zh": "辨证要点：痰饮停胃者呕吐清水；停肺者咳喘痰多；停肢体者浮肿；停胸胁者满闷。",
+    "differentiation_guide_en": "Key differentiation: Phlegm in the Stomach causes vomiting; in the Lung causes cough; in the limbs causes edema; in the chest causes oppression.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  },
+  {
+    "key": "xiao_ke",
+    "slug": "xiao-ke",
+    "name_zh": "消渴",
+    "name_pinyin": "Xiao Ke",
+    "name_en": "Wasting-Thirst Pattern",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "三消"
+    ],
+    "aliases_en": [
+      "wasting and thirsting disorder"
+    ],
+    "description_zh": "消渴是以多饮、多食、多尿、形体消瘦或尿有甜味为特征的病证，为中医对代谢消耗性疾病的经典概括，与现代医学之糖尿病有较大重叠但不完全等同。其病机总属阴津亏损、燥热偏盛，二者互为因果，病位涉及肺、胃、肾三脏。病久可伤气耗血，阴损及阳，并变生痈疽、白内障、雀盲、水肿、中风偏枯等诸多兼变证。",
+    "description_en": "Wasting-thirst pattern is characterized by excessive drinking, excessive eating, copious urination, and bodily emaciation, sometimes with sweet-tasting urine. It is the classical TCM framework for metabolic consumptive diseases and overlaps substantially with — but is not identical to — modern diabetes mellitus. The core pathomechanism is depletion of yin fluids with predominance of dryness-heat, each reinforcing the other, with disease located principally in the Lung, Stomach, and Kidney. Prolonged disease injures qi and blood, with yin damage eventually extending to yang, and may produce sequelae such as sores, cataracts, night-blindness, edema, or stroke with hemiplegia.",
+    "related_patterns": [
+      "yin_xu_zheng",
+      "shen_yin_xu",
+      "fei_yin_xu"
+    ],
+    "related_herbs": [
+      "tian_hua_fen",
+      "sheng_di_huang",
+      "mai_dong",
+      "ge_gen",
+      "huang_qi"
+    ],
+    "related_formulas": [
+      "yu_nu_jian",
+      "liu_wei_di_huang_wan",
+      "bai_hu_tang",
+      "sheng_mai_san"
+    ],
+    "related_acupoints": [
+      "fei_shu",
+      "wei_shu",
+      "shen_shu",
+      "tai_xi",
+      "san_yin_jiao"
+    ],
+    "differentiation_guide_zh": "辨证要点：上消（肺热津伤）以烦渴引饮、口干舌燥为主，舌边尖红、苔薄黄；中消（胃热炽盛）以多食易饥、形体消瘦、大便干结为主，舌红苔黄；下消（肾阴亏虚）以尿频量多、混浊如膏、腰膝酸软、头晕耳鸣为主，舌红少苔；阴阳两虚者兼见畏寒肢冷、阳痿、浮肿，舌淡苔白。三消可单独出现，亦可互相转化兼见；病久多从阴虚转向气阴两虚乃至阴阳两虚。",
+    "differentiation_guide_en": "Key differentiation: Upper wasting (Lung heat damaging fluids) features vexing thirst with copious drinking, dry mouth and tongue, with reddish tongue edges and a thin yellow coating. Middle wasting (Stomach heat blazing) features ravenous hunger, emaciation, and dry stools, with a red tongue and yellow coating. Lower wasting (Kidney yin vacuity) features frequent copious cloudy urine, lumbar and knee weakness, dizziness and tinnitus, with a red tongue and scant coating. Dual yin-and-yang vacuity adds cold aversion, cold limbs, impotence, and edema with a pale tongue and white coating. The three forms may appear alone or together and commonly progress from yin vacuity through qi-and-yin vacuity to dual yin-yang vacuity over time.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "yan_hou_zhong_tong",
+    "slug": "yan-hou-zhong-tong",
+    "name_zh": "咽喉肿痛",
+    "name_pinyin": "Yan Hou Zhong Tong",
+    "name_en": "Sore Throat",
+    "category_zh": "杂病",
+    "category_en": "Other Conditions",
+    "aliases_zh": [
+      "咽痛",
+      "喉痹"
+    ],
+    "aliases_en": [
+      "pharyngitis",
+      "throat pain"
+    ],
+    "description_zh": "咽喉肿痛以咽喉部红肿疼痛、吞咽不利为主症。咽为胃之系、喉为肺之门户，故其病变多责之于肺、胃二经。实证多由风热、风寒化热外袭，或过食辛辣厚味、肺胃热盛上攻咽喉；虚证多因肺肾阴亏、虚火循经上炎。急者起病迅速、红肿热痛明显，缓者病程缠绵、反复发作。",
+    "description_en": "Sore throat presents with redness, swelling, and pain of the pharynx or larynx, often with difficulty swallowing. Because the pharynx connects with the Stomach and the larynx is the gateway of the Lung, the disorder is chiefly referred to the Lung and Stomach channels. Repletion patterns arise from external wind-heat (or wind-cold transforming into heat) and from Lung-Stomach heat driven upward by spicy, rich diet. Vacuity patterns arise from Lung-Kidney yin depletion with vacuous fire rising along the channels. Acute cases have sudden onset with marked redness and heat; chronic cases are protracted and relapsing.",
+    "related_patterns": [
+      "wai_gan_feng_han_biao_shi",
+      "wei_fen_zheng",
+      "yin_xu_zheng"
+    ],
+    "related_herbs": [
+      "jin_yin_hua",
+      "lian_qiao",
+      "she_gan",
+      "ban_lan_gen",
+      "bo_he"
+    ],
+    "related_formulas": [
+      "yin_qiao_san",
+      "pu_ji_xiao_du_yin"
+    ],
+    "related_acupoints": [
+      "shao_shang",
+      "he_gu",
+      "qu_chi",
+      "tian_tu",
+      "lian_quan"
+    ],
+    "differentiation_guide_zh": "辨证要点：风热外袭型起病急、咽部红肿疼痛、吞咽不利，兼发热恶风、头痛鼻塞、咳嗽、舌边尖红苔薄黄、脉浮数；肺胃热盛型咽喉红肿剧痛、灼热感明显，或有脓点腐肉，伴高热口渴、大便秘结、舌红苔黄厚、脉洪数；阴虚火旺型咽干微痛、入夜及劳累后加重、咽部暗红、异物感明显，伴手足心热、潮热盗汗、舌红少苔、脉细数。实证治以疏风清热或清泄肺胃；虚证治以滋阴降火。",
+    "differentiation_guide_en": "Key differentiation: Wind-heat invasion has acute onset with red swollen painful throat and difficulty swallowing, accompanied by fever, aversion to wind, headache, nasal congestion, cough, reddish tongue edges with a thin yellow coating, and a floating rapid pulse. Lung-Stomach heat blazing presents with severely red swollen burning throat, sometimes with pus spots or sloughing, alongside high fever, thirst, constipation, a red tongue with a thick yellow coating, and a surging rapid pulse. Yin vacuity with flaming fire shows a dry, mildly painful, dull-red throat with foreign-body sensation, worse at night and after exertion, together with five-center heat, tidal fever, night sweats, a red tongue with scant coating, and a fine rapid pulse. Repletion patterns are resolved by coursing wind and clearing heat or draining Lung-Stomach heat; vacuity patterns by enriching yin and downbearing fire.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "yao_tui_tong",
+    "slug": "yao-tui-tong",
+    "name_zh": "腰腿痛",
+    "name_pinyin": "Yao Tui Tong",
+    "name_en": "Lumbago with Leg Pain",
+    "category_zh": "痛症",
+    "category_en": "Pain Conditions",
+    "aliases_zh": [
+      "坐骨神经痛",
+      "腰腿酸痛"
+    ],
+    "aliases_en": [
+      "sciatica",
+      "lumbar radiculopathy"
+    ],
+    "description_zh": "腰腿痛是以腰部疼痛并沿足太阳或足少阳经放射至臀部、大腿后侧及小腿为主症的病证。腰为肾之府，足太阳膀胱经与足少阳胆经循行腰腿，故本病与肾虚及膀胱、胆经经络痹阻关系最为密切。外感风寒湿邪、劳伤闪挫、久病瘀滞，或年高肾虚精亏，均可致经络气血运行受阻而发为腰腿痛。本病常与现代医学之坐骨神经痛、腰椎间盘突出、腰肌劳损等相参合。",
+    "description_en": "Lumbago with leg pain presents with pain in the lumbar region radiating along the Taiyang Bladder or Shaoyang Gallbladder channels into the buttock, posterior thigh, and lower leg. Because the lumbus is the residence of the Kidney and the Bladder and Gallbladder channels traverse the lower back and leg, the condition is most closely linked to Kidney vacuity and obstruction of these channels. External invasion by wind, cold, and damp; strains, sprains, and chronic stasis; as well as advancing age with Kidney essence depletion all obstruct channel qi and blood and give rise to pain. Clinically the pattern overlaps with sciatica, lumbar disc herniation, and chronic lumbar muscle strain in modern medicine.",
+    "related_patterns": [
+      "shen_yang_xu",
+      "shen_yin_xu",
+      "shi_zu_zhong_jiao"
+    ],
+    "related_herbs": [
+      "du_huo",
+      "sang_ji_sheng",
+      "niu_xi",
+      "du_zhong",
+      "qin_jiao"
+    ],
+    "related_formulas": [
+      "du_huo_ji_sheng_tang"
+    ],
+    "related_acupoints": [
+      "shen_shu",
+      "huan_tiao",
+      "yang_ling_quan",
+      "wei_zhong",
+      "kun_lun"
+    ],
+    "differentiation_guide_zh": "辨证要点：寒湿痹阻型腰腿冷痛重着、转侧不利、遇寒加重、得温则减，舌淡苔白腻、脉沉紧或濡；湿热下注型腰腿灼热疼痛、痛处拒按、小便短赤、下肢沉重、舌红苔黄腻、脉濡数或滑数；瘀血阻络型刺痛固定、夜间加重、俯仰不利，多有外伤或久病史，舌紫暗或有瘀斑、脉涩；肝肾亏虚型腰膝酸软、隐痛绵绵、劳累后加重、得按则减，偏阳虚者畏寒肢冷、舌淡脉沉细，偏阴虚者心烦潮热、舌红少苔、脉细数。实证治以祛邪通络，虚证治以补益肝肾。",
+    "differentiation_guide_en": "Key differentiation: Cold-damp obstruction shows cold, heavy, aching pain in the low back and leg with restricted motion, worsened by cold and eased by warmth, with a pale tongue, white greasy coating, and a deep tight or soggy pulse. Damp-heat pouring downward produces burning pain refusing pressure, short reddish urine, heaviness of the lower extremities, a red tongue with a yellow greasy coating, and a soggy-rapid or slippery-rapid pulse. Blood stasis obstructing the collaterals shows fixed stabbing pain worse at night with restricted flexion-extension, often with a history of trauma or chronicity, a purplish tongue possibly with stasis spots, and a choppy pulse. Liver-Kidney vacuity presents with sore weak lumbus and knees and dull persistent pain worsened by exertion and eased by pressure; yang-vacuity subtype adds cold aversion and cold limbs with a pale tongue and deep thin pulse, while yin-vacuity subtype adds vexing heat and tidal fever with a red tongue with scant coating and a fine rapid pulse. Repletion calls for expelling pathogens and freeing the collaterals; vacuity calls for supplementing the Liver and Kidney.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "bei_tong",
+    "slug": "bei-tong",
+    "name_zh": "背痛",
+    "name_pinyin": "Bei Tong",
+    "name_en": "Upper Back Pain",
+    "category_zh": "痛症",
+    "category_en": "Pain Conditions",
+    "aliases_zh": [
+      "肩背痛",
+      "脊背痛"
+    ],
+    "aliases_en": [
+      "dorsalgia",
+      "thoracic back pain"
+    ],
+    "description_zh": "背痛以背部疼痛为主症。督脉行于背部正中，足太阳膀胱经行于背部两侧，故背痛多与督脉及膀胱经病变有关。",
+    "description_en": "Upper back pain presents primarily with pain in the dorsal region. The Du vessel and Bladder channel traverse the back, so back pain often relates to these channels.",
+    "related_patterns": [
+      "wai_gan_feng_han_biao_shi",
+      "xue_xu",
+      "xin_qi_xu"
+    ],
+    "related_herbs": [
+      "ge_gen",
+      "gui_zhi",
+      "qiang_huo",
+      "fang_feng",
+      "chuan_xiong"
+    ],
+    "related_formulas": [
+      "gui_zhi_tang",
+      "jiu_wei_qiang_huo_tang"
+    ],
+    "related_acupoints": [
+      "da_zhu",
+      "feng_men",
+      "fei_shu",
+      "tian_zong",
+      "jian_jing"
+    ],
+    "differentiation_guide_zh": "辨证要点：风寒型背痛拘急恶寒；气滞血瘀型刺痛固定；气虚型隐痛绵绵劳累后加重。",
+    "differentiation_guide_en": "Key differentiation: Wind-cold has stiff taut pain with chills; blood stasis has fixed stabbing pain; qi vacuity has dull persistent pain worsened by exertion.",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial",
+      "last_reviewed": "2026-04-16"
+    }
+  }
+]

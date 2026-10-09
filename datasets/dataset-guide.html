@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QiHuang-KG 课程设计数据集出处、内容、许可和使用说明">
+  <title>QiHuang-KG 数据集说明</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f4ee;
+      --paper: #fffdf8;
+      --ink: #24231f;
+      --muted: #666158;
+      --line: #dcd5c8;
+      --jade: #176b5b;
+      --jade-soft: #e7f2ee;
+      --amber: #9a5d17;
+      --amber-soft: #fff2d9;
+      --red: #a13b2d;
+      font-family: Inter, "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    a { color: var(--jade); text-underline-offset: 0.18em; }
+    a:hover { color: #0f4e42; }
+
+    header {
+      padding: 4.5rem 1.5rem 3.5rem;
+      color: white;
+      background: linear-gradient(135deg, #124d43, #1d7563 62%, #93601f);
+    }
+
+    header > div, main, footer {
+      width: min(1100px, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { margin: 0 0 0.8rem; font-size: clamp(2rem, 5vw, 3.5rem); }
+    h2 { margin-top: 0; font-size: 1.65rem; }
+    h3 { margin-top: 1.8rem; font-size: 1.1rem; }
+    header p { max-width: 760px; margin: 0; opacity: 0.9; font-size: 1.08rem; }
+
+    main { padding-block: 2rem 4rem; }
+
+    nav, section {
+      margin-bottom: 1.25rem;
+      padding: clamp(1.2rem, 3vw, 2rem);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--paper);
+      box-shadow: 0 8px 28px rgb(48 38 20 / 6%);
+    }
+
+    nav ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 0.6rem 1.5rem;
+      padding-left: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.8rem;
+      margin-top: 1.4rem;
+    }
+
+    .stat {
+      padding: 1rem;
+      border-radius: 12px;
+      background: var(--jade-soft);
+    }
+
+    .stat strong { display: block; color: var(--jade); font-size: 1.45rem; }
+
+    .meta {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: 0.35rem 1rem;
+      padding: 1rem;
+      border-left: 4px solid var(--jade);
+      background: var(--jade-soft);
+    }
+
+    .meta dt { font-weight: 700; }
+    .meta dd { margin: 0; overflow-wrap: anywhere; }
+
+    .tag {
+      display: inline-block;
+      margin: 0.15rem 0.25rem 0.15rem 0;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      color: var(--jade);
+      background: var(--jade-soft);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .notice, .warning {
+      margin: 1rem 0;
+      padding: 0.8rem 1rem;
+      border-radius: 10px;
+    }
+
+    .notice { border-left: 4px solid var(--jade); background: var(--jade-soft); }
+    .warning { border-left: 4px solid var(--amber); background: var(--amber-soft); }
+    .warning strong { color: var(--amber); }
+
+    .table-wrap { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.94rem;
+    }
+
+    th, td {
+      padding: 0.72rem 0.8rem;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th { color: #413d36; background: #f0ece3; white-space: nowrap; }
+    tbody tr:hover { background: #faf7f0; }
+
+    code, pre {
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.9em;
+    }
+
+    code { overflow-wrap: anywhere; }
+
+    pre {
+      overflow-x: auto;
+      padding: 1rem;
+      border-radius: 10px;
+      color: #f7f3ea;
+      background: #232a28;
+      line-height: 1.55;
+    }
+
+    details {
+      margin-top: 1rem;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    summary { cursor: pointer; color: var(--jade); font-weight: 700; }
+
+    footer { padding-bottom: 3rem; color: var(--muted); font-size: 0.9rem; }
+
+    @media (max-width: 620px) {
+      header { padding-top: 3rem; }
+      .meta { grid-template-columns: 1fr; }
+      .meta dd { margin-bottom: 0.5rem; }
+    }
+
+    @media print {
+      body { background: white; }
+      header { padding: 1.5rem 0; color: black; background: white; border-bottom: 2px solid #333; }
+      nav, section { box-shadow: none; break-inside: avoid; }
+      a { color: black; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>QiHuang-KG 数据集说明</h1>
+      <p>课程设计所用中医药数据的出处、实际内容、许可边界和推荐用法。本文档对应 <code>datasets/raw/</code> 中已下载并校验的原始文件。</p>
+    </div>
+  </header>
+
+  <main>
+    <nav aria-label="文档导航">
+      <strong>快速导航</strong>
+      <ul>
+        <li><a href="#overview">总体说明</a></li>
+        <li><a href="#tcm-mkg">TCM-MKG</a></li>
+        <li><a href="#bencaodian">本草典开放数据</a></li>
+        <li><a href="#classical-formulas">174 首经典方剂</a></li>
+        <li><a href="#semantic-kg">中医语义知识图谱</a></li>
+        <li><a href="#efficacy">中药功效数据</a></li>
+        <li><a href="#ancient-formulas">古籍方剂 SQLite</a></li>
+        <li><a href="#workflow">推荐使用流程</a></li>
+      </ul>
+    </nav>
+
+    <section id="overview">
+      <h2>总体说明</h2>
+      <p>本目录保存六组真实公开数据。原始文件保持发布状态，没有改名之外的内容修改；Zenodo、Figshare 和本草典公开的 MD5/SHA-256 均已校验通过。</p>
+      <div class="stats">
+        <div class="stat"><strong>6 组</strong>公开数据集</div>
+        <div class="stat"><strong>37 个</strong>本地文件</div>
+        <div class="stat"><strong>166 MB</strong>当前占用空间</div>
+        <div class="stat"><strong>2026-10-02</strong>下载与校验日期</div>
+      </div>
+      <div class="notice">
+        <strong>建议分工：</strong>TCM-MKG 作为关系数据库主数据；语义图谱和本草典关系数据导入 Neo4j；174 首经典方剂用于演示与校验；古籍 SQLite 用于溯源检索和 RAG；功效数据用于药物—功效推理。
+      </div>
+      <p><span class="tag">研究与教学用途</span><span class="tag">保留来源字段</span><span class="tag">原始数据只读</span></p>
+    </section>
+
+    <section id="tcm-mkg">
+      <h2>1. TCM-MKG 多维知识图谱</h2>
+      <dl class="meta">
+        <dt>出处</dt>
+        <dd>Zeng Jingqi、Jia Xiaobin，中国药科大学；Zenodo，2024。</dd>
+        <dt>发布页</dt>
+        <dd><a href="https://doi.org/10.5281/zenodo.13763953" target="_blank" rel="noopener">doi:10.5281/zenodo.13763953</a></dd>
+        <dt>本地目录</dt>
+        <dd><a href="raw/tcm-mkg/">raw/tcm-mkg/</a></dd>
+        <dt>许可</dt>
+        <dd>CC BY-NC 4.0：允许署名的非商业使用，不适合直接用于商业产品。</dd>
+      </dl>
+
+      <h3>有什么</h3>
+      <p>当前下载的是课程设计所需的核心 D1～D7 表和官方说明 PDF，共 <strong>195,211 条数据记录</strong>。它把中医术语、中成药、中药饮片、药性和 ICD-11 疾病编码连接起来。</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>文件</th><th>数据行</th><th>作用</th></tr></thead>
+          <tbody>
+            <tr><td><a href="raw/tcm-mkg/D1_TCM_terminology.tsv"><code>D1_TCM_terminology.tsv</code></a></td><td>1,810</td><td>中医术语、同义词、拼音、英文和定义。</td></tr>
+            <tr><td><a href="raw/tcm-mkg/D2_Chinese_patent_medicine.tsv"><code>D2_Chinese_patent_medicine.tsv</code></a></td><td>8,977</td><td>中成药主表及给药途径。</td></tr>
+            <tr><td><a href="raw/tcm-mkg/D3_CPM_TCMT.tsv"><code>D3_CPM_TCMT.tsv</code></a></td><td>11,185</td><td>中成药与中医术语关系。</td></tr>
+            <tr><td><a href="raw/tcm-mkg/D4_CPM_CHP.tsv"><code>D4_CPM_CHP.tsv</code></a></td><td>74,084</td><td>中成药与中药饮片组成关系，含剂量比例。</td></tr>
+            <tr><td><a href="raw/tcm-mkg/D5_CPM_ICD11.tsv"><code>D5_CPM_ICD11.tsv</code></a></td><td>69,431</td><td>中成药与 ICD-11 疾病编码关系。</td></tr>
+            <tr><td><a href="raw/tcm-mkg/D6_Chinese_herbal_pieces.tsv"><code>D6_Chinese_herbal_pieces.tsv</code></a></td><td>6,207</td><td>中药饮片名称、同义词、拼音、英文和来源。</td></tr>
+            <tr><td><a href="raw/tcm-mkg/D7_CHP_Medicinal_properties.tsv"><code>D7_CHP_Medicinal_properties.tsv</code></a></td><td>23,517</td><td>中药饮片药性及分类关系。</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>怎么用</h3>
+      <ol>
+        <li>先把 D1、D2、D6 作为实体主表导入 Vastbase/PostgreSQL。</li>
+        <li>再导入 D3、D4、D5、D7，用 <code>CPM_ID</code>、<code>TCMT_ID</code>、<code>CHP_ID</code> 建外键或图关系。</li>
+        <li>Neo4j 中可把 D2、D6 建为节点，把 D4 建为“中成药包含饮片”关系，把 D5 建为“中成药对应疾病”关系。</li>
+      </ol>
+      <pre><code>-- Vastbase / PostgreSQL 示例；路径必须对数据库服务器可见
+COPY tcm_terminology
+FROM '/absolute/path/D1_TCM_terminology.tsv'
+WITH (FORMAT csv, DELIMITER E'\t', HEADER true);</code></pre>
+      <div class="warning"><strong>原始数据问题：</strong><code>D6</code> 第 1,718 行（黄芪）有一个多余的空字段，官方 MD5 仍完全匹配。批量导入前应在处理副本中修正或使用容错解析器，原始文件不要覆盖。</div>
+    </section>
+
+    <section id="bencaodian">
+      <h2>2. 本草典开放数据 v1</h2>
+      <dl class="meta">
+        <dt>出处</dt>
+        <dd>Bencaodian Editorial / 本草典编辑部；v1 数据生成于 2026-04-17。</dd>
+        <dt>发布页</dt>
+        <dd><a href="https://bencaodian.org/en/about/data/" target="_blank" rel="noopener">bencaodian.org/en/about/data/</a></dd>
+        <dt>本地目录</dt>
+        <dd><a href="raw/bencaodian/">raw/bencaodian/</a></dd>
+        <dt>许可</dt>
+        <dd>CC BY-SA 4.0：必须署名；公开发布的衍生数据需使用相同许可。</dd>
+      </dl>
+
+      <h3>有什么</h3>
+      <p>一套中英双语、带稳定标识符的 JSON 种子数据。核心内容包括 365 味中药、112 首方剂、84 个证候、208 个穴位、38 部古籍、28 个医案、56 条药物相互作用，以及 1,477 条知识图谱关系。</p>
+      <details>
+        <summary>查看全部 JSON 文件</summary>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>文件</th><th>数量</th><th>内容</th></tr></thead>
+            <tbody>
+              <tr><td><a href="raw/bencaodian/herbs.json"><code>herbs.json</code></a></td><td>365</td><td>性味归经、功效、主治、炮制、剂量、禁忌、古籍引文。</td></tr>
+              <tr><td><a href="raw/bencaodian/formulas.json"><code>formulas.json</code></a></td><td>112</td><td>方剂组成、君臣佐使、加减、治法和出处。</td></tr>
+              <tr><td><a href="raw/bencaodian/patterns.json"><code>patterns.json</code></a></td><td>84</td><td>证候、主症、兼症、舌脉、病因病机和治法。</td></tr>
+              <tr><td><a href="raw/bencaodian/meridians.json"><code>meridians.json</code></a></td><td>14</td><td>十二正经与任督二脉。</td></tr>
+              <tr><td><a href="raw/bencaodian/acupoints.json"><code>acupoints.json</code></a></td><td>208</td><td>穴位定位、针刺深度、功效和主治。</td></tr>
+              <tr><td><a href="raw/bencaodian/classical_texts.json"><code>classical_texts.json</code></a></td><td>38</td><td>古籍作者、朝代、学派及带注释原文。</td></tr>
+              <tr><td><a href="raw/bencaodian/concepts.json"><code>concepts.json</code></a></td><td>15</td><td>阴阳、五行、脏腑、八纲等理论专题。</td></tr>
+              <tr><td><a href="raw/bencaodian/relationships.json"><code>relationships.json</code></a></td><td>1,477</td><td>药材—方剂、方剂—证候、方剂—古籍等关系。</td></tr>
+              <tr><td><a href="raw/bencaodian/case_records.json"><code>case_records.json</code></a></td><td>28</td><td>古代医案、辨证、用方和结局。</td></tr>
+              <tr><td><a href="raw/bencaodian/tongue_states.json"><code>tongue_states.json</code></a></td><td>25</td><td>舌象及临床意义。</td></tr>
+              <tr><td><a href="raw/bencaodian/pulses.json"><code>pulses.json</code></a></td><td>28</td><td>经典脉象、现代描述和临床意义。</td></tr>
+              <tr><td><a href="raw/bencaodian/symptom_synonyms.json"><code>symptom_synonyms.json</code></a></td><td>155</td><td>中英文症状同义词。</td></tr>
+              <tr><td><a href="raw/bencaodian/interactions.json"><code>interactions.json</code></a></td><td>56</td><td>中药—西药相互作用、机制与建议。</td></tr>
+              <tr><td><a href="raw/bencaodian/conditions.json"><code>conditions.json</code></a></td><td>50</td><td>现代疾病到中医证候、方剂和中药的索引。</td></tr>
+              <tr><td><a href="raw/bencaodian/schema.json"><code>schema.json</code></a></td><td>—</td><td>文件说明和公共字段定义。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <h3>怎么用</h3>
+      <ul>
+        <li>前端详情页：直接按 <code>key</code> 或 <code>slug</code> 查找药材、方剂、证候和古籍。</li>
+        <li>Neo4j：实体 JSON 建节点，<code>relationships.json</code> 中各数组名作为关系类型。</li>
+        <li>RAG：把古籍段落、概念文章、医案和双语描述切成文档块，同时保留 <code>key</code>、出处和审核状态。</li>
+        <li>答辩演示：优先选择 <code>verification.status</code> 为 <code>verified</code> 的记录。</li>
+      </ul>
+      <pre><code>import json
+from pathlib import Path
+
+herbs = json.loads(Path("datasets/raw/bencaodian/herbs.json").read_text())
+verified = [item for item in herbs if item["verification"]["status"] == "verified"]</code></pre>
+    </section>
+
+    <section id="classical-formulas">
+      <h2>3. 174 首经典方剂</h2>
+      <dl class="meta">
+        <dt>出处</dt>
+        <dd>Li Yuanbai、Yang Yang，中国中医科学院中医药信息研究所；Zenodo，2026。</dd>
+        <dt>发布页</dt>
+        <dd><a href="https://doi.org/10.5281/zenodo.18222225" target="_blank" rel="noopener">doi:10.5281/zenodo.18222225</a></dd>
+        <dt>本地文件</dt>
+        <dd><a href="raw/classical-formulas-174/174%20Structured%20Classical%20Formulas.csv">174 Structured Classical Formulas.csv</a></dd>
+        <dt>许可</dt>
+        <dd>CC BY 4.0：允许使用和改编，但必须署名。</dd>
+      </dl>
+
+      <h3>有什么</h3>
+      <p>174 首经典方剂的 <strong>1,249 条药味记录</strong>。字段包括方剂名、英文药材名、剂量、单位和君臣佐使角色。每一行是一味药，不是一首独立方剂。</p>
+
+      <h3>怎么用</h3>
+      <ul>
+        <li>按 <code>Formula Name</code> 分组，重建每首方剂的组成。</li>
+        <li>作为人工整理的高质量“小金标准”，校验主库中的方剂组成和角色。</li>
+        <li>用于答辩时展示剂量、单位和君臣佐使，不建议用它承担 10 万级数据量指标。</li>
+      </ul>
+      <div class="warning"><strong>空值含义：</strong>部分药味的 <code>Dose</code> 或 <code>Unit</code> 为空，通常表示传统记载未给出固定剂量或该成分作为辅料使用。</div>
+    </section>
+
+    <section id="semantic-kg">
+      <h2>4. 中医语义知识图谱</h2>
+      <dl class="meta">
+        <dt>出处</dt>
+        <dd>Li Yuanbai、Yang Yang，中国中医科学院中医药信息研究所；Zenodo，2026，版本 2.0。</dd>
+        <dt>发布页</dt>
+        <dd><a href="https://doi.org/10.5281/zenodo.18173424" target="_blank" rel="noopener">doi:10.5281/zenodo.18173424</a></dd>
+        <dt>本地目录</dt>
+        <dd><a href="raw/semantic-knowledge-graph/">raw/semantic-knowledge-graph/</a></dd>
+        <dt>许可</dt>
+        <dd>CC BY 4.0。</dd>
+      </dl>
+
+      <h3>有什么</h3>
+      <p><a href="raw/semantic-knowledge-graph/nodes.csv"><code>nodes.csv</code></a> 包含 6,952 个药物、功效、症状、证候、疾病和病因节点；<a href="raw/semantic-knowledge-graph/edges.csv"><code>edges.csv</code></a> 包含 16,619 条有向关系，如 <code>has_effect</code>、<code>manifests_as</code>、<code>treated_by</code>、<code>includes</code> 和 <code>transforms_to</code>。</p>
+
+      <h3>怎么用</h3>
+      <ol>
+        <li>把节点的 <code>ID</code> 建成唯一约束，<code>TYPE</code> 作为标签或属性。</li>
+        <li>边文件的 <code>source_id</code> 和 <code>target_id</code> 对应节点 <code>ID</code>；首列 <code>LID</code> 为空，可忽略。</li>
+        <li>适合 Neo4j 路径查询，例如“疾病 → 证候 → 症状 → 功效 → 中药”。</li>
+      </ol>
+      <pre><code># nodes.csv 实测为 GB18030；先在 processed 目录生成 UTF-8 副本
+iconv -f GB18030 -t UTF-8 nodes.csv &gt; nodes.utf8.csv</code></pre>
+      <div class="warning"><strong>编码差异：</strong>发布方 README 写的是 UTF-8，但当前 <code>nodes.csv</code> 实际需要按 GB18030 解码；<code>edges.csv</code> 为 ASCII。原始文件哈希正确。</div>
+    </section>
+
+    <section id="efficacy">
+      <h2>5. 中药传统功效结构化数据</h2>
+      <dl class="meta">
+        <dt>出处</dt>
+        <dd>Li Yuanbai 等；中国中医科学院中医药信息研究所；Zenodo，2026。</dd>
+        <dt>发布页</dt>
+        <dd><a href="https://doi.org/10.5281/zenodo.18207410" target="_blank" rel="noopener">doi:10.5281/zenodo.18207410</a></dd>
+        <dt>本地文件</dt>
+        <dd><a href="raw/herb-efficacy/herb-efficacy.csv">raw/herb-efficacy/herb-efficacy.csv</a></dd>
+        <dt>许可</dt>
+        <dd>CC BY 4.0。</dd>
+      </dl>
+
+      <h3>有什么</h3>
+      <p>28,415 条“中药—功效”关系，其中 7,824 条为教材直接整理的显式功效，20,591 条为知识图谱规则推理得到的扩展功效。有效字段为药物编码、药物名、功效编码、功效名和功效类型。</p>
+
+      <h3>怎么用</h3>
+      <ul>
+        <li>与语义知识图谱共用药物和功效编码，补充 <code>has_effect</code> 关系。</li>
+        <li>做严谨展示或统计时先使用 <code>Explicit efficacy nodes</code>。</li>
+        <li>推理实验可加入 Rule A/B/C/D 扩展记录，但结果必须标明“规则推断”，不能写成原文直接记载。</li>
+      </ul>
+      <div class="warning"><strong>表结构提示：</strong>源 CSV 实际有 11 列，但后 6 列全部为空。导入时只保留前 5 列，不要把空列建成业务字段。</div>
+    </section>
+
+    <section id="ancient-formulas">
+      <h2>6. 古籍方剂抽取 SQLite</h2>
+      <dl class="meta">
+        <dt>出处</dt>
+        <dd>Ya Wang、Qiang Song；Figshare，2017。</dd>
+        <dt>发布页</dt>
+        <dd><a href="https://doi.org/10.6084/m9.figshare.5504941.v1" target="_blank" rel="noopener">doi:10.6084/m9.figshare.5504941.v1</a></dd>
+        <dt>本地文件</dt>
+        <dd><a href="raw/ancient-formulas-sqlite/metadata.sqlite">raw/ancient-formulas-sqlite/metadata.sqlite</a></dd>
+        <dt>许可</dt>
+        <dd>CC BY 4.0。</dd>
+      </dl>
+
+      <h3>有什么</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>表</th><th>行数</th><th>字段与用途</th></tr></thead>
+          <tbody>
+            <tr><td><code>fangzi</code></td><td>1,728,995</td><td><code>id</code>、<code>herb</code>；每个候选方剂的药物出现记录。</td></tr>
+            <tr><td><code>fangzi_snippets</code></td><td>259,651</td><td><code>fangzi_id</code>、<code>snippet</code>；对应古籍原文片段。</td></tr>
+            <tr><td><code>fangzi_article</code></td><td>259,651</td><td>古籍文件名及原文起止位置，覆盖 788 个来源文件。</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>怎么用</h3>
+      <ul>
+        <li>通过 <code>fangzi.id = fangzi_snippets.fangzi_id = fangzi_article.fangzi_id</code> 联查药物、原文和出处。</li>
+        <li>用于药物共现统计、古籍检索、时间/作者分析，以及带来源引用的 RAG。</li>
+        <li>先按药名空值、药味数量、片段长度和关键词清洗，再把结果写入单独的 <code>processed/</code>，不要修改原库。</li>
+      </ul>
+      <pre><code>SELECT s.fangzi_id, s.snippet, a.article,
+       group_concat(f.herb, '、') AS herbs
+FROM fangzi_snippets AS s
+JOIN fangzi_article AS a ON a.fangzi_id = s.fangzi_id
+JOIN fangzi AS f ON f.id = s.fangzi_id
+WHERE s.snippet LIKE '%桂枝汤%'
+GROUP BY s.fangzi_id, s.snippet, a.article
+LIMIT 20;</code></pre>
+      <div class="warning"><strong>真实性边界：</strong>259,651 条是算法从古籍中识别的“方剂候选片段”，不是 259,651 首经过专家审核的标准处方。论文中应明确写明自动抽取、来源追溯和后续清洗过程。</div>
+    </section>
+
+    <section id="workflow">
+      <h2>推荐使用流程</h2>
+      <ol>
+        <li><strong>保留原始层：</strong><code>datasets/raw/</code> 只读，保留 <code>_record.json</code>、README 和原始哈希依据。</li>
+        <li><strong>建立处理层：</strong>在 <code>datasets/processed/</code> 中统一 UTF-8、修复已知格式问题、生成稳定主键并记录清洗规则。</li>
+        <li><strong>导入 Vastbase：</strong>先实体表，后关系表；TCM-MKG D1～D7 已足够提供 19.5 万条主数据。</li>
+        <li><strong>导入 Neo4j：</strong>优先导入语义图谱，再补充 TCM-MKG D3～D5 和本草典 <code>relationships.json</code>。</li>
+        <li><strong>建立 RAG：</strong>古籍片段与本草典古籍/医案作为语料，每个文档块必须保留数据集名、文件名、记录 ID 和来源字段。</li>
+        <li><strong>做质量校验：</strong>用 174 首经典方剂和本草典已审核记录抽样核对结果；显式知识与推断知识分开统计。</li>
+      </ol>
+
+      <h3>引用与合规</h3>
+      <ul>
+        <li>论文和系统页面引用对应 DOI 或本草典发布页，不要只写“来源于网络”。</li>
+        <li>TCM-MKG 为 CC BY-NC 4.0，仅限非商业使用；本草典的公开衍生数据需继续采用 CC BY-SA 4.0。</li>
+        <li>其余四组数据为 CC BY 4.0，使用时保留作者、标题、年份和 DOI。</li>
+        <li>所有内容仅用于教学和研究，不能直接替代专业诊断、处方审核或临床决策。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>QiHuang-KG 课程设计数据说明 · 数据文件校验日期：2026-10-02 · 原始发布元数据保存在各数据集目录中。</p>
+  </footer>
+</body>
+</html>

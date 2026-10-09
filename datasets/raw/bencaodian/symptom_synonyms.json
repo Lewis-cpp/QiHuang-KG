@@ -1,0 +1,2397 @@
+[
+  {
+    "canonical_zh": "恶寒",
+    "canonical_en": "aversion to cold",
+    "synonyms_zh": [
+      "怕冷",
+      "畏寒",
+      "恶风寒",
+      "寒战"
+    ],
+    "synonyms_en": [
+      "chills",
+      "feeling cold",
+      "cold intolerance",
+      "cold aversion"
+    ]
+  },
+  {
+    "canonical_zh": "畏寒肢冷",
+    "canonical_en": "aversion to cold with cold limbs",
+    "synonyms_zh": [
+      "畏寒",
+      "肢冷",
+      "四肢不温",
+      "手足不温",
+      "手足发凉",
+      "畏寒怕冷"
+    ],
+    "synonyms_en": [
+      "cold limbs",
+      "cold hands and feet",
+      "cold extremities",
+      "feeling cold with cold limbs",
+      "chilly hands and feet"
+    ]
+  },
+  {
+    "canonical_zh": "四肢厥逆",
+    "canonical_en": "reversal cold of the four limbs",
+    "synonyms_zh": [
+      "手足厥冷",
+      "四肢厥冷",
+      "厥冷",
+      "手足逆冷"
+    ],
+    "synonyms_en": [
+      "icy cold limbs",
+      "cold reversal",
+      "freezing extremities",
+      "ice cold hands and feet"
+    ]
+  },
+  {
+    "canonical_zh": "发热",
+    "canonical_en": "fever",
+    "synonyms_zh": [
+      "身热",
+      "发烧",
+      "身大热",
+      "热盛"
+    ],
+    "synonyms_en": [
+      "feverish",
+      "raised temperature",
+      "elevated body temperature",
+      "high fever",
+      "running a fever"
+    ]
+  },
+  {
+    "canonical_zh": "恶寒发热",
+    "canonical_en": "aversion to cold with fever",
+    "synonyms_zh": [
+      "发热恶寒",
+      "寒热",
+      "恶寒身热",
+      "发热怕冷"
+    ],
+    "synonyms_en": [
+      "chills and fever",
+      "fever with chills",
+      "cold and fever together",
+      "shivering with fever"
+    ]
+  },
+  {
+    "canonical_zh": "往来寒热",
+    "canonical_en": "alternating chills and fever",
+    "synonyms_zh": [
+      "寒热往来",
+      "寒热交作",
+      "忽冷忽热"
+    ],
+    "synonyms_en": [
+      "alternating fever and chills",
+      "fluctuating chills and fever",
+      "hot then cold",
+      "back and forth chills and fever"
+    ]
+  },
+  {
+    "canonical_zh": "潮热",
+    "canonical_en": "tidal fever",
+    "synonyms_zh": [
+      "潮热汗出",
+      "午后潮热",
+      "日晡潮热",
+      "潮热阵作"
+    ],
+    "synonyms_en": [
+      "hot flashes",
+      "hot flushes",
+      "afternoon fever",
+      "waves of heat",
+      "tidal heat"
+    ]
+  },
+  {
+    "canonical_zh": "午后潮热",
+    "canonical_en": "afternoon tidal fever",
+    "synonyms_zh": [
+      "午后发热",
+      "日晡潮热",
+      "申时潮热"
+    ],
+    "synonyms_en": [
+      "afternoon heat",
+      "late afternoon fever",
+      "afternoon hot flashes"
+    ]
+  },
+  {
+    "canonical_zh": "身热不扬",
+    "canonical_en": "unsurfaced heat",
+    "synonyms_zh": [
+      "热蕴于内",
+      "身热不显",
+      "内热外不显"
+    ],
+    "synonyms_en": [
+      "low-grade deep heat",
+      "hidden fever",
+      "smoldering internal heat",
+      "muffled fever"
+    ]
+  },
+  {
+    "canonical_zh": "身热夜甚",
+    "canonical_en": "fever worse at night",
+    "synonyms_zh": [
+      "夜间发热",
+      "夜热",
+      "入夜身热",
+      "夜间热甚"
+    ],
+    "synonyms_en": [
+      "nighttime fever",
+      "fever worsens at night",
+      "nocturnal fever",
+      "nightly heat"
+    ]
+  },
+  {
+    "canonical_zh": "五心烦热",
+    "canonical_en": "five-center heat vexation",
+    "synonyms_zh": [
+      "手足心热",
+      "掌心热",
+      "心烦手足热"
+    ],
+    "synonyms_en": [
+      "hot palms and soles",
+      "burning palms and soles",
+      "heat in palms and soles",
+      "warm hands feet and chest"
+    ]
+  },
+  {
+    "canonical_zh": "壮热",
+    "canonical_en": "high fever",
+    "synonyms_zh": [
+      "高热",
+      "身大热",
+      "壮热不恶寒",
+      "大热"
+    ],
+    "synonyms_en": [
+      "raging fever",
+      "very high fever",
+      "intense fever",
+      "severe fever"
+    ]
+  },
+  {
+    "canonical_zh": "自汗",
+    "canonical_en": "spontaneous sweating",
+    "synonyms_zh": [
+      "汗出",
+      "平素汗多",
+      "动则汗出",
+      "无故汗出"
+    ],
+    "synonyms_en": [
+      "sweating without exertion",
+      "daytime sweating",
+      "unprovoked sweating",
+      "sweats easily"
+    ]
+  },
+  {
+    "canonical_zh": "盗汗",
+    "canonical_en": "night sweats",
+    "synonyms_zh": [
+      "寝汗",
+      "睡中汗出",
+      "夜间盗汗",
+      "睡汗"
+    ],
+    "synonyms_en": [
+      "sweating during sleep",
+      "nocturnal sweating",
+      "sweating at night",
+      "sweats while asleep"
+    ]
+  },
+  {
+    "canonical_zh": "大汗出",
+    "canonical_en": "profuse sweating",
+    "synonyms_zh": [
+      "大汗淋漓",
+      "汗出如雨",
+      "汗多",
+      "汗出不止"
+    ],
+    "synonyms_en": [
+      "drenching sweat",
+      "heavy sweating",
+      "profuse perspiration",
+      "pouring sweat"
+    ]
+  },
+  {
+    "canonical_zh": "无汗",
+    "canonical_en": "absence of sweating",
+    "synonyms_zh": [
+      "不汗出",
+      "无汗或少汗",
+      "汗闭"
+    ],
+    "synonyms_en": [
+      "no sweating",
+      "dry skin without sweat",
+      "anhidrosis",
+      "cannot sweat"
+    ]
+  },
+  {
+    "canonical_zh": "手足汗出",
+    "canonical_en": "sweating of hands and feet",
+    "synonyms_zh": [
+      "手足濈然汗出",
+      "手足心汗",
+      "掌汗",
+      "手汗脚汗"
+    ],
+    "synonyms_en": [
+      "sweaty palms",
+      "sweaty hands and feet",
+      "palm and sole sweat",
+      "clammy hands and feet"
+    ]
+  },
+  {
+    "canonical_zh": "头痛",
+    "canonical_en": "headache",
+    "synonyms_zh": [
+      "头疼",
+      "头部疼痛",
+      "脑痛"
+    ],
+    "synonyms_en": [
+      "head pain",
+      "aching head",
+      "sore head",
+      "cephalalgia"
+    ]
+  },
+  {
+    "canonical_zh": "头目胀痛",
+    "canonical_en": "distending pain of the head and eyes",
+    "synonyms_zh": [
+      "头胀痛",
+      "头胀",
+      "头目胀",
+      "头痛目胀"
+    ],
+    "synonyms_en": [
+      "distending headache",
+      "throbbing head and eye pain",
+      "bursting head pain",
+      "pressure headache with eye pain"
+    ]
+  },
+  {
+    "canonical_zh": "头晕",
+    "canonical_en": "dizziness",
+    "synonyms_zh": [
+      "头昏",
+      "眩晕",
+      "头眩",
+      "头脑昏沉"
+    ],
+    "synonyms_en": [
+      "dizzy",
+      "lightheaded",
+      "giddiness",
+      "feeling faint"
+    ]
+  },
+  {
+    "canonical_zh": "头晕目眩",
+    "canonical_en": "dizziness with blurred vision",
+    "synonyms_zh": [
+      "眩晕",
+      "头眩目暗",
+      "头晕眼花",
+      "目眩头晕"
+    ],
+    "synonyms_en": [
+      "dizziness and blurry vision",
+      "vertigo with blurred eyes",
+      "spinning head with dim vision",
+      "dizzy and seeing spots"
+    ]
+  },
+  {
+    "canonical_zh": "眩晕耳鸣",
+    "canonical_en": "dizziness with tinnitus",
+    "synonyms_zh": [
+      "头晕耳鸣",
+      "耳鸣眩晕",
+      "头眩耳鸣"
+    ],
+    "synonyms_en": [
+      "dizziness with ringing in the ears",
+      "vertigo with tinnitus",
+      "dizzy with ear ringing"
+    ]
+  },
+  {
+    "canonical_zh": "头重如裹",
+    "canonical_en": "head feels heavy as if wrapped",
+    "synonyms_zh": [
+      "头重",
+      "头沉",
+      "头重身困",
+      "头如裹"
+    ],
+    "synonyms_en": [
+      "heavy head",
+      "head feels wrapped",
+      "head feels muffled",
+      "foggy heavy head"
+    ]
+  },
+  {
+    "canonical_zh": "耳鸣",
+    "canonical_en": "tinnitus",
+    "synonyms_zh": [
+      "耳中鸣响",
+      "耳响",
+      "耳鸣如蝉"
+    ],
+    "synonyms_en": [
+      "ringing in the ears",
+      "ear ringing",
+      "buzzing in ears",
+      "ear noise"
+    ]
+  },
+  {
+    "canonical_zh": "面色萎黄",
+    "canonical_en": "sallow yellow complexion",
+    "synonyms_zh": [
+      "面黄",
+      "面色淡黄",
+      "面黄无华",
+      "面色萎黄无华"
+    ],
+    "synonyms_en": [
+      "sallow face",
+      "yellowish complexion",
+      "pale yellow face",
+      "withered yellow complexion"
+    ]
+  },
+  {
+    "canonical_zh": "面色淡白",
+    "canonical_en": "pale white complexion",
+    "synonyms_zh": [
+      "面白",
+      "面色白",
+      "面色苍白",
+      "面色无华"
+    ],
+    "synonyms_en": [
+      "pale face",
+      "pallid complexion",
+      "white face",
+      "pallid appearance"
+    ]
+  },
+  {
+    "canonical_zh": "面色㿠白",
+    "canonical_en": "bright pale complexion",
+    "synonyms_zh": [
+      "面色苍白",
+      "面白光亮",
+      "面色白而虚浮"
+    ],
+    "synonyms_en": [
+      "bright white face",
+      "shiny pale face",
+      "puffy pale complexion",
+      "ghostly pale face"
+    ]
+  },
+  {
+    "canonical_zh": "面色无华",
+    "canonical_en": "lusterless complexion",
+    "synonyms_zh": [
+      "面无光泽",
+      "面色晦暗",
+      "面色不荣"
+    ],
+    "synonyms_en": [
+      "dull face",
+      "lackluster complexion",
+      "faded complexion",
+      "lifeless face"
+    ]
+  },
+  {
+    "canonical_zh": "面红",
+    "canonical_en": "red face",
+    "synonyms_zh": [
+      "面赤",
+      "面色红",
+      "满面通红",
+      "面红目赤"
+    ],
+    "synonyms_en": [
+      "flushed face",
+      "red complexion",
+      "ruddy face",
+      "facial flushing"
+    ]
+  },
+  {
+    "canonical_zh": "颧红",
+    "canonical_en": "red cheeks",
+    "synonyms_zh": [
+      "两颧发红",
+      "颧部潮红",
+      "两颧红赤",
+      "面部烘热或颧红"
+    ],
+    "synonyms_en": [
+      "malar flush",
+      "red cheekbones",
+      "flushed cheeks",
+      "rosy cheekbones"
+    ]
+  },
+  {
+    "canonical_zh": "口干",
+    "canonical_en": "dry mouth",
+    "synonyms_zh": [
+      "口燥",
+      "口干舌燥",
+      "口中干燥"
+    ],
+    "synonyms_en": [
+      "dry mouth",
+      "parched mouth",
+      "mouth dryness",
+      "thirsty mouth"
+    ]
+  },
+  {
+    "canonical_zh": "口咽干燥",
+    "canonical_en": "dry mouth and throat",
+    "synonyms_zh": [
+      "口干咽燥",
+      "口燥咽干",
+      "咽干口燥",
+      "咽喉干燥"
+    ],
+    "synonyms_en": [
+      "dry mouth and throat",
+      "parched mouth and throat",
+      "mouth and throat dryness"
+    ]
+  },
+  {
+    "canonical_zh": "口渴",
+    "canonical_en": "thirst",
+    "synonyms_zh": [
+      "口渴喜饮",
+      "欲饮",
+      "渴欲饮水"
+    ],
+    "synonyms_en": [
+      "thirsty",
+      "feeling thirsty",
+      "increased thirst",
+      "desire to drink"
+    ]
+  },
+  {
+    "canonical_zh": "口渴喜冷饮",
+    "canonical_en": "thirst with desire for cold drinks",
+    "synonyms_zh": [
+      "渴喜冷饮",
+      "大渴引饮",
+      "喜冷饮",
+      "口渴引饮"
+    ],
+    "synonyms_en": [
+      "strong thirst for cold water",
+      "craving cold drinks",
+      "thirsty for ice water",
+      "big thirst for cold liquids"
+    ]
+  },
+  {
+    "canonical_zh": "口淡不渴",
+    "canonical_en": "bland taste without thirst",
+    "synonyms_zh": [
+      "口淡",
+      "不渴",
+      "口中淡",
+      "口淡无味"
+    ],
+    "synonyms_en": [
+      "bland taste in mouth",
+      "no thirst",
+      "tasteless mouth",
+      "flat taste no thirst"
+    ]
+  },
+  {
+    "canonical_zh": "口苦",
+    "canonical_en": "bitter taste in the mouth",
+    "synonyms_zh": [
+      "口中发苦",
+      "嘴苦",
+      "口苦咽干"
+    ],
+    "synonyms_en": [
+      "bitter mouth",
+      "bitter taste",
+      "bitterness in mouth",
+      "mouth tastes bitter"
+    ]
+  },
+  {
+    "canonical_zh": "口黏",
+    "canonical_en": "sticky sensation in the mouth",
+    "synonyms_zh": [
+      "口中黏腻",
+      "口黏腻",
+      "口中发黏",
+      "口甜口黏"
+    ],
+    "synonyms_en": [
+      "sticky mouth",
+      "gummy mouth feeling",
+      "pasty mouth",
+      "slimy mouth"
+    ]
+  },
+  {
+    "canonical_zh": "口臭",
+    "canonical_en": "bad breath",
+    "synonyms_zh": [
+      "口气臭秽",
+      "口中异味",
+      "口气重"
+    ],
+    "synonyms_en": [
+      "halitosis",
+      "foul breath",
+      "smelly breath",
+      "mouth odor"
+    ]
+  },
+  {
+    "canonical_zh": "咳嗽",
+    "canonical_en": "cough",
+    "synonyms_zh": [
+      "咳逆",
+      "作咳",
+      "咳呛"
+    ],
+    "synonyms_en": [
+      "coughing",
+      "hacking",
+      "cough attacks",
+      "persistent cough"
+    ]
+  },
+  {
+    "canonical_zh": "干咳",
+    "canonical_en": "dry cough",
+    "synonyms_zh": [
+      "干咳无痰",
+      "燥咳",
+      "干咳少痰"
+    ],
+    "synonyms_en": [
+      "unproductive cough",
+      "dry hacking cough",
+      "cough with no phlegm",
+      "dry irritating cough"
+    ]
+  },
+  {
+    "canonical_zh": "痰多",
+    "canonical_en": "copious phlegm",
+    "synonyms_zh": [
+      "多痰",
+      "痰涎",
+      "痰涌",
+      "咳嗽痰多"
+    ],
+    "synonyms_en": [
+      "lots of phlegm",
+      "heavy mucus",
+      "phlegmy cough",
+      "abundant sputum"
+    ]
+  },
+  {
+    "canonical_zh": "痰白清稀",
+    "canonical_en": "thin white phlegm",
+    "synonyms_zh": [
+      "痰液清稀",
+      "痰白稀",
+      "白稀痰",
+      "清稀痰"
+    ],
+    "synonyms_en": [
+      "thin watery phlegm",
+      "clear thin mucus",
+      "white watery sputum",
+      "runny white phlegm"
+    ]
+  },
+  {
+    "canonical_zh": "痰中带血",
+    "canonical_en": "blood-streaked phlegm",
+    "synonyms_zh": [
+      "咯血",
+      "痰血",
+      "咳血"
+    ],
+    "synonyms_en": [
+      "blood in phlegm",
+      "bloody sputum",
+      "hemoptysis",
+      "coughing up blood"
+    ]
+  },
+  {
+    "canonical_zh": "气喘",
+    "canonical_en": "wheezing",
+    "synonyms_zh": [
+      "喘息",
+      "气促",
+      "气粗息促",
+      "喘促"
+    ],
+    "synonyms_en": [
+      "shortness of breath",
+      "panting",
+      "labored breathing",
+      "asthmatic breathing"
+    ]
+  },
+  {
+    "canonical_zh": "气短",
+    "canonical_en": "shortness of breath",
+    "synonyms_zh": [
+      "短气",
+      "气短懒言",
+      "气短乏力",
+      "呼吸短促"
+    ],
+    "synonyms_en": [
+      "breathlessness",
+      "short of breath",
+      "winded easily",
+      "low breath"
+    ]
+  },
+  {
+    "canonical_zh": "少气懒言",
+    "canonical_en": "shortness of breath with disinclination to speak",
+    "synonyms_zh": [
+      "懒言",
+      "语声低微",
+      "声低气怯",
+      "气短懒言"
+    ],
+    "synonyms_en": [
+      "low voice and reluctance to speak",
+      "soft voice short breath",
+      "quiet weak voice",
+      "too tired to talk"
+    ]
+  },
+  {
+    "canonical_zh": "胸闷",
+    "canonical_en": "chest oppression",
+    "synonyms_zh": [
+      "胸脘痞闷",
+      "胸中满闷",
+      "胸闷不舒",
+      "胸闷脘痞"
+    ],
+    "synonyms_en": [
+      "tight chest",
+      "chest tightness",
+      "chest stuffiness",
+      "chest feels blocked"
+    ]
+  },
+  {
+    "canonical_zh": "胸痛",
+    "canonical_en": "chest pain",
+    "synonyms_zh": [
+      "胸中疼痛",
+      "胸闷胸痛",
+      "心胸疼痛"
+    ],
+    "synonyms_en": [
+      "chest pains",
+      "painful chest",
+      "aching chest",
+      "pain in chest"
+    ]
+  },
+  {
+    "canonical_zh": "胸胁胀痛",
+    "canonical_en": "distending pain in the chest and flanks",
+    "synonyms_zh": [
+      "胸胁疼痛",
+      "胁痛",
+      "胸胁满闷",
+      "胸胁苦满",
+      "胁肋隐痛"
+    ],
+    "synonyms_en": [
+      "rib-side pain",
+      "hypochondriac pain",
+      "chest and flank distension",
+      "side of chest pain"
+    ]
+  },
+  {
+    "canonical_zh": "梅核气",
+    "canonical_en": "plum pit qi",
+    "synonyms_zh": [
+      "咽中如有梅核梗阻",
+      "咽中异物感",
+      "咽中梗阻",
+      "咽之不下"
+    ],
+    "synonyms_en": [
+      "feeling of lump in throat",
+      "globus sensation",
+      "something stuck in throat",
+      "plum pit sensation"
+    ]
+  },
+  {
+    "canonical_zh": "咽喉干痛",
+    "canonical_en": "dry sore throat",
+    "synonyms_zh": [
+      "咽干痛",
+      "咽痛",
+      "咽红或痛",
+      "喉咙干痛"
+    ],
+    "synonyms_en": [
+      "dry painful throat",
+      "sore dry throat",
+      "throat pain and dryness"
+    ]
+  },
+  {
+    "canonical_zh": "声音嘶哑",
+    "canonical_en": "hoarse voice",
+    "synonyms_zh": [
+      "声嘶",
+      "音哑",
+      "声哑"
+    ],
+    "synonyms_en": [
+      "hoarseness",
+      "raspy voice",
+      "husky voice",
+      "voice loss"
+    ]
+  },
+  {
+    "canonical_zh": "善太息",
+    "canonical_en": "frequent sighing",
+    "synonyms_zh": [
+      "太息",
+      "叹息",
+      "喜叹息",
+      "时时叹气"
+    ],
+    "synonyms_en": [
+      "sighing a lot",
+      "frequent sighs",
+      "deep sighing",
+      "often sighs"
+    ]
+  },
+  {
+    "canonical_zh": "纳呆",
+    "canonical_en": "poor appetite",
+    "synonyms_zh": [
+      "纳差",
+      "食欲不振",
+      "食少",
+      "食少纳呆",
+      "纳呆食少",
+      "胃纳不佳"
+    ],
+    "synonyms_en": [
+      "loss of appetite",
+      "low appetite",
+      "no appetite",
+      "reduced appetite",
+      "not hungry"
+    ]
+  },
+  {
+    "canonical_zh": "食后腹胀",
+    "canonical_en": "abdominal distension after eating",
+    "synonyms_zh": [
+      "食后胀满",
+      "腹胀食后尤甚",
+      "饭后腹胀",
+      "食后脘胀"
+    ],
+    "synonyms_en": [
+      "bloating after meals",
+      "post-meal fullness",
+      "distension after eating",
+      "stomach bloats after food"
+    ]
+  },
+  {
+    "canonical_zh": "饥不欲食",
+    "canonical_en": "hunger without desire to eat",
+    "synonyms_zh": [
+      "饥而不欲食",
+      "嘈杂不欲食",
+      "饥而不食"
+    ],
+    "synonyms_en": [
+      "hungry but no appetite",
+      "feels hungry but cannot eat",
+      "false hunger"
+    ]
+  },
+  {
+    "canonical_zh": "消谷善饥",
+    "canonical_en": "rapid digestion with excessive hunger",
+    "synonyms_zh": [
+      "善饥",
+      "易饥",
+      "消谷易饥",
+      "多食易饥"
+    ],
+    "synonyms_en": [
+      "always hungry",
+      "constant hunger",
+      "excessive appetite",
+      "eats a lot and still hungry"
+    ]
+  },
+  {
+    "canonical_zh": "腹胀",
+    "canonical_en": "abdominal distension",
+    "synonyms_zh": [
+      "腹部胀满",
+      "脘腹胀满",
+      "腹满",
+      "脘腹痞闷胀满"
+    ],
+    "synonyms_en": [
+      "bloated abdomen",
+      "abdominal bloating",
+      "distended belly",
+      "bloating"
+    ]
+  },
+  {
+    "canonical_zh": "脘腹痞闷",
+    "canonical_en": "epigastric and abdominal glomus",
+    "synonyms_zh": [
+      "胸脘痞闷",
+      "脘痞",
+      "痞满",
+      "脘痞不舒",
+      "胃脘痞满"
+    ],
+    "synonyms_en": [
+      "stomach fullness",
+      "epigastric stuffiness",
+      "upper abdominal bloating",
+      "stomach stuffed feeling"
+    ]
+  },
+  {
+    "canonical_zh": "腹痛",
+    "canonical_en": "abdominal pain",
+    "synonyms_zh": [
+      "肚子痛",
+      "腹中痛",
+      "腹中疼痛",
+      "时腹自痛"
+    ],
+    "synonyms_en": [
+      "stomach ache",
+      "belly pain",
+      "painful abdomen",
+      "tummy ache"
+    ]
+  },
+  {
+    "canonical_zh": "少腹胀痛",
+    "canonical_en": "lower abdominal distension and pain",
+    "synonyms_zh": [
+      "小腹胀痛",
+      "少腹痛",
+      "小腹痛"
+    ],
+    "synonyms_en": [
+      "lower abdominal pain",
+      "lower belly pain",
+      "pelvic pain and bloating",
+      "pain below navel"
+    ]
+  },
+  {
+    "canonical_zh": "胃脘冷痛",
+    "canonical_en": "cold pain in the epigastrium",
+    "synonyms_zh": [
+      "胃痛冷",
+      "胃寒痛",
+      "脘腹冷痛",
+      "得温痛减"
+    ],
+    "synonyms_en": [
+      "cold stomach pain",
+      "stomach pain worse with cold",
+      "epigastric cold pain",
+      "stomach pain better with warmth"
+    ]
+  },
+  {
+    "canonical_zh": "胃脘灼痛",
+    "canonical_en": "burning pain in the epigastrium",
+    "synonyms_zh": [
+      "胃痛灼热",
+      "胃脘嘈杂",
+      "胃脘灼热疼痛",
+      "胃脘嘈杂隐隐灼痛"
+    ],
+    "synonyms_en": [
+      "burning stomach pain",
+      "epigastric burning",
+      "heartburn pain",
+      "hot stomach pain"
+    ]
+  },
+  {
+    "canonical_zh": "泛酸",
+    "canonical_en": "acid reflux",
+    "synonyms_zh": [
+      "吞酸",
+      "反酸",
+      "嘈杂泛酸",
+      "呕吐酸苦"
+    ],
+    "synonyms_en": [
+      "heartburn",
+      "acid regurgitation",
+      "sour reflux",
+      "acid coming up"
+    ]
+  },
+  {
+    "canonical_zh": "恶心呕吐",
+    "canonical_en": "nausea and vomiting",
+    "synonyms_zh": [
+      "呕恶",
+      "欲呕",
+      "恶心欲吐",
+      "干呕",
+      "干呕呃逆"
+    ],
+    "synonyms_en": [
+      "nausea with vomiting",
+      "feeling sick and throwing up",
+      "queasy and vomiting",
+      "retching"
+    ]
+  },
+  {
+    "canonical_zh": "呕吐清水",
+    "canonical_en": "vomiting clear fluid",
+    "synonyms_zh": [
+      "呕吐清水痰涎",
+      "吐清水",
+      "吐涎",
+      "呕清涎"
+    ],
+    "synonyms_en": [
+      "vomiting clear liquid",
+      "throwing up water",
+      "bringing up clear fluid",
+      "spitting up clear liquid"
+    ]
+  },
+  {
+    "canonical_zh": "便溏",
+    "canonical_en": "loose stool",
+    "synonyms_zh": [
+      "大便溏薄",
+      "大便稀",
+      "稀便",
+      "大便不成形",
+      "溏泄",
+      "纳少便溏"
+    ],
+    "synonyms_en": [
+      "soft stool",
+      "unformed stool",
+      "runny stool",
+      "mushy stool",
+      "loose bowels"
+    ]
+  },
+  {
+    "canonical_zh": "大便干结",
+    "canonical_en": "dry hard stool",
+    "synonyms_zh": [
+      "大便秘结",
+      "便秘",
+      "大便干",
+      "大便燥结"
+    ],
+    "synonyms_en": [
+      "constipation",
+      "hard stool",
+      "dry stool",
+      "difficulty passing stool"
+    ]
+  },
+  {
+    "canonical_zh": "下利清谷",
+    "canonical_en": "diarrhea with undigested food",
+    "synonyms_zh": [
+      "完谷不化",
+      "泻下不化",
+      "下利清水完谷"
+    ],
+    "synonyms_en": [
+      "undigested food in stool",
+      "diarrhea with whole food",
+      "food passing undigested",
+      "raw food in diarrhea"
+    ]
+  },
+  {
+    "canonical_zh": "五更泄泻",
+    "canonical_en": "daybreak diarrhea",
+    "synonyms_zh": [
+      "鸡鸣泄",
+      "晨泄",
+      "黎明泄泻"
+    ],
+    "synonyms_en": [
+      "early morning diarrhea",
+      "dawn diarrhea",
+      "predawn loose stool",
+      "cockcrow diarrhea"
+    ]
+  },
+  {
+    "canonical_zh": "里急后重",
+    "canonical_en": "tenesmus",
+    "synonyms_zh": [
+      "便意频数",
+      "肛门坠重",
+      "便意频",
+      "便意频数肛门坠重"
+    ],
+    "synonyms_en": [
+      "straining to defecate",
+      "urgent bowel movement",
+      "heaviness in the anus",
+      "feeling of incomplete evacuation"
+    ]
+  },
+  {
+    "canonical_zh": "肛门灼热",
+    "canonical_en": "burning sensation in the anus",
+    "synonyms_zh": [
+      "肛门灼痛",
+      "肛门热",
+      "大便赤白黏液肛门灼热"
+    ],
+    "synonyms_en": [
+      "hot anus feeling",
+      "burning anus",
+      "anal burning sensation"
+    ]
+  },
+  {
+    "canonical_zh": "脱肛",
+    "canonical_en": "rectal prolapse",
+    "synonyms_zh": [
+      "久泻脱肛",
+      "肛门脱出",
+      "肛脱"
+    ],
+    "synonyms_en": [
+      "prolapsed rectum",
+      "rectum coming out",
+      "anal prolapse"
+    ]
+  },
+  {
+    "canonical_zh": "肠鸣",
+    "canonical_en": "borborygmus",
+    "synonyms_zh": [
+      "肠鸣漉漉",
+      "腹中肠鸣",
+      "肠鸣辘辘"
+    ],
+    "synonyms_en": [
+      "bowel sounds",
+      "gurgling intestines",
+      "rumbling stomach",
+      "stomach gurgling"
+    ]
+  },
+  {
+    "canonical_zh": "小便清长",
+    "canonical_en": "clear copious urine",
+    "synonyms_zh": [
+      "小便清长夜尿频",
+      "尿清长",
+      "尿多清长"
+    ],
+    "synonyms_en": [
+      "clear abundant urine",
+      "lots of clear urine",
+      "copious pale urine",
+      "plentiful clear pee"
+    ]
+  },
+  {
+    "canonical_zh": "小便短赤",
+    "canonical_en": "scanty dark-yellow urine",
+    "synonyms_zh": [
+      "小便短少",
+      "尿黄赤",
+      "小便黄赤",
+      "小便短黄"
+    ],
+    "synonyms_en": [
+      "scanty dark urine",
+      "reduced dark urine",
+      "little reddish urine",
+      "dark scant pee"
+    ]
+  },
+  {
+    "canonical_zh": "小便短赤涩痛",
+    "canonical_en": "scanty painful urination",
+    "synonyms_zh": [
+      "小便涩痛",
+      "小便灼痛",
+      "小便频急短赤灼痛",
+      "尿频尿痛"
+    ],
+    "synonyms_en": [
+      "painful urination",
+      "burning urination",
+      "dysuria with scant urine",
+      "stinging when urinating"
+    ]
+  },
+  {
+    "canonical_zh": "夜尿频多",
+    "canonical_en": "frequent nocturnal urination",
+    "synonyms_zh": [
+      "夜尿多",
+      "夜尿频",
+      "夜间小便多",
+      "夜尿频数"
+    ],
+    "synonyms_en": [
+      "nocturia",
+      "frequent peeing at night",
+      "urinating a lot at night",
+      "nighttime urination"
+    ]
+  },
+  {
+    "canonical_zh": "尿血",
+    "canonical_en": "blood in urine",
+    "synonyms_zh": [
+      "血尿",
+      "小便带血",
+      "溺血"
+    ],
+    "synonyms_en": [
+      "hematuria",
+      "bloody urine",
+      "bleeding in urine",
+      "red urine"
+    ]
+  },
+  {
+    "canonical_zh": "淋沥不畅",
+    "canonical_en": "dribbling urination",
+    "synonyms_zh": [
+      "小便淋漓",
+      "淋漓不尽",
+      "小便不畅",
+      "排尿不畅"
+    ],
+    "synonyms_en": [
+      "dribbling pee",
+      "incomplete urination",
+      "dripping urination",
+      "difficulty passing urine"
+    ]
+  },
+  {
+    "canonical_zh": "下肢浮肿",
+    "canonical_en": "edema of the lower limbs",
+    "synonyms_zh": [
+      "下肢水肿",
+      "腿肿",
+      "足肿",
+      "足胫浮肿"
+    ],
+    "synonyms_en": [
+      "swollen legs",
+      "leg swelling",
+      "lower limb edema",
+      "swollen ankles and feet"
+    ]
+  },
+  {
+    "canonical_zh": "心悸",
+    "canonical_en": "palpitations",
+    "synonyms_zh": [
+      "心慌",
+      "心跳不宁",
+      "怔忡",
+      "心悸怔忡"
+    ],
+    "synonyms_en": [
+      "heart palpitations",
+      "racing heart",
+      "pounding heart",
+      "heart thumping"
+    ]
+  },
+  {
+    "canonical_zh": "失眠",
+    "canonical_en": "insomnia",
+    "synonyms_zh": [
+      "不寐",
+      "不眠",
+      "难以入睡",
+      "睡眠障碍"
+    ],
+    "synonyms_en": [
+      "sleeplessness",
+      "trouble sleeping",
+      "cannot sleep",
+      "difficulty falling asleep"
+    ]
+  },
+  {
+    "canonical_zh": "失眠多梦",
+    "canonical_en": "insomnia with profuse dreaming",
+    "synonyms_zh": [
+      "多梦",
+      "睡眠多梦",
+      "眠差多梦",
+      "健忘多梦"
+    ],
+    "synonyms_en": [
+      "poor sleep with many dreams",
+      "dream disturbed sleep",
+      "restless sleep with dreams",
+      "vivid dreams and insomnia"
+    ]
+  },
+  {
+    "canonical_zh": "心烦",
+    "canonical_en": "vexation",
+    "synonyms_zh": [
+      "烦躁",
+      "心中烦乱",
+      "烦躁不安",
+      "心烦意乱"
+    ],
+    "synonyms_en": [
+      "irritability",
+      "restlessness",
+      "mental agitation",
+      "feeling vexed"
+    ]
+  },
+  {
+    "canonical_zh": "心烦不寐",
+    "canonical_en": "vexation with insomnia",
+    "synonyms_zh": [
+      "烦躁失眠",
+      "心烦失眠",
+      "烦不得眠"
+    ],
+    "synonyms_en": [
+      "irritable insomnia",
+      "agitated sleeplessness",
+      "restless with no sleep",
+      "cannot sleep from restlessness"
+    ]
+  },
+  {
+    "canonical_zh": "急躁易怒",
+    "canonical_en": "irritability and easily angered",
+    "synonyms_zh": [
+      "易怒",
+      "性急易怒",
+      "暴躁",
+      "烦躁易怒"
+    ],
+    "synonyms_en": [
+      "quick to anger",
+      "short temper",
+      "irritable and angry",
+      "easily upset"
+    ]
+  },
+  {
+    "canonical_zh": "情志抑郁",
+    "canonical_en": "emotional depression",
+    "synonyms_zh": [
+      "情绪低落",
+      "抑郁",
+      "情志不畅",
+      "默默不欲饮食"
+    ],
+    "synonyms_en": [
+      "depressed mood",
+      "low spirits",
+      "emotional stagnation",
+      "feeling down"
+    ]
+  },
+  {
+    "canonical_zh": "健忘",
+    "canonical_en": "poor memory",
+    "synonyms_zh": [
+      "记忆力减退",
+      "善忘",
+      "健忘多梦"
+    ],
+    "synonyms_en": [
+      "forgetfulness",
+      "memory loss",
+      "bad memory",
+      "difficulty remembering"
+    ]
+  },
+  {
+    "canonical_zh": "神疲乏力",
+    "canonical_en": "mental fatigue and lack of strength",
+    "synonyms_zh": [
+      "神疲",
+      "乏力",
+      "疲乏",
+      "倦怠乏力",
+      "神疲乏力自汗畏风"
+    ],
+    "synonyms_en": [
+      "tiredness",
+      "fatigue",
+      "exhaustion",
+      "weariness",
+      "feeling drained"
+    ]
+  },
+  {
+    "canonical_zh": "肢体倦怠",
+    "canonical_en": "weariness of the limbs",
+    "synonyms_zh": [
+      "四肢倦怠",
+      "肢倦",
+      "肢体乏力",
+      "肢体倦怠少气懒言"
+    ],
+    "synonyms_en": [
+      "tired limbs",
+      "weak arms and legs",
+      "heavy tired limbs",
+      "limb fatigue"
+    ]
+  },
+  {
+    "canonical_zh": "肢体困重",
+    "canonical_en": "heaviness of the limbs",
+    "synonyms_zh": [
+      "身重",
+      "肢重",
+      "四肢困重",
+      "头重身困"
+    ],
+    "synonyms_en": [
+      "heavy limbs",
+      "body heaviness",
+      "feeling heavy",
+      "limbs feel weighted"
+    ]
+  },
+  {
+    "canonical_zh": "形体消瘦",
+    "canonical_en": "emaciation",
+    "synonyms_zh": [
+      "消瘦",
+      "瘦削",
+      "体瘦",
+      "身体消瘦"
+    ],
+    "synonyms_en": [
+      "weight loss",
+      "wasting",
+      "thin and frail",
+      "losing weight"
+    ]
+  },
+  {
+    "canonical_zh": "精神萎靡",
+    "canonical_en": "listless spirit",
+    "synonyms_zh": [
+      "精神不振",
+      "精神疲惫",
+      "萎靡不振",
+      "但欲寐"
+    ],
+    "synonyms_en": [
+      "lethargic",
+      "low energy",
+      "listless",
+      "no energy"
+    ]
+  },
+  {
+    "canonical_zh": "易感冒",
+    "canonical_en": "susceptible to colds",
+    "synonyms_zh": [
+      "常感冒",
+      "容易感冒",
+      "反复感冒"
+    ],
+    "synonyms_en": [
+      "catches cold easily",
+      "prone to colds",
+      "frequent colds",
+      "gets sick often"
+    ]
+  },
+  {
+    "canonical_zh": "腰膝酸软",
+    "canonical_en": "soreness and weakness of the lower back and knees",
+    "synonyms_zh": [
+      "腰酸腿软",
+      "腰膝无力",
+      "腰膝酸痛",
+      "腰膝酸软而痛"
+    ],
+    "synonyms_en": [
+      "weak lower back and knees",
+      "sore back and knees",
+      "aching lumbar and knees",
+      "back and knee weakness"
+    ]
+  },
+  {
+    "canonical_zh": "腰部胀痛",
+    "canonical_en": "distending pain in the lumbar region",
+    "synonyms_zh": [
+      "腰痛",
+      "腰胀痛",
+      "腰部疼痛"
+    ],
+    "synonyms_en": [
+      "lower back pain",
+      "lumbar pain",
+      "back ache",
+      "sore lower back"
+    ]
+  },
+  {
+    "canonical_zh": "肢体麻木",
+    "canonical_en": "numbness of the limbs",
+    "synonyms_zh": [
+      "手足麻木",
+      "麻木",
+      "四肢麻木",
+      "肢麻"
+    ],
+    "synonyms_en": [
+      "numb limbs",
+      "tingling hands and feet",
+      "pins and needles",
+      "loss of sensation in limbs"
+    ]
+  },
+  {
+    "canonical_zh": "筋脉拘急",
+    "canonical_en": "spasmodic tension of sinews",
+    "synonyms_zh": [
+      "筋急",
+      "拘急",
+      "筋脉挛急",
+      "肢体麻木筋脉拘急"
+    ],
+    "synonyms_en": [
+      "muscle spasms",
+      "stiff muscles",
+      "sinew contractions",
+      "cramping muscles"
+    ]
+  },
+  {
+    "canonical_zh": "手足蠕动",
+    "canonical_en": "wriggling of extremities",
+    "synonyms_zh": [
+      "手足微动",
+      "蠕动",
+      "手足振颤"
+    ],
+    "synonyms_en": [
+      "twitching extremities",
+      "trembling hands and feet",
+      "involuntary movements",
+      "fidgety limbs"
+    ]
+  },
+  {
+    "canonical_zh": "四肢抽搐",
+    "canonical_en": "convulsions of the limbs",
+    "synonyms_zh": [
+      "抽搐",
+      "抽风",
+      "四肢抽动"
+    ],
+    "synonyms_en": [
+      "seizures",
+      "convulsing limbs",
+      "spasms",
+      "muscle convulsions"
+    ]
+  },
+  {
+    "canonical_zh": "两目干涩",
+    "canonical_en": "dry eyes",
+    "synonyms_zh": [
+      "目涩",
+      "目干",
+      "眼干涩",
+      "两目干涩视物模糊"
+    ],
+    "synonyms_en": [
+      "dry eyes",
+      "gritty eyes",
+      "eye dryness",
+      "irritated dry eyes"
+    ]
+  },
+  {
+    "canonical_zh": "视物模糊",
+    "canonical_en": "blurred vision",
+    "synonyms_zh": [
+      "目视不清",
+      "视物不清",
+      "视物昏花",
+      "眼花"
+    ],
+    "synonyms_en": [
+      "fuzzy vision",
+      "blurry sight",
+      "unclear vision",
+      "hazy vision"
+    ]
+  },
+  {
+    "canonical_zh": "夜盲",
+    "canonical_en": "night blindness",
+    "synonyms_zh": [
+      "雀目",
+      "夜视不明",
+      "视物模糊或夜盲"
+    ],
+    "synonyms_en": [
+      "poor night vision",
+      "cannot see in dark",
+      "nyctalopia",
+      "night vision loss"
+    ]
+  },
+  {
+    "canonical_zh": "爪甲不荣",
+    "canonical_en": "lusterless nails",
+    "synonyms_zh": [
+      "指甲不荣",
+      "爪甲枯槁",
+      "指甲枯脆"
+    ],
+    "synonyms_en": [
+      "brittle nails",
+      "dull nails",
+      "pale nails",
+      "dry nails"
+    ]
+  },
+  {
+    "canonical_zh": "唇甲色淡",
+    "canonical_en": "pale lips and nails",
+    "synonyms_zh": [
+      "唇舌色淡",
+      "唇甲淡白",
+      "唇色淡白"
+    ],
+    "synonyms_en": [
+      "pale lips and fingernails",
+      "colorless lips and nails",
+      "whitish lips nails"
+    ]
+  },
+  {
+    "canonical_zh": "唇甲青紫",
+    "canonical_en": "bluish purple lips and nails",
+    "synonyms_zh": [
+      "口唇青紫",
+      "唇甲紫暗",
+      "唇指紫绀"
+    ],
+    "synonyms_en": [
+      "cyanotic lips and nails",
+      "purple lips fingernails",
+      "bluish lips and nails"
+    ]
+  },
+  {
+    "canonical_zh": "牙龈肿痛",
+    "canonical_en": "swollen painful gums",
+    "synonyms_zh": [
+      "齿龈肿痛",
+      "牙龈出血",
+      "牙龈肿痛出血"
+    ],
+    "synonyms_en": [
+      "gum pain",
+      "painful gums",
+      "bleeding gums",
+      "swollen gums"
+    ]
+  },
+  {
+    "canonical_zh": "吐血",
+    "canonical_en": "hematemesis",
+    "synonyms_zh": [
+      "呕血",
+      "吐血衄血",
+      "吐血衄血便血"
+    ],
+    "synonyms_en": [
+      "vomiting blood",
+      "throwing up blood",
+      "blood in vomit"
+    ]
+  },
+  {
+    "canonical_zh": "衄血",
+    "canonical_en": "nosebleed",
+    "synonyms_zh": [
+      "鼻衄",
+      "鼻出血",
+      "鼻血"
+    ],
+    "synonyms_en": [
+      "nosebleeds",
+      "epistaxis",
+      "bleeding from nose",
+      "blood from nose"
+    ]
+  },
+  {
+    "canonical_zh": "便血",
+    "canonical_en": "blood in stool",
+    "synonyms_zh": [
+      "大便出血",
+      "下血",
+      "便中带血"
+    ],
+    "synonyms_en": [
+      "bloody stool",
+      "rectal bleeding",
+      "blood in bowel movement",
+      "hematochezia"
+    ]
+  },
+  {
+    "canonical_zh": "斑疹隐隐",
+    "canonical_en": "faint macules and papules",
+    "synonyms_zh": [
+      "斑疹隐约",
+      "疹色隐隐",
+      "隐疹"
+    ],
+    "synonyms_en": [
+      "faint rash",
+      "pale rash",
+      "subtle macules",
+      "hidden spots"
+    ]
+  },
+  {
+    "canonical_zh": "斑疹紫黑",
+    "canonical_en": "dark purple macules",
+    "synonyms_zh": [
+      "紫斑",
+      "斑色紫暗",
+      "紫黑斑疹"
+    ],
+    "synonyms_en": [
+      "purple rash",
+      "dark purple spots",
+      "blackish purple macules"
+    ]
+  },
+  {
+    "canonical_zh": "神昏谵语",
+    "canonical_en": "clouded consciousness with delirious speech",
+    "synonyms_zh": [
+      "神昏",
+      "谵语",
+      "神志不清",
+      "昏迷谵语"
+    ],
+    "synonyms_en": [
+      "delirium",
+      "confused speech",
+      "unconscious raving",
+      "altered mental status"
+    ]
+  },
+  {
+    "canonical_zh": "躁扰不宁",
+    "canonical_en": "restless agitation",
+    "synonyms_zh": [
+      "躁扰昏狂",
+      "躁动不安",
+      "狂躁",
+      "烦躁不宁"
+    ],
+    "synonyms_en": [
+      "manic restlessness",
+      "wild agitation",
+      "uncontrolled restlessness",
+      "severe agitation"
+    ]
+  },
+  {
+    "canonical_zh": "月经量少",
+    "canonical_en": "scanty menstruation",
+    "synonyms_zh": [
+      "经量少",
+      "月经量少色淡",
+      "经少",
+      "月经稀少"
+    ],
+    "synonyms_en": [
+      "light periods",
+      "scanty menses",
+      "reduced menstrual flow",
+      "short periods"
+    ]
+  },
+  {
+    "canonical_zh": "经闭",
+    "canonical_en": "amenorrhea",
+    "synonyms_zh": [
+      "闭经",
+      "月经不行",
+      "经水不通",
+      "经少经闭"
+    ],
+    "synonyms_en": [
+      "absent periods",
+      "no menstruation",
+      "missed period",
+      "stopped menstruation"
+    ]
+  },
+  {
+    "canonical_zh": "月经不调",
+    "canonical_en": "irregular menstruation",
+    "synonyms_zh": [
+      "月经不调经前乳房胀痛",
+      "经期不调",
+      "月经紊乱"
+    ],
+    "synonyms_en": [
+      "irregular periods",
+      "menstrual irregularity",
+      "unpredictable menses"
+    ]
+  },
+  {
+    "canonical_zh": "崩漏",
+    "canonical_en": "uterine flooding and spotting",
+    "synonyms_zh": [
+      "经血崩漏",
+      "崩中漏下",
+      "经水淋漓"
+    ],
+    "synonyms_en": [
+      "heavy uterine bleeding",
+      "abnormal uterine bleeding",
+      "flooding and dribbling",
+      "metrorrhagia"
+    ]
+  },
+  {
+    "canonical_zh": "带下黄稠",
+    "canonical_en": "yellow thick vaginal discharge",
+    "synonyms_zh": [
+      "黄带",
+      "带黄",
+      "白带黄稠"
+    ],
+    "synonyms_en": [
+      "yellow discharge",
+      "thick yellow leukorrhea",
+      "yellow vaginal discharge"
+    ]
+  },
+  {
+    "canonical_zh": "阳痿",
+    "canonical_en": "impotence",
+    "synonyms_zh": [
+      "阳事不举",
+      "阳痿不育",
+      "阳痿早泄"
+    ],
+    "synonyms_en": [
+      "erectile dysfunction",
+      "impotent",
+      "cannot achieve erection"
+    ]
+  },
+  {
+    "canonical_zh": "遗精",
+    "canonical_en": "seminal emission",
+    "synonyms_zh": [
+      "滑精",
+      "梦遗",
+      "遗精早泄"
+    ],
+    "synonyms_en": [
+      "nocturnal emission",
+      "involuntary ejaculation",
+      "spermatorrhea",
+      "wet dreams"
+    ]
+  },
+  {
+    "canonical_zh": "宫寒不孕",
+    "canonical_en": "cold womb infertility",
+    "synonyms_zh": [
+      "宫冷不孕",
+      "胞宫虚寒",
+      "子宫虚寒"
+    ],
+    "synonyms_en": [
+      "cold uterus infertility",
+      "infertility from cold womb",
+      "uterine cold sterility"
+    ]
+  },
+  {
+    "canonical_zh": "瘿瘤",
+    "canonical_en": "goiter",
+    "synonyms_zh": [
+      "瘿瘤结块",
+      "颈瘿",
+      "瘰疬瘿瘤"
+    ],
+    "synonyms_en": [
+      "thyroid swelling",
+      "neck lump",
+      "goitrous swelling"
+    ]
+  },
+  {
+    "canonical_zh": "消渴",
+    "canonical_en": "wasting thirst",
+    "synonyms_zh": [
+      "三消",
+      "渴饮不止",
+      "消渴多饮"
+    ],
+    "synonyms_en": [
+      "diabetic-type thirst",
+      "wasting and thirsting disorder",
+      "excessive thirst disorder"
+    ]
+  },
+  {
+    "canonical_zh": "舌淡",
+    "canonical_en": "pale tongue",
+    "synonyms_zh": [
+      "舌色淡",
+      "舌淡白",
+      "舌质淡",
+      "舌淡苔白"
+    ],
+    "synonyms_en": [
+      "pale tongue body",
+      "light colored tongue",
+      "pallid tongue",
+      "whitish tongue"
+    ]
+  },
+  {
+    "canonical_zh": "舌淡红",
+    "canonical_en": "pale red tongue",
+    "synonyms_zh": [
+      "舌质淡红",
+      "淡红舌",
+      "舌淡红苔白"
+    ],
+    "synonyms_en": [
+      "pale pink tongue",
+      "lightly red tongue",
+      "normal pink tongue"
+    ]
+  },
+  {
+    "canonical_zh": "舌红",
+    "canonical_en": "red tongue",
+    "synonyms_zh": [
+      "舌质红",
+      "红舌",
+      "舌边尖红",
+      "舌红苔黄"
+    ],
+    "synonyms_en": [
+      "reddish tongue",
+      "red tongue body",
+      "red toned tongue"
+    ]
+  },
+  {
+    "canonical_zh": "舌红绛",
+    "canonical_en": "deep red crimson tongue",
+    "synonyms_zh": [
+      "舌绛",
+      "绛舌",
+      "深绛舌",
+      "舌深绛"
+    ],
+    "synonyms_en": [
+      "crimson tongue",
+      "deep red tongue",
+      "scarlet tongue",
+      "dark red tongue"
+    ]
+  },
+  {
+    "canonical_zh": "舌淡胖",
+    "canonical_en": "pale swollen tongue",
+    "synonyms_zh": [
+      "舌胖大",
+      "淡胖舌",
+      "舌体胖大",
+      "舌淡胖有齿痕"
+    ],
+    "synonyms_en": [
+      "pale puffy tongue",
+      "enlarged pale tongue",
+      "swollen pale tongue",
+      "bulky pale tongue"
+    ]
+  },
+  {
+    "canonical_zh": "舌有齿痕",
+    "canonical_en": "teeth-marked tongue",
+    "synonyms_zh": [
+      "齿痕舌",
+      "舌边齿印",
+      "齿印舌"
+    ],
+    "synonyms_en": [
+      "scalloped tongue",
+      "tooth-marked tongue",
+      "tongue with teeth marks",
+      "indented tongue edges"
+    ]
+  },
+  {
+    "canonical_zh": "舌红少津",
+    "canonical_en": "red tongue with scant fluids",
+    "synonyms_zh": [
+      "舌红津少",
+      "舌燥少津",
+      "舌红少津少苔"
+    ],
+    "synonyms_en": [
+      "dry red tongue",
+      "red tongue little moisture",
+      "red tongue dry",
+      "parched red tongue"
+    ]
+  },
+  {
+    "canonical_zh": "苔白",
+    "canonical_en": "white tongue coating",
+    "synonyms_zh": [
+      "白苔",
+      "舌苔白",
+      "苔薄白",
+      "薄白苔"
+    ],
+    "synonyms_en": [
+      "white coating",
+      "white tongue fur",
+      "white tongue coat"
+    ]
+  },
+  {
+    "canonical_zh": "苔黄",
+    "canonical_en": "yellow tongue coating",
+    "synonyms_zh": [
+      "黄苔",
+      "舌苔黄",
+      "苔色黄"
+    ],
+    "synonyms_en": [
+      "yellow coating",
+      "yellow tongue fur",
+      "yellow tongue coat"
+    ]
+  },
+  {
+    "canonical_zh": "苔腻",
+    "canonical_en": "greasy tongue coating",
+    "synonyms_zh": [
+      "腻苔",
+      "舌苔腻",
+      "苔厚腻",
+      "厚腻苔"
+    ],
+    "synonyms_en": [
+      "greasy coating",
+      "sticky coating",
+      "thick greasy coat",
+      "slimy tongue fur"
+    ]
+  },
+  {
+    "canonical_zh": "苔黄腻",
+    "canonical_en": "yellow greasy coating",
+    "synonyms_zh": [
+      "黄腻苔",
+      "舌苔黄腻",
+      "苔黄厚腻"
+    ],
+    "synonyms_en": [
+      "yellow greasy tongue coat",
+      "yellow sticky coating",
+      "yellow thick greasy fur"
+    ]
+  },
+  {
+    "canonical_zh": "苔白腻",
+    "canonical_en": "white greasy coating",
+    "synonyms_zh": [
+      "白腻苔",
+      "舌苔白腻",
+      "苔白厚腻"
+    ],
+    "synonyms_en": [
+      "white greasy tongue coat",
+      "white sticky coating",
+      "white thick greasy fur"
+    ]
+  },
+  {
+    "canonical_zh": "苔黄燥",
+    "canonical_en": "dry yellow coating",
+    "synonyms_zh": [
+      "黄燥苔",
+      "苔黄干燥",
+      "苔黄燥起芒刺"
+    ],
+    "synonyms_en": [
+      "dry yellow tongue coat",
+      "parched yellow coating",
+      "yellow dry fur"
+    ]
+  },
+  {
+    "canonical_zh": "少苔",
+    "canonical_en": "scanty coating",
+    "synonyms_zh": [
+      "苔少",
+      "薄苔",
+      "苔少而薄"
+    ],
+    "synonyms_en": [
+      "thin coating",
+      "little tongue coat",
+      "reduced coating"
+    ]
+  },
+  {
+    "canonical_zh": "无苔",
+    "canonical_en": "no coating",
+    "synonyms_zh": [
+      "光剥苔",
+      "舌光无苔",
+      "少苔或无苔",
+      "花剥苔"
+    ],
+    "synonyms_en": [
+      "peeled tongue",
+      "mirror tongue",
+      "bald tongue",
+      "absent coating"
+    ]
+  },
+  {
+    "canonical_zh": "脉浮",
+    "canonical_en": "floating pulse",
+    "synonyms_zh": [
+      "浮脉",
+      "脉浮紧",
+      "脉浮缓",
+      "脉浮数"
+    ],
+    "synonyms_en": [
+      "superficial pulse",
+      "shallow pulse",
+      "pulse on surface"
+    ]
+  },
+  {
+    "canonical_zh": "脉沉",
+    "canonical_en": "deep pulse",
+    "synonyms_zh": [
+      "沉脉",
+      "脉沉缓",
+      "脉沉迟",
+      "脉沉实"
+    ],
+    "synonyms_en": [
+      "sunken pulse",
+      "deep lying pulse",
+      "pulse felt deeply"
+    ]
+  },
+  {
+    "canonical_zh": "脉数",
+    "canonical_en": "rapid pulse",
+    "synonyms_zh": [
+      "数脉",
+      "脉数有力",
+      "脉细数",
+      "脉滑数"
+    ],
+    "synonyms_en": [
+      "fast pulse",
+      "quick pulse",
+      "rapid heart rate",
+      "accelerated pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉迟",
+    "canonical_en": "slow pulse",
+    "synonyms_zh": [
+      "迟脉",
+      "脉迟缓",
+      "脉沉迟"
+    ],
+    "synonyms_en": [
+      "slow heart rate",
+      "bradycardic pulse",
+      "sluggish pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉滑",
+    "canonical_en": "slippery pulse",
+    "synonyms_zh": [
+      "滑脉",
+      "脉滑利",
+      "脉滑数"
+    ],
+    "synonyms_en": [
+      "smooth pulse",
+      "rolling pulse",
+      "slippery feeling pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉弦",
+    "canonical_en": "wiry pulse",
+    "synonyms_zh": [
+      "弦脉",
+      "脉弦紧",
+      "脉弦细",
+      "脉弦数"
+    ],
+    "synonyms_en": [
+      "taut pulse",
+      "tight string pulse",
+      "bowstring pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉细",
+    "canonical_en": "thin pulse",
+    "synonyms_zh": [
+      "细脉",
+      "脉细弱",
+      "脉细数",
+      "脉细无力"
+    ],
+    "synonyms_en": [
+      "fine pulse",
+      "thread pulse",
+      "thready pulse",
+      "narrow pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉弱",
+    "canonical_en": "weak pulse",
+    "synonyms_zh": [
+      "弱脉",
+      "脉弱无力",
+      "脉细弱",
+      "脉缓弱"
+    ],
+    "synonyms_en": [
+      "feeble pulse",
+      "faint pulse",
+      "weak heartbeat",
+      "soft weak pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉洪大",
+    "canonical_en": "surging large pulse",
+    "synonyms_zh": [
+      "洪脉",
+      "脉洪大有力",
+      "脉洪",
+      "洪大脉"
+    ],
+    "synonyms_en": [
+      "flooding pulse",
+      "bounding pulse",
+      "large surging pulse",
+      "big pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉紧",
+    "canonical_en": "tight pulse",
+    "synonyms_zh": [
+      "紧脉",
+      "脉浮紧",
+      "脉弦紧"
+    ],
+    "synonyms_en": [
+      "tense pulse",
+      "stretched pulse",
+      "taut rope pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉缓",
+    "canonical_en": "moderate pulse",
+    "synonyms_zh": [
+      "缓脉",
+      "脉缓弱",
+      "脉浮缓",
+      "脉沉缓"
+    ],
+    "synonyms_en": [
+      "relaxed pulse",
+      "easy pulse",
+      "leisurely pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉濡",
+    "canonical_en": "soggy pulse",
+    "synonyms_zh": [
+      "濡脉",
+      "脉濡缓",
+      "脉濡数"
+    ],
+    "synonyms_en": [
+      "soft floating thin pulse",
+      "soggy thin pulse",
+      "damp soft pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉微",
+    "canonical_en": "faint pulse",
+    "synonyms_zh": [
+      "微脉",
+      "脉微细",
+      "脉微弱"
+    ],
+    "synonyms_en": [
+      "barely perceptible pulse",
+      "very faint pulse",
+      "minute pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉虚",
+    "canonical_en": "deficient pulse",
+    "synonyms_zh": [
+      "虚脉",
+      "脉虚无力",
+      "脉虚或结代"
+    ],
+    "synonyms_en": [
+      "empty pulse",
+      "deficient forceless pulse",
+      "weak empty pulse"
+    ]
+  },
+  {
+    "canonical_zh": "脉结代",
+    "canonical_en": "knotted intermittent pulse",
+    "synonyms_zh": [
+      "结代脉",
+      "脉结",
+      "脉代",
+      "脉虚结代"
+    ],
+    "synonyms_en": [
+      "irregular pulse",
+      "intermittent pulse",
+      "skipping pulse",
+      "knotted pulse"
+    ]
+  }
+]

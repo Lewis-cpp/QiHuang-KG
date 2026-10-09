@@ -1,0 +1,296 @@
+{
+  "checked_at": "2026-10-04T12:10:18.476446+00:00",
+  "status": "postgresql_imported_vastbase_deferred",
+  "build_id": "1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054",
+  "prepared_release": "var/prepared/1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054",
+  "counts": {
+    "dataset": 2,
+    "source_record": 197287,
+    "entity": 20374,
+    "alias": 2972,
+    "edge": 179502,
+    "evidence": 291305,
+    "business_records": 199876,
+    "entity_types": {
+      "formula": 112,
+      "herb": 365,
+      "herbal_piece": 6207,
+      "icd11_code": 2758,
+      "medicinal_property": 23,
+      "patent_medicine": 8977,
+      "pattern": 84,
+      "tcm_term": 1810,
+      "text": 38
+    },
+    "relations": {
+      "ASSOCIATED_WITH_PATTERN": 86,
+      "ASSOCIATED_WITH_TERM": 11184,
+      "CITED_IN": 449,
+      "CONTAINS": 751,
+      "HAS_HERBAL_PIECE": 74084,
+      "HAS_MEDICINAL_PROPERTY": 23517,
+      "MAPPED_TO_ICD11": 69431
+    },
+    "entities_by_dataset": {
+      "bencaodian": 599,
+      "tcm-mkg": 19775
+    },
+    "edges_by_dataset": {
+      "bencaodian": 1286,
+      "tcm-mkg": 178216
+    }
+  },
+  "files": {
+    "D1_TCM_terminology.tsv": {
+      "raw": 1810,
+      "accepted": 1810,
+      "rejected": 0,
+      "unique_business": 1810
+    },
+    "D2_Chinese_patent_medicine.tsv": {
+      "raw": 8977,
+      "accepted": 8977,
+      "rejected": 0,
+      "unique_business": 8977
+    },
+    "D3_CPM_TCMT.tsv": {
+      "raw": 11185,
+      "accepted": 11185,
+      "rejected": 0,
+      "unique_business": 11184
+    },
+    "D4_CPM_CHP.tsv": {
+      "raw": 74084,
+      "accepted": 74084,
+      "rejected": 0,
+      "unique_business": 74084
+    },
+    "D5_CPM_ICD11.tsv": {
+      "raw": 69431,
+      "accepted": 69431,
+      "rejected": 0,
+      "unique_business": 69431
+    },
+    "D6_Chinese_herbal_pieces.tsv": {
+      "raw": 6207,
+      "accepted": 6207,
+      "rejected": 0,
+      "unique_business": 6207
+    },
+    "D7_CHP_Medicinal_properties.tsv": {
+      "raw": 23517,
+      "accepted": 23517,
+      "rejected": 0,
+      "unique_business": 23517
+    }
+  },
+  "issue_counts": {
+    "repaired_extra_column": 1,
+    "duplicate_relation": 1
+  },
+  "core_issue_counts": {
+    "unresolved_reference": 35,
+    "conflicting_claim": 1
+  },
+  "core_table_sha256": {
+    "dataset": "e0c0737b68e32f732030988ab4c557d8df403b850a13eb306a807d5ec64e9cea",
+    "source_record": "39d10e43bc624f9c42ed1cb45290ba44d667282eb4ee81afcaafe187392beaec",
+    "entity": "3c5aff04a488069ab5c5fda9a8128b57ecb353fdbfd69a4a038262636701df9c",
+    "alias": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "edge": "7e84482dff90d86c2f8db208ddcdaa69ae0e0b339bf94e56d930ae21b2d027ca",
+    "evidence": "06d1a27e85f7e48d0129607a8613bf2f0e4c0a8dbb47724ac75e9b0bb41d8120"
+  },
+  "table_sha256": {
+    "dataset": "0a6b29e7dc0ffcb3f590560ed8bc33554500eb56e75087b7639ce4182cdf7a9d",
+    "source_record": "b81d1b6fb309c36d862e1baf14ea87f1e85b12db82336c2ed59f0ee92bb71497",
+    "entity": "3f6f9149b48f25c07e89f327712f69eb65e8f8b7b5b7b70fdf64c9a0c12dfcf5",
+    "alias": "15a0003522bfc7579441409fcc5f9eec394fa4845e7ad0d430bdb34cf2999c78",
+    "edge": "64b22666e0955eaa240b7699ff80f231ef1e4c6345506d3c35bb3b866d88ff88",
+    "evidence": "8398f361e832946dc326b4ffc11eea91985ee3e557ca4386fdae9f96fc3cfc4e"
+  },
+  "environment": {
+    "status": "passed",
+    "checked_at": "2026-10-04T12:10:18.476446+00:00",
+    "engine": "postgresql",
+    "purpose": "development",
+    "local": {
+      "python": "3.12.3",
+      "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+      "disk_free_bytes": 126673047552
+    },
+    "database": {
+      "engine": "postgresql",
+      "version": "PostgreSQL 18.6 (Debian 18.6-1.pgdg12+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+      "compatibility": "native",
+      "encoding": "UTF8"
+    },
+    "vastbase": null,
+    "import_result": {
+      "status": "reused",
+      "schema": "qihuang_1fe2300d6005081f99274e8b",
+      "build_id": "1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054",
+      "verification": {
+        "counts": {
+          "dataset": 2,
+          "source_record": 197287,
+          "entity": 20374,
+          "alias": 2972,
+          "edge": 179502,
+          "evidence": 291305
+        },
+        "table_sha256": {
+          "dataset": "0a6b29e7dc0ffcb3f590560ed8bc33554500eb56e75087b7639ce4182cdf7a9d",
+          "source_record": "b81d1b6fb309c36d862e1baf14ea87f1e85b12db82336c2ed59f0ee92bb71497",
+          "entity": "3f6f9149b48f25c07e89f327712f69eb65e8f8b7b5b7b70fdf64c9a0c12dfcf5",
+          "alias": "15a0003522bfc7579441409fcc5f9eec394fa4845e7ad0d430bdb34cf2999c78",
+          "edge": "64b22666e0955eaa240b7699ff80f231ef1e4c6345506d3c35bb3b866d88ff88",
+          "evidence": "8398f361e832946dc326b4ffc11eea91985ee3e557ca4386fdae9f96fc3cfc4e"
+        },
+        "business_records": 199876,
+        "entities_by_dataset": {
+          "bencaodian": 599,
+          "tcm-mkg": 19775
+        },
+        "edges_by_dataset": {
+          "bencaodian": 1286,
+          "tcm-mkg": 178216
+        },
+        "sample_composition": [
+          [
+            "人参",
+            {
+              "dosage_raw": "9g",
+              "missing_claim_fields": [],
+              "position": 0,
+              "position_source": "composition",
+              "role": "jun"
+            }
+          ],
+          [
+            "白术",
+            {
+              "dosage_raw": "9g",
+              "missing_claim_fields": [],
+              "position": 1,
+              "position_source": "composition",
+              "role": "chen"
+            }
+          ],
+          [
+            "茯苓",
+            {
+              "dosage_raw": "9g",
+              "missing_claim_fields": [],
+              "position": 2,
+              "position_source": "composition",
+              "role": "zuo"
+            }
+          ],
+          [
+            "甘草",
+            {
+              "dosage_raw": "6g",
+              "missing_claim_fields": [],
+              "position": 3,
+              "position_source": "composition",
+              "role": "shi"
+            }
+          ]
+        ]
+      }
+    },
+    "driver": {
+      "name": "psycopg2",
+      "version": "2.9.13 (dt dec pq3 ext lo64)"
+    },
+    "probe": {
+      "status": "passed",
+      "checks": [
+        "target_ddl",
+        "unicode",
+        "parameters",
+        "text_json",
+        "copy_batch",
+        "unique",
+        "foreign_key",
+        "savepoint_rollback",
+        "ddl_rollback",
+        "pagination",
+        "index_plan"
+      ],
+      "plan": [
+        "Index Scan using probe_parent_pkey on probe_parent  (cost=0.15..8.17 rows=1 width=68)",
+        "  Index Cond: (id = 50)"
+      ]
+    }
+  },
+  "local_tests": {
+    "core_audit": "passed",
+    "core_import_regression": "passed",
+    "data_pipeline_regression": "passed",
+    "database_config": "passed"
+  },
+  "sql_compatibility": {
+    "status": "passed",
+    "server": "PostgreSQL 18.6 (Debian 18.6-1.pgdg12+2)",
+    "is_vastbase_acceptance": false,
+    "checks": [
+      "DDL and probe",
+      "full dataset COPY",
+      "all table counts and content digests",
+      "whole import rollback on validation failure",
+      "idempotent import",
+      "NULL versus empty and escaped COPY values",
+      "tamper detection",
+      "non-Vastbase rejection"
+    ],
+    "temporary_container": "removed"
+  },
+  "remaining": [
+    "Continue application development using PostgreSQL",
+    "Migrate the same prepared release to real Vastbase before final delivery and rerun acceptance",
+    "Neo4j sample and minimal Web API/frontend now implemented; see docs/environment-report.json; full graph, business APIs and AI remain subsequent tasks"
+  ],
+  "previous_vastbase_attempt": {
+    "status": "blocked",
+    "checked_at": "2026-10-04T12:00:03.864445+00:00",
+    "local": {
+      "python": "3.12.3",
+      "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+      "disk_free_bytes": 126673293312
+    },
+    "vastbase": null,
+    "import_result": null,
+    "driver": {
+      "name": "psycopg2",
+      "version": "2.9.13 (dt dec pq3 ext lo64)"
+    },
+    "error": "No connection: supply --config or VASTBASE_DSN"
+  },
+  "first_import": {
+    "status": "imported",
+    "checked_at": "2026-10-04T12:05:25.588103+00:00"
+  },
+  "development_database": {
+    "engine": "postgresql",
+    "host": "127.0.0.1",
+    "port": 15432,
+    "database": "qihuang",
+    "user": "qihuang_import",
+    "schema": "qihuang_1fe2300d6005081f99274e8b",
+    "private_config": "config/postgresql.json",
+    "compose_service": "postgres",
+    "persistent_volume": "qihuang-kg_postgres_data",
+    "image_digest": "sha256:3725f4e2499eef5134592b3b4ab79a543ed7f8e533b05b5b637af926630f6650"
+  },
+  "development_checks": {
+    "actual_environment_probe": "passed",
+    "actual_import_and_all_table_digests": "passed",
+    "full_transaction_rollback": "passed",
+    "repeat_import": "passed",
+    "restart_persistence_and_all_table_digests": "passed",
+    "postgresql_rejected_in_vastbase_mode": "passed",
+    "private_credential_permissions_and_gitignore": "passed",
+    "markdown_lint": "passed"
+  }
+}

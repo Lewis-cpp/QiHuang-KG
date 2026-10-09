@@ -1,0 +1,2 @@
+# Development driver candidate; actual Vastbase authentication must pass the probe.
+psycopg2-binary==2.9.13

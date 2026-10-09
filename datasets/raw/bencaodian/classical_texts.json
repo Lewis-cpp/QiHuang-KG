@@ -1,0 +1,3382 @@
+[
+  {
+    "key": "shang_han_lun",
+    "slug": "shang-han-lun",
+    "title_zh": "伤寒论",
+    "title_pinyin": "Shāng Hán Lùn",
+    "title_en": "Treatise on Cold Damage Disorders",
+    "author": {
+      "zh": "张仲景",
+      "pinyin": "Zhāng Zhòngjǐng",
+      "en": "Zhang Zhongjing"
+    },
+    "dynasty_zh": "东汉",
+    "dynasty_en": "Eastern Han",
+    "approximate_date": "circa 220 CE",
+    "approximate_year": 220,
+    "tradition": "经方派",
+    "significance": {
+      "zh": "中医方剂学的奠基之作。以六经辨证为纲，创立了理法方药一体的辨证论治体系。载方一百一十三首，被后世尊为方书之祖。",
+      "en": "The foundational text of formula-based Chinese medicine. Organized diagnosis through the Six Channels framework and established the integrated approach of theory, method, formula, and medicinal. Honored as the Ancestor of Formula Texts."
+    },
+    "description_zh": "汉代张仲景所著，原与《金匮要略》合称《伤寒杂病论》，后世分编。书中详述外感病的辨证论治，是历代医家必读经典。",
+    "description_en": "Written by Zhang Zhongjing in the Han dynasty, originally part of the Shanghan Zabing Lun. The text systematically presents pattern differentiation and treatment for externally contracted diseases.",
+    "passages": [
+      {
+        "title_zh": "太阳病提纲",
+        "title_en": "The Outline of Tai Yang Disease",
+        "chapter": "辨太阳病脉证并治上 · 第一条",
+        "text": "太阳之为病，脉浮，头项强痛而恶寒。",
+        "translation_zh": "太阳病的特点是：脉象浮，头部和颈项僵硬疼痛，并且怕冷。",
+        "translation_en": "The pattern of Tai Yang disease is characterized by a floating pulse, stiff and painful head and neck, and aversion to cold.",
+        "annotations": [
+          {
+            "phrase": "太阳",
+            "type": "concept",
+            "target": "liu-jing",
+            "note_zh": "六经辨证中的第一阶段，主表证。",
+            "note_en": "The first stage in Six Channels pattern differentiation, governing exterior patterns."
+          },
+          {
+            "phrase": "脉浮",
+            "type": "concept",
+            "target": "pulse-diagnosis",
+            "note_zh": "脉象浮于皮表，为表证之主脉。",
+            "note_en": "A floating pulse, the cardinal pulse of exterior patterns."
+          },
+          {
+            "phrase": "恶寒",
+            "type": "term",
+            "note_zh": "怕冷，是表证的关键症状之一。",
+            "note_en": "Aversion to cold — a key symptom of exterior patterns."
+          }
+        ]
+      },
+      {
+        "title_zh": "桂枝汤证",
+        "title_en": "Gui Zhi Tang Pattern",
+        "chapter": "辨太阳病脉证并治上 · 第十二条",
+        "text": "太阳中风，阳浮而阴弱。阳浮者，热自发；阴弱者，汗自出。啬啬恶寒，淅淅恶风，翕翕发热，鼻鸣干呕者，桂枝汤主之。",
+        "translation_zh": "太阳中风证，脉象浮取有力（阳浮）而沉取无力（阴弱）。阳浮所以发热，阴弱所以自汗。又见怕冷、怕风、发热、鼻塞作响、干呕的，应当用桂枝汤治疗。",
+        "annotations": [
+          {
+            "phrase": "太阳中风",
+            "type": "pattern",
+            "target": "wai_gan_feng_han_biao_xu",
+            "note_zh": "外感风寒表虚证。",
+            "note_en": "Wind-Cold Exterior Vacuity Pattern."
+          },
+          {
+            "phrase": "桂枝汤",
+            "type": "formula",
+            "target": "gui_zhi_tang",
+            "note_zh": "调和营卫的代表方。",
+            "note_en": "The representative formula for harmonizing the protective and nutritive qi."
+          }
+        ]
+      },
+      {
+        "title_zh": "麻黄汤证",
+        "title_en": "Ma Huang Tang Pattern",
+        "chapter": "辨太阳病脉证并治中 · 第三十五条",
+        "text": "太阳病，头痛发热，身疼腰痛，骨节疼痛，恶风，无汗而喘者，麻黄汤主之。",
+        "translation_zh": "太阳病见头痛、发热、周身及腰部疼痛、骨节酸痛、怕风、无汗且气喘的，应当用麻黄汤治疗。",
+        "translation_en": "When a Tai Yang disease presents with headache, fever, generalized body and lumbar pain, aching joints, aversion to wind, absence of sweating, and panting, Ma Huang Tang governs.",
+        "annotations": [
+          {
+            "phrase": "太阳病",
+            "type": "concept",
+            "target": "liu-jing",
+            "note_zh": "六经辨证之首，主一身之表，外邪初犯多从此始。",
+            "note_en": "The first of the Six Channels, governing the exterior of the body, where externally contracted evils most often first lodge."
+          },
+          {
+            "phrase": "无汗而喘",
+            "type": "pattern",
+            "target": "wai_gan_feng_han_biao_shi",
+            "note_zh": "风寒束表、肺气不宣的外感风寒表实证主症。",
+            "note_en": "Cardinal signs of Wind-Cold Exterior Repletion, in which cold fetters the surface and Lung qi fails to diffuse."
+          },
+          {
+            "phrase": "麻黄汤",
+            "type": "formula",
+            "target": "ma_huang_tang",
+            "note_zh": "辛温发汗、宣肺平喘的代表方，为太阳伤寒正治之方。",
+            "note_en": "The paradigmatic acrid-warm diaphoretic formula that diffuses the Lung and calms panting, used to resolve Tai Yang Cold Damage."
+          },
+          {
+            "phrase": "麻黄",
+            "type": "herb",
+            "target": "ma_huang",
+            "note_zh": "方中君药，发汗解表、宣肺平喘。",
+            "note_en": "Sovereign herb of the formula — induces sweating to release the exterior and diffuses the Lung to quiet panting."
+          }
+        ]
+      },
+      {
+        "title_zh": "小柴胡汤证",
+        "title_en": "Xiao Chai Hu Tang Pattern",
+        "chapter": "辨太阳病脉证并治下 · 第九十六条",
+        "text": "伤寒五六日中风，往来寒热，胸胁苦满，嘿嘿不欲饮食，心烦喜呕，或胸中烦而不呕，或渴，或腹中痛，或胁下痞硬，或心下悸、小便不利，或不渴、身有微热，或咳者，小柴胡汤主之。",
+        "translation_zh": "外感伤寒或中风五六日之后，出现往来寒热、胸胁胀满苦闷、默默不欲饮食、心烦喜呕等症，或兼见胸中烦而不呕、口渴、腹痛、胁下痞硬、心下悸动小便不利、不渴而身有微热、咳嗽等任一兼症的，应当用小柴胡汤治疗。",
+        "translation_en": "When after five or six days of Cold Damage or wind strike the patient presents with alternating chills and fever, fullness and discomfort in the chest and rib-sides, silent withdrawal with no desire to eat or drink, vexation of the heart with a tendency to retch — or any of the attendant variations: vexation in the chest without retching, thirst, abdominal pain, glomus and hardness below the rib-side, palpitations below the heart with inhibited urination, absence of thirst with slight generalized heat, or cough — Xiao Chai Hu Tang governs.",
+        "annotations": [
+          {
+            "phrase": "往来寒热",
+            "type": "pattern",
+            "target": "shaoyang_zheng",
+            "note_zh": "邪居半表半里，正邪交争的少阳病主症。",
+            "note_en": "Alternating chills and fever — the cardinal sign of Shao Yang disease, reflecting an evil lodged half in the exterior and half in the interior while upright and evil qi contend."
+          },
+          {
+            "phrase": "胸胁苦满",
+            "type": "term",
+            "note_zh": "胸胁胀满、苦闷不舒，为少阳经气郁滞之象。",
+            "note_en": "Distressing fullness in the chest and rib-sides — a sign of stagnation along the Shao Yang channel."
+          },
+          {
+            "phrase": "小柴胡汤",
+            "type": "formula",
+            "target": "xiao_chai_hu_tang",
+            "note_zh": "和解少阳的代表方，为少阳病正治之方。",
+            "note_en": "The paradigmatic formula for harmonizing the Shao Yang, standard treatment for Shao Yang disease."
+          },
+          {
+            "phrase": "柴胡",
+            "type": "herb",
+            "target": "chai_hu",
+            "note_zh": "方中君药，疏少阳之郁，透半表之邪。",
+            "note_en": "Sovereign herb of the formula — courses Shao Yang stagnation and outthrusts evil from the half-exterior."
+          }
+        ]
+      },
+      {
+        "title_zh": "阳明病外证",
+        "title_en": "The Outward Signs of Yang Ming Disease",
+        "chapter": "辨阳明病脉证并治 · 第一百八十二条",
+        "text": "问曰：阳明病外证云何？答曰：身热，汗自出，不恶寒反恶热也。",
+        "translation_zh": "有人问：阳明病显现于外的表现是什么？回答说：身体发热，汗自己出，不怕冷反而怕热。",
+        "translation_en": "It was asked: What are the outward signs of Yang Ming disease? The reply: generalized heat, spontaneous sweating, and absence of aversion to cold — with aversion to heat instead.",
+        "annotations": [
+          {
+            "phrase": "阳明病",
+            "type": "concept",
+            "target": "liu-jing",
+            "note_zh": "六经之一，主里实热证，为邪入阳明化热化燥的阶段。",
+            "note_en": "One of the Six Channels, governing interior repletion heat — the stage at which evil has entered the Yang Ming and transformed into heat and dryness."
+          },
+          {
+            "phrase": "不恶寒反恶热",
+            "type": "pattern",
+            "target": "yang_ming_jing_zheng",
+            "note_zh": "阳明经证的辨证要点，与太阳表证的恶寒形成鲜明对比。",
+            "note_en": "A key discriminating sign of the Yang Ming channel pattern, standing in sharp contrast to the aversion to cold of a Tai Yang exterior pattern."
+          },
+          {
+            "phrase": "汗自出",
+            "type": "term",
+            "note_zh": "里热蒸腾津液外泄，与桂枝汤证的营卫不和自汗机理不同。",
+            "note_en": "Spontaneous sweating as interior heat steams fluids outward — mechanistically distinct from the self-sweating of Gui Zhi Tang pattern, which arises from disharmony of the nutritive and protective qi."
+          }
+        ]
+      },
+      {
+        "title_zh": "少阳病提纲",
+        "title_en": "The Outline of Shao Yang Disease",
+        "chapter": "辨少阳病脉证并治 · 第二百六十三条",
+        "text": "少阳之为病，口苦、咽干、目眩也。",
+        "translation_zh": "少阳病的特征是：口中发苦、咽喉干燥、头目眩晕。",
+        "translation_en": "The pattern of Shao Yang disease is characterized by a bitter taste in the mouth, dryness of the throat, and dizziness of the eyes.",
+        "annotations": [
+          {
+            "phrase": "少阳",
+            "type": "concept",
+            "target": "liu-jing",
+            "note_zh": "六经之一，主半表半里，为枢机之位。",
+            "note_en": "One of the Six Channels, governing the half-exterior half-interior and functioning as the pivot between them."
+          },
+          {
+            "phrase": "口苦咽干目眩",
+            "type": "pattern",
+            "target": "shaoyang_zheng",
+            "note_zh": "胆火循经上炎的少阳病主症。",
+            "note_en": "Cardinal signs of Shao Yang disease, produced when Gall Bladder fire flares upward along its channel."
+          }
+        ]
+      },
+      {
+        "title_zh": "少阴病提纲",
+        "title_en": "The Outline of Shao Yin Disease",
+        "chapter": "辨少阴病脉证并治 · 第二百八十一条",
+        "text": "少阴之为病，脉微细，但欲寐也。",
+        "translation_zh": "少阴病的特征是：脉象微细无力，人只想睡觉，精神萎靡。",
+        "translation_en": "The pattern of Shao Yin disease is characterized by a faint and fine pulse and a patient who only wishes to sleep.",
+        "annotations": [
+          {
+            "phrase": "少阴",
+            "type": "concept",
+            "target": "liu-jing",
+            "note_zh": "六经之一，心肾所主，为一身阴阳之根本。",
+            "note_en": "One of the Six Channels, governed by the Heart and Kidney — the root of yin and yang for the whole body."
+          },
+          {
+            "phrase": "脉微细",
+            "type": "concept",
+            "target": "pulse-diagnosis",
+            "note_zh": "微主阳衰，细主阴血不足，为少阴虚衰之候。",
+            "note_en": "A faint pulse signals failing yang; a fine pulse signals insufficient yin and blood — together the signature of Shao Yin debility."
+          },
+          {
+            "phrase": "但欲寐",
+            "type": "pattern",
+            "target": "shao_yin_han_hua",
+            "note_zh": "心肾阳衰、神失温养的典型表现，为少阴寒化证之眼目。",
+            "note_en": "The hallmark of Shao Yin cold transformation — Heart and Kidney yang fail, and the spirit is no longer warmed and nourished."
+          }
+        ]
+      },
+      {
+        "title_zh": "厥阴病提纲",
+        "title_en": "The Outline of Jue Yin Disease",
+        "chapter": "辨厥阴病脉证并治 · 第三百二十六条",
+        "text": "厥阴之为病，消渴，气上撞心，心中疼热，饥而不欲食，食则吐蛔，下之利不止。",
+        "translation_zh": "厥阴病的特征是：消渴多饮、气自下上冲撞心胸、心中疼痛灼热、虽感饥饿却不想进食、勉强进食便吐出蛔虫；如果误用攻下之法，则会下利不止。",
+        "translation_en": "The pattern of Jue Yin disease is characterized by wasting thirst, qi surging upward to assault the heart, pain and burning in the heart region, hunger without desire to eat, vomiting of roundworms upon eating, and — if erroneously purged — incessant diarrhea.",
+        "annotations": [
+          {
+            "phrase": "厥阴",
+            "type": "concept",
+            "target": "liu-jing",
+            "note_zh": "六经之末，为阴尽阳生之地，寒热错杂最为常见。",
+            "note_en": "The last of the Six Channels — where yin is exhausted and yang begins — the site where cold and heat most readily intermingle."
+          },
+          {
+            "phrase": "消渴",
+            "type": "term",
+            "note_zh": "此处指厥阴肝火上炎所致的口渴多饮，与后世消渴病名同而义异。",
+            "note_en": "Here denoting thirst and excessive drinking caused by ascending Jue Yin Liver fire — not identical to the later disease name xiaoke (wasting-thirst / diabetes-like disorder) although the term is shared."
+          },
+          {
+            "phrase": "气上撞心",
+            "type": "pattern",
+            "target": "jue_yin_bing",
+            "note_zh": "厥阴寒热错杂、肝气上逆犯心的典型表现。",
+            "note_en": "A typical manifestation of Jue Yin disease in which cold and heat intermingle and Liver qi counterflows upward to assault the heart."
+          }
+        ]
+      }
+    ],
+    "wikidata_id": "Q8191081",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "tai_ping_hui_min_he_ji_ju_fang",
+    "slug": "tai-ping-hui-min-he-ji-ju-fang",
+    "title_zh": "太平惠民和剂局方",
+    "title_pinyin": "Tài Píng Huì Mín Hé Jì Jú Fāng",
+    "title_en": "Formulary of the Pharmacy Service for Benefiting the People in the Taiping Era",
+    "author": {
+      "zh": "太医局",
+      "en": "Imperial Medical Bureau"
+    },
+    "dynasty_zh": "宋",
+    "dynasty_en": "Song",
+    "approximate_date": "1078, revised 1151",
+    "approximate_year": 1078,
+    "significance": {
+      "zh": "中国历史上第一部由政府组织编纂颁行的成药典。规范了方剂组成、剂型与制法，对后世影响深远。",
+      "en": "The first government-published pharmacopoeia in Chinese history. Standardized formula composition, dosage forms, and preparation methods, with far-reaching influence on later practice."
+    },
+    "description_zh": "宋代官方颁行的成药制剂规范，载方近八百首，包括四君子汤、四物汤、逍遥散等经典名方。",
+    "description_en": "An official Song-dynasty pharmacopoeia containing nearly 800 formulas, including such classics as Si Jun Zi Tang, Si Wu Tang, and Xiao Yao San.",
+    "passages": [
+      {
+        "title_zh": "四君子汤方",
+        "title_en": "Si Jun Zi Tang Prescription",
+        "chapter": "卷之三 · 治一切气",
+        "text": "治荣卫气虚，脏腑怯弱，心腹胀满，全不思食，肠鸣泄泻，呕哕吐逆，大宜服之。人参、白茯苓、白术、甘草各等分。",
+        "translation_zh": "治疗营卫气虚、脏腑虚弱所致的胸腹胀满、不思饮食、肠鸣腹泻、呕吐反胃等症，最为适宜。组成：人参、白茯苓、白术、甘草，各取等量。",
+        "annotations": [
+          {
+            "phrase": "四君子汤",
+            "type": "formula",
+            "target": "si_jun_zi_tang",
+            "note_zh": "补气健脾的基础方。",
+            "note_en": "The foundational qi-tonifying formula."
+          },
+          {
+            "phrase": "人参",
+            "type": "herb",
+            "target": "ren_shen",
+            "note_zh": "大补元气，为方中君药。",
+            "note_en": "Greatly tonifies original qi — sovereign herb in this formula."
+          },
+          {
+            "phrase": "白茯苓",
+            "type": "herb",
+            "target": "fu_ling",
+            "note_zh": "健脾渗湿。",
+            "note_en": "Strengthens the Spleen and percolates dampness."
+          },
+          {
+            "phrase": "白术",
+            "type": "herb",
+            "target": "bai_zhu",
+            "note_zh": "健脾燥湿。",
+            "note_en": "Strengthens the Spleen and dries dampness."
+          },
+          {
+            "phrase": "甘草",
+            "type": "herb",
+            "target": "gan_cao",
+            "note_zh": "调和诸药。",
+            "note_en": "Harmonizes the actions of all herbs."
+          }
+        ]
+      },
+      {
+        "title_zh": "二陈汤方",
+        "title_en": "Er Chen Tang Prescription",
+        "chapter": "卷之四 · 治痰饮",
+        "text": "治痰饮为患，或呕吐恶心，或头眩心悸，或中脘不快，或发为寒热，或因食生冷，脾胃不和。半夏汤洗七次、橘红各五两，白茯苓三两，甘草炙一两半。右为㕮咀，每服四钱，用水一盏，生姜七片，乌梅一个，同煎六分，去滓，热服，不拘时候。",
+        "translation_zh": "治疗痰饮所致诸病——或呕吐恶心，或头晕心悸，或胃脘不适，或发为寒热，或因食生冷致脾胃失和。药用半夏（汤洗七次）、橘红各五两，白茯苓三两，炙甘草一两半。以上切碎，每服四钱，水一盏，加生姜七片、乌梅一枚，同煎至六分，去渣，热服，不拘时。",
+        "translation_en": "Treats disorders caused by phlegm-rheum: vomiting and nausea, dizziness and palpitations, epigastric discomfort, alternating chills and fever, or Spleen-Stomach disharmony from cold raw foods. Ban Xia (washed seven times in hot water) and Ju Hong, five liang each; Bai Fu Ling three liang; honey-fried Gan Cao, one and a half liang. Cut coarse; per dose take four qian with a bowl of water, seven slices of fresh ginger, and one wu mei plum. Decoct to six-tenths, remove dregs, and drink hot at any hour.",
+        "annotations": [
+          {
+            "phrase": "痰饮",
+            "type": "pattern",
+            "target": "tan_shi_zheng",
+            "note_zh": "广义之痰饮，此处与湿痰证相近。",
+            "note_en": "Phlegm-rheum in the broad sense, here close to the phlegm-damp pattern."
+          },
+          {
+            "phrase": "二陈汤",
+            "type": "formula",
+            "target": "er_chen_tang",
+            "note_zh": "燥湿化痰、理气和中的基础方，后世所有化痰方之祖。",
+            "note_en": "The foundational formula for drying dampness, transforming phlegm, and regulating middle qi — ancestor of all later phlegm formulas."
+          },
+          {
+            "phrase": "半夏",
+            "type": "herb",
+            "target": "ban_xia",
+            "note_zh": "君药，燥湿化痰、降逆止呕。",
+            "note_en": "Sovereign herb — dries dampness, transforms phlegm, and directs counterflow downward to stop vomiting."
+          },
+          {
+            "phrase": "橘红",
+            "type": "herb",
+            "target": "chen_pi",
+            "note_zh": "即陈皮去白，理气燥湿化痰。",
+            "note_en": "The orange portion of aged tangerine peel with the white pith scraped away — regulates qi and transforms phlegm."
+          },
+          {
+            "phrase": "白茯苓",
+            "type": "herb",
+            "target": "fu_ling",
+            "note_zh": "健脾渗湿，绝生痰之源。",
+            "note_en": "Strengthens the Spleen and percolates dampness, cutting off the source of phlegm."
+          },
+          {
+            "phrase": "甘草",
+            "type": "herb",
+            "target": "gan_cao",
+            "note_zh": "益气和中，调和诸药。",
+            "note_en": "Boosts the middle qi and harmonizes the other herbs."
+          },
+          {
+            "phrase": "生姜",
+            "type": "herb",
+            "target": "sheng_jiang",
+            "note_zh": "助半夏化痰止呕，并制半夏之毒。",
+            "note_en": "Assists Ban Xia in transforming phlegm and arresting vomiting, and restrains its toxicity."
+          }
+        ]
+      },
+      {
+        "title_zh": "逍遥散方",
+        "title_en": "Xiao Yao San Prescription",
+        "chapter": "卷之九 · 治妇人诸疾",
+        "text": "治血虚劳倦，五心烦热，肢体疼痛，头目昏重，心忪颊赤，口燥咽干，发热盗汗，减食嗜卧，及血热相搏，月水不调，脐腹胀痛，寒热如疟。又疗室女血弱阴虚，荣卫不和，痰嗽潮热，肌体羸瘦，渐成骨蒸。甘草微炙赤半两、当归去苗锉微炒、茯苓去皮白者、白芍药、白术、柴胡去苗各一两。右为粗末，每服二钱，水一大盏，烧生姜一块切破，薄荷少许，同煎至七分，去滓热服，不拘时候。",
+        "translation_zh": "治血虚劳倦，手足心与胸中烦热，肢体酸痛，头目昏重，心跳颊红，口燥咽干，发热盗汗，饮食减少，倦怠嗜卧；以及血热相搏、月经不调、脐腹胀痛、寒热如疟。又治未嫁女子血弱阴虚、营卫不和、咳嗽有痰、潮热、形体消瘦，渐成骨蒸。药用炙甘草半两，去苗微炒当归、去皮白茯苓、白芍、白术、去苗柴胡各一两。共为粗末，每服二钱，水一大盏，加煨生姜一块切破、薄荷少许，同煎至七分，去渣热服，不拘时。",
+        "translation_en": "Treats blood vacuity with weary fatigue, the 'five heart' vexation-heat, body aches, heavy dim head, palpitations with red cheeks, parched mouth and dry throat, fever and night sweats, poor appetite and drowsiness; also blood-heat clashing with qi, irregular menstruation, periumbilical distension and pain, and malaria-like chills and fever. It further treats unmarried women with weak blood and yin vacuity, disharmony of the nutritive and protective, phlegmy cough, tidal fever, emaciated body progressing to steaming-bone fever. Honey-fried Gan Cao half a liang; Dang Gui (sprouts removed, lightly stir-fried), Bai Fu Ling (skin removed), Bai Shao, Bai Zhu, and Chai Hu (sprouts removed) one liang each. Grind coarse; two qian per dose with a large bowl of water, one piece of roasted ginger split open, and a little Bo He. Decoct to seven-tenths, remove dregs, and drink hot at any hour.",
+        "annotations": [
+          {
+            "phrase": "逍遥散",
+            "type": "formula",
+            "target": "xiao_yao_san",
+            "note_zh": "疏肝解郁、健脾养血之要方。",
+            "note_en": "The cardinal formula for coursing the Liver, relieving constraint, strengthening the Spleen, and nourishing the blood."
+          },
+          {
+            "phrase": "血虚",
+            "type": "pattern",
+            "target": "xue_xu",
+            "note_zh": "本方所主之一大基础证候。",
+            "note_en": "One of the principal underlying patterns this formula addresses."
+          },
+          {
+            "phrase": "月水不调",
+            "type": "term",
+            "note_zh": "即月经不调，是肝郁血虚之常见表现。",
+            "note_en": "Irregular menstruation — a common manifestation of Liver constraint with blood vacuity."
+          },
+          {
+            "phrase": "当归",
+            "type": "herb",
+            "target": "dang_gui",
+            "note_zh": "养血和血，治血虚之要药。",
+            "note_en": "Nourishes and harmonizes the blood — the cardinal herb for blood vacuity."
+          },
+          {
+            "phrase": "白芍药",
+            "type": "herb",
+            "target": "bai_shao",
+            "note_zh": "敛阴柔肝，缓急止痛。",
+            "note_en": "Astringes yin, softens the Liver, and relieves spasmodic pain."
+          },
+          {
+            "phrase": "柴胡",
+            "type": "herb",
+            "target": "chai_hu",
+            "note_zh": "疏肝解郁，为本方主药。",
+            "note_en": "Courses the Liver and releases constraint — the sovereign herb of this formula."
+          },
+          {
+            "phrase": "白术",
+            "type": "herb",
+            "target": "bai_zhu",
+            "note_zh": "健脾益气，使肝有所藏。",
+            "note_en": "Strengthens the Spleen and boosts qi, so the Liver has blood to store."
+          },
+          {
+            "phrase": "茯苓",
+            "type": "herb",
+            "target": "fu_ling",
+            "note_zh": "健脾渗湿，宁心安神。",
+            "note_en": "Strengthens the Spleen, percolates dampness, and calms the Heart spirit."
+          },
+          {
+            "phrase": "薄荷",
+            "type": "herb",
+            "target": "bo_he",
+            "note_zh": "少许以助柴胡疏散郁热。",
+            "note_en": "A small amount assists Chai Hu in dispersing the constrained heat."
+          }
+        ]
+      },
+      {
+        "title_zh": "四物汤方",
+        "title_en": "Si Wu Tang Prescription",
+        "chapter": "卷之九 · 治妇人诸疾",
+        "text": "调益荣卫，滋养气血。治冲任虚损，月水不调，脐腹㽲痛，崩中漏下，血瘕块硬，发歇疼痛，妊娠宿冷，将理失宜，胎动不安，血下不止，及产后乘虚，风寒内搏，恶露不下，结生瘕聚，少腹坚痛，时作寒热。当归去芦酒浸炒、川芎、白芍药、熟干地黄酒洒蒸各等分。右为粗末，每服三钱，水一盏半，煎至八分，去滓热服，空心食前。",
+        "translation_zh": "调和营卫，滋养气血。治疗冲任虚损、月经不调、脐腹绞痛、崩漏、血块坚硬、时发时止的疼痛、妊娠宿有虚寒、调理失当、胎动不安、下血不止，以及产后虚弱、风寒内搏、恶露不下、瘀血结聚、少腹硬痛、时作寒热。药用酒浸炒当归（去芦）、川芎、白芍、酒洒蒸熟地黄各等分。共为粗末，每服三钱，水一盏半，煎至八分，去渣热服，空腹食前。",
+        "translation_en": "Regulates and supplements the nutritive and protective; enriches and nourishes qi and blood. Treats vacuity-damage of the Chong and Ren vessels with irregular menstruation, griping periumbilical pain, flooding and spotting, hard blood masses, intermittent pain, long-standing cold in pregnancy, mismanaged care, restless fetus with incessant bleeding, and postpartum weakness allowing wind-cold to clash within so that the lochia fails to descend and static blood gathers into masses with hard lower abdominal pain and alternating chills and fever. Dang Gui (rhizome removed, wine-soaked and stir-fried), Chuan Xiong, Bai Shao, and wine-sprinkled steamed Shu Di Huang, in equal parts. Grind coarse; per dose take three qian with a cup and a half of water, decoct to eight-tenths, remove dregs, and drink hot before meals on an empty stomach.",
+        "annotations": [
+          {
+            "phrase": "四物汤",
+            "type": "formula",
+            "target": "si_wu_tang",
+            "note_zh": "补血调血的基础方，妇科圣方。",
+            "note_en": "The foundational blood-nourishing and blood-regulating formula, revered in gynecology."
+          },
+          {
+            "phrase": "冲任",
+            "type": "term",
+            "note_zh": "冲脉与任脉，主女子月经与胎产。",
+            "note_en": "The Chong and Ren vessels, which govern menstruation, gestation, and childbirth."
+          },
+          {
+            "phrase": "当归",
+            "type": "herb",
+            "target": "dang_gui",
+            "note_zh": "补血活血，调经止痛。",
+            "note_en": "Tonifies and quickens the blood, regulates menstruation, and stops pain."
+          },
+          {
+            "phrase": "川芎",
+            "type": "herb",
+            "target": "chuan_xiong",
+            "note_zh": "活血行气，为血中气药。",
+            "note_en": "Quickens the blood and moves qi — the 'qi medicinal within the blood'."
+          },
+          {
+            "phrase": "白芍药",
+            "type": "herb",
+            "target": "bai_shao",
+            "note_zh": "养血敛阴，柔肝止痛。",
+            "note_en": "Nourishes blood, astringes yin, softens the Liver, and relieves pain."
+          },
+          {
+            "phrase": "熟干地黄",
+            "type": "herb",
+            "target": "shu_di_huang",
+            "note_zh": "滋阴补血，填精益髓。",
+            "note_en": "Enriches yin, nourishes blood, and replenishes essence and marrow."
+          }
+        ]
+      },
+      {
+        "title_zh": "藿香正气散方",
+        "title_en": "Huo Xiang Zheng Qi San Prescription",
+        "chapter": "卷之二 · 治伤寒",
+        "text": "治伤寒头疼，憎寒壮热，上喘咳嗽，五劳七伤，八般风痰，五般膈气，心腹冷痛，反胃呕恶，气泻霍乱，脏腑虚鸣，山岚瘴疟，遍身虚肿。大腹皮、白芷、紫苏、茯苓去皮各一两，半夏曲、白术、陈皮去白、厚朴去粗皮姜汁炙、苦桔梗各二两，藿香去土三两，甘草炙二两半。右为细末，每服二钱，水一盏，姜钱三片，枣一枚，同煎至七分，热服。",
+        "translation_zh": "治外感伤寒、头痛怕冷壮热、气喘咳嗽，以及五劳七伤、各种风痰、膈中气滞、心腹冷痛、反胃呕恶、水泻霍乱、脏腑虚鸣、山岚瘴疟、全身虚肿。药用大腹皮、白芷、紫苏、去皮茯苓各一两，半夏曲、白术、去白陈皮、姜汁炙去粗皮厚朴、苦桔梗各二两，去土藿香三两，炙甘草二两半。共为细末，每服二钱，水一盏，加姜三片、枣一枚同煎至七分，热服。",
+        "translation_en": "Treats cold damage with headache, aversion to cold with vigorous fever, panting cough, the five taxations and seven damages, the eight varieties of wind-phlegm, the five varieties of diaphragmatic qi stagnation, cold pain in the heart and abdomen, stomach reflux with nausea and vomiting, watery diarrhea and cholera, empty rumblings of the viscera, mountain-mist malaria, and generalized puffy swelling. Da Fu Pi, Bai Zhi, Zi Su, and Fu Ling (skin removed) one liang each; Ban Xia Qu, Bai Zhu, Chen Pi (pith removed), Hou Po (coarse bark removed, ginger-juice-baked), and Ku Jie Geng two liang each; Huo Xiang (soil removed) three liang; honey-fried Gan Cao two and a half liang. Grind fine; per dose take two qian with a cup of water, three slices of ginger, and one date. Decoct to seven-tenths and drink hot.",
+        "annotations": [
+          {
+            "phrase": "藿香正气散",
+            "type": "formula",
+            "target": "huo_xiang_zheng_qi_san",
+            "note_zh": "外解风寒、内化湿滞的代表方，常用于外感兼内伤饮食证。",
+            "note_en": "The representative formula for releasing wind-cold externally while transforming damp stagnation internally — used for exterior contraction with internal food-and-drink damage."
+          },
+          {
+            "phrase": "藿香",
+            "type": "herb",
+            "target": "huo_xiang",
+            "note_zh": "君药，芳香化湿，辟秽和中。",
+            "note_en": "Sovereign herb — aromatically transforms dampness, repels filth, and harmonizes the middle."
+          },
+          {
+            "phrase": "紫苏",
+            "type": "herb",
+            "target": "zi_su_ye",
+            "note_zh": "发汗解表，行气宽中。",
+            "note_en": "Induces sweating to release the exterior and moves qi to loosen the middle."
+          },
+          {
+            "phrase": "白芷",
+            "type": "herb",
+            "target": "bai_zhi",
+            "note_zh": "解表散寒，燥湿止痛。",
+            "note_en": "Releases the exterior and disperses cold, dries dampness and relieves pain."
+          },
+          {
+            "phrase": "半夏曲",
+            "type": "herb",
+            "target": "ban_xia",
+            "note_zh": "半夏发酵后燥湿化痰之力稍缓。",
+            "note_en": "Fermented Ban Xia, with slightly milder phlegm-transforming and damp-drying action."
+          },
+          {
+            "phrase": "厚朴",
+            "type": "herb",
+            "target": "hou_po",
+            "note_zh": "行气燥湿，消胀除满。",
+            "note_en": "Moves qi, dries dampness, and dispels distention and fullness."
+          },
+          {
+            "phrase": "陈皮",
+            "type": "herb",
+            "target": "chen_pi",
+            "note_zh": "理气健脾，燥湿化痰。",
+            "note_en": "Regulates qi, strengthens the Spleen, dries dampness, and transforms phlegm."
+          },
+          {
+            "phrase": "桔梗",
+            "type": "herb",
+            "target": "jie_geng",
+            "note_zh": "宣肺利咽，载药上行。",
+            "note_en": "Diffuses Lung qi, benefits the throat, and carries the other herbs upward."
+          },
+          {
+            "phrase": "茯苓",
+            "type": "herb",
+            "target": "fu_ling",
+            "note_zh": "健脾渗湿。",
+            "note_en": "Strengthens the Spleen and percolates dampness."
+          },
+          {
+            "phrase": "白术",
+            "type": "herb",
+            "target": "bai_zhu",
+            "note_zh": "健脾燥湿，补中州。",
+            "note_en": "Strengthens the Spleen, dries dampness, and tonifies the central region."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "pi_wei_lun",
+    "slug": "pi-wei-lun",
+    "title_zh": "脾胃论",
+    "title_pinyin": "Pí Wèi Lùn",
+    "title_en": "Treatise on the Spleen and Stomach",
+    "author": {
+      "zh": "李东垣",
+      "pinyin": "Lǐ Dōngyuán",
+      "en": "Li Dongyuan"
+    },
+    "dynasty_zh": "金",
+    "dynasty_en": "Jin",
+    "approximate_date": "1249",
+    "approximate_year": 1249,
+    "tradition": "补土派",
+    "significance": {
+      "zh": "金元四大家之一李东垣的代表作，确立了脾胃为后天之本的理论，开创了补土派。补中益气汤即出自此书。",
+      "en": "The defining work of Li Dongyuan, one of the Four Great Masters of the Jin-Yuan era. Established the doctrine that the Spleen-Stomach is the root of the acquired constitution, founding the Earth Tonification School. Bu Zhong Yi Qi Tang originates here."
+    },
+    "description_zh": "强调内伤脾胃，百病由生的学术思想，对中医内科学的发展产生深远影响。",
+    "description_en": "Emphasizing the doctrine that internal damage to the Spleen and Stomach gives rise to all diseases, this text profoundly shaped the development of TCM internal medicine.",
+    "passages": [
+      {
+        "title_zh": "脾胃为元气之本",
+        "title_en": "The Spleen and Stomach as the Root of Original Qi",
+        "chapter": "卷上 · 脾胃虚实传变论",
+        "text": "脾胃之气既伤，而元气亦不能充，而诸病之所由生也。",
+        "translation_zh": "脾胃之气一旦受损，元气就无法充盈，于是各种疾病便由此而产生。",
+        "translation_en": "Once the qi of the Spleen and Stomach is damaged, the original qi cannot be replenished — and from this all diseases arise.",
+        "annotations": [
+          {
+            "phrase": "脾胃",
+            "type": "concept",
+            "target": "zang-fu",
+            "note_zh": "中医的脾胃概念，远超解剖学意义上的脾与胃。",
+            "note_en": "The Spleen-Stomach in TCM far exceeds the anatomical organs of the same names."
+          },
+          {
+            "phrase": "元气",
+            "type": "concept",
+            "target": "qi-blood-fluids",
+            "note_zh": "源于先天，藏于肾，需后天脾胃所充养。",
+            "note_en": "Original qi — rooted in pre-natal essence, stored in the Kidney, replenished by the post-natal Spleen and Stomach."
+          }
+        ]
+      },
+      {
+        "title_zh": "内伤脾胃，百病由生",
+        "title_en": "Internal Damage to the Spleen and Stomach Gives Rise to All Diseases",
+        "chapter": "卷上 · 脾胃虚实传变论",
+        "text": "元气之充足，皆由脾胃之气无所伤，而后能滋养元气。若胃气之本弱，饮食自倍，则脾胃之气既伤，而元气亦不能充，而诸病之所由生也。",
+        "translation_zh": "元气之所以能够充足，全在于脾胃之气未受伤损，而后才能滋养元气。如果胃气本来就虚弱，饮食反而加倍，那么脾胃之气便受到损伤，元气也无法得到充养，各种疾病就从此而生。",
+        "translation_en": "The fullness of the original qi depends entirely upon the qi of the Spleen and Stomach remaining unharmed, for only then can it nourish the original qi. If the stomach qi is already weak and yet food and drink are doubled, then the qi of the Spleen and Stomach becomes damaged, the original qi cannot be replenished, and from this all manner of disease arises.",
+        "annotations": [
+          {
+            "phrase": "元气",
+            "type": "concept",
+            "target": "qi-blood-fluids",
+            "note_zh": "人身生命活动的本原之气，源于先天，赖后天脾胃以充养。",
+            "note_en": "The root qi of life, rooted in pre-natal essence and replenished by the post-natal Spleen and Stomach."
+          },
+          {
+            "phrase": "脾胃之气",
+            "type": "concept",
+            "target": "zang-fu",
+            "note_zh": "李东垣所立补土派的核心——脾胃为后天之本，气血生化之源。",
+            "note_en": "The core tenet of Li Dongyuan's Earth Tonification school — the Spleen and Stomach as the root of the acquired constitution and source of qi and blood."
+          },
+          {
+            "phrase": "饮食自倍",
+            "type": "term",
+            "note_zh": "饮食超过脾胃所能运化的限度，出自《素问·痹论》。",
+            "note_en": "Food and drink exceeding what the Spleen and Stomach can transform — a phrase drawn from the Suwen."
+          }
+        ]
+      },
+      {
+        "title_zh": "饮食劳倦所伤",
+        "title_en": "Damage by Irregular Diet and Overwork",
+        "chapter": "卷上 · 脾胃胜衰论",
+        "text": "饮食不节则胃病，胃病则气短精神少而生大热，有时而显火上行，独燎其面。形体劳役则脾病，脾病则怠惰嗜卧，四肢不收，大便泄泻。",
+        "translation_zh": "饮食没有节制就会损伤胃，胃一旦受病，便气短精神不振而生大热，有时虚火上炎，独独灼烧面部。形体过度劳累就会损伤脾，脾一旦受病，便倦怠嗜卧，四肢无力，大便溏泄。",
+        "translation_en": "Irregular diet damages the Stomach; once the Stomach is diseased, the breath becomes short, the spirit feeble, and great heat arises — at times a deficient fire rises upward and scorches the face alone. Excessive physical labor damages the Spleen; once the Spleen is diseased, the patient becomes languid and drowsy, the four limbs grow slack, and the stools turn loose.",
+        "annotations": [
+          {
+            "phrase": "胃病",
+            "type": "pattern",
+            "target": "wei_yin_xu",
+            "note_zh": "此处泛指胃气受损之证；其虚热上炎一端近于胃阴不足。",
+            "note_en": "Here denoting Stomach qi damage broadly; the aspect of deficient fire ascending approximates Stomach yin vacuity."
+          },
+          {
+            "phrase": "脾病",
+            "type": "pattern",
+            "target": "pi_qi_xu",
+            "note_zh": "劳倦所伤、怠惰嗜卧、四肢不收，皆脾气虚之典型证候。",
+            "note_en": "Damage by overwork, languor and drowsiness, and slack limbs — the cardinal features of Spleen qi vacuity."
+          },
+          {
+            "phrase": "火上行",
+            "type": "term",
+            "note_zh": "东垣所谓「阴火」上乘，属脾胃气虚而虚火上炎。",
+            "note_en": "Dongyuan's 'yin fire' rising upward — deficient fire blazing upward owing to Spleen-Stomach qi vacuity."
+          }
+        ]
+      },
+      {
+        "title_zh": "补中益气汤方论",
+        "title_en": "Exposition of Bu Zhong Yi Qi Tang",
+        "chapter": "卷中 · 饮食劳倦所伤始为热中论",
+        "text": "脾胃一伤，五乱互作，其始病遍身壮热，头痛而渴，脉洪大而头痛，或渴不止，其皮肤不任风寒而生寒热。盖阴火上冲，则气高而喘，身烦热，为头痛，为渴而脉洪。黄芪劳役病热甚者一钱，甘草炙，以上各五分，人参去芦三分，有嗽去之，当归身酒焙干或日干以和血脉，橘皮以导气，升麻、柴胡以引黄芪、甘草甘温之气味上升，能补胃气之散解，白术除胃中热，利腰脐间血。",
+        "translation_zh": "脾胃一旦受伤，五脏气机便错乱互作。初病见全身壮热、头痛烦渴、脉洪大，或渴饮不止，皮肤畏风寒而寒热交作。这是阴火上冲，所以气逆喘促、身热烦躁、头痛口渴、脉象洪大。治以黄芪（劳役病热甚者一钱）、炙甘草各五分、去芦人参三分（有嗽者去之）、当归（酒焙或日干）以和血脉，橘皮以导气机，升麻、柴胡引黄芪甘草甘温之气味上升，能补脾胃散解之气，白术除胃中虚热、利腰脐之血。",
+        "translation_en": "Once the Spleen and Stomach are damaged, the qi of the five viscera falls into disorder. At the onset one sees vigorous fever throughout the body, headache with thirst, a surging pulse, ceaseless thirst, and skin unable to bear wind-cold so that chills and fever come and go. This is yin fire surging upward — hence the high labored breath, hot vexation, headache, thirst, and surging pulse. Treat with Huang Qi (one qian if heat from overwork is severe), honey-fried Gan Cao five fen, Ren Shen (rhizome removed) three fen (omit if there is cough), Dang Gui (wine-baked or sun-dried) to harmonize the blood vessels, Chen Pi to guide the qi, Sheng Ma and Chai Hu to lift upward the sweet-warm flavor of Huang Qi and Gan Cao and so replenish the scattered qi of the Stomach, and Bai Zhu to clear heat from the middle and free the blood of the waist and umbilicus.",
+        "annotations": [
+          {
+            "phrase": "补中益气汤",
+            "type": "formula",
+            "target": "bu_zhong_yi_qi_tang",
+            "note_zh": "李东垣代表方，补中益气、升阳举陷。",
+            "note_en": "Li Dongyuan's signature formula: tonifies the middle, boosts the qi, and raises sunken yang."
+          },
+          {
+            "phrase": "黄芪",
+            "type": "herb",
+            "target": "huang_qi",
+            "note_zh": "本方君药，补脾肺之气，升阳固表。",
+            "note_en": "Sovereign herb — tonifies Spleen-Lung qi and raises yang to secure the exterior."
+          },
+          {
+            "phrase": "人参",
+            "type": "herb",
+            "target": "ren_shen",
+            "note_zh": "大补元气，与黄芪相须。",
+            "note_en": "Greatly supplements the original qi, paired synergistically with Huang Qi."
+          },
+          {
+            "phrase": "甘草",
+            "type": "herb",
+            "target": "gan_cao",
+            "note_zh": "炙用补中益气，调和诸药。",
+            "note_en": "Honey-fried to tonify the middle and harmonize the other herbs."
+          },
+          {
+            "phrase": "当归",
+            "type": "herb",
+            "target": "dang_gui",
+            "note_zh": "和血脉，防升散伤阴。",
+            "note_en": "Harmonizes the blood vessels, guarding against the raising-and-dispersing herbs injuring yin."
+          },
+          {
+            "phrase": "橘皮",
+            "type": "herb",
+            "target": "chen_pi",
+            "note_zh": "理气和胃，使补而不滞。",
+            "note_en": "Regulates qi and harmonizes the Stomach, so that tonification does not cause stagnation."
+          },
+          {
+            "phrase": "升麻",
+            "type": "herb",
+            "target": "sheng_ma",
+            "note_zh": "升举清阳，与柴胡共为引经使药。",
+            "note_en": "Raises the clear yang; together with Chai Hu serves as a guiding courier."
+          },
+          {
+            "phrase": "柴胡",
+            "type": "herb",
+            "target": "chai_hu",
+            "note_zh": "升举少阳清气，助阳气上行。",
+            "note_en": "Lifts the clear qi of the shao yang and assists the ascent of yang."
+          },
+          {
+            "phrase": "白术",
+            "type": "herb",
+            "target": "bai_zhu",
+            "note_zh": "健脾燥湿，佐君药以固中州。",
+            "note_en": "Strengthens the Spleen and dries dampness, assisting the sovereign to secure the central region."
+          },
+          {
+            "phrase": "阴火",
+            "type": "term",
+            "note_zh": "东垣独创概念，指脾胃气虚、元气下陷所生之内伤虚火。",
+            "note_en": "Dongyuan's original concept — deficient internal fire arising when Spleen-Stomach qi sinks and the original qi fails."
+          }
+        ]
+      },
+      {
+        "title_zh": "升阳散火汤方论",
+        "title_en": "Exposition of Sheng Yang San Huo Tang",
+        "chapter": "卷下 · 升阳散火汤",
+        "text": "火郁则发之。升发脾胃之阳气，使其调达，则郁热自散。治男子妇人四肢发困热，肌热，筋痹热，骨髓中热，发困，热如燎，扪之烙手，此病多因血虚而得之，或胃虚过食冷物，抑遏阳气于脾土之中。",
+        "translation_zh": "火郁于内，应当发散之。升发脾胃的阳气，使气机调达通畅，郁热便自然消散。此方治疗男女四肢困倦发热、肌肉热、筋痹热、骨髓中热，困倦而热如焚烧，按之烫手。此病多因血虚所致，或因胃虚而过食寒凉，使阳气被抑郁于脾土之中。",
+        "translation_en": "When fire is depressed, it should be vented. Lift the yang qi of the Spleen and Stomach so that its movement becomes free, and the depressed heat will disperse of itself. This formula treats both men and women with weary heat in the four limbs, heat in the flesh, sinew-heat, marrow-heat — exhaustion with burning heat that scorches the hand upon touch. The disease most often arises from blood vacuity, or from a weak Stomach overloaded with cold foods so that the yang qi becomes pent up within the Spleen earth.",
+        "annotations": [
+          {
+            "phrase": "火郁则发之",
+            "type": "term",
+            "note_zh": "语出《素问·六元正纪大论》，为东垣立法之纲领。",
+            "note_en": "A phrase from the Suwen and the guiding principle of Dongyuan's therapeutic method."
+          },
+          {
+            "phrase": "阳气",
+            "type": "concept",
+            "target": "yin-yang",
+            "note_zh": "脾胃之阳即清阳，主升发。",
+            "note_en": "The yang of the Spleen and Stomach is the clear yang whose nature is to ascend and disperse."
+          },
+          {
+            "phrase": "血虚",
+            "type": "pattern",
+            "target": "xue_xu",
+            "note_zh": "此处指血虚生内热之底证。",
+            "note_en": "Here signifying blood vacuity generating internal heat as the underlying pattern."
+          },
+          {
+            "phrase": "脾土",
+            "type": "concept",
+            "target": "wu-xing",
+            "note_zh": "五行中脾属土，居中州，主运化。",
+            "note_en": "In five-phase theory the Spleen belongs to earth, occupies the central position, and governs transformation and transportation."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "shen_nong_ben_cao_jing",
+    "slug": "shen-nong-ben-cao-jing",
+    "title_zh": "神农本草经",
+    "title_pinyin": "Shén Nóng Běn Cǎo Jīng",
+    "title_en": "Divine Farmer's Classic of Materia Medica",
+    "author": {
+      "zh": "托名神农",
+      "en": "Attributed to Shen Nong"
+    },
+    "dynasty_zh": "汉",
+    "dynasty_en": "Han",
+    "approximate_date": "circa 200 CE",
+    "approximate_year": 200,
+    "significance": {
+      "zh": "现存最早的药物学专著，载药三百六十五种，分为上、中、下三品。奠定了中药学的基础。",
+      "en": "The earliest surviving Chinese materia medica, listing 365 medicinals classified into upper, middle, and lower grades. The foundation of all subsequent Chinese pharmacology."
+    },
+    "description_zh": "成书于汉代，托名神农所作。每味药物记述性味、功效、主治，是后世本草学著作的源头。",
+    "description_en": "Compiled in the Han dynasty under the legendary name of Shen Nong. Each entry records nature, flavor, actions, and indications — the wellspring of all subsequent bencao literature.",
+    "passages": [
+      {
+        "title_zh": "三品分类",
+        "title_en": "Classification into Three Grades",
+        "chapter": "序录",
+        "text": "上药一百二十种为君，主养命以应天，无毒，多服久服不伤人，欲轻身益气，不老延年者，本上经。中药一百二十种为臣，主养性以应人，无毒有毒，斟酌其宜，欲遏病补虚羸者，本中经。下药一百二十五种为佐使，主治病以应地，多毒，不可久服，欲除寒热邪气，破积聚，愈疾者，本下经。",
+        "translation_zh": "上品药一百二十种作为君药，主在养生命以应天道，无毒，长期服用不伤人，适用于希望强身延年者。中品药一百二十种作为臣药，主在调养性情以应人事，有毒无毒须斟酌使用，适用于祛病补虚者。下品药一百二十五种作为佐使药，主在治病以应地道，多有毒性，不可久服，适用于驱除寒热邪气、消除积聚之实证。",
+        "annotations": [
+          {
+            "phrase": "君",
+            "type": "concept",
+            "target": "jun-chen-zuo-shi",
+            "note_zh": "方剂中的主药，本经中亦指上品药。",
+            "note_en": "The 'sovereign' role — the principal medicinal in a formula; in this classic, also designates upper-grade herbs."
+          },
+          {
+            "phrase": "臣",
+            "type": "concept",
+            "target": "jun-chen-zuo-shi",
+            "note_zh": "方剂中辅助君药的药物。",
+            "note_en": "The 'minister' — assists the sovereign."
+          },
+          {
+            "phrase": "佐使",
+            "type": "concept",
+            "target": "jun-chen-zuo-shi",
+            "note_zh": "佐助与引经使药。",
+            "note_en": "Assistants and couriers — supporting and guiding herbs."
+          }
+        ]
+      },
+      {
+        "title_zh": "人参条",
+        "title_en": "Ren Shen (Ginseng) Entry",
+        "chapter": "上品 · 草部",
+        "text": "人参，味甘微寒。主补五脏，安精神，定魂魄，止惊悸，除邪气，明目，开心益智。久服轻身延年。",
+        "translation_zh": "人参，味甘，性微寒。主要功效：补益五脏，安定精神，镇摄魂魄，止惊悸，驱除邪气，明目，开启心智使人聪慧。长期服用可使身体轻健、延年益寿。",
+        "translation_en": "Ren Shen: sweet in flavor, slightly cold in nature. It primarily tonifies the five zang organs, calms the spirit, settles the ethereal and corporeal souls, stops palpitations and fright, dispels pathogenic qi, brightens the eyes, opens the heart, and sharpens the intellect. Prolonged use lightens the body and prolongs years.",
+        "annotations": [
+          {
+            "phrase": "人参",
+            "type": "herb",
+            "target": "ren_shen",
+            "note_zh": "大补元气、复脉固脱、补脾益肺、生津安神之要药。本经列为上品之首。",
+            "note_en": "The chief herb for greatly tonifying original qi, restoring the pulse, rescuing from collapse, tonifying spleen and lung, generating fluids, and calming the spirit. Placed at the head of the upper grade in the Shennong Bencao."
+          },
+          {
+            "phrase": "味甘微寒",
+            "type": "concept",
+            "target": "four-natures-five-flavors",
+            "note_zh": "本经以气味论药，为后世性味归经理论的源头。",
+            "note_en": "The Shennong Bencao classifies herbs by flavor and nature — the source of the later doctrine of four natures and five flavors."
+          },
+          {
+            "phrase": "补五脏",
+            "type": "concept",
+            "target": "zang-fu",
+            "note_zh": "五脏指心、肝、脾、肺、肾，主藏精气神。",
+            "note_en": "The five zang — heart, liver, spleen, lung, kidney — which store essence, qi, and spirit."
+          }
+        ]
+      },
+      {
+        "title_zh": "甘草条",
+        "title_en": "Gan Cao (Licorice) Entry",
+        "chapter": "上品 · 草部",
+        "text": "甘草，味甘平。主五脏六腑寒热邪气，坚筋骨，长肌肉，倍力，金创，解毒。久服轻身延年。",
+        "translation_zh": "甘草，味甘，性平。主治五脏六腑的寒热邪气，能坚固筋骨，增长肌肉，加倍气力，治疗金属创伤，解百毒。长期服用可使身体轻健、延年益寿。",
+        "translation_en": "Gan Cao: sweet in flavor, neutral in nature. It governs cold and heat pathogenic qi of the five zang and six fu, strengthens sinew and bone, builds muscle, doubles strength, treats metal-inflicted wounds, and resolves toxins. Prolonged use lightens the body and prolongs years.",
+        "annotations": [
+          {
+            "phrase": "甘草",
+            "type": "herb",
+            "target": "gan_cao",
+            "note_zh": "补脾益气、清热解毒、祛痰止咳、缓急止痛、调和诸药，有「国老」之称。",
+            "note_en": "Tonifies spleen qi, clears heat and resolves toxins, transforms phlegm, stops cough, relieves urgency and pain, and harmonizes the other herbs of a formula — known as the 'Elder of the Realm.'"
+          },
+          {
+            "phrase": "解毒",
+            "type": "term",
+            "note_zh": "甘草能解百药毒、食物毒、附子乌头之毒，后世称为「国老调和诸药」的根本依据。",
+            "note_en": "Gan Cao resolves the toxicity of many drugs, foods, and of Fu Zi/Wu Tou in particular — the basis for its later role as the 'harmonizer of all medicinals.'"
+          },
+          {
+            "phrase": "五脏六腑",
+            "type": "concept",
+            "target": "zang-fu",
+            "note_zh": "中医内脏系统的基本分类，五脏藏精气，六腑传化物。",
+            "note_en": "The basic classification of internal organs in Chinese medicine: five zang store essence-qi, six fu transmit and transform."
+          }
+        ]
+      },
+      {
+        "title_zh": "黄连条",
+        "title_en": "Huang Lian (Coptis) Entry",
+        "chapter": "上品 · 草部",
+        "text": "黄连，味苦寒。主热气目痛，眦伤泣出，明目，肠澼腹痛下利，妇人阴中肿痛。久服令人不忘。",
+        "translation_zh": "黄连，味苦，性寒。主治热邪引起的目痛，眼角损伤流泪，能明目；治疗肠中痢疾、腹痛腹泻；治疗妇人阴部肿痛。长期服用使人记忆力增强。",
+        "translation_en": "Huang Lian: bitter in flavor, cold in nature. It governs eye pain from heat qi, injury at the canthus with tears flowing, brightens the eyes; it treats intestinal dysentery with abdominal pain and diarrhea, and treats swelling and pain of the female genitals. Prolonged use prevents forgetfulness.",
+        "annotations": [
+          {
+            "phrase": "黄连",
+            "type": "herb",
+            "target": "huang_lian",
+            "note_zh": "清热燥湿、泻火解毒之要药，尤善清心胃之火与大肠湿热。",
+            "note_en": "The chief herb for clearing heat and drying damp, draining fire and resolving toxins — especially adept at clearing heart and stomach fire and large-intestine damp-heat."
+          },
+          {
+            "phrase": "味苦寒",
+            "type": "concept",
+            "target": "four-natures-five-flavors",
+            "note_zh": "苦能燥、能泄、能坚；寒能清热。苦寒药为清泻实热之主力。",
+            "note_en": "Bitter can dry, drain, and consolidate; cold clears heat. Bitter-cold medicinals are the mainstay for clearing and draining repletion heat."
+          },
+          {
+            "phrase": "肠澼",
+            "type": "term",
+            "note_zh": "古病名，指肠中下痢脓血——相当于后世的痢疾。",
+            "note_en": "An archaic disease name for bloody and purulent dysentery — corresponding to later 'dysentery' (li-ji)."
+          }
+        ]
+      },
+      {
+        "title_zh": "大黄条",
+        "title_en": "Da Huang (Rhubarb) Entry",
+        "chapter": "下品 · 草部",
+        "text": "大黄，味苦寒。主下瘀血，血闭寒热，破癥瘕积聚，留饮宿食，荡涤肠胃，推陈致新，通利水谷，调中化食，安和五脏。",
+        "translation_zh": "大黄，味苦，性寒。主要功效：攻下瘀血，通闭经与寒热，破除癥瘕积聚，去除留饮和宿食，荡涤肠胃，推陈致新，通利水谷，调和中焦，消化饮食，安抚五脏。",
+        "translation_en": "Da Huang: bitter in flavor, cold in nature. It purges static blood, opens blood-closure with alternating cold and heat, breaks masses and accumulations, eliminates lodged fluids and stagnant food, washes out the stomach and intestines, pushes out the old to bring forth the new, frees the passage of water and grain, harmonizes the middle, digests food, and pacifies the five zang.",
+        "annotations": [
+          {
+            "phrase": "大黄",
+            "type": "herb",
+            "target": "da_huang",
+            "note_zh": "泻下攻积、清热泻火、凉血解毒、逐瘀通经之要药，号「将军」。",
+            "note_en": "The chief herb for purging accumulations, clearing heat and draining fire, cooling blood and resolving toxins, and expelling stasis to free menses — titled 'the General.'"
+          },
+          {
+            "phrase": "推陈致新",
+            "type": "term",
+            "note_zh": "大黄最著名的功效概括——既攻逐陈旧积滞，又不伤新生之气。后世成为中药攻下作用的代名词。",
+            "note_en": "The most celebrated description of Da Huang's action: expelling the old while allowing the new to arise. This phrase became the classical epithet for purgative action in later Chinese medicine."
+          },
+          {
+            "phrase": "癥瘕积聚",
+            "type": "term",
+            "note_zh": "腹内有形或无形的结块——癥与积多属血分有形，瘕与聚多属气分无形。",
+            "note_en": "Formed or unformed masses within the abdomen: zheng and ji tend to be substantial blood-level masses, while jia and ju tend to be insubstantial qi-level accumulations."
+          },
+          {
+            "phrase": "荡涤肠胃",
+            "type": "pattern",
+            "target": "yang_ming_fu_shi",
+            "note_zh": "大黄攻下阳明腑实的经典作用，为后世承气诸方的理论根基。",
+            "note_en": "Da Huang's classical action of purging Yangming fu-organ repletion — the theoretical root of the later Cheng Qi formula family."
+          }
+        ]
+      }
+    ],
+    "wikidata_id": "Q1933270",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "huang_di_nei_jing",
+    "slug": "huang-di-nei-jing",
+    "title_zh": "黄帝内经",
+    "title_pinyin": "Huáng Dì Nèi Jīng",
+    "title_en": "The Yellow Emperor's Classic of Internal Medicine",
+    "author": {
+      "zh": "托名黄帝",
+      "en": "Attributed to the Yellow Emperor"
+    },
+    "dynasty_zh": "战国至汉",
+    "dynasty_en": "Warring States to Han",
+    "approximate_date": "circa 300 BCE – 100 CE",
+    "approximate_year": -300,
+    "significance": {
+      "zh": "中医理论的奠基之作，分《素问》《灵枢》两部分。系统论述了阴阳五行、藏象、经络、病因病机、诊法、治则等中医基础理论。",
+      "en": "The theoretical foundation of all Chinese medicine, divided into the Suwen and Lingshu. Systematically expounds yin-yang, five-phase theory, zang-fu, meridians, etiology, pathomechanism, diagnostics, and treatment principles."
+    },
+    "description_zh": "并非方书，而是中医的根本理论经典。所有后世著作皆由此发源。",
+    "description_en": "Not a formulary but the root theoretical canon of Chinese medicine. Every subsequent text traces its lineage to this source.",
+    "passages": [
+      {
+        "title_zh": "上古天真",
+        "title_en": "The Innate Truth of Antiquity",
+        "chapter": "素问 · 上古天真论",
+        "text": "上古之人，其知道者，法于阴阳，和于术数，食饮有节，起居有常，不妄作劳，故能形与神俱，而尽终其天年，度百岁乃去。",
+        "translation_zh": "上古时代懂得养生之道的人，效法阴阳的规律，调和于术数，饮食有节制，起居有规律，不过度劳累，所以形体和精神都能保持健康，得享天年，活到百岁才离世。",
+        "translation_en": "The people of high antiquity who understood the Way modeled themselves on yin and yang, harmonized themselves with the methods of cultivation, were moderate in food and drink, regular in their daily activities, and did not exhaust themselves through labor — therefore both body and spirit remained whole, and they lived out their natural span, departing only after a hundred years.",
+        "annotations": [
+          {
+            "phrase": "阴阳",
+            "type": "concept",
+            "target": "yin-yang",
+            "note_zh": "中医理论的根本对立统一观。",
+            "note_en": "The foundational complementary duality of Chinese medicine."
+          },
+          {
+            "phrase": "形与神俱",
+            "type": "term",
+            "note_zh": "身体（形）与精神（神）俱全，是中医对健康的根本定义。",
+            "note_en": "Body (form) and spirit unified — the fundamental TCM definition of health."
+          }
+        ]
+      },
+      {
+        "title_zh": "阴阳为天地之道",
+        "title_en": "Yin-Yang as the Way of Heaven and Earth",
+        "chapter": "素问 · 阴阳应象大论",
+        "text": "阴阳者，天地之道也，万物之纲纪，变化之父母，生杀之本始，神明之府也。治病必求于本。",
+        "translation_zh": "阴阳，是天地运行的法则，是万物的纲领和秩序，是一切变化的根源，是生长与消亡的本始，是神明所寄之处。治疗疾病必须追究它的根本。",
+        "translation_en": "Yin and yang are the Way of Heaven and Earth, the guiding thread of the ten thousand things, the father and mother of all transformations, the beginning of growth and decay, and the dwelling place of the numinous. In treating illness one must seek its root.",
+        "annotations": [
+          {
+            "phrase": "阴阳",
+            "type": "concept",
+            "target": "yin-yang",
+            "note_zh": "中医学最根本的哲学范畴，贯穿生理、病理、诊断、治疗各方面。",
+            "note_en": "The most fundamental philosophical category of Chinese medicine, permeating physiology, pathology, diagnosis, and treatment."
+          },
+          {
+            "phrase": "治病必求于本",
+            "type": "term",
+            "note_zh": "治疗疾病必须探求其根本原因——阴阳失调。后世成为中医辨证论治的核心原则。",
+            "note_en": "In treating illness one must seek its root — that is, the underlying disharmony of yin and yang. This became the core principle of pattern differentiation and treatment in later TCM."
+          }
+        ]
+      },
+      {
+        "title_zh": "四时阴阳养生之本",
+        "title_en": "The Four Seasons and Yin-Yang as the Root of Life-Nurture",
+        "chapter": "素问 · 四气调神大论",
+        "text": "夫四时阴阳者，万物之根本也。所以圣人春夏养阳，秋冬养阴，以从其根，故与万物沉浮于生长之门。",
+        "translation_zh": "四时阴阳的变化，是万物生长的根本。所以圣人春夏保养阳气，秋冬保养阴气，以顺应其根本，因而能与万物一同在生长之门中沉浮变化。",
+        "translation_en": "The yin and yang of the four seasons are the root of the ten thousand things. Therefore the sages nourish yang in spring and summer and nourish yin in autumn and winter, following the root — and so they rise and sink with all things at the gate of birth and growth.",
+        "annotations": [
+          {
+            "phrase": "四时阴阳",
+            "type": "concept",
+            "target": "yin-yang",
+            "note_zh": "四时的寒热温凉变化实为阴阳消长的外在表现。",
+            "note_en": "The cold-hot-warm-cool cycles of the four seasons are the external manifestation of yin-yang's waxing and waning."
+          },
+          {
+            "phrase": "春夏养阳，秋冬养阴",
+            "type": "term",
+            "note_zh": "后世养生学的根本纲领：顺应天时阴阳之气以调养人身。",
+            "note_en": "The cardinal principle of later yangsheng (life-nurture) — harmonizing human cultivation with the yin-yang rhythms of heaven."
+          }
+        ]
+      },
+      {
+        "title_zh": "阳气如天与日",
+        "title_en": "Yang Qi is Like Heaven and the Sun",
+        "chapter": "素问 · 生气通天论",
+        "text": "阳气者，若天与日，失其所则折寿而不彰。故天运当以日光明，是故阳因而上，卫外者也。",
+        "translation_zh": "人身的阳气，好比天上的太阳，如果阳气失常，就会折损寿命，生机不再显现。所以天的运行靠日光照耀，人的阳气也一样向上浮越，固护体表以抵御外邪。",
+        "translation_en": "Yang qi in the human body is like Heaven and the sun: if it loses its proper place, life is cut short and vitality no longer shines. As Heaven's movement depends on the sun's light, so yang qi rises upward and outward, guarding the exterior against external evils.",
+        "annotations": [
+          {
+            "phrase": "阳气",
+            "type": "concept",
+            "target": "yin-yang",
+            "note_zh": "人身温煦、推动、固摄、防御的能量，为生命活动的根本动力。",
+            "note_en": "The warming, propelling, containing, and defensive qi of the body — the fundamental motive power of life."
+          },
+          {
+            "phrase": "卫外",
+            "type": "term",
+            "note_zh": "阳气的防御功能，后世发展为卫气学说。",
+            "note_en": "The defensive function of yang qi, later elaborated into the doctrine of wei (defensive) qi."
+          }
+        ]
+      },
+      {
+        "title_zh": "三气合而为痹",
+        "title_en": "Three Qi Combine to Form Bi Pattern",
+        "chapter": "素问 · 痹论",
+        "text": "风寒湿三气杂至，合而为痹也。其风气胜者为行痹，寒气胜者为痛痹，湿气胜者为着痹也。",
+        "translation_zh": "风、寒、湿三种邪气混杂而来，合在一起就形成痹证。其中风邪偏胜的叫做行痹（游走性疼痛），寒邪偏胜的叫做痛痹（剧痛固定），湿邪偏胜的叫做着痹（重着麻木）。",
+        "translation_en": "When the three qi of wind, cold, and damp arrive together and combine, they form bi (impediment) pattern. When wind predominates it is 'wandering bi'; when cold predominates it is 'painful bi'; when damp predominates it is 'fixed bi'.",
+        "annotations": [
+          {
+            "phrase": "风寒湿三气",
+            "type": "concept",
+            "target": "six-evils",
+            "note_zh": "六淫中的风、寒、湿三邪，是痹证的主要外因。",
+            "note_en": "Three of the six external evils — wind, cold, and damp — the principal external causes of bi patterns."
+          },
+          {
+            "phrase": "痹",
+            "type": "term",
+            "note_zh": "经络气血闭阻不通所致的肢体关节疼痛、麻木、屈伸不利等病证。",
+            "note_en": "A pattern of joint and limb pain, numbness, and restricted movement caused by obstruction of qi and blood in the channels."
+          }
+        ]
+      },
+      {
+        "title_zh": "百病生于气",
+        "title_en": "A Hundred Diseases Arise from Qi",
+        "chapter": "素问 · 举痛论",
+        "text": "百病生于气也。怒则气上，喜则气缓，悲则气消，恐则气下，寒则气收，炅则气泄，惊则气乱，劳则气耗，思则气结。",
+        "translation_zh": "各种疾病多由气机失调而生。发怒则气向上逆，过喜则气涣散，悲伤则气消沉，恐惧则气下陷，受寒则气收敛，受热则气外泄，受惊则气紊乱，过劳则气耗损，思虑则气郁结。",
+        "translation_en": "A hundred diseases arise from qi. Anger makes qi ascend; joy makes qi slacken; grief makes qi dissipate; fear makes qi descend; cold makes qi contract; heat makes qi leak out; fright makes qi become chaotic; overwork exhausts qi; excessive thinking makes qi bind.",
+        "annotations": [
+          {
+            "phrase": "气",
+            "type": "concept",
+            "target": "qi-blood-fluids",
+            "note_zh": "生命活动的根本物质与动力，气机的升降出入为健康之本。",
+            "note_en": "The fundamental substance and motive force of life; the ascending, descending, entering, and exiting of qi is the basis of health."
+          },
+          {
+            "phrase": "怒则气上，喜则气缓，悲则气消，恐则气下",
+            "type": "concept",
+            "target": "seven-emotions",
+            "note_zh": "七情致病的经典论述：情志过度可直接扰乱气机。",
+            "note_en": "The classical formulation of the seven emotions as disease causes — excessive emotions directly derange qi dynamics."
+          },
+          {
+            "phrase": "思则气结",
+            "type": "term",
+            "note_zh": "思虑过度伤脾，导致气机郁结不畅，为后世脾气郁滞证的理论基础。",
+            "note_en": "Excessive pondering injures the spleen and binds qi — the theoretical basis for later spleen qi stagnation patterns."
+          }
+        ]
+      }
+    ],
+    "wikidata_id": "Q428448",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "wen_bing_tiao_bian",
+    "slug": "wen-bing-tiao-bian",
+    "title_zh": "温病条辨",
+    "title_pinyin": "Wēn Bìng Tiáo Biàn",
+    "title_en": "Systematic Differentiation of Warm Diseases",
+    "author": {
+      "zh": "吴鞠通",
+      "pinyin": "Wú Jūtōng",
+      "en": "Wu Jutong"
+    },
+    "dynasty_zh": "清",
+    "dynasty_en": "Qing",
+    "approximate_date": "1798",
+    "approximate_year": 1798,
+    "tradition": "温病学派",
+    "significance": {
+      "zh": "温病学派的奠基之作。系统创立了三焦辨证体系，与叶天士的卫气营血辨证共同构成温病学说的核心。对外感热病的认识从《伤寒论》的六经辨证扩展至温热病的辨治。",
+      "en": "The foundational work of the Warm Disease school. Established the Three Burners (San Jiao) pattern differentiation system, which together with Ye Tianshi's Wei-Qi-Ying-Xue framework forms the core of warm disease theory. Extended the understanding of externally-contracted febrile diseases beyond the Six Channels framework of the Shanghan Lun."
+    },
+    "description_zh": "全书三卷，分上焦篇、中焦篇、下焦篇，以三焦辨证统领温热、湿热诸病。书末附《杂说》《解儿难》《解产难》三篇。",
+    "description_en": "Comprising three juan organized into upper, middle, and lower jiao sections, the work uses triple-jiao pattern identification to systematize warm-heat and damp-heat diseases. Three supplementary essays are appended: Miscellaneous Discussions, Resolving Difficulties in Pediatrics, and Resolving Difficulties in Obstetrics.",
+    "passages": [
+      {
+        "title_zh": "温病的范畴",
+        "title_en": "The Scope of Warm Diseases",
+        "chapter": "上焦篇 · 第一条",
+        "text": "温病者，有风温，有温热，有温疫，有温毒，有暑温，有湿温，有秋燥，有冬温，有温疟。",
+        "translation_zh": "温病的种类有：风温、温热、温疫、温毒、暑温、湿温、秋燥、冬温、温疟，共九种。",
+        "translation_en": "Warm diseases include: wind-warmth, warmth-heat, warmth-pestilence, warmth-toxin, summer-warmth, damp-warmth, autumn-dryness, winter-warmth, and warmth-malaria — nine categories in all.",
+        "annotations": [
+          {
+            "phrase": "温病",
+            "type": "term",
+            "note_zh": "外感温热之邪所致的多种急性热病的总称。",
+            "note_en": "A general category for acute febrile diseases caused by externally contracted warm-heat pathogens."
+          }
+        ]
+      },
+      {
+        "title_zh": "银翘散证",
+        "title_en": "The Yin Qiao San Pattern",
+        "chapter": "上焦篇 · 第四条",
+        "text": "太阴风温、温热、温疫、冬温，初起恶风寒者，桂枝汤主之；但热不恶寒而渴者，辛凉平剂银翘散主之。",
+        "translation_zh": "手太阴肺经所主的风温、温热、温疫、冬温等病，初起如见恶风寒者，用桂枝汤主治；若只发热、不恶寒而口渴者，为温邪已入肺卫，宜用辛凉平剂银翘散主治。",
+        "translation_en": "In Taiyin wind-warmth, warmth-heat, warmth-pestilence, and winter-warmth, if at onset the patient dislikes wind and cold, Gui Zhi Tang governs; if there is only heat without aversion to cold, accompanied by thirst, the acrid-cool balanced formula Yin Qiao San governs.",
+        "annotations": [
+          {
+            "phrase": "太阴风温",
+            "type": "term",
+            "note_zh": "手太阴肺经所主的风温病，即温邪犯肺卫之证。",
+            "note_en": "Wind-warmth governed by the Hand Taiyin lung channel — warm pathogen invading the lung and defensive aspect."
+          },
+          {
+            "phrase": "桂枝汤",
+            "type": "formula",
+            "target": "gui_zhi_tang",
+            "note_zh": "本为伤寒太阳中风主方，吴鞠通借用以治温病初起兼恶风寒者。",
+            "note_en": "Originally the chief formula for Taiyang wind-strike in cold-damage disease; Wu Jutong adapted it for the onset of warm disease with aversion to wind-cold."
+          },
+          {
+            "phrase": "银翘散",
+            "type": "formula",
+            "target": "yin_qiao_san",
+            "note_zh": "辛凉平剂的代表方，主治温病初起，邪在卫分。",
+            "note_en": "The representative acrid-cool balanced formula, governing the onset of warm disease with the pathogen at the defensive (wei) aspect."
+          },
+          {
+            "phrase": "但热不恶寒而渴",
+            "type": "pattern",
+            "target": "wei_fen_zheng",
+            "note_zh": "温邪犯卫的辨证要点——与伤寒表证的恶寒并发热迥然不同。",
+            "note_en": "The diagnostic key of warm pathogen at the defensive aspect — distinct from cold-damage exterior patterns that combine aversion to cold with fever."
+          }
+        ]
+      },
+      {
+        "title_zh": "桑菊饮证",
+        "title_en": "The Sang Ju Yin Pattern",
+        "chapter": "上焦篇 · 第十六条",
+        "text": "太阴风温，但咳，身不甚热，微渴者，辛凉轻剂桑菊饮主之。",
+        "translation_zh": "手太阴肺经所主的风温病，如果仅见咳嗽，身热不甚，略有口渴，这是温邪在上焦肺络较浅，宜用辛凉轻剂桑菊饮主治。",
+        "translation_en": "In Taiyin wind-warmth, when there is only cough, fever is not marked, and thirst is slight, the acrid-cool light formula Sang Ju Yin governs.",
+        "annotations": [
+          {
+            "phrase": "桑菊饮",
+            "type": "formula",
+            "target": "sang_ju_yin",
+            "note_zh": "辛凉轻剂的代表方，主治风温初起、邪浅在肺之轻证。",
+            "note_en": "The representative acrid-cool light formula, governing mild presentations of early wind-warmth with the pathogen shallow in the lung."
+          },
+          {
+            "phrase": "桑",
+            "type": "herb",
+            "target": "sang_ye",
+            "note_zh": "方中君药之一，疏散风热、清肺止咳。",
+            "note_en": "One of the sovereign herbs, diffusing wind-heat and clearing the lung to stop cough."
+          },
+          {
+            "phrase": "菊",
+            "type": "herb",
+            "target": "ju_hua",
+            "note_zh": "方中君药之一，疏风清热、清肝明目。",
+            "note_en": "One of the sovereign herbs, diffusing wind and clearing heat, also clearing the liver."
+          }
+        ]
+      },
+      {
+        "title_zh": "阳明温病白虎汤证",
+        "title_en": "Yangming Warm Disease, the Bai Hu Tang Pattern",
+        "chapter": "中焦篇 · 第一条",
+        "text": "面目俱赤，语声重浊，呼吸俱粗，大便闭，小便涩，舌苔老黄，甚则黑有芒刺，但恶热，不恶寒，日晡益甚者，传至中焦，阳明温病也。脉浮洪躁甚者，白虎汤主之。",
+        "translation_zh": "面部与眼睛俱红，声音重浊，呼吸粗大，大便秘结，小便涩少，舌苔老黄，甚至发黑并生芒刺，只怕热不怕冷，午后申时加重，这是温邪已传入中焦，属阳明温病。如脉见浮大洪数、躁动甚者，用白虎汤主治。",
+        "translation_en": "When face and eyes are both red, the voice is heavy and muffled, breathing is coarse, bowels are blocked, urine is scant and difficult, the tongue coating is old yellow — in severe cases turning black with prickles — with aversion only to heat and not to cold, worsening in the late afternoon, the pathogen has been transmitted to the middle burner: this is Yangming warm disease. When the pulse is floating, surging, and agitated, Bai Hu Tang governs.",
+        "annotations": [
+          {
+            "phrase": "阳明温病",
+            "type": "pattern",
+            "target": "yang_ming_jing_zheng",
+            "note_zh": "温邪传入中焦、阳明经证，以大热、大汗、大渴、脉洪大为典型。",
+            "note_en": "Warm pathogen entering the middle burner and occupying the Yangming channel — classically characterized by great heat, great sweating, great thirst, and a surging pulse."
+          },
+          {
+            "phrase": "白虎汤",
+            "type": "formula",
+            "target": "bai_hu_tang",
+            "note_zh": "清阳明气分大热的代表方，以石膏、知母为君。",
+            "note_en": "The representative formula for clearing great heat in the Yangming qi aspect, with Shi Gao and Zhi Mu as sovereigns."
+          },
+          {
+            "phrase": "传至中焦",
+            "type": "pattern",
+            "target": "zhong_jiao_shi_re",
+            "note_zh": "三焦辨证中温邪由上焦传入中焦的阶段。",
+            "note_en": "In Three Burner pattern differentiation, the stage in which warm pathogens pass from the upper to the middle burner."
+          },
+          {
+            "phrase": "日晡益甚",
+            "type": "term",
+            "note_zh": "申时（下午3-5时）潮热加重，为阳明腑实或热盛的典型时间特征。",
+            "note_en": "Tidal fever worsening in the late afternoon (shen hour, 3–5 pm) — the classical time signature of Yangming fu-organ heat repletion."
+          }
+        ]
+      },
+      {
+        "title_zh": "下焦加减复脉汤证",
+        "title_en": "Lower Burner Jia Jian Fu Mai Tang Pattern",
+        "chapter": "下焦篇 · 第一条",
+        "text": "风温、温热、温疫、温毒、冬温，邪在阳明久羁，或已下，或未下，身热面赤，口干舌燥，甚则齿黑唇裂，脉沉实者，仍可下之；脉虚大，手足心热甚于手足背者，加减复脉汤主之。",
+        "translation_zh": "风温、温热、温疫、温毒、冬温等病，温邪久留阳明，或已下过，或尚未攻下，见身热面赤、口干舌燥，甚至齿色发黑、口唇干裂，若脉沉实有力者，仍可用下法；若脉虚大无力、手足心热甚于手足背（真阴亏损的见症），则当用加减复脉汤滋阴润燥。",
+        "translation_en": "In wind-warmth, warmth-heat, warmth-pestilence, warmth-toxin, and winter-warmth, when the pathogen has lingered long in Yangming — whether purging has already been used or not — with body heat, red face, dry mouth and tongue, even blackened teeth and cracked lips: if the pulse is sunken and forceful, purging may still be used; if the pulse is vacuous yet large and the centers of the palms and soles are hotter than their backs, Jia Jian Fu Mai Tang governs.",
+        "annotations": [
+          {
+            "phrase": "邪在阳明久羁",
+            "type": "pattern",
+            "target": "yang_ming_fu_shi",
+            "note_zh": "温热之邪长期滞留阳明腑，耗伤津液。",
+            "note_en": "Warm-heat pathogen lingering in the Yangming fu-organs, consuming fluids."
+          },
+          {
+            "phrase": "手足心热甚于手足背",
+            "type": "pattern",
+            "target": "xia_jiao_shi_re",
+            "note_zh": "真阴受损、虚热内生的特征性征象——为下焦温病传变的要点。",
+            "note_en": "A hallmark sign of true yin damage giving rise to vacuity heat — the key diagnostic of warm disease entering the lower burner."
+          },
+          {
+            "phrase": "脉沉实",
+            "type": "term",
+            "note_zh": "沉而有力，提示里实未解，仍可攻下。",
+            "note_en": "Sunken and forceful — indicating unresolved interior repletion, still amenable to purging."
+          },
+          {
+            "phrase": "加减复脉汤",
+            "type": "term",
+            "note_zh": "吴鞠通由仲景炙甘草汤化裁而成，专滋下焦肝肾之阴。",
+            "note_en": "Wu Jutong's adaptation of Zhongjing's Zhi Gan Cao Tang, specifically to nourish liver and kidney yin in the lower burner."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "jin_gui_yao_lue",
+    "slug": "jin-gui-yao-lue",
+    "title_zh": "金匮要略",
+    "title_pinyin": "Jīn Guì Yào Lüè",
+    "title_en": "Essentials from the Golden Cabinet",
+    "author": {
+      "zh": "张仲景",
+      "pinyin": "Zhāng Zhòngjǐng",
+      "en": "Zhang Zhongjing"
+    },
+    "dynasty_zh": "东汉",
+    "dynasty_en": "Eastern Han",
+    "approximate_date": "circa 220 CE",
+    "approximate_year": 220,
+    "tradition": "经方派",
+    "significance": {
+      "zh": "与《伤寒论》同出张仲景之手，合称《伤寒杂病论》。专论内伤杂病，以脏腑经络辨证为纲，载方二百余首，为后世杂病治疗之典范。",
+      "en": "Composed by Zhang Zhongjing as the companion volume to the Shanghan Lun, together forming the Shanghan Zabing Lun. Dedicated to miscellaneous internal diseases, organized through zang-fu and channel pattern differentiation, containing over 200 formulas, and regarded as the canonical source for the treatment of internal disease."
+    },
+    "description_zh": "东汉张仲景所著，系统论述内科杂病的辨证论治，是中医杂病学的奠基之作。",
+    "description_en": "A Han-dynasty classic by Zhang Zhongjing establishing the pattern-differentiation approach to miscellaneous internal disease.",
+    "passages": [
+      {
+        "title_zh": "治未病 · 见肝之病当先实脾",
+        "title_en": "Treating Disease Before It Arises: Seeing Liver Disease, First Replete the Spleen",
+        "chapter": "脏腑经络先后病脉证第一",
+        "text": "问曰：上工治未病，何也？师曰：夫治未病者，见肝之病，知肝传脾，当先实脾。",
+        "translation_zh": "有人问：高明的医生治未病，是什么意思？老师说：所谓治未病，是说看到肝脏有病，便知道病邪会按五行相克的次序传到脾脏，所以应当先补益脾土，使其不受肝木之克。",
+        "translation_en": "It was asked: What does it mean when it is said that the superior physician treats disease before it arises? The Master replied: To treat disease before it arises means, upon seeing a disease of the Liver, to know that the Liver will transmit it to the Spleen — and therefore first to replete the Spleen.",
+        "annotations": [
+          {
+            "phrase": "上工治未病",
+            "type": "term",
+            "note_zh": "出自《难经》，谓最高明的医生能预见病邪传变，防患于未然。",
+            "note_en": "A phrase deriving from the Classic of Difficulties (Nanjing), meaning that the finest physician foresees the transmission of disease and prevents it before it takes hold."
+          },
+          {
+            "phrase": "肝传脾",
+            "type": "concept",
+            "target": "wu-xing",
+            "note_zh": "五行中木克土，故肝病最易乘脾，此即五脏传变的规律。",
+            "note_en": "In the Five Phases, Wood restrains Earth — hence Liver disease most readily overwhelms the Spleen. This expresses the standard rule of transmission among the five zang."
+          },
+          {
+            "phrase": "实脾",
+            "type": "concept",
+            "target": "zang-fu",
+            "note_zh": "预先补益脾胃之气，使其不受肝木所克，是未病先防的具体体现。",
+            "note_en": "To supplement in advance the qi of the Spleen and Stomach so that they will not be overcome by Liver-Wood — the concrete clinical expression of preventive treatment."
+          }
+        ]
+      },
+      {
+        "title_zh": "刚痉与柔痉",
+        "title_en": "Hard Spasm and Soft Spasm",
+        "chapter": "痉湿暍病脉证治第二",
+        "text": "太阳病，发热无汗，反恶寒者，名曰刚痉。太阳病，发热汗出，而不恶寒者，名曰柔痉。",
+        "translation_zh": "太阳病见发热、无汗，反而畏寒的，叫作刚痉；太阳病见发热、出汗，却不畏寒的，叫作柔痉。",
+        "translation_en": "When a Tai Yang disease presents with fever and absence of sweating yet aversion to cold, it is called hard spasm (gang jing). When a Tai Yang disease presents with fever and sweating yet no aversion to cold, it is called soft spasm (rou jing).",
+        "annotations": [
+          {
+            "phrase": "太阳病",
+            "type": "concept",
+            "target": "liu-jing",
+            "note_zh": "痉病初起多从太阳经气被郁而发，故以太阳立论。",
+            "note_en": "Spasm disease commonly arises at its outset from constraint of the Tai Yang channel, hence the category is framed in Tai Yang terms."
+          },
+          {
+            "phrase": "刚痉",
+            "type": "term",
+            "note_zh": "筋脉强急、无汗而恶寒的痉病，属表实。",
+            "note_en": "Hard spasm — rigid tension of the sinews with no sweating and aversion to cold, an exterior-repletion form of spasm disease."
+          },
+          {
+            "phrase": "柔痉",
+            "type": "term",
+            "note_zh": "筋脉强急而见汗出、不恶寒的痉病，属表虚。",
+            "note_en": "Soft spasm — rigid tension of the sinews with sweating and no aversion to cold, an exterior-vacuity form of spasm disease."
+          }
+        ]
+      },
+      {
+        "title_zh": "百合病总纲",
+        "title_en": "The Outline of Lily Disease",
+        "chapter": "百合狐惑阴阳毒病脉证治第三",
+        "text": "百合病者，百脉一宗，悉致其病也。意欲食复不能食，常默然，欲卧不能卧，欲行不能行。",
+        "translation_zh": "百合病一证，由百脉同根一源而致，一经发病，遍及全身。其人想吃又吃不下，常常默默无语，想躺又不能安卧，想走又不能行动。",
+        "translation_en": "Lily disease is so named because the hundred vessels share a single source, and when disease arises it involves them all at once. The patient wishes to eat yet cannot eat, remains silent and withdrawn, wishes to lie down yet cannot rest, wishes to walk yet cannot move.",
+        "annotations": [
+          {
+            "phrase": "百脉一宗",
+            "type": "concept",
+            "target": "zang-fu",
+            "note_zh": "谓全身经脉同源于心肺；心主血脉，肺朝百脉，故百合病多责之心肺阴虚。",
+            "note_en": "The idea that all the body's vessels share a single source in the Heart and Lung — the Heart governs the vessels and the Lung receives all the vessels — hence lily disease is chiefly attributed to yin vacuity of Heart and Lung."
+          },
+          {
+            "phrase": "百合病",
+            "type": "term",
+            "note_zh": "因以百合为主药而得名，属心肺阴虚、神不守舍之证。",
+            "note_en": "Named for its chief ingredient, lily bulb (bai he). Classically a pattern of Heart-Lung yin vacuity in which the spirit fails to keep to its residence."
+          },
+          {
+            "phrase": "百合",
+            "type": "herb",
+            "target": "bai_he",
+            "note_zh": "润肺宁心，清热安神，为治此病之主药。",
+            "note_en": "Moistens the Lung and quiets the Heart, clears heat and settles the spirit — the chief herb for treating this disease."
+          }
+        ]
+      },
+      {
+        "title_zh": "虚劳里急 · 小建中汤证",
+        "title_en": "Vacuity Taxation with Internal Urgency: Xiao Jian Zhong Tang Pattern",
+        "chapter": "血痹虚劳病脉证并治第六",
+        "text": "虚劳里急，悸，衄，腹中痛，梦失精，四肢酸疼，手足烦热，咽干口燥，小建中汤主之。",
+        "translation_zh": "虚劳病见腹中拘急、心悸、鼻出血、腹痛、梦中遗精、四肢酸痛、手足心烦热、咽喉口舌干燥的，应当用小建中汤治疗。",
+        "translation_en": "When vacuity taxation presents with internal urgency — palpitations, nosebleeds, abdominal pain, seminal loss in dreams, aching of the four limbs, vexing heat in the palms and soles, and dryness of the throat and mouth — Xiao Jian Zhong Tang governs.",
+        "annotations": [
+          {
+            "phrase": "虚劳",
+            "type": "term",
+            "note_zh": "因气血阴阳俱虚而致的慢性衰弱性疾病的总称。",
+            "note_en": "Vacuity taxation — a general term for chronic wasting disorders in which qi, blood, yin, and yang are all depleted."
+          },
+          {
+            "phrase": "里急",
+            "type": "term",
+            "note_zh": "腹中拘紧不舒之感，此处指中焦虚寒、筋脉失养所致。",
+            "note_en": "Internal urgency — a tight, uncomfortable drawing sensation in the abdomen, here arising from vacuity cold of the middle burner and undernourishment of the sinews."
+          },
+          {
+            "phrase": "小建中汤",
+            "type": "formula",
+            "target": "xiao_jian_zhong_tang",
+            "note_zh": "温中补虚、和里缓急的代表方，为治虚劳里急的主方。",
+            "note_en": "The paradigmatic formula for warming the center, supplementing vacuity, harmonizing the interior, and relieving urgency — the chief treatment for vacuity taxation with internal urgency."
+          },
+          {
+            "phrase": "饴糖",
+            "type": "term",
+            "note_zh": "小建中汤之君药，甘温补中，缓急止痛。",
+            "note_en": "Malt sugar (yi tang) — sovereign ingredient of Xiao Jian Zhong Tang; sweet and warming, it supplements the center and relieves urgency and pain."
+          }
+        ]
+      },
+      {
+        "title_zh": "胸痹总纲",
+        "title_en": "The Outline of Chest Bi (Chest Impediment)",
+        "chapter": "胸痹心痛短气病脉证治第九",
+        "text": "胸痹之病，喘息咳唾，胸背痛，短气，寸口脉沉而迟，关上小紧数，瓜蒌薤白白酒汤主之。",
+        "translation_zh": "胸痹一证，见气喘、咳嗽吐痰涎、胸背部疼痛、气短，寸口脉沉而迟、关部脉略紧而数的，应当用瓜蒌薤白白酒汤治疗。",
+        "translation_en": "In chest impediment disease, with panting, cough and expectoration, pain of the chest and back, and shortness of breath — the cun pulse sunken and slow, the guan pulse slightly tight and rapid — Gua Lou Xie Bai Bai Jiu Tang governs.",
+        "annotations": [
+          {
+            "phrase": "胸痹",
+            "type": "term",
+            "note_zh": "胸阳不振、痰浊痹阻胸中所致的胸闷疼痛之证，近于后世之真心痛。",
+            "note_en": "Chest impediment — oppression and pain of the chest arising when chest yang fails to unfurl and turbid phlegm blocks the chest; closely corresponding to what later texts call true Heart pain."
+          },
+          {
+            "phrase": "寸口脉沉而迟",
+            "type": "concept",
+            "target": "pulse-diagnosis",
+            "note_zh": "沉主里，迟主寒，共示胸阳不振、阴寒内盛。",
+            "note_en": "A sunken pulse indicates the interior; a slow pulse indicates cold — together they signal unraised chest yang and interior exuberance of yin cold."
+          },
+          {
+            "phrase": "瓜蒌",
+            "type": "herb",
+            "target": "gua_lou",
+            "note_zh": "宽胸化痰、理气散结，为方中要药。",
+            "note_en": "Broadens the chest, transforms phlegm, rectifies qi, and dissipates binds — an essential herb of the formula."
+          }
+        ]
+      },
+      {
+        "title_zh": "痰饮治则 · 当以温药和之",
+        "title_en": "The Treatment Principle for Phlegm-Rheum: Harmonize with Warming Medicinals",
+        "chapter": "痰饮咳嗽病脉证并治第十二",
+        "text": "病痰饮者，当以温药和之。",
+        "translation_zh": "凡患痰饮病的，应当用温性的药物来调和治疗。",
+        "translation_en": "For those suffering from phlegm-rheum disease, one should harmonize the condition by means of warming medicinals.",
+        "annotations": [
+          {
+            "phrase": "痰饮",
+            "type": "term",
+            "note_zh": "水液代谢失常所形成的病理产物，阳气不化则水停为饮，饮凝为痰。",
+            "note_en": "Phlegm-rheum — pathological products of deranged fluid metabolism. When yang qi fails to transform fluids, water collects as rheum; when rheum congeals it becomes phlegm."
+          },
+          {
+            "phrase": "温药和之",
+            "type": "concept",
+            "target": "four-natures-five-flavors",
+            "note_zh": "以温性药振奋阳气、化饮行水，「和之」而非峻攻，示治饮病不可专恃逐水。",
+            "note_en": "To use warming medicinals to rouse yang qi and transform rheum — 'harmonizing' rather than assaulting. The phrasing warns that rheum disease cannot be treated by purgative water-expelling drugs alone."
+          },
+          {
+            "phrase": "苓桂术甘汤",
+            "type": "term",
+            "note_zh": "本篇承此总纲而立的代表方，温阳化饮、健脾利水。",
+            "note_en": "Ling Gui Zhu Gan Tang — the representative formula of this chapter, derived from this guiding principle; it warms yang, transforms rheum, fortifies the Spleen, and disinhibits water."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "yi_fang_ji_jie",
+    "slug": "yi-fang-ji-jie",
+    "title_zh": "医方集解",
+    "title_pinyin": "Yī Fāng Jí Jiě",
+    "title_en": "Collected Exegesis of Prescriptions",
+    "author": {
+      "zh": "汪昂",
+      "pinyin": "Wāng Áng",
+      "en": "Wang Ang"
+    },
+    "dynasty_zh": "清",
+    "dynasty_en": "Qing",
+    "approximate_date": "1682",
+    "approximate_year": 1682,
+    "significance": {
+      "zh": "清代汪昂编撰的方剂学综合性著作。按功效分类收录历代名方，每方详释君臣佐使与加减变化，历来为方剂入门的权威读本。",
+      "en": "A comprehensive Qing-dynasty anthology of prescriptions compiled by Wang Ang. Arranges classical formulas by therapeutic action and explicates sovereign-minister-assistant-courier structure with historical modifications, long considered the authoritative primer for formula study."
+    },
+    "description_zh": "清代方剂学代表著作，分类系统、阐释精当，便于学习。",
+    "description_en": "A representative Qing-dynasty formulary, systematically organized and lucidly annotated for study.",
+    "passages": [
+      {
+        "title_zh": "自序",
+        "title_en": "Author's Preface",
+        "chapter": "序",
+        "text": "古圣之制方也，有大小奇偶复缓急之殊，有君臣佐使之别。方之祖始于仲景，后之作者日以增益，至千百而未有已。余不揣固陋，搜辑古今名方，分门别类，详其主治，析其配合，使后之学者读之，可以循序而入，不致望洋而叹。",
+        "translation_zh": "古代圣人制定方剂，有大方、小方、奇方、偶方、复方，还有缓方、急方的区别；又有君、臣、佐、使之分。方书之祖当推张仲景，后来的著者日益增补，至千百家而未有穷尽。我不揣浅陋，搜集古今名方，分门别类，详述各方的主治，剖析其配伍，使后学读之，可以循序渐进，不致望洋兴叹。",
+        "translation_en": "When the sages of antiquity composed formulas, they distinguished among large and small, odd and even, compound, slow, and urgent formulations, and observed the ranking of sovereign, minister, assistant, and courier. The ancestor of all formula books is Zhongjing, and later authors added to the tradition until the formulas numbered in the thousands without end. Undeterred by my own shallow learning, I have gathered celebrated prescriptions ancient and modern, classified them by category, detailed their indications, and analyzed their compositions, so that later students may advance step by step without being overwhelmed.",
+        "annotations": [
+          {
+            "phrase": "大小奇偶复",
+            "type": "term",
+            "note_zh": "出自《素问·至真要大论》的「七方」分类。",
+            "note_en": "The 'seven types of formulas' classified in the Suwen."
+          },
+          {
+            "phrase": "君臣佐使",
+            "type": "concept",
+            "target": "jun-chen-zuo-shi",
+            "note_zh": "方剂配伍的四种角色。",
+            "note_en": "The four roles in formula composition."
+          },
+          {
+            "phrase": "仲景",
+            "type": "term",
+            "note_zh": "指东汉张仲景，方书之祖。",
+            "note_en": "Zhang Zhongjing of the Eastern Han, honored as the ancestor of formula texts."
+          }
+        ]
+      },
+      {
+        "title_zh": "四物汤方解",
+        "title_en": "Exegesis of Si Wu Tang",
+        "chapter": "补养之剂",
+        "text": "四物汤 当归酒洗、生地酒洗、川芎、芍药酒炒，治一切血虚及妇人经病。当归辛温，养血而行血中之气；川芎辛温，行血中之气滞；芍药酸寒，敛阴而和营；地黄甘寒，滋阴而补血。四药相济，血虚得之以补，血瘀得之以行，血热得之以凉，血寒得之以温——诚血分之总司也。",
+        "translation_zh": "四物汤：酒洗当归、酒洗生地、川芎、酒炒芍药，主治一切血虚及妇人经病。当归味辛温，养血而行血中之气；川芎味辛温，行血中的气滞；芍药味酸寒，敛阴而和营；地黄味甘寒，滋阴而补血。四药相辅相成，血虚者得之以补，血瘀者得之以行，血热者得之以凉，血寒者得之以温——实为血分之总司。",
+        "translation_en": "Si Wu Tang — wine-washed Dang Gui, wine-washed Sheng Di, Chuan Xiong, and wine-stir-fried Shao Yao — treats every variety of blood vacuity and gynecological menstrual disorder. Dang Gui, pungent and warm, nourishes blood and moves the qi within the blood. Chuan Xiong, pungent and warm, frees stagnant qi within the blood. Shao Yao, sour and cool, astringes yin and harmonizes the nutritive. Di Huang, sweet and cool, enriches yin and replenishes blood. The four herbs mutually complete one another: blood vacuity is thereby supplemented, blood stasis thereby moved, blood heat thereby cooled, and blood cold thereby warmed — truly the grand commander of the blood aspect.",
+        "annotations": [
+          {
+            "phrase": "四物汤",
+            "type": "formula",
+            "target": "si_wu_tang",
+            "note_zh": "补血调血之基础方。",
+            "note_en": "The foundational blood-nourishing and blood-regulating formula."
+          },
+          {
+            "phrase": "血虚",
+            "type": "pattern",
+            "target": "xue_xu",
+            "note_zh": "本方主治的核心证候。",
+            "note_en": "The core pattern addressed by this formula."
+          },
+          {
+            "phrase": "当归",
+            "type": "herb",
+            "target": "dang_gui",
+            "note_zh": "补血活血，为本方君药。",
+            "note_en": "Tonifies and quickens the blood — sovereign herb of this formula."
+          },
+          {
+            "phrase": "川芎",
+            "type": "herb",
+            "target": "chuan_xiong",
+            "note_zh": "血中气药，行气活血。",
+            "note_en": "The qi medicinal within blood — moves qi and quickens blood."
+          },
+          {
+            "phrase": "芍药",
+            "type": "herb",
+            "target": "bai_shao",
+            "note_zh": "敛阴和营。",
+            "note_en": "Astringes yin and harmonizes the nutritive."
+          },
+          {
+            "phrase": "地黄",
+            "type": "herb",
+            "target": "sheng_di_huang",
+            "note_zh": "此处为生地，凉血滋阴。",
+            "note_en": "Here Sheng Di Huang — cools blood and enriches yin."
+          },
+          {
+            "phrase": "四气五味",
+            "type": "concept",
+            "target": "four-natures-five-flavors",
+            "note_zh": "汪昂每方必论药性之温凉寒热酸苦甘辛咸。",
+            "note_en": "Wang Ang invariably explicates each herb by its thermal nature and its five flavors."
+          }
+        ]
+      },
+      {
+        "title_zh": "六味地黄丸方解",
+        "title_en": "Exegesis of Liu Wei Di Huang Wan",
+        "chapter": "补养之剂",
+        "text": "六味丸 熟地黄八两、山茱萸、山药各四两、泽泻、茯苓、牡丹皮各三两，治肾水不足，虚火上炎，腰膝痿软，骨蒸潮热，盗汗遗精，消渴淋沥。熟地滋肾填精为君；山茱萸养肝涩精，山药补脾固肾为臣；泽泻泻肾降浊，丹皮泻肝火，茯苓渗脾湿为佐。补泻兼施，三补三泻，所以为平补肾阴之良方也。",
+        "translation_zh": "六味丸：熟地黄八两，山茱萸、山药各四两，泽泻、茯苓、牡丹皮各三两。主治肾水不足、虚火上炎所致腰膝痿软、骨蒸潮热、盗汗遗精、消渴淋沥诸症。熟地滋肾填精为君药；山茱萸养肝涩精、山药补脾固肾为臣药；泽泻泻肾中之浊、丹皮泻肝中之火、茯苓渗脾中之湿为佐药。补泻兼施，三补三泻，所以成为平补肾阴的良方。",
+        "translation_en": "Liu Wei Wan — Shu Di Huang eight liang; Shan Zhu Yu and Shan Yao four liang each; Ze Xie, Fu Ling, and Mu Dan Pi three liang each — treats insufficiency of Kidney water with deficient fire flaring upward, causing lumbar and knee weakness, steaming-bone tidal fever, night sweats and seminal emissions, wasting-thirst and dribbling urination. Shu Di Huang enriches the Kidney and fills essence as sovereign; Shan Zhu Yu nourishes the Liver and astringes essence, while Shan Yao tonifies the Spleen and secures the Kidney, serving as ministers; Ze Xie drains turbidity from the Kidney, Mu Dan Pi drains fire from the Liver, and Fu Ling percolates dampness from the Spleen, serving as assistants. Supplementation and drainage are combined — three tonifying and three draining — whereby the formula becomes the excellent moderate supplement of Kidney yin.",
+        "annotations": [
+          {
+            "phrase": "六味丸",
+            "type": "formula",
+            "target": "liu_wei_di_huang_wan",
+            "note_zh": "钱乙所立，滋补肾阴的代表方。",
+            "note_en": "Formulated by Qian Yi — the representative formula for enriching Kidney yin."
+          },
+          {
+            "phrase": "肾水不足",
+            "type": "pattern",
+            "target": "shen_yin_xu",
+            "note_zh": "即肾阴虚证。",
+            "note_en": "Kidney yin vacuity pattern."
+          },
+          {
+            "phrase": "虚火上炎",
+            "type": "term",
+            "note_zh": "阴虚则阳亢，虚火上行。",
+            "note_en": "When yin is deficient, yang becomes hyperactive and deficient fire rises."
+          },
+          {
+            "phrase": "熟地黄",
+            "type": "herb",
+            "target": "shu_di_huang",
+            "note_zh": "滋肾填精，君药。",
+            "note_en": "Enriches the Kidney and fills essence — the sovereign."
+          },
+          {
+            "phrase": "山茱萸",
+            "type": "herb",
+            "target": "shan_zhu_yu",
+            "note_zh": "养肝涩精。",
+            "note_en": "Nourishes the Liver and astringes essence."
+          },
+          {
+            "phrase": "山药",
+            "type": "herb",
+            "target": "shan_yao",
+            "note_zh": "补脾固肾。",
+            "note_en": "Tonifies the Spleen and secures the Kidney."
+          },
+          {
+            "phrase": "泽泻",
+            "type": "herb",
+            "target": "ze_xie",
+            "note_zh": "泻肾中之浊。",
+            "note_en": "Drains turbidity from the Kidney."
+          },
+          {
+            "phrase": "茯苓",
+            "type": "herb",
+            "target": "fu_ling",
+            "note_zh": "渗脾中之湿。",
+            "note_en": "Percolates dampness from the Spleen."
+          },
+          {
+            "phrase": "牡丹皮",
+            "type": "herb",
+            "target": "mu_dan_pi",
+            "note_zh": "泻肝中伏火。",
+            "note_en": "Drains latent fire from the Liver."
+          }
+        ]
+      },
+      {
+        "title_zh": "龙胆泻肝汤方解",
+        "title_en": "Exegesis of Long Dan Xie Gan Tang",
+        "chapter": "泻火之剂",
+        "text": "龙胆泻肝汤 龙胆草酒炒、黄芩炒、栀子酒炒、泽泻、木通、车前子、当归酒洗、生地酒洗、柴胡、甘草生用。治肝经实火、湿热下注，胁痛耳聋，阴肿阴痒，筋痿，阴湿，热痒，小便淋浊。胆草大苦大寒，直折肝胆之火为君；黄芩、栀子清上中之火为臣；泽泻、木通、车前导湿热从小便而出为佐；当归、生地养血益阴，使泻火而不伤阴；柴胡引诸药入肝经，甘草缓中和药。",
+        "translation_zh": "龙胆泻肝汤：酒炒龙胆草、炒黄芩、酒炒栀子、泽泻、木通、车前子、酒洗当归、酒洗生地、柴胡、生甘草。主治肝经实火、湿热下注所致胁痛耳聋、阴部肿痒、筋萎、阴湿、热痒、小便淋浊。龙胆草大苦大寒，直折肝胆之火，为君药；黄芩、栀子清上中之火为臣；泽泻、木通、车前子导湿热从小便而出为佐；当归、生地养血益阴，使泻火而不伤阴；柴胡引诸药入肝经，甘草缓中和诸药。",
+        "translation_en": "Long Dan Xie Gan Tang — wine-stir-fried Long Dan Cao, stir-fried Huang Qin, wine-stir-fried Zhi Zi, Ze Xie, Mu Tong, Che Qian Zi, wine-washed Dang Gui, wine-washed Sheng Di, Chai Hu, and raw Gan Cao. Treats repletion fire in the Liver channel and damp-heat pouring downward, causing rib pain and deafness, swelling and itching of the genitals, sinew atrophy, genital dampness, feverish itching, and turbid strangury. Long Dan Cao, intensely bitter and cold, directly breaks the fire of the Liver and Gallbladder and serves as sovereign. Huang Qin and Zhi Zi clear fire in the upper and middle burners as ministers. Ze Xie, Mu Tong, and Che Qian Zi guide damp-heat out through the urine as assistants. Dang Gui and Sheng Di nourish blood and boost yin, so that fire is drained without harming yin. Chai Hu leads the herbs into the Liver channel, and Gan Cao moderates the middle and harmonizes them all.",
+        "annotations": [
+          {
+            "phrase": "龙胆泻肝汤",
+            "type": "formula",
+            "target": "long_dan_xie_gan_tang",
+            "note_zh": "清泻肝胆实火、清利下焦湿热之代表方。",
+            "note_en": "The representative formula for draining repletion fire from the Liver and Gallbladder and clearing damp-heat from the lower burner."
+          },
+          {
+            "phrase": "肝经实火",
+            "type": "pattern",
+            "target": "gan_yang_shang_kang",
+            "note_zh": "此处为肝火炽盛证；与肝阳上亢同属肝经实热范畴。",
+            "note_en": "Here referring to blazing Liver fire — within the broader category of Liver repletion heat alongside Liver yang hyperactivity."
+          },
+          {
+            "phrase": "湿热下注",
+            "type": "pattern",
+            "target": "xia_jiao_shi_re",
+            "note_zh": "下焦湿热，肝胆湿热下流。",
+            "note_en": "Damp-heat in the lower burner, Liver-Gallbladder damp-heat pouring downward."
+          },
+          {
+            "phrase": "龙胆草",
+            "type": "herb",
+            "target": "long_dan_cao",
+            "note_zh": "君药，苦寒直折肝胆之火。",
+            "note_en": "Sovereign — bitter and cold, directly breaks Liver-Gallbladder fire."
+          },
+          {
+            "phrase": "黄芩",
+            "type": "herb",
+            "target": "huang_qin",
+            "note_zh": "清上焦火。",
+            "note_en": "Clears fire from the upper burner."
+          },
+          {
+            "phrase": "栀子",
+            "type": "herb",
+            "target": "zhi_zi",
+            "note_zh": "清三焦火，导热下行。",
+            "note_en": "Clears fire from the three burners and directs heat downward."
+          },
+          {
+            "phrase": "泽泻",
+            "type": "herb",
+            "target": "ze_xie",
+            "note_zh": "利水渗湿。",
+            "note_en": "Promotes urination and drains dampness."
+          },
+          {
+            "phrase": "车前子",
+            "type": "herb",
+            "target": "che_qian_zi",
+            "note_zh": "清热利湿。",
+            "note_en": "Clears heat and drains dampness."
+          },
+          {
+            "phrase": "当归",
+            "type": "herb",
+            "target": "dang_gui",
+            "note_zh": "养血和血，防苦寒伤阴。",
+            "note_en": "Nourishes and harmonizes blood, preventing the bitter-cold herbs from harming yin."
+          },
+          {
+            "phrase": "生地",
+            "type": "herb",
+            "target": "sheng_di_huang",
+            "note_zh": "凉血益阴。",
+            "note_en": "Cools blood and boosts yin."
+          },
+          {
+            "phrase": "柴胡",
+            "type": "herb",
+            "target": "chai_hu",
+            "note_zh": "引药入肝胆经。",
+            "note_en": "Leads the herbs into the Liver and Gallbladder channels."
+          },
+          {
+            "phrase": "甘草",
+            "type": "herb",
+            "target": "gan_cao",
+            "note_zh": "调和诸药。",
+            "note_en": "Harmonizes the other herbs."
+          }
+        ]
+      },
+      {
+        "title_zh": "九味羌活汤方解",
+        "title_en": "Exegesis of Jiu Wei Qiang Huo Tang",
+        "chapter": "表散之剂",
+        "text": "九味羌活汤 羌活、防风、苍术各一钱半，细辛五分，川芎、白芷、生地黄、黄芩、甘草各一钱。治外感风寒湿邪，内有蕴热，恶寒发热，无汗头痛，肢体酸楚疼痛，口苦而渴。羌活散太阳之寒湿为君；防风、苍术散风胜湿为臣；细辛、白芷、川芎分解少阴、阳明、厥阴之寒邪为佐；黄芩、生地清里热，防辛温之燥；甘草调和诸药。此方以「分经论治」而闻名，为表里同治之良方。",
+        "translation_zh": "九味羌活汤：羌活、防风、苍术各一钱半，细辛五分，川芎、白芷、生地黄、黄芩、甘草各一钱。主治外感风寒湿邪、内有蕴热所致恶寒发热、无汗头痛、肢体酸楚疼痛、口苦而渴。羌活散太阳经之寒湿为君；防风、苍术散风胜湿为臣；细辛、白芷、川芎分别解少阴、阳明、厥阴经之寒邪为佐；黄芩、生地清里热，以防辛温之燥伤阴；甘草调和诸药。此方以「分经论治」著称，是表里同治的良方。",
+        "translation_en": "Jiu Wei Qiang Huo Tang — Qiang Huo, Fang Feng, and Cang Zhu, one and a half qian each; Xi Xin, five fen; Chuan Xiong, Bai Zhi, Sheng Di Huang, Huang Qin, and Gan Cao, one qian each. Treats externally contracted wind-cold-damp with accumulated interior heat, producing aversion to cold with fever, absent sweating with headache, aching limbs, and a bitter mouth with thirst. Qiang Huo disperses cold-damp from the Tai Yang channel as sovereign. Fang Feng and Cang Zhu disperse wind and overcome dampness as ministers. Xi Xin, Bai Zhi, and Chuan Xiong each release cold pathogen from the Shao Yin, Yang Ming, and Jue Yin channels respectively, serving as assistants. Huang Qin and Sheng Di clear interior heat, guarding against the drying effect of the pungent-warm herbs. Gan Cao harmonizes them all. This formula is famed for its 'channel-differentiated treatment' and is an exemplar of treating exterior and interior simultaneously.",
+        "annotations": [
+          {
+            "phrase": "九味羌活汤",
+            "type": "term",
+            "note_zh": "张元素所创，载于王好古《此事难知》，后收入《医方集解》。本典尚未录入此方。",
+            "note_en": "Created by Zhang Yuansu and recorded in Wang Haogu's Ci Shi Nan Zhi; later included in Yi Fang Ji Jie. Not yet catalogued in this wiki."
+          },
+          {
+            "phrase": "外感风寒",
+            "type": "pattern",
+            "target": "wai_gan_feng_han_biao_shi",
+            "note_zh": "风寒束表之实证。",
+            "note_en": "Wind-cold fettering the exterior — an exterior repletion pattern."
+          },
+          {
+            "phrase": "分经论治",
+            "type": "concept",
+            "target": "liu-jing",
+            "note_zh": "按六经分经用药，源于仲景。",
+            "note_en": "Treatment by channel differentiation along the Six Channels — deriving from Zhongjing."
+          },
+          {
+            "phrase": "羌活",
+            "type": "herb",
+            "target": "qiang_huo",
+            "note_zh": "君药，散寒祛风胜湿，尤善治太阳头痛。",
+            "note_en": "Sovereign — disperses cold, dispels wind, and overcomes dampness; especially treats Tai Yang headache."
+          },
+          {
+            "phrase": "防风",
+            "type": "herb",
+            "target": "fang_feng",
+            "note_zh": "祛风解表。",
+            "note_en": "Dispels wind and releases the exterior."
+          },
+          {
+            "phrase": "苍术",
+            "type": "herb",
+            "target": "cang_zhu",
+            "note_zh": "燥湿健脾，发汗解表。",
+            "note_en": "Dries dampness, strengthens the Spleen, and induces sweating to release the exterior."
+          },
+          {
+            "phrase": "细辛",
+            "type": "herb",
+            "target": "xi_xin",
+            "note_zh": "散少阴经伏寒。",
+            "note_en": "Disperses latent cold from the Shao Yin channel."
+          },
+          {
+            "phrase": "白芷",
+            "type": "herb",
+            "target": "bai_zhi",
+            "note_zh": "入阳明经，散寒止痛。",
+            "note_en": "Enters the Yang Ming channel, disperses cold, and relieves pain."
+          },
+          {
+            "phrase": "川芎",
+            "type": "herb",
+            "target": "chuan_xiong",
+            "note_zh": "入厥阴经，活血行气止痛。",
+            "note_en": "Enters the Jue Yin channel, quickens blood, moves qi, and relieves pain."
+          },
+          {
+            "phrase": "黄芩",
+            "type": "herb",
+            "target": "huang_qin",
+            "note_zh": "清里热，制辛温之燥。",
+            "note_en": "Clears interior heat and restrains the drying of the pungent-warm herbs."
+          },
+          {
+            "phrase": "生地黄",
+            "type": "herb",
+            "target": "sheng_di_huang",
+            "note_zh": "凉血滋阴。",
+            "note_en": "Cools blood and enriches yin."
+          },
+          {
+            "phrase": "甘草",
+            "type": "herb",
+            "target": "gan_cao",
+            "note_zh": "调和诸药。",
+            "note_en": "Harmonizes the other herbs."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "yi_lin_gai_cuo",
+    "slug": "yi-lin-gai-cuo",
+    "title_zh": "医林改错",
+    "title_pinyin": "Yī Lín Gǎi Cuò",
+    "title_en": "Corrections of Errors in the Forest of Medicine",
+    "author": {
+      "zh": "王清任",
+      "pinyin": "Wáng Qīngrèn",
+      "en": "Wang Qingren"
+    },
+    "dynasty_zh": "清",
+    "dynasty_en": "Qing",
+    "approximate_date": "1830",
+    "approximate_year": 1830,
+    "significance": {
+      "zh": "清代王清任所著，以实地解剖纠正前人脏腑认识之误，并创制多首活血化瘀名方，如血府逐瘀汤、补阳还五汤等，对后世活血化瘀法影响深远。",
+      "en": "A Qing-dynasty work by Wang Qingren that corrected prior anatomical misunderstandings through direct dissection and introduced several seminal blood-quickening formulas such as Xue Fu Zhu Yu Tang and Bu Yang Huan Wu Tang, profoundly shaping the later blood-stasis school."
+    },
+    "description_zh": "清代医家王清任通过尸体解剖纠正脏腑认识，并立活血化瘀新法。",
+    "description_en": "Wang Qingren's corrective anatomy and the founding text of the modern blood-stasis (huo xue hua yu) therapeutic approach.",
+    "passages": [
+      {
+        "title_zh": "脏腑图说自序",
+        "title_en": "Preface to the Illustrated Treatise on the Viscera",
+        "chapter": "卷上 · 医林改错脏腑图说",
+        "text": "著书立说难，自古已然，遑论医乎？行医治病难，亦从古而然，遑论今乎？余尝读古人脏腑之书，疑其不确。嘉庆二年，至滦州稻地镇，适遇瘟疫，幼孩死者甚多，义冢浅埋，犬食残骸。余每至义冢检视，所见脏腑与古书所绘迥异。后又至奉天行刑之所，亲验尸首，始知前人所论脏腑之位置、形状，多有错谬。因作《脏腑图说》以正之。",
+        "translation_zh": "著书立说自古就难，何况医书？行医治病也从古以来就难，何况今日？我曾读古人论脏腑的书，怀疑其不确切。嘉庆二年，我到滦州稻地镇，适逢瘟疫流行，幼儿死亡很多，义冢浅埋，犬啃食残骸。我每到义冢察看，所见脏腑与古书所绘截然不同。后又到奉天行刑之所，亲自检验尸体，才知道前人所论脏腑的位置与形状，多有讹误。因此作《脏腑图说》以正其误。",
+        "translation_en": "Composing books and establishing doctrines has been hard since antiquity — how much more so in medicine? Practicing medicine and treating disease has been hard since antiquity — how much more so today? I once read the ancients' writings on the viscera and doubted their accuracy. In the second year of the Jiaqing reign, I traveled to Daodi in Luanzhou, where pestilence was raging. Children died in great numbers, were buried shallow in pauper graves, and dogs gnawed the remains. Each time I went to inspect those graves, the viscera I saw differed utterly from the drawings in the old books. Later I traveled to the execution grounds of Fengtian and personally examined corpses, and only then did I understand that the positions and shapes of the viscera described by earlier authors were full of errors. This is why I composed the Illustrated Treatise on the Viscera — to correct them.",
+        "annotations": [
+          {
+            "phrase": "脏腑",
+            "type": "concept",
+            "target": "zang-fu",
+            "note_zh": "中医脏腑理论远超解剖学意义。王清任之说则侧重实证解剖。",
+            "note_en": "The TCM zang-fu theory goes far beyond anatomy, but Wang Qingren's work emphasizes direct anatomical observation."
+          },
+          {
+            "phrase": "瘟疫",
+            "type": "term",
+            "note_zh": "烈性传染病，为王清任观察尸体之契机。",
+            "note_en": "A virulent epidemic — the occasion that gave Wang Qingren the opportunity to observe corpses."
+          }
+        ]
+      },
+      {
+        "title_zh": "血府逐瘀汤所治之症目",
+        "title_en": "Indications of Xue Fu Zhu Yu Tang",
+        "chapter": "卷上 · 血府逐瘀汤所治之症目",
+        "text": "头痛，胸疼，胸不任物，胸任重物，天亮出汗，食自胸右下，心里热（名曰灯笼病），瞀闷，急躁，夜睡梦多，呃逆日久不愈，饮水即呛，不眠，小儿夜啼，心跳心忙，夜不安，俗言肝气病，干呕，晚发一阵热，凡此诸症，皆血府血瘀之证也。",
+        "translation_zh": "头痛，胸痛，胸中不能容物，胸可任重物，天亮出汗，食物从胸右下坠，心里烦热（俗称灯笼病），胸闷郁结，急躁，夜多梦，久治不愈的呃逆，饮水呛咳，不眠，小儿夜啼，心跳慌乱，夜不安宁，俗称「肝气病」，干呕，入夜发一阵热——这些症状都是血府瘀血的证候。",
+        "translation_en": "Headache; chest pain; a chest that cannot bear any object, or a chest that can bear weight; sweating at dawn; food dropping down the right side of the chest; heat within (the so-called 'lantern disease'); oppressive fullness; irritability; many dreams at night; hiccup that has persisted for years without cure; choking on water; insomnia; nocturnal crying in children; racing and flustered heart; nighttime restlessness (what common speech calls 'Liver qi disease'); dry retching; a bout of fever arising at dusk — all these are signs of static blood in the 'Mansion of Blood'.",
+        "annotations": [
+          {
+            "phrase": "血府逐瘀汤",
+            "type": "formula",
+            "target": "xue_fu_zhu_yu_tang",
+            "note_zh": "王清任五逐瘀汤之代表方，活血化瘀、行气止痛。",
+            "note_en": "The representative formula of Wang Qingren's 'five blood-expelling decoctions' — quickens blood, dispels stasis, moves qi, and stops pain."
+          },
+          {
+            "phrase": "血府",
+            "type": "term",
+            "note_zh": "王清任所立概念，约当胸中膈膜之上，主藏血。",
+            "note_en": "A concept introduced by Wang Qingren — the region above the diaphragm within the chest, storing blood."
+          },
+          {
+            "phrase": "灯笼病",
+            "type": "term",
+            "note_zh": "形容心中烦热而外无显热之瘀血证。",
+            "note_en": "A graphic name for inner vexing heat without outward fever — a blood-stasis presentation."
+          },
+          {
+            "phrase": "肝气病",
+            "type": "pattern",
+            "target": "gan_qi_yu_jie",
+            "note_zh": "俗称肝气郁结，王清任指出其中不少实为血瘀。",
+            "note_en": "Commonly called 'Liver qi constraint'; Wang Qingren argued that many such cases are in fact blood stasis."
+          },
+          {
+            "phrase": "呃逆",
+            "type": "term",
+            "note_zh": "即打嗝，此处指久治不愈者多由瘀血所致。",
+            "note_en": "Hiccup — Wang notes that chronic refractory cases are often due to static blood."
+          }
+        ]
+      },
+      {
+        "title_zh": "膈下逐瘀汤方",
+        "title_en": "Ge Xia Zhu Yu Tang Formula",
+        "chapter": "卷下 · 膈下逐瘀汤",
+        "text": "膈下逐瘀汤 五灵脂炒二钱，当归三钱，川芎二钱，桃仁研泥三钱，丹皮二钱，赤芍二钱，乌药二钱，延胡索一钱，甘草三钱，香附钱半，红花三钱，枳壳钱半。治膈膜以下瘀血所致积块、小儿痞块、肚腹疼痛、卧则腹坠等症。此方以活血祛瘀为主，行气止痛为辅，专攻膈下腹内之瘀血。",
+        "translation_zh": "膈下逐瘀汤：炒五灵脂二钱，当归三钱，川芎二钱，研成泥的桃仁三钱，丹皮二钱，赤芍二钱，乌药二钱，延胡索一钱，甘草三钱，香附一钱半，红花三钱，枳壳一钱半。主治膈膜以下瘀血所致积块、小儿痞块、腹部疼痛、卧则腹部下坠等症。此方以活血祛瘀为主，行气止痛为辅，专攻膈下腹内之瘀血。",
+        "translation_en": "Ge Xia Zhu Yu Tang — stir-fried Wu Ling Zhi, two qian; Dang Gui, three qian; Chuan Xiong, two qian; Tao Ren (ground to paste), three qian; Mu Dan Pi, two qian; Chi Shao, two qian; Wu Yao, two qian; Yan Hu Suo, one qian; Gan Cao, three qian; Xiang Fu, one and a half qian; Hong Hua, three qian; and Zhi Qiao, one and a half qian. Treats abdominal masses below the diaphragm caused by static blood, childhood glomus lumps, abdominal pain, and a sensation of sagging in the abdomen when lying down. The formula quickens blood and expels stasis as its main action, with qi-moving and pain-relieving herbs as assistants, specifically targeting static blood within the abdomen below the diaphragm.",
+        "annotations": [
+          {
+            "phrase": "膈下逐瘀汤",
+            "type": "term",
+            "note_zh": "王清任五逐瘀汤之一，本典尚未录入独立方剂条目。",
+            "note_en": "One of Wang Qingren's five blood-expelling decoctions; not yet catalogued as a standalone formula in this wiki."
+          },
+          {
+            "phrase": "当归",
+            "type": "herb",
+            "target": "dang_gui",
+            "note_zh": "养血活血。",
+            "note_en": "Nourishes and quickens the blood."
+          },
+          {
+            "phrase": "川芎",
+            "type": "herb",
+            "target": "chuan_xiong",
+            "note_zh": "行气活血，血中气药。",
+            "note_en": "Moves qi and quickens blood — the qi medicinal within the blood."
+          },
+          {
+            "phrase": "桃仁",
+            "type": "herb",
+            "target": "tao_ren",
+            "note_zh": "破血逐瘀。",
+            "note_en": "Breaks blood and expels stasis."
+          },
+          {
+            "phrase": "红花",
+            "type": "herb",
+            "target": "hong_hua",
+            "note_zh": "活血通经，与桃仁相须为用。",
+            "note_en": "Quickens blood and frees the channels; paired synergistically with Tao Ren."
+          },
+          {
+            "phrase": "赤芍",
+            "type": "herb",
+            "target": "chi_shao",
+            "note_zh": "活血散瘀，凉血止痛。",
+            "note_en": "Quickens blood, disperses stasis, cools blood, and relieves pain."
+          },
+          {
+            "phrase": "牡丹皮",
+            "type": "herb",
+            "target": "mu_dan_pi",
+            "note_zh": "清热凉血，活血化瘀。",
+            "note_en": "Clears heat, cools blood, and quickens blood to resolve stasis."
+          },
+          {
+            "phrase": "延胡索",
+            "type": "herb",
+            "target": "yan_hu_suo",
+            "note_zh": "活血行气，止痛要药。",
+            "note_en": "Quickens blood and moves qi — a cardinal herb for pain."
+          },
+          {
+            "phrase": "香附",
+            "type": "herb",
+            "target": "xiang_fu",
+            "note_zh": "疏肝理气，调经止痛。",
+            "note_en": "Courses the Liver, regulates qi, harmonizes menstruation, and relieves pain."
+          },
+          {
+            "phrase": "乌药",
+            "type": "herb",
+            "target": "wu_yao",
+            "note_zh": "行气止痛，温肾散寒。",
+            "note_en": "Moves qi and relieves pain, warms the Kidney and disperses cold."
+          },
+          {
+            "phrase": "五灵脂",
+            "type": "term",
+            "note_zh": "鼯鼠粪便入药，活血止痛，本典尚未录入。",
+            "note_en": "The faeces of flying squirrels used in medicine — quickens blood and relieves pain; not yet catalogued in this wiki."
+          },
+          {
+            "phrase": "枳壳",
+            "type": "term",
+            "note_zh": "枸橘或酸橙之未成熟果实，行气宽中，本典尚未录入。",
+            "note_en": "Unripe bitter orange fruit — moves qi and loosens the middle; not yet catalogued in this wiki."
+          },
+          {
+            "phrase": "甘草",
+            "type": "herb",
+            "target": "gan_cao",
+            "note_zh": "调和诸药。",
+            "note_en": "Harmonizes the other herbs."
+          }
+        ]
+      },
+      {
+        "title_zh": "补阳还五汤方论",
+        "title_en": "Exposition of Bu Yang Huan Wu Tang",
+        "chapter": "卷下 · 补阳还五汤",
+        "text": "此方治半身不遂，口眼歪斜，语言謇涩，口角流涎，大便干燥，小便频数，遗尿不禁。黄芪四两生用，归尾二钱，赤芍一钱半，地龙一钱去土，川芎一钱，桃仁一钱，红花一钱。夫元气亏损，是其本源；气虚不能行血，血瘀脉络，是其标证。故重用黄芪大补元气，使气旺以促血行；归尾、川芎、赤芍活血和营；桃仁、红花祛瘀通络；地龙通经活络。气旺则血行，瘀去则络通——此方之妙在此。",
+        "translation_zh": "此方治疗半身不遂、口眼歪斜、言语謇涩、口角流涎、大便干燥、小便频数、遗尿不禁。生黄芪四两，当归尾二钱，赤芍一钱半，去土地龙一钱，川芎一钱，桃仁一钱，红花一钱。元气亏损是病之本源；气虚不能推动血行，血瘀于脉络是病之标证。所以重用黄芪大补元气，使气旺以推动血行；当归尾、川芎、赤芍活血和营；桃仁、红花祛瘀通络；地龙通经活络。气旺则血行，瘀去则络通——此方之精妙便在此处。",
+        "translation_en": "This formula treats hemiplegia, deviated mouth and eyes, slurred speech, drooling from the corner of the mouth, dry stools, frequent urination, and urinary incontinence. Raw Huang Qi, four liang; Dang Gui Wei, two qian; Chi Shao, one and a half qian; Di Long (soil removed), one qian; Chuan Xiong, one qian; Tao Ren, one qian; Hong Hua, one qian. Depletion of the original qi is the root of this disease; qi vacuity failing to move the blood, so that blood stagnates in the vessels and network, is its branch. Therefore a large dose of Huang Qi is used to greatly replenish the original qi, so that ample qi drives the blood onward. Dang Gui Wei, Chuan Xiong, and Chi Shao quicken the blood and harmonize the nutritive. Tao Ren and Hong Hua expel stasis and open the network vessels. Di Long frees the channels and quickens the collaterals. When the qi is vigorous the blood flows, and when the stasis is gone the network vessels open — therein lies the subtlety of this formula.",
+        "annotations": [
+          {
+            "phrase": "补阳还五汤",
+            "type": "term",
+            "note_zh": "王清任治中风后遗症之名方，本典尚未录入独立方剂条目。",
+            "note_en": "Wang Qingren's celebrated formula for sequelae of wind-stroke; not yet catalogued as a standalone formula in this wiki."
+          },
+          {
+            "phrase": "半身不遂",
+            "type": "term",
+            "note_zh": "即中风后肢体偏瘫，是王清任所立气虚血瘀学说之典型病证。",
+            "note_en": "Hemiplegia following wind-stroke — the paradigmatic case of Wang Qingren's 'qi vacuity with blood stasis' doctrine."
+          },
+          {
+            "phrase": "元气亏损",
+            "type": "concept",
+            "target": "qi-blood-fluids",
+            "note_zh": "王清任认为中风后遗症之本在元气亏损十之五。",
+            "note_en": "Wang Qingren held that the root of post-stroke sequelae was the loss of 'five parts in ten' of the original qi."
+          },
+          {
+            "phrase": "气虚",
+            "type": "pattern",
+            "target": "pi_qi_xu",
+            "note_zh": "此处泛指元气不足，为本方立论之基。",
+            "note_en": "Here qi vacuity in its broadest sense — the foundational rationale of this formula."
+          },
+          {
+            "phrase": "黄芪",
+            "type": "herb",
+            "target": "huang_qi",
+            "note_zh": "君药，重用至四两以大补元气。",
+            "note_en": "Sovereign — dosed heavily at four liang to greatly replenish the original qi."
+          },
+          {
+            "phrase": "归尾",
+            "type": "herb",
+            "target": "dang_gui",
+            "note_zh": "当归尾偏于活血化瘀。",
+            "note_en": "The tail of Dang Gui, biased toward quickening blood and dispelling stasis."
+          },
+          {
+            "phrase": "赤芍",
+            "type": "herb",
+            "target": "chi_shao",
+            "note_zh": "活血散瘀。",
+            "note_en": "Quickens blood and disperses stasis."
+          },
+          {
+            "phrase": "川芎",
+            "type": "herb",
+            "target": "chuan_xiong",
+            "note_zh": "活血行气。",
+            "note_en": "Quickens blood and moves qi."
+          },
+          {
+            "phrase": "桃仁",
+            "type": "herb",
+            "target": "tao_ren",
+            "note_zh": "破血逐瘀。",
+            "note_en": "Breaks blood and expels stasis."
+          },
+          {
+            "phrase": "红花",
+            "type": "herb",
+            "target": "hong_hua",
+            "note_zh": "活血通经。",
+            "note_en": "Quickens blood and frees the channels."
+          },
+          {
+            "phrase": "地龙",
+            "type": "herb",
+            "target": "di_long",
+            "note_zh": "通经活络。",
+            "note_en": "Frees the channels and quickens the network vessels."
+          }
+        ]
+      },
+      {
+        "title_zh": "通窍活血汤所治之症目",
+        "title_en": "Indications of Tong Qiao Huo Xue Tang",
+        "chapter": "卷上 · 通窍活血汤所治之症目",
+        "text": "头发脱落，眼疼白珠红，糟鼻子，耳聋年久，白癜风，紫癜风，紫印脸，青记脸如墨，牙疳，出气臭，妇女干血痨，小儿疳证，皆头面瘀血所致。立通窍活血汤以治之。赤芍一钱，川芎一钱，桃仁三钱研泥，红花三钱，老葱三根切碎，鲜姜三钱切碎，红枣七个去核，麝香五厘绢包。用黄酒半斤，将前七味煎至一钟，去渣，将麝香入酒内，再煎二沸，临卧服。",
+        "translation_zh": "头发脱落、眼痛白睛发红、酒糟鼻、久年耳聋、白癜风、紫癜风、紫印脸、青记如墨、牙疳、口气臭、妇女干血痨、小儿疳积——都是头面瘀血所致。故立通窍活血汤以治之。赤芍一钱，川芎一钱，研成泥的桃仁三钱，红花三钱，老葱三根切碎，鲜姜三钱切碎，红枣七个去核，麝香五厘（用绢包）。用黄酒半斤，先将前七味煎至一钟，去渣，将麝香放入酒内，再煎沸两次，临睡前服。",
+        "translation_en": "Hair falling out; eye pain with red sclera; 'wine-dreg' nose; years-long deafness; white bai-dian vitiligo; purple vitiligo; purple-blotched face; dark birthmarks black as ink; gum ulcers; foul breath; dry-blood consumption in women; infantile gan malnutrition — all are caused by static blood in the head and face. Therefore I set forth Tong Qiao Huo Xue Tang to treat them. Chi Shao, one qian; Chuan Xiong, one qian; Tao Ren (ground to paste), three qian; Hong Hua, three qian; three stalks of old scallion, cut up; fresh ginger, three qian, cut up; seven red dates with pits removed; and She Xiang (musk), five li, wrapped in silk. Using half a jin of yellow wine, decoct the first seven ingredients down to one cup, remove the dregs, add the musk to the wine, bring it to a boil twice more, and drink before bed.",
+        "annotations": [
+          {
+            "phrase": "通窍活血汤",
+            "type": "term",
+            "note_zh": "王清任五逐瘀汤之一，治头面瘀血证；本典尚未录入独立方剂条目。",
+            "note_en": "One of Wang Qingren's five blood-expelling decoctions, for blood stasis in the head and face; not yet catalogued as a standalone formula in this wiki."
+          },
+          {
+            "phrase": "头面瘀血",
+            "type": "term",
+            "note_zh": "王清任将多种五官与皮肤病归因于头面瘀血。",
+            "note_en": "Wang Qingren attributed many disorders of the sense organs and skin to blood stasis in the head and face."
+          },
+          {
+            "phrase": "赤芍",
+            "type": "herb",
+            "target": "chi_shao",
+            "note_zh": "凉血活血散瘀。",
+            "note_en": "Cools blood, quickens blood, and disperses stasis."
+          },
+          {
+            "phrase": "川芎",
+            "type": "herb",
+            "target": "chuan_xiong",
+            "note_zh": "上行头目，活血行气。",
+            "note_en": "Ascends to the head and eyes, quickens blood, and moves qi."
+          },
+          {
+            "phrase": "桃仁",
+            "type": "herb",
+            "target": "tao_ren",
+            "note_zh": "破血逐瘀。",
+            "note_en": "Breaks blood and expels stasis."
+          },
+          {
+            "phrase": "红花",
+            "type": "herb",
+            "target": "hong_hua",
+            "note_zh": "活血通经。",
+            "note_en": "Quickens blood and frees the channels."
+          },
+          {
+            "phrase": "生姜",
+            "type": "herb",
+            "target": "sheng_jiang",
+            "note_zh": "助药力上行。",
+            "note_en": "Assists the medicinals to ascend."
+          },
+          {
+            "phrase": "红枣",
+            "type": "herb",
+            "target": "da_zao",
+            "note_zh": "补中和营。",
+            "note_en": "Tonifies the middle and harmonizes the nutritive."
+          },
+          {
+            "phrase": "麝香",
+            "type": "term",
+            "note_zh": "辛香走窜，开窍通闭，为本方通窍之要药；本典尚未录入。",
+            "note_en": "Pungent, aromatic, and penetrating — opens the orifices and frees obstruction; not yet catalogued in this wiki."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "lin_zheng_zhi_nan_yi_an",
+    "slug": "lin-zheng-zhi-nan-yi-an",
+    "title_zh": "临证指南医案",
+    "title_pinyin": "Lín Zhèng Zhǐ Nán Yī Àn",
+    "title_en": "Case Records as a Guide to Clinical Practice",
+    "author": {
+      "zh": "叶天士",
+      "pinyin": "Yè Tiānshì",
+      "en": "Ye Tianshi (compiled by students)"
+    },
+    "dynasty_zh": "清",
+    "dynasty_en": "Qing",
+    "approximate_date": "1766",
+    "approximate_year": 1766,
+    "tradition": "温病学派",
+    "significance": {
+      "zh": "清代叶天士门人整理的医案巨著，按病分类，记录叶氏临证辨证、立法、遣方用药之全过程。是温病学派与清代医案学的代表性文献。",
+      "en": "A monumental casebook compiled by Ye Tianshi's disciples, organized by disease and preserving his complete clinical reasoning — pattern differentiation, therapeutic principle, and prescription. A defining text of the Warm Disease school and of Qing-dynasty case-based learning."
+    },
+    "description_zh": "清代叶天士医案汇编，是温病学派临证思维的典范读本。",
+    "description_en": "The compiled case records of Ye Tianshi — the canonical primer of Warm Disease school clinical reasoning.",
+    "passages": [
+      {
+        "title_zh": "温热篇开宗 · 卫气营血辨证总纲",
+        "title_en": "Opening of the Warm-Heat Chapter: The Cardinal Principle of Wei-Qi-Ying-Xue Differentiation",
+        "chapter": "卷一 · 温热",
+        "text": "温邪上受，首先犯肺，逆传心包。肺主气属卫，心主血属营。辨营卫气血虽与伤寒同，若论治法则与伤寒大异也。",
+        "translation_zh": "温热邪气从口鼻上部而入，最先侵犯手太阴肺经；若病势逆传，则内陷手厥阴心包。肺主一身之气，司卫外；心主血脉，属营分。因此辨别卫、气、营、血四个层次，虽然与伤寒六经辨证同样是分层论病，但温病的治法（清透为主）与伤寒（辛温发表为主）迥然不同。",
+        "translation_en": "Warm evils are contracted from above: they first invade the Lung, and in adverse progression they sink into the Pericardium. The Lung governs qi and belongs to the protective (wei) layer; the Heart governs blood and belongs to the nutritive (ying) layer. Although differentiating ying, wei, qi, and xue parallels the layered approach of Cold Damage, the method of treatment stands in sharp contrast to that of Shang Han.",
+        "annotations": [
+          {
+            "phrase": "温邪上受，首先犯肺",
+            "type": "pattern",
+            "target": "wei_fen_zheng",
+            "note_zh": "温邪初袭，病位在肺卫，为卫分证的定义。",
+            "note_en": "The initial assault of warm evil lodges in the Lung-Wei layer — the defining moment of the Wei-fen pattern."
+          },
+          {
+            "phrase": "逆传心包",
+            "type": "pattern",
+            "target": "ying_fen_zheng",
+            "note_zh": "温邪不顺传气分而反陷心包，入营动血之先兆。",
+            "note_en": "Warm evil bypassing the Qi layer to fall directly into the Pericardium — the harbinger of the Ying-fen stage."
+          },
+          {
+            "phrase": "肺主气属卫，心主血属营",
+            "type": "concept",
+            "target": "qi-blood-fluids",
+            "note_zh": "叶氏以气血统摄卫营，奠定四分层次的生理基础。",
+            "note_en": "Ye Tianshi grounds the four-layer schema in the physiology of qi and blood."
+          },
+          {
+            "phrase": "与伤寒大异",
+            "type": "term",
+            "note_zh": "温病忌辛温发汗，当以辛凉清透为法，与伤寒麻黄、桂枝诸法截然不同。",
+            "note_en": "Warm disease forbids warm-acrid diaphoresis; its method is cool-acrid venting, wholly unlike the Mahuang/Guizhi approach of Cold Damage."
+          }
+        ]
+      },
+      {
+        "title_zh": "风温案 · 肺卫失宣",
+        "title_en": "Wind-Warmth Case: Failure of Lung-Wei Diffusion",
+        "chapter": "卷五 · 风温",
+        "text": "某。风温发热，咳嗽咽痛，肢节不适，头胀，脉右寸浮数。此风温上受，肺气不宣。辛凉轻剂，桑杏汤加减。",
+        "translation_zh": "某患者，感受风温之邪，发热而咳嗽、咽痛，四肢关节不舒，头胀，右寸脉浮数。此证为风温上受，肺卫失于宣发，邪在卫分。治宜辛凉轻剂，以桑杏汤加减，轻清宣透肺卫之邪。",
+        "translation_en": "A patient presents with wind-warmth fever, cough and sore throat, malaise of the limbs, distending headache, and a floating-rapid pulse at the right cun position. This is wind-warmth striking from above, with the Lung failing to diffuse — the evil lodged in the Wei layer. Treatment calls for a light, cool-acrid formula: Sang Xing Tang with modifications, to gently disperse and vent the evil from the Lung-Wei.",
+        "annotations": [
+          {
+            "phrase": "风温发热",
+            "type": "pattern",
+            "target": "wei_fen_zheng",
+            "note_zh": "温邪在卫分，发热微恶风寒而咽痛。",
+            "note_en": "Warm evil in the Wei layer: fever with mild aversion to wind-cold and sore throat."
+          },
+          {
+            "phrase": "脉右寸浮数",
+            "type": "concept",
+            "target": "pulse-diagnosis",
+            "note_zh": "右寸主肺，浮数示风热袭肺。",
+            "note_en": "The right cun reflects the Lung; floating and rapid confirms wind-heat assailing the Lung."
+          },
+          {
+            "phrase": "辛凉轻剂",
+            "type": "term",
+            "note_zh": "叶氏治温病卫分证的立法，轻清宣透，忌重剂辛温。",
+            "note_en": "Ye's therapeutic principle for the Wei-fen stage — light, cool, and venting; heavy warm-acrid agents are contraindicated."
+          },
+          {
+            "phrase": "桑杏汤",
+            "type": "formula",
+            "target": "sang_xing_tang",
+            "note_zh": "《温病条辨》方，本案借用以宣肺润燥。",
+            "note_en": "A formula from the Wen Bing Tiao Bian, applied here to diffuse the Lung and moisten dryness."
+          }
+        ]
+      },
+      {
+        "title_zh": "脾胃案 · 中气不运",
+        "title_en": "Spleen-Stomach Case: Failure of the Middle Qi to Transport",
+        "chapter": "卷三 · 脾胃",
+        "text": "某。脉缓无力，不思饮食，食入腹胀，大便溏薄，面色萎黄，四肢倦怠。此脾虚中气不运，清阳不升。法当甘温益气，补中益气汤主之。",
+        "translation_zh": "某患者，脉象缓而无力，饮食无味，食后腹胀，大便溏泄，面色萎黄，四肢困倦乏力。此为脾气虚弱，中焦运化失职，清阳之气不能上升。当用甘温补气之法，以补中益气汤升阳益气治之。",
+        "translation_en": "A patient with a slow, forceless pulse, no appetite, abdominal distension after eating, loose stools, a sallow-yellow complexion, and weariness of the limbs. This is Spleen vacuity: the middle qi fails to transport and the clear yang cannot rise. The method is sweet-warm tonification of qi; Bu Zhong Yi Qi Tang is the master formula.",
+        "annotations": [
+          {
+            "phrase": "脾虚中气不运",
+            "type": "pattern",
+            "target": "pi_qi_xu",
+            "note_zh": "脾气虚弱，运化无权，为内伤杂病之常见证。",
+            "note_en": "Spleen qi vacuity with failure of transportation — a cardinal internal-damage pattern."
+          },
+          {
+            "phrase": "清阳不升",
+            "type": "pattern",
+            "target": "pi_qi_xia_xian",
+            "note_zh": "中气下陷的病机表述，李东垣升阳法所针对之证。",
+            "note_en": "The pathomechanism of sinking middle qi, the target of Li Dongyuan's 'raise the yang' method."
+          },
+          {
+            "phrase": "脉缓无力",
+            "type": "concept",
+            "target": "pulse-diagnosis",
+            "note_zh": "缓脉为脾之本脉，无力则示虚。",
+            "note_en": "A moderate pulse is the physiological pulse of the Spleen; its weakness here reveals vacuity."
+          },
+          {
+            "phrase": "补中益气汤",
+            "type": "formula",
+            "target": "bu_zhong_yi_qi_tang",
+            "note_zh": "李东垣方，甘温除热、升阳举陷的代表方。",
+            "note_en": "Li Dongyuan's formula — the exemplar of sweet-warm tonification and raising the sunken yang."
+          }
+        ]
+      },
+      {
+        "title_zh": "肝风案 · 肝阳化风",
+        "title_en": "Liver-Wind Case: Liver Yang Transforming into Wind",
+        "chapter": "卷一 · 肝风",
+        "text": "某。头目眩晕，肢体麻木，时或抽掣，舌绛少津，脉弦细而数。此水亏木旺，肝阳化风，非外来之风也。法当柔肝熄风，育阴潜阳，不可妄投风药。",
+        "translation_zh": "某患者，头晕目眩，肢体发麻，时有抽搐掣动，舌质红绛而津液不足，脉弦细而带数。此为肾水亏虚而肝木偏旺，肝阳上亢化生内风，并非外感风邪。治当柔养肝阴，平肝熄风，滋育真阴而潜降浮阳，切不可妄用祛风散邪之品。",
+        "translation_en": "A patient suffers dizziness and blurred vision, numbness of the limbs, intermittent twitching, a crimson tongue with scanty fluids, and a wiry-thin rapid pulse. This is Water depleted and Wood flourishing: Liver yang has transformed into internal wind — not wind from without. The method is to soften the Liver and extinguish wind, nourish yin and subdue the floating yang. Dispersing wind-medicinals must never be casually prescribed.",
+        "annotations": [
+          {
+            "phrase": "头目眩晕，肢体麻木",
+            "type": "pattern",
+            "target": "gan_yang_shang_kang",
+            "note_zh": "肝阳上亢的典型症候，为内风欲动之先兆。",
+            "note_en": "The cardinal presentation of ascendant Liver yang — a harbinger of stirring internal wind."
+          },
+          {
+            "phrase": "舌绛少津",
+            "type": "pattern",
+            "target": "gan_yin_xu",
+            "note_zh": "肝肾阴亏，津液不能上承。",
+            "note_en": "Liver and Kidney yin depletion — fluids cannot ascend to moisten."
+          },
+          {
+            "phrase": "肝阳化风",
+            "type": "term",
+            "note_zh": "叶氏首倡「阳化内风」之说，内风之源在肝肾阴虚。",
+            "note_en": "Ye Tianshi's seminal doctrine: internal wind arises when yang transforms, rooted in Liver-Kidney yin vacuity."
+          },
+          {
+            "phrase": "柔肝熄风",
+            "type": "term",
+            "note_zh": "不用辛散风药，而以酸甘咸润之品养阴潜阳。",
+            "note_en": "Not with acrid wind-dispersing herbs, but with sour, sweet, and salty fluids to nourish yin and anchor yang."
+          }
+        ]
+      },
+      {
+        "title_zh": "咳嗽案 · 燥伤肺阴",
+        "title_en": "Cough Case: Dryness Injuring Lung Yin",
+        "chapter": "卷四 · 咳嗽",
+        "text": "某。秋燥伤肺，干咳无痰，咽喉不利，鼻燥唇干，脉右寸细数。此燥邪化火，劫烁肺津。宜辛凉甘润，桑杏汤加沙参、麦冬之属。",
+        "translation_zh": "某患者，秋令燥邪伤肺，干咳而无痰，咽喉不利，鼻干唇燥，右寸脉细数。此为温燥化火，耗伤肺中津液，肺失清润。治宜辛凉甘润，以桑杏汤加沙参、麦冬等养阴润肺之品。",
+        "translation_en": "A patient in autumn, dryness injuring the Lung: dry cough without phlegm, discomfort of the throat, dry nose and parched lips, a thin-rapid pulse at the right cun. This is dryness transforming into fire, scorching the Lung fluids. The method is cool-acrid and sweet-moistening — Sang Xing Tang supplemented with Sha Shen and Mai Dong.",
+        "annotations": [
+          {
+            "phrase": "燥邪化火，劫烁肺津",
+            "type": "pattern",
+            "target": "fei_yin_xu",
+            "note_zh": "温燥伤阴，肺津受灼，发为干咳无痰。",
+            "note_en": "Warm dryness injuring yin — Lung fluids scorched, producing dry cough without phlegm."
+          },
+          {
+            "phrase": "桑杏汤",
+            "type": "formula",
+            "target": "sang_xing_tang",
+            "note_zh": "轻宣燥邪，凉润肺金。",
+            "note_en": "Lightly disperses dryness and cool-moistens the Metal organ."
+          },
+          {
+            "phrase": "沙参",
+            "type": "herb",
+            "target": "sha_shen",
+            "note_zh": "甘凉养阴，清肺生津。",
+            "note_en": "Sweet and cool, nourishes yin, clears the Lung, and engenders fluids."
+          },
+          {
+            "phrase": "麦冬",
+            "type": "herb",
+            "target": "mai_dong",
+            "note_zh": "甘寒润肺，清心除烦。",
+            "note_en": "Sweet and cold — moistens the Lung and clears Heart vexation."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "bin_hu_mai_xue",
+    "slug": "bin-hu-mai-xue",
+    "title_zh": "濒湖脉学",
+    "title_pinyin": "Bīn Hú Mài Xué",
+    "title_en": "Binhu's Sphygmology",
+    "author": {
+      "zh": "李时珍",
+      "pinyin": "Lǐ Shízhēn",
+      "en": "Li Shizhen"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming",
+    "approximate_date": "1564",
+    "approximate_year": 1564,
+    "significance": {
+      "zh": "明代李时珍所著脉学专书，以歌诀体系统论述二十七脉（后世扩为二十八脉）的脉象、主病与鉴别要点。语言精炼，便于记诵，是历代学脉者必读经典。",
+      "en": "Li Shizhen's Ming-dynasty pulse monograph, presenting the 27 (later 28) classical pulses through memorable verse, covering pulse image, principal indications, and points of differentiation. Concise and mnemonic, it has remained the standard primer for pulse study across centuries."
+    },
+    "description_zh": "明代李时珍著，以歌诀体系统论述二十八脉，是脉学入门与临证参考的权威文献。",
+    "description_en": "Li Shizhen's Ming-dynasty verse primer on the 28 classical pulses, the authoritative reference for sphygmology in both study and clinical practice.",
+    "passages": [
+      {
+        "title_zh": "浮脉 · 体状诗",
+        "title_en": "The Floating Pulse: Verse on Its Form",
+        "chapter": "卷一 · 二十七脉（阳）",
+        "text": "浮脉惟从肉上行，如循榆荚似毛轻。三秋得令知无恙，久病逢之却可惊。",
+        "translation_zh": "浮脉的特征是脉气行于肌肉之上，轻轻按之即得，指下如同抚循榆荚，又像羽毛般轻飘。秋令三月肺金当令，见浮脉乃四时正脉，不足为病；但久病虚损之人忽现浮脉，则是正气浮越、根气欲脱之象，最为可惊。",
+        "translation_en": "The Floating pulse travels only upon the flesh; under the finger it feels like brushing elm seeds, light as down. In the three months of autumn it is the seasonal pulse — no cause for alarm. Yet when one chronically ill meets it, the root qi is deserting — and that is truly to be feared.",
+        "annotations": [
+          {
+            "phrase": "浮脉",
+            "type": "concept",
+            "target": "pulse-diagnosis",
+            "note_zh": "二十八脉之首，轻取即得，重按稍减，主表证。",
+            "note_en": "The first of the twenty-eight pulses — felt on light touch and diminished on pressure; it governs exterior patterns."
+          },
+          {
+            "phrase": "三秋得令",
+            "type": "term",
+            "note_zh": "肺应秋，脉应浮，为四时平脉。",
+            "note_en": "The Lung corresponds to autumn; its proper pulse is floating — the physiological pulse of the season."
+          },
+          {
+            "phrase": "久病逢之却可惊",
+            "type": "term",
+            "note_zh": "久病本当沉细，忽浮为虚阳外浮，根气将脱之候。",
+            "note_en": "Chronic disease should present sinking and thin pulses; a sudden floating pulse betrays deserting yang — a dire sign."
+          }
+        ]
+      },
+      {
+        "title_zh": "沉脉 · 体状诗",
+        "title_en": "The Sinking Pulse: Verse on Its Form",
+        "chapter": "卷一 · 二十七脉（阴）",
+        "text": "水行润下脉来沉，筋骨之间软滑匀。女子寸兮男子尺，四时如此号为平。",
+        "translation_zh": "沉脉如水性润下，脉气潜行于筋骨之间，重按乃得，指下柔软、滑利、均匀。女子两寸脉、男子两尺脉本来偏沉，若四季皆如此而无他异，即为平人之常脉，并非病候。",
+        "translation_en": "Like water that flows downward, the Sinking pulse comes deep; between sinew and bone it is soft, slippery, and even. In women at the cun and in men at the chi it naturally sinks — and if it holds so through the four seasons, it is called the balanced pulse of the healthy.",
+        "annotations": [
+          {
+            "phrase": "沉脉",
+            "type": "concept",
+            "target": "pulse-diagnosis",
+            "note_zh": "与浮脉相对，重按乃得，主里证。",
+            "note_en": "The counterpart of the Floating pulse — obtained on deep pressure; it governs interior patterns."
+          },
+          {
+            "phrase": "女子寸兮男子尺",
+            "type": "term",
+            "note_zh": "李时珍指出生理性沉脉的部位差异，不可一概作病论。",
+            "note_en": "Li Shizhen notes physiological sinking at sex-specific positions — it should not be taken as pathology."
+          },
+          {
+            "phrase": "四时如此号为平",
+            "type": "term",
+            "note_zh": "平脉即无病之常脉，区别于病理性沉脉。",
+            "note_en": "The 'balanced pulse' — the physiological baseline — distinguished from the pathological sinking pulse."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "ben_cao_gang_mu",
+    "slug": "ben-cao-gang-mu",
+    "title_zh": "本草纲目",
+    "title_pinyin": "Ben Cao Gang Mu",
+    "title_en": "Compendium of Materia Medica",
+    "author": {
+      "zh": "李时珍",
+      "en": "Li Shizhen"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming",
+    "approximate_date": "1578 (published 1596)",
+    "approximate_year": 1578,
+    "tradition": "materia_medica",
+    "significance": {
+      "zh": "中国药学史上最伟大的著作之一。全书五十二卷，载药1892种，方剂11096首，附药图1109幅。以纲目分类法重新编排本草，对后世本草学影响深远。",
+      "en": "One of the greatest works in the history of Chinese pharmacology. Spanning 52 volumes, it documents 1,892 medicinal substances, 11,096 formulas, and 1,109 illustrations. Its taxonomic classification system reorganized materia medica and profoundly influenced subsequent pharmacological scholarship."
+    },
+    "description_zh": "《本草纲目》为明代医药学家李时珍历时二十七年编成之本草巨著。全书以「纲」「目」二级分类，将药物分为十六部六十类，首创自然分类法。书中不仅汇集历代本草精华，更以亲身考察、实验验证为据，纠正前人诸多谬误。",
+    "description_en": "The Compendium of Materia Medica (Bencao Gangmu) is a monumental pharmacological work compiled by the Ming-dynasty physician-naturalist Li Shizhen over twenty-seven years. It organizes medicinal substances into 16 divisions and 60 classes using a pioneering two-level taxonomic system. The work synthesizes centuries of pharmacological knowledge while correcting numerous errors through firsthand investigation and empirical verification.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-15"
+    }
+  },
+  {
+    "key": "xiao_er_yao_zheng_zhi_jue",
+    "slug": "xiao-er-yao-zheng-zhi-jue",
+    "title_zh": "小儿药证直诀",
+    "title_pinyin": "Xiǎo Ér Yào Zhèng Zhí Jué",
+    "title_en": "Key to Therapeutics of Children's Diseases",
+    "author": {
+      "zh": "钱乙",
+      "pinyin": "Qián Yǐ",
+      "en": "Qian Yi"
+    },
+    "dynasty_zh": "宋",
+    "dynasty_en": "Song",
+    "approximate_date": "1119",
+    "approximate_year": 1119,
+    "significance": {
+      "zh": "中国现存最早的儿科专著之一。钱乙在书中创立了小儿五脏辨证体系，并化裁古方为六味地黄丸等经典方剂，对后世儿科学和方剂学影响深远。",
+      "en": "One of the earliest extant Chinese monographs on pediatrics. Qian Yi established a Five-Organ pattern differentiation system for children and adapted classical formulas — most notably Liu Wei Di Huang Wan — profoundly influencing later pediatric and formulary traditions."
+    },
+    "description_zh": "宋代儿科名家钱乙的临证经验，由其弟子阎孝忠整理而成。全书论述小儿生理病理特点，以五脏为纲辨证施治，载方百余首，为中医儿科学的奠基之作。",
+    "description_en": "A record of the clinical experience of the Song-dynasty pediatric master Qian Yi, compiled by his disciple Yan Xiaozhong. The text discusses the physiological and pathological characteristics of children, organizes diagnosis and treatment around the Five Organs, and contains over one hundred formulas. It is regarded as the founding work of Chinese pediatric medicine.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "bei_ji_qian_jin_yao_fang",
+    "slug": "bei-ji-qian-jin-yao-fang",
+    "title_zh": "备急千金要方",
+    "title_pinyin": "Bèi Jí Qiān Jīn Yào Fāng",
+    "title_en": "Essential Formulas Worth a Thousand Gold for Emergencies",
+    "author": {
+      "zh": "孙思邈",
+      "pinyin": "Sūn Sīmiǎo",
+      "en": "Sun Simiao"
+    },
+    "dynasty_zh": "唐",
+    "dynasty_en": "Tang Dynasty",
+    "approximate_date": "c. 652",
+    "approximate_year": 652,
+    "significance": {
+      "zh": "唐代孙思邈所著的综合性医学巨著，共三十卷。书中广收前代经方并加入作者临证经验，内容涵盖内、外、妇、儿、五官、针灸、食治、养生等几乎全部医学门类，是唐以前医学成就的集大成者，对后世方剂学与临床医学影响极为深远。",
+      "en": "A comprehensive thirty-volume medical work by the Tang-dynasty physician Sun Simiao. It gathers classical formulas from earlier periods and integrates the author's own clinical experience, covering internal, external, gynecological, pediatric, ophthalmological, acupuncture, dietary, and nourishing-life disciplines. It represents the culmination of pre-Tang medical knowledge and exerted a profound influence on subsequent formulary and clinical traditions."
+    },
+    "description_zh": "唐代孙思邈撰，共三十卷，载方逾五千首。全书以「人命至重，有贵千金」为立论根本，强调医德与临床实用并重，为中国现存最早的医学百科全书之一。",
+    "description_en": "Compiled by the Tang-dynasty physician Sun Simiao in thirty volumes, the work records more than five thousand formulas. Its guiding principle — that a human life is worth more than a thousand pieces of gold — places medical ethics on equal footing with clinical utility. It stands as one of the earliest extant encyclopedic medical compendia in Chinese history.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "ben_cao_yan_yi",
+    "slug": "ben-cao-yan-yi",
+    "title_zh": "本草衍义",
+    "title_pinyin": "Běn Cǎo Yǎn Yì",
+    "title_en": "Dilations on the Materia Medica",
+    "author": {
+      "zh": "寇宗奭",
+      "pinyin": "Kòu Zōngshì",
+      "en": "Kou Zongshi"
+    },
+    "dynasty_zh": "北宋",
+    "dynasty_en": "Northern Song Dynasty",
+    "approximate_date": "1116",
+    "approximate_year": 1116,
+    "significance": {
+      "zh": "北宋寇宗奭所撰，是宋代本草学承前启后的重要著作。书中在《嘉祐本草》、《图经本草》的基础上对药性、形态、炮制、鉴别加以辨析考订，影响后世诸家本草，尤为金元诸家所重。",
+      "en": "A pivotal Northern Song materia medica by Kou Zongshi that builds upon the Jiayou Bencao and Tujing Bencao. By reexamining drug nature, morphology, processing, and identification, the work provided critical corrections and influenced later herbal scholarship, particularly valued by the great Jin-Yuan physicians."
+    },
+    "description_zh": "北宋寇宗奭撰，全书二十卷，对四百余种药物的性味、功效、鉴别与使用经验加以阐发和辨正，被金元医家张元素、李东垣、朱丹溪等多所引用。",
+    "description_en": "A twenty-volume work by the Northern Song pharmacologist Kou Zongshi, elaborating and correcting the properties, actions, identification, and clinical use of more than four hundred medicinal substances. It was widely cited by Jin-Yuan masters such as Zhang Yuansu, Li Dongyuan, and Zhu Danxi, and shaped later pharmacological thought.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "chong_ding_tong_su_shang_han_lun",
+    "slug": "chong-ding-tong-su-shang-han-lun",
+    "title_zh": "重订通俗伤寒论",
+    "title_pinyin": "Chóng Dìng Tōng Sú Shāng Hán Lùn",
+    "title_en": "Revised Popular Treatise on Cold Damage",
+    "author": {
+      "zh": "俞根初 原著；何廉臣 重订",
+      "pinyin": "Yú Gēnchū; He Liánchén",
+      "en": "Yu Genchu (orig.); He Lianchen (rev.)"
+    },
+    "dynasty_zh": "清末民初",
+    "dynasty_en": "Late Qing / Early Republic",
+    "approximate_date": "1916",
+    "approximate_year": 1916,
+    "significance": {
+      "zh": "清末绍派伤寒代表医家俞根初原著《通俗伤寒论》，经何廉臣重订、增注、刊行，将伤寒与温病学说熔于一炉，并结合江南地区多湿多温的实际临证经验，是近代南方伤寒学派的重要代表作。",
+      "en": "He Lianchen's revision, annotation, and publication of Yu Genchu's Tongsu Shanghan Lun, a defining work of the Shaoxing school of Cold Damage. The text fuses Cold Damage and Warm Disease doctrines and adapts them to the damp, warm climate of the Jiangnan region, making it a principal expression of modern southern Cold Damage scholarship."
+    },
+    "description_zh": "本书在俞根初《通俗伤寒论》的基础上，由清末民初绍兴名医何廉臣补订增注而成。书中以伤寒六经为纲，融合温病卫气营血与三焦辨证，议论六淫兼夹、湿温秋燥尤详，体例切合江南临证。",
+    "description_en": "This edition builds on Yu Genchu's Tongsu Shanghan Lun with extensive revisions and commentary by the late-Qing/early-Republican Shaoxing physician He Lianchen. Organized around the Six Channels of Cold Damage, the work integrates Warm Disease doctrines of the Four Levels and Three Burners, with particular attention to mixed contractions, Damp-Warmth, and autumn Dryness as encountered in Jiangnan clinical practice.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "ci_shi_nan_zhi",
+    "slug": "ci-shi-nan-zhi",
+    "title_zh": "此事难知",
+    "title_pinyin": "Cǐ Shì Nán Zhī",
+    "title_en": "These Things Are Hard to Know",
+    "author": {
+      "zh": "王好古",
+      "pinyin": "Wáng Hàogǔ",
+      "en": "Wang Haogu"
+    },
+    "dynasty_zh": "元",
+    "dynasty_en": "Yuan Dynasty",
+    "approximate_date": "c. 1308",
+    "approximate_year": 1308,
+    "significance": {
+      "zh": "元代易水学派医家王好古所著，记录其师张元素、李东垣论医之语及自己的心得。书中阐发脏腑辨证、六经与脏腑病机之关系、用药归经之说，是易水学派理论的重要代表作。",
+      "en": "A Yuan-dynasty work by Wang Haogu recording the medical teachings of his masters Zhang Yuansu and Li Dongyuan together with his own reflections. It develops Zang-Fu pattern differentiation, the relationship between the Six Channels and the Zang-Fu, and the theory of channel-entry of medicinals — representing key doctrines of the Yishui current."
+    },
+    "description_zh": "元代王好古撰，名「此事难知」以示医理精微难尽。全书上下两卷，问答体裁，辑录师说与己见，所论脏腑用药、六经归属，深得易水学派心法。",
+    "description_en": "Composed in the Yuan dynasty by Wang Haogu, the title — literally 'These Things Are Hard to Know' — acknowledges the subtlety of medical doctrine. Arranged in two volumes in question-and-answer form, it assembles the teachings of his masters together with his own insights, expressing the core clinical reasoning of the Yishui school.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "dan_xi_xin_fa",
+    "slug": "dan-xi-xin-fa",
+    "title_zh": "丹溪心法",
+    "title_pinyin": "Dān Xī Xīn Fǎ",
+    "title_en": "Teachings of Master Danxi",
+    "author": {
+      "zh": "朱震亨（朱丹溪）原著；门人整理",
+      "pinyin": "Zhū Zhènhēng (Zhū Dānxī)",
+      "en": "Zhu Zhenheng (Zhu Danxi); compiled by his disciples"
+    },
+    "dynasty_zh": "元",
+    "dynasty_en": "Yuan Dynasty",
+    "approximate_date": "c. 1481 (compiled posthumously)",
+    "approximate_year": 1481,
+    "significance": {
+      "zh": "元代养阴学派创始人朱丹溪的临证心得，由其门人整理而成。书中首倡「阳常有余，阴常不足」之说，重视相火、滋阴降火，开明清养阴理论之先河，为金元四大家思想的重要代表。",
+      "en": "A compilation of the clinical teachings of Zhu Danxi, founder of the Yin-Nourishing current, put together by his disciples. Articulating the famous thesis that 'yang is constantly in surplus, yin constantly insufficient,' the work highlights ministerial fire and the need to enrich yin and clear fire — an outlook that shaped Ming and Qing medical thinking and remains central among the Four Masters of the Jin-Yuan."
+    },
+    "description_zh": "元代朱丹溪临证思想的集大成作，由其弟子整理成书。全书按病分类，论治外感、内伤、妇、儿等病证，尤以阐发滋阴降火法为特色，影响明清医学甚深。",
+    "description_en": "The definitive compilation of Zhu Danxi's clinical doctrine, assembled by his disciples after his death. Arranged by disease, the text treats externally contracted and internal damage conditions as well as gynecological and pediatric complaints, distinguished throughout by its emphasis on enriching yin and clearing fire — a method that profoundly shaped Ming and Qing medicine.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "fu_qing_zhu_nv_ke",
+    "slug": "fu-qing-zhu-nv-ke",
+    "title_zh": "傅青主女科",
+    "title_pinyin": "Fù Qīngzhǔ Nǚ Kē",
+    "title_en": "Fu Qingzhu's Gynecology",
+    "author": {
+      "zh": "傅山（傅青主）",
+      "pinyin": "Fù Shān (Fù Qīngzhǔ)",
+      "en": "Fu Shan (Fu Qingzhu)"
+    },
+    "dynasty_zh": "清",
+    "dynasty_en": "Qing Dynasty",
+    "approximate_date": "1827 (first printed)",
+    "approximate_year": 1827,
+    "significance": {
+      "zh": "清代傅山所遗妇科经验，身后由后人辑刊。书中辨证精当、立方简要、疗效显著，尤以调理肝脾肾治妇人经带胎产为特色，是清代妇科学的代表性著作之一。",
+      "en": "A gynecological manuscript by the early-Qing physician Fu Shan, printed posthumously. Prized for its precise pattern differentiation, concise prescriptions, and strong clinical results — particularly through the regulation of Liver, Spleen, and Kidney in menstrual, leucorrheal, gestational, and postpartum disorders — it is regarded as one of the most influential Qing-dynasty works on women's medicine."
+    },
+    "description_zh": "清代傅山所著妇科专书，身后始有刻本传世。全书以经、带、胎、产、崩、漏诸门为纲，每证一方，方多以调肝、补脾、益肾立法，为后世临床妇科所宗。",
+    "description_en": "A Qing-dynasty monograph on women's medicine by Fu Shan, first printed long after his death. Organized under the headings of menstruation, leucorrhea, pregnancy, childbirth, flooding, and spotting, each pattern is paired with a single formula. The prescriptions characteristically soothe the Liver, tonify the Spleen, and supplement the Kidney, forming a clinical model widely followed in later gynecology.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "fu_ren_da_quan_liang_fang",
+    "slug": "fu-ren-da-quan-liang-fang",
+    "title_zh": "妇人大全良方",
+    "title_pinyin": "Fù Rén Dà Quán Liáng Fāng",
+    "title_en": "Complete Compendium of Fine Formulas for Women",
+    "author": {
+      "zh": "陈自明",
+      "pinyin": "Chén Zìmíng",
+      "en": "Chen Ziming"
+    },
+    "dynasty_zh": "南宋",
+    "dynasty_en": "Southern Song Dynasty",
+    "approximate_date": "1237",
+    "approximate_year": 1237,
+    "significance": {
+      "zh": "南宋陈自明所著，是中国现存较早且体系完整的妇科学专著。全书二十四卷，分八门，论述调经、众疾、求嗣、胎教、妊娠、坐月、产难、产后，奠定了后世中医妇科学的基本格局。",
+      "en": "A Southern Song gynecological compendium by Chen Ziming and one of the earliest systematically organized works on women's medicine in the Chinese tradition. Its twenty-four volumes are arranged in eight divisions — menstruation, miscellaneous disorders, conception, fetal education, pregnancy, confinement, difficult labor, and postpartum — establishing the structural framework followed by later TCM gynecology."
+    },
+    "description_zh": "南宋陈自明撰，成书于淳祐七年，是现存较早的综合性妇产科专书。全书分八门二百六十余论，每论后附方，广集宋以前妇科经验，为中医妇科学之源流代表作。",
+    "description_en": "Written by the Southern Song physician Chen Ziming and completed in 1237, this is one of the earliest extant comprehensive works on obstetrics and gynecology. Organized into eight divisions and more than 260 discussions — each followed by formulas — it synthesizes gynecological knowledge from before the Song and serves as a foundational source for the TCM gynecological tradition.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "ji_sheng_fang",
+    "slug": "ji-sheng-fang",
+    "title_zh": "济生方",
+    "title_pinyin": "Jì Shēng Fāng",
+    "title_en": "Formulas to Aid the Living",
+    "author": {
+      "zh": "严用和",
+      "pinyin": "Yán Yònghé",
+      "en": "Yan Yonghe"
+    },
+    "dynasty_zh": "南宋",
+    "dynasty_en": "Southern Song Dynasty",
+    "approximate_date": "1253",
+    "approximate_year": 1253,
+    "significance": {
+      "zh": "南宋严用和积其四十年临证经验而成的方书。书中立论重视脾肾、擅用温补，为后世肾气丸类方的发展提供了重要源流，如济生肾气丸、归脾汤等皆载于此书。",
+      "en": "A Southern Song formulary distilled from Yan Yonghe's forty years of clinical practice. Its doctrinal emphasis on the Spleen and Kidney and on warming-supplementing strategies provided a crucial source for later developments of the Kidney Qi line — including Jisheng Shenqi Wan and Gui Pi Tang, both first recorded here."
+    },
+    "description_zh": "南宋严用和著，成书于宝祐元年。全书十卷，载方四百余首，内容兼及内、外、妇、儿各科。其温补脾肾、调和气血之论，对金元以后诸家颇有启发。",
+    "description_en": "A ten-volume Southern Song formulary by Yan Yonghe, completed in 1253 and containing over four hundred formulas spanning internal, external, gynecological, and pediatric medicine. Its doctrines on warming-supplementing the Spleen and Kidney and regulating qi and blood influenced numerous physicians of the Jin-Yuan and later eras.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "jiao_zhu_fu_ren_liang_fang",
+    "slug": "jiao-zhu-fu-ren-liang-fang",
+    "title_zh": "校注妇人良方",
+    "title_pinyin": "Jiào Zhù Fù Rén Liáng Fāng",
+    "title_en": "Annotated Edition of the Fine Formulas for Women",
+    "author": {
+      "zh": "薛己 校注；陈自明 原著",
+      "pinyin": "Xuē Jǐ; Chén Zìmíng",
+      "en": "Xue Ji (annotator); Chen Ziming (orig.)"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming Dynasty",
+    "approximate_date": "c. 1547",
+    "approximate_year": 1547,
+    "significance": {
+      "zh": "明代薛己在陈自明《妇人大全良方》基础上删繁补缺、加以校注而成。薛己重视脾胃与命门，临证多用八珍、逍遥、归脾、六味、八味诸方，使本书兼具宋代妇科经典与明代温补学派特色。",
+      "en": "A Ming edition in which Xue Ji revises and annotates Chen Ziming's Fine Formulas for Women. Xue Ji's emphasis on the Spleen-Stomach and the Gate of Vitality — expressed through his frequent use of Ba Zhen Tang, Xiao Yao San, Gui Pi Tang, Liu Wei Di Huang Wan, and Ba Wei Di Huang Wan — gives this edition both the authority of the Song gynecological classic and the distinctive flavor of the Ming warming-supplementing current."
+    },
+    "description_zh": "明薛己校注，成书于嘉靖年间。本书在南宋陈自明原书基础上删订、补入薛氏治验，并以温补法融入妇科调治，为后世妇科常用参考。",
+    "description_en": "Xue Ji's Ming-dynasty annotated edition of Chen Ziming's Southern Song gynecological classic, produced during the Jiajing reign. Xue Ji trims and revises the original text while integrating his own clinical records and characteristic warming-supplementing approach, producing a reference frequently consulted in later gynecological practice.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "jing_yue_quan_shu",
+    "slug": "jing-yue-quan-shu",
+    "title_zh": "景岳全书",
+    "title_pinyin": "Jǐng Yuè Quán Shū",
+    "title_en": "The Complete Works of Jingyue",
+    "author": {
+      "zh": "张介宾（张景岳）",
+      "pinyin": "Zhāng Jièbīn (Zhāng Jǐngyuè)",
+      "en": "Zhang Jiebin (Zhang Jingyue)"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming Dynasty",
+    "approximate_date": "1624",
+    "approximate_year": 1624,
+    "significance": {
+      "zh": "明代张景岳集毕生学术与临证经验而成的综合性医学巨著，共六十四卷。书中系统阐发「阳非有余，阴本不足」的理论，倡导温补真阴真阳，是明代温补学派的代表著作，并对《内经》、脉法、方药、各科病证作系统论述。",
+      "en": "A comprehensive sixty-four-volume Ming work by Zhang Jingyue gathering the fruits of his lifelong scholarship and practice. Systematically developing the thesis that 'yang is not in surplus, yin is fundamentally insufficient,' it champions warming and supplementing true yin and true yang — the hallmark doctrine of the Ming warming-supplementing current — and provides comprehensive commentary on the Neijing, pulse diagnosis, formulas, and each clinical specialty."
+    },
+    "description_zh": "明代张景岳撰，凡六十四卷，涵盖医论、脉法、伤寒、杂证、妇人、小儿、外科、本草、新方八阵、古方八阵等。其温补学说与辨证思路，对明清以后临床医学影响深远。",
+    "description_en": "A sixty-four-volume Ming compendium by Zhang Jingyue, covering medical doctrine, pulse diagnosis, Cold Damage, miscellaneous disorders, gynecology, pediatrics, external medicine, materia medica, and the Eight Arrays of new and ancient formulas. Its warming-supplementing theory and clinical reasoning exerted a lasting influence on later Ming and Qing medicine.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "lan_shi_mi_cang",
+    "slug": "lan-shi-mi-cang",
+    "title_zh": "兰室秘藏",
+    "title_pinyin": "Lán Shì Mì Cáng",
+    "title_en": "Secret Treasury of the Orchid Chamber",
+    "author": {
+      "zh": "李杲（李东垣）",
+      "pinyin": "Lǐ Gǎo (Lǐ Dōngyuán)",
+      "en": "Li Gao (Li Dongyuan)"
+    },
+    "dynasty_zh": "金",
+    "dynasty_en": "Jin Dynasty",
+    "approximate_date": "c. 1276 (pub. posth.)",
+    "approximate_year": 1276,
+    "significance": {
+      "zh": "金代补土派宗师李东垣晚年所撰，与《脾胃论》、《内外伤辨惑论》同为其学术三部曲之一。书中详述内伤脾胃致病之机与辨治，载补中益气汤等众多传世名方。",
+      "en": "A late work by the Jin-dynasty master Li Dongyuan, founder of the Spleen-Earth-Supplementing current, and one of the three principal expressions of his doctrine alongside the Piwei Lun and the Neiwai Shangbian Huolun. It explores the pathogenesis and treatment of internal damage to the Spleen and Stomach and records enduring formulas including Bu Zhong Yi Qi Tang."
+    },
+    "description_zh": "金代李东垣撰，共三卷。书以脾胃内伤立论，分饮食劳倦、妇人杂病、疮疡等门，每门下详陈病机、辨证与方药，是补土派临床经验的集中体现。",
+    "description_en": "A three-volume Jin-dynasty work by Li Dongyuan, grounded in his doctrine of internal damage to the Spleen and Stomach. Arranged into sections on dietary and taxation damage, women's miscellaneous disorders, sores and lesions, and more, each chapter details pathogenesis, pattern differentiation, and formulas — a concentrated record of the clinical legacy of the Spleen-Earth-Supplementing current.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "nei_ke_zhai_yao",
+    "slug": "nei-ke-zhai-yao",
+    "title_zh": "内科摘要",
+    "title_pinyin": "Nèi Kē Zhāi Yào",
+    "title_en": "Excerpts on Internal Medicine",
+    "author": {
+      "zh": "薛己",
+      "pinyin": "Xuē Jǐ",
+      "en": "Xue Ji"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming Dynasty",
+    "approximate_date": "1529",
+    "approximate_year": 1529,
+    "significance": {
+      "zh": "明代薛己所著，以内科病证为主的验案选录，是现存较早以「内科」命名、以病案体裁为主的著作之一。书中体现薛氏重视脾胃、肾命门，善用温补方药的学术特点。",
+      "en": "A Ming-dynasty casebook by Xue Ji focused on internal-medicine disorders — one of the earliest extant works to use 'internal medicine' in its title and to foreground the case-record genre. It expresses Xue Ji's characteristic emphasis on the Spleen-Stomach and the Kidney Gate of Vitality, treated through warming-supplementing formulas."
+    },
+    "description_zh": "明代薛己撰，上下二卷。书中以作者亲历的内科病案为主，辨证论治紧扣脾胃与肾命，常用八珍、归脾、六味、八味等方，反映明代温补学派的临床面貌。",
+    "description_en": "A two-volume Ming case-record work by Xue Ji. Composed chiefly of internal-medicine cases drawn from his own practice, it ties pattern differentiation and treatment tightly to the Spleen-Stomach and the Kidney Gate of Vitality, frequently employing Ba Zhen Tang, Gui Pi Tang, Liu Wei Di Huang Wan, and Ba Wei Di Huang Wan — a characteristic portrait of Ming warming-supplementing practice.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "pu_ji_ben_shi_fang",
+    "slug": "pu-ji-ben-shi-fang",
+    "title_zh": "普济本事方",
+    "title_pinyin": "Pǔ Jì Běn Shì Fāng",
+    "title_en": "Formulas of Universal Benefit from My Own Practice",
+    "author": {
+      "zh": "许叔微",
+      "pinyin": "Xǔ Shūwēi",
+      "en": "Xu Shuwei"
+    },
+    "dynasty_zh": "南宋",
+    "dynasty_en": "Southern Song Dynasty",
+    "approximate_date": "c. 1132",
+    "approximate_year": 1132,
+    "significance": {
+      "zh": "南宋伤寒大家许叔微所著，是中国早期医学医案体著作之一。书中记录作者亲见亲治之验案三百余首，每案附方并加按语，以实录形式保存了宋代经方临证运用的宝贵经验。",
+      "en": "A Southern Song work by the Cold Damage master Xu Shuwei, and one of the earliest Chinese texts in the case-record genre. It preserves more than three hundred cases drawn from the author's own practice, each paired with a formula and commentary — an unvarnished record of how Song-era physicians deployed the classical formulas at the bedside."
+    },
+    "description_zh": "南宋许叔微撰，共十卷。本书以医案与方剂相结合的体例记述作者临证心得，内容涵盖内、外、妇、儿各科，为后世医案学发展之源流。",
+    "description_en": "A ten-volume Southern Song work by Xu Shuwei, combining clinical case records with their associated formulas. Its cases span internal, external, gynecological, and pediatric medicine, and the work is recognized as a source for the later development of the Chinese medical case-record tradition.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "shang_han_liu_shu",
+    "slug": "shang-han-liu-shu",
+    "title_zh": "伤寒六书",
+    "title_pinyin": "Shāng Hán Liù Shū",
+    "title_en": "Six Texts on Cold Damage",
+    "author": {
+      "zh": "陶华（陶节庵）",
+      "pinyin": "Táo Huá (Táo Jié'ān)",
+      "en": "Tao Hua (Tao Jie'an)"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming Dynasty",
+    "approximate_date": "c. 1445",
+    "approximate_year": 1445,
+    "significance": {
+      "zh": "明代陶华所辑伤寒学著作合集，包括《琐言》、《家秘》、《杀车槌法》、《一提金》、《截江网》、《明理续论》六种，对仲景学说加以阐释、归纳与简化，使伤寒辨证更便于临证掌握。",
+      "en": "A Ming collection by Tao Hua gathering six of his own works on Cold Damage — the Suoyan, Jiami, Shachechui Fa, Yitijin, Jiejiangwang, and Mingli Xulun. Together they interpret, systematize, and simplify Zhang Zhongjing's doctrines, making Cold Damage pattern differentiation more accessible in daily clinical practice."
+    },
+    "description_zh": "明陶华所著伤寒诸论合编，总称《伤寒六书》。书中以简明易学的方式归纳伤寒六经辨证，提出诸多临证辨治口诀，对明以后伤寒普及影响深远。",
+    "description_en": "A Ming-dynasty collection of Tao Hua's six treatises on Cold Damage, published together as the Shanghan Liushu. Through accessible, practical expositions of Six-Channel pattern differentiation and numerous clinical mnemonics, the work strongly influenced the popularization of Cold Damage doctrine after the Ming.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "she_sheng_zhong_miao_fang",
+    "slug": "she-sheng-zhong-miao-fang",
+    "title_zh": "摄生众妙方",
+    "title_pinyin": "Shè Shēng Zhòng Miào Fāng",
+    "title_en": "Numerous Marvelous Formulas for Nourishing Life",
+    "author": {
+      "zh": "张时彻",
+      "pinyin": "Zhāng Shíchè",
+      "en": "Zhang Shiche"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming Dynasty",
+    "approximate_date": "1550",
+    "approximate_year": 1550,
+    "significance": {
+      "zh": "明代张时彻所辑方书，共十一卷，广收历代与时人验方，按病证分门编次，兼及内、外、妇、儿诸科，为明代民间应用方剂的重要汇编。",
+      "en": "An eleven-volume Ming formulary compiled by Zhang Shiche that gathers tested prescriptions from past eras and contemporaneous physicians. Organized by disease category and spanning internal, external, gynecological, and pediatric medicine, it is an important compilation of formulas in common use during the Ming."
+    },
+    "description_zh": "明张时彻辑，成书于嘉靖年间。全书分诸风、诸气、痰饮、伤寒、杂证、妇人、小儿、外科、五官等门，每门辑录众方，是一部民间实用性强的综合方书。",
+    "description_en": "Compiled by Zhang Shiche during the Jiajing reign of the Ming dynasty, the work is organized under headings such as wind disorders, qi disorders, phlegm-rheum, Cold Damage, miscellaneous disorders, women's medicine, pediatrics, external medicine, and the orifices. Each section assembles numerous formulas drawn from practical use, giving the book a strong empirical and popular character.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "su_wen_bing_ji_qi_yi_bao_ming_ji",
+    "slug": "su-wen-bing-ji-qi-yi-bao-ming-ji",
+    "title_zh": "素问病机气宜保命集",
+    "title_pinyin": "Sù Wèn Bìng Jī Qì Yí Bǎo Mìng Jí",
+    "title_en": "Collection on Suwen Disease Mechanisms and Seasonal Qi for the Preservation of Life",
+    "author": {
+      "zh": "刘完素（刘河间）",
+      "pinyin": "Liú Wánsù (Liú Héjiān)",
+      "en": "Liu Wansu (Liu Hejian)"
+    },
+    "dynasty_zh": "金",
+    "dynasty_en": "Jin Dynasty",
+    "approximate_date": "1186",
+    "approximate_year": 1186,
+    "significance": {
+      "zh": "金代寒凉学派宗师刘完素所著，是其学术思想的代表作之一。书中阐发《素问》病机十九条，结合运气学说，提出「六气皆从火化」、「五志过极皆为热」的重要观点，开后世火热论先河，并为温病学说奠定了理论基础。",
+      "en": "A signature work of the Jin-dynasty master Liu Wansu, founder of the Cold-Cool current. Elaborating the Nineteen Disease Mechanisms of the Suwen in light of the Five Movements and Six Qi, it advances the celebrated theses that 'the six qi all transform through fire' and 'excesses of the five emotions all become heat' — ideas that anchored the later Fire-Heat doctrine and laid theoretical foundations for Warm Disease scholarship."
+    },
+    "description_zh": "金代刘完素撰，共三卷。本书在阐发《素问》病机理论的基础上，结合临证提出以清热泻火为主的治疗思路，载方亦多以凉润为法，是寒凉学派的经典文献。",
+    "description_en": "A three-volume Jin-dynasty work by Liu Wansu. Building on the disease-mechanism theory of the Suwen, it articulates a clinical orientation centered on clearing heat and draining fire, with its formulas correspondingly favoring cooling and moistening approaches — a foundational document of the Cold-Cool current.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "tong_su_shang_han_lun",
+    "slug": "tong-su-shang-han-lun",
+    "title_zh": "通俗伤寒论",
+    "title_pinyin": "Tōng Sú Shāng Hán Lùn",
+    "title_en": "Popular Treatise on Cold Damage",
+    "author": {
+      "zh": "俞根初",
+      "pinyin": "Yú Gēnchū",
+      "en": "Yu Genchu"
+    },
+    "dynasty_zh": "清",
+    "dynasty_en": "Qing Dynasty",
+    "approximate_date": "late Qing",
+    "approximate_year": 1850,
+    "significance": {
+      "zh": "清代绍兴医家俞根初所著，绍派伤寒学的奠基之作。书中将仲景伤寒与温病学说融会贯通，结合江南气候与临证经验，形成兼收并蓄、以湿温为特色的学术体系，对近代伤寒学影响深远。",
+      "en": "A foundational work of the Shaoxing school of Cold Damage by the late-Qing physician Yu Genchu. Fusing Zhang Zhongjing's Cold Damage doctrine with Warm Disease scholarship and adapting both to the climate and clinical realities of Jiangnan, it produced a broad, integrative tradition with a distinctive focus on Damp-Warmth that deeply shaped modern Cold Damage studies."
+    },
+    "description_zh": "清末俞根初撰，取仲景之法而融汇温热诸家，结合江南多湿多温的气候特点，立论兼收并蓄，用药灵活轻灵。本书原稿几经流传，清末民初由何廉臣重订刊行，即后世《重订通俗伤寒论》之所本。",
+    "description_en": "A late-Qing work by Yu Genchu that adopts Zhang Zhongjing's methods while integrating Warm-Heat scholarship and adapting to the damp, warm climate of Jiangnan. Its doctrine is broadly integrative, its prescribing light and flexible. After circulating in manuscript, the text was revised and printed by He Lianchen in the late Qing and early Republic, providing the foundation for the later Chongding Tongsu Shanghan Lun.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "wai_ke_zheng_zhi_quan_sheng_ji",
+    "slug": "wai-ke-zheng-zhi-quan-sheng-ji",
+    "title_zh": "外科证治全生集",
+    "title_pinyin": "Wài Kē Zhèng Zhì Quán Shēng Jí",
+    "title_en": "Complete Life-Preserving Collection on the Patterns and Treatment of External Medicine",
+    "author": {
+      "zh": "王洪绪（王维德）",
+      "pinyin": "Wáng Hóngxù (Wáng Wéidé)",
+      "en": "Wang Hongxu (Wang Weide)"
+    },
+    "dynasty_zh": "清",
+    "dynasty_en": "Qing Dynasty",
+    "approximate_date": "1740",
+    "approximate_year": 1740,
+    "significance": {
+      "zh": "清代王维德所著，是清代外科全生派的代表作。书中创立「阴阳辨证」为外科总纲，主张痈阳疽阴，治阳证用清凉、治阴证用温通，传世名方阳和汤、小金丹、犀黄丸、醒消丸皆载于此书。",
+      "en": "A Qing-dynasty work by Wang Weide and the defining text of the Quansheng (Life-Preserving) current of external medicine. Establishing a yin-yang pattern framework as the core of surgical diagnosis — with 'yong' sores as yang and 'ju' sores as yin, treated respectively by cooling and by warming-unblocking methods — it transmits the celebrated formulas Yang He Tang, Xiao Jin Dan, Xi Huang Wan, and Xing Xiao Wan."
+    },
+    "description_zh": "清代王洪绪所撰外科专书，三卷本流传最广。书中以阴阳辨证为纲论治外科痈疽疮疡，强调内消、内托法，反对滥用刀针，载方简要而疗效显著，深受后世外科医家推崇。",
+    "description_en": "A Qing-dynasty monograph on external medicine by Wang Hongxu, most widely circulated in the three-volume edition. It treats abscesses, carbuncles, and sores through yin-yang pattern differentiation, emphasizes internal dissipation and internal supporting methods, and cautions against excessive use of the knife. Its concise but highly effective formulas made it one of the most admired surgical references of the Qing.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "wai_ke_zheng_zong",
+    "slug": "wai-ke-zheng-zong",
+    "title_zh": "外科正宗",
+    "title_pinyin": "Wài Kē Zhèng Zōng",
+    "title_en": "Orthodox Lineage of External Medicine",
+    "author": {
+      "zh": "陈实功",
+      "pinyin": "Chén Shígōng",
+      "en": "Chen Shigong"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming Dynasty",
+    "approximate_date": "1617",
+    "approximate_year": 1617,
+    "significance": {
+      "zh": "明代陈实功所著，是中医外科学最重要的经典之一。全书四卷，系统论述一百余种外科病证的病因、病机、辨证、治法与方药，内治与外治并重，内消、内托、艾火、刀针等法详备，对后世外科学影响深远。",
+      "en": "A Ming-dynasty work by Chen Shigong and one of the most important classics of external medicine in the Chinese tradition. Its four volumes systematically address the etiology, pathogenesis, pattern differentiation, treatment method, and formulas for more than one hundred surgical conditions, giving equal weight to internal and external therapies and detailing internal dissipation, internal supporting, moxibustion, and surgical techniques — a profound influence on later external medicine."
+    },
+    "description_zh": "明代陈实功撰，凡四卷。书中广论痈疽、疔疮、瘰疬、瘿瘤、乳痈、肛门病、跌打损伤等外科病证，强调辨证施治、内外并重，载方与外治法极为丰富，被誉为明代外科学之集大成者。",
+    "description_en": "A four-volume Ming work by Chen Shigong covering abscesses, carbuncles, furuncles, scrofula, goiter, tumors, mammary abscess, anorectal disorders, and traumatic injuries. Stressing pattern-based treatment and the unity of internal and external therapies, and preserving an unusually rich store of formulas and topical techniques, it is regarded as the synthesis of Ming surgical learning.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "wen_re_jing_wei",
+    "slug": "wen-re-jing-wei",
+    "title_zh": "温热经纬",
+    "title_pinyin": "Wēn Rè Jīng Wěi",
+    "title_en": "The Warp and Weft of Warm-Heat Diseases",
+    "author": {
+      "zh": "王士雄（王孟英）",
+      "pinyin": "Wáng Shìxióng (Wáng Mèngyīng)",
+      "en": "Wang Shixiong (Wang Mengying)"
+    },
+    "dynasty_zh": "清",
+    "dynasty_en": "Qing Dynasty",
+    "approximate_date": "1852",
+    "approximate_year": 1852,
+    "significance": {
+      "zh": "清代温病大家王孟英所辑编，是温病学的重要综合文献。书中以《内经》、仲景论温为「经」，以叶天士、薛生白、陈平伯、余师愚诸家温病专论为「纬」，并加以按语评注，使温病学说系统条贯。",
+      "en": "A key synthesis of Warm Disease scholarship compiled by the Qing master Wang Mengying. It takes the Warm-disease passages of the Neijing and Zhang Zhongjing as the warp, the monographs of Ye Tianshi, Xue Shengbai, Chen Pingbo, and Yu Shiyu as the weft, and adds the compiler's own commentary — drawing the full body of Warm Disease doctrine into a coherent whole."
+    },
+    "description_zh": "清王孟英撰于咸丰二年。全书五卷，集《内经》、仲景、叶天士、薛生白、陈平伯、余师愚温热之论，加以按语评析，并载治法与方药，为清代温病学的系统总汇。",
+    "description_en": "A five-volume Qing work by Wang Mengying, completed in 1852. It assembles the Warm-disease writings of the Neijing, Zhang Zhongjing, Ye Tianshi, Xue Shengbai, Chen Pingbo, and Yu Shiyu, supplies commentary and analysis, and records treatment methods and formulas — standing as the most comprehensive systematization of Qing Warm Disease doctrine.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "xu_ming_yi_lei_an",
+    "slug": "xu-ming-yi-lei-an",
+    "title_zh": "续名医类案",
+    "title_pinyin": "Xù Míng Yī Lèi Àn",
+    "title_en": "Sequel to the Classified Case Records of Famous Physicians",
+    "author": {
+      "zh": "魏之琇",
+      "pinyin": "Wèi Zhīxiù",
+      "en": "Wei Zhixiu"
+    },
+    "dynasty_zh": "清",
+    "dynasty_en": "Qing Dynasty",
+    "approximate_date": "1770 (first printed)",
+    "approximate_year": 1770,
+    "significance": {
+      "zh": "清代魏之琇辑，是继江瓘《名医类案》之后最重要的中医医案总汇。全书三十六卷，按病分门，收录宋元明清诸家名医验案，材料宏富，保存了大量临床实例，为研究中医辨证论治的重要文献。",
+      "en": "Compiled by the Qing-dynasty scholar Wei Zhixiu as the successor to Jiang Guan's Mingyi Lei'an, this is among the most substantial Chinese case-record compendia. Its thirty-six volumes, arranged by disease, preserve cases from renowned Song, Yuan, Ming, and Qing physicians — a vast clinical archive indispensable for the study of TCM pattern differentiation."
+    },
+    "description_zh": "清魏之琇纂辑，乾隆中叶刊行。全书广采宋以降众家名医验案，按病分门类编，每案多加按语，为医案学重要典籍之一。",
+    "description_en": "Compiled by the Qing-dynasty scholar Wei Zhixiu and first printed in the mid-Qianlong era. Gathering case records from distinguished physicians from the Song onward, arranged by disease category and frequently accompanied by commentary, it is one of the central reference works of the Chinese medical case-record tradition.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "yi_fang_kao",
+    "slug": "yi-fang-kao",
+    "title_zh": "医方考",
+    "title_pinyin": "Yī Fāng Kǎo",
+    "title_en": "Investigations of Medical Formulas",
+    "author": {
+      "zh": "吴昆",
+      "pinyin": "Wú Kūn",
+      "en": "Wu Kun"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming Dynasty",
+    "approximate_date": "1584",
+    "approximate_year": 1584,
+    "significance": {
+      "zh": "明代吴昆所著，是中国现存较早的方剂学专论性著作之一，开方剂学「以理论方」之风。全书选录古今常用方剂七百余首，按病证分二十类，每方详考组方之理、药物作用及加减变化。",
+      "en": "A Ming-dynasty work by Wu Kun and one of the earliest Chinese monographs devoted specifically to the theoretical analysis of formulas. It gathers more than seven hundred commonly used ancient and contemporary prescriptions, arranges them into twenty disease categories, and examines for each the logic of composition, the role of individual herbs, and the rationale for modifications — pioneering the discipline of formula theory."
+    },
+    "description_zh": "明吴昆撰，成书于万历十二年。全书六卷，按病类编次方剂七百余首，每方先列主治，次解方义，剖析组方配伍与君臣佐使，是中医方剂学的重要理论著作。",
+    "description_en": "A six-volume Ming work by Wu Kun, completed in 1584. It arranges more than seven hundred formulas by disease category, presenting for each the indications, the meaning of the formula, and a detailed analysis of composition through the sovereign-minister-assistant-courier framework — a foundational theoretical treatise of Chinese formula studies.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "yi_xue_zhong_zhong_can_xi_lu",
+    "slug": "yi-xue-zhong-zhong-can-xi-lu",
+    "title_zh": "医学衷中参西录",
+    "title_pinyin": "Yī Xué Zhōng Zhōng Cān Xī Lù",
+    "title_en": "Records of Medicine with Reference to the West While Holding Fast to the Chinese",
+    "author": {
+      "zh": "张锡纯",
+      "pinyin": "Zhāng Xīchún",
+      "en": "Zhang Xichun"
+    },
+    "dynasty_zh": "民国",
+    "dynasty_en": "Republican China",
+    "approximate_date": "1918–1934 (compiled in seven installments)",
+    "approximate_year": 1918,
+    "significance": {
+      "zh": "近代张锡纯毕生临证、讲学与中西医参证之心得，是近代中医最具代表性的综合著作之一。全书以中医为本，参酌西说，创立大量临证验方（如升陷汤、镇肝熄风汤、参赭镇气汤等），为近代中西医汇通派的奠基之作。",
+      "en": "The life's work of the modern physician Zhang Xichun — a synthesis of clinical experience, teaching, and comparative East-West medical reasoning. Grounded firmly in Chinese medicine while drawing on Western concepts, it introduces a large number of original clinical formulas (including Sheng Xian Tang, Zhen Gan Xi Feng Tang, and Shen Zhe Zhen Qi Tang) and stands as a foundational text of the modern Chinese-Western medical-integration current."
+    },
+    "description_zh": "近代张锡纯撰，分七期陆续刊行，成书年代约在民国七年（1918）至二十三年（1934）之间。全书包括医论、药物、方剂、医案、医话诸部分，见解独到、验方实用，为近代中医文献之重镇。",
+    "description_en": "A major modern Chinese medical work by Zhang Xichun, issued in seven installments between roughly 1918 and 1934. Composed of medical discourses, materia medica, formulas, case records, and medical talks, it combines original theoretical insight with practically tested prescriptions, and stands as one of the most important Chinese medical texts of the Republican era.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "za_bing_zheng_zhi_xin_yi",
+    "slug": "za-bing-zheng-zhi-xin-yi",
+    "title_zh": "杂病证治新义",
+    "title_pinyin": "Zá Bìng Zhèng Zhì Xīn Yì",
+    "title_en": "New Meanings in the Pattern Identification and Treatment of Miscellaneous Diseases",
+    "author": {
+      "zh": "胡光慈",
+      "pinyin": "Hú Guāngcí",
+      "en": "Hu Guangci"
+    },
+    "dynasty_zh": "现代（中华人民共和国）",
+    "dynasty_en": "Modern (People's Republic of China)",
+    "approximate_date": "1956",
+    "approximate_year": 1956,
+    "significance": {
+      "zh": "现代中医内科杂病辨治的代表作之一，融合古典理论与近现代临床经验。所创天麻钩藤饮为当代高血压、眩晕辨治的经典方，广泛见于当代方剂学教材。",
+      "en": "A representative modern work on pattern differentiation and treatment of miscellaneous internal medicine diseases, integrating classical TCM theory with early twentieth-century clinical experience. Its formulation Tian Ma Gou Teng Yin is now the canonical modern formula for hypertension and vertigo, included in most contemporary formulary textbooks."
+    },
+    "description_zh": "胡光慈著，1956年成书。全书以内科杂病为纲，按证分类，详述病因病机、辨证要点与治法方药，是二十世纪中医内科杂病辨治研究的代表作之一。",
+    "description_en": "Authored by Hu Guangci and completed in 1956. The text is organized by internal medicine miscellaneous diseases, classified by pattern, with detailed exposition of etiology, pathomechanism, differentiation essentials, and treatment formulas. It stands as one of the twentieth century's representative works on internal medicine miscellaneous disease management in Chinese medicine.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  },
+  {
+    "key": "zheng_ti_lei_yao",
+    "slug": "zheng-ti-lei-yao",
+    "title_zh": "正体类要",
+    "title_pinyin": "Zhèng Tǐ Lèi Yào",
+    "title_en": "Categorized Essentials of Orthopedics and Traumatology",
+    "author": {
+      "zh": "薛己",
+      "pinyin": "Xuē Jǐ",
+      "en": "Xue Ji"
+    },
+    "dynasty_zh": "明",
+    "dynasty_en": "Ming Dynasty",
+    "approximate_date": "1529",
+    "approximate_year": 1529,
+    "significance": {
+      "zh": "中医骨伤科早期专著之一。强调整体观念，主张内外兼治、气血为本，开创了以补益气血、调理脏腑治疗跌打损伤的思路，对后世骨伤科影响深远。",
+      "en": "One of the earliest monographs on Chinese orthopedics and traumatology. Emphasized the holistic approach and the primacy of qi and blood, pioneering the integrated internal-external treatment model in which tonifying qi-blood and regulating the viscera supports external manipulation of trauma. Profoundly influenced later orthopedic practice."
+    },
+    "description_zh": "明代薛己著，1529年成书。分上、下两卷，上卷论跌打损伤、金创箭伤等伤科证治，下卷载所附验案。书中重视元气与脏腑功能对骨伤愈合的作用，确立补气养血、健脾理肝的治伤原则，为中医骨伤科奠基之作之一。",
+    "description_en": "Written by Xue Ji of the Ming Dynasty, published in 1529. Divided into two volumes: the upper volume discusses pattern differentiation and treatment of traumatic injuries, wounds from weapons, and arrow wounds; the lower volume records case studies. The work emphasizes the role of the original qi and the viscera in wound healing, establishing the therapeutic principles of tonifying qi and nourishing blood, strengthening the spleen, and regulating the liver for trauma — principles foundational to the later development of Chinese orthopedics and traumatology.",
+    "passages": [],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-17"
+    }
+  }
+]

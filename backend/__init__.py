@@ -1,0 +1,1 @@
+"""QiHuang-KG application backend."""

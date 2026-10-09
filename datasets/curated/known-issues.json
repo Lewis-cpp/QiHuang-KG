@@ -1,0 +1,260 @@
+{
+  "basis": "docs/data-profile.json 与架构设计 2.1；仅登记结构问题及处理决定，不表示医学内容复核。",
+  "issues": [
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "qiang_huo",
+      "field_path": "/classical_references/0",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "xiang_ru",
+      "field_path": "/classical_references/0",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "gou_teng",
+      "field_path": "/classical_references/0",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "quan_xie",
+      "field_path": "/classical_references/0",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "bing_pian",
+      "field_path": "/classical_references/0",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "bu_gu_zhi",
+      "field_path": "/classical_references/1",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "yi_zhi_ren",
+      "field_path": "/classical_references/1",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "huang_jing",
+      "field_path": "/classical_references/0",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "xi_yang_shen",
+      "field_path": "/classical_references/0",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "tai_zi_shen",
+      "field_path": "/classical_references/0",
+      "raw_value": null
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "mei_gui_hua",
+      "field_path": "/classical_references/0",
+      "raw_value": "ben_cao_zheng_yi"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "shen_qu",
+      "field_path": "/classical_references/0",
+      "raw_value": "yao_xing_lun"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "ku_lian_pi",
+      "field_path": "/classical_references/0",
+      "raw_value": "ming_yi_bie_lu"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "nan_gua_zi",
+      "field_path": "/classical_references/0",
+      "raw_value": "xian_dai_shi_yong_zhong_yao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "he_shi",
+      "field_path": "/classical_references/0",
+      "raw_value": "kai_bao_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "huai_hua",
+      "field_path": "/classical_references/0",
+      "raw_value": "ri_hua_zi_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "xiao_ji",
+      "field_path": "/classical_references/0",
+      "raw_value": "ri_hua_zi_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "da_ji_cao",
+      "field_path": "/classical_references/0",
+      "raw_value": "yao_xing_lun"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "jiang_huang",
+      "field_path": "/classical_references/0",
+      "raw_value": "xin_xiu_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "wu_ling_zhi",
+      "field_path": "/classical_references/0",
+      "raw_value": "kai_bao_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "su_mu",
+      "field_path": "/classical_references/0",
+      "raw_value": "ri_hua_zi_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "gu_sui_bu",
+      "field_path": "/classical_references/0",
+      "raw_value": "kai_bao_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "chuan_niu_xi",
+      "field_path": "/classical_references/0",
+      "raw_value": "yao_xing_lun"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "ji_xue_teng",
+      "field_path": "/classical_references/0",
+      "raw_value": "ben_cao_gang_mu_shi_yi"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "bai_bian_dou",
+      "field_path": "/classical_references/0",
+      "raw_value": "ming_yi_bie_lu"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "hong_jing_tian",
+      "field_path": "/classical_references/0",
+      "raw_value": "si_bu_yi_dian"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "dong_chong_xia_cao",
+      "field_path": "/classical_references/0",
+      "raw_value": "ben_cao_cong_xin"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "he_tao_ren",
+      "field_path": "/classical_references/0",
+      "raw_value": "kai_bao_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "mo_han_lian",
+      "field_path": "/classical_references/0",
+      "raw_value": "tang_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "he_zi",
+      "field_path": "/classical_references/0",
+      "raw_value": "yao_xing_lun"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "da_ji",
+      "field_path": "/classical_references/0",
+      "raw_value": "yao_xing_lun"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "ge_jie",
+      "field_path": "/classical_references/0",
+      "raw_value": "kai_bao_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "zi_he_che",
+      "field_path": "/classical_references/0",
+      "raw_value": "ben_cao_shi_yi"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "xian_mao",
+      "field_path": "/classical_references/0",
+      "raw_value": "hai_yao_ben_cao"
+    },
+    {
+      "code": "unresolved_reference",
+      "filename": "herbs.json",
+      "record_key": "peng_sha",
+      "field_path": "/classical_references/0",
+      "raw_value": "ri_hua_zi_ben_cao"
+    },
+    {
+      "code": "conflicting_claim",
+      "filename": "formulas.json",
+      "record_key": "zhu_ling_tang",
+      "field_path": "/composition/1/role",
+      "raw_value": [
+        "chen",
+        "jun"
+      ]
+    }
+  ]
+}

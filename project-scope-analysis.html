@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="基于 QiHuang-KG 现有中医药数据资产，从毕业设计指导教师和软件产品经理视角划分 MVP、第二阶段、创新与暂缓功能。">
+  <title>QiHuang-KG · 项目范围分析</title>
+  <style>
+    :root{color-scheme:light;--bg:#f5f4ee;--paper:#fffefb;--ink:#22352f;--muted:#59685f;--line:#dce2d9;--jade:#176650;--soft:#e9f2eb;--blue:#305f83;--violet:#6b528c;--rust:#934633;font-family:"Noto Sans SC","Microsoft YaHei",system-ui,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.8}a{color:var(--jade);text-underline-offset:4px}a:hover{color:#0c4936}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid #b07723;outline-offset:5px}::selection{background:#cee2cf}
+    .skip{position:absolute;left:16px;top:-80px;background:white;padding:10px;z-index:10}.skip:focus{top:12px}.wrap{max-width:1390px;padding:0 44px;margin:auto}.masthead{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:25px;border-bottom:1px solid var(--line)}.brand{font-size:19px;font-weight:750;letter-spacing:.04em}.brand span{font-size:12px;color:var(--muted);font-weight:400;margin-left:15px;letter-spacing:.14em}.meta{font-size:12px;letter-spacing:.04em;color:var(--muted)}
+    .hero{padding:54px 0 38px;display:grid;grid-template-columns:1.55fr 1fr;gap:55px;align-items:center}.eyebrow{color:var(--jade);font-size:12px;letter-spacing:.16em;font-weight:700;margin:0 0 12px}h1{font-size:clamp(30px,4vw,49px);line-height:1.25;letter-spacing:-.035em;margin:0 0 20px}h1 span{display:block;color:var(--jade)}.lead{font-size:16px;color:var(--muted);max-width:700px;margin:0}.decision{border-left:3px solid var(--jade);padding:7px 0 7px 24px}.decision strong{display:block;font-size:21px;line-height:1.6;margin-bottom:10px}.decision p{font-size:14px;color:var(--muted);margin:0}
+    .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:40px}.summary a{display:block;text-decoration:none;background:var(--paper);padding:18px 21px;border:1px solid var(--line);border-top:3px solid var(--tone);border-radius:3px;color:var(--ink)}.summary a:hover{background:#f0f3ed}.summary strong{display:block;font-size:29px;line-height:1.3;color:var(--tone)}.summary strong small{font-size:12px;font-weight:400;margin-left:6px}.summary b{display:block;font-size:14px;margin:7px 0 3px}.summary p{margin:0;color:var(--muted);font-size:12px}.mvp{--tone:var(--jade);--tint:#e9f2eb}.phase2{--tone:var(--blue);--tint:#eaf1f6}.innovation{--tone:var(--violet);--tint:#f1edf6}.defer{--tone:var(--rust);--tint:#f7eeea}
+    .layout{display:grid;grid-template-columns:180px minmax(0,1fr);gap:40px;align-items:start}.toc{position:sticky;top:25px;font-size:13px;padding:6px 0 20px}.toc p{font-size:11px;color:var(--muted);letter-spacing:.16em;margin:0 0 16px}.toc a{display:block;text-decoration:none;color:var(--muted);border-left:2px solid var(--line);padding:9px 0 9px 15px}.toc a:hover{color:var(--jade);border-color:var(--jade)}.toc span{font-size:11px;margin-right:10px;font-variant-numeric:tabular-nums}.toc button{margin:22px 0 12px;padding:7px 14px;background:var(--paper);color:var(--jade);border:1px solid var(--line);border-radius:4px;cursor:pointer;font-size:12px}.toc .small{max-width:148px;font-size:11px;line-height:1.8;letter-spacing:0}
+    main{min-width:0}section{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:30px;margin-bottom:24px;scroll-margin-top:24px}.section-top{display:flex;gap:15px;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:22px}.section-num{font-size:11px;letter-spacing:.12em;color:var(--muted);margin:0 0 5px}h2{font-size:25px;line-height:1.35;margin:0}h3{font-size:16px;line-height:1.5;margin:24px 0 10px}p{margin:10px 0}.sub{font-size:14px;color:var(--muted);margin:8px 0 0}.pill{font-size:11px;padding:4px 10px;border-radius:20px;white-space:nowrap;background:var(--tint,var(--soft));color:var(--tone,var(--jade));font-weight:700}.callout{background:var(--soft);border-left:3px solid var(--jade);padding:14px 17px;font-size:14px;margin:19px 0}.callout p{margin:0}.note{color:var(--muted);font-size:13px}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.lens{padding:14px 17px;border:1px solid var(--line);border-radius:4px;font-size:13px}.lens strong{color:var(--tone,var(--jade));font-size:12px;display:block;margin-bottom:5px}.lens p{margin:0}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}.fact{border-top:2px solid var(--line);padding:12px 4px}.fact b{font-size:23px;display:block}.fact span{font-size:12px;color:var(--muted)}
+    .flow{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.flow li{padding:13px 12px;background:var(--soft);border:1px solid #d2e3d5;border-radius:4px}.flow small{display:block;color:var(--jade);font-size:11px;letter-spacing:.05em}.flow b{display:block;font-size:14px;margin:4px 0}.flow span{display:block;font-size:12px;color:var(--muted)}
+    .table-wrap{overflow-x:auto;margin:21px 0 8px}table{border-collapse:collapse;width:100%;text-align:left;font-size:13px;line-height:1.8}caption{text-align:left;font-size:12px;color:var(--muted);padding-bottom:10px}th,td{padding:15px 13px;border-bottom:1px solid var(--line);vertical-align:top}thead th{background:#f2f4ee;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.04em}tbody th{font-size:14px;font-weight:650;width:19%;min-width:138px}tbody td{width:40.5%}tbody th small{display:block;font-weight:500;font-size:10px;letter-spacing:.08em;color:var(--tone,var(--jade));margin-bottom:3px}td p{margin:0 0 7px}td p:last-child{margin:0}td b{font-weight:650}.accept{font-size:12px;color:var(--tone,var(--jade))}.reason{font-size:12px;color:var(--muted)}.rule{border-top:1px dashed var(--line);padding-top:15px;margin-top:18px;font-size:13px}ul,ol{padding-left:21px}li{margin:6px 0}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:12px;list-style:none;padding:0}.checklist li{margin:0;padding:15px 17px;background:#f5f6f0;border-radius:4px;font-size:13px}.checklist b{display:block;margin-bottom:5px}.route{counter-reset:step;list-style:none;padding:0}.route li{position:relative;padding:0 0 21px 43px;margin:0}.route li:before{counter-increment:step;content:counter(step);position:absolute;top:1px;left:0;width:27px;height:27px;border:1px solid var(--line);border-radius:50%;text-align:center;color:var(--jade);font-size:12px;line-height:26px}.route li:last-child{padding-bottom:0}.route b{font-size:14px}.route p{margin:3px 0 0;font-size:13px;color:var(--muted)}.sources li{font-size:13px;margin:10px 0}.sources code{font-size:11px;overflow-wrap:anywhere}.footer{margin-top:12px;padding:25px 0 35px;border-top:1px solid var(--line);color:var(--muted);display:flex;justify-content:space-between;gap:20px;font-size:12px}
+    @media(max-width:1050px){.wrap{padding:0 24px}.layout{grid-template-columns:145px minmax(0,1fr);gap:22px}.hero{gap:25px}section{padding:24px}.flow{grid-template-columns:1fr 1fr}table{min-width:610px}.summary a{padding:16px}}
+    @media(max-width:760px){.wrap{padding:0 18px}.masthead{padding-block:17px}.brand span{display:none}.hero{grid-template-columns:1fr;gap:25px;padding-top:33px}.decision{padding-left:17px}.summary{grid-template-columns:1fr 1fr;gap:10px;margin-bottom:22px}.layout{display:block}.toc{position:static;display:flex;flex-wrap:wrap;gap:5px;padding:0 0 22px}.toc p,.toc .small{display:none}.toc a{padding:5px 9px;border:1px solid var(--line);border-radius:3px;font-size:12px}.toc span{display:none}.toc button{margin:0;padding:4px 9px}.section-top{gap:8px}section{padding:21px 17px}h2{font-size:22px}.two,.checklist{grid-template-columns:1fr}.facts{gap:6px}.fact b{font-size:20px}.fact span{font-size:11px}.pill{padding:3px 8px;font-size:10px}.footer{display:block}.meta{font-size:10px}.table-wrap{margin-inline:-3px}.summary p{font-size:11px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{@page{size:A4;margin:16mm 13mm}html{scroll-behavior:auto}body{background:white;font-size:10pt;color:#17251e}.wrap{max-width:none;padding:0}.masthead{padding:0 0 12px}.hero{padding:22px 0;gap:20px}h1{font-size:27pt}.lead{font-size:10pt}.decision strong{font-size:14pt}.decision p{font-size:9pt}.summary{gap:8px;margin-bottom:20px}.summary a{padding:10px}.summary strong{font-size:20pt}.layout{display:block}.toc,.skip{display:none}section{padding:16px 0;border:none;border-top:1px solid #b9c7bb;border-radius:0;margin-bottom:16px;break-inside:auto}.section-top{padding-bottom:12px;margin-bottom:14px}h2{font-size:17pt}h3{font-size:12pt}h2,h3,.section-top{break-after:avoid}.table-wrap{overflow:visible}table{min-width:0;font-size:9pt}th,td{padding:9px 7px}tbody th{min-width:0;font-size:9pt}.accept,.reason,caption{font-size:8pt}thead{display:table-header-group}tr,.lens,.callout,.checklist li,.flow li,.route li{break-inside:avoid}.two,.checklist{grid-template-columns:1fr 1fr}.flow{grid-template-columns:repeat(4,1fr)}a{color:inherit;text-decoration:none}.footer{padding-bottom:0}.note,.sub,.sources li{font-size:9pt}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳转到正文</a>
+  <div class="wrap">
+    <header class="masthead">
+      <div class="brand">QiHuang-KG <span>岐黄 · 知识图谱</span></div>
+      <div class="meta">范围分析建议稿 / 2026.10.04</div>
+    </header>
+    <div class="hero">
+      <div>
+        <p class="eyebrow">毕业设计指导教师 × 软件产品经理</p>
+        <h1>项目范围分析<span>先完成可追溯的知识查询。</span></h1>
+        <p class="lead">以现有中医药数据为基础，优先完成检索、详情、图谱探索与来源追溯；再逐步增加问答、融合与推理能力。</p>
+      </div>
+      <aside class="decision" aria-label="核心建议">
+        <strong>一个完整核心流程<br>一个可验证创新点</strong>
+        <p>建议定位：面向中医药学习者的知识图谱检索与学习系统。MVP 先证明知识“查得到、关系看得懂、出处找得到”。</p>
+      </aside>
+    </div>
+    <div class="summary" aria-label="功能分类总览">
+      <a class="mvp" href="#mvp"><strong>06<small>项核心功能</small></strong><b>MVP 必须实现</b><p>支撑完整查询与演示流程</p></a>
+      <a class="phase2" href="#phase2"><strong>07<small>项增强功能</small></strong><b>第二阶段增强功能</b><p>提高效率、覆盖面与维护能力</p></a>
+      <a class="innovation" href="#innovation"><strong>04<small>个候选方向</small></strong><b>可选创新功能</b><p>建议选择其中一个完成实验</p></a>
+      <a class="defer" href="#defer"><strong>06<small>类暂缓范围</small></strong><b>当前不建议实现</b><p>控制复杂度与交付风险</p></a>
+    </div>
+    <div class="layout">
+      <nav class="toc" aria-label="报告导航">
+        <p>CONTENTS / 内容</p>
+        <a href="#context"><span>01</span>背景与判断依据</a>
+        <a href="#mvp"><span>02</span>MVP 必须实现</a>
+        <a href="#phase2"><span>03</span>第二阶段增强</a>
+        <a href="#innovation"><span>04</span>可选创新功能</a>
+        <a href="#defer"><span>05</span>当前不建议实现</a>
+        <a href="#delivery"><span>06</span>验收与范围控制</a>
+        <a href="#sources"><span>07</span>本地依据</a>
+        <button type="button" onclick="window.print()">打印 / 保存 PDF</button>
+        <p class="small">功能分类表示建议优先级，不表示系统已经实现。</p>
+      </nav>
+      <main id="main">
+        <section id="context">
+          <div class="section-top"><div><p class="section-num">01 / CONTEXT</p><h2>背景与判断依据</h2></div><span class="pill">基于本地项目</span></div>
+          <p>当前目录包含六组中医药公开数据及数据说明，尚未发现应用代码或完整需求规格。你已确认<strong>暂无额外硬性要求，按当前项目分析</strong>。本报告按单人、有限毕业设计周期、教学研究用途提出建议；单人开发与目标用户为分析假设，验收指标为建议值。</p>
+          <div class="facts">
+            <div class="fact"><b>6 组</b><span>已准备的数据来源</span></div>
+            <div class="fact"><b>599 条</b><span>本草典四类核心实体记录</span></div>
+            <div class="fact"><b>195,211 条</b><span>TCM-MKG D1～D7 原始记录</span></div>
+          </div>
+          <p class="note">599 = 365 味中药 + 112 首方剂 + 84 个证候 + 38 部古籍。195,211 是实体表与关系表的数据行总数，不能视为独立知识实体数。以上为本地文件统计，未表示内容已完成专业校验。</p>
+          <div class="two">
+            <div class="lens"><strong>指导教师看什么</strong><p>需求是否闭合；数据模型与查询是否体现知识图谱；关键决策能否解释；系统与实验能否复现。</p></div>
+            <div class="lens"><strong>产品经理看什么</strong><p>能否解决“查知识、看关系、找依据”的真实任务；数据是否足以支撑功能；新增功能是否值得占用交付时间。</p></div>
+          </div>
+          <h3>首版数据范围</h3>
+          <p>建议以<strong>本草典四类核心实体及其相关关系</strong>作为起步范围，先完成单一来源的完整链路。174 首经典方剂作为补充核对材料；TCM-MKG、语义图谱、功效扩展与古籍大库按功能需要逐步接入。</p>
+          <p class="note">中药、饮片、中成药、经典方剂应保留类型差异；跨来源同名记录不能直接合并。症状在首版可先作为证候属性，待需要独立查询时再建节点。</p>
+          <div class="callout"><p><strong>本次范围决策：</strong>Vastbase、Neo4j、十万级数据和智能问答均不作为当前 MVP 的强制条件。现有说明中的技术与数据用法属于参考建议；如后续任务书新增约束，再调整优先级。数据规模应分别报告实体数、关系数与原始行数。</p></div>
+        </section>
+
+        <section id="mvp" class="mvp">
+          <div class="section-top"><div><p class="section-num">02 / MUST HAVE</p><h2>MVP 必须实现</h2><p class="sub">六项核心功能，共同支撑可运行、可解释、可复现的首版。</p></div><span class="pill">优先级 P0</span></div>
+          <ol class="flow" aria-label="核心用户流程">
+            <li><small>STEP 01</small><b>检索知识</b><span>输入药名或方名</span></li>
+            <li><small>STEP 02</small><b>阅读详情</b><span>查看组成与属性</span></li>
+            <li><small>STEP 03</small><b>探索关系</b><span>查看相邻实体与路径</span></li>
+            <li><small>STEP 04</small><b>核对出处</b><span>回到来源记录或原文</span></li>
+          </ol>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="MVP 功能表，可横向滚动">
+            <table>
+              <caption>每项均限定首版边界；验收描述为建议标准。</caption>
+              <thead><tr><th scope="col">功能</th><th scope="col">最小实现与验收</th><th scope="col">双视角判断与范围边界</th></tr></thead>
+              <tbody>
+                <tr><th scope="row"><small>M01</small>数据建模、清洗与导入</th><td><p>定义中药、方剂、证候、古籍及组成、关联、出处关系。保留来源 ID、审核状态与导入批次；校验唯一键和关系端点，输出异常清单。</p><p class="accept">验收：同一批数据重复导入不增加重复记录；失效引用可定位；原始文件保持不变。</p></td><td><p><b>教师：</b>体现数据建模与工程处理能力。</p><p><b>产品：</b>保证检索与图谱共用一致数据。</p><p class="reason">首版采用可重复执行的导入工具维护数据；不要求六源全融合或自动抽取平台。</p></td></tr>
+                <tr><th scope="row"><small>M02</small>知识目录与实体详情</th><td><p>四类实体列表及详情页，展示名称、分类、已有属性、关联实体和来源。方剂可查看组成，点击药味进入中药详情。</p><p class="accept">验收：从列表可完成“方剂 → 药味 → 方剂”的往返；缺失字段明确留空或标记。</p></td><td><p><b>教师：</b>展示实体模型如何映射到业务页面。</p><p><b>产品：</b>让用户获得可阅读的知识内容。</p><p class="reason">按原始资料展示；不补造剂量、功效或出处，不扩展为百科门户。</p></td></tr>
+                <tr><th scope="row"><small>M03</small>关键词检索与基础筛选</th><td><p>支持名称、已收录别名与关键词查询；按实体类型筛选、分页；提供清晰的空结果与错误状态。</p><p class="accept">验收：预设名称与别名能命中目标；无匹配时不返回虚构结果；结果可进入详情。</p></td><td><p><b>教师：</b>可说明查询设计与索引作用。</p><p><b>产品：</b>缩短用户找到知识的路径。</p><p class="reason">只使用可核实的别名映射；口语纠错、语义检索和复杂组合条件后置。</p></td></tr>
+                <tr><th scope="row"><small>M04</small>局部知识图谱浏览</th><td><p>以选定实体为中心展示一跳关系；区分节点类型，显示边名称，支持点击详情、缩放及按需展开。</p><p class="accept">验收：图中关系与数据一致；节点过多时限制数量并提示，避免页面失去响应。</p></td><td><p><b>教师：</b>证明图模型已用于真实查询。</p><p><b>产品：</b>直观看清知识之间的联系。</p><p class="reason">只展示局部子图，建议初始上限 50 个节点；不制作全量图谱大屏。</p></td></tr>
+                <tr><th scope="row"><small>M05</small>限定关系查询与解释</th><td><p>提供固定查询入口，例如“某方由哪些药物组成”“某药出现在哪些方剂”“某方关联哪些证候”；展示一至两跳已存关系及文字路径。</p><p class="accept">验收：至少三类查询可运行；结果中的每条边均能回查；无关系时如实说明。</p></td><td><p><b>教师：</b>体现关系查询的设计与实现。</p><p><b>产品：</b>直接回答明确的学习问题。</p><p class="reason">首版用选项或表单表达问题，不依赖大模型；路径关联不等于诊断或因果结论。</p></td></tr>
+                <tr><th scope="row"><small>M06</small>来源追溯与证据标识</th><td><p>详情与查询结果关联数据集、记录 ID、原始字段；有原文则展示原文，有书目则展示书目。区分原始记载、编辑整理、自动抽取和规则推断。</p><p class="accept">验收：演示条目均可定位至本地来源；缺少原文时明确说明，不用书名冒充原文证据。</p></td><td><p><b>教师：</b>支撑论文引用、数据质量分析及结果解释。</p><p><b>产品：</b>帮助用户判断信息依据与局限。</p><p class="reason">保留数据来源与使用说明；“编辑审核”不能显示为“临床验证”。</p></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rule"><strong>最小页面集合：</strong>检索与列表页、实体详情页、图谱与关系查询页、来源说明页。通过统一页面承载不同实体类型，避免为每类知识重复建设一套界面。</div>
+        </section>
+
+        <section id="phase2" class="phase2">
+          <div class="section-top"><div><p class="section-num">03 / NEXT RELEASE</p><h2>第二阶段增强功能</h2><p class="sub">MVP 验收通过后，按真实使用价值选择，无需全部实现。</p></div><span class="pill">优先级 P1</span></div>
+          <div class="two">
+            <div class="lens"><strong>指导教师建议</strong><p>围绕已有数据与查询继续加深；新增模块要能解释需求来源和验证方法。</p></div>
+            <div class="lens"><strong>产品经理建议</strong><p>优先消除查询障碍和维护成本，再考虑用户账户、个性化和展示型功能。</p></div>
+          </div>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="第二阶段功能表，可横向滚动">
+            <table><thead><tr><th scope="col">功能</th><th scope="col">建议实现范围</th><th scope="col">加入条件与价值</th></tr></thead><tbody>
+              <tr><th scope="row"><small>E01</small>带引用的知识问答</th><td>围绕已入库知识回答单轮问题，返回检索证据与引用；证据不足时说明无法回答。保留普通检索作为服务异常时的替代入口。</td><td>数据追溯稳定后加入，降低检索门槛。教师关注引用是否支持回答；产品关注回答是否比直接搜索更省事。若题目明确含“智能问答”，其最小版本应纳入 MVP。</td></tr>
+              <tr><th scope="row"><small>E02</small>同义词与组合检索</th><td>引入经过核对的症状同义词；增加类别、属性、来源等组合筛选，支持结果排序与命中词提示。</td><td>基础检索存在漏查或结果过多时加入。以固定查询集比较改进前后命中率，不把语义相近直接当作医学等价。</td></tr>
+              <tr><th scope="row"><small>E03</small>数据覆盖扩展</th><td>按需要增加 TCM-MKG、语义图谱、功效或古籍片段；保留来源命名空间与映射表，人工确认高价值实体对应关系。</td><td>新增数据能支撑明确场景，或任务书规定数据规模时加入。保留中成药与经典方剂的区别，避免为了数据量强行合并。</td></tr>
+              <tr><th scope="row"><small>E04</small>可视化知识维护</th><td>管理员查看导入结果、修改整理层记录、停用错误关系；保留操作记录。写操作需要身份验证与权限限制。</td><td>出现持续纠错或非技术维护者时建设。首版导入工具足以支撑单人维护；不必预先搭建完整后台权限平台。</td></tr>
+              <tr><th scope="row"><small>E05</small>收藏、历史与个人账户</th><td>保存条目和查询历史；单机可先用本地收藏。需要跨设备同步时再增加注册、登录和账户数据隔离。</td><td>学习者反复使用后加入，帮助复习与回访。公开只读查询无需强制登录，账户体系不应阻塞知识浏览。</td></tr>
+              <tr><th scope="row"><small>E06</small>实体对照与路径筛选</th><td>并排对照两首方剂的组成、两味药的已有属性；支持关系类型和路径长度筛选。</td><td>用户需要比较学习时加入。教师可分析集合与路径查询；产品可减少多页切换。暂不输出治疗优劣排名。</td></tr>
+              <tr><th scope="row"><small>E07</small>知识统计与结果导出</th><td>显示分类型实体数、关系数、来源占比；导出当前结果和来源信息，图谱支持静态图片导出。</td><td>核心查询稳定后加入，为学习整理和答辩展示服务。复用已有统计，避免建设独立 BI 平台或复杂报表引擎。</td></tr>
+            </tbody></table>
+          </div>
+          <div class="rule"><strong>默认顺序：</strong>先优化检索与必要的数据覆盖，再加入问答或知识维护；收藏、对照和导出按剩余时间安排。</div>
+        </section>
+
+        <section id="innovation" class="innovation">
+          <div class="section-top"><div><p class="section-num">04 / RESEARCH OPTIONS</p><h2>可选创新功能</h2><p class="sub">选一个做完整实验，比同时堆叠多个技术名称更有答辩价值。</p></div><span class="pill">优先级 P2</span></div>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="创新功能与实验表，可横向滚动">
+            <table><thead><tr><th scope="col">方向</th><th scope="col">最小实验范围</th><th scope="col">双视角价值与评价方法</th></tr></thead><tbody>
+              <tr><th scope="row"><small>I01 · 优先考虑</small>基于图谱的可解释检索</th><td>针对固定学习问题，将直接检索与增加一至两跳关系扩展的检索进行比较；展示候选实体、路径和来源。无需先接入大模型。</td><td><p><b>教师：</b>基线清晰、变量可控，容易形成实验章节。</p><p><b>产品：</b>补充用户遗漏的关联知识。</p><p class="accept">评价：固定问题集上的 Recall@5、路径有效率及查询耗时。与 M05 的区别在于验证扩展检索是否改善结果。</p></td></tr>
+              <tr><th scope="row"><small>I02</small>图谱增强问答</th><td>在 E01 基础上，把相关子图与原文共同作为回答依据；在相同模型、问题集与生成设置下，对比纯文本检索问答。</td><td><p><b>教师：</b>检验图谱能否改善回答依据与覆盖度。</p><p><b>产品：</b>更容易解释跨实体问题。</p><p class="accept">评价：回答正确率、引用支持率、无依据陈述比例及耗时；不以回答长度代替质量。</p></td></tr>
+              <tr><th scope="row"><small>I03</small>规则推理与证据链</th><td>选择少量有明确依据的功效关系规则，记录规则版本、前提关系与推导路径；显式知识和推断结果分开显示。</td><td><p><b>教师：</b>展示规则设计与错误分析。</p><p><b>产品：</b>帮助理解知识如何关联。</p><p class="accept">评价：专家核对样本的准确率与反例。已有推断数据不能同时充当规则输入和独立测试答案。</p></td></tr>
+              <tr><th scope="row"><small>I04</small>多源差异与证据对照</th><td>选择一小组方剂或药物，保留多来源记录，列出名称、组成、属性与出处差异；给出候选映射并由人工确认。</td><td><p><b>教师：</b>体现实体对齐和数据质量分析。</p><p><b>产品：</b>减少同名异义与错误合并。</p><p class="accept">评价：人工标注集上的对齐精确率、召回率及错误类型。差异只提示，不自动判定某一来源正确。</p></td></tr>
+            </tbody></table>
+          </div>
+          <div class="callout"><p><strong>建议选择 I01：</strong>复用 MVP 已有图谱和来源链路，新增依赖少，实验边界清楚。以上是可用于毕业设计的改进与实验方向，尚未进行文献查新，不能直接宣称学术首创。</p></div>
+        </section>
+
+        <section id="defer" class="defer">
+          <div class="section-top"><div><p class="section-num">05 / OUT OF CURRENT SCOPE</p><h2>当前不建议实现的功能</h2><p class="sub">这些范围对当前毕业设计的投入回报低，或缺少必要条件。</p></div><span class="pill">暂不纳入</span></div>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="暂缓功能表，可横向滚动">
+            <table><thead><tr><th scope="col">功能范围</th><th scope="col">当前不建议的原因</th><th scope="col">替代方案 / 重新考虑条件</th></tr></thead><tbody>
+              <tr><th scope="row"><small>N01</small>自动诊断、个体处方与剂量推荐</th><td>当前数据是知识资料，缺少支持临床产品的病例质量、验证体系与专业责任流程；该目标会显著改变项目定位。</td><td>展示来源中的知识关联与历史记载。仅在有专业团队、独立验证和明确临床项目要求时重新立项；不能把查到方剂包装成个体用药建议。</td></tr>
+              <tr><th scope="row"><small>N02</small>舌象、面诊、脉象识别</th><td>现有舌象和脉象主要是文本描述，不能据此认定已有可训练、可评估的图像或传感器标注数据。</td><td>可先展示文字知识。仅在获得匹配模态的数据、标注和独立测试集，且任务书明确要求时开展识别实验。</td></tr>
+              <tr><th scope="row"><small>N03</small>从零训练中医大模型</th><td>训练资源、数据治理与评估投入容易超过毕业设计范围，且不直接补齐当前核心流程。</td><td>问答阶段按需要调用现有模型；只有基线暴露明确问题并有可用训练与测试数据时，才考虑小规模微调。</td></tr>
+              <tr><th scope="row"><small>N04</small>全网采集与全自动知识抽取</th><td>已经有六组本地数据；持续采集、古籍 OCR、实体识别与自动入库会增加噪声和维护成本，难以保证证据质量。</td><td>先清洗已下载文件。只有缺少关键实体或关系时，才做单一来源、可人工审核的补充采集。</td></tr>
+              <tr><th scope="row"><small>N05</small>问诊、挂号、药品商城与社交社区</th><td>引入医生、订单、支付、内容治理等全新业务，偏离知识图谱学习与检索目标。</td><td>首版聚焦知识工具；待形成独立产品需求与业务资源后另行规划。</td></tr>
+              <tr><th scope="row"><small>N06</small>多端与大型平台配套</th><td>同时开发原生 App、小程序、复杂多租户后台，或预建微服务集群、实时双库同步和高并发平台，会挤占数据质量与核心功能时间。</td><td>先交付响应式 Web 与简单部署方案。新增终端、租户隔离或扩容必须由明确使用需求和实测瓶颈驱动；任务书指定的技术除外。</td></tr>
+            </tbody></table>
+          </div>
+          <div class="rule"><strong>双方共识：</strong>指导教师优先保护论文与系统的完整性；产品经理优先保护核心使用价值。当前有数据可展示，不等于适合把相应领域全部做成产品。</div>
+        </section>
+
+        <section id="delivery">
+          <div class="section-top"><div><p class="section-num">06 / ACCEPTANCE &amp; CONTROL</p><h2>验收与范围控制</h2><p class="sub">下列质量要求与六项 MVP 功能一起交付，不是可延后的装饰。</p></div><span class="pill">完成标准</span></div>
+          <ul class="checklist">
+            <li><b>数据可复现</b>提供模型说明、导入方法、实体与关系计数、异常记录报告；重复导入结果一致。数据修正在处理层完成。</li>
+            <li><b>功能可验证</b>准备正常查询、空结果、同名记录、缺失字段、关系端点失效等用例；至少三条演示路径可完整回查来源。</li>
+            <li><b>边界可控</b>查询输入校验，结果分页与图谱数量限制；外部资料作为文本安全展示。若存在在线写入口，必须实施身份验证与权限控制。</li>
+            <li><b>系统可交付</b>提供启动说明、固定演示数据、关键流程测试结果；记录测试环境与响应时间。MVP 的检索和图谱演示可在无外部模型服务时运行。</li>
+          </ul>
+          <h3>建议验收口径</h3>
+          <p>建立约 30 个固定用例，覆盖名称、别名、关系、来源与异常场景；核心用例全部通过后再增加功能。可将演示数据规模下常用检索与局部图谱查询的 <strong>P95 响应时间不超过 2 秒</strong>设为初始目标，并注明硬件、数据量和请求条件；该数值是建议目标，尚无系统实测结果。</p>
+          <h3>按完成条件推进，而非按功能数量推进</h3>
+          <ol class="route">
+            <li><b>先跑通一条真实链路</b><p>例如从“四君子汤”进入组成药物，再查看关联证候与出处；本地已存在相关记录，实施时仍需核对引用完整性。</p></li>
+            <li><b>完成六项 MVP 并冻结边界</b><p>补齐数据清洗、异常状态、来源定位、测试与部署材料。若时间不足，先减少数据覆盖和页面修饰，保留核心流程与质量要求。</p></li>
+            <li><b>选择少量增强功能或一个创新实验</b><p>根据任务书取舍。问答、跨源融合和推理不同时起步；加入新功能时明确需要撤下或延后的工作。</p></li>
+            <li><b>预留论文与答辩时间</b><p>建议在整体时间中保留约 20%～25% 用于修复、实验整理、论文和演示。团队人数与剩余周期未提供，此处不承诺具体交付日期。</p></li>
+          </ol>
+          <div class="callout"><p><strong>建议冻结的首版范围：</strong>一个 Web 系统、一组可核验的核心数据、六项核心功能、完整测试与演示材料。若数据库技术栈未被指定，先采用能同时承载实体检索与关系查询的最小方案；若指定双库，明确各自职责，首版可用可重复批量导入避免实时同步负担。</p></div>
+        </section>
+
+        <section id="sources">
+          <div class="section-top"><div><p class="section-num">07 / LOCAL EVIDENCE</p><h2>本地依据与数据注意事项</h2></div><span class="pill">可回查</span></div>
+          <ol class="sources">
+            <li><a href="datasets/dataset-guide.html">项目数据集说明</a>：六组来源、建议用途、已知格式问题及使用说明。本文据此讨论候选范围，没有把数据用途建议当作已批准需求。</li>
+            <li><a href="datasets/raw/bencaodian/schema.json">本草典字段说明</a>及 <a href="datasets/raw/bencaodian/relationships.json">关系文件</a>：四类核心实体合计 599 条；关系文件有 12 个关系数组、1,477 个关系记录对象，部分对象含多个目标，不能直接等同于最终图边数量。</li>
+            <li><a href="datasets/raw/bencaodian/herbs.json">中药</a>、<a href="datasets/raw/bencaodian/formulas.json">方剂</a>、<a href="datasets/raw/bencaodian/patterns.json">证候</a>、<a href="datasets/raw/bencaodian/classical_texts.json">古籍</a>：本次检查的记录均为 <code>editor-reviewed</code>。现有说明中的 <code>verified</code> 示例筛选条件不适用于这四份文件。</li>
+            <li><a href="datasets/dataset-guide.html#tcm-mkg">TCM-MKG</a>：本次按制表符解析 D1～D7 合计 195,211 行，D6 存在一条列数不一致记录。若引入大规模数据，先处理格式异常，再统计入库结果。</li>
+            <li><a href="datasets/dataset-guide.html#semantic-kg">语义图谱</a>：本地为 6,952 个节点记录、16,619 个关系记录，节点文件按 GB18030 读取。<a href="datasets/dataset-guide.html#ancient-formulas">古籍库</a>的候选片段不应等同于专家确认的标准方剂；<a href="datasets/dataset-guide.html#efficacy">功效数据</a>中的显式与规则推断记录应分开使用。</li>
+          </ol>
+          <p class="note">本报告为项目范围建议，未进行外部文献查新、完整数据质量审计或用户调研。数据来源及使用条款沿用本地资料；新增或公开分发数据时，应逐来源核对其原始声明。</p>
+        </section>
+      </main>
+    </div>
+    <footer class="footer"><span>QiHuang-KG · 软件工程毕业设计范围分析</span><span>建议稿 v1.0 · 本地材料审阅日期 2026-10-04</span></footer>
+  </div>
+</body>
+</html>

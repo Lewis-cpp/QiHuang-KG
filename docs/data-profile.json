@@ -1,0 +1,239 @@
+{
+  "audit_version": 1,
+  "scope": "Structural audit; not medical verification or an application import.",
+  "files": {
+    "herbs.json": "5773a762c92b2ae3ce9bfb7d60d529e636bf86fad0ae165ad825be479f446276",
+    "formulas.json": "a31a02c6325e744f9722993bec3a942624442e7d1b3830494b05672d5a44b598",
+    "patterns.json": "15ec9bf532cc3f67094c2616ed0da503e1b1967c134e307f0265c1fe58ef643f",
+    "classical_texts.json": "2cb13eb854092d6861c69794afdfaeb39a7b1ea1afc10ee6dabe6307be500682",
+    "relationships.json": "62169b7458aaab4ad422910af8cc44602a4615652d7083a79b520af6e05c79f9"
+  },
+  "entity_counts": {
+    "herbs": 365,
+    "formulas": 112,
+    "patterns": 84,
+    "classical_texts": 38
+  },
+  "review_status": {
+    "editor-reviewed": 599
+  },
+  "relationship_object_counts": {
+    "herb_enters_meridian": 329,
+    "herb_in_formula": 751,
+    "herb_synergizes_with": 16,
+    "herb_incompatible_with": 0,
+    "formula_treats_pattern": 86,
+    "formula_derived_from": 9,
+    "formula_cited_in_text": 48,
+    "pattern_differential_with": 3,
+    "acupoint_combines_with": 10,
+    "acupoint_treats_pattern": 10,
+    "meridian_paired_with": 7,
+    "acupoint_on_meridian": 208
+  },
+  "planned_edge_counts": {
+    "CONTAINS": 751,
+    "ASSOCIATED_WITH_PATTERN": 86,
+    "CITED_IN_formula": 113,
+    "CITED_IN_herb": 336
+  },
+  "planned_edge_total": 1286,
+  "composition_only_pairs": [],
+  "relationship_only_pairs": [],
+  "composition_conflicts": [
+    {
+      "formula": "zhu_ling_tang",
+      "herb": "ze_xie",
+      "field": "role",
+      "composition_value": "chen",
+      "relationship_value": "jun"
+    }
+  ],
+  "additional_formula_citations": [
+    [
+      "xiao_jian_zhong_tang",
+      "jin_gui_yao_lue"
+    ]
+  ],
+  "herb_reference_count": 371,
+  "herb_references_missing_text_key": [
+    {
+      "herb": "qiang_huo",
+      "field_path": "/classical_references/0",
+      "text_key": null
+    },
+    {
+      "herb": "xiang_ru",
+      "field_path": "/classical_references/0",
+      "text_key": null
+    },
+    {
+      "herb": "gou_teng",
+      "field_path": "/classical_references/0",
+      "text_key": null
+    },
+    {
+      "herb": "quan_xie",
+      "field_path": "/classical_references/0",
+      "text_key": null
+    },
+    {
+      "herb": "bing_pian",
+      "field_path": "/classical_references/0",
+      "text_key": null
+    },
+    {
+      "herb": "bu_gu_zhi",
+      "field_path": "/classical_references/1",
+      "text_key": null
+    },
+    {
+      "herb": "yi_zhi_ren",
+      "field_path": "/classical_references/1",
+      "text_key": null
+    },
+    {
+      "herb": "huang_jing",
+      "field_path": "/classical_references/0",
+      "text_key": null
+    },
+    {
+      "herb": "xi_yang_shen",
+      "field_path": "/classical_references/0",
+      "text_key": null
+    },
+    {
+      "herb": "tai_zi_shen",
+      "field_path": "/classical_references/0",
+      "text_key": null
+    }
+  ],
+  "herb_references_unresolved_text_key": [
+    {
+      "herb": "mei_gui_hua",
+      "field_path": "/classical_references/0",
+      "text_key": "ben_cao_zheng_yi"
+    },
+    {
+      "herb": "shen_qu",
+      "field_path": "/classical_references/0",
+      "text_key": "yao_xing_lun"
+    },
+    {
+      "herb": "ku_lian_pi",
+      "field_path": "/classical_references/0",
+      "text_key": "ming_yi_bie_lu"
+    },
+    {
+      "herb": "nan_gua_zi",
+      "field_path": "/classical_references/0",
+      "text_key": "xian_dai_shi_yong_zhong_yao"
+    },
+    {
+      "herb": "he_shi",
+      "field_path": "/classical_references/0",
+      "text_key": "kai_bao_ben_cao"
+    },
+    {
+      "herb": "huai_hua",
+      "field_path": "/classical_references/0",
+      "text_key": "ri_hua_zi_ben_cao"
+    },
+    {
+      "herb": "xiao_ji",
+      "field_path": "/classical_references/0",
+      "text_key": "ri_hua_zi_ben_cao"
+    },
+    {
+      "herb": "da_ji_cao",
+      "field_path": "/classical_references/0",
+      "text_key": "yao_xing_lun"
+    },
+    {
+      "herb": "jiang_huang",
+      "field_path": "/classical_references/0",
+      "text_key": "xin_xiu_ben_cao"
+    },
+    {
+      "herb": "wu_ling_zhi",
+      "field_path": "/classical_references/0",
+      "text_key": "kai_bao_ben_cao"
+    },
+    {
+      "herb": "su_mu",
+      "field_path": "/classical_references/0",
+      "text_key": "ri_hua_zi_ben_cao"
+    },
+    {
+      "herb": "gu_sui_bu",
+      "field_path": "/classical_references/0",
+      "text_key": "kai_bao_ben_cao"
+    },
+    {
+      "herb": "chuan_niu_xi",
+      "field_path": "/classical_references/0",
+      "text_key": "yao_xing_lun"
+    },
+    {
+      "herb": "ji_xue_teng",
+      "field_path": "/classical_references/0",
+      "text_key": "ben_cao_gang_mu_shi_yi"
+    },
+    {
+      "herb": "bai_bian_dou",
+      "field_path": "/classical_references/0",
+      "text_key": "ming_yi_bie_lu"
+    },
+    {
+      "herb": "hong_jing_tian",
+      "field_path": "/classical_references/0",
+      "text_key": "si_bu_yi_dian"
+    },
+    {
+      "herb": "dong_chong_xia_cao",
+      "field_path": "/classical_references/0",
+      "text_key": "ben_cao_cong_xin"
+    },
+    {
+      "herb": "he_tao_ren",
+      "field_path": "/classical_references/0",
+      "text_key": "kai_bao_ben_cao"
+    },
+    {
+      "herb": "mo_han_lian",
+      "field_path": "/classical_references/0",
+      "text_key": "tang_ben_cao"
+    },
+    {
+      "herb": "he_zi",
+      "field_path": "/classical_references/0",
+      "text_key": "yao_xing_lun"
+    },
+    {
+      "herb": "da_ji",
+      "field_path": "/classical_references/0",
+      "text_key": "yao_xing_lun"
+    },
+    {
+      "herb": "ge_jie",
+      "field_path": "/classical_references/0",
+      "text_key": "kai_bao_ben_cao"
+    },
+    {
+      "herb": "zi_he_che",
+      "field_path": "/classical_references/0",
+      "text_key": "ben_cao_shi_yi"
+    },
+    {
+      "herb": "xian_mao",
+      "field_path": "/classical_references/0",
+      "text_key": "hai_yao_ben_cao"
+    },
+    {
+      "herb": "peng_sha",
+      "field_path": "/classical_references/0",
+      "text_key": "ri_hua_zi_ben_cao"
+    }
+  ],
+  "classical_passage_count": 57
+}

@@ -1,0 +1,988 @@
+[
+  {
+    "key": "fu_mai",
+    "slug": "fu-mai",
+    "name_zh": "浮脉",
+    "name_pinyin": "Fú mài",
+    "name_en": "Floating",
+    "category": "superficial",
+    "classical_description_zh": "浮脉惟从肉上行，如循榆荚似毛轻。三秋得令知无恙，久病逢之却可惊。",
+    "classical_description_en": "The floating pulse travels upon the flesh, brushing the fingers like elm pods or down feathers. In the third month of autumn it is the seasonal ruler and presages health; but in a long-standing illness, its arrival is cause for alarm.",
+    "classical_source": "濒湖脉学 · 浮脉 · 体状诗",
+    "modern_description_zh": "轻取即得，重按稍减而不空。脉位表浅，如木漂水面，举之有余，按之不足。",
+    "modern_description_en": "Obtained with light pressure at the skin surface; when pressed heavily it diminishes somewhat but is not empty. The pulse sits near the surface like wood floating on water—abundant when lifted, insufficient when pressed.",
+    "clinical_significance_zh": "主表证，亦主虚阳外越。外感风寒风热初起，邪在肌表，正气抗邪于外，故脉浮。若久病见浮大无力，则为阳气浮越之危候。",
+    "clinical_significance_en": "Chiefly indicates exterior patterns; may also reflect deficient yang floating outward. In early wind-cold or wind-heat invasion, pathogen sits at the exterior and upright qi rises to resist it, hence the floating quality. Yet in chronic illness, a large floating pulse without strength signals yang qi deserting outward—a critical sign.",
+    "associated_pattern_keys": [
+      "wai_gan_feng_han_biao_shi",
+      "wai_gan_feng_han_biao_xu"
+    ],
+    "differential_from": [
+      "kou_mai",
+      "ge_mai",
+      "ru_mai",
+      "hong_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "chen_mai",
+    "slug": "chen-mai",
+    "name_zh": "沉脉",
+    "name_pinyin": "Chén mài",
+    "name_en": "Deep",
+    "category": "deep",
+    "classical_description_zh": "水行润下脉来沉，筋骨之间软滑匀。女子寸兮男子尺，四时如此号为平。",
+    "classical_description_en": "Like water that moistens and descends, the deep pulse arrives low—soft, slippery, and even between sinew and bone. In women at the cun, in men at the chi, when constant through the four seasons it is called normal.",
+    "classical_source": "濒湖脉学 · 沉脉 · 体状诗",
+    "modern_description_zh": "轻取不应，重按始得。脉位深在筋骨之间，按之有力或无力皆主里证。",
+    "modern_description_en": "Not felt with light pressure; only obtained with heavy pressure between sinew and bone. The pulse sits deep; whether forceful or forceless, it reflects an interior condition.",
+    "clinical_significance_zh": "主里证。沉而有力为里实，邪气内郁；沉而无力为里虚，脏腑气血不足。",
+    "clinical_significance_en": "Chiefly signals interior patterns. Deep and forceful indicates interior repletion with pathogenic qi pent within; deep and forceless indicates interior vacuity of organ qi and blood.",
+    "associated_pattern_keys": [
+      "shen_yang_xu",
+      "shen_yin_xu",
+      "pi_qi_xu"
+    ],
+    "differential_from": [
+      "fu_mai_hidden",
+      "lao_mai",
+      "ruo_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "chi_mai",
+    "slug": "chi-mai",
+    "name_zh": "迟脉",
+    "name_pinyin": "Chí mài",
+    "name_en": "Slow",
+    "category": "slow",
+    "classical_description_zh": "迟来一息至惟三，阳不胜阴气血寒。",
+    "classical_description_en": "Arriving thrice to one breath, the slow pulse comes: yang cannot overcome yin, and qi and blood are cold.",
+    "classical_source": "濒湖脉学 · 迟脉 · 体状诗",
+    "modern_description_zh": "一息不足四至（每分钟少于六十次），脉来迟缓。主寒证，亦见于阳虚。",
+    "modern_description_en": "Fewer than four beats per breath (under sixty per minute); the pulse comes tardily. Indicates cold patterns and is also seen in yang vacuity.",
+    "clinical_significance_zh": "主寒证。迟而有力为寒积实证，阴寒凝滞；迟而无力为阳气虚衰，鼓动无力。少数久经训练之运动员亦可见生理性迟脉。",
+    "clinical_significance_en": "Chiefly indicates cold. Slow with force signals cold accumulation and congealing yin; slow without force signals yang depletion unable to propel the blood. Well-trained athletes may present a physiological slow pulse without pathology.",
+    "associated_pattern_keys": [
+      "shen_yang_xu",
+      "wei_han",
+      "shao_yin_han_hua"
+    ],
+    "differential_from": [
+      "huan_mai",
+      "jie_mai",
+      "dai_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "shu_mai",
+    "slug": "shu-mai",
+    "name_zh": "数脉",
+    "name_pinyin": "Shuò mài",
+    "name_en": "Rapid",
+    "category": "rapid",
+    "classical_description_zh": "数脉息间常六至，阴微阳盛必狂烦。",
+    "classical_description_en": "The rapid pulse delivers six beats to a breath: when yin is faint and yang flourishes, agitation and restlessness must ensue.",
+    "classical_source": "濒湖脉学 · 数脉 · 体状诗",
+    "modern_description_zh": "一息五至以上（每分钟九十次以上），脉来急促。",
+    "modern_description_en": "Five or more beats per breath (over ninety per minute); the pulse comes in urgent succession.",
+    "clinical_significance_zh": "主热证。数而有力为实热；数而无力为虚热，多见阴虚内热。亦见于气血虚、阳气外浮之危候。",
+    "clinical_significance_en": "Chiefly indicates heat. Rapid with force denotes repletion heat; rapid without force denotes vacuity heat—most commonly yin vacuity with internal heat. In severe qi-blood vacuity or yang desertion outward, a rapid forceless pulse is a critical sign.",
+    "associated_pattern_keys": [
+      "yin_xu_zheng",
+      "qi_fen_zheng",
+      "ying_fen_zheng",
+      "fei_yin_xu"
+    ],
+    "differential_from": [
+      "ji_mai",
+      "cu_mai",
+      "hong_mai",
+      "dong_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "hua_mai",
+    "slug": "hua-mai",
+    "name_zh": "滑脉",
+    "name_pinyin": "Huá mài",
+    "name_en": "Slippery",
+    "category": "repletion",
+    "classical_description_zh": "滑脉如珠替替然，往来流利却还前。",
+    "classical_description_en": "The slippery pulse rolls like pearls one after another—coming and going with fluid ease, returning forward smoothly.",
+    "classical_source": "濒湖脉学 · 滑脉 · 体状诗",
+    "modern_description_zh": "往来流利，如珠走盘，应指圆滑。脉来势盛而形圆，节奏均匀。",
+    "modern_description_en": "Flowing and fluid in arrival and departure, like pearls rolling across a tray—round and smooth beneath the fingertips. The pulse wave is vigorous and rounded, with even rhythm.",
+    "clinical_significance_zh": "主痰饮、食积、实热，亦主妊娠。青壮年气血充盛者亦可见之，为平脉。",
+    "clinical_significance_en": "Chiefly indicates phlegm-rheum, food accumulation, and repletion heat; also signals pregnancy. In healthy young adults with abundant qi and blood it may appear as a constitutional normal pulse.",
+    "associated_pattern_keys": [
+      "tan_shi_zheng",
+      "shi_zu_zhong_jiao",
+      "wei_re"
+    ],
+    "differential_from": [
+      "dong_mai",
+      "shu_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "se_mai",
+    "slug": "se-mai",
+    "name_zh": "涩脉",
+    "name_pinyin": "Sè mài",
+    "name_en": "Choppy",
+    "category": "vacuity",
+    "classical_description_zh": "细迟短涩往来难，散止依稀应指间。",
+    "classical_description_en": "Thin, slow, and short, the choppy pulse struggles to come and go—scattered and halting, barely felt beneath the fingertips.",
+    "classical_source": "濒湖脉学 · 涩脉 · 体状诗",
+    "modern_description_zh": "往来艰涩不畅，如轻刀刮竹。脉形细小，节律不齐，势力不匀。",
+    "modern_description_en": "Arrival and departure laboured and unsmooth, like a light blade scraping bamboo. The pulse form is thin and small, with uneven rhythm and variable force.",
+    "clinical_significance_zh": "主精伤血少、气滞血瘀。涩而无力为精血亏虚；涩而有力为气滞血瘀、痰食胶结。",
+    "clinical_significance_en": "Indicates injury to essence and scanty blood, or qi stagnation with blood stasis. Choppy and forceless reflects depleted essence-blood; choppy and forceful reflects qi stagnation, blood stasis, or entanglement of phlegm and food.",
+    "associated_pattern_keys": [
+      "xue_xu",
+      "gan_xue_xu",
+      "qi_xue_liang_xu"
+    ],
+    "differential_from": [
+      "xi_mai",
+      "wei_mai",
+      "jie_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "xu_mai",
+    "slug": "xu-mai",
+    "name_zh": "虚脉",
+    "name_pinyin": "Xū mài",
+    "name_en": "Empty",
+    "category": "vacuity",
+    "classical_description_zh": "举之迟大按之松，脉状无涯类谷空。",
+    "classical_description_en": "Lifted, it is slow and large; pressed, it yields and softens—boundless in form like an empty valley.",
+    "classical_source": "濒湖脉学 · 虚脉 · 体状诗",
+    "modern_description_zh": "三部脉举之无力，按之空豁，应指松软。为一切无力脉的总称。",
+    "modern_description_en": "All three positions feel forceless on lifting and hollow on pressing, yielding softly to the fingertip. It serves as the general term for all forceless pulses.",
+    "clinical_significance_zh": "主虚证，尤多见于气血两虚、脏腑虚损。脉来无力是其总纲。",
+    "clinical_significance_en": "Indicates vacuity patterns, especially dual vacuity of qi and blood or depletion of the zang-fu. The common thread is a forceless arrival.",
+    "associated_pattern_keys": [
+      "qi_xue_liang_xu",
+      "xin_qi_xu",
+      "pi_qi_xu",
+      "fei_qi_xu"
+    ],
+    "differential_from": [
+      "ruo_mai",
+      "wei_mai",
+      "ru_mai",
+      "san_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "shi_mai",
+    "slug": "shi-mai",
+    "name_zh": "实脉",
+    "name_pinyin": "Shí mài",
+    "name_en": "Repletion",
+    "category": "repletion",
+    "classical_description_zh": "浮沉皆得大而长，应指无虚愊愊强。",
+    "classical_description_en": "Obtained at both the floating and deep levels, large and long—no emptiness beneath the fingertip, but a vigorous, full thrust.",
+    "classical_source": "濒湖脉学 · 实脉 · 体状诗",
+    "modern_description_zh": "三部脉举按皆有力，来去俱盛，脉形长大而充实。",
+    "modern_description_en": "All three positions are forceful on both lifting and pressing; arrival and departure are vigorous; the pulse is long, large, and filled.",
+    "clinical_significance_zh": "主实证。邪气亢盛而正气不虚，正邪交争有力，故脉实而有力。",
+    "clinical_significance_en": "Indicates repletion patterns. Pathogenic qi is rampant while upright qi remains unweakened; the vigorous contest produces a full, forceful pulse.",
+    "associated_pattern_keys": [
+      "yang_ming_fu_shi",
+      "yang_ming_jing_zheng",
+      "qi_fen_zheng"
+    ],
+    "differential_from": [
+      "hong_mai",
+      "chang_mai",
+      "xian_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "chang_mai",
+    "slug": "chang-mai",
+    "name_zh": "长脉",
+    "name_pinyin": "Cháng mài",
+    "name_en": "Long",
+    "category": "repletion",
+    "classical_description_zh": "过于本位脉名长，弦则非然但满张。",
+    "classical_description_en": "Passing beyond its own position the pulse is called long; not taut as a wiry pulse, yet fully stretched.",
+    "classical_source": "濒湖脉学 · 长脉 · 体状诗",
+    "modern_description_zh": "脉体长，首尾端直，超过本位，如循长竿。",
+    "modern_description_en": "The pulse is long in body, straight at head and tail, extending beyond its own position like running the finger along a long pole.",
+    "clinical_significance_zh": "长而和缓为气血充盛之平脉；长而硬满则主阳亢、热盛、痰火、内风。",
+    "clinical_significance_en": "Long and harmonious reflects abundant qi and blood—a normal pulse. Long with hardness and fullness indicates hyperactive yang, repletion heat, phlegm-fire, or internal wind.",
+    "associated_pattern_keys": [
+      "gan_yang_shang_kang",
+      "yang_ming_jing_zheng"
+    ],
+    "differential_from": [
+      "xian_mai",
+      "shi_mai",
+      "hong_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "duan_mai",
+    "slug": "duan-mai",
+    "name_zh": "短脉",
+    "name_pinyin": "Duǎn mài",
+    "name_en": "Short",
+    "category": "vacuity",
+    "classical_description_zh": "两头缩缩名为短，涩短迟迟细且难。",
+    "classical_description_en": "Contracted at both ends, it is named short; like the choppy pulse it comes slowly, thin and laboured.",
+    "classical_source": "濒湖脉学 · 短脉 · 体状相类诗",
+    "modern_description_zh": "脉体短小，不及本位，首尾俱俯，仅见于关部而寸尺不显。",
+    "modern_description_en": "The pulse body is short, falling short of its position; both head and tail are withdrawn so that it is felt mainly at the guan while cun and chi are indistinct.",
+    "clinical_significance_zh": "短而有力为气郁、痰食停滞；短而无力为气虚，元气不足，鼓动无力。",
+    "clinical_significance_en": "Short with force indicates qi constraint or stagnation of phlegm and food; short without force indicates qi vacuity with insufficient original qi unable to propel the blood.",
+    "associated_pattern_keys": [
+      "xin_qi_xu",
+      "fei_qi_xu",
+      "pi_qi_xu"
+    ],
+    "differential_from": [
+      "dong_mai",
+      "se_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "hong_mai",
+    "slug": "hong-mai",
+    "name_zh": "洪脉",
+    "name_pinyin": "Hóng mài",
+    "name_en": "Surging",
+    "category": "rapid",
+    "classical_description_zh": "脉来洪盛去还衰，满指滔滔应夏时。",
+    "classical_description_en": "Arriving surging and abundant, departing in decline, it fills the fingers like a rising tide—matched to the season of summer.",
+    "classical_source": "濒湖脉学 · 洪脉 · 体状诗",
+    "modern_description_zh": "脉体宽大，来盛去衰，如波涛汹涌，来时力盛，去时力衰。",
+    "modern_description_en": "Broad and large in body, vigorous on arrival and waning on departure, like surging waves—powerful as it rises, ebbing as it falls.",
+    "clinical_significance_zh": "主里热亢盛，气分热盛尤为多见。若久病气虚、失血、泄泻见洪脉，则为阴液耗伤、虚阳外越之危候。",
+    "clinical_significance_en": "Indicates flourishing interior heat, particularly heat in the qi level. Yet in chronic illness with qi vacuity, blood loss, or diarrhoea, a surging pulse signals consumed yin fluids and deserting yang—a critical sign.",
+    "associated_pattern_keys": [
+      "qi_fen_zheng",
+      "yang_ming_jing_zheng",
+      "wei_re"
+    ],
+    "differential_from": [
+      "shi_mai",
+      "chang_mai",
+      "shu_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "wei_mai",
+    "slug": "wei-mai",
+    "name_zh": "微脉",
+    "name_pinyin": "Wēi mài",
+    "name_en": "Faint",
+    "category": "vacuity",
+    "classical_description_zh": "微脉轻微潎潎乎，按之欲绝有如无。",
+    "classical_description_en": "The faint pulse is scarcely there, trembling softly; pressed, it seems about to vanish, as if not present at all.",
+    "classical_source": "濒湖脉学 · 微脉 · 体状相类诗",
+    "modern_description_zh": "脉极细极软，按之欲绝，若有若无。",
+    "modern_description_en": "Extremely thin and extremely soft; pressed, it seems about to fade away—felt now, lost the next moment.",
+    "clinical_significance_zh": "主气血大虚，阳气衰微。久病脉微为正气将绝；新病脉微为阳气暴脱。",
+    "clinical_significance_en": "Indicates severe depletion of qi and blood and exhaustion of yang. In chronic illness, a faint pulse means upright qi is about to be extinguished; in acute illness, it signals sudden collapse of yang.",
+    "associated_pattern_keys": [
+      "shen_yang_xu",
+      "xin_yang_xu",
+      "qi_xue_liang_xu"
+    ],
+    "differential_from": [
+      "xi_mai",
+      "ruo_mai",
+      "san_mai",
+      "xu_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "jin_mai",
+    "slug": "jin-mai",
+    "name_zh": "紧脉",
+    "name_pinyin": "Jǐn mài",
+    "name_en": "Tight",
+    "category": "repletion",
+    "classical_description_zh": "举如转索切如绳，脉象因之得紧名。",
+    "classical_description_en": "Lifted, it turns like a twisting cord; pressed, it cuts like a rope—from this the pulse takes the name of 'tight.'",
+    "classical_source": "濒湖脉学 · 紧脉 · 体状诗",
+    "modern_description_zh": "脉来绷急有力，左右弹指，如牵绳转索。脉势紧张，来去有力。",
+    "modern_description_en": "The pulse comes taut and forceful, flicking the finger left and right like a pulled cord or twisting rope. The tension is palpable and the pulse-force is strong on both arrival and departure.",
+    "clinical_significance_zh": "主寒证、痛证、宿食。寒邪束表或内客脏腑，寒主收引，脉道拘急，故脉紧。",
+    "clinical_significance_en": "Indicates cold, pain, and food stagnation. When cold pathogen binds the exterior or lodges in the organs, cold contracts and the vessel wall tightens—hence the tight quality.",
+    "associated_pattern_keys": [
+      "wai_gan_feng_han_biao_shi",
+      "wei_han",
+      "shao_yin_han_hua"
+    ],
+    "differential_from": [
+      "xian_mai",
+      "shi_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "huan_mai",
+    "slug": "huan-mai",
+    "name_zh": "缓脉",
+    "name_pinyin": "Huǎn mài",
+    "name_en": "Moderate",
+    "category": "slow",
+    "classical_description_zh": "缓脉阿阿四至通，柳梢袅袅飐轻风。",
+    "classical_description_en": "The moderate pulse arrives gently at four beats to a breath, like willow twigs swaying in a light breeze.",
+    "classical_source": "濒湖脉学 · 缓脉 · 体状诗",
+    "modern_description_zh": "一息四至，来去均匀和缓。若从容有力为有胃气之平脉；若缓而无力或兼他象则主湿证、脾虚。",
+    "modern_description_en": "Four beats per breath, arriving and departing evenly and gently. Unhurried and firm, it is the normal pulse bearing stomach qi; gentle yet forceless, or combined with other features, it signals dampness or spleen vacuity.",
+    "clinical_significance_zh": "和缓有神为平脉，是有胃气之象；缓而怠慢主脾虚、湿困。",
+    "clinical_significance_en": "Moderate and spirited is the normal pulse, an expression of stomach qi. Sluggishly moderate indicates spleen vacuity and dampness encumbering the middle.",
+    "associated_pattern_keys": [
+      "pi_qi_xu",
+      "tan_shi_zheng",
+      "shi_zu_zhong_jiao"
+    ],
+    "differential_from": [
+      "chi_mai",
+      "ru_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "xian_mai",
+    "slug": "xian-mai",
+    "name_zh": "弦脉",
+    "name_pinyin": "Xián mài",
+    "name_en": "Wiry",
+    "category": "repletion",
+    "classical_description_zh": "弦脉迢迢端直长，肝经木旺土应伤。",
+    "classical_description_en": "The wiry pulse stretches long, straight at head and tail; when liver-wood is overbearing, earth is injured in response.",
+    "classical_source": "濒湖脉学 · 弦脉 · 体状诗",
+    "modern_description_zh": "端直以长，如按琴弦。脉体挺然有力，指下如触紧绷的弓弦。",
+    "modern_description_en": "Straight and long from head to tail, like pressing the string of a zither. The pulse stands taut beneath the finger, as if touching a drawn bowstring.",
+    "clinical_significance_zh": "主肝胆病、诸痛、痰饮、疟疾。弦为肝脉，春季常见；老年人脉弦多属动脉硬化。",
+    "clinical_significance_en": "Indicates disorders of the liver and gallbladder, pain, phlegm-rheum, and malarial disorders. The wiry pulse is the liver's pulse, commonly seen in spring; in the elderly it often reflects arterial stiffening.",
+    "associated_pattern_keys": [
+      "gan_qi_yu_jie",
+      "gan_yang_shang_kang",
+      "shaoyang_zheng",
+      "jue_yin_bing"
+    ],
+    "differential_from": [
+      "jin_mai",
+      "chang_mai",
+      "ge_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "kou_mai",
+    "slug": "kou-mai",
+    "name_zh": "芤脉",
+    "name_pinyin": "Kōu mài",
+    "name_en": "Scallion-stalk",
+    "category": "vacuity",
+    "classical_description_zh": "芤形浮大软如葱，边实须知内已空。",
+    "classical_description_en": "Floating and large, soft as a scallion stalk—the edges firm while the centre is already empty.",
+    "classical_source": "濒湖脉学 · 芤脉 · 体状诗",
+    "modern_description_zh": "浮大中空，如按葱管。轻按得之，稍重按则中空无力，两边稍实。",
+    "modern_description_en": "Floating and large but hollow in the middle, like pressing a scallion tube. Lightly felt it is present; pressed slightly harder the centre gives way, with only the edges retaining some firmness.",
+    "clinical_significance_zh": "主失血、伤阴之证。突然大量失血，血脉空虚，故脉芤。亦见于吐泻伤津、阴液骤脱之证。",
+    "clinical_significance_en": "Indicates blood loss and injury to yin. After sudden massive bleeding the vessels run empty, hence the scallion-stalk quality. It is also seen when vomiting or diarrhoea depletes fluids and yin collapses abruptly.",
+    "associated_pattern_keys": [
+      "xue_xu",
+      "xin_xue_xu",
+      "gan_xue_xu"
+    ],
+    "differential_from": [
+      "fu_mai",
+      "ge_mai",
+      "hong_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "ruo_mai",
+    "slug": "ruo-mai",
+    "name_zh": "弱脉",
+    "name_pinyin": "Ruò mài",
+    "name_en": "Weak",
+    "category": "vacuity",
+    "classical_description_zh": "弱来无力按之柔，柔细而沉不见浮。",
+    "classical_description_en": "Arriving without strength, yielding on pressure—soft and thin and deep, never seen at the surface.",
+    "classical_source": "濒湖脉学 · 弱脉 · 体状诗",
+    "modern_description_zh": "极软而沉细，举之无有，按之乃得，应指软弱无力。",
+    "modern_description_en": "Extremely soft, deep, and thin; not felt on lifting, only obtained on pressing, yielding softly and forcelessly beneath the fingertip.",
+    "clinical_significance_zh": "主气血不足、阳气虚衰。久病气血俱虚，阳气无力鼓动脉道，故脉弱。",
+    "clinical_significance_en": "Indicates insufficiency of qi and blood and waning yang. In chronic illness qi and blood are both deficient, and yang lacks the strength to drive the vessels—hence the weak quality.",
+    "associated_pattern_keys": [
+      "xin_qi_xu",
+      "shen_yang_xu",
+      "qi_xue_liang_xu",
+      "xin_yang_xu"
+    ],
+    "differential_from": [
+      "ru_mai",
+      "wei_mai",
+      "xi_mai",
+      "xu_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "ru_mai",
+    "slug": "ru-mai",
+    "name_zh": "濡脉",
+    "name_pinyin": "Rú mài",
+    "name_en": "Soggy",
+    "category": "vacuity",
+    "classical_description_zh": "濡形浮细按须轻，水面浮绵力不禁。",
+    "classical_description_en": "Floating and thin in form, to be touched lightly; like cotton wool drifting on water, it cannot bear pressure.",
+    "classical_source": "濒湖脉学 · 濡脉 · 体状诗",
+    "modern_description_zh": "浮而细软，如帛在水中，轻按即得，重按即无。",
+    "modern_description_en": "Floating, thin, and soft, like silk in water—felt at once with light pressure, lost entirely under heavy pressure.",
+    "clinical_significance_zh": "主诸虚，又主湿证。精血两伤，中气不足则脉濡；湿邪困遏，气机不畅亦见濡脉。",
+    "clinical_significance_en": "Indicates various deficiencies and also damp patterns. When essence and blood are both injured and centre qi is insufficient the pulse becomes soggy; dampness obstructing qi dynamic likewise produces a soggy quality.",
+    "associated_pattern_keys": [
+      "pi_qi_xu",
+      "tan_shi_zheng",
+      "xue_xu",
+      "shi_zu_zhong_jiao"
+    ],
+    "differential_from": [
+      "ruo_mai",
+      "xi_mai",
+      "wei_mai",
+      "fu_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "san_mai",
+    "slug": "san-mai",
+    "name_zh": "散脉",
+    "name_pinyin": "Sàn mài",
+    "name_en": "Scattered",
+    "category": "vacuity",
+    "classical_description_zh": "散似杨花散漫飞，去来无定至难齐。",
+    "classical_description_en": "Scattered like willow catkins drifting in the wind, its comings and goings without order, its beats impossible to count evenly.",
+    "classical_source": "濒湖脉学 · 散脉 · 体状诗",
+    "modern_description_zh": "浮散无根，至数不齐。轻按有散漫之象，稍重按则无。脉形涣散不聚。",
+    "modern_description_en": "Floating and diffuse, without root, with uneven beat count. Light pressure reveals a dispersed, drifting quality; slightly firmer pressure and it is gone. The pulse form fails to gather.",
+    "clinical_significance_zh": "为元气离散，脏腑精气衰竭之危候。多见于心气将绝、脏腑将败之重证。",
+    "clinical_significance_en": "A critical sign indicating original qi dispersing and the essence of the zang-fu in collapse. Most often seen when heart qi is nearing exhaustion and the organs are failing.",
+    "associated_pattern_keys": [
+      "xin_yang_xu",
+      "xin_qi_xu",
+      "qi_xue_liang_xu"
+    ],
+    "differential_from": [
+      "fu_mai",
+      "xu_mai",
+      "wei_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "xi_mai",
+    "slug": "xi-mai",
+    "name_zh": "细脉",
+    "name_pinyin": "Xì mài",
+    "name_en": "Thready",
+    "category": "vacuity",
+    "classical_description_zh": "细来累累细如丝，应指沉沉无绝期。",
+    "classical_description_en": "Thin and strung like a silk thread, it sinks firmly beneath the finger yet never breaks off.",
+    "classical_source": "濒湖脉学 · 细脉 · 体状诗",
+    "modern_description_zh": "脉细如线，但应指明显，按之不绝。脉道狭小而力较弱。",
+    "modern_description_en": "As slender as a thread yet clearly felt beneath the finger, unbroken on pressure. The vessel path is narrow and the force somewhat diminished.",
+    "clinical_significance_zh": "主气血两虚、诸虚劳损，亦主湿邪为病。阴血不足，不能充盈脉道，故脉细。",
+    "clinical_significance_en": "Indicates dual vacuity of qi and blood and various patterns of consumption; it also appears when dampness has taken hold. With insufficient yin-blood to fill the vessels, the pulse becomes thin.",
+    "associated_pattern_keys": [
+      "xue_xu",
+      "yin_xu_zheng",
+      "gan_xue_xu",
+      "shen_yin_xu"
+    ],
+    "differential_from": [
+      "ru_mai",
+      "wei_mai",
+      "ruo_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "fu_mai_hidden",
+    "slug": "fu-mai-hidden",
+    "name_zh": "伏脉",
+    "name_pinyin": "Fú mài",
+    "name_en": "Hidden",
+    "category": "deep",
+    "classical_description_zh": "伏脉推筋着骨寻，指间裁动隐然深。",
+    "classical_description_en": "The hidden pulse must be sought by pressing through the sinew to the bone; only then does it stir faintly beneath the finger, concealed in the depths.",
+    "classical_source": "濒湖脉学 · 伏脉 · 体状诗",
+    "modern_description_zh": "脉行于筋下，重按推筋着骨始得，甚则伏而不见。",
+    "modern_description_en": "The pulse travels below the sinew, obtained only by pressing all the way to the bone; in severe cases it is hidden and cannot be felt at all.",
+    "clinical_significance_zh": "主邪闭、厥证、剧痛。邪气内伏，气血凝结，脉道潜伏不出；亦见于阳气暴脱之危候。",
+    "clinical_significance_en": "Indicates pathogenic blockage, syncope-reversal patterns, and severe pain. When pathogens lodge deep within and qi and blood congeal, the vessels hide from reach. It may also appear in sudden yang collapse.",
+    "associated_pattern_keys": [
+      "shao_yin_han_hua",
+      "jue_yin_bing",
+      "shen_yang_xu"
+    ],
+    "differential_from": [
+      "chen_mai",
+      "lao_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "dong_mai",
+    "slug": "dong-mai",
+    "name_zh": "动脉",
+    "name_pinyin": "Dòng mài",
+    "name_en": "Stirring",
+    "category": "rapid",
+    "classical_description_zh": "动脉摇摇数在关，无头无尾豆形团。",
+    "classical_description_en": "The stirring pulse trembles and quickens at the guan—without head or tail, shaped like a rolling bean.",
+    "classical_source": "濒湖脉学 · 动脉 · 体状诗",
+    "modern_description_zh": "脉形如豆，厥厥动摇，滑数有力，常见于关部。",
+    "modern_description_en": "Bean-shaped in form, trembling and rocking, slippery and rapid with force—most commonly felt at the guan position.",
+    "clinical_significance_zh": "主惊恐、疼痛。阴阳相搏，气血冲动，脉道鼓动而为动脉。",
+    "clinical_significance_en": "Indicates fright, fear, and pain. When yin and yang contend and qi and blood clash, the vessels throb into the stirring form.",
+    "associated_pattern_keys": [
+      "xin_qi_xu",
+      "gan_qi_yu_jie"
+    ],
+    "differential_from": [
+      "hua_mai",
+      "shu_mai",
+      "duan_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "cu_mai",
+    "slug": "cu-mai",
+    "name_zh": "促脉",
+    "name_pinyin": "Cù mài",
+    "name_en": "Hasty",
+    "category": "rapid",
+    "classical_description_zh": "促脉数而时一止，此为阳极欲亡阴。",
+    "classical_description_en": "The hasty pulse is rapid yet with occasional pauses—when yang is at its extreme and yin is about to perish.",
+    "classical_source": "濒湖脉学 · 促脉 · 体状诗",
+    "modern_description_zh": "脉来急数而时有一止，止无定数。",
+    "modern_description_en": "The pulse comes urgent and rapid with intermittent pauses that follow no fixed interval.",
+    "clinical_significance_zh": "主阳盛实热、气血痰食停滞。亦见于脏气衰败、真阴将绝之虚证。",
+    "clinical_significance_en": "Indicates exuberant yang with repletion heat or stagnation of qi, blood, phlegm, and food. It also appears in failing organ qi and the imminent collapse of true yin.",
+    "associated_pattern_keys": [
+      "xin_yin_xu",
+      "xin_yang_xu",
+      "qi_fen_zheng"
+    ],
+    "differential_from": [
+      "jie_mai",
+      "dai_mai",
+      "shu_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "jie_mai",
+    "slug": "jie-mai",
+    "name_zh": "结脉",
+    "name_pinyin": "Jié mài",
+    "name_en": "Bound",
+    "category": "slow",
+    "classical_description_zh": "结脉缓而时一止，独阴偏胜欲亡阳。",
+    "classical_description_en": "The bound pulse is moderate with intermittent pauses—when solitary yin prevails and yang is about to perish.",
+    "classical_source": "濒湖脉学 · 结脉 · 体状诗",
+    "modern_description_zh": "脉来缓慢而时有一止，止无定数。",
+    "modern_description_en": "The pulse comes slowly with occasional pauses that follow no fixed interval.",
+    "clinical_significance_zh": "主阴盛气结、寒痰血瘀。亦见于气血虚衰、心阳不振之证。",
+    "clinical_significance_en": "Indicates exuberant yin with constrained qi, cold phlegm, and blood stasis. It also appears in exhaustion of qi and blood with debilitated heart yang.",
+    "associated_pattern_keys": [
+      "xin_yang_xu",
+      "xue_xu",
+      "tan_shi_zheng"
+    ],
+    "differential_from": [
+      "cu_mai",
+      "dai_mai",
+      "chi_mai",
+      "se_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "dai_mai",
+    "slug": "dai-mai",
+    "name_zh": "代脉",
+    "name_pinyin": "Dài mài",
+    "name_en": "Intermittent",
+    "category": "slow",
+    "classical_description_zh": "动而中止不能还，因而复动名曰代。",
+    "classical_description_en": "It moves then halts and cannot return; only after a long pause does it start again—this is called the intermittent pulse.",
+    "classical_source": "濒湖脉学 · 代脉 · 体状诗",
+    "modern_description_zh": "脉来一止，良久方还，止有定数。脉势较弱，节律规则地间歇。",
+    "modern_description_en": "The pulse halts and only after a noticeable pause returns; the pauses occur at fixed intervals. The pulse-force is rather weak, and the interruptions are regular.",
+    "clinical_significance_zh": "主脏气衰微，尤以心气不足为主。亦见于风证、痛证、七情惊恐及孕妇。",
+    "clinical_significance_en": "Indicates debility of organ qi, particularly insufficiency of heart qi. It may also appear in wind patterns, painful disorders, emotional fright, and in pregnancy.",
+    "associated_pattern_keys": [
+      "xin_qi_xu",
+      "xin_yang_xu",
+      "xin_xue_xu"
+    ],
+    "differential_from": [
+      "jie_mai",
+      "cu_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "ge_mai",
+    "slug": "ge-mai",
+    "name_zh": "革脉",
+    "name_pinyin": "Gé mài",
+    "name_en": "Drumskin",
+    "category": "vacuity",
+    "classical_description_zh": "革脉形如按鼓皮，芤弦相合脉寒虚。",
+    "classical_description_en": "The drumskin pulse feels like pressing the head of a drum—scallion-stalk and wiry combined—signifying cold vacuity.",
+    "classical_source": "濒湖脉学 · 革脉 · 体状诗",
+    "modern_description_zh": "浮而搏指，中空外坚，如按鼓皮。为芤与弦相兼之脉。",
+    "modern_description_en": "Floating and striking the finger, hollow within and hard without—like pressing a drumhead. It combines the qualities of the scallion-stalk and wiry pulses.",
+    "clinical_significance_zh": "主亡血、失精、半产漏下。精血大伤，气无所附，浮越于外，故脉外强中空。",
+    "clinical_significance_en": "Indicates blood loss, seminal emission, miscarriage, and uterine spotting. When essence and blood are greatly injured, qi has nowhere to adhere and floats outward—hence a pulse firm on the outside and hollow within.",
+    "associated_pattern_keys": [
+      "xue_xu",
+      "shen_yin_xu",
+      "gan_xue_xu"
+    ],
+    "differential_from": [
+      "kou_mai",
+      "xian_mai",
+      "fu_mai",
+      "lao_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "lao_mai",
+    "slug": "lao-mai",
+    "name_zh": "牢脉",
+    "name_pinyin": "Láo mài",
+    "name_en": "Firm",
+    "category": "deep",
+    "classical_description_zh": "弦长实大脉牢坚，牢位常居沉伏间。",
+    "classical_description_en": "Wiry, long, full, and large—the firm pulse holds fast; its seat lies between the deep and the hidden levels.",
+    "classical_source": "濒湖脉学 · 牢脉 · 体状诗",
+    "modern_description_zh": "沉按实大弦长，坚牢不移。位沉而脉形长大弦实。",
+    "modern_description_en": "On heavy pressure it is full, large, wiry, and long—firmly anchored and unmoving. Situated deep, it is long and large in body, with a wiry repletion quality.",
+    "clinical_significance_zh": "主阴寒内实、疝气癥瘕。寒邪深伏，或气血积聚于内，故脉沉而实大坚牢。",
+    "clinical_significance_en": "Indicates internal repletion of yin-cold, hernia, and abdominal masses. Cold pathogen lodging deeply, or qi and blood gathering within, produces a pulse that is deep yet full, large, and firmly anchored.",
+    "associated_pattern_keys": [
+      "shen_yang_xu",
+      "shao_yin_han_hua",
+      "jue_yin_bing"
+    ],
+    "differential_from": [
+      "chen_mai",
+      "fu_mai_hidden",
+      "shi_mai",
+      "ge_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring",
+      "source_notes": [
+        "濒湖脉学 (Binhu Maixue)",
+        "脉经 (Mai Jing)"
+      ]
+    }
+  },
+  {
+    "key": "ji_mai",
+    "slug": "ji-mai",
+    "name_zh": "疾脉",
+    "name_pinyin": "Jí mài",
+    "name_en": "Racing",
+    "category": "rapid",
+    "classical_description_zh": "一息七八至曰疾，阳极阴竭脉乃然。",
+    "classical_description_en": "Seven or eight beats to one breath is called the racing pulse—when yang is at its extreme and yin is exhausted, the pulse becomes so.",
+    "classical_source": "脉经 · 卷一（体例）",
+    "modern_description_zh": "脉来急疾，一息七至以上（每分钟一百二十次以上）。",
+    "modern_description_en": "The pulse comes in urgent succession, more than seven beats per breath (over one hundred and twenty per minute).",
+    "clinical_significance_zh": "主阳极阴竭，元气欲脱之危候。亦见于热毒内盛之重证。疾而有力为阳亢热极，疾而无力为元阳将脱。",
+    "clinical_significance_en": "A critical sign indicating yang at its extreme and yin exhausted, with original qi on the verge of collapse. It also appears in severe toxic-heat patterns. Racing with force reflects extreme yang heat; racing without force signals impending collapse of original yang.",
+    "associated_pattern_keys": [
+      "yin_xu_zheng",
+      "xue_fen_zheng",
+      "ying_fen_zheng"
+    ],
+    "differential_from": [
+      "shu_mai",
+      "cu_mai",
+      "hong_mai"
+    ],
+    "verification": {
+      "status": "draft",
+      "reviewer": "Bencao Dian editorial team",
+      "last_reviewed": "2026-04-09",
+      "reviewer_note": "Phase 6-C-D pulse atlas authoring. Classical-description attribution given broadly to 脉经 as 濒湖脉学 does not treat 疾脉 as one of its twenty-seven; the gloss line is a traditional summary phrase, not a verbatim citation.",
+      "source_notes": [
+        "脉经 (Mai Jing)",
+        "濒湖脉学 (Binhu Maixue)"
+      ]
+    }
+  }
+]

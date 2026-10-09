@@ -1,0 +1,318 @@
+[
+  {
+    "key": "shou_tai_yin_fei",
+    "slug": "shou-tai-yin-fei",
+    "name_zh": "手太阴肺经",
+    "name_pinyin": "Shǒu Tài Yīn Fèi Jīng",
+    "name_en": "Lung Channel of Hand-Taiyin",
+    "abbreviation": "LU",
+    "paired_organ": {
+      "zh": "大肠",
+      "en": "Large Intestine",
+      "type": "fu"
+    },
+    "element": "metal",
+    "yin_yang": "yin",
+    "limb": "shou",
+    "description_zh": "起于中焦，下络大肠，还循胃口，上膈属肺，从肺系横出腋下，循臑臂内侧前缘，下肘入寸口，上鱼际，出大指桡侧端少商。属肺络大肠，主气司呼吸，通调水道，主皮毛。气血流注时辰为寅时（3-5时）。要穴有中府（LU-1）、尺泽（LU-5）、列缺（LU-7，八脉交会穴通任脉）、太渊（LU-9，脉会）。",
+    "description_en": "Originates in the middle jiao, descends to network with the Large Intestine, circles back to the cardia of the stomach, traverses the diaphragm, and pertains to the Lung; emerges laterally from the lung system below the axilla and runs down the anterior aspect of the medial upper arm and forearm, through the wrist at the cun-kou pulse, across the thenar eminence, to terminate at Shaoshang (LU-11) on the radial tip of the thumb. Paired interior-exteriorly with the Large Intestine, the Lung channel governs qi and respiration, regulates the water passages, and rules the skin and body hair; qi flows strongest here in the Tiger hour (3-5 am). Key points include Zhongfu (LU-1, front-mu), Chize (LU-5, he-sea) and Lieque (LU-7, luo and master of the Ren Mai).",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "shou_yang_ming_da_chang",
+    "slug": "shou-yang-ming-da-chang",
+    "name_zh": "手阳明大肠经",
+    "name_pinyin": "Shǒu Yáng Míng Dà Cháng Jīng",
+    "name_en": "Large Intestine Channel of Hand-Yangming",
+    "abbreviation": "LI",
+    "paired_organ": {
+      "zh": "肺",
+      "en": "Lung",
+      "type": "zang"
+    },
+    "element": "metal",
+    "yin_yang": "yang",
+    "limb": "shou",
+    "description_zh": "起于食指末端商阳穴，循指上廉，出合谷两骨之间，上入两筋之中，沿前臂桡侧、上臂外侧前缘，上肩出髃骨之前，上颈贯颊入下齿，还出夹口交人中，止于对侧鼻翼旁迎香穴。下入缺盆络肺，下膈属大肠。主治头面五官、咽喉、热病及经脉循行部位疾患。气血流注时辰为卯时（5-7时）。要穴有合谷（LI-4，原穴）、曲池（LI-11，合穴）、迎香（LI-20）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Starts at Shangyang (LI-1) on the radial tip of the index finger, ascends the radial side of the hand through Hegu (LI-4) between the first and second metacarpals, runs up the lateral forearm and anterior aspect of the upper arm to the shoulder at Jianyu (LI-15), crosses to the opposite side at the philtrum, and terminates at Yingxiang (LI-20) beside the nostril. An internal branch enters the supraclavicular fossa, networks with the Lung, descends through the diaphragm, and pertains to the Large Intestine. Paired interior-exteriorly with the Lung, it clears heat, benefits the head, face, teeth and throat, and treats disorders along its course; qi peaks in the Rabbit hour (5-7 am). Key points include Hegu (LI-4, yuan-source), Quchi (LI-11, he-sea) and Yingxiang (LI-20)."
+  },
+  {
+    "key": "zu_yang_ming_wei",
+    "slug": "zu-yang-ming-wei",
+    "name_zh": "足阳明胃经",
+    "name_pinyin": "Zú Yáng Míng Wèi Jīng",
+    "name_en": "Stomach Channel of Foot-Yangming",
+    "abbreviation": "ST",
+    "paired_organ": {
+      "zh": "脾",
+      "en": "Spleen",
+      "type": "zang"
+    },
+    "element": "earth",
+    "yin_yang": "yang",
+    "limb": "zu",
+    "description_zh": "起于鼻翼旁迎香穴，上行至鼻根，入上齿龈，环绕口唇，经大迎、颊车，上耳前至额角头维。颈部支脉下缺盆入胸腹，络脾属胃。外行经脉沿胸腹第二侧线下行至气冲、髀关，循大腿前外、胫骨外缘、足背，入第二趾外侧端厉兑。属胃络脾，多气多血，主受纳腐熟，为后天之本。气血流注时辰为辰时（7-9时）。要穴有足三里（ST-36）、天枢（ST-25，大肠募）、丰隆（ST-40，络穴）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Starts at Yingxiang (LI-20) beside the nose, circles the upper teeth and lips, descends through the face and neck to the supraclavicular fossa, traverses the chest and abdomen along the second lateral line, networks with the Spleen and pertains to the Stomach, then continues down the anterolateral thigh and lower leg to end at Lidui (ST-45) on the lateral tip of the second toe. Paired interior-exteriorly with the Spleen, Foot-Yangming is rich in both qi and blood; it governs the reception and ripening of food and drink and is regarded as the root of postnatal qi, treating digestive, facial, breast and anterior-leg disorders. Qi flows strongest in the Dragon hour (7-9 am). Key points include Zusanli (ST-36, he-sea and command point for the abdomen), Tianshu (ST-25, front-mu of the Large Intestine) and Fenglong (ST-40, luo-connecting)."
+  },
+  {
+    "key": "zu_tai_yin_pi",
+    "slug": "zu-tai-yin-pi",
+    "name_zh": "足太阴脾经",
+    "name_pinyin": "Zú Tài Yīn Pí Jīng",
+    "name_en": "Spleen Channel of Foot-Taiyin",
+    "abbreviation": "SP",
+    "paired_organ": {
+      "zh": "胃",
+      "en": "Stomach",
+      "type": "fu"
+    },
+    "element": "earth",
+    "yin_yang": "yin",
+    "limb": "zu",
+    "description_zh": "起于足大趾内侧端隐白穴，沿大趾赤白肉际，过核骨后上内踝前，循小腿内侧胫骨后缘上行，过膝股内侧前缘入腹，属脾络胃，上膈夹咽连舌本，散舌下。胸部支脉注心中，接手少阴。属脾络胃，主运化水谷、统血、主肌肉四肢，为气血生化之源。气血流注时辰为巳时（9-11时）。要穴有三阴交（SP-6）、阴陵泉（SP-9，合穴）、血海（SP-10）、公孙（SP-4，八脉交会通冲脉）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Starts at Yinbai (SP-1) on the medial tip of the great toe, ascends the medial red-white skin border of the foot, passes anterior to the medial malleolus and up the posterior border of the tibia on the medial lower leg, continues up the anterior medial thigh into the abdomen, pertains to the Spleen and networks with the Stomach, then crosses the diaphragm to flank the throat and spread beneath the tongue; a chest branch rejoins the Heart to link with Hand-Shaoyin. Paired interior-exteriorly with the Stomach, Foot-Taiyin governs the transformation and transport of food and fluids, contains the blood within the vessels, and rules the muscles and four limbs as the source of postnatal qi and blood; qi is strongest in the Snake hour (9-11 am). Key points include Sanyinjiao (SP-6, meeting of the three yin), Yinlingquan (SP-9, he-sea) and Gongsun (SP-4, luo and master of the Chong Mai)."
+  },
+  {
+    "key": "shou_shao_yin_xin",
+    "slug": "shou-shao-yin-xin",
+    "name_zh": "手少阴心经",
+    "name_pinyin": "Shǒu Shào Yīn Xīn Jīng",
+    "name_en": "Heart Channel of Hand-Shaoyin",
+    "abbreviation": "HT",
+    "paired_organ": {
+      "zh": "小肠",
+      "en": "Small Intestine",
+      "type": "fu"
+    },
+    "element": "fire",
+    "yin_yang": "yin",
+    "limb": "shou",
+    "description_zh": "起于心中，出属心系，下膈络小肠。其支者从心系上夹咽，系目系；其直者复从心系却上肺，下出腋下极泉，循臑臂内侧后缘，过肘内、掌后锐骨，入掌内后廉，循小指桡侧出其端少冲。属心络小肠，主血脉，藏神明，为君主之官。气血流注时辰为午时（11-13时）。要穴有神门（HT-7，原穴）、少海（HT-3，合穴）、通里（HT-5，络穴）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Originates in the Heart, emerges from the Heart system, descends through the diaphragm, and networks with the Small Intestine; a branch ascends alongside the throat to link with the eye system, while the main pathway passes upward to the lung, emerges at Jiquan (HT-1) in the axilla, and runs down the posterior medial aspect of the upper arm and forearm past the pisiform bone into the palm, ending at Shaochong (HT-9) on the radial tip of the little finger. Paired interior-exteriorly with the Small Intestine, Hand-Shaoyin governs the blood vessels and houses the shen (mind), serving as the sovereign organ; qi flows most strongly in the Horse hour (11 am-1 pm). Key points include Shenmen (HT-7, yuan-source and shu-stream), Shaohai (HT-3, he-sea) and Tongli (HT-5, luo-connecting)."
+  },
+  {
+    "key": "shou_tai_yang_xiao_chang",
+    "slug": "shou-tai-yang-xiao-chang",
+    "name_zh": "手太阳小肠经",
+    "name_pinyin": "Shǒu Tài Yáng Xiǎo Cháng Jīng",
+    "name_en": "Small Intestine Channel of Hand-Taiyang",
+    "abbreviation": "SI",
+    "paired_organ": {
+      "zh": "心",
+      "en": "Heart",
+      "type": "zang"
+    },
+    "element": "fire",
+    "yin_yang": "yang",
+    "limb": "shou",
+    "description_zh": "起于小指外侧端少泽，沿手背尺侧、前臂尺骨下缘上行，过尺骨鹰嘴与肱骨内上髁之间，沿上臂后内侧出肩后，绕肩胛，交会于大椎，入缺盆络心，循咽下膈抵胃，属小肠。面颊支脉上至目锐眦入耳中听宫。属小肠络心，主液，分清泌浊。气血流注时辰为未时（13-15时）。要穴有后溪（SI-3，八脉交会通督脉）、养老（SI-6，郄穴）、听宫（SI-19）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Starts at Shaoze (SI-1) on the ulnar tip of the little finger, ascends the ulnar border of the hand and forearm, passes between the olecranon and the medial epicondyle of the humerus, traces the posteromedial upper arm to the shoulder, winds around the scapula and meets Dazhui (DU-14), then enters the supraclavicular fossa to network with the Heart, descends through the diaphragm to the Stomach, and pertains to the Small Intestine; a facial branch ascends via the cheek to the outer canthus and ends at Tinggong (SI-19) anterior to the tragus. Paired interior-exteriorly with the Heart, Hand-Taiyang governs body fluids and separates the clear from the turbid; qi is most active in the Goat hour (1-3 pm). Key points include Houxi (SI-3, master of the Du Mai), Yanglao (SI-6, xi-cleft) and Tinggong (SI-19)."
+  },
+  {
+    "key": "zu_tai_yang_pang_guang",
+    "slug": "zu-tai-yang-pang-guang",
+    "name_zh": "足太阳膀胱经",
+    "name_pinyin": "Zú Tài Yáng Páng Guāng Jīng",
+    "name_en": "Bladder Channel of Foot-Taiyang",
+    "abbreviation": "BL",
+    "paired_organ": {
+      "zh": "肾",
+      "en": "Kidney",
+      "type": "zang"
+    },
+    "element": "water",
+    "yin_yang": "yang",
+    "limb": "zu",
+    "description_zh": "起于目内眦睛明穴，上额交巅百会，从巅入络脑，还出别下项，挟脊抵腰中，入循膂络肾属膀胱。腰部支脉贯臀下行至腘中；项部支脉循肩膊内，挟脊下行至髀枢，沿大腿后侧下合腘中，再下经小腿后侧、外踝后，沿足背至小趾外侧端至阴。属膀胱络肾，主一身之表，司气化而行水，背俞穴汇聚五脏六腑之气。全身经脉最长、穴位最多（67穴）。气血流注时辰为申时（15-17时）。要穴有委中（BL-40，合穴）、昆仑（BL-60）、至阴（BL-67）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Starts at Jingming (BL-1) at the medial canthus, ascends the forehead to the vertex at Baihui (DU-20) and enters the brain, re-emerges and runs down the neck alongside the spine to the lumbar region, networks with the Kidney and pertains to the Bladder; two parallel back branches descend either side of the spine, rejoin at the popliteal fossa, and continue down the posterior calf behind the lateral malleolus along the lateral foot to Zhiyin (BL-67) at the lateral tip of the little toe. Paired interior-exteriorly with the Kidney, Foot-Taiyang governs the exterior of the body, transforms fluids through qi, and carries the back-shu points that reflect every zang-fu. It is the longest channel, with 67 points; qi flows strongest in the Monkey hour (3-5 pm). Key points include Weizhong (BL-40, he-sea and command point of the back), Kunlun (BL-60, jing-river) and Zhiyin (BL-67)."
+  },
+  {
+    "key": "zu_shao_yin_shen",
+    "slug": "zu-shao-yin-shen",
+    "name_zh": "足少阴肾经",
+    "name_pinyin": "Zú Shào Yīn Shèn Jīng",
+    "name_en": "Kidney Channel of Foot-Shaoyin",
+    "abbreviation": "KI",
+    "paired_organ": {
+      "zh": "膀胱",
+      "en": "Bladder",
+      "type": "fu"
+    },
+    "element": "water",
+    "yin_yang": "yin",
+    "limb": "zu",
+    "description_zh": "起于足小趾之下，斜走足心涌泉，出然谷之下，循内踝后入跟中，上踹内出腘内廉，上股内后廉贯脊属肾络膀胱。直行者从肾上贯肝膈，入肺中，循喉咙挟舌本；支者从肺出络心，注胸中接手厥阴。属肾络膀胱，藏精主生殖、主水、主纳气、主骨生髓，为先天之本。气血流注时辰为酉时（17-19时）。要穴有涌泉（KI-1，井穴）、太溪（KI-3，原穴）、照海（KI-6，八脉交会通阴跷）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Starts beneath the little toe, runs obliquely through the sole at Yongquan (KI-1), emerges below the navicular tuberosity, curves behind the medial malleolus into the heel, ascends the medial calf and the posteromedial thigh, pierces the spine, pertains to the Kidney and networks with the Bladder; the main internal branch rises from the Kidney through the Liver and diaphragm into the Lung and along the throat to the root of the tongue, while a chest branch links with the Heart to meet Hand-Jueyin. Paired interior-exteriorly with the Bladder, Foot-Shaoyin stores jing and governs reproduction, water metabolism, the grasping of qi, and the bones and marrow, forming the root of prenatal qi; qi peaks in the Rooster hour (5-7 pm). Key points include Yongquan (KI-1, jing-well), Taixi (KI-3, yuan-source) and Zhaohai (KI-6, master of the Yin Qiao Mai)."
+  },
+  {
+    "key": "shou_jue_yin_xin_bao",
+    "slug": "shou-jue-yin-xin-bao",
+    "name_zh": "手厥阴心包经",
+    "name_pinyin": "Shǒu Jué Yīn Xīn Bāo Jīng",
+    "name_en": "Pericardium Channel of Hand-Jueyin",
+    "abbreviation": "PC",
+    "paired_organ": {
+      "zh": "三焦",
+      "en": "Sanjiao",
+      "type": "fu"
+    },
+    "element": "fire",
+    "yin_yang": "yin",
+    "limb": "shou",
+    "description_zh": "起于胸中，出属心包络，下膈历络上、中、下三焦。胸部支脉循胸出胁，下腋三寸天池，上抵腋下，沿上臂内侧行太阴少阴之间，入肘中曲泽，下前臂两筋之间，过腕入掌中劳宫，循中指出其端中冲。属心包络三焦，代心行令，主血脉而护心神，为臣使之官。气血流注时辰为戌时（19-21时）。要穴有内关（PC-6，络穴通阴维）、大陵（PC-7，原穴）、劳宫（PC-8，荥穴）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Originates in the chest, pertains to the Pericardium, and descends through the diaphragm to network with the upper, middle and lower divisions of the Sanjiao; an external branch emerges from the chest at Tianchi (PC-1) three cun below the axilla, ascends to the armpit, then runs down the medial upper arm between the Taiyin and Shaoyin channels, through Quze (PC-3) at the elbow and between the two tendons of the forearm, crosses the wrist into the palm at Laogong (PC-8), and terminates at Zhongchong (PC-9) on the tip of the middle finger. Paired interior-exteriorly with the Sanjiao, Hand-Jueyin acts as the envoy of the Heart, protecting the shen and governing the blood vessels, treating cardiac, chest, stomach and mental-emotional disorders; qi flows strongest in the Dog hour (7-9 pm). Key points include Neiguan (PC-6, luo and master of the Yin Wei Mai), Daling (PC-7, yuan-source) and Laogong (PC-8, ying-spring)."
+  },
+  {
+    "key": "shou_shao_yang_san_jiao",
+    "slug": "shou-shao-yang-san-jiao",
+    "name_zh": "手少阳三焦经",
+    "name_pinyin": "Shǒu Shào Yáng Sān Jiāo Jīng",
+    "name_en": "Sanjiao Channel of Hand-Shaoyang",
+    "abbreviation": "SJ",
+    "paired_organ": {
+      "zh": "心包",
+      "en": "Pericardium",
+      "type": "zang"
+    },
+    "element": "fire",
+    "yin_yang": "yang",
+    "limb": "shou",
+    "description_zh": "起于无名指末端关冲，上行手背第四、五掌骨之间，沿前臂背侧尺桡两骨之间，过肘尖天井，沿上臂外侧上肩，交出足少阳之后，入缺盆，散布膻中散络心包，下膈遍属上、中、下三焦。颈项支脉系耳后翳风，出耳前交颊至目锐眦丝竹空接足少阳。属三焦络心包，总司诸气、疏通水道，主腠理，为决渎之官。气血流注时辰为亥时（21-23时）。要穴有外关（SJ-5，络穴通阳维）、支沟（SJ-6，经穴）、翳风（SJ-17）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Starts at Guanchong (SJ-1) on the ulnar tip of the ring finger, ascends the back of the hand between the fourth and fifth metacarpals, runs up the posterior forearm between the radius and ulna, crosses the olecranon at Tianjing (SJ-10), continues along the lateral upper arm and shoulder posterior to Foot-Shaoyang, enters the supraclavicular fossa, spreads through the thoracic diaphragm to network with the Pericardium, descends through the diaphragm, and pertains to the upper, middle and lower divisions of the Sanjiao; a cranial branch loops the ear at Yifeng (SJ-17), crosses the cheek, and ends at Sizhukong (SJ-23) beside the lateral eyebrow. Paired interior-exteriorly with the Pericardium, Hand-Shaoyang governs the qi mechanism of the whole body and the movement of fluids through the water passages as the 'minister of the sluices'; qi is strongest in the Pig hour (9-11 pm). Key points include Waiguan (SJ-5, luo and master of the Yang Wei Mai), Zhigou (SJ-6, jing-river) and Yifeng (SJ-17)."
+  },
+  {
+    "key": "zu_shao_yang_dan",
+    "slug": "zu-shao-yang-dan",
+    "name_zh": "足少阳胆经",
+    "name_pinyin": "Zú Shào Yáng Dǎn Jīng",
+    "name_en": "Gallbladder Channel of Foot-Shaoyang",
+    "abbreviation": "GB",
+    "paired_organ": {
+      "zh": "肝",
+      "en": "Liver",
+      "type": "zang"
+    },
+    "element": "wood",
+    "yin_yang": "yang",
+    "limb": "zu",
+    "description_zh": "起于目外眦瞳子髎，上抵头角颔厌，下耳后完骨，折回上行经额部至眉上阳白，再向后至风池，沿颈下肩入缺盆。胸腹支脉贯膈络肝属胆，沿胁里下至气街，绕毛际横入髀厌环跳。沿大腿、膝、小腿外侧，出外踝之前，循足背入第四趾外侧端足窍阴。属胆络肝，主决断，司风木升发之气，为中正之官。气血流注时辰为子时（23-1时）。要穴有风池（GB-20）、环跳（GB-30）、阳陵泉（GB-34，合穴、筋会）、悬钟（GB-39，髓会）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Starts at Tongziliao (GB-1) at the outer canthus, zigzags across the temporal and occipital regions above and behind the ear, descends the neck to the shoulder, and enters the supraclavicular fossa; an internal branch pierces the diaphragm to network with the Liver and pertain to the Gallbladder, runs along the inner flank to the inguinal region, and rejoins the external pathway at Huantiao (GB-30) in the hip, which then descends the lateral thigh, knee and lower leg, passes anterior to the lateral malleolus along the dorsum of the foot, and terminates at Zuqiaoyin (GB-44) on the lateral tip of the fourth toe. Paired interior-exteriorly with the Liver, Foot-Shaoyang governs decision-making and the free ascent of wood qi as the 'upright judge', treating the sides of the head, ear, eye, flank and lateral-leg disorders; qi peaks in the Rat hour (11 pm-1 am). Key points include Fengchi (GB-20), Huantiao (GB-30) and Yanglingquan (GB-34, he-sea and meeting point of the sinews)."
+  },
+  {
+    "key": "zu_jue_yin_gan",
+    "slug": "zu-jue-yin-gan",
+    "name_zh": "足厥阴肝经",
+    "name_pinyin": "Zú Jué Yīn Gān Jīng",
+    "name_en": "Liver Channel of Foot-Jueyin",
+    "abbreviation": "LR",
+    "paired_organ": {
+      "zh": "胆",
+      "en": "Gallbladder",
+      "type": "fu"
+    },
+    "element": "wood",
+    "yin_yang": "yin",
+    "limb": "zu",
+    "description_zh": "起于足大趾爪甲后丛毛处大敦，沿足背上行过内踝前一寸中封，至内踝上八寸交出足太阴之后，上腘内廉曲泉，沿股内入阴毛中，环阴器抵小腹，挟胃属肝络胆，上贯膈布胁肋，循喉咙之后，上入颃颡连目系，上出额与督脉会于巅顶百会。属肝络胆，主疏泄，藏血，主筋，开窍于目，为将军之官。气血流注时辰为丑时（1-3时）。要穴有太冲（LR-3，原穴）、期门（LR-14，肝募）、章门（LR-13，脾募、脏会）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Starts at Dadun (LR-1) behind the nail of the great toe, ascends the dorsum of the foot through Zhongfeng (LR-4) one cun anterior to the medial malleolus, crosses behind Foot-Taiyin eight cun above the ankle, continues up the medial calf and thigh to the pubic region, circles the genitals and enters the lower abdomen, flanks the Stomach to pertain to the Liver and network with the Gallbladder, then pierces the diaphragm, spreads across the flanks, runs behind the throat into the nasopharynx, links with the eye system, and rises through the forehead to meet the Du Mai at Baihui (DU-20) on the vertex. Paired interior-exteriorly with the Gallbladder, Foot-Jueyin governs the free coursing of qi, stores the blood, rules the sinews and opens into the eyes as the 'general of the body'; qi is most active in the Ox hour (1-3 am). Key points include Taichong (LR-3, yuan-source), Qimen (LR-14, front-mu of the Liver) and Zhangmen (LR-13, front-mu of the Spleen and meeting point of the zang)."
+  },
+  {
+    "key": "du_mai",
+    "slug": "du-mai",
+    "name_zh": "督脉",
+    "name_pinyin": "Dū Mài",
+    "name_en": "Governing Vessel",
+    "abbreviation": "DU",
+    "paired_organ": {
+      "zh": "任脉",
+      "en": "Conception Vessel"
+    },
+    "yin_yang": "yang",
+    "description_zh": "起于胞中，下出会阴，沿脊柱后正中线上行，经长强、命门、大椎，至项后风府入络于脑，上巅顶百会，沿前额正中下行至鼻柱、人中，止于上唇龈交。为奇经八脉之一，总督一身之阳经，称阳脉之海，与脑、髓、肾密切相关，主治神志、脊柱及阳气虚衰之证。八脉交会穴为后溪（SI-3）通督脉。要穴有大椎（DU-14）、命门（DU-4）、百会（DU-20）、水沟/人中（DU-26）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Originates in the uterus (or lower dantian), emerges at the perineum at Changqiang (DU-1), and ascends the posterior midline along the spine through Mingmen (DU-4) and Dazhui (DU-14) to Fengfu (DU-16), where it enters the brain; it continues over the vertex at Baihui (DU-20), descends the midline of the forehead and nose, and terminates at Yinjiao (DU-28) on the upper gum. As one of the eight extraordinary vessels the Du Mai governs all the yang channels of the body and is called the 'sea of the yang channels', linking closely with the brain, marrow and Kidney; it treats disorders of consciousness, the spine and collapsed yang. Unlike the twelve regular channels it has no organ-clock hour and does not pertain to a single zang-fu. Its confluent point is Houxi (SI-3). Key points include Dazhui (DU-14), Mingmen (DU-4), Baihui (DU-20) and Renzhong (DU-26)."
+  },
+  {
+    "key": "ren_mai",
+    "slug": "ren-mai",
+    "name_zh": "任脉",
+    "name_pinyin": "Rèn Mài",
+    "name_en": "Conception Vessel",
+    "abbreviation": "REN",
+    "paired_organ": {
+      "zh": "督脉",
+      "en": "Governing Vessel"
+    },
+    "yin_yang": "yin",
+    "description_zh": "起于胞中，下出会阴，沿腹胸前正中线上行，经关元、气海、神阙、中脘、膻中，至咽喉、下颌承浆，环口唇，分行至目下承泣。为奇经八脉之一，总任一身之阴经，称阴脉之海，又为胞胎之本，主司妊养，调摄诸阴经气血。八脉交会穴为列缺（LU-7）通任脉。要穴有关元（RN-4）、气海（RN-6）、神阙（RN-8）、中脘（RN-12，胃募、腑会）、膻中（RN-17，心包募、气会）。",
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    },
+    "description_en": "Originates in the uterus (or lower dantian), emerges at the perineum at Huiyin (RN-1), and ascends the anterior midline through Guanyuan (RN-4), Qihai (RN-6), Shenque (RN-8), Zhongwan (RN-12) and Danzhong (RN-17) to the throat and jaw at Chengjiang (RN-24); it circles the lips and a branch ascends to Chengqi (ST-1) beneath the eye. As one of the eight extraordinary vessels the Ren Mai receives and supports all the yin channels of the body and is called the 'sea of the yin channels', regarded as the root of gestation and nourishment and central to menstruation, pregnancy and fluid balance. Like the Du Mai it has no organ-clock hour and pertains to no single zang-fu. Its confluent point is Lieque (LU-7). Key points include Guanyuan (RN-4), Qihai (RN-6), Zhongwan (RN-12, front-mu of the Stomach and meeting of the fu) and Danzhong (RN-17, front-mu of the Pericardium and meeting of qi)."
+  }
+]

@@ -1,0 +1,8603 @@
+{
+  "herb_enters_meridian": [
+    {
+      "herb": "gan_cao",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "huang_qi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "dang_gui",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "bai_zhu",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "fu_ling",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_tai_yin_pi",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "ma_huang",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "gui_zhi",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "shou_tai_yin_fei",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "bai_shao",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "chai_hu",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan"
+      ]
+    },
+    {
+      "herb": "huang_qin",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_shao_yang_dan",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "ren_shen",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "da_huang",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang",
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "chen_pi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "sheng_di_huang",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "fu_zi",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "chuan_xiong",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan",
+        "shou_jue_yin_xin_bao"
+      ]
+    },
+    {
+      "herb": "ban_xia",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "sheng_jiang",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "da_zao",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "gan_jiang",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "zu_shao_yin_shen",
+        "shou_shao_yin_xin",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "xing_ren",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "sheng_ma",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "shu_di_huang",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "shan_yao",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "huang_lian",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "zhi_mu",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "shi_gao",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "tao_ren",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "hong_hua",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "dan_shen",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "hou_po",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_tai_yin_fei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "shan_zhu_yu",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "mu_dan_pi",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "ze_xie",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "dang_shen",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "mang_xiao",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "zhi_shi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "wu_wei_zi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "shou_shao_yin_xin",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "zi_su_ye",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "fang_feng",
+      "meridians": [
+        "zu_tai_yang_pang_guang",
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "cang_zhu",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "xi_xin",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_shao_yin_shen",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "bai_zhi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "jing_jie",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "qiang_huo",
+      "meridians": [
+        "zu_tai_yang_pang_guang",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "xiang_ru",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "jin_yin_hua",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "lian_qiao",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "shou_shao_yin_xin",
+        "shou_tai_yang_xiao_chang"
+      ]
+    },
+    {
+      "herb": "ju_hua",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "sang_ye",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "bo_he",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "niu_bang_zi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "chan_tui",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "ge_gen",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "zhi_zi",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "shou_tai_yin_fei",
+        "shou_shao_yang_san_jiao"
+      ]
+    },
+    {
+      "herb": "lu_gen",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "xia_ku_cao",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan"
+      ]
+    },
+    {
+      "herb": "huang_bai",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "long_dan_cao",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan"
+      ]
+    },
+    {
+      "herb": "ban_lan_gen",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "pu_gong_ying",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "she_gan",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "chi_shao",
+      "meridians": [
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "xuan_shen",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "qing_hao",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan"
+      ]
+    },
+    {
+      "herb": "huo_ma_ren",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "yu_li_ren",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_yang_ming_da_chang",
+        "shou_tai_yang_xiao_chang"
+      ]
+    },
+    {
+      "herb": "du_huo",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "fang_ji",
+      "meridians": [
+        "zu_tai_yang_pang_guang",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "sang_ji_sheng",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "qin_jiao",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan"
+      ]
+    },
+    {
+      "herb": "mu_gua",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "huo_xiang",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "pei_lan",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "sha_ren",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "yi_yi_ren",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "che_qian_zi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen",
+        "shou_tai_yin_fei",
+        "shou_tai_yang_xiao_chang"
+      ]
+    },
+    {
+      "herb": "yin_chen",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan"
+      ]
+    },
+    {
+      "herb": "hua_shi",
+      "meridians": [
+        "zu_tai_yang_pang_guang",
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "wu_zhu_yu",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "rou_gui",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi",
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "xiao_hui_xiang",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "xiang_fu",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi",
+        "shou_shao_yang_san_jiao"
+      ]
+    },
+    {
+      "herb": "mu_xiang",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang",
+        "shou_shao_yang_san_jiao",
+        "zu_shao_yang_dan"
+      ]
+    },
+    {
+      "herb": "wu_yao",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi",
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "chen_xiang",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "qing_pi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "shan_zha",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "mai_ya",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "lai_fu_zi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "bing_lang",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "shi_jun_zi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "san_qi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "pu_huang",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_jue_yin_xin_bao"
+      ]
+    },
+    {
+      "herb": "ai_ye",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "bai_ji",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "xian_he_cao",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "ce_bai_ye",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "di_yu",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "yi_mu_cao",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_jue_yin_xin_bao",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "niu_xi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "yu_jin",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "yan_hu_suo",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "ru_xiang",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "mo_yao",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "tian_nan_xing",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "jie_geng",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "chuan_bei_mu",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "zhe_bei_mu",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "gua_lou",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "zhu_ru",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei",
+        "shou_shao_yin_xin",
+        "zu_shao_yang_dan"
+      ]
+    },
+    {
+      "herb": "sang_bai_pi",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "zi_wan",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "kuan_dong_hua",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "suan_zao_ren",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan"
+      ]
+    },
+    {
+      "herb": "bai_zi_ren",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_shao_yin_shen",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "yuan_zhi",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_shao_yin_shen",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "long_gu",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "mu_li",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yang_dan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "shi_chang_pu",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "tian_ma",
+      "meridians": [
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "gou_teng",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_jue_yin_xin_bao"
+      ]
+    },
+    {
+      "herb": "dai_zhe_shi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin",
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "quan_xie",
+      "meridians": [
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "wu_gong",
+      "meridians": [
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "jiang_can",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "di_long",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "bing_pian",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "yin_yang_huo",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "ba_ji_tian",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "rou_cong_rong",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "du_zhong",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "bu_gu_zhi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "yi_zhi_ren",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "tu_si_zi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "sha_yuan_zi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "sha_shen",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "mai_dong",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "shi_hu",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "huang_jing",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "bai_he",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "gou_qi_zi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "nu_zhen_zi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "e_jiao",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "he_shou_wu",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "long_yan_rou",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "xi_yang_shen",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "shou_tai_yin_fei",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "tai_zi_shen",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "wu_mei",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "wu_bei_zi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "shou_yang_ming_da_chang",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "rou_dou_kou",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "jin_ying_zi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "zhu_ling",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "bie_jia",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "yi_tang",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "ma_huang_gen",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "dan_dou_chi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "dan_zhu_ye",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei",
+        "shou_tai_yang_xiao_chang"
+      ]
+    },
+    {
+      "herb": "geng_mi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "bai_dou_kou",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "tong_cao",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "gao_ben",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "man_jing_zi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "cang_er_zi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "xin_yi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "e_bu_shi_cao",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "mu_zei",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "fu_ping",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "zhu_ye",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "tian_hua_fen",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "jue_ming_zi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "ku_shen",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "qin_pi",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "bai_xian_pi",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "da_qing_ye",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "yu_xing_cao",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "bai_hua_she_she_cao",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "tu_fu_ling",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "bai_tou_weng",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "zi_hua_di_ding",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "chuan_xin_lian",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "ma_chi_xian",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "ban_zhi_lian",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "shan_dou_gen",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "ma_bo",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "bai_jiang_cao",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "qing_dai",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "ya_dan_zi",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "jin_qiao_mai",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "zi_cao",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "shui_niu_jiao",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "di_gu_pi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "yin_chai_hu",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "bai_wei",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "hu_huang_lian",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "lian_qian_cao",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "fan_xie_ye",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "gan_sui",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "da_ji_2",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "yuan_hua",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "qian_niu_zi",
+      "meridians": [
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "wei_ling_xian",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "xu_chang_qing",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "wu_jia_pi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "gou_ji",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "sang_zhi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "mu_tong",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "qu_mai",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "bian_xu",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "deng_xin_cao",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "shi_wei",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "jin_qian_cao",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "dong_gua_pi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "bi_xie",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "di_fu_zi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "hai_jin_sha",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "cao_dou_kou",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "cao_guo",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "gao_liang_jiang",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_shao_yin_shen",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "hua_jiao",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_shao_yin_shen",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "ding_xiang",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_shao_yin_shen",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "bi_ba",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_shao_yin_shen",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "bi_cheng_qie",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_shao_yin_shen",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "lu_lu_tong",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "qing_feng_teng",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "si_gua_luo",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "mu_fang_ji",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "lao_guan_cao",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "wu_shao_she",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "can_sha",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "qian_nian_jian",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "xue_shang_yi_zhi_hao",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_shao_yin_shen"
+      ]
+    },
+    {
+      "herb": "dong_gua_ren",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "da_fu_pi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yang_pang_guang"
+      ]
+    },
+    {
+      "herb": "zhi_ke",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "fo_shou",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "xie_bai",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "chuan_lian_zi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "tan_xiang",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "li_zhi_he",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "mei_gui_hua",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "shen_qu",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "gu_ya",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "ji_nei_jin",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "ku_lian_pi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "nan_gua_zi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "he_shi",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "lei_wan",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "zu_yang_ming_wei",
+        "shou_yang_ming_da_chang"
+      ]
+    },
+    {
+      "herb": "huai_hua",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "xiao_ji",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "da_ji_cao",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "bai_mao_gen",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "qian_cao",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "jiang_huang",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "wu_ling_zhi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "ze_lan",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "wang_bu_liu_xing",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "shui_zhi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "su_mu",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "gu_sui_bu",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "tu_bie_chong",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "chuan_niu_xi",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "tao_hong",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "ji_xue_teng",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "niu_huang",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "zong_lv_tan",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "xue_yu_tan",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "gan_song",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "xuan_fu_hua",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "bai_jie_zi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "zao_jia",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "tian_zhu_huang",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "hai_ge_ke",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "wa_leng_zi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "meng_shi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "kun_bu",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "hai_zao",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "huang_yao_zi",
+      "meridians": [
+        "shou_tai_yin_fei",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "bai_bu",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "pi_pa_ye",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "ma_dou_ling",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "bai_guo",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "zi_su_zi",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "ting_li_zi",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "ai_di_cha",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "yang_jin_hua",
+      "meridians": [
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "he_huan_pi",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "ye_jiao_teng",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "hu_po",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "zhu_sha",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "ci_shi",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "zhen_zhu_mu",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "ling_zhi",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "shi_jue_ming",
+      "meridians": [
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "luo_bu_ma",
+      "meridians": [
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "ci_ji_li",
+      "meridians": [
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "ling_yang_jiao",
+      "meridians": [
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "she_xiang",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "su_he_xiang",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "an_xi_xiang",
+      "meridians": [
+        "shou_shao_yin_xin",
+        "zu_jue_yin_gan"
+      ]
+    },
+    {
+      "herb": "bai_bian_dou",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "hong_jing_tian",
+      "meridians": [
+        "zu_tai_yin_pi",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "sang_shen",
+      "meridians": [
+        "zu_jue_yin_gan",
+        "shou_shao_yin_xin"
+      ]
+    },
+    {
+      "herb": "lu_rong",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "dong_chong_xia_cao",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "suo_yang",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "he_tao_ren",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "tian_dong",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_jue_yin_gan",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "yu_zhu",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_jue_yin_gan",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "gui_jia",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_jue_yin_gan",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "mo_han_lian",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_jue_yin_gan",
+        "shou_tai_yin_fei"
+      ]
+    },
+    {
+      "herb": "lian_zi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "qian_shi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "fu_pen_zi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "sang_piao_xiao",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "hai_piao_xiao",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "he_zi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "chang_shan",
+      "meridians": [
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "da_ji",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "lu_jiao_jiao",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "ge_jie",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "zi_he_che",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "xian_mao",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "xu_duan",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "chi_shi_zhi",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "yu_yu_liang",
+      "meridians": [
+        "zu_shao_yin_shen",
+        "zu_tai_yin_pi"
+      ]
+    },
+    {
+      "herb": "li_lu",
+      "meridians": [
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "gua_di",
+      "meridians": [
+        "zu_yang_ming_wei"
+      ]
+    },
+    {
+      "herb": "dan_fan",
+      "meridians": [
+        "zu_yang_ming_wei"
+      ]
+    }
+  ],
+  "herb_in_formula": [
+    {
+      "herb": "ren_shen",
+      "formula": "si_jun_zi_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "si_jun_zi_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "si_jun_zi_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "si_jun_zi_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qi",
+      "formula": "bu_zhong_yi_qi_tang",
+      "role": "jun",
+      "dosage": "18g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "bu_zhong_yi_qi_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "bu_zhong_yi_qi_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "bu_zhong_yi_qi_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "bu_zhong_yi_qi_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_ma",
+      "formula": "bu_zhong_yi_qi_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "bu_zhong_yi_qi_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "bu_zhong_yi_qi_tang",
+      "role": "shi",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "si_wu_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "si_wu_tang",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "si_wu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "si_wu_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "gui_zhi_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "gui_zhi_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "gui_zhi_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "gui_zhi_tang",
+      "role": "shi",
+      "dosage": "12g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "gui_zhi_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ma_huang",
+      "formula": "ma_huang_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "ma_huang_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "xing_ren",
+      "formula": "ma_huang_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ma_huang_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "xiao_chai_hu_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "xiao_chai_hu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "xiao_chai_hu_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "xiao_chai_hu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "xiao_chai_hu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "xiao_chai_hu_tang",
+      "role": "shi",
+      "dosage": "12g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "xiao_chai_hu_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "xiao_yao_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "xiao_yao_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "xiao_yao_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "xiao_yao_san",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "xiao_yao_san",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_zi",
+      "formula": "si_ni_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "gan_jiang",
+      "formula": "si_ni_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "si_ni_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "er_chen_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "er_chen_tang",
+      "role": "chen",
+      "dosage": "15g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "er_chen_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "er_chen_tang",
+      "role": "shi",
+      "dosage": "5g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "tao_hong_si_wu_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "tao_hong_si_wu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "tao_hong_si_wu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "tao_hong_si_wu_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "tao_ren",
+      "formula": "tao_hong_si_wu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hong_hua",
+      "formula": "tao_hong_si_wu_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "shi_gao",
+      "formula": "bai_hu_tang",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "zhi_mu",
+      "formula": "bai_hu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "bai_hu_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "liu_wei_di_huang_wan",
+      "role": "jun",
+      "dosage": "24g"
+    },
+    {
+      "herb": "shan_zhu_yu",
+      "formula": "liu_wei_di_huang_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "shan_yao",
+      "formula": "liu_wei_di_huang_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "ze_xie",
+      "formula": "liu_wei_di_huang_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "mu_dan_pi",
+      "formula": "liu_wei_di_huang_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "liu_wei_di_huang_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "da_cheng_qi_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "mang_xiao",
+      "formula": "da_cheng_qi_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hou_po",
+      "formula": "da_cheng_qi_tang",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "da_cheng_qi_tang",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "huang_qi",
+      "formula": "dang_gui_bu_xue_tang",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "dang_gui_bu_xue_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "ba_zhen_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "ba_zhen_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "ba_zhen_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "ba_zhen_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "ba_zhen_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "ba_zhen_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "ba_zhen_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ba_zhen_tang",
+      "role": "shi",
+      "dosage": "5g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "ban_xia_hou_po_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "hou_po",
+      "formula": "ban_xia_hou_po_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "ban_xia_hou_po_tang",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "ban_xia_hou_po_tang",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "zi_su_ye",
+      "formula": "ban_xia_hou_po_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qi",
+      "formula": "yu_ping_feng_san",
+      "role": "jun",
+      "dosage": "18g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "yu_ping_feng_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fang_feng",
+      "formula": "yu_ping_feng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "cang_zhu",
+      "formula": "ping_wei_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hou_po",
+      "formula": "ping_wei_san",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "ping_wei_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ping_wei_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "jin_yin_hua",
+      "formula": "yin_qiao_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "lian_qiao",
+      "formula": "yin_qiao_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bo_he",
+      "formula": "yin_qiao_san",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "niu_bang_zi",
+      "formula": "yin_qiao_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "jing_jie",
+      "formula": "yin_qiao_san",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "jie_geng",
+      "formula": "yin_qiao_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "lu_gen",
+      "formula": "yin_qiao_san",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "yin_qiao_san",
+      "role": "shi",
+      "dosage": "5g"
+    },
+    {
+      "herb": "sang_ye",
+      "formula": "sang_ju_yin",
+      "role": "jun",
+      "dosage": "7.5g"
+    },
+    {
+      "herb": "ju_hua",
+      "formula": "sang_ju_yin",
+      "role": "jun",
+      "dosage": "3g"
+    },
+    {
+      "herb": "xing_ren",
+      "formula": "sang_ju_yin",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "jie_geng",
+      "formula": "sang_ju_yin",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "lian_qiao",
+      "formula": "sang_ju_yin",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "bo_he",
+      "formula": "sang_ju_yin",
+      "role": "zuo",
+      "dosage": "2.5g"
+    },
+    {
+      "herb": "lu_gen",
+      "formula": "sang_ju_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "sang_ju_yin",
+      "role": "shi",
+      "dosage": "2.5g"
+    },
+    {
+      "herb": "ma_huang",
+      "formula": "xiao_qing_long_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "xiao_qing_long_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_jiang",
+      "formula": "xiao_qing_long_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "xi_xin",
+      "formula": "xiao_qing_long_tang",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "xiao_qing_long_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "wu_wei_zi",
+      "formula": "xiao_qing_long_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "xiao_qing_long_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "xiao_qing_long_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ma_huang",
+      "formula": "da_qing_long_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "da_qing_long_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "xing_ren",
+      "formula": "da_qing_long_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "shi_gao",
+      "formula": "da_qing_long_tang",
+      "role": "zuo",
+      "dosage": "18g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "da_qing_long_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "da_qing_long_tang",
+      "role": "zuo",
+      "dosage": "10g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "da_qing_long_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ma_huang",
+      "formula": "ma_xing_shi_gan_tang",
+      "role": "jun",
+      "dosage": "5g"
+    },
+    {
+      "herb": "shi_gao",
+      "formula": "ma_xing_shi_gan_tang",
+      "role": "jun",
+      "dosage": "18g"
+    },
+    {
+      "herb": "xing_ren",
+      "formula": "ma_xing_shi_gan_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ma_xing_shi_gan_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huo_ma_ren",
+      "formula": "ma_zi_ren_wan",
+      "role": "jun",
+      "dosage": "20g"
+    },
+    {
+      "herb": "xing_ren",
+      "formula": "ma_zi_ren_wan",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "ma_zi_ren_wan",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "ma_zi_ren_wan",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "ma_zi_ren_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hou_po",
+      "formula": "ma_zi_ren_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "ban_xia_xie_xin_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "gan_jiang",
+      "formula": "ban_xia_xie_xin_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "ban_xia_xie_xin_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "ban_xia_xie_xin_tang",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "ban_xia_xie_xin_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "ban_xia_xie_xin_tang",
+      "role": "zuo",
+      "dosage": "4枚"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ban_xia_xie_xin_tang",
+      "role": "shi",
+      "dosage": "9g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "niu_bang_zi",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "lian_qiao",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "bo_he",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "chen",
+      "dosage": "2g"
+    },
+    {
+      "herb": "jiang_can",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "chen",
+      "dosage": "2g"
+    },
+    {
+      "herb": "xuan_shen",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ban_lan_gen",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "jie_geng",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_ma",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "pu_ji_xiao_du_yin",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "qing_ying_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "xuan_shen",
+      "formula": "qing_ying_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "mai_dong",
+      "formula": "qing_ying_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "jin_yin_hua",
+      "formula": "qing_ying_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "lian_qiao",
+      "formula": "qing_ying_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "qing_ying_tang",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "mu_dan_pi",
+      "formula": "qing_ying_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dan_shen",
+      "formula": "qing_ying_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "huang_lian_jie_du_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "huang_lian_jie_du_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_bai",
+      "formula": "huang_lian_jie_du_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "huang_lian_jie_du_tang",
+      "role": "shi",
+      "dosage": "9g"
+    },
+    {
+      "herb": "long_dan_cao",
+      "formula": "long_dan_xie_gan_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "long_dan_xie_gan_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "long_dan_xie_gan_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ze_xie",
+      "formula": "long_dan_xie_gan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "che_qian_zi",
+      "formula": "long_dan_xie_gan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "long_dan_xie_gan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "long_dan_xie_gan_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "long_dan_xie_gan_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "long_dan_xie_gan_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "qing_hao",
+      "formula": "qing_hao_bie_jia_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "qing_hao_bie_jia_tang",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "zhi_mu",
+      "formula": "qing_hao_bie_jia_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "mu_dan_pi",
+      "formula": "qing_hao_bie_jia_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_jiang",
+      "formula": "li_zhong_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "li_zhong_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "li_zhong_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "li_zhong_tang",
+      "role": "shi",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "xiao_jian_zhong_tang",
+      "role": "chen",
+      "dosage": "18g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "xiao_jian_zhong_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "xiao_jian_zhong_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "xiao_jian_zhong_tang",
+      "role": "zuo",
+      "dosage": "6枚"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "xiao_jian_zhong_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "wu_zhu_yu",
+      "formula": "wu_zhu_yu_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "wu_zhu_yu_tang",
+      "role": "chen",
+      "dosage": "18g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "wu_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "wu_zhu_yu_tang",
+      "role": "shi",
+      "dosage": "4枚"
+    },
+    {
+      "herb": "fu_zi",
+      "formula": "zhen_wu_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "zhen_wu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "zhen_wu_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "zhen_wu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "zhen_wu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "dang_gui_si_ni_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "dang_gui_si_ni_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "dang_gui_si_ni_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "xi_xin",
+      "formula": "dang_gui_si_ni_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "dang_gui_si_ni_tang",
+      "role": "zuo",
+      "dosage": "8枚"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "dang_gui_si_ni_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qi",
+      "formula": "gui_pi_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "gui_pi_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "gui_pi_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "gui_pi_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "gui_pi_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "suan_zao_ren",
+      "formula": "gui_pi_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "long_yan_rou",
+      "formula": "gui_pi_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "yuan_zhi",
+      "formula": "gui_pi_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "mu_xiang",
+      "formula": "gui_pi_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "gui_pi_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "gui_pi_tang",
+      "role": "shi",
+      "dosage": "3 枚"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "gui_pi_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "shen_ling_bai_zhu_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "shen_ling_bai_zhu_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "shen_ling_bai_zhu_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "shan_yao",
+      "formula": "shen_ling_bai_zhu_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "yi_yi_ren",
+      "formula": "shen_ling_bai_zhu_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sha_ren",
+      "formula": "shen_ling_bai_zhu_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "jie_geng",
+      "formula": "shen_ling_bai_zhu_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "shen_ling_bai_zhu_san",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "zhi_gan_cao_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "zhi_gan_cao_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "zhi_gan_cao_tang",
+      "role": "chen",
+      "dosage": "30g"
+    },
+    {
+      "herb": "mai_dong",
+      "formula": "zhi_gan_cao_tang",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "e_jiao",
+      "formula": "zhi_gan_cao_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huo_ma_ren",
+      "formula": "zhi_gan_cao_tang",
+      "role": "zuo",
+      "dosage": "10g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "zhi_gan_cao_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "zhi_gan_cao_tang",
+      "role": "shi",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "zhi_gan_cao_tang",
+      "role": "shi",
+      "dosage": "10 枚"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "sheng_mai_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "mai_dong",
+      "formula": "sheng_mai_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "wu_wei_zi",
+      "formula": "sheng_mai_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "jin_gui_shen_qi_wan",
+      "role": "jun",
+      "dosage": "24g"
+    },
+    {
+      "herb": "shan_zhu_yu",
+      "formula": "jin_gui_shen_qi_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "shan_yao",
+      "formula": "jin_gui_shen_qi_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "fu_zi",
+      "formula": "jin_gui_shen_qi_wan",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "jin_gui_shen_qi_wan",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "ze_xie",
+      "formula": "jin_gui_shen_qi_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "jin_gui_shen_qi_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "mu_dan_pi",
+      "formula": "jin_gui_shen_qi_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "suan_zao_ren",
+      "formula": "suan_zao_ren_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "suan_zao_ren_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zhi_mu",
+      "formula": "suan_zao_ren_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "suan_zao_ren_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "suan_zao_ren_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "an_gong_niu_huang_wan",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "an_gong_niu_huang_wan",
+      "role": "chen",
+      "dosage": "30g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "an_gong_niu_huang_wan",
+      "role": "chen",
+      "dosage": "30g"
+    },
+    {
+      "herb": "yu_jin",
+      "formula": "an_gong_niu_huang_wan",
+      "role": "zuo",
+      "dosage": "30g"
+    },
+    {
+      "herb": "bing_pian",
+      "formula": "an_gong_niu_huang_wan",
+      "role": "zuo",
+      "dosage": "7.5g"
+    },
+    {
+      "herb": "shi_gao",
+      "formula": "zi_xue_dan",
+      "role": "jun",
+      "dosage": "48g"
+    },
+    {
+      "herb": "zhi_mu",
+      "formula": "zi_xue_dan",
+      "role": "chen",
+      "dosage": "16g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "zi_xue_dan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "xuan_shen",
+      "formula": "zi_xue_dan",
+      "role": "chen",
+      "dosage": "16g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "zi_xue_dan",
+      "role": "zuo",
+      "dosage": "16g"
+    },
+    {
+      "herb": "mang_xiao",
+      "formula": "zi_xue_dan",
+      "role": "zuo",
+      "dosage": "48g"
+    },
+    {
+      "herb": "mu_xiang",
+      "formula": "zi_xue_dan",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "bing_pian",
+      "formula": "zi_xue_dan",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "zi_xue_dan",
+      "role": "shi",
+      "dosage": "8g"
+    },
+    {
+      "herb": "tao_ren",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "hong_hua",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chi_shao",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "chen",
+      "dosage": "5g"
+    },
+    {
+      "herb": "niu_xi",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "jie_geng",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "xue_fu_zhu_yu_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "sheng_hua_tang",
+      "role": "jun",
+      "dosage": "24g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "sheng_hua_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "tao_ren",
+      "formula": "sheng_hua_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_jiang",
+      "formula": "sheng_hua_tang",
+      "role": "zuo",
+      "dosage": "2g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "sheng_hua_tang",
+      "role": "shi",
+      "dosage": "2g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "xiao_ji_yin_zi",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "pu_huang",
+      "formula": "xiao_ji_yin_zi",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "xiao_ji_yin_zi",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hua_shi",
+      "formula": "xiao_ji_yin_zi",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "xiao_ji_yin_zi",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "xiao_ji_yin_zi",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sang_ye",
+      "formula": "sang_xing_tang",
+      "role": "jun",
+      "dosage": "3g"
+    },
+    {
+      "herb": "xing_ren",
+      "formula": "sang_xing_tang",
+      "role": "chen",
+      "dosage": "5g"
+    },
+    {
+      "herb": "sha_shen",
+      "formula": "sang_xing_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhe_bei_mu",
+      "formula": "sang_xing_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "sang_xing_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "mai_dong",
+      "formula": "mai_men_dong_tang",
+      "role": "jun",
+      "dosage": "60g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "mai_men_dong_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "mai_men_dong_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "mai_men_dong_tang",
+      "role": "zuo",
+      "dosage": "12 pieces"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "mai_men_dong_tang",
+      "role": "shi",
+      "dosage": "4g"
+    },
+    {
+      "herb": "shan_zha",
+      "formula": "bao_he_wan",
+      "role": "jun",
+      "dosage": "18g"
+    },
+    {
+      "herb": "lai_fu_zi",
+      "formula": "bao_he_wan",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "bao_he_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "bao_he_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "bao_he_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "lian_qiao",
+      "formula": "bao_he_wan",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "wu_mei",
+      "formula": "wu_mei_wan",
+      "role": "jun",
+      "dosage": "300 pieces"
+    },
+    {
+      "herb": "xi_xin",
+      "formula": "wu_mei_wan",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_jiang",
+      "formula": "wu_mei_wan",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "fu_zi",
+      "formula": "wu_mei_wan",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "wu_mei_wan",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "wu_mei_wan",
+      "role": "zuo",
+      "dosage": "16g"
+    },
+    {
+      "herb": "huang_bai",
+      "formula": "wu_mei_wan",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "wu_mei_wan",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "wu_mei_wan",
+      "role": "zuo",
+      "dosage": "4g"
+    },
+    {
+      "herb": "mu_li",
+      "formula": "mu_li_san",
+      "role": "chen",
+      "dosage": "30g"
+    },
+    {
+      "herb": "huang_qi",
+      "formula": "mu_li_san",
+      "role": "chen",
+      "dosage": "30g"
+    },
+    {
+      "herb": "shi_gao",
+      "formula": "yu_nu_jian",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "yu_nu_jian",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zhi_mu",
+      "formula": "yu_nu_jian",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "mai_dong",
+      "formula": "yu_nu_jian",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "niu_xi",
+      "formula": "yu_nu_jian",
+      "role": "shi",
+      "dosage": "5g"
+    },
+    {
+      "herb": "ze_xie",
+      "formula": "wu_ling_san",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "wu_ling_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "wu_ling_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "wu_ling_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ze_xie",
+      "formula": "zhu_ling_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "zhu_ling_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hua_shi",
+      "formula": "zhu_ling_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "e_jiao",
+      "formula": "zhu_ling_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "yin_chen",
+      "formula": "yin_chen_hao_tang",
+      "role": "jun",
+      "dosage": "18g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "yin_chen_hao_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "yin_chen_hao_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "xing_ren",
+      "formula": "san_ren_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "yi_yi_ren",
+      "formula": "san_ren_tang",
+      "role": "jun",
+      "dosage": "18g"
+    },
+    {
+      "herb": "hua_shi",
+      "formula": "san_ren_tang",
+      "role": "chen",
+      "dosage": "18g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "san_ren_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hou_po",
+      "formula": "san_ren_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huo_xiang",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zi_su_ye",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "bai_zhi",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "hou_po",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "jie_geng",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "shi",
+      "dosage": "3片"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "huo_xiang_zheng_qi_san",
+      "role": "shi",
+      "dosage": "1枚"
+    },
+    {
+      "herb": "du_huo",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sang_ji_sheng",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "du_zhong",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "niu_xi",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "xi_xin",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "qin_jiao",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "fang_feng",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "rou_gui",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "du_huo_ji_sheng_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "wen_dan_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhu_ru",
+      "formula": "wen_dan_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "wen_dan_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "wen_dan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "wen_dan_tang",
+      "role": "zuo",
+      "dosage": "4.5g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "wen_dan_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "wen_dan_tang",
+      "role": "shi",
+      "dosage": "5片"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "wen_dan_tang",
+      "role": "shi",
+      "dosage": "1枚"
+    },
+    {
+      "herb": "chuan_bei_mu",
+      "formula": "bei_mu_gua_lou_san",
+      "role": "jun",
+      "dosage": "4.5g"
+    },
+    {
+      "herb": "gua_lou",
+      "formula": "bei_mu_gua_lou_san",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "bei_mu_gua_lou_san",
+      "role": "zuo",
+      "dosage": "2.4g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "bei_mu_gua_lou_san",
+      "role": "zuo",
+      "dosage": "1.5g"
+    },
+    {
+      "herb": "jie_geng",
+      "formula": "bei_mu_gua_lou_san",
+      "role": "zuo",
+      "dosage": "2.4g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "tian_ma",
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "role": "shi",
+      "dosage": "2片"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "role": "shi",
+      "dosage": "3枚"
+    },
+    {
+      "herb": "zhu_ling",
+      "formula": "wu_ling_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zhu_ling",
+      "formula": "zhu_ling_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bie_jia",
+      "formula": "qing_hao_bie_jia_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "yi_tang",
+      "formula": "xiao_jian_zhong_tang",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "bai_dou_kou",
+      "formula": "san_ren_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "tong_cao",
+      "formula": "san_ren_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "dan_zhu_ye",
+      "formula": "san_ren_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "geng_mi",
+      "formula": "bai_hu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ma_huang_gen",
+      "formula": "mu_li_san",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "dan_dou_chi",
+      "formula": "yin_qiao_san",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "dan_zhu_ye",
+      "formula": "yin_qiao_san",
+      "role": "zuo",
+      "dosage": "4g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "xiao_yao_san",
+      "role": "shi",
+      "dosage": "4.5g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "xiao_yao_san",
+      "role": "zuo",
+      "dosage": "3片"
+    },
+    {
+      "herb": "bo_he",
+      "formula": "xiao_yao_san",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "qiang_huo",
+      "formula": "jiu_wei_qiang_huo_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fang_feng",
+      "formula": "jiu_wei_qiang_huo_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "cang_zhu",
+      "formula": "jiu_wei_qiang_huo_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "xi_xin",
+      "formula": "jiu_wei_qiang_huo_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "bai_zhi",
+      "formula": "jiu_wei_qiang_huo_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "jiu_wei_qiang_huo_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "jiu_wei_qiang_huo_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "jiu_wei_qiang_huo_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "jiu_wei_qiang_huo_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "qiang_huo",
+      "formula": "ren_shen_bai_du_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "du_huo",
+      "formula": "ren_shen_bai_du_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "ren_shen_bai_du_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bo_he",
+      "formula": "ren_shen_bai_du_san",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "ren_shen_bai_du_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "jie_geng",
+      "formula": "ren_shen_bai_du_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "ren_shen_bai_du_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "ren_shen_bai_du_san",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "ren_shen_bai_du_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ren_shen_bai_du_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ge_gen",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "qiang_huo",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_zhi",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "shi_gao",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "jie_geng",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "chai_ge_jie_ji_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "shui_niu_jiao",
+      "formula": "xi_jiao_di_huang_tang",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "xi_jiao_di_huang_tang",
+      "role": "chen",
+      "dosage": "30g"
+    },
+    {
+      "herb": "chi_shao",
+      "formula": "xi_jiao_di_huang_tang",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "mu_dan_pi",
+      "formula": "xi_jiao_di_huang_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "dao_chi_san",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "mu_tong",
+      "formula": "dao_chi_san",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "dan_zhu_ye",
+      "formula": "dao_chi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "dao_chi_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "qing_wei_san",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_ma",
+      "formula": "qing_wei_san",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "qing_wei_san",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "mu_dan_pi",
+      "formula": "qing_wei_san",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "qing_wei_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "shao_yao_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "shao_yao_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "shao_yao_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "shao_yao_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "shao_yao_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "rou_gui",
+      "formula": "shao_yao_tang",
+      "role": "zuo",
+      "dosage": "2g"
+    },
+    {
+      "herb": "mu_xiang",
+      "formula": "shao_yao_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bing_lang",
+      "formula": "shao_yao_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "shao_yao_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "bai_tou_weng",
+      "formula": "bai_tou_weng_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "bai_tou_weng_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_bai",
+      "formula": "bai_tou_weng_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "qin_pi",
+      "formula": "bai_tou_weng_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "jin_yin_hua",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chi_shao",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ru_xiang",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "mo_yao",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fang_feng",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_zhi",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhe_bei_mu",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "tian_hua_fen",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "xian_fang_huo_ming_yin",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "xiao_cheng_qi_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "hou_po",
+      "formula": "xiao_cheng_qi_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "xiao_cheng_qi_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "tiao_wei_cheng_qi_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "mang_xiao",
+      "formula": "tiao_wei_cheng_qi_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "tiao_wei_cheng_qi_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "wen_pi_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "fu_zi",
+      "formula": "wen_pi_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gan_jiang",
+      "formula": "wen_pi_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "wen_pi_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "wen_pi_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "yuan_hua",
+      "formula": "shi_zao_tang",
+      "role": "jun",
+      "dosage": "1.5g"
+    },
+    {
+      "herb": "gan_sui",
+      "formula": "shi_zao_tang",
+      "role": "jun",
+      "dosage": "1g"
+    },
+    {
+      "herb": "da_ji",
+      "formula": "shi_zao_tang",
+      "role": "jun",
+      "dosage": "1.5g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "shi_zao_tang",
+      "role": "shi",
+      "dosage": "10枚"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "da_chai_hu_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "da_chai_hu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "da_chai_hu_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "da_chai_hu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "da_chai_hu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "da_chai_hu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "da_chai_hu_tang",
+      "role": "shi",
+      "dosage": "15g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "da_chai_hu_tang",
+      "role": "shi",
+      "dosage": "12g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "si_ni_san",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "si_ni_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "si_ni_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "si_ni_san",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "qing_hao",
+      "formula": "hao_qin_qing_dan_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "hao_qin_qing_dan_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "hao_qin_qing_dan_tang",
+      "role": "chen",
+      "dosage": "5g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "hao_qin_qing_dan_tang",
+      "role": "chen",
+      "dosage": "5g"
+    },
+    {
+      "herb": "zhu_ru",
+      "formula": "hao_qin_qing_dan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "hao_qin_qing_dan_tang",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "hao_qin_qing_dan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hua_shi",
+      "formula": "hao_qin_qing_dan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "mu_dan_pi",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bo_he",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "jia_wei_xiao_yao_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "tong_xie_yao_fang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "tong_xie_yao_fang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "tong_xie_yao_fang",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "fang_feng",
+      "formula": "tong_xie_yao_fang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "hua_shi",
+      "formula": "ba_zheng_san",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "mu_tong",
+      "formula": "ba_zheng_san",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "che_qian_zi",
+      "formula": "ba_zheng_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "qu_mai",
+      "formula": "ba_zheng_san",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bian_xu",
+      "formula": "ba_zheng_san",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "ba_zheng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "ba_zheng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "deng_xin_cao",
+      "formula": "ba_zheng_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ba_zheng_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "hua_shi",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "yin_chen",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "jun",
+      "dosage": "11g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "jun",
+      "dosage": "10g"
+    },
+    {
+      "herb": "shi_chang_pu",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huo_xiang",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "chen",
+      "dosage": "4g"
+    },
+    {
+      "herb": "bai_dou_kou",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "chen",
+      "dosage": "4g"
+    },
+    {
+      "herb": "mu_tong",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "lian_qiao",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "zuo",
+      "dosage": "10g"
+    },
+    {
+      "herb": "bo_he",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "zuo",
+      "dosage": "4g"
+    },
+    {
+      "herb": "she_gan",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "zuo",
+      "dosage": "4g"
+    },
+    {
+      "herb": "chuan_bei_mu",
+      "formula": "gan_lu_xiao_du_dan",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "huang_bai",
+      "formula": "er_miao_san",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "cang_zhu",
+      "formula": "er_miao_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fang_ji",
+      "formula": "fang_ji_huang_qi_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "huang_qi",
+      "formula": "fang_ji_huang_qi_tang",
+      "role": "jun",
+      "dosage": "15g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "fang_ji_huang_qi_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "fang_ji_huang_qi_tang",
+      "role": "shi",
+      "dosage": "9g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "fang_ji_huang_qi_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "fang_ji_huang_qi_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "fu_zi",
+      "formula": "shi_pi_san",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_jiang",
+      "formula": "shi_pi_san",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "shi_pi_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "shi_pi_san",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "mu_xiang",
+      "formula": "shi_pi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "hou_po",
+      "formula": "shi_pi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "mu_gua",
+      "formula": "shi_pi_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "shi_pi_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "shi_pi_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "shi_pi_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "huang_qi",
+      "formula": "huang_qi_gui_zhi_wu_wu_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "huang_qi_gui_zhi_wu_wu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "huang_qi_gui_zhi_wu_wu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "huang_qi_gui_zhi_wu_wu_tang",
+      "role": "shi",
+      "dosage": "18g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "huang_qi_gui_zhi_wu_wu_tang",
+      "role": "shi",
+      "dosage": "12g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "yang_he_tang",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "rou_gui",
+      "formula": "yang_he_tang",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "lu_jiao_jiao",
+      "formula": "yang_he_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ma_huang",
+      "formula": "yang_he_tang",
+      "role": "zuo",
+      "dosage": "2g"
+    },
+    {
+      "herb": "bai_jie_zi",
+      "formula": "yang_he_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "yang_he_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "yang_he_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chi_shao",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "tao_ren",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hong_hua",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "mu_dan_pi",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "wu_yao",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "yan_hu_suo",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "xiang_fu",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "wu_ling_zhi",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ge_xia_zhu_yu_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "you_gui_wan",
+      "role": "jun",
+      "dosage": "24g"
+    },
+    {
+      "herb": "shan_yao",
+      "formula": "you_gui_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "shan_zhu_yu",
+      "formula": "you_gui_wan",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gou_qi_zi",
+      "formula": "you_gui_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "lu_jiao_jiao",
+      "formula": "you_gui_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "tu_si_zi",
+      "formula": "you_gui_wan",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "du_zhong",
+      "formula": "you_gui_wan",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "you_gui_wan",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "rou_gui",
+      "formula": "you_gui_wan",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "fu_zi",
+      "formula": "you_gui_wan",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "zuo_gui_wan",
+      "role": "jun",
+      "dosage": "24g"
+    },
+    {
+      "herb": "shan_yao",
+      "formula": "zuo_gui_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "shan_zhu_yu",
+      "formula": "zuo_gui_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "gou_qi_zi",
+      "formula": "zuo_gui_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "lu_jiao_jiao",
+      "formula": "zuo_gui_wan",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "gui_ban_jiao",
+      "formula": "zuo_gui_wan",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "tu_si_zi",
+      "formula": "zuo_gui_wan",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "niu_xi",
+      "formula": "zuo_gui_wan",
+      "role": "shi",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "yi_guan_jian",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "sha_shen",
+      "formula": "yi_guan_jian",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "mai_dong",
+      "formula": "yi_guan_jian",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "yi_guan_jian",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "gou_qi_zi",
+      "formula": "yi_guan_jian",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "chuan_lian_zi",
+      "formula": "yi_guan_jian",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "da_bu_yin_wan",
+      "role": "jun",
+      "dosage": "18g"
+    },
+    {
+      "herb": "gui_ban_jiao",
+      "formula": "da_bu_yin_wan",
+      "role": "jun",
+      "dosage": "18g"
+    },
+    {
+      "herb": "huang_bai",
+      "formula": "da_bu_yin_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "zhi_mu",
+      "formula": "da_bu_yin_wan",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qi",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "shu_di_huang",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "rou_gui",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "shi_quan_da_bu_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "xiang_fu",
+      "formula": "yue_ju_wan",
+      "role": "jun",
+      "dosage": "10g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "yue_ju_wan",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "cang_zhu",
+      "formula": "yue_ju_wan",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "yue_ju_wan",
+      "role": "zuo",
+      "dosage": "10g"
+    },
+    {
+      "herb": "lai_fu_zi",
+      "formula": "yue_ju_wan",
+      "role": "zuo",
+      "dosage": "10g"
+    },
+    {
+      "herb": "chuan_lian_zi",
+      "formula": "jin_ling_zi_san",
+      "role": "jun",
+      "dosage": "10g"
+    },
+    {
+      "herb": "yan_hu_suo",
+      "formula": "jin_ling_zi_san",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "zi_su_zi",
+      "formula": "su_zi_jiang_qi_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "su_zi_jiang_qi_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "hou_po",
+      "formula": "su_zi_jiang_qi_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "su_zi_jiang_qi_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "su_zi_jiang_qi_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "rou_gui",
+      "formula": "su_zi_jiang_qi_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "su_zi_jiang_qi_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "su_zi_jiang_qi_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "su_zi_jiang_qi_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "ma_huang",
+      "formula": "ding_chuan_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "bai_guo",
+      "formula": "ding_chuan_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "xing_ren",
+      "formula": "ding_chuan_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "ding_chuan_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sang_bai_pi",
+      "formula": "ding_chuan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "ding_chuan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "kuan_dong_hua",
+      "formula": "ding_chuan_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "zi_su_zi",
+      "formula": "ding_chuan_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ding_chuan_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "xuan_fu_hua",
+      "formula": "xuan_fu_dai_zhe_tang",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dai_zhe_shi",
+      "formula": "xuan_fu_dai_zhe_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "xuan_fu_dai_zhe_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "xuan_fu_dai_zhe_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_jiang",
+      "formula": "xuan_fu_dai_zhe_tang",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "da_zao",
+      "formula": "xuan_fu_dai_zhe_tang",
+      "role": "shi",
+      "dosage": "12g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "xuan_fu_dai_zhe_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_qi",
+      "formula": "bu_yang_huan_wu_tang",
+      "role": "jun",
+      "dosage": "120g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "bu_yang_huan_wu_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chi_shao",
+      "formula": "bu_yang_huan_wu_tang",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "bu_yang_huan_wu_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "tao_ren",
+      "formula": "bu_yang_huan_wu_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "hong_hua",
+      "formula": "bu_yang_huan_wu_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "di_long",
+      "formula": "bu_yang_huan_wu_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "tao_ren",
+      "formula": "tao_he_cheng_qi_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "da_huang",
+      "formula": "tao_he_cheng_qi_tang",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "mang_xiao",
+      "formula": "tao_he_cheng_qi_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gui_zhi",
+      "formula": "tao_he_cheng_qi_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "tao_he_cheng_qi_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "si_sheng_wan",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "ce_bai_ye",
+      "formula": "si_sheng_wan",
+      "role": "chen",
+      "dosage": "30g"
+    },
+    {
+      "herb": "he_ye",
+      "formula": "si_sheng_wan",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "ai_ye",
+      "formula": "si_sheng_wan",
+      "role": "zuo",
+      "dosage": "10g"
+    },
+    {
+      "herb": "huai_hua",
+      "formula": "huai_hua_san",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "ce_bai_ye",
+      "formula": "huai_hua_san",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "jing_jie",
+      "formula": "huai_hua_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "huai_hua_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chuan_xiong",
+      "formula": "chuan_xiong_cha_tiao_san",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "bai_zhi",
+      "formula": "chuan_xiong_cha_tiao_san",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "qiang_huo",
+      "formula": "chuan_xiong_cha_tiao_san",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "xi_xin",
+      "formula": "chuan_xiong_cha_tiao_san",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "fang_feng",
+      "formula": "chuan_xiong_cha_tiao_san",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "jing_jie",
+      "formula": "chuan_xiong_cha_tiao_san",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "bo_he",
+      "formula": "chuan_xiong_cha_tiao_san",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "chuan_xiong_cha_tiao_san",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "jing_jie",
+      "formula": "xiao_feng_san",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "fang_feng",
+      "formula": "xiao_feng_san",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chan_tui",
+      "formula": "xiao_feng_san",
+      "role": "chen",
+      "dosage": "3g"
+    },
+    {
+      "herb": "niu_bang_zi",
+      "formula": "xiao_feng_san",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "cang_zhu",
+      "formula": "xiao_feng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ku_shen",
+      "formula": "xiao_feng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "shi_gao",
+      "formula": "xiao_feng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhi_mu",
+      "formula": "xiao_feng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "xiao_feng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "xiao_feng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huo_ma_ren",
+      "formula": "xiao_feng_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "mu_tong",
+      "formula": "xiao_feng_san",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "xiao_feng_san",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "niu_xi",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "dai_zhe_shi",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "chen",
+      "dosage": "30g"
+    },
+    {
+      "herb": "long_gu",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "chen",
+      "dosage": "15g"
+    },
+    {
+      "herb": "mu_li",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "chen",
+      "dosage": "15g"
+    },
+    {
+      "herb": "gui_ban_jiao",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "xuan_shen",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "tian_dong",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "yin_chen",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "chuan_lian_zi",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "mai_ya",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "zhen_gan_xi_feng_tang",
+      "role": "shi",
+      "dosage": "5g"
+    },
+    {
+      "herb": "tian_ma",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "jun",
+      "dosage": "9g"
+    },
+    {
+      "herb": "gou_teng",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "shi_jue_ming",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "chen",
+      "dosage": "18g"
+    },
+    {
+      "herb": "zhi_zi",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "niu_xi",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "du_zhong",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sang_ji_sheng",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "yi_mu_cao",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ye_jiao_teng",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "tian_ma_gou_teng_yin",
+      "role": "shi",
+      "dosage": "9g"
+    },
+    {
+      "herb": "ling_yang_jiao",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "jun",
+      "dosage": "5g"
+    },
+    {
+      "herb": "gou_teng",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "chen",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sang_ye",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "ju_hua",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "sheng_di_huang",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chuan_bei_mu",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "zuo",
+      "dosage": "12g"
+    },
+    {
+      "herb": "zhu_ru",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "zuo",
+      "dosage": "15g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "shi",
+      "dosage": "15g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "ling_jiao_gou_teng_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "ying_su_ke",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "rou_dou_kou",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "he_zi",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "chen",
+      "dosage": "12g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "mu_xiang",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "zuo",
+      "dosage": "5g"
+    },
+    {
+      "herb": "rou_gui",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "zhen_ren_yang_zang_tang",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bu_gu_zhi",
+      "formula": "si_shen_wan",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "rou_dou_kou",
+      "formula": "si_shen_wan",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "wu_zhu_yu",
+      "formula": "si_shen_wan",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "wu_wei_zi",
+      "formula": "si_shen_wan",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "sang_piao_xiao",
+      "formula": "sang_piao_xiao_san",
+      "role": "jun",
+      "dosage": "12g"
+    },
+    {
+      "herb": "long_gu",
+      "formula": "sang_piao_xiao_san",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "gui_ban_jiao",
+      "formula": "sang_piao_xiao_san",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "sang_piao_xiao_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "sang_piao_xiao_san",
+      "role": "zuo",
+      "dosage": "10g"
+    },
+    {
+      "herb": "dang_gui",
+      "formula": "sang_piao_xiao_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "yuan_zhi",
+      "formula": "sang_piao_xiao_san",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "shi_chang_pu",
+      "formula": "sang_piao_xiao_san",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_zhu",
+      "formula": "wan_dai_tang",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "shan_yao",
+      "formula": "wan_dai_tang",
+      "role": "jun",
+      "dosage": "30g"
+    },
+    {
+      "herb": "ren_shen",
+      "formula": "wan_dai_tang",
+      "role": "chen",
+      "dosage": "6g"
+    },
+    {
+      "herb": "bai_shao",
+      "formula": "wan_dai_tang",
+      "role": "chen",
+      "dosage": "15g"
+    },
+    {
+      "herb": "cang_zhu",
+      "formula": "wan_dai_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "che_qian_zi",
+      "formula": "wan_dai_tang",
+      "role": "zuo",
+      "dosage": "9g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "wan_dai_tang",
+      "role": "zuo",
+      "dosage": "3g"
+    },
+    {
+      "herb": "chai_hu",
+      "formula": "wan_dai_tang",
+      "role": "zuo",
+      "dosage": "2g"
+    },
+    {
+      "herb": "jing_jie",
+      "formula": "wan_dai_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "gan_cao",
+      "formula": "wan_dai_tang",
+      "role": "shi",
+      "dosage": "3g"
+    },
+    {
+      "herb": "tian_nan_xing",
+      "formula": "qing_qi_hua_tan_wan",
+      "role": "jun",
+      "dosage": "5g"
+    },
+    {
+      "herb": "huang_qin",
+      "formula": "qing_qi_hua_tan_wan",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "gua_lou",
+      "formula": "qing_qi_hua_tan_wan",
+      "role": "chen",
+      "dosage": "10g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "qing_qi_hua_tan_wan",
+      "role": "zuo",
+      "dosage": "10g"
+    },
+    {
+      "herb": "chen_pi",
+      "formula": "qing_qi_hua_tan_wan",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "fu_ling",
+      "formula": "qing_qi_hua_tan_wan",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "xing_ren",
+      "formula": "qing_qi_hua_tan_wan",
+      "role": "zuo",
+      "dosage": "6g"
+    },
+    {
+      "herb": "zhi_shi",
+      "formula": "qing_qi_hua_tan_wan",
+      "role": "shi",
+      "dosage": "6g"
+    },
+    {
+      "herb": "huang_lian",
+      "formula": "xiao_xian_xiong_tang",
+      "role": "jun",
+      "dosage": "6g"
+    },
+    {
+      "herb": "gua_lou",
+      "formula": "xiao_xian_xiong_tang",
+      "role": "chen",
+      "dosage": "20g"
+    },
+    {
+      "herb": "ban_xia",
+      "formula": "xiao_xian_xiong_tang",
+      "role": "zuo",
+      "dosage": "12g"
+    }
+  ],
+  "herb_synergizes_with": [
+    {
+      "a": "gui_zhi",
+      "b": "bai_shao",
+      "name": "桂枝白芍 — 调和营卫",
+      "description": "辛温通阳与酸寒敛阴相配，一散一收，调和营卫"
+    },
+    {
+      "a": "huang_qi",
+      "b": "dang_gui",
+      "name": "黄芪当归 — 补气生血",
+      "description": "黄芪大补脾肺之气，当归补血活血。气旺则血生（当归补血汤）"
+    },
+    {
+      "a": "chai_hu",
+      "b": "huang_qin",
+      "name": "柴胡黄芩 — 和解少阳",
+      "description": "柴胡升散，黄芩清降；一升一降，共解少阳之邪"
+    },
+    {
+      "a": "ma_huang",
+      "b": "gui_zhi",
+      "name": "麻黄桂枝 — 发汗解表",
+      "description": "麻黄辛温发汗，桂枝助其辛散，共开腠理"
+    },
+    {
+      "a": "ren_shen",
+      "b": "fu_ling",
+      "name": "人参茯苓 — 健脾渗湿",
+      "description": "人参补气，茯苓渗湿；标本兼治"
+    },
+    {
+      "a": "fu_zi",
+      "b": "gan_jiang",
+      "name": "附子干姜 — 回阳救逆",
+      "description": "附子大热回阳，干姜温中散寒，二者相须为用，回阳救逆之力倍增"
+    },
+    {
+      "a": "ma_huang",
+      "b": "xing_ren",
+      "name": "麻黄杏仁 — 宣降肺气",
+      "description": "麻黄宣肺平喘，杏仁降利肺气，宣降相因"
+    },
+    {
+      "a": "ban_xia",
+      "b": "chen_pi",
+      "name": "半夏陈皮 — 燥湿化痰",
+      "description": "半夏燥湿化痰，陈皮理气燥湿，气顺则痰消"
+    },
+    {
+      "a": "sheng_jiang",
+      "b": "da_zao",
+      "name": "姜枣 — 调和营卫",
+      "description": "生姜辛温散寒，大枣甘温补中，二者合用调和营卫"
+    },
+    {
+      "a": "sheng_ma",
+      "b": "chai_hu",
+      "name": "升麻柴胡 — 升阳举陷",
+      "description": "升麻、柴胡同为升提之品，与黄芪相伍治中气下陷"
+    },
+    {
+      "a": "shi_gao",
+      "b": "zhi_mu",
+      "name": "石膏知母 — 清热生津",
+      "description": "石膏辛甘大寒清气分大热，知母苦寒质润滋阴润燥；二者相须为用是清气分热的经典配伍"
+    },
+    {
+      "a": "tao_ren",
+      "b": "hong_hua",
+      "name": "桃仁红花 — 活血祛瘀",
+      "description": "桃仁善破血结，红花善活血通经；二者相须为用是活血化瘀的常用药对"
+    },
+    {
+      "a": "da_huang",
+      "b": "mang_xiao",
+      "name": "大黄芒硝 — 攻下软坚",
+      "description": "大黄苦寒泻下，芒硝咸寒润燥软坚；二者相须为用，攻下力倍增"
+    },
+    {
+      "a": "huang_qi",
+      "b": "fang_feng",
+      "name": "黄芪防风 — 固表不留邪",
+      "description": "黄芪固表，防风祛风；散中有收，固表而不致闭门留寇"
+    },
+    {
+      "a": "ban_xia",
+      "b": "hou_po",
+      "name": "半夏厚朴 — 化痰行气",
+      "description": "半夏化痰散结，厚朴行气除满；痰气并治"
+    },
+    {
+      "a": "cang_zhu",
+      "b": "hou_po",
+      "name": "苍术厚朴 — 燥湿行气",
+      "description": "苍术燥湿健脾，厚朴行气除满；治湿阻中焦之经典药对"
+    }
+  ],
+  "herb_incompatible_with": [],
+  "formula_treats_pattern": [
+    {
+      "formula": "si_jun_zi_tang",
+      "pattern": "pi_qi_xu"
+    },
+    {
+      "formula": "bu_zhong_yi_qi_tang",
+      "pattern": "pi_qi_xia_xian"
+    },
+    {
+      "formula": "si_wu_tang",
+      "pattern": "xue_xu"
+    },
+    {
+      "formula": "gui_zhi_tang",
+      "pattern": "wai_gan_feng_han_biao_xu"
+    },
+    {
+      "formula": "ma_huang_tang",
+      "pattern": "wai_gan_feng_han_biao_shi"
+    },
+    {
+      "formula": "xiao_chai_hu_tang",
+      "pattern": "shaoyang_zheng"
+    },
+    {
+      "formula": "xiao_yao_san",
+      "pattern": "gan_qi_yu_jie"
+    },
+    {
+      "formula": "si_ni_tang",
+      "pattern": "shen_yang_xu"
+    },
+    {
+      "formula": "er_chen_tang",
+      "pattern": "tan_shi_zheng"
+    },
+    {
+      "formula": "bai_hu_tang",
+      "pattern": "yang_ming_fu_shi"
+    },
+    {
+      "formula": "da_cheng_qi_tang",
+      "pattern": "yang_ming_fu_shi"
+    },
+    {
+      "formula": "liu_wei_di_huang_wan",
+      "pattern": "yin_xu_zheng"
+    },
+    {
+      "formula": "dang_gui_bu_xue_tang",
+      "pattern": "xue_xu"
+    },
+    {
+      "formula": "ba_zhen_tang",
+      "pattern": "qi_xue_liang_xu"
+    },
+    {
+      "formula": "ban_xia_hou_po_tang",
+      "pattern": "mei_he_qi"
+    },
+    {
+      "formula": "yu_ping_feng_san",
+      "pattern": "wai_gan_feng_han_biao_xu"
+    },
+    {
+      "formula": "ping_wei_san",
+      "pattern": "shi_zu_zhong_jiao"
+    },
+    {
+      "formula": "yin_qiao_san",
+      "pattern": "wei_fen_zheng"
+    },
+    {
+      "formula": "yin_qiao_san",
+      "pattern": "shang_jiao_shi_re"
+    },
+    {
+      "formula": "sang_ju_yin",
+      "pattern": "wei_fen_zheng"
+    },
+    {
+      "formula": "sang_ju_yin",
+      "pattern": "shang_jiao_shi_re"
+    },
+    {
+      "formula": "xiao_qing_long_tang",
+      "pattern": "wai_gan_feng_han_biao_shi"
+    },
+    {
+      "formula": "da_qing_long_tang",
+      "pattern": "wai_gan_feng_han_biao_shi"
+    },
+    {
+      "formula": "ma_xing_shi_gan_tang",
+      "pattern": "qi_fen_zheng"
+    },
+    {
+      "formula": "ma_xing_shi_gan_tang",
+      "pattern": "shang_jiao_shi_re"
+    },
+    {
+      "formula": "ma_zi_ren_wan",
+      "pattern": "da_chang_shi_re"
+    },
+    {
+      "formula": "ma_zi_ren_wan",
+      "pattern": "yang_ming_fu_shi"
+    },
+    {
+      "formula": "ban_xia_xie_xin_tang",
+      "pattern": "shi_zu_zhong_jiao"
+    },
+    {
+      "formula": "pu_ji_xiao_du_yin",
+      "pattern": "shang_jiao_shi_re"
+    },
+    {
+      "formula": "qing_ying_tang",
+      "pattern": "ying_fen_zheng"
+    },
+    {
+      "formula": "huang_lian_jie_du_tang",
+      "pattern": "qi_fen_zheng"
+    },
+    {
+      "formula": "long_dan_xie_gan_tang",
+      "pattern": "xia_jiao_shi_re"
+    },
+    {
+      "formula": "long_dan_xie_gan_tang",
+      "pattern": "gan_qi_yu_jie"
+    },
+    {
+      "formula": "qing_hao_bie_jia_tang",
+      "pattern": "yin_xu_zheng"
+    },
+    {
+      "formula": "qing_hao_bie_jia_tang",
+      "pattern": "shen_yin_xu"
+    },
+    {
+      "formula": "li_zhong_tang",
+      "pattern": "tai_yin_bing"
+    },
+    {
+      "formula": "li_zhong_tang",
+      "pattern": "wei_han"
+    },
+    {
+      "formula": "xiao_jian_zhong_tang",
+      "pattern": "pi_qi_xu"
+    },
+    {
+      "formula": "xiao_jian_zhong_tang",
+      "pattern": "wei_han"
+    },
+    {
+      "formula": "wu_zhu_yu_tang",
+      "pattern": "wei_han"
+    },
+    {
+      "formula": "wu_zhu_yu_tang",
+      "pattern": "jue_yin_bing"
+    },
+    {
+      "formula": "zhen_wu_tang",
+      "pattern": "shen_yang_xu"
+    },
+    {
+      "formula": "zhen_wu_tang",
+      "pattern": "shao_yin_han_hua"
+    },
+    {
+      "formula": "dang_gui_si_ni_tang",
+      "pattern": "xue_xu"
+    },
+    {
+      "formula": "dang_gui_si_ni_tang",
+      "pattern": "jue_yin_bing"
+    },
+    {
+      "formula": "gui_pi_tang",
+      "pattern": "xin_xue_xu"
+    },
+    {
+      "formula": "gui_pi_tang",
+      "pattern": "pi_qi_xu"
+    },
+    {
+      "formula": "gui_pi_tang",
+      "pattern": "qi_xue_liang_xu"
+    },
+    {
+      "formula": "shen_ling_bai_zhu_san",
+      "pattern": "pi_qi_xu"
+    },
+    {
+      "formula": "shen_ling_bai_zhu_san",
+      "pattern": "tan_shi_zheng"
+    },
+    {
+      "formula": "zhi_gan_cao_tang",
+      "pattern": "xin_qi_xu"
+    },
+    {
+      "formula": "zhi_gan_cao_tang",
+      "pattern": "xin_yin_xu"
+    },
+    {
+      "formula": "zhi_gan_cao_tang",
+      "pattern": "xin_yang_xu"
+    },
+    {
+      "formula": "sheng_mai_san",
+      "pattern": "fei_qi_xu"
+    },
+    {
+      "formula": "sheng_mai_san",
+      "pattern": "fei_yin_xu"
+    },
+    {
+      "formula": "jin_gui_shen_qi_wan",
+      "pattern": "shen_yang_xu"
+    },
+    {
+      "formula": "suan_zao_ren_tang",
+      "pattern": "xin_xue_xu"
+    },
+    {
+      "formula": "suan_zao_ren_tang",
+      "pattern": "xin_yin_xu"
+    },
+    {
+      "formula": "suan_zao_ren_tang",
+      "pattern": "gan_xue_xu"
+    },
+    {
+      "formula": "an_gong_niu_huang_wan",
+      "pattern": "ying_fen_zheng"
+    },
+    {
+      "formula": "zi_xue_dan",
+      "pattern": "ying_fen_zheng"
+    },
+    {
+      "formula": "zi_xue_dan",
+      "pattern": "xue_fen_zheng"
+    },
+    {
+      "formula": "xiao_ji_yin_zi",
+      "pattern": "pang_guang_shi_re"
+    },
+    {
+      "formula": "sang_xing_tang",
+      "pattern": "wei_fen_zheng"
+    },
+    {
+      "formula": "mai_men_dong_tang",
+      "pattern": "fei_yin_xu"
+    },
+    {
+      "formula": "wu_mei_wan",
+      "pattern": "jue_yin_bing"
+    },
+    {
+      "formula": "yu_nu_jian",
+      "pattern": "wei_yin_xu"
+    },
+    {
+      "formula": "yu_nu_jian",
+      "pattern": "wei_re"
+    },
+    {
+      "formula": "wu_ling_san",
+      "pattern": "tan_shi_zheng"
+    },
+    {
+      "formula": "wu_ling_san",
+      "pattern": "pang_guang_shi_re"
+    },
+    {
+      "formula": "zhu_ling_tang",
+      "pattern": "xia_jiao_shi_re"
+    },
+    {
+      "formula": "zhu_ling_tang",
+      "pattern": "pang_guang_shi_re"
+    },
+    {
+      "formula": "zhu_ling_tang",
+      "pattern": "shen_yin_xu"
+    },
+    {
+      "formula": "yin_chen_hao_tang",
+      "pattern": "zhong_jiao_shi_re"
+    },
+    {
+      "formula": "yin_chen_hao_tang",
+      "pattern": "yang_ming_fu_shi"
+    },
+    {
+      "formula": "san_ren_tang",
+      "pattern": "shang_jiao_shi_re"
+    },
+    {
+      "formula": "san_ren_tang",
+      "pattern": "wei_fen_zheng"
+    },
+    {
+      "formula": "huo_xiang_zheng_qi_san",
+      "pattern": "wai_gan_feng_han_biao_shi"
+    },
+    {
+      "formula": "huo_xiang_zheng_qi_san",
+      "pattern": "shi_zu_zhong_jiao"
+    },
+    {
+      "formula": "du_huo_ji_sheng_tang",
+      "pattern": "shen_yang_xu"
+    },
+    {
+      "formula": "du_huo_ji_sheng_tang",
+      "pattern": "qi_xue_liang_xu"
+    },
+    {
+      "formula": "wen_dan_tang",
+      "pattern": "tan_shi_zheng"
+    },
+    {
+      "formula": "wen_dan_tang",
+      "pattern": "xin_qi_xu"
+    },
+    {
+      "formula": "bei_mu_gua_lou_san",
+      "pattern": "fei_yin_xu"
+    },
+    {
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "pattern": "tan_shi_zheng"
+    },
+    {
+      "formula": "ban_xia_bai_zhu_tian_ma_tang",
+      "pattern": "gan_yang_shang_kang"
+    }
+  ],
+  "formula_derived_from": [
+    {
+      "child": "bu_zhong_yi_qi_tang",
+      "parent": "si_jun_zi_tang",
+      "rationale": "在四君子汤基础上去茯苓，加黄芪、升麻、柴胡、当归、陈皮"
+    },
+    {
+      "child": "tao_hong_si_wu_tang",
+      "parent": "si_wu_tang",
+      "rationale": "在四物汤基础上加桃仁、红花二味活血药，养血活血并重"
+    },
+    {
+      "child": "ba_zhen_tang",
+      "parent": "si_jun_zi_tang",
+      "rationale": "由四君子汤合四物汤而成，气血双补"
+    },
+    {
+      "child": "ba_zhen_tang",
+      "parent": "si_wu_tang",
+      "rationale": "由四君子汤合四物汤而成，气血双补"
+    },
+    {
+      "child": "ma_xing_shi_gan_tang",
+      "parent": "ma_huang_tang",
+      "rationale": "由麻黄汤去桂枝、加石膏而成，由辛温解表变为辛凉宣肺"
+    },
+    {
+      "child": "da_qing_long_tang",
+      "parent": "ma_huang_tang",
+      "rationale": "在麻黄汤基础上加石膏、生姜、大枣，发汗之力更峻并兼清里热"
+    },
+    {
+      "child": "xiao_jian_zhong_tang",
+      "parent": "gui_zhi_tang",
+      "rationale": "《伤寒论》在桂枝汤基础上倍芍药加饴糖而成，故名小建中；温中补虚和里缓急之功由此衍出。"
+    },
+    {
+      "child": "shen_ling_bai_zhu_san",
+      "parent": "si_jun_zi_tang",
+      "rationale": "在四君子汤基础上加山药、薏苡仁、砂仁、桔梗等，由补气方扩展为健脾渗湿止泻方。"
+    },
+    {
+      "child": "xue_fu_zhu_yu_tang",
+      "parent": "tao_hong_si_wu_tang",
+      "rationale": "本方合桃红四物汤（生地易熟地、赤芍易白芍）与四逆散（去芍药），再加桔梗、牛膝而成"
+    }
+  ],
+  "formula_cited_in_text": [
+    {
+      "formula": "si_jun_zi_tang",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    },
+    {
+      "formula": "bu_zhong_yi_qi_tang",
+      "text": "pi_wei_lun"
+    },
+    {
+      "formula": "si_wu_tang",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    },
+    {
+      "formula": "gui_zhi_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "ma_huang_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "xiao_chai_hu_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "xiao_yao_san",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    },
+    {
+      "formula": "si_ni_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "er_chen_tang",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    },
+    {
+      "formula": "bai_hu_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "da_cheng_qi_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "tao_hong_si_wu_tang",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    },
+    {
+      "formula": "dang_gui_bu_xue_tang",
+      "text": "pi_wei_lun"
+    },
+    {
+      "formula": "ban_xia_hou_po_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "ping_wei_san",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    },
+    {
+      "formula": "yin_qiao_san",
+      "text": "wen_bing_tiao_bian"
+    },
+    {
+      "formula": "sang_ju_yin",
+      "text": "wen_bing_tiao_bian"
+    },
+    {
+      "formula": "xiao_qing_long_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "da_qing_long_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "ma_xing_shi_gan_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "ma_zi_ren_wan",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "ban_xia_xie_xin_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "qing_ying_tang",
+      "text": "wen_bing_tiao_bian"
+    },
+    {
+      "formula": "long_dan_xie_gan_tang",
+      "text": "yi_fang_ji_jie"
+    },
+    {
+      "formula": "qing_hao_bie_jia_tang",
+      "text": "wen_bing_tiao_bian"
+    },
+    {
+      "formula": "li_zhong_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "xiao_jian_zhong_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "xiao_jian_zhong_tang",
+      "text": "jin_gui_yao_lue"
+    },
+    {
+      "formula": "wu_zhu_yu_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "zhen_wu_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "dang_gui_si_ni_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "shen_ling_bai_zhu_san",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    },
+    {
+      "formula": "zhi_gan_cao_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "jin_gui_shen_qi_wan",
+      "text": "jin_gui_yao_lue"
+    },
+    {
+      "formula": "suan_zao_ren_tang",
+      "text": "jin_gui_yao_lue"
+    },
+    {
+      "formula": "an_gong_niu_huang_wan",
+      "text": "wen_bing_tiao_bian"
+    },
+    {
+      "formula": "zi_xue_dan",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    },
+    {
+      "formula": "xue_fu_zhu_yu_tang",
+      "text": "yi_lin_gai_cuo"
+    },
+    {
+      "formula": "xiao_ji_yin_zi",
+      "text": "yi_fang_ji_jie"
+    },
+    {
+      "formula": "sang_xing_tang",
+      "text": "wen_bing_tiao_bian"
+    },
+    {
+      "formula": "mai_men_dong_tang",
+      "text": "jin_gui_yao_lue"
+    },
+    {
+      "formula": "wu_mei_wan",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "mu_li_san",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    },
+    {
+      "formula": "wu_ling_san",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "zhu_ling_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "yin_chen_hao_tang",
+      "text": "shang_han_lun"
+    },
+    {
+      "formula": "san_ren_tang",
+      "text": "wen_bing_tiao_bian"
+    },
+    {
+      "formula": "huo_xiang_zheng_qi_san",
+      "text": "tai_ping_hui_min_he_ji_ju_fang"
+    }
+  ],
+  "pattern_differential_with": [
+    {
+      "a": "wai_gan_feng_han_biao_shi",
+      "b": "wai_gan_feng_han_biao_xu",
+      "description": "表实有汗与无汗之别。表实证无汗、脉浮紧；表虚证有汗、脉浮缓"
+    },
+    {
+      "a": "pi_qi_xu",
+      "b": "pi_qi_xia_xian",
+      "description": "脾气下陷在脾气虚基础上出现内脏下垂、便意频数等下陷症状"
+    },
+    {
+      "a": "pi_qi_xu",
+      "b": "shen_yang_xu",
+      "description": "二者均见怕冷乏力，但脾气虚以食少便溏为主，肾阳虚以腰膝酸冷、五更泄泻为主"
+    }
+  ],
+  "acupoint_combines_with": [
+    {
+      "points": [
+        "he_gu",
+        "tai_chong"
+      ],
+      "name": "四关穴",
+      "purpose": "疏肝理气，行气活血，安神定志",
+      "name_en": "Four Gates"
+    },
+    {
+      "points": [
+        "zu_san_li",
+        "nei_guan"
+      ],
+      "purpose": "和胃降逆止呕"
+    },
+    {
+      "points": [
+        "zhong_wan",
+        "zu_san_li"
+      ],
+      "purpose": "健脾和胃"
+    },
+    {
+      "points": [
+        "pi_shu",
+        "zu_san_li"
+      ],
+      "purpose": "健脾益气，治脾气虚证"
+    },
+    {
+      "points": [
+        "shen_shu",
+        "guan_yuan"
+      ],
+      "purpose": "温补肾阳"
+    },
+    {
+      "points": [
+        "fei_shu",
+        "lie_que"
+      ],
+      "purpose": "宣肺止咳（俞络配穴）"
+    },
+    {
+      "points": [
+        "san_yin_jiao",
+        "guan_yuan"
+      ],
+      "purpose": "调经种子"
+    },
+    {
+      "points": [
+        "bai_hui",
+        "qi_hai"
+      ],
+      "purpose": "升阳举陷，治脱垂"
+    },
+    {
+      "points": [
+        "feng_chi",
+        "da_zhui"
+      ],
+      "purpose": "解表清热，治外感热病"
+    },
+    {
+      "points": [
+        "shen_men",
+        "san_yin_jiao"
+      ],
+      "purpose": "宁心安神，治失眠"
+    }
+  ],
+  "acupoint_treats_pattern": [
+    {
+      "acupoint": "zu_san_li",
+      "pattern": "pi_qi_xu"
+    },
+    {
+      "acupoint": "pi_shu",
+      "pattern": "pi_qi_xu"
+    },
+    {
+      "acupoint": "zhong_wan",
+      "pattern": "pi_qi_xu"
+    },
+    {
+      "acupoint": "qi_hai",
+      "pattern": "pi_qi_xu"
+    },
+    {
+      "acupoint": "bai_hui",
+      "pattern": "pi_qi_xia_xian"
+    },
+    {
+      "acupoint": "qi_hai",
+      "pattern": "pi_qi_xia_xian"
+    },
+    {
+      "acupoint": "shen_shu",
+      "pattern": "shen_yang_xu"
+    },
+    {
+      "acupoint": "guan_yuan",
+      "pattern": "shen_yang_xu"
+    },
+    {
+      "acupoint": "tai_chong",
+      "pattern": "gan_qi_yu_jie"
+    },
+    {
+      "acupoint": "he_gu",
+      "pattern": "gan_qi_yu_jie"
+    }
+  ],
+  "meridian_paired_with": [
+    {
+      "a": "shou_tai_yin_fei",
+      "b": "shou_yang_ming_da_chang"
+    },
+    {
+      "a": "zu_yang_ming_wei",
+      "b": "zu_tai_yin_pi"
+    },
+    {
+      "a": "shou_shao_yin_xin",
+      "b": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "a": "zu_tai_yang_pang_guang",
+      "b": "zu_shao_yin_shen"
+    },
+    {
+      "a": "shou_jue_yin_xin_bao",
+      "b": "shou_shao_yang_san_jiao"
+    },
+    {
+      "a": "zu_shao_yang_dan",
+      "b": "zu_jue_yin_gan"
+    },
+    {
+      "a": "du_mai",
+      "b": "ren_mai"
+    }
+  ],
+  "acupoint_on_meridian": [
+    {
+      "acupoint": "zu_san_li",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "wei_zhong",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "lie_que",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "he_gu",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "tai_chong",
+      "meridian": "zu_jue_yin_gan"
+    },
+    {
+      "acupoint": "nei_guan",
+      "meridian": "shou_jue_yin_xin_bao"
+    },
+    {
+      "acupoint": "san_yin_jiao",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "bai_hui",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "guan_yuan",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "qi_hai",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "zhong_wan",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "feng_chi",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "tai_xi",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "shen_men",
+      "meridian": "shou_shao_yin_xin"
+    },
+    {
+      "acupoint": "da_zhui",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "fei_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "pi_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "shen_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "qu_chi",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "yin_ling_quan",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "feng_fu",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "ming_men",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "shen_que",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "yong_quan",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "gong_sun",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "zhong_fu",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "yun_men",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "tian_fu",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "xia_bai",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "chi_ze",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "kong_zui",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "jing_qu",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "tai_yuan",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "yu_ji",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "shao_shang",
+      "meridian": "shou_tai_yin_fei"
+    },
+    {
+      "acupoint": "shang_yang",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "er_jian",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "san_jian",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "yang_xi",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "pian_li",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "wen_liu",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "xia_lian_li",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "shang_lian_li",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "shou_san_li",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "zhou_liao",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "shou_wu_li",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "bi_nao",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "jian_yu",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "ju_gu",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "tian_ding",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "fu_tu_li",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "kou_he_liao",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "ying_xiang",
+      "meridian": "shou_yang_ming_da_chang"
+    },
+    {
+      "acupoint": "cheng_qi",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "si_bai",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "di_cang",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "jia_che",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "xia_guan",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "tou_wei",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "liang_men",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "tian_shu",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "liang_qiu",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "du_bi",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "shang_ju_xu",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "tiao_kou",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "xia_ju_xu",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "feng_long",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "jie_xi",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "chong_yang",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "nei_ting",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "li_dui",
+      "meridian": "zu_yang_ming_wei"
+    },
+    {
+      "acupoint": "yin_bai",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "da_du",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "tai_bai",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "shang_qiu",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "di_ji",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "xue_hai",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "da_heng",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "da_bao",
+      "meridian": "zu_tai_yin_pi"
+    },
+    {
+      "acupoint": "ji_quan",
+      "meridian": "shou_shao_yin_xin"
+    },
+    {
+      "acupoint": "qing_ling",
+      "meridian": "shou_shao_yin_xin"
+    },
+    {
+      "acupoint": "shao_hai",
+      "meridian": "shou_shao_yin_xin"
+    },
+    {
+      "acupoint": "ling_dao",
+      "meridian": "shou_shao_yin_xin"
+    },
+    {
+      "acupoint": "tong_li",
+      "meridian": "shou_shao_yin_xin"
+    },
+    {
+      "acupoint": "yin_xi",
+      "meridian": "shou_shao_yin_xin"
+    },
+    {
+      "acupoint": "shao_fu",
+      "meridian": "shou_shao_yin_xin"
+    },
+    {
+      "acupoint": "shao_chong",
+      "meridian": "shou_shao_yin_xin"
+    },
+    {
+      "acupoint": "shao_ze",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "qian_gu",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "hou_xi",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "wan_gu_si",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "yang_gu",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "yang_lao",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "zhi_zheng",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "xiao_hai",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "jian_zhen",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "tian_zong",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "tian_rong",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "ting_gong",
+      "meridian": "shou_tai_yang_xiao_chang"
+    },
+    {
+      "acupoint": "jing_ming",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "zan_zhu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "tian_zhu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "da_zhu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "feng_men",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "jue_yin_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "xin_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "ge_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "gan_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "dan_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "wei_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "san_jiao_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "da_chang_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "xiao_chang_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "pang_guang_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "ci_liao",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "cheng_fu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "wei_yang",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "gao_huang_shu",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "zhi_bian",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "cheng_shan",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "fei_yang",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "kun_lun",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "shen_mai",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "zhi_yin",
+      "meridian": "zu_tai_yang_pang_guang"
+    },
+    {
+      "acupoint": "ran_gu",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "da_zhong",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "shui_quan",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "zhao_hai",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "fu_liu",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "yin_gu",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "shen_cang",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "shu_fu",
+      "meridian": "zu_shao_yin_shen"
+    },
+    {
+      "acupoint": "tian_chi",
+      "meridian": "shou_jue_yin_xin_bao"
+    },
+    {
+      "acupoint": "tian_quan",
+      "meridian": "shou_jue_yin_xin_bao"
+    },
+    {
+      "acupoint": "qu_ze",
+      "meridian": "shou_jue_yin_xin_bao"
+    },
+    {
+      "acupoint": "xi_men",
+      "meridian": "shou_jue_yin_xin_bao"
+    },
+    {
+      "acupoint": "jian_shi",
+      "meridian": "shou_jue_yin_xin_bao"
+    },
+    {
+      "acupoint": "da_ling",
+      "meridian": "shou_jue_yin_xin_bao"
+    },
+    {
+      "acupoint": "lao_gong",
+      "meridian": "shou_jue_yin_xin_bao"
+    },
+    {
+      "acupoint": "zhong_chong_pc",
+      "meridian": "shou_jue_yin_xin_bao"
+    },
+    {
+      "acupoint": "guan_chong",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "ye_men",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "zhong_zhu_sj",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "yang_chi",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "wai_guan",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "zhi_gou",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "hui_zong",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "san_yang_luo",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "tian_jing",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "jian_liao",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "yi_feng",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "er_men",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "si_zhu_kong",
+      "meridian": "shou_shao_yang_san_jiao"
+    },
+    {
+      "acupoint": "tong_zi_liao",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "ting_hui",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "shuai_gu",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "wan_gu_gb",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "yang_bai",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "jian_jing",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "ri_yue",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "jing_men",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "dai_mai",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "huan_tiao",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "feng_shi",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "xi_yang_guan",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "yang_ling_quan",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "guang_ming",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "xuan_zhong",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "qiu_xu",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "zu_lin_qi",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "xia_xi",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "zu_qiao_yin",
+      "meridian": "zu_shao_yang_dan"
+    },
+    {
+      "acupoint": "da_dun",
+      "meridian": "zu_jue_yin_gan"
+    },
+    {
+      "acupoint": "xing_jian",
+      "meridian": "zu_jue_yin_gan"
+    },
+    {
+      "acupoint": "zhong_feng",
+      "meridian": "zu_jue_yin_gan"
+    },
+    {
+      "acupoint": "li_gou",
+      "meridian": "zu_jue_yin_gan"
+    },
+    {
+      "acupoint": "zhong_du_lr",
+      "meridian": "zu_jue_yin_gan"
+    },
+    {
+      "acupoint": "qu_quan",
+      "meridian": "zu_jue_yin_gan"
+    },
+    {
+      "acupoint": "zhang_men",
+      "meridian": "zu_jue_yin_gan"
+    },
+    {
+      "acupoint": "qi_men",
+      "meridian": "zu_jue_yin_gan"
+    },
+    {
+      "acupoint": "chang_qiang",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "yao_shu",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "yao_yang_guan",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "jin_suo",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "zhi_yang",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "ling_tai",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "shen_dao",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "shen_zhu",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "tao_dao",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "ya_men",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "nao_hu",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "shang_xing",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "shen_ting",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "su_liao",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "shui_gou",
+      "meridian": "du_mai"
+    },
+    {
+      "acupoint": "hui_yin",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "qu_gu",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "zhong_ji",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "shi_men",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "shui_fen",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "xia_wan",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "shang_wan",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "ju_que",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "jiu_wei",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "dan_zhong",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "tian_tu",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "lian_quan",
+      "meridian": "ren_mai"
+    },
+    {
+      "acupoint": "cheng_jiang",
+      "meridian": "ren_mai"
+    }
+  ]
+}

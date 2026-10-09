@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+var/
+datasets/processed/
+.venv/
+.env
+.env.*
+!.env.example
+config/vastbase.json
+config/postgresql.json
+config/neo4j.json
+config/neo4j.env
+config/model.json
+config/app.json
+node_modules/
+frontend/dist/

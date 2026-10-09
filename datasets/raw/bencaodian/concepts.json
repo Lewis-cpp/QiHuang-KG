@@ -1,0 +1,2719 @@
+[
+  {
+    "key": "yin_yang",
+    "slug": "yin-yang",
+    "name_zh": "阴阳",
+    "name_pinyin": "Yīn Yáng",
+    "name_en": "Yin and Yang",
+    "summary_zh": "中医理论的基本范畴。万物皆可分阴阳，阴阳互根、消长、转化，无处不在。",
+    "summary_en": "The foundational categorical pair of Chinese medicine. Every phenomenon can be analyzed as a relationship of yin and yang — mutually rooted, dynamically waxing and waning, and capable of transforming into one another.",
+    "category": "foundational",
+    "order": 1,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "阴阳是中国古代哲学最基本的一对范畴，被《黄帝内经》引入医学，成为中医认识人体、解释生理与病理、指导诊疗的根本框架。所谓「阴阳者，天地之道也，万物之纲纪，变化之父母，生杀之本始」，言其无所不包。\n\n阴阳并非两种实体，而是一对相对的属性。凡明亮的、外向的、上升的、温热的、动的，归于阳；凡晦暗的、内守的、下降的、寒凉的、静的，归于阴。一物一事之内皆可再分阴阳，譬如昼为阳，昼之上午又为阳中之阳，下午为阳中之阴。\n\n阴阳之间不是机械的对立，而是动态的平衡。它们相互依存（阴阳互根），相互制约（阴阳制约），此消彼长（阴阳消长），并在一定条件下相互转化（阴阳转化）。健康即是阴阳的相对平衡；疾病的本质，无外乎阴阳的失衡。",
+        "body_en": "Yin (陰) and yang (陽) are the most basic categorical pair in classical Chinese thought. The Yellow Emperor's Inner Classic (《黃帝內經》, Huángdì Nèijīng), the foundational text of Chinese medicine, takes the pair as the organizing principle for understanding the human body, explaining physiology and pathology, and guiding diagnosis and treatment. \"Yin and yang are the way of heaven and earth, the great net of all things, the parents of change, the root and beginning of life and death\" — so the Inner Classic declares their universal scope.\n\nYin and yang are not two substances but a pair of relational attributes. What is bright, outward, ascending, warm, and active is classified as yang; what is shaded, inward, descending, cool, and quiet is classified as yin. Crucially, the pair is recursive: any single thing can itself be subdivided. Daytime is yang relative to night, but the morning is the yang within the yang of the day, while the afternoon is the yin within the yang.\n\nThe relationship is dynamic, not a static binary. Yin and yang depend on each other (互根, mutual rooting — neither can exist without the other), restrain each other, wax and wane in turn, and under certain conditions transform into one another. In Chinese medicine, health is defined as the relative balance of yin and yang within the organism. Disease, at its most general level, is always an imbalance of yin and yang; the treatment principles of warming, cooling, supplementing, and draining can all be traced back to this single root concept."
+      },
+      {
+        "heading_zh": "在人体中的应用",
+        "heading_en": "Application in the human body",
+        "body_zh": "在人体，背为阳，腹为阴；六腑为阳，五脏为阴；气为阳，血为阴；功能为阳，形质为阴。脏腑之中又可再分：如心有心阴心阳，肾有肾阴肾阳。\n\n生理上，阳主温煦推动，阴主滋润凝聚。阳气如日，温运全身；阴血阴津如水，濡养形体。二者相辅相成，「阴在内，阳之守也；阳在外，阴之使也」。\n\n病理上，阴阳偏盛偏衰各有其象。阳盛则热（实热），阴盛则寒（实寒）；阳虚则寒（虚寒，外有寒象而内无实邪），阴虚则热（虚热，潮热盗汗、五心烦热）。临证之时，辨明阴阳偏胜偏衰，是立法用药的第一步。",
+        "body_en": "In the body, the back is yang and the abdomen is yin; the six fu (yang organs, hollow conduits of digestion and excretion) are yang and the five zang (yin organs, the storing organs of the interior) are yin; qi is yang and blood is yin; function is yang and substance is yin. Within each organ the analysis can be repeated: the Heart has its own Heart-yin and Heart-yang, the Kidney its Kidney-yin and Kidney-yang.\n\nPhysiologically, yang warms and propels, while yin moistens and consolidates. Yang qi is like the sun, warming and circulating throughout the body; yin blood and yin fluids are like water, nourishing and giving form. The two are complementary: \"Yin within is the guardian of yang; yang without is the agent of yin.\"\n\nPathologically, repletion and vacuity of yin or yang each produce their characteristic patterns. Repletion yang produces heat (repletion heat); repletion yin produces cold (repletion cold). Deficient yang also produces cold — but it is empty cold, with cold signs but no concrete pathogen — while deficient yin produces heat, classically the afternoon tidal fevers, night sweats, and \"five-center heat\" (warmth in the palms, soles, and chest) familiar to every clinician. Identifying which side of the pair is in repletion or vacuity is the first step in formulating any treatment."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "阴阳互根",
+        "pinyin": "yīn yáng hù gēn",
+        "en": "Mutual rooting",
+        "definition_zh": "阴阳相互依存，任何一方都不能脱离对方而单独存在。",
+        "definition_en": "Yin and yang are mutually dependent; neither can exist in isolation. Yin is the material basis from which yang activity arises; yang is the functional expression that gives yin its meaning."
+      },
+      {
+        "zh": "阴阳消长",
+        "pinyin": "yīn yáng xiāo zhǎng",
+        "en": "Waxing and waning",
+        "definition_zh": "阴阳处于此消彼长的运动变化之中。",
+        "definition_en": "The relative quantities of yin and yang are constantly shifting — as one increases the other decreases, like the alternation of day and night through the seasons."
+      },
+      {
+        "zh": "阴阳转化",
+        "pinyin": "yīn yáng zhuǎn huà",
+        "en": "Mutual transformation",
+        "definition_zh": "在一定条件下，阴可以转化为阳，阳也可以转化为阴。「重阴必阳，重阳必阴。」",
+        "definition_en": "Under certain conditions, yin transforms into yang and vice versa. \"Extreme yin becomes yang; extreme yang becomes yin.\" High fever (extreme yang) collapsing into shock with cold extremities (extreme yin) is a classical clinical example."
+      },
+      {
+        "zh": "阴平阳秘",
+        "pinyin": "yīn píng yáng mì",
+        "en": "Yin in equilibrium, yang secured",
+        "definition_zh": "阴气和平，阳气固密，二者协调，是健康的生理状态。",
+        "definition_en": "The Inner Classic's definition of health: yin is at peace and yang is securely contained. Neither overflows nor collapses; the two are in balanced cooperation."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "wu-xing"
+      },
+      {
+        "type": "concept",
+        "key": "ba-gang"
+      },
+      {
+        "type": "concept",
+        "key": "qi-blood-fluids"
+      }
+    ],
+    "appears_in": [
+      "全部辨证体系的根本 / The foundation of every diagnostic system",
+      "本草「四气」（寒凉温热）即阴阳之分 / The four natures of herbs (cold/cool/warm/hot) are direct expressions of yin and yang",
+      "经络的阴阳分类（手三阴、手三阳等） / The yin/yang classification of the meridians"
+    ],
+    "further_reading": [
+      {
+        "type": "text",
+        "key": "huang_di_nei_jing"
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "yin-yang-basics",
+        "title_zh": "阴阳基础",
+        "title_en": "Foundations of Yin-Yang",
+        "items": [
+          {
+            "id": "yy-01",
+            "prompt_zh": "下列哪一组属性全部属阴？",
+            "prompt_en": "Which of the following sets of attributes is entirely yin?",
+            "choices": [
+              {
+                "zh": "上、外、动、热、明",
+                "en": "Upper, exterior, active, hot, bright"
+              },
+              {
+                "zh": "下、内、静、寒、暗",
+                "en": "Lower, interior, quiet, cold, dim"
+              },
+              {
+                "zh": "气、功能、升",
+                "en": "Qi, function, ascending"
+              },
+              {
+                "zh": "背、腑、阳气",
+                "en": "Back, fu organs, yang qi"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "阴主下、内、静、寒、暗、降、凝聚；与之相对的上、外、动、热、明、升、功能皆属阳。此为阴阳归类最基础的分组。",
+            "explanation_en": "Yin governs the lower, interior, quiet, cold, dim, descending, and consolidating; upper, exterior, active, hot, bright, ascending, and functional are all yang. This is the most basic yin-yang classification."
+          },
+          {
+            "id": "yy-02",
+            "prompt_zh": "「阴阳互根」最恰当的含义是：",
+            "prompt_en": "\"Mutual rooting\" of yin and yang is best understood as:",
+            "choices": [
+              {
+                "zh": "阴与阳完全对立，不相往来",
+                "en": "Yin and yang are completely opposed and do not interact"
+              },
+              {
+                "zh": "阴阳相互依存，任何一方都不能脱离对方而单独存在",
+                "en": "Yin and yang are mutually dependent; neither can exist in isolation from the other"
+              },
+              {
+                "zh": "阴总能转化为阳",
+                "en": "Yin always transforms into yang"
+              },
+              {
+                "zh": "阴阳各有其独立的根源",
+                "en": "Yin and yang each have their own independent root"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "「互根」即相互依存：阴是阳得以发挥作用的物质基础，阳是阴得以被认识的功能表现。二者缺一不可。此与「转化」（一定条件下互变）不同。",
+            "explanation_en": "\"Mutual rooting\" means mutual dependence: yin provides the material substrate from which yang arises, and yang is the functional expression that gives yin its meaning. Neither can exist without the other. This is distinct from \"transformation,\" which describes one becoming the other under extreme conditions."
+          },
+          {
+            "id": "yy-03",
+            "prompt_zh": "一位患者见潮热盗汗、五心烦热、口干咽燥、舌红少苔。此最符合哪一类病机？",
+            "prompt_en": "A patient presents with afternoon tidal fever, night sweats, warmth in the palms, soles, and chest (\"five-center heat\"), dry mouth and throat, and a red tongue with scanty coating. This best matches:",
+            "choices": [
+              {
+                "zh": "阳盛（实热）",
+                "en": "Repletion yang (repletion heat)"
+              },
+              {
+                "zh": "阳虚（虚寒）",
+                "en": "Deficient yang (empty cold)"
+              },
+              {
+                "zh": "阴虚（虚热）",
+                "en": "Deficient yin (empty heat)"
+              },
+              {
+                "zh": "阴盛（实寒）",
+                "en": "Repletion yin (repletion cold)"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "潮热、盗汗、五心烦热、舌红少苔——皆为阴虚生内热之典型表现。阴不足以制阳，虚阳偏亢而成虚热。实热则见壮热、大汗、大渴、舌红苔黄、脉洪大，程度与性质皆不同。",
+            "explanation_en": "Afternoon tidal fever, night sweats, five-center heat, and a red tongue with scant coating are classic signs of yin vacuity generating internal heat. Insufficient yin fails to restrain yang, so empty-heat arises. Repletion heat, by contrast, would show high fever, profuse sweating, marked thirst, a yellow tongue coating, and a surging pulse — a different order of presentation."
+          },
+          {
+            "id": "yy-04",
+            "prompt_zh": "《内经》以「阴平阳秘」定义健康。其最准确的含义是：",
+            "prompt_en": "The Inner Classic defines health as \"yīn píng yáng mì.\" This most precisely means:",
+            "choices": [
+              {
+                "zh": "阴阳完全相等",
+                "en": "Yin and yang are exactly equal in quantity"
+              },
+              {
+                "zh": "阴气和平，阳气固密，二者协调——即相对的动态平衡",
+                "en": "Yin is at peace, yang is securely contained, and the two cooperate in dynamic balance"
+              },
+              {
+                "zh": "阴完全压制阳",
+                "en": "Yin completely suppresses yang"
+              },
+              {
+                "zh": "阴阳永不变化",
+                "en": "Yin and yang never change"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "「阴平阳秘」非指二者数量相等或静止不变，而指阴气和平、阳气内守固密——一种动态的相对平衡。消长变化之中保持协调，即为健康。",
+            "explanation_en": "\"Yin in equilibrium, yang secured\" does not mean equal quantities or a frozen state. It describes a dynamic balance in which yin is at peace and yang is securely contained, cooperating without either overflowing or collapsing. Health is balance within continuous waxing and waning."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "wu_xing",
+    "slug": "wu-xing",
+    "name_zh": "五行",
+    "name_pinyin": "Wǔ Xíng",
+    "name_en": "The Five Phases",
+    "summary_zh": "木、火、土、金、水五种基本属性的相生相克关系，用以解释脏腑、组织、季节、情志的相互联系。",
+    "summary_en": "The five fundamental phases — wood, fire, earth, metal, and water — and the relationships of generation and control among them, used to map correspondences between the organs, seasons, emotions, colors, and tastes.",
+    "category": "foundational",
+    "order": 2,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "五行学说源于古人对自然界五种基本物质（木、火、土、金、水）属性的观察与抽象。在中医，五行不再仅指具体物质，而是用以归类万事万物的五类基本属性，以及它们之间动态的「相生」「相克」关系。\n\n相生指事物之间的资生、促进：木生火，火生土，土生金，金生水，水生木，循环不已。相克指事物之间的制约、约束：木克土，土克水，水克火，火克金，金克木。相克并非病理，而是维持系统平衡的正常机制——若失去制约，反而会出现「过亢」或「不及」的病变。\n\n中医以五行配五脏：肝属木，心属火，脾属土，肺属金，肾属水。再以此为中心，串联起五腑、五体、五官、五志、五味、五色、五季、五气，构成一个庞大的对应体系，使得局部的变化总能通过五行关系，被放回整体的脉络中去理解。",
+        "body_en": "The doctrine of the Five Phases (五行, Wǔ Xíng — sometimes loosely translated \"Five Elements\") has its roots in early Chinese natural philosophy, which observed five fundamental categories of substance and motion in nature: wood, fire, earth, metal, and water. In medicine, these are treated not as literal materials but as five classes of dynamic attributes, together with the regular relationships that hold among them.\n\nTwo cycles are central. The generating cycle (相生, xiāng shēng — \"mutual production\") describes how each phase nourishes the next: wood feeds fire, fire produces earth (ash), earth bears metal, metal collects water (condensation, mineral springs), water nourishes wood. The controlling cycle (相克, xiāng kè — \"mutual restraint\") describes how each phase limits another: wood breaks up earth (roots in soil), earth dams water, water extinguishes fire, fire melts metal, metal cuts wood. The controlling cycle is not pathological — it is the normal regulatory mechanism that keeps any single phase from running away unchecked. Pathology arises only when control fails or becomes excessive, producing the patterns of \"overacting\" (相乘, xiāng chéng) and \"insulting\" (相侮, xiāng wǔ).\n\nIn Chinese medicine, the Five Phases are aligned with the five zang organs: Liver is wood, Heart is fire, Spleen is earth, Lung is metal, Kidney is water. From these five anchors a much larger correspondence table radiates outward, linking each phase to a paired fu organ, a tissue, a sense organ, an emotion, a flavor, a color, a season, and a climatic factor. The result is an integrative scheme in which a finding at any one point — a pale complexion, a craving for sour foods, a worsening of symptoms in autumn — can be situated within the larger pattern of the patient."
+      },
+      {
+        "heading_zh": "五行对应表",
+        "heading_en": "Correspondence table",
+        "body_zh": "木 — 肝 / 胆 / 筋 / 目 / 怒 / 酸 / 青 / 春 / 风\n火 — 心 / 小肠 / 脉 / 舌 / 喜 / 苦 / 赤 / 夏 / 暑\n土 — 脾 / 胃 / 肉 / 口 / 思 / 甘 / 黄 / 长夏 / 湿\n金 — 肺 / 大肠 / 皮 / 鼻 / 悲 / 辛 / 白 / 秋 / 燥\n水 — 肾 / 膀胱 / 骨 / 耳 / 恐 / 咸 / 黑 / 冬 / 寒\n\n此表并非僵化的对照，而是临床思维的提示。例如，面色发青、急躁善怒、好酸味、春季加重，往往提示肝木的病变；面黄少食、肢体倦怠、长夏发病，多责之于脾土。",
+        "body_en": "Wood — Liver / Gallbladder / sinews / eyes / anger / sour / blue-green / spring / wind\nFire — Heart / Small Intestine / vessels / tongue / joy / bitter / red / summer / heat\nEarth — Spleen / Stomach / muscles / mouth / pensiveness / sweet / yellow / late summer / dampness\nMetal — Lung / Large Intestine / skin / nose / grief / acrid / white / autumn / dryness\nWater — Kidney / Bladder / bones / ears / fear / salty / black / winter / cold\n\nThis table is not a rigid lookup but a prompt for clinical reasoning. A patient with a bluish complexion, irritability, a craving for sour flavors, and symptoms that worsen in spring often points to a Liver-wood disorder. A yellowish face, poor appetite, heaviness of the limbs, and onset in the damp late-summer period typically points to the Spleen-earth. The five-phase scheme is most valuable not as taxonomy but as a way to recognize how scattered findings cohere into a single pattern."
+      },
+      {
+        "heading_zh": "在临证中的运用",
+        "heading_en": "Clinical use",
+        "body_zh": "五行思维直接影响治法。譬如「培土生金」，即通过补益脾（土）以滋养肺（金），用于脾虚生痰、咳嗽气短之证；「滋水涵木」，即通过滋养肾阴（水）以柔养肝阴（木），用于肝肾阴虚、头晕目眩之证。\n\n相克失常则成病：若木过亢，乘其所克之土，便见肝旺克脾，胁痛腹胀、嗳气泛酸；若金不制木，便见肝气横逆。临床立法，常顺五行之理而行。",
+        "body_en": "Five-phase thinking translates directly into therapeutic strategy. \"Banking up earth to generate metal\" (培土生金, péi tǔ shēng jīn) means tonifying the Spleen-earth in order to nourish the Lung-metal, used in patients whose chronic cough and shortness of breath arise from a deficient Spleen failing to produce enough qi for the Lung. \"Enriching water to moisten wood\" (滋水涵木, zī shuǐ hán mù) means nourishing Kidney yin in order to soften and nourish Liver yin, used when dizziness, blurred vision, and irritability arise from Liver-yang rising on a depleted Kidney-yin substrate.\n\nWhen the controlling cycle goes wrong, disease results. Excessive wood overacts on its controlled phase, earth — \"Liver overacting on Spleen\" produces the familiar pattern of hypochondriac pain, abdominal distention, belching, and acid regurgitation. When metal fails to restrain wood, Liver qi rises unchecked. Treatment is then formulated to restore the proper relationship — softening the Liver and supporting the Spleen, for example, rather than addressing either organ alone."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "相生",
+        "pinyin": "xiāng shēng",
+        "en": "Generation cycle",
+        "definition_zh": "事物之间相互资生、促进的关系。木火土金水，依次相生。",
+        "definition_en": "The cycle in which each phase nourishes the next: wood → fire → earth → metal → water → wood. A phase's \"mother\" is the one that generates it; its \"child\" is the one it generates."
+      },
+      {
+        "zh": "相克",
+        "pinyin": "xiāng kè",
+        "en": "Control cycle",
+        "definition_zh": "事物之间相互制约的正常关系。木克土，土克水，水克火，火克金，金克木。",
+        "definition_en": "The cycle in which each phase restrains another: wood → earth → water → fire → metal → wood. This is normal physiology, not pathology — restraint is what keeps any single phase from running away."
+      },
+      {
+        "zh": "相乘",
+        "pinyin": "xiāng chéng",
+        "en": "Overacting",
+        "definition_zh": "克制太过，超出正常范围，便成病理。例如肝木过旺，乘脾土。",
+        "definition_en": "Pathological repletion of the controlling relationship — one phase overpowers the one it normally restrains. \"Liver overacting on Spleen\" is the most common clinical example."
+      },
+      {
+        "zh": "相侮",
+        "pinyin": "xiāng wǔ",
+        "en": "Insulting",
+        "definition_zh": "反向克制，即被克者反过来克制原本该克自己的一方。",
+        "definition_en": "\"Reverse-restraint\" — the phase that should be controlled instead overpowers its controller. For example, when Liver wood is hyperactive, it can \"insult\" the Lung metal that would normally restrain it."
+      },
+      {
+        "zh": "母子相及",
+        "pinyin": "mǔ zǐ xiāng jí",
+        "en": "Mother-child transmission",
+        "definition_zh": "病变沿生克关系传变，如肝病及心（母病及子）。",
+        "definition_en": "Disease transmitted along the generating cycle. \"Mother affecting child\" describes pathology spreading from the generating phase to the generated one (Liver-wood disease moving to the Heart-fire); the reverse is \"child affecting mother.\""
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "yin-yang"
+      },
+      {
+        "type": "concept",
+        "key": "zang-fu"
+      },
+      {
+        "type": "concept",
+        "key": "six-evils"
+      }
+    ],
+    "appears_in": [
+      "五脏的属性及其相互关系 / The categorization and interrelations of the five zang organs",
+      "经络的五行属性（井荥俞经合，五腧穴） / The five-phase categorization of the five shu acupoints",
+      "本草「五味」与五脏的归属 / The mapping of the five flavors to the five zang"
+    ],
+    "further_reading": [
+      {
+        "type": "text",
+        "key": "huang_di_nei_jing"
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "wu-xing-basics",
+        "title_zh": "五行生克",
+        "title_en": "Generation and Control",
+        "items": [
+          {
+            "id": "wx-01",
+            "prompt_zh": "依照相生之序，金之「母」为何？",
+            "prompt_en": "Following the generation cycle, what is the \"mother\" of metal?",
+            "choices": [
+              {
+                "zh": "木",
+                "en": "Wood"
+              },
+              {
+                "zh": "火",
+                "en": "Fire"
+              },
+              {
+                "zh": "土",
+                "en": "Earth"
+              },
+              {
+                "zh": "水",
+                "en": "Water"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "相生之序为：木生火，火生土，土生金，金生水，水生木。土生金，故土为金之母；水为金之子。",
+            "explanation_en": "The generation cycle runs: wood → fire → earth → metal → water → wood. Earth generates metal, so earth is metal's \"mother\"; water (which metal generates) is its \"child.\""
+          },
+          {
+            "id": "wx-02",
+            "prompt_zh": "「相克」在五行关系中的正常意义是：",
+            "prompt_en": "What is the proper role of the \"control cycle\" (xiāng kè) in five-phase theory?",
+            "choices": [
+              {
+                "zh": "一种病理关系，须要纠正",
+                "en": "A pathological relationship that must be corrected"
+              },
+              {
+                "zh": "维持系统平衡的正常机制，防止任一行过亢",
+                "en": "A normal regulatory mechanism that prevents any single phase from running away"
+              },
+              {
+                "zh": "只在病情严重时才出现",
+                "en": "Something that only arises in severe illness"
+              },
+              {
+                "zh": "与相生相反，两者不可同时存在",
+                "en": "The opposite of generation; the two cycles cannot coexist"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "相克是正常生理——它是系统的「制动」，防止任一行过盛。病理只在相克失度时出现（相乘或相侮）。相生与相克同时存在，互相配合。",
+            "explanation_en": "The control cycle is normal physiology — the built-in brake that prevents any one phase from running away. Pathology arises only when control is excessive (overacting) or reversed (insulting). Generation and control always coexist and work together."
+          },
+          {
+            "id": "wx-03",
+            "prompt_zh": "「肝旺克脾」所见的胁痛腹胀、嗳气泛酸，属于五行关系中的哪一种病理？",
+            "prompt_en": "\"Liver overacting on Spleen,\" presenting as hypochondriac pain, abdominal distention, belching, and acid regurgitation, exemplifies which pathological five-phase relationship?",
+            "choices": [
+              {
+                "zh": "相生太过",
+                "en": "Excessive generation"
+              },
+              {
+                "zh": "相乘",
+                "en": "Overacting (xiāng chéng)"
+              },
+              {
+                "zh": "相侮",
+                "en": "Insulting (xiāng wǔ)"
+              },
+              {
+                "zh": "母病及子",
+                "en": "Mother affecting child"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "木（肝）克土（脾）本为正常相克；若肝木过亢，克制太过，越出正常范围而伤脾，即为「相乘」。相侮则是反向克制（被克者反克其克者）。",
+            "explanation_en": "Wood (Liver) normally controls earth (Spleen). When Liver wood becomes excessive and overpowers Spleen beyond normal limits, it is \"overacting\" — xiāng chéng. \"Insulting\" (xiāng wǔ) is the reverse case, where the controlled phase overpowers its controller."
+          },
+          {
+            "id": "wx-04",
+            "prompt_zh": "「培土生金」这一治法的依据是什么？",
+            "prompt_en": "On what five-phase principle is the treatment strategy \"banking up earth to generate metal\" based?",
+            "choices": [
+              {
+                "zh": "相克关系——以土制金",
+                "en": "The control cycle — earth restrains metal"
+              },
+              {
+                "zh": "相生关系——土生金，补脾土以助肺金",
+                "en": "The generation cycle — earth generates metal, so tonifying Spleen earth nourishes Lung metal"
+              },
+              {
+                "zh": "相侮关系——金反克土",
+                "en": "The insulting cycle — metal reverse-controls earth"
+              },
+              {
+                "zh": "阴阳互根",
+                "en": "The mutual rooting of yin and yang"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "土生金——脾土为肺金之母。故脾虚生痰、肺失所养之咳嗽气短，可通过补脾以滋肺，是典型的「虚则补其母」之法。",
+            "explanation_en": "Earth generates metal in the production cycle, so Spleen earth is the \"mother\" of Lung metal. When chronic cough or shortness of breath arises from a deficient Spleen failing to produce enough qi for the Lung, tonifying the Spleen nourishes the Lung — a classic example of \"to supplement a vacuity, supplement its mother.\""
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "qi_blood_fluids",
+    "slug": "qi-blood-fluids",
+    "name_zh": "气血津液",
+    "name_pinyin": "Qì Xuè Jīn Yè",
+    "name_en": "Qi, Blood, and Body Fluids",
+    "summary_zh": "构成与维持人体生命活动的三类基本物质。气主推动温煦，血主濡养，津液主润泽。",
+    "summary_en": "The three classes of vital substance that constitute and maintain the human body. Qi propels and warms; blood nourishes and gives form; jin-ye are the lighter and heavier fluids that moisten the tissues.",
+    "category": "foundational",
+    "order": 3,
+    "sections": [
+      {
+        "heading_zh": "气",
+        "heading_en": "Qi",
+        "body_zh": "气是中医最难翻译却最为关键的概念。它既是构成人体的极精微物质，又是脏腑组织的功能活动。气无形而有用，无所不在。\n\n人身之气，根据来源与分布，可分为元气、宗气、营气、卫气等。元气藏于肾，为生命之本；宗气积于胸中，主呼吸与血行；营气行于脉中，化生血液；卫气行于脉外，温分肉、司开阖、御外邪。\n\n气的功能可概括为五端：推动（推动血行津布）、温煦（维持体温）、防御（御邪于外）、固摄（固守血液津液精气于其位）、气化（推动各种物质相互转化）。任一功能不及，即成相应病变。",
+        "body_en": "Qi (氣) is at once the most central and the hardest concept in Chinese medicine to render in English. It is both the extremely fine material substance that constitutes the body and the functional activity of every organ and tissue. Qi is formless yet effective — invisible, but recognized by what it does. To translate it as \"energy\" captures something but misses its substantive aspect; to translate it as \"matter\" misses its dynamic, functional aspect.\n\nThe qi of the body is differentiated by source and distribution. Original qi (元气, yuán qì) is stored in the Kidneys, derived from one's prenatal endowment, and is the most fundamental. Gathering qi (宗气, zōng qì) accumulates in the chest, governing respiration and the circulation of blood. Nutritive qi (营气, yíng qì) flows in the vessels and gives rise to blood. Defensive qi (卫气, wèi qì) flows outside the vessels, warming the muscles, opening and closing the pores, and protecting against external pathogens.\n\nQi has five functional aspects: propelling (it moves blood and fluids), warming (it maintains body temperature), defending (it guards the surface against external pathogens), containing (it holds blood within the vessels and prevents loss of fluids and essence), and transforming (it drives the conversion of food into qi, qi into blood, and so on). A deficit of any one of these functions produces a corresponding pattern of disease."
+      },
+      {
+        "heading_zh": "血",
+        "heading_en": "Blood",
+        "body_zh": "血由水谷精微所化，行于脉中，循环周身，内养脏腑，外濡筋骨皮毛，并为神志活动的物质基础。「血者神气也」——心主血脉而藏神，血充则神安，血虚则神不守舍。\n\n血与气关系至密：「气为血之帅，血为气之母」。气能生血、行血、摄血；血能载气、养气。临证若见出血，常须于止血之中兼顾补气；若见气虚乏力，亦常考虑血是否虚少。",
+        "body_en": "Blood is generated from the refined essence of food and water, flows within the vessels, circulates throughout the body, nourishes the internal organs, moistens the sinews, bones, skin, and hair, and serves as the material substrate for mental activity. The classical phrase \"blood is the spirit-qi\" expresses a tight link between blood and consciousness in Chinese medicine: the Heart governs the vessels and houses the spirit, so when blood is full the spirit is settled and when blood is depleted the spirit \"loses its dwelling\" — producing insomnia, palpitations, and anxiety.\n\nThe relationship between qi and blood is summarized in two pairs of phrases: \"qi is the commander of blood; blood is the mother of qi.\" Qi generates blood, moves blood, and contains blood within the vessels; blood, in turn, carries qi and provides its substantive base. This is why bleeding patterns are so often treated by tonifying qi (to restore the containing function), and why fatigue and breathlessness are often investigated for an underlying blood vacuity."
+      },
+      {
+        "heading_zh": "津液",
+        "heading_en": "Jin and ye — body fluids",
+        "body_zh": "津液是体内一切正常水液的总称。其中清而稀薄者为「津」，主要布散于皮肤肌肉和孔窍，起润泽作用；浊而稠厚者为「液」，主要灌注于关节、脑髓、脏腑，起濡养作用。\n\n津液的生成、输布、排泄，依赖脾、肺、肾三脏的协同——脾主运化、肺主通调水道、肾主蒸腾气化。三者一旦失常，便可导致水液停聚而成痰、饮、水肿；或津液耗损而成燥证。",
+        "body_en": "Jin-ye (津液, jīn yè) is the collective term for all normal physiological fluids in the body, distinguished by relative clarity and weight. Jin are the lighter, thinner fluids that disperse to the skin, muscles, and orifices, providing moisture (sweat, saliva, tears, the moisture of the mucous membranes). Ye are the heavier, more viscous fluids that pool in the joints, the brain, and the deeper organs, providing rich nourishment (synovial fluid, cerebrospinal fluid, the lubricating fluids of the viscera). The two are not sharply separated — they interconvert — but the distinction is clinically useful when judging which kinds of fluid have been lost or are stagnating.\n\nThe production, distribution, and elimination of fluids depend on the coordinated action of three organs: the Spleen transforms food and drink into refined essence, the Lung moves and regulates the water passages, and the Kidney drives the steaming transformation that lifts pure fluids upward and excretes the turbid as urine. When this triple coordination fails, fluids accumulate abnormally and become phlegm (痰, tán), thin mucus (饮, yǐn), or edema (水, shuǐ); when fluids are exhausted, dryness patterns appear, with cracked lips, dry stools, and a parched tongue.\n\nIn the clinic, qi, blood, and jin-ye are best understood not as three separate things but as three expressions of the same vital matrix — generated together, circulated together, and lost together when illness is severe."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "元气",
+        "pinyin": "yuán qì",
+        "en": "Original qi",
+        "definition_zh": "藏于肾的先天之气，为生命活动的原动力。",
+        "definition_en": "The most fundamental qi, derived from one's prenatal endowment and stored in the Kidneys. It is the root of life activity; depleting it is depleting the substrate of life itself."
+      },
+      {
+        "zh": "营气",
+        "pinyin": "yíng qì",
+        "en": "Nutritive qi",
+        "definition_zh": "行于脉中，化生血液并营养全身之气。",
+        "definition_en": "The nutritive qi that flows within the vessels, generating blood and providing internal nourishment."
+      },
+      {
+        "zh": "卫气",
+        "pinyin": "wèi qì",
+        "en": "Defensive qi",
+        "definition_zh": "行于脉外，温养肌表、抵御外邪、调控腠理开阖之气。",
+        "definition_en": "The defensive qi that flows outside the vessels, warming the surface, opening and closing the pores, and resisting the entry of external pathogens. Often loosely compared to surface immunity."
+      },
+      {
+        "zh": "气血同源",
+        "pinyin": "qì xuè tóng yuán",
+        "en": "Qi and blood share a common source",
+        "definition_zh": "气与血皆由水谷精微化生而来，且相互滋生，关系至密。",
+        "definition_en": "Both qi and blood arise from the refined essence of food and drink, and each continually generates the other. A deficit in one almost always implicates the other."
+      },
+      {
+        "zh": "津血同源",
+        "pinyin": "jīn xuè tóng yuán",
+        "en": "Body fluids and blood share a common source",
+        "definition_zh": "津液与血液同源相生，故失血时不可妄用峻汗，伤津时亦须顾血。",
+        "definition_en": "Body fluids and blood arise from the same source. Hence the classical caution: never induce strong sweating in a patient who has lost blood, and never deplete fluids without considering the blood."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "zang-fu"
+      },
+      {
+        "type": "concept",
+        "key": "yin-yang"
+      },
+      {
+        "type": "concept",
+        "key": "ba-gang"
+      }
+    ],
+    "appears_in": [
+      "脏腑的功能描述（如「脾主运化」「肝藏血」） / The functional descriptions of every zang-fu organ",
+      "证型分类（气虚、血虚、气滞、血瘀、津亏） / Pattern categories: qi vacuity, blood vacuity, qi stagnation, blood stasis, fluid depletion",
+      "本草补气、补血、生津诸药 / Herbs that tonify qi, nourish blood, and generate fluids"
+    ],
+    "further_reading": [
+      {
+        "type": "text",
+        "key": "huang_di_nei_jing"
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "qbf-basics",
+        "title_zh": "气血津液要点",
+        "title_en": "Essentials of Qi, Blood, and Fluids",
+        "items": [
+          {
+            "id": "qbf-01",
+            "prompt_zh": "下列哪一项不属于气的五大功能？",
+            "prompt_en": "Which of the following is NOT one of the five functions of qi?",
+            "choices": [
+              {
+                "zh": "推动",
+                "en": "Propelling"
+              },
+              {
+                "zh": "温煦",
+                "en": "Warming"
+              },
+              {
+                "zh": "滋润",
+                "en": "Moistening"
+              },
+              {
+                "zh": "固摄",
+                "en": "Containing"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "气的五大功能为推动、温煦、防御、固摄、气化。滋润为津液之职——阴液主润，阳气主温。这正是气与津液的分工。",
+            "explanation_en": "The five functions of qi are propelling, warming, defending, containing, and transforming. Moistening is the job of the body fluids — yin substances moisten, while yang qi warms. This reflects the basic division of labor between qi and jin-ye."
+          },
+          {
+            "id": "qbf-02",
+            "prompt_zh": "「气为血之帅」最准确的含义是：",
+            "prompt_en": "\"Qi is the commander of blood\" is best understood as meaning:",
+            "choices": [
+              {
+                "zh": "气的数量必须多于血",
+                "en": "The quantity of qi must exceed that of blood"
+              },
+              {
+                "zh": "气能生血、行血、摄血——三方面主导着血",
+                "en": "Qi generates blood, moves blood, and contains blood within the vessels — three ways it governs blood"
+              },
+              {
+                "zh": "补气之药价格高于补血之药",
+                "en": "Qi-tonifying herbs are more expensive than blood-tonifying herbs"
+              },
+              {
+                "zh": "气先于血而生",
+                "en": "Qi is generated before blood in time"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "「气为血之帅」指气对血的三重主导作用：生血、行血、摄血。故大出血之证常兼补气——补气以复其摄血之能。",
+            "explanation_en": "\"Qi commands blood\" refers to three governing actions: qi generates blood, qi moves blood, and qi contains blood within the vessels. This is why major bleeding is often treated by tonifying qi — restoring the containing function."
+          },
+          {
+            "id": "qbf-03",
+            "prompt_zh": "卫气的主要功能不包括下列哪一项？",
+            "prompt_en": "Which of the following is NOT a function of defensive qi (wèi qì)?",
+            "choices": [
+              {
+                "zh": "温养肌表",
+                "en": "Warming the muscles and surface"
+              },
+              {
+                "zh": "司腠理开阖（调控汗孔）",
+                "en": "Regulating the opening and closing of the pores"
+              },
+              {
+                "zh": "抵御外邪",
+                "en": "Resisting external pathogens"
+              },
+              {
+                "zh": "化生血液",
+                "en": "Generating blood"
+              }
+            ],
+            "correct_index": 3,
+            "explanation_zh": "化生血液为营气之职——营行脉中，化生血液。卫气行于脉外，负责温养肌表、司腠理开阖、御外邪。二者分工不同。",
+            "explanation_en": "Generating blood is the job of NUTRITIVE qi (yíng qì), which flows inside the vessels. Defensive qi flows outside the vessels, warming the surface, regulating the pores, and guarding against external pathogens. The two kinds of qi have distinct roles."
+          },
+          {
+            "id": "qbf-04",
+            "prompt_zh": "「津血同源」对临床的最重要提示是：",
+            "prompt_en": "The clinical implication of \"jin-ye and blood share a common source\" is:",
+            "choices": [
+              {
+                "zh": "失血之后不可妄用峻汗，伤津之时亦须顾血",
+                "en": "After blood loss one must not force strong sweating, and when fluids are depleted one must consider the blood as well"
+              },
+              {
+                "zh": "补血药必同时补津",
+                "en": "Blood-tonifying herbs must always include fluid-generating ingredients"
+              },
+              {
+                "zh": "失血与伤津可互相替代治疗",
+                "en": "Blood loss and fluid loss can be treated interchangeably"
+              },
+              {
+                "zh": "血与津液为同一物质的不同名称",
+                "en": "Blood and fluids are the same substance under different names"
+              }
+            ],
+            "correct_index": 0,
+            "explanation_zh": "津血同源，同出而不同名。临床最重要的告诫是：失血之后不可发汗（汗为津液，伤津即伤血）；伤津之时亦须顾护血分。这是治疗原则上的交互制约。",
+            "explanation_en": "Jin-ye and blood arise from the same source, which gives rise to the classical caution: never induce strong sweating in a patient who has lost blood (since sweat depletes fluids, and depleting fluids further damages blood), and never disregard the blood when treating fluid depletion. It is a mutual clinical constraint, not an identity claim."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "zang_fu",
+    "slug": "zang-fu",
+    "name_zh": "脏腑",
+    "name_pinyin": "Zàng Fǔ",
+    "name_en": "The Zang-Fu Organ System",
+    "summary_zh": "中医的脏腑学说。五脏（心肝脾肺肾）藏精气而不泻，六腑（胆胃大小肠膀胱三焦）传化物而不藏。",
+    "summary_en": "The Chinese medical organ system. The five zang (Heart, Liver, Spleen, Lung, Kidney) store the essential substances and do not discharge them; the six fu (Gallbladder, Stomach, Small Intestine, Large Intestine, Bladder, Triple Burner) transmit and transform but do not store.",
+    "category": "foundational",
+    "order": 4,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "脏腑学说是中医对人体内在结构与功能的系统认识。它把内脏分为「脏」「腑」两大类。脏者藏也，藏精气而不泻；腑者府也，传化水谷而不藏。\n\n五脏为：心、肝、脾、肺、肾，属阴，主静，主藏。六腑为：胆、胃、小肠、大肠、膀胱、三焦，属阳，主动，主泻。脏腑之间一一相配，构成表里关系：肺与大肠相表里，心与小肠相表里，脾与胃相表里，肝与胆相表里，肾与膀胱相表里，心包与三焦相表里。\n\n须特别说明：中医的脏腑名称虽与西医解剖器官同名，但其内涵远比西医宽广。中医的「脏腑」指的是一组功能系统，包括了与该器官相关的全部生理活动、组织联系、情志表现，并不能简单地与西医的解剖器官对应。",
+        "body_en": "The doctrine of the zang-fu organs is the central anatomical-functional framework of Chinese medicine. It divides the internal organs into two classes: zang (臟) and fu (腑). Zang means \"to store\" — the zang organs store the refined essential substances of the body and do not discharge them. Fu means \"hollow administrative quarters\" — the fu organs receive food and drink, transmit them through the body, and discharge waste; they are full only intermittently and do not store essence.\n\nThe five zang are the Heart (心), Liver (肝), Spleen (脾), Lung (肺), and Kidney (肾). They are yin organs, characterized by storage and stillness. The six fu are the Gallbladder (胆), Stomach (胃), Small Intestine (小肠), Large Intestine (大肠), Bladder (膀胱), and Triple Burner (三焦). They are yang organs, characterized by motion and discharge. Each zang is paired with one fu in an interior-exterior relationship: Lung with Large Intestine, Heart with Small Intestine, Spleen with Stomach, Liver with Gallbladder, Kidney with Bladder, and the Pericardium (often counted with the zang) with the Triple Burner.\n\nA crucial caution for any reader trained in Western medicine: although the zang-fu organs share their names with Western anatomical organs, they are not the same things. The Chinese terms denote functional systems — clusters of physiological activities, tissue relationships, and emotional and mental functions associated with the named organ — and they map only loosely onto their anatomical namesakes. Reading \"Spleen\" as the cardiac muscle or \"Spleen\" as the abdominal lymphoid organ will mislead at almost every step."
+      },
+      {
+        "heading_zh": "五脏的功能",
+        "heading_en": "The functions of the five zang",
+        "body_zh": "心：主血脉，藏神。心之功能不仅在搏动循行血液，更主管神志与精神活动。心气虚则气短乏力，心血虚则失眠多梦，心火亢则烦躁口疮。\n\n肝：主疏泄，藏血。疏泄即调畅气机、调畅情志；藏血即主血液之贮藏与调节。肝失疏泄则胁胀、易怒、月经不调；肝血虚则目花、爪甲不荣。\n\n脾：主运化，统血。运化即消化吸收水谷精微并输布全身；统血即统摄血液不令妄行。脾虚则纳呆便溏、倦怠乏力，统摄无权则便血、崩漏。\n\n肺：主气，司呼吸，主宣发肃降，通调水道。肺虚则气短、易感外邪；肺失宣降则咳喘。\n\n肾：藏精，主水，主纳气。肾藏先天之精，主生长发育生殖；又主水液代谢，主纳肺所吸之气。肾虚则腰膝酸软、生殖功能下降、耳鸣、骨弱。",
+        "body_en": "Heart (心): governs the blood and vessels, and houses the shen (神, spirit). The Heart's functions are not limited to pumping blood — it also governs consciousness, mental activity, and emotional stability. Heart-qi vacuity produces shortness of breath and fatigue; Heart-blood vacuity produces insomnia and dream-disturbed sleep; Heart-fire blazing produces agitation and oral ulcers.\n\nLiver (肝): governs the free flow of qi (疏泄, shū xiè), and stores the blood. The free-flowing function regulates the smooth movement of qi throughout the body and the smooth flow of emotions. Storage of blood means the Liver regulates the volume of blood available to the periphery according to need. Loss of free flow produces hypochondriac distention, irritability, and menstrual irregularity; vacuity of Liver-blood produces blurred vision and brittle nails.\n\nSpleen (脾): governs transportation and transformation, and contains the blood. \"Transportation and transformation\" (运化, yùn huà) names the entire process of digestion, absorption, and distribution of refined essence from food and drink. \"Containing the blood\" means the Spleen-qi keeps blood within the vessels. A deficient Spleen produces poor appetite, loose stools, and fatigue; a Spleen that fails to contain blood produces chronic bleeding, including blood in the stool and abnormal uterine bleeding.\n\nLung (肺): governs qi and respiration; governs the dispersing and descending of qi; regulates the water passages. The Lung opens to the nose, controls the skin and body hair, and is the most superficial of the zang organs — making it the first line of defense against external pathogens. A deficient Lung produces shortness of breath and susceptibility to colds; failed dispersion and descent produce cough and wheezing.\n\nKidney (肾): stores the essence (精, jīng); governs water; receives the qi from the Lung. The Kidney stores both the prenatal essence inherited from one's parents and the postnatal essence refined from food, and so governs growth, development, reproduction, the bones, the marrow, the brain, hearing, and the lower back. A deficient Kidney produces lumbar weakness, premature aging, reduced fertility, tinnitus, and weakness of the bones."
+      },
+      {
+        "heading_zh": "六腑的功能",
+        "heading_en": "The functions of the six fu",
+        "body_zh": "六腑共同的特点是「以通为用，以降为顺」——它们的健康状态在于持续地传导、不停滞、不积聚。胆贮藏与排泄胆汁，并主决断；胃受纳与腐熟水谷；小肠受盛化物，泌别清浊；大肠传导糟粕；膀胱贮存与排泄尿液；三焦总司一身气化，通行水液。\n\n三焦较为特殊。它没有独立的解剖形态，而是上、中、下三个功能区域的合称：上焦如雾（心肺所在，主敷布），中焦如沤（脾胃所在，主腐熟运化），下焦如渎（肝肾大小肠膀胱所在，主排泄）。",
+        "body_en": "The six fu share a common operating principle: \"they are useful through being open, and well-ordered through descending\" (以通为用, 以降为顺). Their health consists in continual movement — none should stagnate or accumulate. The Gallbladder stores and discharges bile and governs decision-making. The Stomach receives food and \"rotten-ripens\" (initial digestion of) food and drink. The Small Intestine receives the partially digested contents from the Stomach and separates the clear (essence to be absorbed) from the turbid (waste to be passed on). The Large Intestine transmits and discharges the waste. The Bladder stores and discharges urine.\n\nThe Triple Burner (三焦, sān jiāo) is the most distinctive of the fu and has no single anatomical correlate. It is best understood as the name for three functional regions of the body considered together — the upper burner (the chest, where the Heart and Lung distribute qi and fluids \"like a mist\"), the middle burner (the area of the Spleen and Stomach, where food and drink are \"fermented like a brewing vat\"), and the lower burner (the lower abdomen, the area of the Liver, Kidney, intestines, and Bladder, which discharge waste \"like a drainage ditch\"). Through the Triple Burner the qi and fluids of the entire body are circulated and coordinated."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "藏象",
+        "pinyin": "zàng xiàng",
+        "en": "Visceral manifestation",
+        "definition_zh": "脏腑藏于内而其功能征象表露于外，从外象可推知脏腑的状态。",
+        "definition_en": "The doctrine that although the organs are hidden internally, their functioning manifests outwardly in observable signs — face, complexion, tongue, pulse, behavior — from which the internal state can be inferred."
+      },
+      {
+        "zh": "脏腑表里",
+        "pinyin": "zàng fǔ biǎo lǐ",
+        "en": "Interior-exterior pairing",
+        "definition_zh": "每一脏与一腑相配，通过经络相连，功能相辅。",
+        "definition_en": "Each zang is paired with a corresponding fu, linked by a channel relationship and a complementary function. Pathology in one half of the pair often involves the other."
+      },
+      {
+        "zh": "心主神明",
+        "pinyin": "xīn zhǔ shén míng",
+        "en": "The Heart governs the spirit",
+        "definition_zh": "心主管人的精神、意识、思维活动。",
+        "definition_en": "In Chinese medicine the Heart, not the brain, is the seat of conscious mental activity and emotional stability — though the brain (\"sea of marrow\") is also recognized as material substrate."
+      },
+      {
+        "zh": "脾主运化",
+        "pinyin": "pí zhǔ yùn huà",
+        "en": "The Spleen governs transportation and transformation",
+        "definition_zh": "脾主消化吸收水谷精微并输布全身，是气血生化之源。",
+        "definition_en": "The Spleen's central function — converting food and drink into refined essence and distributing it. The Spleen is therefore called \"the source of qi and blood production.\""
+      },
+      {
+        "zh": "肾藏精",
+        "pinyin": "shèn cáng jīng",
+        "en": "The Kidney stores the essence",
+        "definition_zh": "肾贮藏先天与后天之精，主生长发育生殖。",
+        "definition_en": "The Kidney stores both prenatal essence (inherited at conception) and postnatal essence (refined from food), making it the substrate of growth, development, reproduction, and aging."
+      },
+      {
+        "zh": "三焦",
+        "pinyin": "sān jiāo",
+        "en": "Triple Burner",
+        "definition_zh": "上中下三焦的总称。无形之腑，主一身气化与水液运行。",
+        "definition_en": "The collective name for the three functional regions — upper, middle, and lower — of the trunk. A fu without an independent anatomical form, it governs the qi transformation and fluid movement of the entire body."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "wu-xing"
+      },
+      {
+        "type": "concept",
+        "key": "qi-blood-fluids"
+      },
+      {
+        "type": "concept",
+        "key": "ba-gang"
+      }
+    ],
+    "appears_in": [
+      "证型按脏腑分类（如「脾气虚」「肝郁脾虚」） / Pattern names that begin with an organ (e.g. \"Spleen-qi vacuity,\" \"Liver depression with Spleen vacuity\")",
+      "本草「归经」直接对应脏腑 / The channel-tropism of herbs maps onto the zang-fu",
+      "经络的脏腑络属 / The collateral and connecting relationships of every meridian"
+    ],
+    "further_reading": [
+      {
+        "type": "text",
+        "key": "huang_di_nei_jing"
+      },
+      {
+        "type": "text",
+        "key": "pi_wei_lun"
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "zang-fu-basics",
+        "title_zh": "脏腑系统要点",
+        "title_en": "Essentials of the Zang-Fu System",
+        "items": [
+          {
+            "id": "zf-01",
+            "prompt_zh": "五脏与六腑的根本区别是什么？",
+            "prompt_en": "What is the fundamental distinction between the five zang and the six fu?",
+            "choices": [
+              {
+                "zh": "五脏在上，六腑在下",
+                "en": "The zang are in the upper body, the fu are in the lower body"
+              },
+              {
+                "zh": "五脏藏精气而不泻，六腑传化水谷而不藏",
+                "en": "The zang store essential substances and do not discharge them; the fu transmit and transform but do not store"
+              },
+              {
+                "zh": "五脏属阳、属动；六腑属阴、属静",
+                "en": "The zang are yang and active; the fu are yin and quiet"
+              },
+              {
+                "zh": "五脏为实心器官，六腑为空心器官——与功能无关",
+                "en": "The zang are solid organs and the fu are hollow — a purely anatomical distinction unrelated to function"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "脏者藏也，藏精气而不泻（属阴、主静）；腑者府也，传化水谷糟粕而不藏（属阳、主动）。二者虽亦有「实心/空心」之解剖对应，但其根本区别在于功能——藏与泻。",
+            "explanation_en": "\"Zang\" means to store — the zang store the refined essences of the body and do not discharge them (they are yin and quiet). \"Fu\" means hollow quarters — the fu transmit food and waste and do not store (they are yang and active). While the solid-versus-hollow anatomical distinction exists, the defining criterion is functional: storing versus transmitting."
+          },
+          {
+            "id": "zf-02",
+            "prompt_zh": "为何脾被称为「气血生化之源」？",
+            "prompt_en": "Why is the Spleen called \"the source of qi and blood production\"?",
+            "choices": [
+              {
+                "zh": "因为脾藏血",
+                "en": "Because the Spleen stores blood"
+              },
+              {
+                "zh": "因为脾主运化水谷精微并输布全身——气血皆由此化生",
+                "en": "Because the Spleen transforms food and drink into refined essence and distributes it — the raw material from which qi and blood are generated"
+              },
+              {
+                "zh": "因为脾主宣发肃降",
+                "en": "Because the Spleen governs dispersing and descending"
+              },
+              {
+                "zh": "因为脾主血脉",
+                "en": "Because the Spleen governs the vessels"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "脾主运化——将水谷化为精微并输布全身，此精微即气血的原料。故脾虚则气血生化乏源，易见倦怠、纳呆、面色萎黄。藏血为肝之功，血脉为心之功。",
+            "explanation_en": "The Spleen's central function is transportation and transformation — converting food and drink into refined essence. Since qi and blood are both refined from that essence, a weak Spleen cuts off their source, producing fatigue, poor appetite, and a sallow complexion. Storing blood is the Liver's job; governing the vessels is the Heart's."
+          },
+          {
+            "id": "zf-03",
+            "prompt_zh": "中医所说的「心」与西医的「心脏」相比，最大的不同是：",
+            "prompt_en": "The biggest difference between the Chinese medical \"Heart\" and the anatomical heart of Western medicine is:",
+            "choices": [
+              {
+                "zh": "中医之心不在胸中",
+                "en": "The Chinese Heart is not located in the chest"
+              },
+              {
+                "zh": "中医之心除主血脉之外，更主神志与精神活动",
+                "en": "In addition to governing the vessels, the Chinese Heart also houses the spirit and governs conscious mental activity"
+              },
+              {
+                "zh": "中医之心不跳动",
+                "en": "The Chinese Heart does not beat"
+              },
+              {
+                "zh": "二者完全相同",
+                "en": "They are identical"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "中医「心主血脉，藏神」——不仅司血液循环，更主神志、意识、思维活动。故心血虚则失眠多梦，心火亢则烦躁不安。脏腑之名虽与西医器官相同，其内涵实为一套功能系统。",
+            "explanation_en": "In Chinese medicine the Heart governs the blood and vessels AND houses the shen (spirit) — it is the seat of consciousness, mental activity, and emotional stability. Heart-blood vacuity produces insomnia; Heart-fire produces agitation. Zang-fu names borrow anatomical terms but denote functional systems, not the organs of Western anatomy."
+          },
+          {
+            "id": "zf-04",
+            "prompt_zh": "下列哪一组脏腑「表里」关系是错误的？",
+            "prompt_en": "Which of the following interior-exterior zang-fu pairings is INCORRECT?",
+            "choices": [
+              {
+                "zh": "肺与大肠相表里",
+                "en": "Lung paired with Large Intestine"
+              },
+              {
+                "zh": "脾与胃相表里",
+                "en": "Spleen paired with Stomach"
+              },
+              {
+                "zh": "肾与膀胱相表里",
+                "en": "Kidney paired with Bladder"
+              },
+              {
+                "zh": "心与胆相表里",
+                "en": "Heart paired with Gallbladder"
+              }
+            ],
+            "correct_index": 3,
+            "explanation_zh": "心与小肠相表里，肝与胆相表里。故「心与胆」为错误配对。六对表里关系是：肺-大肠、心-小肠、脾-胃、肝-胆、肾-膀胱、心包-三焦。",
+            "explanation_en": "The Heart is paired with the Small Intestine; the Liver is paired with the Gallbladder. \"Heart with Gallbladder\" is therefore wrong. The six standard pairs are: Lung–Large Intestine, Heart–Small Intestine, Spleen–Stomach, Liver–Gallbladder, Kidney–Bladder, and Pericardium–Triple Burner."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "liu_jing",
+    "slug": "liu-jing",
+    "name_zh": "六经辨证",
+    "name_pinyin": "Liù Jīng Biàn Zhèng",
+    "name_en": "Six Channels Pattern Differentiation",
+    "summary_zh": "张仲景《伤寒论》所立的辨证体系。以太阳、阳明、少阳、太阴、少阴、厥阴六经，统辖外感热病的传变与治疗。",
+    "summary_en": "The diagnostic framework of the Treatise on Cold Damage (《傷寒論》, Shānghán Lùn) by Zhang Zhongjing, organizing the progression of externally contracted febrile disease into six stages — Tai Yang, Yang Ming, Shao Yang, Tai Yin, Shao Yin, and Jue Yin.",
+    "category": "diagnostic",
+    "order": 5,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "六经辨证由东汉张仲景在《伤寒论》中创立，是中医最早成熟的辨证体系。它把外感热病的发展过程概括为六个阶段，每一阶段对应不同的病位、病性与治法。\n\n须注意，六经辨证中的「六经」并非完全等同于经络学说中六条同名的经脉，而是六类病证的概括。三阳病（太阳、阳明、少阳）多属表、属热、属实，正气尚足，正邪交争剧烈；三阴病（太阴、少阴、厥阴）多属里、属虚、属寒，正气已衰。三阳为「正盛邪实」之候，三阴为「正衰邪退」之局。",
+        "body_en": "Six-channel pattern differentiation was created by the late-Han physician Zhang Zhongjing (張仲景) in his Treatise on Cold Damage (《傷寒論》), the earliest mature diagnostic system in Chinese medicine. It organizes the unfolding course of externally contracted febrile illness into six successive stages, each with its own location, nature, and treatment.\n\nA word of caution: the \"six channels\" of this system are not identical to the six like-named channels of channel theory, although they share the names. Here they are diagnostic categories — clinical patterns — into which the unfolding illness can be sorted. The three yang stages (Tai Yang, Yang Ming, Shao Yang) are characteristically exterior, hot, and repletion, with strong upright qi locked in struggle with the pathogen. The three yin stages (Tai Yin, Shao Yin, Jue Yin) are characteristically interior, vacuous, and cold, with the upright qi already exhausted. Movement through the six is in principle from yang to yin, from exterior to interior, from repletion to vacuity, and from heat to cold — though Zhongjing repeatedly shows that real cases skip stages, retreat, or combine."
+      },
+      {
+        "heading_zh": "三阳病",
+        "heading_en": "The three yang stages",
+        "body_zh": "太阳病：邪在肌表，正邪相争于卫表。主症为发热恶寒、头项强痛、脉浮。其下又分中风（有汗、脉浮缓，桂枝汤主之）与伤寒（无汗、脉浮紧，麻黄汤主之）。\n\n阳明病：邪入阳明，化热入里。其证有二：阳明经证为大热、大汗、大渴、脉洪大（白虎汤）；阳明腑证为腹满硬痛、便秘、潮热谵语（承气汤类）。\n\n少阳病：邪在半表半里。主症为往来寒热、胸胁苦满、心烦喜呕、口苦咽干目眩、脉弦。和解少阳，小柴胡汤主之。",
+        "body_en": "Tai Yang (太陽): the pathogen is at the surface, fighting against the defensive qi at the exterior. Characteristic signs are fever and aversion to cold, stiffness and pain in the head and neck, and a floating pulse. Tai Yang is further divided into \"wind stroke\" (with sweating and a floating-moderate pulse, treated with Cinnamon Twig Decoction, Guì Zhī Tāng) and \"cold damage\" (without sweating and with a floating-tight pulse, treated with Ephedra Decoction, Má Huáng Tāng).\n\nYang Ming (陽明): the pathogen has entered the Yang Ming and transformed into intense interior heat. There are two presentations. The Yang Ming channel pattern shows the \"four greats\" — great heat, great sweating, great thirst, and a great surging pulse — and is treated with White Tiger Decoction (Bái Hǔ Tāng). The Yang Ming organ pattern shows abdominal fullness with hard pain, constipation, tidal fever, and delirious speech — heat has bound with stool in the Large Intestine — and is treated with the Order-the-Qi (chéng qì) family of purgatives.\n\nShao Yang (少陽): the pathogen is half-exterior and half-interior, neither fully repelled nor yet fully internalized. The characteristic signs are alternating chills and fever, fullness and discomfort in the chest and hypochondria, irritability with frequent retching, a bitter taste, dry throat, dizziness, and a wiry pulse. The treatment principle is to harmonize the Shao Yang, paradigmatically with Minor Bupleurum Decoction (Xiǎo Chái Hú Tāng)."
+      },
+      {
+        "heading_zh": "三阴病",
+        "heading_en": "The three yin stages",
+        "body_zh": "太阴病：邪入太阴脾，脾阳虚衰，运化失司。主症为腹满而吐、食不下、自利、口不渴、脉缓弱。治以温中散寒，理中汤之属。\n\n少阴病：心肾阳气大衰。主症为脉微细、但欲寐、四肢厥冷、下利清谷。最危险者为阴盛阳衰，须急用四逆汤回阳救逆。亦有少阴寒化与少阴热化之分。\n\n厥阴病：六经病变之最深层。寒热错杂，上热下寒，厥热往复。主症为消渴、气上撞心、心中疼热、饥而不欲食、食则吐蛔。治法须根据寒热的具体格局而定。",
+        "body_en": "Tai Yin (太陰): the pathogen has entered the Tai Yin Spleen; Spleen yang is failing and the function of transportation and transformation is impaired. The characteristic signs are abdominal fullness with vomiting, inability to take food, spontaneous diarrhea, absence of thirst, and a moderate-weak pulse. Treatment warms the middle and disperses cold — the Regulate-the-Middle Decoction family (Lǐ Zhōng Tāng) is paradigmatic.\n\nShao Yin (少陰): the yang qi of the Heart and Kidney is severely exhausted. The characteristic signs are a faint and thready pulse, a constant desire only to sleep, cold extremities reaching to the elbows and knees, and undigested food in the stool. The most dangerous variant is yin flourishing with yang collapsing, which requires Frigid Extremities Decoction (Sì Nì Tāng) urgently to restore yang and rescue from collapse. There is also a Shao Yin heat-transformation pattern that arises in patients whose constitution converts the pathogen toward heat instead of cold.\n\nJue Yin (厥陰): the deepest stratum of the six. Cold and heat are tangled together, with heat above and cold below, and bouts of cold extremities alternating with febrile flushes. The classical signs are wasting thirst, qi rushing upward into the chest, painful heat over the heart, hunger without desire to eat, and vomiting of roundworms when food is taken. Treatment must be tailored to the precise configuration of cold and heat in each case."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "传经",
+        "pinyin": "chuán jīng",
+        "en": "Channel transmission",
+        "definition_zh": "病邪从一经传入另一经的过程。",
+        "definition_en": "The process by which the pathogen moves from one of the six channels into another. Transmission may follow the standard order or skip stages."
+      },
+      {
+        "zh": "合病",
+        "pinyin": "hé bìng",
+        "en": "Combined disease",
+        "definition_zh": "两经或三经同时受邪而见证。",
+        "definition_en": "When two or three channels are simultaneously affected at the onset, producing a single combined pattern rather than a sequence."
+      },
+      {
+        "zh": "并病",
+        "pinyin": "bìng bìng",
+        "en": "Concurrent disease",
+        "definition_zh": "一经病未罢，又有他经之证显现。",
+        "definition_en": "When the disease of one channel has not yet resolved before the signs of another channel appear, so that two patterns coexist in stages."
+      },
+      {
+        "zh": "直中",
+        "pinyin": "zhí zhòng",
+        "en": "Direct strike",
+        "definition_zh": "邪不经三阳而直接入三阴，多见于体质虚弱之人。",
+        "definition_en": "When a cold pathogen bypasses the three yang stages and strikes directly into one of the three yin — a presentation typical of constitutionally weak patients with already-deficient yang."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "ba-gang"
+      },
+      {
+        "type": "concept",
+        "key": "six-evils"
+      },
+      {
+        "type": "concept",
+        "key": "yin-yang"
+      }
+    ],
+    "appears_in": [
+      "《伤寒论》全部方剂的理论基础 / The theoretical basis of every formula in the Shang Han Lun",
+      "桂枝汤、麻黄汤、小柴胡汤、四逆汤等经典方 / Foundational formulas: Gui Zhi Tang, Ma Huang Tang, Xiao Chai Hu Tang, Si Ni Tang"
+    ],
+    "further_reading": [
+      {
+        "type": "text",
+        "key": "shang_han_lun"
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "liu-jing-basics",
+        "title_zh": "六经辨证基础",
+        "title_en": "Foundations of Six-Channel Differentiation",
+        "items": [
+          {
+            "id": "lj-01",
+            "prompt_zh": "太阳病伤寒证与中风证最关键的鉴别点是：",
+            "prompt_en": "The most critical differentiating feature between Taiyang cold-damage (shang han) and Taiyang wind-strike (zhong feng) is:",
+            "choices": [
+              {
+                "zh": "有无头痛",
+                "en": "Presence or absence of headache"
+              },
+              {
+                "zh": "有无汗出——伤寒无汗脉浮紧，中风汗出脉浮缓",
+                "en": "Presence or absence of sweating — cold-damage has no sweating with floating tight pulse, wind-strike has sweating with floating moderate pulse"
+              },
+              {
+                "zh": "有无发热",
+                "en": "Presence or absence of fever"
+              },
+              {
+                "zh": "有无恶寒",
+                "en": "Presence or absence of aversion to cold"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "太阳伤寒（腠理闭塞）与中风（营卫不和）均有头痛、发热、恶寒、脉浮，唯一区别在于汗出与否及脉象浮紧或浮缓。无汗脉浮紧为伤寒（麻黄汤），汗出脉浮缓为中风（桂枝汤）。",
+            "explanation_en": "Both Taiyang cold-damage (closed interstices) and wind-strike (ying-wei disharmony) present with headache, fever, aversion to cold, and a floating pulse. The sole differentiating point is sweating and pulse quality: no sweating with a floating tight pulse indicates cold-damage (Ma Huang Tang), while sweating with a floating moderate pulse indicates wind-strike (Gui Zhi Tang)."
+          },
+          {
+            "id": "lj-02",
+            "prompt_zh": "少阳病的治法为何不可用汗法或下法？",
+            "prompt_en": "Why is the Shaoyang pattern treated by harmonization rather than sweating or purging?",
+            "choices": [
+              {
+                "zh": "因病位在半表半里，汗之伤正而邪不去，下之引邪入里",
+                "en": "Because the pathogen is at the half-exterior, half-interior level — sweating damages upright qi without removing the pathogen, while purging draws it deeper"
+              },
+              {
+                "zh": "因少阳病为虚证，只宜补不宜攻",
+                "en": "Because Shaoyang is a vacuity pattern, requiring supplementation not attack"
+              },
+              {
+                "zh": "因少阳病无发热，不需要发汗",
+                "en": "Because Shaoyang has no fever, so sweating is unnecessary"
+              },
+              {
+                "zh": "因少阳属三阴病，已不可汗",
+                "en": "Because Shaoyang belongs to the three yin stages, where sweating is already inappropriate"
+              }
+            ],
+            "correct_index": 0,
+            "explanation_zh": "少阳位在半表半里，邪已过表但未完全入里。汗法解表，但邪不在纯表，故汗之无用且伤正；下法攻里，但邪未完全入里，故下之反引邪深入。唯和解一法，通过调畅枢机，使邪无所居而解。少阳是三阳病，非三阴病，亦非虚证。",
+            "explanation_en": "Shaoyang occupies the half-exterior, half-interior level — the pathogen has moved past the pure exterior but has not fully entered the interior. Sweating targets the exterior, but the pathogen is no longer purely there, so sweating wastes upright qi without effect. Purging targets the interior, but the pathogen is not fully inside, so purging draws it deeper. Only harmonization adjusts the pivot mechanism so the pathogen has nowhere to lodge. Shaoyang is a three-yang (not three-yin) stage, and is not a vacuity pattern."
+          },
+          {
+            "id": "lj-03",
+            "prompt_zh": "六经辨证中，三阳病与三阴病最根本的区别在于：",
+            "prompt_en": "The most fundamental distinction between the three yang and three yin stages in six-channel differentiation is:",
+            "choices": [
+              {
+                "zh": "三阳有发热，三阴无发热",
+                "en": "Three yang stages have fever, three yin stages do not"
+              },
+              {
+                "zh": "三阳正气尚足、正邪交争，三阴正气已衰、以虚寒为主",
+                "en": "In the three yang stages upright qi is still strong with active struggle against the pathogen; in the three yin stages upright qi has declined, with vacuity-cold predominating"
+              },
+              {
+                "zh": "三阳病只有表证，三阴病只有里证",
+                "en": "Three yang stages are exclusively exterior; three yin stages exclusively interior"
+              },
+              {
+                "zh": "三阳用中药，三阴用针灸",
+                "en": "Three yang stages use herbal medicine, three yin stages use acupuncture"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "三阳病正气尚足，正邪交争剧烈，证以实、热、表为多；三阴病正气已衰，证以虚、寒、里为多。并非三阳无里证（阳明腑证即里证），亦非三阴绝对无热（厥阴可见寒热错杂）。核心区别在于正气盛衰。",
+            "explanation_en": "The three yang stages feature intact upright qi in vigorous struggle with the pathogen, producing predominantly repletion, heat, and exterior presentations. The three yin stages feature declined upright qi, producing predominantly vacuity, cold, and interior presentations. This does not mean yang stages have no interior patterns (Yangming bowel repletion is interior) or yin stages have no heat (Jueyin can show cold-heat complexity). The core distinction is the state of the upright qi."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "ba_gang",
+    "slug": "ba-gang",
+    "name_zh": "八纲辨证",
+    "name_pinyin": "Bā Gāng Biàn Zhèng",
+    "name_en": "Eight Principles Pattern Differentiation",
+    "summary_zh": "中医辨证最基本的纲领——阴阳、表里、寒热、虚实。一切其他辨证体系皆建立在此基础之上。",
+    "summary_en": "The most fundamental diagnostic framework in Chinese medicine — four polarities (yin/yang, exterior/interior, cold/heat, vacuity/repletion) that organize every clinical presentation. Every other system of pattern differentiation rests on it.",
+    "category": "diagnostic",
+    "order": 6,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "八纲辨证以四对范畴归纳一切病证：阴阳、表里、寒热、虚实。其中阴阳为总纲——表、热、实属阳，里、寒、虚属阴。表里辨病位的深浅，寒热辨病的性质，虚实辨正邪的盛衰。任一具体证型，皆可由此八字定其大局。\n\n八纲辨证之名虽至明清才正式提出，但其内容散见于《内经》《伤寒论》等经典之中。现代中医诊断学以八纲为辨证之首章，正因为它是最简明、最普遍的入门工具。",
+        "body_en": "The Eight Principles organize every clinical presentation into four pairs of opposing categories: yin/yang, exterior/interior, cold/heat, and vacuity/repletion. Yin and yang are the overarching pair — exterior, heat, and repletion are forms of yang; interior, cold, and vacuity are forms of yin. The other three pairs serve to specify the location of disease (exterior or interior), its essential nature (cold or heat), and the relative strength of upright qi against the pathogen (vacuity or repletion). Any concrete pattern, no matter how complex, can be sketched at first pass in these eight characters.\n\nWhile the name \"Eight Principles\" was not formally consolidated until the Ming and Qing dynasties, the content is woven throughout the Yellow Emperor's Inner Classic and Zhang Zhongjing's Treatise on Cold Damage. Modern textbooks of Chinese medical diagnosis place the Eight Principles in the first chapter precisely because they are the simplest and most universal entry point into the discipline."
+      },
+      {
+        "heading_zh": "四对范畴",
+        "heading_en": "The four polarities",
+        "body_zh": "表里：辨病位的深浅。表证多由外邪侵袭肌表所致，见恶寒发热、头身疼痛、脉浮，病情多新而浅。里证为病在脏腑气血，病位深而病情多重。\n\n寒热：辨疾病性质。寒证见畏寒喜暖、面色苍白、口不渴、小便清长、舌淡苔白、脉迟。热证见发热恶热、面红目赤、口渴喜冷饮、便秘溲赤、舌红苔黄、脉数。\n\n虚实：辨正邪盛衰。虚证为正气不足，见神疲乏力、气短自汗、舌淡脉弱。实证为邪气亢盛，见胀痛拒按、便秘尿赤、舌苔厚、脉实有力。\n\n阴阳为总纲：里、寒、虚归阴；表、热、实归阳。临证之时，先分阴阳，再辨表里寒热虚实，然后再深入到脏腑、气血、经络之具体辨证。",
+        "body_en": "Exterior and interior (表/里) locate the disease. Exterior patterns arise when an external pathogen attacks the surface of the body and produce aversion to cold with fever, headache and body aches, and a floating pulse; the illness is recent and shallow. Interior patterns are situated in the zang-fu organs, qi, and blood; they are deeper, generally graver, and slower to resolve.\n\nCold and heat (寒/热) name the essential nature of the disturbance. A cold pattern is marked by aversion to cold and preference for warmth, a pale complexion, absence of thirst, copious clear urine, a pale tongue with a white coating, and a slow pulse. A heat pattern is marked by fever and aversion to heat, a flushed face and red eyes, thirst with a preference for cold drinks, constipation and reddish urine, a red tongue with a yellow coating, and a rapid pulse.\n\nVacuity and repletion (虚/实) name the relative strength of the upright qi versus the pathogen. Vacuity patterns reflect insufficiency of the body's own substances and functions: weariness, breathlessness, spontaneous sweating, a pale tongue, and a weak pulse. Repletion patterns reflect a vigorous pathogen meeting an as-yet-undepleted body: distending pain that resists pressure, constipation and dark urine, a thick tongue coating, and a forceful pulse.\n\nYin and yang are the overarching pair: interior, cold, and vacuity are all forms of yin, while exterior, heat, and repletion are all forms of yang. In practice the clinician first sorts the case into yin or yang, then identifies its location, nature, and strength, and only then refines the diagnosis into the more detailed languages of organ, qi-blood, or channel pattern differentiation."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "真寒假热",
+        "pinyin": "zhēn hán jiǎ rè",
+        "en": "True cold with false heat",
+        "definition_zh": "本质为寒证，但因虚阳浮越于上而见热象。须辨之精细，否则易误投寒凉而坏证。",
+        "definition_en": "A pattern that is essentially cold and vacuous at root but produces heat-like signs (a flushed face, restless agitation) because vacuous yang is floating outward. Mistaking it for a true heat pattern and prescribing cold medicines would be disastrous."
+      },
+      {
+        "zh": "真热假寒",
+        "pinyin": "zhēn rè jiǎ hán",
+        "en": "True heat with false cold",
+        "definition_zh": "本质为热证，但因热邪深伏，阻遏阳气外达而见寒象，如四肢厥冷而胸腹灼热。",
+        "definition_en": "A pattern that is essentially deep heat but presents with cold extremities, because the heat is so locked in the interior that it prevents yang from reaching the limbs. The chest and abdomen remain hot to the touch."
+      },
+      {
+        "zh": "表里同病",
+        "pinyin": "biǎo lǐ tóng bìng",
+        "en": "Simultaneous exterior and interior disease",
+        "definition_zh": "表证与里证同时存在，治疗须分先后或表里双解。",
+        "definition_en": "The patient has both exterior and interior patterns at once. Treatment must either resolve one before the other or address both simultaneously with a combined formula."
+      },
+      {
+        "zh": "虚实夹杂",
+        "pinyin": "xū shí jiā zá",
+        "en": "Vacuity and repletion intermixed",
+        "definition_zh": "正虚与邪实并见，治宜攻补兼施。",
+        "definition_en": "Both insufficiency of upright qi and presence of an active pathogen — treatment must combine supplementing and draining strategies in carefully judged proportions."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "yin-yang"
+      },
+      {
+        "type": "concept",
+        "key": "liu-jing"
+      },
+      {
+        "type": "concept",
+        "key": "four-diagnostic-methods"
+      }
+    ],
+    "appears_in": [
+      "全部证型的根本分类 / The root classification of every pattern in the database",
+      "舌诊、脉诊的解读 / The interpretation of tongue and pulse findings",
+      "立法与遣方的总方向 / The first step in selecting any treatment principle and formula"
+    ],
+    "checkpoints": [
+      {
+        "id": "ba-gang-basics",
+        "title_zh": "八纲辨证要点",
+        "title_en": "Essentials of Eight-Principle Differentiation",
+        "items": [
+          {
+            "id": "bg-01",
+            "prompt_zh": "八纲中，哪一对为其余三对之总纲？",
+            "prompt_en": "Among the Eight Principles, which pair serves as the overarching framework for the other three pairs?",
+            "choices": [
+              {
+                "zh": "表里",
+                "en": "Exterior and interior"
+              },
+              {
+                "zh": "寒热",
+                "en": "Cold and heat"
+              },
+              {
+                "zh": "虚实",
+                "en": "Vacuity and repletion"
+              },
+              {
+                "zh": "阴阳",
+                "en": "Yin and yang"
+              }
+            ],
+            "correct_index": 3,
+            "explanation_zh": "阴阳为八纲之总纲：表、热、实皆归阳类，里、寒、虚皆归阴类。临证先分阴阳，再辨表里寒热虚实。",
+            "explanation_en": "Yin and yang encompass the others: exterior, heat, and repletion are all forms of yang; interior, cold, and vacuity are all forms of yin. In practice the clinician first sorts the case into yin or yang, then refines it along the other three pairs."
+          },
+          {
+            "id": "bg-02",
+            "prompt_zh": "一位患者面色苍白、畏寒喜暖、小便清长、舌淡苔白、脉迟。此最可能为哪一证？",
+            "prompt_en": "A patient has a pale complexion, aversion to cold with a desire for warmth, copious clear urine, a pale tongue with white coating, and a slow pulse. This is most likely:",
+            "choices": [
+              {
+                "zh": "热证",
+                "en": "A heat pattern"
+              },
+              {
+                "zh": "寒证",
+                "en": "A cold pattern"
+              },
+              {
+                "zh": "表证",
+                "en": "An exterior pattern"
+              },
+              {
+                "zh": "实证",
+                "en": "An repletion pattern"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "畏寒、喜暖、小便清长、舌淡苔白、脉迟——六项皆为典型的寒证之象。热证则见发热恶热、口渴、溲赤、舌红苔黄、脉数，恰恰相反。",
+            "explanation_en": "Aversion to cold, desire for warmth, clear copious urine, pale tongue with white coat, slow pulse — every sign here is a textbook cold-pattern finding. A heat pattern would show fever, thirst, dark urine, red tongue with yellow coat, and a rapid pulse, the reverse picture."
+          },
+          {
+            "id": "bg-03",
+            "prompt_zh": "虚证与实证最根本的区别在于：",
+            "prompt_en": "The most fundamental distinction between vacuity and repletion patterns is:",
+            "choices": [
+              {
+                "zh": "症状的部位——虚在内，实在外",
+                "en": "The location of symptoms — vacuity is interior, repletion is exterior"
+              },
+              {
+                "zh": "病程的长短——虚病长，实病短",
+                "en": "Duration — vacuity is chronic, repletion is acute"
+              },
+              {
+                "zh": "正气与邪气的相对盛衰——虚为正气不足，实为邪气亢盛",
+                "en": "The relative strength of upright qi and pathogen — vacuity means upright qi is insufficient; repletion means the pathogen is vigorous"
+              },
+              {
+                "zh": "舌苔的厚薄——虚苔薄，实苔厚",
+                "en": "Thickness of the tongue coating — thin for vacuity, thick for repletion"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "虚实辨的是「正邪盛衰」：虚证是正气不足（体虚），实证是邪气亢盛。舌苔、病程等只是辅助参考，非根本定义。",
+            "explanation_en": "Vacuity and repletion name the balance of forces: vacuity means the body's upright qi is depleted; repletion means the pathogen is vigorous (often while upright qi is still relatively intact). Tongue coating and chronicity are secondary clues, not the defining criterion."
+          },
+          {
+            "id": "bg-04",
+            "prompt_zh": "「真寒假热」最可能被误诊为何证？误治的后果是什么？",
+            "prompt_en": "\"True cold with false heat\" is most likely to be mistaken for what pattern, and with what consequence?",
+            "choices": [
+              {
+                "zh": "误为表证，而发汗伤津",
+                "en": "Mistaken for an exterior pattern, with inappropriate sweating damaging fluids"
+              },
+              {
+                "zh": "误为实热证，而投寒凉之药，进一步伤阳",
+                "en": "Mistaken for a true heat pattern, with cold medicines then driving yang further into collapse"
+              },
+              {
+                "zh": "误为阳虚，而过用温补",
+                "en": "Mistaken for yang vacuity, with excessive warming tonification"
+              },
+              {
+                "zh": "误为湿证，而过用利湿",
+                "en": "Mistaken for a damp pattern, with excessive water-draining herbs"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "真寒假热本质为寒（虚阳浮越于上而见面红烦躁等热象），若误认作热证而投寒凉药，则进一步伐伤其阳，酿成坏证。这是八纲辨证最关键、也最危险的细节之一。",
+            "explanation_en": "True cold with false heat is at root a cold pattern — vacuous yang has floated upward producing heat-like signs (flushed face, restlessness). If mistaken for genuine heat and treated with cold medicines, yang is further damaged, potentially catastrophically. This is one of the most critical subtleties in Eight-Principle differentiation."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "four_natures_five_flavors",
+    "slug": "four-natures-five-flavors",
+    "name_zh": "四气五味",
+    "name_pinyin": "Sì Qì Wǔ Wèi",
+    "name_en": "The Four Natures and Five Flavors",
+    "summary_zh": "中药药性的两条核心轴。四气为寒、凉、温、热（加平），五味为辛、甘、酸、苦、咸（加淡、涩）。",
+    "summary_en": "The two core axes describing the property of any Chinese herb. The four natures classify thermal effect (cold, cool, warm, hot, plus neutral); the five flavors classify functional taste (acrid, sweet, sour, bitter, salty, plus bland and astringent).",
+    "category": "materia_medica",
+    "order": 7,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "四气五味是中药药性理论的核心。任何一味中药，都可以由其「气」（寒热性质）与「味」（功能味道）两条轴来初步描述。这种划分并非凭口感主观，而是历代医家根据药物在体内引发的反应总结而成——故所谓「味」既指口尝之味，更是药物功能的归纳。\n\n这两个属性直接决定了药物的基本走向。四气定其寒热性，五味定其作用方向；与归经一同，构成了中药「性味归经」三大基本要素。",
+        "body_en": "The four natures and five flavors are the core of Chinese materia medica theory. Every herb in the pharmacopeia can be initially described along two axes: its qi (here meaning its thermal property — warming or cooling) and its wei (its functional flavor). These categories are not subjective tasting impressions; they were arrived at empirically by generations of physicians observing how each herb actually behaves in the body. \"Flavor\" therefore designates not only the sensation on the tongue but, more importantly, a class of functional effects associated with that flavor.\n\nTaken together, these two properties — together with channel tropism (归经) — constitute the three primary attributes of any Chinese herb. They are visible at the top of every herb page in this database."
+      },
+      {
+        "heading_zh": "四气",
+        "heading_en": "The four natures",
+        "body_zh": "四气指寒、凉、温、热四种基本药性，再加一类「平」性。寒凉药能清热、泻火、解毒、凉血，主治热证；温热药能温中、散寒、回阳、补火，主治寒证。寒与凉、温与热，仅是同一方向上的程度差别——寒甚于凉，热甚于温。平性药寒热不显，作用平和，常被用于调和。\n\n判断药性，依据是其在病人身上引发的反应。服后能消热的为寒凉，服后能驱寒的为温热。例如黄连大苦大寒，可清心火而治口疮；附子大辛大热，可回阳救逆而治阳亡。临证用药须依证之寒热，「寒者热之，热者寒之」。",
+        "body_en": "The four natures are cold (寒, hán), cool (凉, liáng), warm (温, wēn), and hot (热, rè), with a fifth category, neutral (平, píng), added for herbs whose thermal effect is mild or balanced. Cold and cool herbs clear heat, drain fire, resolve toxicity, and cool the blood — they are used to treat heat patterns. Warm and hot herbs warm the middle, dissipate cold, restore yang, and tonify the fire — they are used to treat cold patterns. Cold and cool, and warm and hot, differ only in degree along a single axis: cold is stronger than cool, hot is stronger than warm. Neutral herbs are mild and are often used to harmonize a formula.\n\nThe nature of an herb is judged by the reaction it produces in the patient. An herb that resolves heat is classified as cold or cool; one that dispels cold is warm or hot. Coptis (黄连, Huáng Lián) is intensely bitter and cold, clearing Heart fire and treating mouth sores; aconite (附子, Fù Zǐ) is intensely acrid and hot, restoring yang and rescuing patients in collapse. The classical maxim governs use: \"For cold, warm; for heat, cool.\""
+      },
+      {
+        "heading_zh": "五味",
+        "heading_en": "The five flavors",
+        "body_zh": "五味指辛、甘、酸、苦、咸五味，再加上淡、涩二味。各味之功能大致如下：\n\n辛：能散、能行。发散表邪、行气活血。如麻黄、桂枝、生姜。\n甘：能补、能和、能缓。补益气血、调和药性、缓急止痛。如甘草、人参、大枣。\n酸：能收、能涩。收敛固涩，止泻、止汗、止血、缩尿。如五味子、白芍、乌梅。\n苦：能泄、能燥、能坚。清热、降逆、燥湿、泻下、坚阴。如黄连、大黄、黄芩。\n咸：能软、能下。软坚散结、泻下通便。如芒硝、海藻。\n淡：能渗、能利。渗湿利水。如茯苓、薏苡仁。\n涩：与酸味相近，能收敛固涩。如龙骨、五倍子。\n\n须强调，所谓「味」并非单纯口感。例如「甘」未必嚼之即甜——某些味淡而功能补益的药物亦归甘味，因为其作用属性为「补、和、缓」。",
+        "body_en": "The five flavors are acrid (辛, xīn), sweet (甘, gān), sour (酸, suān), bitter (苦, kǔ), and salty (咸, xián), with two further categories, bland (淡, dàn) and astringent (涩, sè), added by later writers. Each flavor names a class of functions:\n\nAcrid herbs disperse and move — they release the exterior, move qi, and invigorate blood. Examples: ephedra (Má Huáng), cinnamon twig (Guì Zhī), fresh ginger (Shēng Jiāng).\n\nSweet herbs supplement, harmonize, and moderate — they tonify qi and blood, harmonize the actions of other herbs in a formula, and slow urgency or relieve pain. Examples: licorice (Gān Cǎo), ginseng (Rén Shēn), Chinese date (Dà Zǎo).\n\nSour herbs contract and bind — they astringe and stop leakage, treating diarrhea, sweating, bleeding, and frequent urination. Examples: schisandra (Wǔ Wèi Zǐ), white peony (Bái Sháo).\n\nBitter herbs drain, dry, and harden — they clear heat, redirect rebellious qi downward, dry dampness, purge the bowels, and \"harden\" yin (an idiom for restoring depleted yin against blazing fire). Examples: coptis (Huáng Lián), rhubarb (Dà Huáng), scutellaria (Huáng Qín).\n\nSalty herbs soften and descend — they soften hardness, dissolve nodulation, and purge through the bowels. Examples: mirabilite (Máng Xiāo), seaweed (Hǎi Zǎo).\n\nBland herbs percolate dampness and promote urination, draining without harming the upright qi. Examples: poria (Fú Líng), Job's tears (Yì Yǐ Rén).\n\nAstringent herbs share the function of the sour flavor, contracting and binding. Examples: dragon bone (Lóng Gǔ), Chinese gallnut (Wǔ Bèi Zǐ).\n\nAs with the four natures, \"flavor\" must not be reduced to literal taste. An herb classified as \"sweet\" need not taste sweet on the tongue — some bland-tasting tonifying herbs are still classified as sweet because their functional profile (supplementing, harmonizing, moderating) belongs to the sweet category."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "性味归经",
+        "pinyin": "xìng wèi guī jīng",
+        "en": "Nature, flavor, and channel tropism",
+        "definition_zh": "中药药性的三大基本要素。",
+        "definition_en": "The three primary attributes by which any herb is described in Chinese materia medica: its thermal nature, its functional flavor(s), and the channels it preferentially enters."
+      },
+      {
+        "zh": "气味相合",
+        "pinyin": "qì wèi xiāng hé",
+        "en": "Combined nature and flavor",
+        "definition_zh": "药物的功效是其气与味共同决定的。例如同为辛味，辛温者发散风寒，辛凉者发散风热。",
+        "definition_en": "An herb's full effect is determined by the combination of its nature and flavor. \"Acrid-warm\" herbs release wind-cold from the exterior; \"acrid-cool\" herbs release wind-heat. The flavor names the direction; the nature names the temperature."
+      },
+      {
+        "zh": "升降浮沉",
+        "pinyin": "shēng jiàng fú chén",
+        "en": "Ascending, descending, floating, sinking",
+        "definition_zh": "中药作用的方向性。升浮药多辛甘温热，趋向于上、于外；降沉药多酸苦咸寒，趋向于下、于内。",
+        "definition_en": "The directional tendencies of herb action. Ascending and floating herbs (mostly acrid, sweet, warm, hot) move upward and outward; descending and sinking herbs (mostly sour, bitter, salty, cold) move downward and inward. Processing methods, especially wine-frying and salt-frying, can shift this direction."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "channel-tropism"
+      },
+      {
+        "type": "concept",
+        "key": "processing"
+      },
+      {
+        "type": "concept",
+        "key": "yin-yang"
+      }
+    ],
+    "appears_in": [
+      "每一味本草页面顶部的「性」「味」标签 / The nature and flavor tags at the top of every herb page",
+      "本草分类（解表药、清热药、温里药等） / Herb categorization (exterior-releasing, heat-clearing, interior-warming, etc.)"
+    ],
+    "checkpoints": [
+      {
+        "id": "four-natures-five-flavors-basics",
+        "title_zh": "四气五味要点",
+        "title_en": "Essentials of Nature and Flavor",
+        "items": [
+          {
+            "id": "nf-01",
+            "prompt_zh": "一味药被分类为「甘」味，是否必然尝起来是甜的？",
+            "prompt_en": "If an herb is classified as \"sweet\" in flavor, must it literally taste sweet on the tongue?",
+            "choices": [
+              {
+                "zh": "是的。五味的分类完全依据口感",
+                "en": "Yes — the five flavors are strictly based on taste sensation"
+              },
+              {
+                "zh": "否。「味」主要是一类功能属性（补、和、缓），非凭口尝而定",
+                "en": "No — \"flavor\" primarily designates a class of functions (supplementing, harmonizing, moderating), not a literal taste"
+              },
+              {
+                "zh": "否。甘味只是一种颜色分类",
+                "en": "No — sweet is merely a color classification"
+              },
+              {
+                "zh": "是的。若不甜则不能归为甘味",
+                "en": "Yes — if not sweet on tasting, it cannot be classified as sweet"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "五味是「功能的归纳」，非单纯口感。「甘」味的核心在于「能补、能和、能缓」，故一些口感不甜但具补益作用的药亦归甘味。",
+            "explanation_en": "The five flavors are a functional classification, not a tasting report. \"Sweet\" names the cluster of functions: supplementing, harmonizing, and moderating urgency. Herbs that tonify qi without literally tasting sweet are still classified as \"sweet\" because they act in that functional register."
+          },
+          {
+            "id": "nf-02",
+            "prompt_zh": "辛味药的基本功能是：",
+            "prompt_en": "The basic functions of acrid-flavored herbs are:",
+            "choices": [
+              {
+                "zh": "收敛固涩",
+                "en": "Contracting and astringing"
+              },
+              {
+                "zh": "清热泻火",
+                "en": "Clearing heat and draining fire"
+              },
+              {
+                "zh": "能散、能行（发散表邪、行气活血）",
+                "en": "Dispersing and moving — releasing the exterior, moving qi, invigorating blood"
+              },
+              {
+                "zh": "软坚散结",
+                "en": "Softening hardness and dissolving nodulation"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "辛味「能散、能行」：发散表邪（如麻黄、桂枝、生姜）、行气活血。收敛为酸、涩之功；软坚为咸味之功。",
+            "explanation_en": "Acrid herbs disperse and move — they release the exterior (ephedra, cinnamon twig, fresh ginger), move qi, and invigorate blood. Contracting is the function of sour and astringent flavors; softening hardness belongs to salty."
+          },
+          {
+            "id": "nf-03",
+            "prompt_zh": "「寒者热之，热者寒之」指导用药的哪一方面？",
+            "prompt_en": "The maxim \"for cold, warm; for heat, cool\" guides which aspect of prescribing?",
+            "choices": [
+              {
+                "zh": "归经的选择",
+                "en": "The selection of channel tropism"
+              },
+              {
+                "zh": "按证之寒热选择药物的四气（寒凉温热）",
+                "en": "Matching the four natures (cold/cool/warm/hot) of the herb to the cold or hot nature of the pattern"
+              },
+              {
+                "zh": "煎药的时间长短",
+                "en": "The duration of decoction"
+              },
+              {
+                "zh": "服药的时间（饭前或饭后）",
+                "en": "Timing of administration (before or after meals)"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "这句古训是四气（寒热温凉）临证运用的总则——根据病证的寒热性质选择相反性质的药物。与归经、煎服之法无直接关系。",
+            "explanation_en": "This classical principle governs the four natures. A cold pattern is treated with warming or hot herbs; a hot pattern with cooling or cold herbs. It concerns thermal matching, not channel tropism, decoction times, or administration schedules."
+          },
+          {
+            "id": "nf-04",
+            "prompt_zh": "下列哪一组「气」「味」配合属于典型的「辛凉解表」药性？",
+            "prompt_en": "Which combination of nature and flavor characterizes a typical \"acrid-cool exterior-releasing\" herb?",
+            "choices": [
+              {
+                "zh": "辛、温：发散风寒",
+                "en": "Acrid and warm — releasing wind-cold from the exterior"
+              },
+              {
+                "zh": "辛、凉：发散风热",
+                "en": "Acrid and cool — releasing wind-heat from the exterior"
+              },
+              {
+                "zh": "苦、寒：清热泻火",
+                "en": "Bitter and cold — clearing heat and draining fire"
+              },
+              {
+                "zh": "甘、平：补益和中",
+                "en": "Sweet and neutral — supplementing and harmonizing the middle"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "辛味主散，凉气主清——二者相合，方能发散风热表邪。辛温则发散风寒；苦寒则清热泻火；甘平则补中。这正是「气味相合」共同决定药效的例子。",
+            "explanation_en": "The acrid flavor disperses and the cool nature clears heat — together they release wind-heat from the exterior. Acrid-warm releases wind-cold; bitter-cold clears fire; sweet-neutral supplements. This is the paradigm case of nature and flavor combining to determine action."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "channel_tropism",
+    "slug": "channel-tropism",
+    "name_zh": "归经",
+    "name_pinyin": "Guī Jīng",
+    "name_en": "Channel Tropism",
+    "summary_zh": "药物对某些脏腑经络具有选择性作用，谓之「归经」。它使中药能够定位施治。",
+    "summary_en": "The doctrine that each herb \"enters\" specific channels and organs preferentially, allowing therapy to be targeted to particular regions of the body.",
+    "category": "materia_medica",
+    "order": 8,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "归经是中药「性味归经」三要素之一，指药物对某一脏腑或经络具有选择性作用。如桔梗归肺经，故能利肺气、化痰止咳；当归归肝、心、脾经，故能补肝血、养心血、补脾血。归经为临证处方提供了「定位」的依据。\n\n归经的判定，多由历代医家根据药物所主治的症状，反推其作用部位而来。例如某药善治目赤肿痛，目为肝之窍，故归肝经；善治咳嗽气喘，肺主气司呼吸，故归肺经。这是一种由「治证」反推「归经」的经验方法，并非凭解剖学的物质分布而定。",
+        "body_en": "Channel tropism (归经, guī jīng) is the third of the three primary attributes of every Chinese herb, alongside nature and flavor. It expresses the observation that an herb does not act on the body uniformly — instead, its effects are most pronounced in particular organs or along particular channels. Platycodon (桔梗, Jié Gěng) is said to enter the Lung channel, and so it benefits the Lung qi, transforms phlegm, and stops cough. Chinese angelica (当归, Dāng Guī) enters the Liver, Heart, and Spleen channels, and so it tonifies Liver-blood, nourishes Heart-blood, and supplements Spleen-blood.\n\nThe channel tropism of an herb has historically been determined empirically: physicians observed which symptoms an herb reliably treated, identified the organ system to which those symptoms belonged, and inferred that the herb \"enters\" the channel of that organ. An herb that effectively treats red, swollen, painful eyes is taken to enter the Liver channel, since the eyes are the orifice of the Liver. An herb that calms cough and wheezing enters the Lung channel, since the Lung governs qi and respiration. Channel tropism is therefore a pragmatic clinical category, derived from outcomes, rather than a claim about the herb's anatomical distribution."
+      },
+      {
+        "heading_zh": "临床意义",
+        "heading_en": "Clinical significance",
+        "body_zh": "归经使中药从一个「广撒网」的工具变成了一把「定位的钥匙」。同为补气，黄芪偏入脾肺，故善补脾肺之气；人参则入脾肺心，故能兼安心神。同为清热，黄连归心、胃，善清心胃之火；黄芩归肺、胆，善清肺胆之热；黄柏归肾、膀胱，善清下焦湿热。临证组方，正是以归经为参照，将相应药物指向所欲治之部位。",
+        "body_en": "Channel tropism transforms an herb from a generic tool into a targeting key. Two herbs may share the same fundamental action — say, tonifying qi — but enter different channels and so be used in different clinical situations. Astragalus (黄芪, Huáng Qí) tonifies qi but enters chiefly the Spleen and Lung, making it the herb of choice for Spleen-qi and Lung-qi vacuity. Ginseng (人参, Rén Shēn) also tonifies qi but enters the Spleen, Lung, and Heart, so it both tonifies qi and calms the spirit. Among the heat-clearing bitter herbs, coptis (Huáng Lián) enters the Heart and Stomach (clearing Heart and Stomach fire), scutellaria (Huáng Qín) enters the Lung and Gallbladder (clearing Lung and Gallbladder heat), and phellodendron (黄柏, Huáng Bǎi) enters the Kidney and Bladder (clearing damp-heat in the lower burner). When constructing a formula, the practitioner uses channel tropism to direct each ingredient to the part of the body where it is needed."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "引经药",
+        "pinyin": "yǐn jīng yào",
+        "en": "Guiding herb",
+        "definition_zh": "在方剂中加入某药，引导其他药物到达特定经络或部位。如柴胡引药入少阳，桔梗引药上行至胸肺。",
+        "definition_en": "An herb added to a formula specifically to guide the other ingredients to a particular channel or region. Bupleurum (Chái Hú) guides medicines into the Shao Yang channel; platycodon (Jié Gěng) is the \"floating boat\" that lifts medicines upward into the chest and Lung."
+      },
+      {
+        "zh": "十二经",
+        "pinyin": "shí èr jīng",
+        "en": "Twelve regular channels",
+        "definition_zh": "手足三阴三阳共十二条经脉，是归经的主要参考体系。",
+        "definition_en": "The twelve regular channels (three yin and three yang of each arm and leg) provide the standard reference frame for channel tropism."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "four-natures-five-flavors"
+      },
+      {
+        "type": "concept",
+        "key": "zang-fu"
+      },
+      {
+        "type": "concept",
+        "key": "jun-chen-zuo-shi"
+      }
+    ],
+    "appears_in": [
+      "每一味本草的「归经」标签 / The channel-tropism field on every herb page",
+      "方剂中「引经药」的角色 / The \"guiding herb\" role in formula composition"
+    ],
+    "checkpoints": [
+      {
+        "id": "channel-tropism-basics",
+        "title_zh": "归经的意义",
+        "title_en": "Understanding Channel Tropism",
+        "items": [
+          {
+            "id": "ct-01",
+            "prompt_zh": "古人是如何确定一味药的「归经」的？",
+            "prompt_en": "How did classical physicians historically determine an herb's channel tropism?",
+            "choices": [
+              {
+                "zh": "通过解剖学研究药物在体内的分布",
+                "en": "By anatomical research into where the herb is distributed in the body"
+              },
+              {
+                "zh": "根据药物所主治的症状，反推其作用所在的脏腑经络",
+                "en": "By observing which symptoms the herb reliably treated, then inferring the organ system to which those symptoms belonged"
+              },
+              {
+                "zh": "依据药物生长的地区与季节",
+                "en": "By the geographical region and season in which the herb grows"
+              },
+              {
+                "zh": "根据药物的颜色与形状",
+                "en": "By the color and shape of the herb"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "归经是经验性的临床推断：若某药善治目疾，而目为肝之窍，则推定其归肝经；善治咳喘，而肺主气司呼吸，则归肺经。它不是解剖学的分布，而是「由治证反推作用部位」。",
+            "explanation_en": "Channel tropism was determined empirically — not by anatomical study. If an herb reliably relieves red, painful eyes, it is inferred to enter the Liver channel (the eye is the orifice of the Liver); if it calms cough and wheeze, it enters the Lung. Tropism is a pragmatic clinical category derived from outcomes."
+          },
+          {
+            "id": "ct-02",
+            "prompt_zh": "黄芪与人参皆能补气。仅从归经区别，人参多用于伴心神不安者的原因是：",
+            "prompt_en": "Astragalus and ginseng both tonify qi. Looking only at channel tropism, why is ginseng preferred when the patient also has disturbed spirit?",
+            "choices": [
+              {
+                "zh": "人参性热，能兴奋神志",
+                "en": "Ginseng is hot in nature and stimulates the spirit"
+              },
+              {
+                "zh": "人参入脾、肺、心三经，而黄芪主入脾、肺，不入心",
+                "en": "Ginseng enters Spleen, Lung, AND Heart, while astragalus enters chiefly Spleen and Lung, not Heart"
+              },
+              {
+                "zh": "人参味苦能清心火",
+                "en": "Ginseng is bitter and clears Heart fire"
+              },
+              {
+                "zh": "二者归经相同，区别仅在剂量",
+                "en": "Both have the same tropism; the difference is only in dosage"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "同为补气，人参比黄芪多一条心经，故能兼安心神；黄芪重在脾肺之气。这正是归经作为「定位钥匙」的典型用处——同功之药因归经不同而各有其所宜。",
+            "explanation_en": "Though both tonify qi, ginseng additionally enters the Heart channel, so it both replenishes qi and calms the spirit. Astragalus stays chiefly in Spleen and Lung. This is precisely why tropism matters: herbs of similar basic action can be clinically distinguished by the channels they enter."
+          },
+          {
+            "id": "ct-03",
+            "prompt_zh": "「引经药」在方剂中的作用是什么？",
+            "prompt_en": "What is the role of a \"guiding herb\" (yǐn jīng yào) in a formula?",
+            "choices": [
+              {
+                "zh": "它本身起主要治疗作用",
+                "en": "It provides the principal therapeutic action"
+              },
+              {
+                "zh": "它引导其他药物到达特定经络或部位",
+                "en": "It directs the other herbs to a particular channel or region of the body"
+              },
+              {
+                "zh": "它防止其他药物的毒性",
+                "en": "It prevents toxicity from the other herbs"
+              },
+              {
+                "zh": "它决定方剂的气味",
+                "en": "It determines the taste of the formula"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "引经药本身未必是主药，其特殊职能是「带路」——例如柴胡引诸药入少阳，桔梗引诸药上行至胸肺。此与佐药中的「佐制」（制约毒性）不同。",
+            "explanation_en": "A guiding herb is not necessarily the principal agent of the formula. Its distinctive job is to direct the others — bupleurum guides medicines into the Shao Yang, platycodon lifts them upward into the chest and Lung. This is different from the restraining role of an Assistant (which tempers toxicity)."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "jun_chen_zuo_shi",
+    "slug": "jun-chen-zuo-shi",
+    "name_zh": "君臣佐使",
+    "name_pinyin": "Jūn Chén Zuǒ Shǐ",
+    "name_en": "Sovereign, Minister, Assistant, and Courier",
+    "summary_zh": "中医方剂组成的基本原则。每味药在方中各有其位，分担不同职能，共成一剂。",
+    "summary_en": "The fundamental hierarchy of formula composition in Chinese medicine. Each herb in a formula occupies one of four roles, contributing a distinct function so that the whole is more than the sum of its parts.",
+    "category": "formulas",
+    "order": 9,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "君臣佐使是中医方剂学的核心组方原则，最早见于《黄帝内经》，后由历代医家发挥完善。它把一首方剂中的每一味药都视为一个「职位」，按其在治疗主证中的作用大小与方向，分为君、臣、佐、使四类，使一首方剂如同一个有序的小朝廷，各司其职，共成大用。\n\n中医的方剂从来不是若干药物的简单堆砌。一味药单独入煎与组成在方剂之中，其作用并不相同。组方的智慧，正在于通过角色分工与剂量配比，使诸药相辅相成，相制相协。",
+        "body_en": "Sovereign, minister, assistant, and courier is the central organizing principle of Chinese medical formula composition. The terminology is first found in the Yellow Emperor's Inner Classic and was elaborated by physicians of every subsequent era. It treats each herb in a formula as occupying a particular \"office\" — ranked by its role in treating the chief presenting pattern — and distinguishes four categories of office, like the strata of a small ordered court. Together, the four roles transform a list of herbs into an integrated therapeutic agent in which the whole is more than the sum of its parts.\n\nA Chinese formula is never a heap of ingredients. The same herb behaves differently when cooked alone and when cooked together with others; doses, ratios, and combinations all shape the final effect. The art of formula construction lies in assigning each ingredient a role appropriate to its strength and direction, so that the herbs reinforce, restrain, and harmonize one another."
+      },
+      {
+        "heading_zh": "四个角色",
+        "heading_en": "The four roles",
+        "body_zh": "君药（Sovereign）：针对主病或主证起主要治疗作用的药物，是方剂的核心。其药力最强、作用最显，常用量也最大。一首方剂可有一至数味君药。\n\n臣药（Minister）：辅助君药以加强治疗作用，或针对兼病兼证起治疗作用。臣药与君药同向，是君药的助力。\n\n佐药（Assistant）：作用有三。一为佐助，协助君臣以治次要症状；二为佐制，制约君臣药的烈性或毒性；三为反佐，于大寒大热之方中加入与君药相反性能的药物，防止「拒药」。\n\n使药（Courier）：作用有二。一为引经报使，引导诸药至病所；二为调和诸药，使一方之药协调如一。\n\n须强调：君臣佐使是层级性的，但不是僵化的。一味药可同时承担多重角色，亦非每一首方都四类俱全。简方寥寥数味，繁方多达数十味，皆视所治之病而定。",
+        "body_en": "The Sovereign (君, jūn) is the herb that addresses the chief disease or chief pattern directly. It is the core of the formula — the strongest in action, the most prominent in effect, and usually the largest in dosage. A formula may have one sovereign or several.\n\nThe Minister (臣, chén) reinforces the action of the Sovereign or treats important secondary patterns. Ministers are aligned with the Sovereign in direction; they magnify and extend its effect rather than redirecting it.\n\nThe Assistant (佐, zuǒ) plays one of three sub-roles. As assisting (佐助), it helps the Sovereign and Minister address subordinate symptoms. As restraining (佐制), it tempers the harsh or toxic edge of the principal herbs. As corrective-assistant (反佐, \"reverse assistant\"), it is added in formulas of extreme nature — intensely cold or intensely hot — and is given a property opposite to the Sovereign's to prevent the body from rejecting (literally \"refusing\") the medicine. The corrective-assistant is one of Chinese medicine's most subtle compositional devices.\n\nThe Courier (使, shǐ) plays one of two roles. As the channel guide (引经报使), it directs the action of the formula to the appropriate channel or region of the body. As the harmonizer, it reconciles the actions of the other ingredients so that they cooperate rather than collide. Licorice (Gān Cǎo) is by far the most common courier in this harmonizing sense; bupleurum (Chái Hú) is a typical channel guide.\n\nA caution often missed by beginners: the four roles are hierarchical but not rigid. A single herb may occupy more than one role at once; not every formula uses all four. Some classical formulas are extremely sparse — three or four ingredients. Others run to dozens. The number is dictated by the complexity of the pattern being treated."
+      },
+      {
+        "heading_zh": "经典示例：四君子汤",
+        "heading_en": "A classical example: Four Gentlemen Decoction",
+        "body_zh": "以最经典的补气方四君子汤为例，可清楚看到君臣佐使的运作：\n\n• 人参（君）：大补元气，健脾养胃。脾胃气虚是本方所治之主证，人参直接对治此核心病机，故为君。\n• 白术（臣）：健脾燥湿，加强人参补气健脾之力，与人参同向，故为臣。\n• 茯苓（佐）：健脾渗湿，与白术相配，助其健脾之功，并防补气过用而致湿邪壅滞，故为佐。\n• 炙甘草（使）：益气和中，调和诸药，使全方药力协调，故为使。\n\n四味皆为药性平和之「君子」，配伍简洁严密，是后世几乎所有补气方剂的祖方。补中益气汤即由四君子汤增黄芪、当归、陈皮、升麻、柴胡而成，演化为更复杂的「补中益气，升阳举陷」之方。",
+        "body_en": "The clearest classical illustration of the four roles is Four Gentlemen Decoction (四君子汤, Sì Jūn Zǐ Tāng), the foundational qi-tonifying formula:\n\n• Ginseng (Rén Shēn) — Sovereign. It greatly tonifies original qi and fortifies the Spleen and Stomach. Spleen-qi vacuity is the chief pattern this formula treats, and ginseng addresses that core mechanism directly.\n• White atractylodes (Bái Zhú) — Minister. It strengthens the Spleen and dries dampness, reinforcing the qi-tonifying action of ginseng. It is aligned with the Sovereign and amplifies its effect.\n• Poria (Fú Líng) — Assistant. It strengthens the Spleen and percolates dampness. Paired with white atractylodes, it both helps fortify the Spleen and prevents the supplementing herbs from generating dampness through over-tonification.\n• Honey-fried licorice (Zhì Gān Cǎo) — Courier. It augments qi, harmonizes the middle, and harmonizes the actions of the other herbs so that the formula operates as a single integrated whole.\n\nAll four ingredients are mild in nature — \"gentlemen\" of the materia medica — and the composition is famously austere. Four Gentlemen Decoction is the ancestor of nearly every later qi-tonifying formula. Tonify the Middle and Augment the Qi Decoction (补中益气汤, Bǔ Zhōng Yì Qì Tāng) is essentially Four Gentlemen Decoction with astragalus, angelica, tangerine peel, cimicifuga, and bupleurum added — extending the simpler ancestor into a more elaborate formula that not only tonifies the middle but also raises sunken yang.\n\nOther formulas in this database that exemplify the four roles in particularly clear ways include Cinnamon Twig Decoction (Guì Zhī Tāng), in which cinnamon twig and white peony together form a sovereign-minister pair to harmonize ying and wei; Minor Bupleurum Decoction (Xiǎo Chái Hú Tāng), in which bupleurum is the sovereign that opens the Shao Yang while scutellaria assists by clearing heat; and Frigid Extremities Decoction (Sì Nì Tāng), in which aconite is the sovereign for restoring yang while dried ginger reinforces it and licorice both moderates aconite's toxicity and harmonizes the formula."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "君药",
+        "pinyin": "jūn yào",
+        "en": "Sovereign herb",
+        "definition_zh": "针对主病或主证起主要治疗作用的药物。",
+        "definition_en": "The herb that addresses the chief presenting pattern — the strongest, most prominent ingredient and the core of the formula."
+      },
+      {
+        "zh": "臣药",
+        "pinyin": "chén yào",
+        "en": "Minister herb",
+        "definition_zh": "辅助君药以加强治疗作用，或针对重要兼证治疗的药物。",
+        "definition_en": "An herb that reinforces the Sovereign or addresses an important secondary pattern. Aligned with the Sovereign in direction."
+      },
+      {
+        "zh": "佐药",
+        "pinyin": "zuǒ yào",
+        "en": "Assistant herb",
+        "definition_zh": "辅佐君臣治次要症状、制约君臣之峻烈或毒性、或反向佐助以防拒药。",
+        "definition_en": "An herb that helps with subordinate symptoms, restrains the harshness or toxicity of the principal herbs, or in extreme formulas serves as a \"corrective\" with opposite properties to prevent the body from rejecting the medicine."
+      },
+      {
+        "zh": "使药",
+        "pinyin": "shǐ yào",
+        "en": "Courier herb",
+        "definition_zh": "引经报使，或调和诸药。",
+        "definition_en": "An herb that either guides the formula's action to a particular channel or harmonizes the other ingredients so they cooperate as one."
+      },
+      {
+        "zh": "反佐",
+        "pinyin": "fǎn zuǒ",
+        "en": "Corrective-assistant",
+        "definition_zh": "在大寒大热之方中加入与君药相反性能之药，以防药病格拒。",
+        "definition_en": "A small dose of an herb with opposite thermal nature, added to a formula of extreme cold or extreme heat to prevent the body from rejecting the medicine. One of the more sophisticated devices in Chinese formula construction."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "channel-tropism"
+      },
+      {
+        "type": "concept",
+        "key": "seven-emotions"
+      },
+      {
+        "type": "concept",
+        "key": "four-natures-five-flavors"
+      }
+    ],
+    "appears_in": [
+      "本草典中每一首方剂的组成图谱 / The composition diagram on every formula page in this database",
+      "四君子汤、补中益气汤、桂枝汤、小柴胡汤等经典方 / Foundational formulas such as Si Jun Zi Tang, Bu Zhong Yi Qi Tang, Gui Zhi Tang, and Xiao Chai Hu Tang"
+    ],
+    "further_reading": [
+      {
+        "type": "text",
+        "key": "huang_di_nei_jing"
+      },
+      {
+        "type": "text",
+        "key": "shang_han_lun"
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "jun-chen-basics",
+        "title_zh": "方剂组成四角色",
+        "title_en": "The Four Roles in Formula Composition",
+        "items": [
+          {
+            "id": "jcs-01",
+            "prompt_zh": "方剂中的「君药」最准确的定义是什么？",
+            "prompt_en": "Which is the most accurate definition of the \"Sovereign\" herb in a formula?",
+            "choices": [
+              {
+                "zh": "方中用量最大的药物",
+                "en": "The herb used in the largest dosage"
+              },
+              {
+                "zh": "针对主病或主证起主要治疗作用的药物",
+                "en": "The herb that directly addresses the chief disease or chief pattern"
+              },
+              {
+                "zh": "方中最贵重的药物",
+                "en": "The most expensive herb in the formula"
+              },
+              {
+                "zh": "方中调和诸药的药物",
+                "en": "The herb that harmonizes the other ingredients"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "君药的本质是其针对主证起最主要的治疗作用，它常常（但不必然）也是用量最大的。调和诸药者为使药，不是君药。",
+            "explanation_en": "The Sovereign is defined by its role — it directly treats the chief presenting pattern. It is usually (but not necessarily) also the largest in dosage. Harmonizing the other ingredients is the Courier's job, not the Sovereign's."
+          },
+          {
+            "id": "jcs-02",
+            "prompt_zh": "四君子汤中，茯苓为佐药。下列哪一项最能说明其「佐」的职能？",
+            "prompt_en": "In Four Gentlemen Decoction, poria serves as Assistant. Which best describes why?",
+            "choices": [
+              {
+                "zh": "它是方中唯一补气之药",
+                "en": "It is the only qi-tonifying herb in the formula"
+              },
+              {
+                "zh": "它健脾渗湿，既助白术健脾，又防补气过用而生湿",
+                "en": "It strengthens the Spleen and percolates damp, both helping white atractylodes and preventing the tonics from generating dampness"
+              },
+              {
+                "zh": "它引诸药归脾经",
+                "en": "It guides the other ingredients into the Spleen channel"
+              },
+              {
+                "zh": "它是方中药性最峻烈者，须以他药制约",
+                "en": "It is the harshest herb in the formula and must be restrained by others"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "茯苓既佐助白术健脾，又防人参、白术补气太过而致湿邪壅滞，兼具「佐助」与「佐制」二义，正是佐药的典型作用。四君子汤四味皆平和，无需制约峻烈之药。",
+            "explanation_en": "Poria both reinforces white atractylodes' spleen-strengthening action (assisting) and prevents the tonifying herbs from over-supplementing and breeding dampness (restraining) — both core sub-roles of an Assistant. All four ingredients are mild, so there is no harsh herb needing restraint."
+          },
+          {
+            "id": "jcs-03",
+            "prompt_zh": "「反佐」最准确的描述是：",
+            "prompt_en": "\"Corrective-assistant\" (fǎn zuǒ) is best described as:",
+            "choices": [
+              {
+                "zh": "另一味加强君药的辅助药",
+                "en": "Another herb that reinforces the Sovereign's action"
+              },
+              {
+                "zh": "在大寒大热之方中，加入与君药性能相反的小量药物，以防「药病格拒」",
+                "en": "A small dose of an herb with opposite nature added to a very cold or very hot formula to prevent the body from rejecting the medicine"
+              },
+              {
+                "zh": "与君药作用完全相反的主药",
+                "en": "A primary herb with the exact opposite effect of the Sovereign"
+              },
+              {
+                "zh": "用以引诸药至特定经络的药物",
+                "en": "An herb used to guide the formula into a specific channel"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "反佐是佐药的一个特殊小类：在性能极端的方剂中加入相反性能的小量药物，防止「药病格拒」（身体拒药）。它不是加强君药，也不是引经之药。",
+            "explanation_en": "Corrective-assistant is a specialized sub-type of Assistant: in a formula of extreme thermal nature, a small amount of an herb with opposite properties is added specifically to prevent the body from rejecting the medicine. It neither reinforces the Sovereign nor guides the channels — those are different roles."
+          },
+          {
+            "id": "jcs-04",
+            "prompt_zh": "下列关于「使药」的描述，哪一项是错误的？",
+            "prompt_en": "Which of the following about the Courier herb is INCORRECT?",
+            "choices": [
+              {
+                "zh": "使药可引诸药至特定经络或病所",
+                "en": "The Courier can guide the other herbs to a specific channel or region"
+              },
+              {
+                "zh": "使药可调和诸药，使全方协调",
+                "en": "The Courier can harmonize the other herbs so the formula acts as one"
+              },
+              {
+                "zh": "炙甘草在许多方中担任调和之使",
+                "en": "Honey-fried licorice often serves as a harmonizing Courier"
+              },
+              {
+                "zh": "使药针对方中的主证起主要治疗作用",
+                "en": "The Courier provides the main therapeutic action against the chief pattern"
+              }
+            ],
+            "correct_index": 3,
+            "explanation_zh": "针对主证起主要治疗作用的是君药，不是使药。使药的职能只有二：引经报使与调和诸药。其余三项皆为使药的正确描述。",
+            "explanation_en": "The herb that addresses the chief pattern is the Sovereign, not the Courier. The Courier has only two jobs: guiding the formula to the target channel, or harmonizing the other ingredients. The other three statements correctly describe the Courier."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "seven_emotions",
+    "slug": "seven-emotions",
+    "name_zh": "七情合和",
+    "name_pinyin": "Qī Qíng Hé Hé",
+    "name_en": "The Seven Modes of Herb Combination",
+    "summary_zh": "中药配伍的七种关系：单行、相须、相使、相畏、相杀、相恶、相反。",
+    "summary_en": "The seven possible modes by which two herbs may interact when used together — ranging from synergy to outright antagonism. The basis of safe and effective formula construction.",
+    "category": "materia_medica",
+    "order": 10,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "七情合和是指中药配伍可能呈现的七种关系，最早见于《神农本草经》。它涵盖从协同增效到相互对抗的全部可能，是组方时必须考量的基本规则。掌握七情，是处方安全与有效的前提。\n\n七情之名虽与人之喜怒哀乐之七情同字，但所指完全不同——此处之「情」是药与药之间的「情态」「关系」之意。",
+        "body_en": "The \"seven emotions\" of herb combination — better translated as the seven modes of interaction — denote the seven possible relationships between two herbs used together. The category appears already in the earliest extant Chinese pharmacopeia, the Divine Husbandman's Classic of Materia Medica (《神農本草經》, Shén Nóng Běn Cǎo Jīng). The seven cover the entire range from full synergy to outright antagonism, and are the basic ruleset for safe and effective formula construction. Mastery of them is the precondition of any responsible prescription.\n\nDespite the name, the \"seven emotions\" of herb combination have nothing to do with the seven emotions of human psychology that share the term. Here \"emotion\" carries its older meaning of \"mode of relation\" or \"disposition between two parties.\""
+      },
+      {
+        "heading_zh": "七种关系",
+        "heading_en": "The seven modes",
+        "body_zh": "单行：单味药独用即可奏效，无需配伍。如独参汤——独用人参以救脱。\n\n相须：性能相似的药物合用，可显著增强疗效。如石膏配知母同清气分大热；大黄配芒硝同攻下结实。\n\n相使：以一药为主，另一药辅助提高其疗效。如黄芪配茯苓，茯苓利水渗湿，可使黄芪补气利水之功更显。\n\n相畏：一药之毒性或副作用为另一药所抑制。如生半夏之毒为生姜所制，故有「半夏畏生姜」之说。\n\n相杀：与相畏互文，指能消除或减弱另一药之毒副作用。生姜杀半夏之毒，即此意。\n\n相恶：一药能减弱另一药之疗效。如人参恶莱菔子——莱菔子之消导可减弱人参之补气。\n\n相反：两药合用能产生剧烈毒性或不良反应，应予避免。这是「十八反十九畏」歌诀的内容，临证用药严格禁忌。",
+        "body_en": "Single use (单行, dān xíng) — the herb is effective by itself and needs no companion. The classic example is the lone-ginseng decoction, in which ginseng alone is used to rescue a patient in collapse.\n\nMutual reinforcement (相须, xiāng xū) — two herbs of similar action used together produce a notably amplified effect. Gypsum (Shí Gāo) paired with anemarrhena (Zhī Mǔ) clears qi-level heat far more powerfully than either alone; rhubarb (Dà Huáng) paired with mirabilite (Máng Xiāo) purges accumulated heat from the bowels with combined force.\n\nMutual assistance (相使, xiāng shǐ) — one herb is primary, the other supports and enhances its effect. Astragalus (Huáng Qí) paired with poria (Fú Líng) is a classic case: poria's percolating action enhances astragalus's qi-tonifying and water-moving functions.\n\nMutual fear (相畏, xiāng wèi) — one herb's toxicity or side effect is restrained by the other. Raw pinellia (Shēng Bàn Xià) is toxic, but its toxicity is restrained by fresh ginger (Shēng Jiāng); hence the saying that \"pinellia fears ginger.\"\n\nMutual killing (相杀, xiāng shā) — the complementary phrasing of the same relationship: ginger \"kills\" the toxicity of pinellia. The terms \"fear\" and \"kill\" describe the same pair from each side.\n\nMutual aversion (相恶, xiāng wù) — one herb diminishes the therapeutic effect of the other. Ginseng \"detests\" radish seed (Lái Fú Zǐ): the dispersing action of radish seed undermines ginseng's qi-tonifying action.\n\nMutual opposition (相反, xiāng fǎn) — two herbs combined produce severe toxicity or adverse reaction, and must not be used together. This is the formal basis of the \"Eighteen Antagonisms and Nineteen Incompatibilities\" (十八反十九畏) memorized by every TCM student. These pairs are strictly avoided in clinical practice."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "十八反",
+        "pinyin": "shí bā fǎn",
+        "en": "The Eighteen Antagonisms",
+        "definition_zh": "传统记载的十八对相反药物组合，临证严格禁用。",
+        "definition_en": "Eighteen herb pairs traditionally listed as outright incompatible. They are memorized in mnemonic verse by every TCM student and strictly avoided in clinical formulas."
+      },
+      {
+        "zh": "十九畏",
+        "pinyin": "shí jiǔ wèi",
+        "en": "The Nineteen Mutual-Fears",
+        "definition_zh": "传统记载的十九组相畏组合，使用时须谨慎或回避。",
+        "definition_en": "Nineteen herb pairs in which one restrains or counteracts the other. Less absolute than the Eighteen Antagonisms, but used only with caution if at all."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "jun-chen-zuo-shi"
+      },
+      {
+        "type": "concept",
+        "key": "processing"
+      }
+    ],
+    "appears_in": [
+      "方剂中药物配伍关系 / Herb-pair relationships in every formula",
+      "本草典中的「相须」「相反」标签 / The synergy and incompatibility tags between herb pages"
+    ],
+    "further_reading": [
+      {
+        "type": "text",
+        "key": "shen_nong_ben_cao_jing"
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "seven-emotions-basics",
+        "title_zh": "七情合和基础",
+        "title_en": "Foundations of the Seven Modes of Herb Combination",
+        "items": [
+          {
+            "id": "se-01",
+            "prompt_zh": "石膏与知母同用以增强清热之力，此属七情中的哪种关系？",
+            "prompt_en": "Gypsum (Shi Gao) and Anemarrhena (Zhi Mu) are used together to enhance heat-clearing. This exemplifies which of the seven modes?",
+            "choices": [
+              {
+                "zh": "相使——一主一辅",
+                "en": "Xiang shi (assistant) — one primary herb with one auxiliary"
+              },
+              {
+                "zh": "相须——性能相似的药物合用，疗效显著增强",
+                "en": "Xiang xu (mutual need) — herbs with similar properties combined to markedly enhance the effect"
+              },
+              {
+                "zh": "相畏——一药制另一药之毒",
+                "en": "Xiang wei (mutual fear) — one herb restrains the other's toxicity"
+              },
+              {
+                "zh": "单行——单味独用",
+                "en": "Dan xing (solo use) — one herb used alone"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "石膏与知母皆为清气分热之要药，二者性能相似，合用后清热之力远胜单用，此为「相须」——需要彼此方得最佳效果。若一主一辅则为「相使」，但石膏知母在清热功效上地位相当，故属相须。",
+            "explanation_en": "Both Gypsum and Anemarrhena are premier qi-level heat-clearing herbs with similar properties. Combined, their heat-clearing power far exceeds either alone — this is xiang xu (mutual need), where herbs of similar nature require each other for optimal effect. If one herb were clearly primary and the other merely supportive, it would be xiang shi (assistant), but Gypsum and Anemarrhena are peers in their heat-clearing role."
+          },
+          {
+            "id": "se-02",
+            "prompt_zh": "生半夏有毒，与生姜同用可减弱其毒性。从半夏的角度而言，此属七情中的：",
+            "prompt_en": "Raw Pinellia (Sheng Ban Xia) is toxic; combining it with fresh Ginger (Sheng Jiang) reduces its toxicity. From the perspective of Pinellia, this relationship is:",
+            "choices": [
+              {
+                "zh": "相恶——疗效被削弱",
+                "en": "Xiang wu (mutual antagonism) — therapeutic effect diminished"
+              },
+              {
+                "zh": "相反——合用产生毒性",
+                "en": "Xiang fan (mutual opposition) — combination produces toxicity"
+              },
+              {
+                "zh": "相畏——自身毒性被另一药抑制",
+                "en": "Xiang wei (mutual fear) — its own toxicity is suppressed by the other herb"
+              },
+              {
+                "zh": "相须——协同增效",
+                "en": "Xiang xu (mutual need) — synergistic enhancement"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "从半夏角度看：半夏之毒为生姜所制，故半夏「畏」生姜。从生姜角度看则称「相杀」——生姜杀半夏之毒。相畏与相杀是同一现象的两面。「相恶」是疗效被减弱，「相反」是合用产生毒性——与此情形完全不同。",
+            "explanation_en": "From Pinellia's perspective: its toxicity is suppressed by Ginger, so Pinellia 'fears' Ginger (xiang wei). From Ginger's perspective, this is called xiang sha (mutual killing) — Ginger kills Pinellia's toxicity. Xiang wei and xiang sha are two perspectives on the same phenomenon. Xiang wu (antagonism) means therapeutic effect is diminished, and xiang fan (opposition) means the combination produces toxicity — both are entirely different situations."
+          },
+          {
+            "id": "se-03",
+            "prompt_zh": "人参与莱菔子同用时，莱菔子的消导之力会减弱人参的补气效果。此属七情中的：",
+            "prompt_en": "When Ginseng (Ren Shen) is combined with Radish Seed (Lai Fu Zi), the digestive-dispersing action of Lai Fu Zi diminishes Ginseng's qi-supplementing effect. This exemplifies:",
+            "choices": [
+              {
+                "zh": "相反",
+                "en": "Xiang fan (mutual opposition)"
+              },
+              {
+                "zh": "相恶——一药减弱另一药之疗效",
+                "en": "Xiang wu (mutual antagonism) — one herb diminishes the other's therapeutic effect"
+              },
+              {
+                "zh": "相畏",
+                "en": "Xiang wei (mutual fear)"
+              },
+              {
+                "zh": "相杀",
+                "en": "Xiang sha (mutual killing)"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "「相恶」指一药能减弱另一药之疗效。莱菔子消导下气，恰与人参补气之功相拮抗，故人参「恶」莱菔子。此非毒性反应（相反）、非解毒（相畏/相杀），而是功效的拮抗与削弱。临床上为避免此拮抗，补气方中多不用莱菔子。",
+            "explanation_en": "Xiang wu (mutual antagonism) means one herb diminishes the other's therapeutic effect. Radish Seed descends and disperses qi, directly counteracting Ginseng's qi-supplementing action, so Ginseng 'dislikes' Radish Seed. This is not a toxic reaction (xiang fan), not detoxification (xiang wei/sha), but a therapeutic antagonism. Clinically, qi-supplementing formulas avoid Radish Seed for this reason."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "processing",
+    "slug": "processing",
+    "name_zh": "炮制",
+    "name_pinyin": "Páo Zhì",
+    "name_en": "Pao Zhi — Herb Processing",
+    "summary_zh": "中药在使用前的传统加工方法。同一药物经不同炮制，其性能、疗效、毒性可发生显著变化。",
+    "summary_en": "The traditional methods of preparing Chinese herbs before use. The same plant, processed differently, can become essentially different medicines — with shifted thermal nature, altered direction of action, and reduced or eliminated toxicity.",
+    "category": "materia_medica",
+    "order": 11,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "炮制是中药学独有的、极具特色的一门技艺。通过净制、切制、炮炙等加工，可改变药物的性能、增强或减弱其疗效、降低或消除其毒性、便于贮藏与服用。一味药物未经炮制与经过不同方法炮制后，常已成为不同的药——这是中医「同药异用」之妙。\n\n炮制的方法历经千年演变，至明清而集大成，自《雷公炮炙论》以降，专著众多。现代《中国药典》对常用饮片的炮制规范有明确收载。",
+        "body_en": "Pao zhi is a discipline distinctive to Chinese materia medica: the systematic preparation of raw plant, mineral, and animal materials before they enter a prescription. Through cleaning, cutting, and various forms of processing — frying, steaming, calcining, soaking — the practitioner can alter an herb's properties, amplify or restrain its effects, reduce or eliminate its toxicity, and make it easier to store and to take. A single plant in raw, honey-fried, wine-fried, and charred forms is in clinical practice four different medicines, each with its own indications. This is one of the most distinctive techniques of the Chinese pharmacy.\n\nThe methods of pao zhi were refined across many centuries and reached classical maturity in the Ming and Qing dynasties. The earliest dedicated treatise — the Master Lei's Treatise on Processing (《雷公炮炙論》) — dates to the early medieval period, and many later monographs followed. The modern Chinese Pharmacopoeia codifies processing standards for common decoction pieces."
+      },
+      {
+        "heading_zh": "常见方法",
+        "heading_en": "Common methods",
+        "body_zh": "炒：包括清炒（无辅料）、麸炒（用麦麸）、土炒等。可缓和药性、增强健脾或止血之功。\n\n炙：以液体辅料拌炒，常见的有蜜炙、酒炙、醋炙、盐炙、姜汁炙。蜜炙润肺止咳、增强补益（如蜜炙黄芪、蜜炙甘草）；酒炙活血通经、引药上行（如酒大黄）；醋炙入肝、收敛止痛（如醋柴胡、醋香附）；盐炙引药下行入肾（如盐杜仲、盐巴戟天）；姜汁炙温中止呕、解毒（如姜半夏）。\n\n煅：以高温烧之，使药物质地酥脆、易于粉碎，并改变其性质。多用于矿物、贝壳类药物。\n\n蒸：水蒸或加酒蒸，常用于熟地黄等。地黄经九蒸九晒变熟地，由凉血生津之品转为补血滋阴之品。\n\n炒炭：炒至外黑内焦褐，存性，能止血。\n\n以上仅举其大端。具体到每一味药，所宜何法、所制何用，皆有数百年的经验沉淀。",
+        "body_en": "Dry-frying (炒, chǎo) — frying without liquid additives, sometimes with bran or earth as a heat buffer. Used to moderate harsh natures, strengthen Spleen-tonifying functions, or enhance the ability to stop bleeding.\n\nLiquid-frying (炙, zhì) — frying with a liquid additive that imparts its own properties. Honey-frying (蜜炙) moistens the Lung, soothes cough, and strengthens supplementing actions (honey-fried astragalus, honey-fried licorice are the most common examples). Wine-frying (酒炙) invigorates blood, frees the channels, and lifts the action of the herb upward (wine-fried rhubarb is much milder and more upward-directed than the raw form). Vinegar-frying (醋炙) directs the herb into the Liver and astringes for pain relief (vinegar-fried bupleurum, vinegar-fried cyperus). Salt-frying (盐炙) directs the herb downward and into the Kidney (salt-fried eucommia, salt-fried morinda). Ginger-juice-frying (姜汁炙) warms the middle, restrains nausea, and reduces toxicity (ginger-prepared pinellia is the standard form because raw pinellia is too harsh and toxic to use directly).\n\nCalcination (煅, duàn) — heating to high temperature so that the herb becomes brittle and easy to powder, and so that its properties are altered. Used chiefly for minerals and shells.\n\nSteaming (蒸, zhēng) — steaming with water or with wine. Most famously used for prepared rehmannia (熟地黄, Shú Dì Huáng), which is steamed and sun-dried in repeated cycles (classically nine times each). The repeated processing transforms it from raw rehmannia, which cools the blood and generates fluids, into prepared rehmannia, which tonifies blood and nourishes yin — a different medicine for different purposes.\n\nCharring (炒炭, chǎo tàn) — frying until the outside is black and the inside scorched brown, while the herb's essential nature is preserved (\"retaining the nature\" — 存性). Charred herbs gain the ability to stop bleeding. Charred rhubarb, for example, no longer purges aggressively but instead stops bleeding from heat.\n\nThese examples cover only the broad categories. The specific method appropriate to each herb, and the clinical purpose served by each version of it, represents centuries of accumulated experience."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "存性",
+        "pinyin": "cún xìng",
+        "en": "Retaining the nature",
+        "definition_zh": "炒炭等法虽外焦内黑，但药物的本性必须保留，不可烧成灰。",
+        "definition_en": "When charring an herb, although the outside is blackened, the essential nature of the herb must be preserved. Burning to actual ash destroys the medicine."
+      },
+      {
+        "zh": "九蒸九晒",
+        "pinyin": "jiǔ zhēng jiǔ shài",
+        "en": "Nine steamings and nine sunnings",
+        "definition_zh": "对某些药物（如地黄、何首乌）反复蒸晒的工艺，可使药性根本转变。",
+        "definition_en": "The classical multi-cycle processing of certain herbs — most famously raw rehmannia and fleeceflower root — through repeated steaming and sun-drying. The repeated processing transforms the herb's properties at a fundamental level."
+      },
+      {
+        "zh": "减毒增效",
+        "pinyin": "jiǎn dú zēng xiào",
+        "en": "Reducing toxicity, enhancing effect",
+        "definition_zh": "炮制的两大目的之一。",
+        "definition_en": "One of the two principal aims of pao zhi: simultaneously lowering an herb's toxicity and increasing its therapeutic action. Aconite and pinellia are the paradigmatic cases."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "four-natures-five-flavors"
+      },
+      {
+        "type": "concept",
+        "key": "seven-emotions"
+      }
+    ],
+    "appears_in": [
+      "本草页面的「炮制」一栏 / The processing-methods section of every herb page",
+      "如生大黄、酒大黄、大黄炭三者用途各异 / Examples such as raw, wine-fried, and charred rhubarb — three distinct medicines from one plant"
+    ],
+    "checkpoints": [
+      {
+        "id": "processing-basics",
+        "title_zh": "炮制基础",
+        "title_en": "Foundations of Herb Processing",
+        "items": [
+          {
+            "id": "pz-01",
+            "prompt_zh": "生地黄与熟地黄的主要区别源于何种炮制操作？经炮制后功效如何转变？",
+            "prompt_en": "What processing operation differentiates raw Rehmannia (Sheng Di Huang) from prepared Rehmannia (Shu Di Huang), and how does the therapeutic action change?",
+            "choices": [
+              {
+                "zh": "醋炙——由清热凉血变为入肝止痛",
+                "en": "Vinegar processing — from clearing heat and cooling blood to entering the Liver and stopping pain"
+              },
+              {
+                "zh": "九蒸九晒——由清热凉血、生津变为补血滋阴",
+                "en": "Nine cycles of steaming and sun-drying — from clearing heat, cooling blood, and generating fluids to supplementing blood and enriching yin"
+              },
+              {
+                "zh": "麸炒——由苦寒变为平和",
+                "en": "Bran frying — from bitter-cold to mild"
+              },
+              {
+                "zh": "煅制——由润变为收涩",
+                "en": "Calcining — from moistening to astringent"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "生地黄性寒，功善清热凉血、生津。经九蒸九晒之后变为熟地黄，药性由寒转温，功效由清转补——主治转为补血滋阴、填精益髓。这是炮制彻底改变同一药物性能与功效的经典范例。",
+            "explanation_en": "Raw Rehmannia is cold in nature, excelling at clearing heat, cooling blood, and generating fluids. After nine cycles of steaming and drying, it becomes Prepared Rehmannia (Shu Di Huang), with its nature shifting from cold to warm and its action from clearing to supplementing — now primarily tonifying blood, enriching yin, and filling essence and marrow. This is the classic example of processing fundamentally transforming a single herb into a different medicine."
+          },
+          {
+            "id": "pz-02",
+            "prompt_zh": "盐炙的主要目的是：",
+            "prompt_en": "The primary purpose of salt processing (yan zhi) is:",
+            "choices": [
+              {
+                "zh": "引药上行入头面",
+                "en": "To direct the herb upward to the head and face"
+              },
+              {
+                "zh": "增强活血通经之力",
+                "en": "To enhance blood-quickening and channel-freeing action"
+              },
+              {
+                "zh": "引药下行入肾——咸入肾，增强滋肾之功",
+                "en": "To direct the herb downward into the Kidney — salty enters the Kidney, enhancing its Kidney-nourishing action"
+              },
+              {
+                "zh": "润肺止咳",
+                "en": "To moisten the Lung and stop cough"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "盐炙利用「咸入肾」之理，引药下行以增强其滋补肾脏之功。典型例子如盐杜仲、盐巴戟天。酒炙则引药上行以活血通经（如酒大黄），蜜炙则润肺止咳增强补益（如蜜炙黄芪）。各种辅料炙法各有其引经归脏之理。",
+            "explanation_en": "Salt processing leverages the principle that 'salty enters the Kidney,' directing the herb's action downward to enhance its Kidney-nourishing effect. Classic examples include salt-processed Eucommia (Du Zhong) and Morinda (Ba Ji Tian). Wine processing directs upward for blood-quickening (e.g., wine-fried Rhubarb), while honey processing moistens the Lung and enhances supplementation (e.g., honey-fried Astragalus). Each processing adjuvant has its own directional and organ-targeting logic."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "four_diagnostic_methods",
+    "slug": "four-diagnostic-methods",
+    "name_zh": "四诊",
+    "name_pinyin": "Sì Zhěn",
+    "name_en": "The Four Diagnostic Methods",
+    "summary_zh": "中医诊察病情的四种基本方法：望、闻、问、切。四诊合参，方为周全。",
+    "summary_en": "The four examination methods of Chinese medicine — looking, listening and smelling, asking, and touching — used together to compose a complete clinical picture.",
+    "category": "diagnostic",
+    "order": 12,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "中医诊察病情，依靠望、闻、问、切四种方法，并称「四诊」。其源出于《内经》，至《难经》《伤寒论》而日臻完备。四诊各有所司，又须相互参证——单凭一诊则易偏，唯有四诊合参，方能洞察全局。",
+        "body_en": "Chinese medical diagnosis depends on four basic methods: looking, listening and smelling, asking, and touching — together known as the Four Examinations (四诊, sì zhěn). The framework descends from the Yellow Emperor's Inner Classic and was elaborated through the Classic of Difficulties and Zhang Zhongjing's Treatise on Cold Damage. Each of the four collects a distinct kind of information, and each must be interpreted in light of the others. Relying on any single one in isolation tends to mislead; only the four examinations \"considered together\" (四诊合参, sì zhěn hé cān) yield a sound diagnosis."
+      },
+      {
+        "heading_zh": "望诊",
+        "heading_en": "Looking",
+        "body_zh": "望诊是医师以视觉观察病人的方法，包括观察神色、形态、舌象、皮肤、分泌物排泄物等。其中尤以「望神」与「望舌」为要。望神可知正气盛衰与预后好坏；望舌则是中医独具特色的诊法，舌之质、形、色、苔皆为内在脏腑气血状态的外在显示。",
+        "body_en": "Looking (望, wàng) gathers visible signs: the patient's overall vitality, complexion, body shape, posture, the tongue, the skin, and the appearance of any secretions or excretions. Two specific applications are paramount. \"Inspecting the spirit\" (望神, wàng shén) — the brightness of the eyes, the responsiveness of expression, the alertness of speech — yields a quick reading of how strong the upright qi remains and gives a strong prognostic indicator. Tongue inspection (see the dedicated article on Tongue Diagnosis) is one of the most distinctive diagnostic techniques in Chinese medicine, in which the body, color, shape, and coating of the tongue all serve as windows onto the state of the internal organs and the qi and blood."
+      },
+      {
+        "heading_zh": "闻诊",
+        "heading_en": "Listening and smelling",
+        "body_zh": "闻诊兼指听声音与嗅气味。听语言之高低、呼吸之粗细、咳嗽之燥湿、肠鸣之有无；嗅口气、汗气、二便之气味。声音洪亮多属实，低微多属虚；气味腐臭多属实热，清淡少味多属寒虚。",
+        "body_en": "The single Chinese verb wén (闻) covers both hearing and smelling. The clinician listens to the patient's voice (loud and forceful versus weak and faint), the quality of the breathing (coarse or fine), the character of any cough (dry or moist, productive or barking), and the presence of bowel sounds. The clinician also smells — the breath, the sweat, the stools and urine — for clues to the nature of the disorder. Loud, forceful sounds and rancid odors generally indicate repletion and heat; quiet, faint sounds and bland odors generally indicate vacuity and cold."
+      },
+      {
+        "heading_zh": "问诊",
+        "heading_en": "Asking",
+        "body_zh": "问诊是医师向病人或家属询问病情的方法。明代张景岳提出「十问」歌，至今仍是问诊的基本框架：「一问寒热二问汗，三问头身四问便，五问饮食六胸腹，七聋八渴俱当辨，九问旧病十问因，再兼服药参机变。妇女尤必问经期，迟速闭崩皆可见。」临证之时，问诊为四诊之主干，最为详尽。",
+        "body_en": "Asking is the systematic interrogation of the patient — and, where necessary, the family — about the history and current state of the illness. The Ming dynasty physician Zhang Jingyue (張景嶽) condensed the key questions into a famous mnemonic, the \"Ten Questions Verse,\" which is still taught today: ask about cold and heat, about sweating, about head and body, about urination and defecation, about appetite and thirst, about chest and abdomen, about hearing, about old diseases and current medications. For women, ask about the menstrual cycle and any obstetric history. In actual clinical practice asking is the backbone of the four examinations, the most extensive and the most consequential."
+      },
+      {
+        "heading_zh": "切诊",
+        "heading_en": "Touching",
+        "body_zh": "切诊包括脉诊与按诊两大部分。脉诊以三指按于寸口，分寸关尺三部，体察脉之浮沉迟数、虚实弦滑，以候脏腑气血之状（详见「脉诊」专篇）。按诊则以触按肌肤、四肢、胸腹，辨其温凉、软硬、压痛之有无。",
+        "body_en": "Touching (切, qiè) comprises two parts: pulse-taking and palpation. Pulse-taking is performed at the radial artery just behind the wrist, using three fingers to feel three sequential positions (cun, guan, chi) and to discriminate the depth, rate, force, and quality of the pulse — floating or sinking, slow or rapid, vacuous or replete, wiry, slippery, choppy, and so on. The system has its own dedicated article in the Pulse Diagnosis page. Palpation extends touching to the skin, limbs, chest, and abdomen, judging warmth and coolness, softness and hardness, tenderness, and the location of any masses or accumulations."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "四诊合参",
+        "pinyin": "sì zhěn hé cān",
+        "en": "Four examinations considered together",
+        "definition_zh": "将四诊所得分别加以印证，综合判断，方能做出准确诊断。",
+        "definition_en": "The principle that the findings from each of the four methods must be cross-checked against the others. A finding that is supported by all four is robust; one that is contradicted by the others must be reinterpreted."
+      },
+      {
+        "zh": "十问歌",
+        "pinyin": "shí wèn gē",
+        "en": "The Ten Questions Verse",
+        "definition_zh": "明代张景岳所撰，为问诊基本提纲。",
+        "definition_en": "A short mnemonic verse by the Ming physician Zhang Jingyue listing the ten key categories of questions in a Chinese medical history."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "tongue-diagnosis"
+      },
+      {
+        "type": "concept",
+        "key": "pulse-diagnosis"
+      },
+      {
+        "type": "concept",
+        "key": "ba-gang"
+      }
+    ],
+    "appears_in": [
+      "全部证型的临床表现描述 / The clinical presentation of every pattern in the database",
+      "证型条目下的「舌象」「脉象」字段 / The tongue and pulse fields on every pattern page"
+    ],
+    "checkpoints": [
+      {
+        "id": "four-dx-basics",
+        "title_zh": "四诊基础",
+        "title_en": "Foundations of the Four Diagnostic Methods",
+        "items": [
+          {
+            "id": "fd-01",
+            "prompt_zh": "四诊之中，哪项诊法最常被临床忽视，但中医强调「四诊合参」不可偏废？其最核心的意义是什么？",
+            "prompt_en": "Which of the four diagnostic methods is most commonly underutilized in clinical practice, and why does Chinese medicine insist on 'combining all four methods'?",
+            "choices": [
+              {
+                "zh": "望诊——最不重要，可有可无",
+                "en": "Inspection (wang) — least important, optional"
+              },
+              {
+                "zh": "闻诊——听声嗅气，难以客观量化，但可提供其他诊法无法获得的气味、声音信息",
+                "en": "Auscultation-olfaction (wen) — hearing sounds and smelling odors is hard to quantify, but provides information unavailable from any other method"
+              },
+              {
+                "zh": "问诊——患者自述不可靠",
+                "en": "Inquiry (wen) — patient self-report is unreliable"
+              },
+              {
+                "zh": "切诊——仅凭脉象即可做出完整诊断",
+                "en": "Palpation (qie) — pulse alone suffices for a complete diagnosis"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "闻诊（听声音、嗅气味）在四诊中最易被忽略，但能提供独特信息——如咳声辨寒热、口气辨胃热、尿臭辨湿热等。中医强调「四诊合参」，即望闻问切缺一不可，互相印证方能全面。单凭任何一诊（包括脉诊）都不足以做出准确诊断。",
+            "explanation_en": "Auscultation-olfaction (wen) is the most commonly neglected of the four methods, yet it provides unique information unavailable from any other approach — the sound of the cough differentiates cold from heat, halitosis suggests Stomach heat, and the smell of urine reveals damp-heat. Chinese medicine insists on 'combining all four methods' (si zhen he can) because each provides data the others cannot. No single method — including pulse diagnosis — is sufficient for an accurate diagnosis on its own."
+          },
+          {
+            "id": "fd-02",
+            "prompt_zh": "一位患者自述无不适，但望诊见面色萎黄，切诊脉细弱。此情况最能说明四诊合参的哪一层意义？",
+            "prompt_en": "A patient reports no discomfort, but inspection reveals a sallow complexion, and palpation finds a thin weak pulse. This scenario best illustrates which aspect of combining the four diagnostic methods?",
+            "choices": [
+              {
+                "zh": "问诊最可靠，望切不必做",
+                "en": "Inquiry is most reliable; inspection and palpation are unnecessary"
+              },
+              {
+                "zh": "四诊可互相补充——问诊无异常不代表无病，望诊和切诊可发现主观不自知的客观体征",
+                "en": "The four methods complement each other — absence of subjective complaints does not mean absence of disease; inspection and palpation can reveal objective signs the patient is unaware of"
+              },
+              {
+                "zh": "面色和脉象不重要，主诉最准确",
+                "en": "Complexion and pulse are unimportant; chief complaint is most accurate"
+              },
+              {
+                "zh": "只做切诊即可",
+                "en": "Palpation alone is sufficient"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "此例体现了四诊合参的核心价值：患者主观无不适（问诊未发现异常），但望诊所见面色萎黄提示血虚或脾虚，切诊脉细弱证实气血不足。客观体征（望、切所得）可发现患者自身尚未察觉的病理变化。不同诊法各有侧重，互相验证、互为补充。",
+            "explanation_en": "This case illustrates the core value of combining all four methods: the patient subjectively reports nothing wrong (inquiry finds no abnormality), but inspection reveals a sallow complexion suggesting blood or Spleen vacuity, and the thin weak pulse on palpation confirms qi-blood insufficiency. Objective signs (from inspection and palpation) can detect pathological changes the patient is not yet aware of. Each method has its own focus, and they verify and complement each other."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "pulse_diagnosis",
+    "slug": "pulse-diagnosis",
+    "name_zh": "脉诊",
+    "name_pinyin": "Mài Zhěn",
+    "name_en": "Pulse Diagnosis",
+    "summary_zh": "中医通过切按寸口脉以察气血、辨脏腑的诊法。寸关尺三部，浮中沉三候，二十八脉皆有其名。",
+    "summary_en": "The Chinese medical art of palpating the radial pulse to read the state of qi, blood, and the internal organs. Three positions and three depths combine with twenty-eight named pulse qualities to compose a remarkably granular clinical sign.",
+    "category": "diagnostic",
+    "order": 13,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "脉诊源远流长，自《内经》《难经》已有详述，至晋代王叔和《脉经》集其大成。其法以三指按于患者腕后桡动脉，分为寸、关、尺三部，每部又有浮、中、沉三候。三部分候不同脏腑：左寸候心，左关候肝，左尺候肾；右寸候肺，右关候脾，右尺候命门。\n\n临证之时，须综合脉之位（浮沉）、数（迟数）、形（粗细长短）、势（有力无力）、律（齐与不齐）五大方面，再以二十八脉之名加以归纳，方能提示病情之性质与所在。脉诊须与他诊参证，不可独凭一脉而定证。",
+        "body_en": "Pulse diagnosis has a long history in Chinese medicine, with detailed material already in the Yellow Emperor's Inner Classic and the Classic of Difficulties (《難經》, Nán Jīng), and reaching a first definitive synthesis in the Pulse Classic (《脈經》, Mài Jīng) of the Jin dynasty physician Wang Shuhe (王叔和). The method places three fingers on the radial artery just behind the patient's wrist. The three finger positions — cun (寸, distal), guan (关, middle), and chi (尺, proximal) — each correspond to particular organs, and at each position the clinician feels at three depths: superficial, middle, and deep. On the left wrist, cun reflects the Heart, guan reflects the Liver, and chi reflects the Kidney; on the right wrist, cun reflects the Lung, guan reflects the Spleen, and chi reflects the Mingmen (the gate-of-life region of the Kidney).\n\nIn practice the clinician evaluates five qualities of the pulse together: position (floating or sinking), rate (slow or rapid), shape (thin or thick, long or short), force (strong or weak), and rhythm (regular or irregular). These observations are then condensed into one or more of the twenty-eight named pulse types, each of which carries clinical implications. As with all the four examinations, pulse findings must be integrated with the others, never relied upon in isolation."
+      },
+      {
+        "heading_zh": "常见脉象（择其要者）",
+        "heading_en": "The most clinically important pulses",
+        "body_zh": "浮脉：轻取即得，重按反弱。主表证。新感外邪，邪气在表，正气抗邪于外，故脉浮。\n\n沉脉：轻取不应，重按始得。主里证。病在脏腑或气血衰，故脉沉。\n\n迟脉：一息不足四至（约每分钟<60）。主寒证。寒凝气滞，血行迟缓。\n\n数脉：一息五至以上（约每分钟>90）。主热证。热盛血行加速。\n\n虚脉：三部脉举按皆无力。主一切虚证。\n\n实脉：三部脉举按皆有力。主一切实证。\n\n弦脉：端直以长，如按琴弦。主肝胆病、痛证、痰饮、疟疾。\n\n滑脉：往来流利，如珠走盘。主痰饮、食积、实热，亦见于妊娠。\n\n涩脉：往来艰涩，如轻刀刮竹。主精伤血少、气滞血瘀。\n\n细脉：脉细如线而应指明显。主诸虚劳损，尤主血虚、阴虚。\n\n洪脉：脉来如波涛汹涌，来盛去衰。主里热亢盛。\n\n以上十脉为临证最常见、最具诊断价值者。其余十八脉在《脉经》中另有详论。",
+        "body_en": "Floating pulse (浮, fú): felt easily on light pressure, weakening or disappearing on heavy pressure. Indicates an exterior pattern. The body's defensive qi is mobilized at the surface to fight the pathogen, drawing the pulse outward.\n\nSinking pulse (沉, chén): not felt on light pressure, requires deep pressure to detect. Indicates an interior pattern — disease has entered the organs, or the qi and blood are weakened and unable to surface.\n\nSlow pulse (迟, chí): fewer than four beats per breath of the clinician (roughly under sixty per minute). Indicates a cold pattern. Cold congeals and stagnates qi, slowing the movement of blood.\n\nRapid pulse (数, shuò): more than five beats per breath (roughly over ninety per minute). Indicates a heat pattern. Heat accelerates the movement of blood.\n\nVacuous pulse (虚, xū): all three positions and all three depths are weak and forceless. Indicates a vacuity pattern of any kind.\n\nReplete pulse (实, shí): all three positions and depths feel forceful. Indicates an repletion pattern of any kind.\n\nWiry pulse (弦, xián): straight, taut, and long, \"like pressing on a guitar string.\" Indicates Liver and Gallbladder disorders, pain, phlegm-fluid retention, and malaria.\n\nSlippery pulse (滑, huá): the beats roll smoothly under the fingers \"like beads sliding on a plate.\" Indicates phlegm-fluid retention, food accumulation, and repletion heat — and also occurs normally in pregnancy.\n\nChoppy pulse (涩, sè): the beats feel rough and obstructed, \"like a light blade scraping bamboo.\" Indicates damaged essence, blood vacuity, and qi stagnation with blood stasis.\n\nThin pulse (细, xì): like a fine thread but distinctly felt. Indicates patterns of vacuity, especially blood vacuity and yin vacuity.\n\nSurging pulse (洪, hóng): the beat arrives in great waves — full and powerful coming, weaker going. Indicates intense interior heat at the qi level.\n\nThese ten are the pulses encountered most frequently in clinical practice. The remaining eighteen of the standard twenty-eight are catalogued in the Pulse Classic and other dedicated texts."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "寸关尺",
+        "pinyin": "cùn guān chǐ",
+        "en": "Cun, guan, chi",
+        "definition_zh": "寸口脉的三个候位，自远端向近端依次为寸、关、尺。",
+        "definition_en": "The three sequential pulse positions on the radial artery just behind the wrist — cun (distal), guan (middle), and chi (proximal). Each corresponds to particular organs."
+      },
+      {
+        "zh": "浮中沉",
+        "pinyin": "fú zhōng chén",
+        "en": "Superficial, middle, deep",
+        "definition_zh": "在每一部位上以不同力度按取，可得三层之脉。",
+        "definition_en": "The three depths at which each position is palpated — light pressure for the superficial pulse, moderate for the middle, and firm for the deep."
+      },
+      {
+        "zh": "二十八脉",
+        "pinyin": "èr shí bā mài",
+        "en": "The twenty-eight pulses",
+        "definition_zh": "传统总结的二十八种脉象。",
+        "definition_en": "The traditional twenty-eight named pulse qualities. Most clinical decision-making turns on the ten or so most common, but the full list provides finer discriminations for difficult cases."
+      },
+      {
+        "zh": "胃神根",
+        "pinyin": "wèi shén gēn",
+        "en": "Stomach, spirit, root",
+        "definition_zh": "正常脉象的三个特征：从容和缓有胃气、节律齐整有神、沉取应指有根。",
+        "definition_en": "The three qualities of a healthy normal pulse: \"stomach\" (a relaxed and unhurried quality reflecting good digestive function), \"spirit\" (regular rhythm reflecting an intact spirit), and \"root\" (a firm pulse at the deep chi position reflecting an intact Kidney foundation)."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "four-diagnostic-methods"
+      },
+      {
+        "type": "concept",
+        "key": "tongue-diagnosis"
+      },
+      {
+        "type": "concept",
+        "key": "ba-gang"
+      }
+    ],
+    "appears_in": [
+      "证型条目下的「脉象」字段 / The pulse field on every pattern page"
+    ],
+    "further_reading": [
+      {
+        "type": "text",
+        "key": "huang_di_nei_jing"
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "pulse-basics",
+        "title_zh": "脉诊基础",
+        "title_en": "Foundations of Pulse Diagnosis",
+        "items": [
+          {
+            "id": "pd-01",
+            "prompt_zh": "脉浮主表，脉沉主里。以下哪种理解最准确？",
+            "prompt_en": "A floating pulse indicates an exterior pattern; a deep pulse indicates an interior pattern. Which interpretation is most accurate?",
+            "choices": [
+              {
+                "zh": "浮脉一定是外感，沉脉一定是内伤",
+                "en": "A floating pulse always means external contraction; a deep pulse always means internal damage"
+              },
+              {
+                "zh": "浮脉提示病位偏表、正气趋外抗邪；沉脉提示病位偏里、正气内敛或邪气深伏，但须结合有力无力进一步辨虚实",
+                "en": "A floating pulse suggests the disease is at the exterior with upright qi moving outward to resist; a deep pulse suggests the disease is interior with qi drawn inward or the pathogen deeply lodged — but force vs. forcelessness must be assessed to further differentiate repletion from vacuity"
+              },
+              {
+                "zh": "浮沉只反映体质胖瘦，不具诊断意义",
+                "en": "Floating and deep reflect only body habitus (thin vs. heavy), with no diagnostic significance"
+              },
+              {
+                "zh": "所有健康人的脉都应当不浮不沉",
+                "en": "All healthy pulses should be neither floating nor deep"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "浮脉提示邪在表或正气趋外抗邪，但浮而有力为表实、浮而无力为表虚（或阴虚阳浮）。沉脉提示病在里，但沉而有力为里实、沉而无力为里虚。单凭浮沉只能定病位（表或里），须进一步辨有力无力才能定虚实。且秋冬脉偏沉、春夏脉偏浮，体质亦影响脉位。",
+            "explanation_en": "A floating pulse indicates the disease is at the exterior level or the upright qi is moving outward to fight the pathogen, but floating-forceful means exterior repletion while floating-forceless means exterior vacuity (or yin-deficient yang floating). A deep pulse indicates interior disease, but deep-forceful means interior repletion while deep-forceless means interior vacuity. Floating vs. deep alone determines location (exterior/interior); assessing force vs. forcelessness is required to determine repletion vs. vacuity. Furthermore, seasonal and constitutional factors also influence pulse depth."
+          },
+          {
+            "id": "pd-02",
+            "prompt_zh": "寸口脉分寸、关、尺三部。以下关于三部分候脏腑的对应中，哪组最准确（左手）？",
+            "prompt_en": "The cun-kou pulse is divided into cun, guan, and chi positions. For the left hand, which organ correspondences are correct?",
+            "choices": [
+              {
+                "zh": "左寸候心，左关候肝胆，左尺候肾（水）",
+                "en": "Left cun reads the Heart, left guan reads the Liver and Gallbladder, left chi reads the Kidney (water)"
+              },
+              {
+                "zh": "左寸候肺，左关候脾胃，左尺候肾",
+                "en": "Left cun reads the Lung, left guan reads the Spleen and Stomach, left chi reads the Kidney"
+              },
+              {
+                "zh": "三部无脏腑对应，仅反映气血总量",
+                "en": "The three positions have no organ correspondences, reflecting only overall qi-blood volume"
+              },
+              {
+                "zh": "左右手对应相同脏腑",
+                "en": "Both hands correspond to the same organs"
+              }
+            ],
+            "correct_index": 0,
+            "explanation_zh": "左手寸关尺分候心、肝胆、肾（水/阴）；右手寸关尺分候肺、脾胃、肾（命门/阳）。左右有别，三部各有所主。此为脉诊的基础框架，通过三部九候的系统触诊可判断各脏腑之盛衰虚实。",
+            "explanation_en": "The left hand cun-guan-chi reads Heart, Liver-Gallbladder, and Kidney (water/yin) respectively; the right hand reads Lung, Spleen-Stomach, and Kidney (ming men/yang). Left and right differ, and each position governs specific organs. This framework is the basis of pulse diagnosis — through systematic palpation of three positions at three depths, the condition of each organ can be assessed."
+          },
+          {
+            "id": "pd-03",
+            "prompt_zh": "弦脉的特征是「端直以长，如按琴弦」。以下哪个与弦脉的临床意义最相关？",
+            "prompt_en": "The wiry pulse (xian mai) is described as \"straight and long like pressing a lute string.\" Which clinical association is most relevant?",
+            "choices": [
+              {
+                "zh": "弦脉主肝胆病、痛证、痰饮——反映肝气不疏或气机紧张",
+                "en": "The wiry pulse indicates Liver-Gallbladder disorders, pain patterns, and phlegm-fluid retention — reflecting Liver qi constraint or tension of the qi dynamic"
+              },
+              {
+                "zh": "弦脉主血虚",
+                "en": "The wiry pulse indicates blood vacuity"
+              },
+              {
+                "zh": "弦脉主阳虚寒证",
+                "en": "The wiry pulse indicates yang vacuity-cold"
+              },
+              {
+                "zh": "弦脉主气虚下陷",
+                "en": "The wiry pulse indicates qi vacuity with sinking"
+              }
+            ],
+            "correct_index": 0,
+            "explanation_zh": "弦脉端直如按琴弦，主肝胆病（肝主疏泄，气机不畅则脉弦）、痛证（「诸痛皆弦」）、痰饮。少阳证之脉弦、肝气郁结之脉弦、高血压之脉弦皆为典型。弦脉反映的是脉管张力增高，与肝主筋、调畅气机的功能密切相关。",
+            "explanation_en": "The wiry pulse feels taut like a lute string and primarily indicates Liver-Gallbladder disease (the Liver governs free coursing; qi constraint makes the pulse wiry), pain patterns ('all pain gives a wiry pulse'), and phlegm-fluid retention. Classic examples include the wiry pulse of Shaoyang pattern, Liver qi stagnation, and hypertension. The wiry quality reflects increased vessel wall tension, closely related to the Liver's governance of sinews and regulation of the qi dynamic."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "tongue_diagnosis",
+    "slug": "tongue-diagnosis",
+    "name_zh": "舌诊",
+    "name_pinyin": "Shé Zhěn",
+    "name_en": "Tongue Diagnosis",
+    "summary_zh": "通过观察舌质与舌苔的色、形、态以察脏腑气血。是中医独具特色的诊法。",
+    "summary_en": "The inspection of tongue body and tongue coating — color, shape, moisture, and texture — to read the state of the internal organs, qi, blood, and pathogens. One of the most distinctive diagnostic methods of Chinese medicine.",
+    "category": "diagnostic",
+    "order": 14,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "舌为「心之苗」、「脾之外候」，又通过经络与诸脏相连，故脏腑气血之变化，常如实地反映于舌。中医舌诊起源甚古，至元代《敖氏伤寒金镜录》始成专书，明清以降发展尤盛。\n\n舌诊主要观察两大方面：一为舌质（即舌之本体），二为舌苔（覆盖于舌面之苔状物）。舌质主要反映脏腑气血之虚实，舌苔主要反映胃气之盛衰与邪气之性质浅深。",
+        "body_en": "The tongue is called \"the sprout of the Heart\" and \"the exterior reflector of the Spleen,\" and through its channel connections it is linked to nearly every internal organ. Changes in the qi, blood, fluids, and organs are therefore mirrored on the tongue with unusual fidelity. Tongue inspection has very ancient roots, but it became a distinct subdiscipline only with the Yuan dynasty work the Golden Mirror of Cold Damage Tongue Inspection (《敖氏傷寒金鏡錄》), and developed rapidly through the Ming and Qing.\n\nTwo aspects of the tongue are evaluated in parallel. The tongue body (舌质, shé zhì) — the underlying flesh — primarily reflects the state of the zang-fu organs and the qi and blood. The tongue coating (舌苔, shé tāi) — the layer that overlies the body — primarily reflects the strength of stomach qi and the nature and depth of any pathogen present."
+      },
+      {
+        "heading_zh": "舌质",
+        "heading_en": "Tongue body",
+        "body_zh": "正常舌质淡红润泽，大小适中。常见异常如下：\n\n淡白舌：色较常人为淡，主气血两虚或阳虚有寒。\n红舌：色较常人为红，主热证。鲜红主实热，绛红主热入营血。\n紫舌：可见全舌或局部紫色。紫暗或有瘀斑者主血瘀；青紫主寒凝或阳虚。\n胖大舌：舌体较常为胖大，齿痕显，主脾虚水湿或痰饮。\n瘦薄舌：舌体瘦小，主气血阴液亏虚。\n裂纹舌：舌面有沟裂，主阴虚或血虚。",
+        "body_en": "A normal tongue body is pale red and moist, of medium size and shape. Common abnormalities and their meanings:\n\nPale tongue: lighter in color than normal. Indicates qi and blood vacuity or yang vacuity with cold.\n\nRed tongue: darker in red than normal. Indicates a heat pattern. A bright red tongue indicates repletion heat; a deep crimson (绛, jiàng) tongue indicates that heat has entered the nutritive (营, yíng) and blood levels, a serious development in febrile disease.\n\nPurple tongue: the whole tongue or patches of it appear purple. A dark purple or stasis-spotted tongue indicates blood stasis; a bluish-purple tongue indicates congealing cold or yang vacuity.\n\nEnlarged tongue: the tongue is bigger than the patient's mouth comfortably accommodates, often with tooth-marks at the edges from pressing against the teeth. Indicates Spleen vacuity with damp accumulation or phlegm-fluid retention.\n\nThin tongue: a notably small, thin tongue indicates depletion of qi, blood, or yin fluids.\n\nCracked tongue: visible furrows on the tongue surface. Indicates yin vacuity or blood vacuity, depending on the pattern of cracks."
+      },
+      {
+        "heading_zh": "舌苔",
+        "heading_en": "Tongue coating",
+        "body_zh": "正常舌苔薄白而润。常见异常如下：\n\n白苔：薄白多正常或主表证、寒证；白厚多湿浊内停。\n黄苔：主热证。淡黄主热轻，深黄主热重，焦黄主热极伤津。\n灰黑苔：多主里热重证或寒湿重证，须依舌质辨之。\n厚苔：苔质厚而多腻，主湿、痰、食积。\n薄苔：苔薄如常，多正气未虚而病情未甚。\n腻苔：苔粘腻成片，主湿浊痰食。\n干苔：津液不足或热盛伤津。\n剥苔：舌苔片状剥落如地图，主胃气受损或胃阴亏耗。",
+        "body_en": "A normal tongue coating is thin, white, and moist. Common abnormalities:\n\nWhite coating: a thin white coating may be normal or may indicate an exterior or cold pattern. A thick white coating indicates accumulation of damp turbidity in the interior.\n\nYellow coating: indicates a heat pattern. Pale yellow indicates mild heat; deep yellow indicates strong heat; scorched yellow indicates extreme heat that has begun to damage fluids.\n\nGray or black coating: indicates either severe interior heat or severe cold-damp, depending on the moistness of the tongue and the color of the body beneath it.\n\nThick coating: a notably thickened, often greasy coating indicates dampness, phlegm, or food accumulation.\n\nThin coating: a coating of normal thinness usually indicates that the upright qi is not yet damaged and the illness is not severe.\n\nGreasy coating (腻, nì): the coating appears sticky, oily, or curdled. Indicates damp turbidity, phlegm, or food stagnation.\n\nDry coating: indicates insufficient body fluids — either depleted or scorched off by heat.\n\nPeeled coating: patches of the coating have flaked away, leaving \"map-like\" bare areas. Indicates damaged stomach qi or depleted stomach yin."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "舌质",
+        "pinyin": "shé zhì",
+        "en": "Tongue body",
+        "definition_zh": "舌的本体。主要反映脏腑气血的状态。",
+        "definition_en": "The tongue's underlying flesh. Reflects the constitutional state of the qi, blood, yin, and yang of the organs."
+      },
+      {
+        "zh": "舌苔",
+        "pinyin": "shé tāi",
+        "en": "Tongue coating",
+        "definition_zh": "舌面之苔状物。主要反映胃气与邪气。",
+        "definition_en": "The film overlying the tongue body. Reflects the strength of stomach qi and the nature, depth, and intensity of any pathogenic factor present."
+      },
+      {
+        "zh": "胃气",
+        "pinyin": "wèi qì",
+        "en": "Stomach qi",
+        "definition_zh": "正常的胃气表现为薄白润苔。胃气存则有救，胃气绝则难治。",
+        "definition_en": "Healthy stomach qi shows on the tongue as a thin, moist, white coating. The classical phrase: \"if stomach qi remains there is hope; if stomach qi is gone the case is grave.\""
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "four-diagnostic-methods"
+      },
+      {
+        "type": "concept",
+        "key": "pulse-diagnosis"
+      },
+      {
+        "type": "concept",
+        "key": "ba-gang"
+      }
+    ],
+    "appears_in": [
+      "证型条目下的「舌象」字段 / The tongue field on every pattern page"
+    ],
+    "checkpoints": [
+      {
+        "id": "tongue-basics",
+        "title_zh": "舌诊基础",
+        "title_en": "Foundations of Tongue Diagnosis",
+        "items": [
+          {
+            "id": "td-01",
+            "prompt_zh": "舌质（舌体）与舌苔的诊断意义有何根本区别？",
+            "prompt_en": "What is the fundamental diagnostic distinction between the tongue body (she zhi) and the tongue coating (she tai)?",
+            "choices": [
+              {
+                "zh": "两者无区别，均反映脏腑气血",
+                "en": "No distinction — both reflect the state of the organs, qi, and blood"
+              },
+              {
+                "zh": "舌质反映脏腑气血的盛衰虚实（正气状态），舌苔反映病邪的性质与深浅（邪气状态）",
+                "en": "The tongue body reflects the condition of the organs, qi, and blood (state of upright qi); the tongue coating reflects the nature and depth of the pathogen (state of pathogenic qi)"
+              },
+              {
+                "zh": "舌质仅反映心脏功能，舌苔仅反映胃肠功能",
+                "en": "The tongue body reflects only Heart function; the coating reflects only gastrointestinal function"
+              },
+              {
+                "zh": "舌苔比舌质更重要",
+                "en": "The tongue coating is more important than the body"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "舌质（包括色泽、形态、动态）主要反映脏腑气血的盛衰——淡舌主虚，红舌主热，紫舌主瘀；胖舌主湿，瘦舌主阴虚。舌苔（包括色泽、厚薄、润燥、腻否）主要反映邪气的性质——白苔主寒，黄苔主热；薄苔邪浅，厚苔邪深；腻苔主湿浊痰饮。二者分别判读，合参方能全面。",
+            "explanation_en": "The tongue body (color, shape, motility) primarily reflects the condition of the organs and qi-blood: a pale body indicates vacuity, red indicates heat, purple indicates stasis; a swollen body indicates dampness, a thin body indicates yin vacuity. The tongue coating (color, thickness, moisture, greasiness) primarily reflects the nature of the pathogen: white coating indicates cold, yellow indicates heat; a thin coating means the pathogen is superficial, thick means it is deep; a greasy coating indicates dampness-turbidity or phlegm. Both must be read separately and combined for a complete picture."
+          },
+          {
+            "id": "td-02",
+            "prompt_zh": "一位患者舌红绛无苔。此舌象最可能提示：",
+            "prompt_en": "A patient presents with a crimson tongue body with no coating. This tongue most likely indicates:",
+            "choices": [
+              {
+                "zh": "寒湿内盛",
+                "en": "Internal cold-damp repletion"
+              },
+              {
+                "zh": "气虚",
+                "en": "Qi vacuity"
+              },
+              {
+                "zh": "阴液严重耗伤，热入营血",
+                "en": "Severe depletion of yin fluids, with heat penetrating to the ying-blood level"
+              },
+              {
+                "zh": "外感风寒表证",
+                "en": "Wind-cold exterior pattern"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "舌红绛（深红）说明热邪极盛或阴液严重亏损，无苔（光剥）说明胃阴枯竭、苔已脱落。此舌象常见于温热病营血分证或严重阴虚证——热入营血、阴液被大量消耗。寒湿内盛应见舌淡胖苔白腻，气虚应见舌淡，外感风寒应见苔薄白。",
+            "explanation_en": "A crimson (deep red) tongue body indicates extreme heat or severe yin depletion; absent coating (mirror tongue) indicates exhaustion of Stomach yin with the coating having been stripped away. This tongue is typically seen in ying-blood level patterns of warm disease or severe yin vacuity — heat has penetrated deeply and consumed yin fluids massively. Cold-damp repletion would show a pale swollen tongue with white greasy coating; qi vacuity would show a pale tongue; wind-cold exterior would show a thin white coating."
+          },
+          {
+            "id": "td-03",
+            "prompt_zh": "舌苔黄厚腻最常见于以下哪类证候？",
+            "prompt_en": "A thick, yellow, greasy tongue coating is most commonly associated with which type of pattern?",
+            "choices": [
+              {
+                "zh": "气虚证",
+                "en": "Qi vacuity"
+              },
+              {
+                "zh": "血虚证",
+                "en": "Blood vacuity"
+              },
+              {
+                "zh": "湿热内蕴——湿与热互结，邪气深伏",
+                "en": "Internal damp-heat accumulation — dampness and heat binding together, with the pathogen lodged deeply"
+              },
+              {
+                "zh": "风寒表证",
+                "en": "Wind-cold exterior pattern"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "黄苔主热，厚苔主邪深，腻苔主湿浊痰饮。三者合一为黄厚腻苔，是湿热内蕴的典型舌象——湿与热互结、邪气深伏中焦或下焦。常见于大肠湿热、膀胱湿热、中焦湿热等证型。气虚和血虚多见淡舌薄白苔，风寒表证见薄白苔。",
+            "explanation_en": "A yellow coating indicates heat, a thick coating indicates deep-lying pathogen, and a greasy coating indicates dampness-turbidity or phlegm. All three combined — thick, yellow, greasy — are the classic tongue sign of internal damp-heat accumulation, where dampness and heat are bound together with the pathogen lodged deeply in the middle or lower burner. This is characteristic of Large Intestine damp-heat, Bladder damp-heat, and Middle Burner damp-heat patterns. Qi and blood vacuity typically show pale tongue with thin white coating; wind-cold exterior shows thin white coating."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  },
+  {
+    "key": "six_evils",
+    "slug": "six-evils",
+    "name_zh": "六淫",
+    "name_pinyin": "Liù Yín",
+    "name_en": "The Six External Pathogenic Factors",
+    "summary_zh": "风、寒、暑、湿、燥、火六种外感病邪，是中医外因致病的总称。",
+    "summary_en": "Wind, cold, summer-heat, dampness, dryness, and fire — the six external pathogenic factors of Chinese medicine, the standard framework for understanding how environmental influences cause disease.",
+    "category": "foundational",
+    "order": 15,
+    "sections": [
+      {
+        "heading_zh": "概述",
+        "heading_en": "Overview",
+        "body_zh": "六淫者，风、寒、暑、湿、燥、火也。本为自然界正常的气候变化，称「六气」；惟当其太过、不及、或非其时而有其气，乃成致病之邪，故称「六淫」。「淫」者，过也、邪也。\n\n六淫致病各有所偏，且常相互兼夹（如风寒、风热、湿热、寒湿等），亦可互相转化（如寒邪入里化热）。它们多从皮毛口鼻而入，初起属表，进而入里。识别六淫的特性，是辨识外感病的第一步。",
+        "body_en": "The Six Evils — wind (风, fēng), cold (寒, hán), summer-heat (暑, shǔ), dampness (湿, shī), dryness (燥, zào), and fire (火, huǒ) — are the six normal climatic influences considered as causes of disease. In their natural rhythm they are simply the \"six qi\" of the seasons; only when they become excessive, deficient, or arrive out of season do they become pathogenic. The term yín (淫) means \"overflowing,\" \"excessive,\" \"deviant.\"\n\nEach pathogen has its characteristic signs and tendencies, and in real cases they typically combine — wind-cold, wind-heat, damp-heat, cold-damp, and so on. They can also transform into one another over time; an externally contracted cold pathogen, for example, often \"transforms into heat\" once it has lodged in the interior. The six evils typically enter through the skin, hair, mouth, or nose, beginning as exterior patterns and progressing inward if not resolved. Recognizing the signature of each pathogen is the first step in diagnosing externally contracted disease."
+      },
+      {
+        "heading_zh": "六邪的特性",
+        "heading_en": "The signature of each pathogen",
+        "body_zh": "风：「风为百病之长」。性轻扬开泄、善行而数变。多自皮毛口鼻而入，常为他邪之先导。主症为恶风、发热、汗出、头痛、鼻塞、症状部位游走不定。多见于春。\n\n寒：性寒凉、凝滞、收引。寒邪伤阳，凝滞经脉则痛，收引腠理则无汗。主症为恶寒、无汗、头身疼痛、肢冷、舌淡苔白、脉浮紧。多见于冬。\n\n暑：性炎热、升散、易耗气伤津，每多兼湿。主症为壮热、汗多、烦渴、气短乏力、小便短赤。仅见于夏。\n\n湿：性重浊、粘滞、趋下。湿邪困脾，阻遏气机。主症为身重、头如裹、胸闷、纳呆、便溏、苔腻。病程缠绵。多见于长夏。\n\n燥：性干涩、易伤津液，且最易伤肺。主症为口鼻干燥、皮肤干裂、干咳少痰、便干。多见于秋。其又分凉燥（兼寒）与温燥（兼热）。\n\n火（热）：性炎上、易耗气伤津、易生风动血、易致肿疡。主症为高热、口渴、面赤、心烦、便秘、尿赤、舌红苔黄、脉数。火与热同类而程度不同。",
+        "body_en": "Wind (风, fēng): \"the chief of the hundred diseases.\" Wind is light, ascending, dispersing, swift, and constantly changing. It enters most often through the skin and hair and is frequently the vehicle by which the other pathogens make their way into the body. Cardinal signs: aversion to drafts, fever, sweating, headache, nasal congestion, and symptoms that wander from one location to another. Most common in spring.\n\nCold (寒, hán): cold, congealing, and contracting. Cold damages yang qi, congeals the channels (causing pain), and contracts the pores (preventing sweating). Cardinal signs: marked aversion to cold, absence of sweating, headache and body aches, cold extremities, a pale tongue with a white coating, and a floating-tight pulse. Most common in winter.\n\nSummer-heat (暑, shǔ): blazing hot, ascending and dispersing. It readily damages both qi and fluids and is frequently combined with dampness in humid weather. Cardinal signs: high fever, profuse sweating, irritable thirst, shortness of breath, fatigue, and scanty dark urine. Summer-heat is the only one of the six pathogens that occurs only in its proper season (the hot months); the others can arise out of season.\n\nDampness (湿, shī): heavy, turbid, sticky, and downward-tending. Damp encumbers the Spleen and obstructs the smooth movement of qi. Cardinal signs: heaviness of the body, a head that feels \"wrapped in a cloth,\" chest oppression, poor appetite, loose stools, and a greasy tongue coating. Damp diseases are characteristically lingering and slow to resolve. Most common in late summer.\n\nDryness (燥, zào): dry and astringing, readily damaging body fluids — and most readily damaging the Lung, the most delicate of the zang. Cardinal signs: dryness of the mouth and nose, dry cracked skin, dry cough with little sputum, and dry stools. Most common in autumn. It is further subdivided into cool dryness (cooler weather, with combined cold) and warm dryness (warmer weather, with combined heat).\n\nFire and heat (火/热, huǒ/rè): blazing and ascending, readily damaging qi and fluids, readily stirring wind and disturbing the blood, and readily generating swellings and sores. Cardinal signs: high fever, marked thirst, flushed face, irritability, constipation, dark urine, a red tongue with a yellow coating, and a rapid pulse. Fire and heat name the same family of patterns at different intensities; fire is heat carried to its extreme."
+      }
+    ],
+    "key_terms": [
+      {
+        "zh": "风为百病之长",
+        "pinyin": "fēng wéi bǎi bìng zhī zhǎng",
+        "en": "Wind is the chief of the hundred diseases",
+        "definition_zh": "风邪为外感病邪之首，多兼他邪而致病。",
+        "definition_en": "The classical maxim that wind is the chief of pathogens — both because it is the most common external cause and because it serves as the vehicle that carries the other pathogens (cold, heat, dampness) into the body."
+      },
+      {
+        "zh": "六气",
+        "pinyin": "liù qì",
+        "en": "The six qi",
+        "definition_zh": "自然界正常的六种气候变化。当其太过或非时，方称六淫。",
+        "definition_en": "The six normal climatic influences in their proper seasonal rhythm. They become the \"six evils\" only when excessive, deficient, or arriving out of season."
+      },
+      {
+        "zh": "内生五邪",
+        "pinyin": "nèi shēng wǔ xié",
+        "en": "Internally generated pathogens",
+        "definition_zh": "脏腑功能失调而内生类似六淫之病变，如内风、内寒、内湿、内燥、内火。",
+        "definition_en": "When the internal organs malfunction, they can generate patterns that mimic the external pathogens — \"internal wind\" (e.g. tremors and convulsions from a Liver disorder), \"internal cold\" from yang vacuity, \"internal damp\" from Spleen vacuity, \"internal dryness\" from depleted fluids, and \"internal fire\" from yin vacuity. These are not contracted from outside but arise from organ pathology."
+      }
+    ],
+    "see_also": [
+      {
+        "type": "concept",
+        "key": "yin-yang"
+      },
+      {
+        "type": "concept",
+        "key": "wu-xing"
+      },
+      {
+        "type": "concept",
+        "key": "liu-jing"
+      }
+    ],
+    "appears_in": [
+      "外感证型的病因 / The etiology section of every externally contracted pattern",
+      "本草「解表药」「清热药」「祛湿药」「润燥药」诸类 / Herb categories that release the exterior, clear heat, dispel dampness, and moisten dryness"
+    ],
+    "further_reading": [
+      {
+        "type": "text",
+        "key": "huang_di_nei_jing"
+      },
+      {
+        "type": "text",
+        "key": "shang_han_lun"
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "six-evils-basics",
+        "title_zh": "六淫要点",
+        "title_en": "Essentials of the Six Evils",
+        "items": [
+          {
+            "id": "se-01",
+            "prompt_zh": "「六气」与「六淫」最关键的区别是什么？",
+            "prompt_en": "What is the key difference between the \"six qi\" and the \"six evils\"?",
+            "choices": [
+              {
+                "zh": "六气指内生之邪，六淫指外感之邪",
+                "en": "Six qi are internally generated; six evils are externally contracted"
+              },
+              {
+                "zh": "六气是正常气候，六淫是太过、不及或非其时而有其气",
+                "en": "Six qi are normal climatic influences; six evils are those same influences when excessive, deficient, or out of season"
+              },
+              {
+                "zh": "六气属阳，六淫属阴",
+                "en": "Six qi are yang, six evils are yin"
+              },
+              {
+                "zh": "二者为同一概念，无实质区别",
+                "en": "They are the same concept with no substantive difference"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "风寒暑湿燥火本为自然界正常气候，称「六气」；唯其太过、不及或非其时而至，方成致病之邪，称「六淫」。「淫」字本义即「过也」。",
+            "explanation_en": "Wind, cold, summer-heat, damp, dryness, and fire are the normal seasonal influences — the \"six qi.\" They become pathogenic (the \"six evils\") only when they are excessive, deficient, or arrive out of season. The character yín literally means \"overflowing\" or \"excessive.\""
+          },
+          {
+            "id": "se-02",
+            "prompt_zh": "为何称「风为百病之长」？",
+            "prompt_en": "Why is wind called \"the chief of the hundred diseases\"?",
+            "choices": [
+              {
+                "zh": "因为风邪最为剧烈，致病最重",
+                "en": "Because wind is the most severe pathogen and causes the gravest illness"
+              },
+              {
+                "zh": "因为风邪最常见，且常作为他邪侵入人体的先导",
+                "en": "Because wind is the most common pathogen and often serves as the vehicle by which other pathogens enter the body"
+              },
+              {
+                "zh": "因为风邪只在春天发病",
+                "en": "Because wind only causes disease in spring"
+              },
+              {
+                "zh": "因为风邪专伤肺",
+                "en": "Because wind specifically damages the Lung alone"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "风邪轻扬开泄，善行而数变，既是最常见的外邪，又常与寒、热、湿等相合，携他邪同入，故为「百病之长」。它并非最重，而是最「居首位、作先导」。",
+            "explanation_en": "Wind is light, dispersing, swift, and mobile. It is both the most common external pathogen and the carrier that brings cold, heat, or dampness along with it into the body. \"Chief\" here means first in order and leading the way — not the most severe."
+          },
+          {
+            "id": "se-03",
+            "prompt_zh": "一位患者身重、头如裹、胸闷、纳呆、便溏、苔腻，病程缠绵难愈。此最符合哪一邪的特性？",
+            "prompt_en": "A patient presents with heaviness of the body, a head that feels \"wrapped in cloth,\" chest oppression, poor appetite, loose stools, and a greasy tongue coating — a lingering course. Which pathogen's signature does this best match?",
+            "choices": [
+              {
+                "zh": "风邪",
+                "en": "Wind"
+              },
+              {
+                "zh": "燥邪",
+                "en": "Dryness"
+              },
+              {
+                "zh": "湿邪",
+                "en": "Dampness"
+              },
+              {
+                "zh": "火邪",
+                "en": "Fire"
+              }
+            ],
+            "correct_index": 2,
+            "explanation_zh": "湿性重浊、粘滞、趋下，困脾阻遏气机，故见身重、头裹、纳呆、便溏、苔腻，且病程缠绵难愈——此为湿邪最典型的特点。风邪善行数变，与「缠绵」相反。",
+            "explanation_en": "Dampness is heavy, turbid, sticky, and downward-tending; it encumbers the Spleen and obstructs qi, producing exactly this cluster — body heaviness, head feeling wrapped, poor appetite, loose stool, greasy coating — with a characteristically lingering course. Wind, by contrast, is swift and ever-changing, the opposite of \"lingering.\""
+          },
+          {
+            "id": "se-04",
+            "prompt_zh": "下列哪一邪的最大特点是「仅见于其本季」，而其他五邪皆可「非时而至」？",
+            "prompt_en": "Which of the six evils is distinctive in that it arises ONLY in its own season, whereas the others can appear out of season?",
+            "choices": [
+              {
+                "zh": "寒邪——只在冬季",
+                "en": "Cold — only in winter"
+              },
+              {
+                "zh": "暑邪——只在夏季",
+                "en": "Summer-heat — only in summer"
+              },
+              {
+                "zh": "燥邪——只在秋季",
+                "en": "Dryness — only in autumn"
+              },
+              {
+                "zh": "风邪——只在春季",
+                "en": "Wind — only in spring"
+              }
+            ],
+            "correct_index": 1,
+            "explanation_zh": "暑邪是六淫中唯一严格限定于夏季的外邪。其他如寒、风、湿、燥、火，皆可因气候异常或内生而非时出现。",
+            "explanation_en": "Summer-heat is unique among the six evils in being strictly tied to the hot months. Cold, wind, damp, dryness, and fire can all occur out of season — either due to abnormal weather or through internally generated equivalents."
+          }
+        ]
+      }
+    ],
+    "verification": {
+      "status": "editor-reviewed",
+      "reviewer": "Bencaodian Editorial / 本草典编辑部",
+      "last_reviewed": "2026-04-08"
+    }
+  }
+]

@@ -1,0 +1,1250 @@
+ID,Formula Name,Herb Name (English),Dose,Unit (English),Role (English)
+11,An Gong Niu Huang Wan,Honey,,,Guide
+12,An Gong Niu Huang Wan,Coptis rhizome,30,g,Minister
+13,An Gong Niu Huang Wan,Scutellaria root,30,g,Minister
+14,An Gong Niu Huang Wan,Gold leaf,,,Assistant
+15,An Gong Niu Huang Wan,Borneol,7.5,g,Minister
+16,An Gong Niu Huang Wan,Bovine bezoar,30,g,Monarch
+17,An Gong Niu Huang Wan,Musk,7.5,g,Monarch
+18,An Gong Niu Huang Wan,Rhinoceros horn,30,g,Monarch
+19,An Gong Niu Huang Wan,Realgar,30,g,Assistant
+20,An Gong Niu Huang Wan,Curcuma root,30,g,Minister
+21,An Gong Niu Huang Wan,Pearl,15,g,Assistant
+22,An Gong Niu Huang Wan,Gardenia fruit,30,g,Minister
+23,An Gong Niu Huang Wan,Cinnabar,30,g,Assistant
+24,Ba Zhen Tang,White peony root,30,g,Minister
+25,Ba Zhen Tang,Atractylodes rhizome,30,g,Minister
+26,Ba Zhen Tang,Chuanxiong rhizome,30,g,Assistant
+27,Ba Zhen Tang,Angelica sinensis root,30,g,Minister
+28,Ba Zhen Tang,Poria fungus,30,g,Minister
+29,Ba Zhen Tang,Licorice root,30,g,Guide
+30,Ba Zhen Tang,Ginseng root,30,g,Monarch
+31,Ba Zhen Tang,Prepared Rehmannia root,30,g,Monarch
+32,Ba Zheng San,Polygonum herb,500,g,Minister
+33,Ba Zheng San,Plantain seed,500,g,Minister
+34,Ba Zheng San,Rhubarb root and rhizome,500,g,Assistant
+35,Ba Zheng San,Licorice root,500,g,"Assistant, Guide"
+36,Ba Zheng San,Talc powder,500,g,Monarch
+37,Ba Zheng San,Akebia stem,500,g,Monarch
+38,Ba Zheng San,Dianthus herb,500,g,Minister
+39,Ba Zheng San,Gardenia fruit,500,g,Assistant
+50,Bai Hu Tang,Licorice root,6,g,"Assistant, Guide"
+51,Bai Hu Tang,Non-glutinous rice,9,g,Assistant
+52,Bai Hu Tang,Gypsum mineral,50,g,Monarch
+53,Bai Hu Tang,Anemarrhena rhizome,18,g,Minister
+57,Bai Tou Weng Tang,Pulsatilla root,15,g,Monarch
+58,Bai Tou Weng Tang,Phellodendron bark,12,g,Minister
+59,Bai Tou Weng Tang,Coptis rhizome,6,g,Minister
+60,Bai Tou Weng Tang,Ash bark,12,g,"Assistant, Guide"
+61,Bai He Gu Jin Tang,White peony root,6,g,Assistant
+62,Bai He Gu Jin Tang,Lily bulb,12,g,Monarch
+63,Bai He Gu Jin Tang,Fritillaria bulb,6,g,Assistant
+64,Bai He Gu Jin Tang,Angelica sinensis root,9,g,Assistant
+65,Bai He Gu Jin Tang,Licorice root,3,g,"Assistant, Guide"
+66,Bai He Gu Jin Tang,Platycodon root,6,g,"Assistant, Guide"
+67,Bai He Gu Jin Tang,麦冬,9,g,Minister
+68,Bai He Gu Jin Tang,生地黄,9,g,Monarch
+69,Bai He Gu Jin Tang,Prepared Rehmannia root,9,g,Monarch
+70,Bai He Gu Jin Tang,Scrophularia root,3,g,Minister
+80,Bai Du San,Bupleurum root,900,Tael,Minister
+81,Bai Du San,Chuanxiong rhizome,900,Tael,Minister
+82,Bai Du San,Angelica pubescens root,900,Tael,Monarch
+83,Bai Du San,Poria fungus,900,Tael,Assistant
+84,Bai Du San,Licorice root,900,Tael,"Assistant, Guide"
+85,Bai Du San,Platycodon root,900,Piece,Assistant
+86,Bai Du San,Peucedanum root,900,Tael,Assistant
+87,Bai Du San,Notopterygium rhizome,900,Tael,Monarch
+88,Bai Du San,Ginseng root,900,Tael,Assistant
+89,Bai Du San,Mature bitter orange fruit,900,Tael,Assistant
+90,Ban Xia Bai Zhu Tian Ma Tang,Atractylodes rhizome,9,g,Minister
+91,Ban Xia Bai Zhu Tian Ma Tang,Pinellia tuber,4.5,g,Monarch
+92,Ban Xia Bai Zhu Tian Ma Tang,Poria fungus,3,g,Minister
+93,Ban Xia Bai Zhu Tian Ma Tang,Licorice root,1.5,g,Guide
+94,Ban Xia Bai Zhu Tian Ma Tang,陈皮,3,g,Assistant
+95,Ban Xia Bai Zhu Tian Ma Tang,Gastrodia rhizome,3,g,Monarch
+96,Ban Xia Hou Po Tang,Pinellia tuber,12,g,Monarch
+97,Ban Xia Hou Po Tang,Poria fungus,12,g,Assistant
+98,Ban Xia Hou Po Tang,Magnolia bark,9,g,Minister
+99,Ban Xia Hou Po Tang,Fresh ginger rhizome,15,g,Assistant
+100,Ban Xia Hou Po Tang,Perilla leaf,6,g,Assistant
+101,Ban Xia Xie Xin Tang,Pinellia tuber,12,g,Monarch
+102,Ban Xia Xie Xin Tang,Jujube fruit,4,Piece,Assistant
+103,Ban Xia Xie Xin Tang,Licorice root,9,g,Guide
+104,Ban Xia Xie Xin Tang,Dried ginger,9,g,Minister
+105,Ban Xia Xie Xin Tang,Coptis rhizome,3,g,Minister
+106,Ban Xia Xie Xin Tang,Scutellaria root,9,g,Minister
+107,Ban Xia Xie Xin Tang,Ginseng root,9,g,Assistant
+108,Bao He Wan,Pinellia tuber,90,g,Assistant
+109,Bao He Wan,陈皮,30,g,Assistant
+110,Bao He Wan,Poria fungus,90,g,Assistant
+111,Bao He Wan,Radish seed,30,g,Minister
+112,Bao He Wan,Forsythia fruit,30,g,Assistant
+113,Bao He Wan,Hawthorn fruit,180,g,Monarch
+114,Bao He Wan,Medicated leaven,60,g,Minister
+119,Bei Mu Gua Lou San,Fritillaria bulb,4.5,g,Monarch
+120,Bei Mu Gua Lou San,Poria fungus,2.5,g,Assistant
+121,Bei Mu Gua Lou San,Trichosanthes fruit,3,g,Monarch
+122,Bei Mu Gua Lou San,Platycodon root,2.5,g,"Assistant, Guide"
+123,Bei Mu Gua Lou San,陈皮,2.5,g,Assistant
+124,Bei Mu Gua Lou San,Trichosanthes root,2.5,g,Minister
+125,Bi Xie Fen Qing San,Dioscorea tokoro rhizome,9,g,Monarch
+126,Bi Xie Fen Qing San,Acorus rhizome,9,g,Minister
+127,Bi Xie Fen Qing San,Lindera root,9,g,Assistant
+128,Bi Xie Fen Qing San,Alpinia seed,9,g,Assistant
+129,Bie Jia Jian Wan,Donkey-hide gelatin,22.5,g,Assistant
+130,Bie Jia Jian Wan,Pinellia tuber,7.5,g,Assistant
+131,Bie Jia Jian Wan,Turtle shell,90,g,Monarch
+132,Bie Jia Jian Wan,Bupleurum root,45,g,Assistant
+133,Bie Jia Jian Wan,Rhubarb root and rhizome,22.5,g,Minister
+134,Bie Jia Jian Wan,蜂房,30,g,Assistant
+135,Bie Jia Jian Wan,Dried ginger,22.5,g,Assistant
+136,Bie Jia Jian Wan,Cinnamon twig,22.5,g,Assistant
+137,Bie Jia Jian Wan,Magnolia bark,22.5,g,Assistant
+138,Bie Jia Jian Wan,Scutellaria root,22.5,g,Assistant
+139,Bie Jia Jian Wan,Trumpet creeper flower,22.5,g,Assistant
+140,Bie Jia Jian Wan,牡丹皮,37,g,Assistant
+141,Bie Jia Jian Wan,Mirabilite,90,g,Minister
+142,Bie Jia Jian Wan,Dung beetle,45,g,Minister
+143,Bie Jia Jian Wan,Dianthus herb,15,g,Assistant
+144,Bie Jia Jian Wan,Ginseng root,7.5,g,Assistant
+145,Bie Jia Jian Wan,芍药,37,g,Assistant
+146,Bie Jia Jian Wan,Belamcanda rhizome,22.5,g,Assistant
+147,Bie Jia Jian Wan,Pyrrosia leaf,22.5,g,Assistant
+148,Bie Jia Jian Wan,Woodlouse,22.5,g,Minister
+149,Bie Jia Jian Wan,Peach kernel,15,g,Assistant
+150,Bie Jia Jian Wan,Lepidium seed,7.5,g,Assistant
+151,Bie Jia Jian Wan,土鳖虫,37,g,Minister
+158,Bu Yang Hai Wu Tang,Red peony root,5,g,Assistant
+159,Bu Yang Hai Wu Tang,Chuanxiong rhizome,3,g,Assistant
+160,Bu Yang Hai Wu Tang,Angelica sinensis root,6,g,Minister
+161,Bu Yang Hai Wu Tang,Earthworm,3,g,Assistant
+162,Bu Yang Hai Wu Tang,Safflower flower,3,g,Assistant
+163,Bu Yang Hai Wu Tang,Astragalus root,120,g,Monarch
+164,Bu Yang Hai Wu Tang,Peach kernel,3,g,Assistant
+165,Bu Zhong Yi Qi Tang,Atractylodes rhizome,9,g,Minister
+166,Bu Zhong Yi Qi Tang,Bupleurum root,6,g,"Assistant, Guide"
+167,Bu Zhong Yi Qi Tang,陈皮,6,g,Assistant
+168,Bu Zhong Yi Qi Tang,Angelica sinensis root,3,g,Assistant
+169,Bu Zhong Yi Qi Tang,Licorice root,9,g,Minister
+170,Bu Zhong Yi Qi Tang,Astragalus root,18,g,Monarch
+171,Bu Zhong Yi Qi Tang,Ginseng root,6,g,Minister
+172,Bu Zhong Yi Qi Tang,Cimicifuga rhizome,6,g,"Assistant, Guide"
+182,Can Ling Bai Zhu San,白扁豆,750,g,Minister
+183,Can Ling Bai Zhu San,Atractylodes rhizome,1000,g,Monarch
+184,Can Ling Bai Zhu San,Poria fungus,1000,g,Monarch
+185,Can Ling Bai Zhu San,Licorice root,1000,g,"Assistant, Guide"
+186,Can Ling Bai Zhu San,Platycodon root,500,Grain,"Assistant, Guide"
+187,Can Ling Bai Zhu San,Lotus seed,500,g,Minister
+188,Can Ling Bai Zhu San,Ginseng root,1000,g,Monarch
+189,Can Ling Bai Zhu San,Amomum fruit,500,g,Assistant
+190,Can Ling Bai Zhu San,Chinese yam rhizome,1000,g,Minister
+191,Can Ling Bai Zhu San,Coix seed,500,g,Minister
+192,Can Su Yin,Pinellia tuber,6,g,Assistant
+193,Can Su Yin,陈皮,4,g,Assistant
+194,Can Su Yin,Costus root,4,g,Assistant
+195,Can Su Yin,Poria fungus,6,g,Assistant
+196,Can Su Yin,Licorice root,4,g,"Assistant, Guide"
+197,Can Su Yin,Kudzu root,6,g,Minister
+198,Can Su Yin,Platycodon root,4,g,Assistant
+199,Can Su Yin,Peucedanum root,6,g,Assistant
+200,Can Su Yin,Ginseng root,6,g,Minister
+201,Can Su Yin,Mature bitter orange fruit,4,g,Assistant
+202,Can Su Yin,Perilla leaf,6,g,Monarch
+203,Chai Ge Jie Ji Tang,Angelica dahurica root,3,g,Minister
+204,Chai Ge Jie Ji Tang,Bupleurum root,6,g,Monarch
+205,Chai Ge Jie Ji Tang,Jujube fruit,2,Piece,Assistant
+206,Chai Ge Jie Ji Tang,Licorice root,3,,Guide
+207,Chai Ge Jie Ji Tang,Kudzu root,9,g,Monarch
+208,Chai Ge Jie Ji Tang,Scutellaria root,6,g,Minister
+209,Chai Ge Jie Ji Tang,Platycodon root,3,g,Assistant
+210,Chai Ge Jie Ji Tang,Notopterygium rhizome,3,g,Minister
+211,Chai Ge Jie Ji Tang,芍药,6,g,Assistant
+212,Chai Ge Jie Ji Tang,Fresh ginger rhizome,3,,Assistant
+213,Chai Ge Jie Ji Tang,Gypsum mineral,3,,Minister
+231,Chuan Qiong Cha Diao San,Angelica dahurica root,60,g,Assistant
+232,Chuan Qiong Cha Diao San,Mentha herb,240,g,Minister
+233,Chuan Qiong Cha Diao San,Chuanxiong rhizome,120,g,Monarch
+234,Chuan Qiong Cha Diao San,Saposhnikovia root,45,g,Assistant
+235,Chuan Qiong Cha Diao San,Licorice root,60,g,"Assistant, Guide"
+236,Chuan Qiong Cha Diao San,Schizonepeta herb,120,g,Minister
+237,Chuan Qiong Cha Diao San,Notopterygium rhizome,60,g,Assistant
+238,Chuan Qiong Cha Diao San,Asarum herb,30,g,Assistant
+242,Da Yuan Yin,Areca nut,6,g,Monarch
+243,Da Yuan Yin,Tsaoko fruit,1.5,g,Minister
+244,Da Yuan Yin,Licorice root,1.5,g,Guide
+245,Da Yuan Yin,Magnolia bark,3,g,Minister
+246,Da Yuan Yin,Scutellaria root,3,g,Assistant
+247,Da Yuan Yin,芍药,3,g,Assistant
+248,Da Yuan Yin,Anemarrhena rhizome,3,g,Assistant
+252,Da Bu Yin Wan,Honey,,,"Assistant, Guide"
+253,Da Bu Yin Wan,龟甲,180,g,Monarch
+254,Da Bu Yin Wan,Phellodendron bark,120,g,Minister
+255,Da Bu Yin Wan,Prepared Rehmannia root,180,g,Monarch
+256,Da Bu Yin Wan,Anemarrhena rhizome,120,g,Minister
+257,Da Bu Yin Wan,猪脊髓,,,"Assistant, Guide"
+258,Da Chai Hu Tang,Pinellia tuber,9,g,Assistant
+259,Da Chai Hu Tang,Bupleurum root,15,g,Monarch
+260,Da Chai Hu Tang,Rhubarb root and rhizome,6,g,Minister
+261,Da Chai Hu Tang,Jujube fruit,12,Piece,"Assistant, Guide"
+262,Da Chai Hu Tang,Scutellaria root,9,g,Minister
+263,Da Chai Hu Tang,芍药,9,g,Assistant
+264,Da Chai Hu Tang,Fresh ginger rhizome,15,g,"Assistant, Guide"
+265,Da Chai Hu Tang,Immature bitter orange fruit,9,g,Minister
+266,Da Cheng Qi Tang,Rhubarb root and rhizome,12,g,Monarch
+267,Da Cheng Qi Tang,Magnolia bark,24,g,Assistant
+268,Da Cheng Qi Tang,Mirabilite,9,g,Minister
+269,Da Cheng Qi Tang,Immature bitter orange fruit,12,g,Assistant
+270,Da Ding Feng Zhu,Donkey-hide gelatin,9,g,Monarch
+271,Da Ding Feng Zhu,White peony root,18,g,Minister
+272,Da Ding Feng Zhu,Turtle shell,12,g,Assistant
+273,Da Ding Feng Zhu,龟甲,12,g,Assistant
+274,Da Ding Feng Zhu,Cannabis seed,6,g,Assistant
+275,Da Ding Feng Zhu,Egg yolk,2,Piece,Monarch
+276,Da Ding Feng Zhu,麦冬,18,g,Minister
+277,Da Ding Feng Zhu,Oyster shell,12,g,Assistant
+278,Da Ding Feng Zhu,生地黄,18,g,Minister
+279,Da Ding Feng Zhu,Schisandra fruit,6,g,Assistant
+280,Da Ding Feng Zhu,Honey-fried licorice root,12,g,Guide
+281,Da Huang Fu Zi Tang,Rhubarb root and rhizome,9,g,Monarch
+282,Da Huang Fu Zi Tang,Processed aconite root,12,g,Monarch
+283,Da Huang Fu Zi Tang,Asarum herb,3,g,Minister
+284,Da Huang Mu Dan Tang,Rhubarb root and rhizome,12,g,Monarch
+285,Da Huang Mu Dan Tang,冬瓜子,30,g,Assistant
+286,Da Huang Mu Dan Tang,Mirabilite,9,g,Minister
+287,Da Huang Mu Dan Tang,牡丹皮,3,g,Monarch
+288,Da Huang Mu Dan Tang,Peach kernel,9,g,Minister
+367,Da Qin Jiao Tang,White peony root,60,g,Assistant
+368,Da Qin Jiao Tang,Atractylodes rhizome,30,g,Assistant
+369,Da Qin Jiao Tang,Angelica dahurica root,30,g,Minister
+370,Da Qin Jiao Tang,Chuanxiong rhizome,60,g,Assistant
+371,Da Qin Jiao Tang,Angelica sinensis root,60,g,Assistant
+372,Da Qin Jiao Tang,Angelica pubescens root,60,g,Minister
+373,Da Qin Jiao Tang,Saposhnikovia root,30,g,Minister
+374,Da Qin Jiao Tang,Poria fungus,30,g,Assistant
+375,Da Qin Jiao Tang,Licorice root,60,g,"Assistant, Guide"
+376,Da Qin Jiao Tang,Scutellaria root,30,g,Assistant
+377,Da Qin Jiao Tang,Notopterygium rhizome,30,g,Minister
+378,Da Qin Jiao Tang,Gentiana macrophylla root,90,g,Monarch
+379,Da Qin Jiao Tang,生地黄,30,g,Assistant
+380,Da Qin Jiao Tang,Gypsum mineral,60,g,Assistant
+381,Da Qin Jiao Tang,Prepared Rehmannia root,30,g,Assistant
+382,Da Qin Jiao Tang,Asarum herb,15,g,Minister
+390,Da Xian Xiong Tang,Rhubarb root and rhizome,10,g,"Minister, Assistant"
+391,Da Xian Xiong Tang,Kansui root,1,g,Monarch
+392,Da Xian Xiong Tang,Mirabilite,10,g,"Minister, Assistant"
+396,Dang Gui Bu Xue Tang,Angelica sinensis root,6,g,Minister
+397,Dang Gui Bu Xue Tang,Astragalus root,30,g,Monarch
+398,Dang Gui Liu Huang Tang,Angelica sinensis root,6,g,Monarch
+399,Dang Gui Liu Huang Tang,Phellodendron bark,6,g,Minister
+400,Dang Gui Liu Huang Tang,Coptis rhizome,6,g,Minister
+401,Dang Gui Liu Huang Tang,Astragalus root,12,g,Assistant
+402,Dang Gui Liu Huang Tang,Scutellaria root,6,g,Minister
+403,Dang Gui Liu Huang Tang,生地黄,6,g,Monarch
+404,Dang Gui Liu Huang Tang,Prepared Rehmannia root,6,g,Monarch
+416,Dang Gui Nian Tong Tang,Atractylodes rhizome,3,g,Assistant
+417,Dang Gui Nian Tong Tang,Atractylodes lancea rhizome,9,g,Assistant
+418,Dang Gui Nian Tong Tang,Angelica sinensis root,9,g,Assistant
+419,Dang Gui Nian Tong Tang,Saposhnikovia root,9,g,Minister
+420,Dang Gui Nian Tong Tang,Licorice root,15,g,Guide
+421,Dang Gui Nian Tong Tang,Kudzu root,6,g,Minister
+422,Dang Gui Nian Tong Tang,Scutellaria root,3,g,Minister
+423,Dang Gui Nian Tong Tang,Sophora root,6,g,Minister
+424,Dang Gui Nian Tong Tang,Notopterygium rhizome,15,g,Monarch
+425,Dang Gui Nian Tong Tang,Ginseng root,6,g,Assistant
+426,Dang Gui Nian Tong Tang,Cimicifuga rhizome,3,g,Minister
+427,Dang Gui Nian Tong Tang,茵陈,15,g,Monarch
+428,Dang Gui Nian Tong Tang,Alisma rhizome,9,g,Minister
+429,Dang Gui Nian Tong Tang,Anemarrhena rhizome,9,g,Assistant
+430,Dang Gui Nian Tong Tang,Polyporus fungus,9,g,Minister
+440,Dang Gui Si Ni Tang,Jujube fruit,8,Piece,"Assistant, Guide"
+441,Dang Gui Si Ni Tang,Angelica sinensis root,12,g,Monarch
+442,Dang Gui Si Ni Tang,Licorice root,6,g,Assistant
+443,Dang Gui Si Ni Tang,Cinnamon twig,9,g,Monarch
+444,Dang Gui Si Ni Tang,芍药,9,g,Minister
+445,Dang Gui Si Ni Tang,Tetrapanax pith,6,g,Assistant
+446,Dang Gui Si Ni Tang,Asarum herb,3,g,Minister
+447,Dao Chi San,Licorice root,6,g,"Assistant, Guide"
+448,Dao Chi San,Akebia stem,6,g,Monarch
+449,Dao Chi San,生地黄,6,g,Monarch
+450,Dao Chi San,Bamboo leaf,,,Minister
+465,Di Huang Yin Zi,Morinda root,15,g,Monarch
+466,Di Huang Yin Zi,Poria fungus,15,g,Assistant
+467,Di Huang Yin Zi,Processed aconite root,15,g,Minister
+468,Di Huang Yin Zi,麦冬,15,g,Minister
+469,Di Huang Yin Zi,Cistanche stem,15,g,Monarch
+470,Di Huang Yin Zi,Cinnamon bark,15,g,Minister
+471,Di Huang Yin Zi,山茱萸,15,g,Monarch
+472,Di Huang Yin Zi,Acorus rhizome,15,g,Assistant
+473,Di Huang Yin Zi,Dendrobium stem,15,g,Minister
+474,Di Huang Yin Zi,Prepared Rehmannia root,12,g,Monarch
+475,Di Huang Yin Zi,Schisandra fruit,15,g,Minister
+476,Di Huang Yin Zi,Polygala root,15,g,Assistant
+481,Ding Chuan Tang,Ginkgo seed,9,g,Monarch
+482,Ding Chuan Tang,Pinellia tuber,9,g,Minister
+483,Ding Chuan Tang,Licorice root,3,g,Guide
+484,Ding Chuan Tang,Scutellaria root,6,g,Assistant
+485,Ding Chuan Tang,Apricot seed,4.5,g,Minister
+486,Ding Chuan Tang,Tussilago flower,9,g,Minister
+487,Ding Chuan Tang,Ephedra herb,9,g,Monarch
+488,Ding Chuan Tang,Mulberry root bark,9,g,Assistant
+489,Ding Chuan Tang,紫苏子,6,g,Minister
+490,Ding Xian Wan,Pinellia tuber,30,g,Minister
+491,Ding Xian Wan,陈皮,21,g,Minister
+492,Ding Xian Wan,Fritillaria cirrhosa bulb,30,g,Monarch
+493,Ding Xian Wan,Danshen root,60,g,Assistant
+494,Ding Xian Wan,Prepared Arisaema,15,g,Monarch
+495,Ding Xian Wan,Poria fungus,30,g,Minister
+496,Ding Xian Wan,Poria with host wood,30,g,Assistant
+497,Ding Xian Wan,Licorice root,120,g,Guide
+498,Ding Xian Wan,Amber,15,g,Assistant
+499,Ding Xian Wan,僵蚕,15,g,Assistant
+500,Ding Xian Wan,麦冬,60,g,Assistant
+501,Ding Xian Wan,Scorpion,15,g,Assistant
+502,Ding Xian Wan,Fresh ginger rhizome,50,ml,Guide
+503,Ding Xian Wan,Acorus rhizome,15,g,Assistant
+504,Ding Xian Wan,Gastrodia rhizome,30,g,Assistant
+505,Ding Xian Wan,Polygala root,21,g,Assistant
+506,Ding Xian Wan,Cinnabar,9,g,Assistant
+507,Ding Xian Wan,Bamboo sap,100,ml,Monarch
+508,Du Huo Ji Sheng Tang,Achyranthes root,6,g,Assistant
+509,Du Huo Ji Sheng Tang,Chuanxiong rhizome,6,g,Assistant
+510,Du Huo Ji Sheng Tang,Angelica sinensis root,6,g,Assistant
+511,Du Huo Ji Sheng Tang,Angelica pubescens root,9,g,Monarch
+512,Du Huo Ji Sheng Tang,Eucommia bark,6,g,Assistant
+513,Du Huo Ji Sheng Tang,Saposhnikovia root,6,g,Minister
+514,Du Huo Ji Sheng Tang,Poria fungus,6,g,Assistant
+515,Du Huo Ji Sheng Tang,Licorice root,6,g,"Assistant, Guide"
+516,Du Huo Ji Sheng Tang,Gentiana macrophylla root,6,g,Minister
+517,Du Huo Ji Sheng Tang,Ginseng root,6,g,Assistant
+518,Du Huo Ji Sheng Tang,Cinnamon bark,6,g,Minister
+519,Du Huo Ji Sheng Tang,Mulberry mistletoe,6,g,Assistant
+520,Du Huo Ji Sheng Tang,芍药,6,g,Assistant
+521,Du Huo Ji Sheng Tang,生地黄,6,g,Assistant
+522,Du Huo Ji Sheng Tang,Asarum herb,6,g,Minister
+523,Er Chen Tang,Pinellia tuber,15,g,Monarch
+524,Er Chen Tang,Poria fungus,9,g,Assistant
+525,Er Chen Tang,Licorice root,4.5,g,"Assistant, Guide"
+526,Er Chen Tang,陈皮,15,g,Minister
+527,Er Chen Tang,Fresh ginger rhizome,7,Slice,Assistant
+528,Er Chen Tang,Mume fruit,1,Piece,Assistant
+529,Er Miao San,Atractylodes lancea rhizome,15,g,Minister
+530,Er Miao San,Phellodendron bark,15,g,Monarch
+531,Fang Ji Huang Qi Tang,Atractylodes rhizome,9,g,Minister
+532,Fang Ji Huang Qi Tang,Jujube fruit,1,Piece,Assistant
+533,Fang Ji Huang Qi Tang,Stephania root,12,g,Monarch
+534,Fang Ji Huang Qi Tang,Licorice root,6,g,"Assistant, Guide"
+535,Fang Ji Huang Qi Tang,Astragalus root,15,g,Monarch
+536,Fang Ji Huang Qi Tang,Fresh ginger rhizome,4,Slice,Assistant
+537,Fu Ling Wan,Pinellia tuber,60,g,Monarch
+538,Fu Ling Wan,Poria fungus,30,g,Minister
+539,Fu Ling Wan,Mirabilite,0.3,g,Assistant
+540,Fu Ling Wan,Mature bitter orange fruit,15,g,Assistant
+546,Fu Yuan Huo Xue Tang,Bupleurum root,15,g,Monarch
+547,Fu Yuan Huo Xue Tang,Pangolin scale,6,g,Minister
+548,Fu Yuan Huo Xue Tang,Rhubarb root and rhizome,30,g,Monarch
+549,Fu Yuan Huo Xue Tang,Angelica sinensis root,9,g,Assistant
+550,Fu Yuan Huo Xue Tang,Licorice root,6,g,Guide
+551,Fu Yuan Huo Xue Tang,Trichosanthes fruit,9,g,Assistant
+552,Fu Yuan Huo Xue Tang,Safflower flower,6,g,Minister
+553,Fu Yuan Huo Xue Tang,Peach kernel,15,g,Minister
+565,Gan Lu Xiao Du Dan,Mentha herb,120,g,Assistant
+566,Gan Lu Xiao Du Dan,Fritillaria cirrhosa bulb,150,g,Assistant
+567,Gan Lu Xiao Du Dan,豆蔻,120,g,Minister
+568,Gan Lu Xiao Du Dan,Talc powder,450,g,Monarch
+569,Gan Lu Xiao Du Dan,Scutellaria root,300,g,Monarch
+570,Gan Lu Xiao Du Dan,Patchouli herb,120,g,Minister
+571,Gan Lu Xiao Du Dan,Forsythia fruit,120,g,Assistant
+572,Gan Lu Xiao Du Dan,Akebia stem,150,g,Minister
+573,Gan Lu Xiao Du Dan,Belamcanda rhizome,120,g,Assistant
+574,Gan Lu Xiao Du Dan,Acorus rhizome,180,g,Minister
+575,Gan Lu Xiao Du Dan,茵陈,330,g,Monarch
+595,Ge Hua Jie Cheng Tang,Atractylodes rhizome,6,g,Assistant
+596,Ge Hua Jie Cheng Tang,Costus root,1.5,g,Assistant
+597,Ge Hua Jie Cheng Tang,豆蔻,15,g,Minister
+598,Ge Hua Jie Cheng Tang,Poria fungus,4.5,g,Minister
+599,Ge Hua Jie Cheng Tang,Dried ginger,6,g,Assistant
+600,Ge Hua Jie Cheng Tang,Kudzu flower,15,g,Monarch
+601,Ge Hua Jie Cheng Tang,陈皮,4.5,g,Assistant
+602,Ge Hua Jie Cheng Tang,Green tangerine peel,1,g,Assistant
+603,Ge Hua Jie Cheng Tang,Ginseng root,4.5,g,Assistant
+604,Ge Hua Jie Cheng Tang,Amomum fruit,15,g,Minister
+605,Ge Hua Jie Cheng Tang,Medicated leaven,6,g,Minister
+606,Ge Hua Jie Cheng Tang,Alisma rhizome,6,g,Minister
+607,Ge Hua Jie Cheng Tang,Polyporus fungus,4.5,g,Minister
+614,Gu Chong Tang,White peony root,12,g,Assistant
+615,Gu Chong Tang,Atractylodes rhizome,30,g,Minister
+616,Gu Chong Tang,海螵蛸,12,g,Assistant
+617,Gu Chong Tang,Astragalus root,18,g,Minister
+618,Gu Chong Tang,Fossil bone,24,g,Minister
+619,Gu Chong Tang,Oyster shell,24,g,Minister
+620,Gu Chong Tang,Madder root,9,g,Assistant
+621,Gu Chong Tang,山茱萸,24,g,Monarch
+622,Gu Chong Tang,Gallnut,1.5,g,Assistant
+623,Gu Chong Tang,棕榈皮,6,g,Assistant
+624,Gu Jing Wan,White peony root,30,g,Monarch
+625,Gu Jing Wan,椿根皮,22.5,g,Assistant
+626,Gu Jing Wan,龟甲,30,g,Monarch
+627,Gu Jing Wan,Phellodendron bark,9,g,Minister
+628,Gu Jing Wan,Scutellaria root,30,g,Monarch
+629,Gu Jing Wan,Cyperus rhizome,7.5,g,Assistant
+630,Gua Di San,Adzuki bean,3,g,Minister
+631,Gua Di San,Fermented soybean,9,g,Guide
+632,Gua Di San,Melon pedicel,3,g,Monarch
+646,Gui Lu Er Xian Jiao,Lycium fruit,900,g,Minister
+647,Gui Lu Er Xian Jiao,龟甲,2500,g,Monarch
+648,Gui Lu Er Xian Jiao,Deer horn,5000,g,Monarch
+649,Gui Lu Er Xian Jiao,Ginseng root,450,g,Minister
+650,Gui Ling Gan Lu San,Atractylodes rhizome,15,g,Assistant
+651,Gui Ling Gan Lu San,Poria fungus,30,g,Assistant
+652,Gui Ling Gan Lu San,Licorice root,60,g,Guide
+653,Gui Ling Gan Lu San,Talc mineral,60,g,Minister
+654,Gui Ling Gan Lu San,Talc powder,120,g,Monarch
+655,Gui Ling Gan Lu San,Cinnamon bark,15,g,Assistant
+656,Gui Ling Gan Lu San,Gypsum mineral,60,g,Minister
+657,Gui Ling Gan Lu San,Alisma rhizome,30,g,Assistant
+658,Gui Ling Gan Lu San,Polyporus fungus,15,g,Assistant
+659,Gui Zhi Fu Ling Wan,Honey,,,Guide
+660,Gui Zhi Fu Ling Wan,Poria fungus,9,g,Assistant
+661,Gui Zhi Fu Ling Wan,Cinnamon twig,9,g,Monarch
+662,Gui Zhi Fu Ling Wan,牡丹皮,9,g,Assistant
+663,Gui Zhi Fu Ling Wan,芍药,9,g,Assistant
+664,Gui Zhi Fu Ling Wan,Peach kernel,9,g,Minister
+676,Gui Zhi Tang,Jujube fruit,12,Piece,Assistant
+677,Gui Zhi Tang,Licorice root,6,g,"Assistant, Guide"
+678,Gui Zhi Tang,Cinnamon twig,9,g,Monarch
+679,Gui Zhi Tang,芍药,9,g,Minister
+680,Gui Zhi Tang,Fresh ginger rhizome,9,g,Assistant
+681,Gun Tan Wan,Agarwood resin,15,g,Assistant
+682,Gun Tan Wan,Rhubarb root and rhizome,240,g,Minister
+683,Gun Tan Wan,Scutellaria root,240,g,Assistant
+684,Gun Tan Wan,青礞石,30,g,Monarch
+693,Hao Qin Qing Dan Tang,Pinellia tuber,4.5,g,Minister
+694,Hao Qin Qing Dan Tang,Jade Powder,9,g,"Assistant, Guide"
+695,Hao Qin Qing Dan Tang,陈皮,4.5,g,Minister
+696,Hao Qin Qing Dan Tang,Red poria,9,g,"Assistant, Guide"
+697,Hao Qin Qing Dan Tang,Scutellaria root,,g,Monarch
+698,Hao Qin Qing Dan Tang,Artemisia annua herb,,g,Monarch
+699,Hao Qin Qing Dan Tang,Mature bitter orange fruit,4.5,g,Minister
+700,Hao Qin Qing Dan Tang,Bamboo shavings,9,g,Minister
+708,Hou Po Wen Zhong Tang,Grass cardamom fruit,15,g,Minister
+709,Hou Po Wen Zhong Tang,陈皮,30,g,Assistant
+710,Hou Po Wen Zhong Tang,Costus root,15,g,Assistant
+711,Hou Po Wen Zhong Tang,Poria fungus,15,g,Assistant
+712,Hou Po Wen Zhong Tang,Licorice root,15,g,"Assistant, Guide"
+713,Hou Po Wen Zhong Tang,Dried ginger,2,g,Assistant
+714,Hou Po Wen Zhong Tang,Magnolia bark,30,g,Monarch
+715,Hou Po Wen Zhong Tang,Fresh ginger rhizome,3,Slice,Assistant
+738,Huai Hua San,Arborvitae leaf,12,g,Minister
+739,Huai Hua San,Sophora flower,12,g,Monarch
+740,Huai Hua San,Schizonepeta spike,6,g,Assistant
+741,Huai Hua San,Mature bitter orange fruit,6,g,Assistant
+742,Huang Lian Jie Du Tang,Phellodendron bark,6,g,Assistant
+743,Huang Lian Jie Du Tang,Coptis rhizome,9,g,Monarch
+744,Huang Lian Jie Du Tang,Scutellaria root,6,g,Minister
+745,Huang Lian Jie Du Tang,Gardenia fruit,9,g,Assistant
+753,Huang Long Tang,Rhubarb root and rhizome,9,Mace,Monarch
+754,Huang Long Tang,Jujube fruit,2,Piece,Guide
+755,Huang Long Tang,Angelica sinensis root,9,Mace,Minister
+756,Huang Long Tang,Licorice root,3,Mace,Guide
+757,Huang Long Tang,Magnolia bark,3,Mace,Monarch
+758,Huang Long Tang,Platycodon root,3,Mace,Assistant
+759,Huang Long Tang,Mirabilite,12,Mace,Monarch
+760,Huang Long Tang,Ginseng root,6,Mace,Minister
+761,Huang Long Tang,Fresh ginger rhizome,3,Piece,Guide
+762,Huang Long Tang,Immature bitter orange fruit,6,Mace,Monarch
+786,Huang Tu Tang,Donkey-hide gelatin,9,g,Assistant
+787,Huang Tu Tang,Atractylodes rhizome,9,g,Minister
+788,Huang Tu Tang,Processed aconite root,9,g,Minister
+789,Huang Tu Tang,Licorice root,9,g,Guide
+790,Huang Tu Tang,Scutellaria root,9,g,Assistant
+791,Huang Tu Tang,生地黄,9,g,Assistant
+792,Huang Tu Tang,Oven earth,30,g,Monarch
+793,Hui Yang Jiu Ji Tang,Atractylodes rhizome,9,g,Assistant
+794,Hui Yang Jiu Ji Tang,Pinellia tuber,9,g,Assistant
+795,Hui Yang Jiu Ji Tang,陈皮,6,g,Assistant
+796,Hui Yang Jiu Ji Tang,Poria fungus,9,g,Assistant
+797,Hui Yang Jiu Ji Tang,Processed aconite root,9,g,Monarch
+798,Hui Yang Jiu Ji Tang,Licorice root,6,g,Assistant
+799,Hui Yang Jiu Ji Tang,Dried ginger,6,g,Minister
+800,Hui Yang Jiu Ji Tang,Ginseng root,6,g,Assistant
+801,Hui Yang Jiu Ji Tang,Cinnamon bark,3,g,Minister
+802,Hui Yang Jiu Ji Tang,Schisandra fruit,3,g,Assistant
+817,Huo Xiang Zheng Qi San,Atractylodes rhizome,60,g,Minister
+818,Huo Xiang Zheng Qi San,Angelica dahurica root,30,g,Assistant
+819,Huo Xiang Zheng Qi San,Pinellia tuber,60,g,Minister
+820,Huo Xiang Zheng Qi San,陈皮,60,g,Minister
+821,Huo Xiang Zheng Qi San,Areca husk,30,g,Assistant
+822,Huo Xiang Zheng Qi San,Poria fungus,30,g,Minister
+823,Huo Xiang Zheng Qi San,Licorice root,75,g,Guide
+824,Huo Xiang Zheng Qi San,Magnolia bark,60,g,Assistant
+825,Huo Xiang Zheng Qi San,Patchouli herb,90,g,Monarch
+826,Huo Xiang Zheng Qi San,Platycodon root,60,g,Assistant
+827,Huo Xiang Zheng Qi San,Perilla leaf,30,g,Assistant
+828,Ji Chuan Jian,Achyranthes root,6,g,Minister
+829,Ji Chuan Jian,Angelica sinensis root,,g,Minister
+830,Ji Chuan Jian,Cistanche stem,,g,Monarch
+831,Ji Chuan Jian,Cimicifuga rhizome,,g,Assistant
+832,Ji Chuan Jian,Alisma rhizome,4.5,g,Assistant
+833,Ji Chuan Jian,Mature bitter orange fruit,3,g,Assistant
+840,Jia Jian Wei Rui Tang,Cynanchum root,3,g,Assistant
+841,Jia Jian Wei Rui Tang,Mentha herb,4.5,g,Monarch
+842,Jia Jian Wei Rui Tang,Scallion stalk,6,g,Minister
+843,Jia Jian Wei Rui Tang,Jujube fruit,2,Piece,Assistant
+844,Jia Jian Wei Rui Tang,Fermented soybean,12,g,Minister
+845,Jia Jian Wei Rui Tang,Platycodon root,4.5,g,Assistant
+846,Jia Jian Wei Rui Tang,Polygonatum rhizome,9,g,Monarch
+847,Jia Jian Wei Rui Tang,Honey-fried licorice root,1.5,g,Guide
+884,Jian Pi Wan,Atractylodes rhizome,75,g,Monarch
+885,Jian Pi Wan,陈皮,30,g,Assistant
+886,Jian Pi Wan,Costus root,22,g,Assistant
+887,Jian Pi Wan,Poria fungus,60,g,Monarch
+888,Jian Pi Wan,Licorice root,22,g,"Assistant, Guide"
+889,Jian Pi Wan,Coptis rhizome,22,g,Assistant
+890,Jian Pi Wan,Barley malt,30,g,Minister
+891,Jian Pi Wan,Ginseng root,45,g,Minister
+892,Jian Pi Wan,Nutmeg seed,30,g,Assistant
+893,Jian Pi Wan,Amomum fruit,30,g,Assistant
+894,Jian Pi Wan,Chinese yam rhizome,30,g,Minister
+895,Jian Pi Wan,Hawthorn fruit,30,g,Minister
+896,Jian Pi Wan,Medicated leaven,30,g,Minister
+911,Jin Ling Zi San,Melia fruit,30,g,Monarch
+912,Jin Ling Zi San,Corydalis tuber,30,g,"Minister, Assistant"
+920,Jin Suo Gu Jing Wan,Lotus stamen,60,g,Assistant
+921,Jin Suo Gu Jing Wan,Fossil bone,30,g,Assistant
+922,Jin Suo Gu Jing Wan,Oyster shell,30,g,Assistant
+923,Jin Suo Gu Jing Wan,Gorgon fruit,60,g,Minister
+924,Jin Suo Gu Jing Wan,Astragalus seed,60,g,Monarch
+936,Jiu Wei Qiang Huo Tang,Angelica dahurica root,6,g,Assistant
+937,Jiu Wei Qiang Huo Tang,Atractylodes lancea rhizome,9,g,Minister
+938,Jiu Wei Qiang Huo Tang,Chuanxiong rhizome,6,g,Assistant
+939,Jiu Wei Qiang Huo Tang,Saposhnikovia root,9,g,Minister
+940,Jiu Wei Qiang Huo Tang,Licorice root,6,g,Guide
+941,Jiu Wei Qiang Huo Tang,Scutellaria root,6,g,Assistant
+942,Jiu Wei Qiang Huo Tang,Notopterygium rhizome,9,g,Monarch
+943,Jiu Wei Qiang Huo Tang,生地黄,6,g,Assistant
+944,Jiu Wei Qiang Huo Tang,Asarum herb,3,g,Assistant
+945,Jiu Xian San,Donkey-hide gelatin,30,g,Minister
+946,Jiu Xian San,Fritillaria bulb,15,g,Assistant
+947,Jiu Xian San,Platycodon root,30,g,Assistant
+948,Jiu Xian San,Tussilago flower,30,g,Assistant
+949,Jiu Xian San,Ginseng root,30,g,Minister
+950,Jiu Xian San,Mulberry root bark,30,g,Assistant
+951,Jiu Xian San,Mume fruit,30,g,Minister
+952,Jiu Xian San,Schisandra fruit,30,g,Minister
+953,Jiu Xian San,Poppy capsule,240,g,Monarch
+970,Ju Pi Zhu Ru Tang,陈皮,15,g,Monarch
+971,Ju Pi Zhu Ru Tang,Jujube fruit,5,Piece,"Assistant, Guide"
+972,Ju Pi Zhu Ru Tang,Licorice root,6,g,"Assistant, Guide"
+973,Ju Pi Zhu Ru Tang,Ginseng root,3,g,Minister
+974,Ju Pi Zhu Ru Tang,Fresh ginger rhizome,9,g,Minister
+975,Ju Pi Zhu Ru Tang,Bamboo shavings,15,g,Monarch
+988,Ke Xie Fang,Trichosanthes seed,9,g,Minister
+989,Ke Xie Fang,Cuttlefish bone powder,9,g,Minister
+990,Ke Xie Fang,Chebula fruit (Terminalia chebula),6,g,Assistant
+991,Ke Xie Fang,Indigo naturalis,6,g,Monarch
+992,Ke Xie Fang,Gardenia fruit,9,g,Monarch
+1005,Li Zhong Wan,Atractylodes rhizome,90,g,Assistant
+1006,Li Zhong Wan,Licorice root,90,g,"Assistant, Guide"
+1007,Li Zhong Wan,Dried ginger,90,g,Monarch
+1008,Li Zhong Wan,Ginseng root,90,g,Minister
+1015,Lian Pu Yin,Pinellia tuber,3,g,Minister
+1016,Lian Pu Yin,Fermented soybean,9,g,Assistant
+1017,Lian Pu Yin,Magnolia bark,6,g,Monarch
+1018,Lian Pu Yin,Coptis rhizome,3,g,Monarch
+1019,Lian Pu Yin,焦栀子,9,g,Assistant
+1020,Lian Pu Yin,Reed rhizome,60,g,Assistant
+1021,Lian Pu Yin,Acorus rhizome,3,g,Minister
+1024,Liang Ge San,Mentha herb,300,g,Assistant
+1025,Liang Ge San,Rhubarb root and rhizome,600,g,Minister
+1026,Liang Ge San,Honey,,,Guide
+1027,Liang Ge San,Licorice root,600,g,Guide
+1028,Liang Ge San,Scutellaria root,300,g,Minister
+1029,Liang Ge San,Forsythia fruit,1250,g,Monarch
+1030,Liang Ge San,Mirabilite,600,g,Minister
+1031,Liang Ge San,Gardenia fruit,300,g,Minister
+1032,Liang Ge San,Bamboo leaf,7,Slice,Assistant
+1033,Ling Gan Wu Wei Jiang Xin Tang,Poria fungus,12,g,Minister
+1034,Ling Gan Wu Wei Jiang Xin Tang,Licorice root,9,g,Guide
+1035,Ling Gan Wu Wei Jiang Xin Tang,Dried ginger,9,g,Monarch
+1036,Ling Gan Wu Wei Jiang Xin Tang,Schisandra fruit,5,g,Assistant
+1037,Ling Gan Wu Wei Jiang Xin Tang,Asarum herb,5,g,Minister
+1038,Ling Gui Shu Gan Tang,Atractylodes rhizome,6,g,Assistant
+1039,Ling Gui Shu Gan Tang,Poria fungus,12,g,Monarch
+1040,Ling Gui Shu Gan Tang,Licorice root,6,g,"Assistant, Guide"
+1041,Ling Gui Shu Gan Tang,Cinnamon twig,9,g,Minister
+1042,Ling Jiao Gou Teng Tang,White peony root,9,g,Assistant
+1043,Ling Jiao Gou Teng Tang,Fritillaria cirrhosa bulb,12,g,Assistant
+1044,Ling Jiao Gou Teng Tang,Poria with host wood,9,g,Assistant
+1045,Ling Jiao Gou Teng Tang,Licorice root,2.4,g,Guide
+1046,Ling Jiao Gou Teng Tang,Uncaria stem,9,g,Monarch
+1047,Ling Jiao Gou Teng Tang,Chrysanthemum flower,9,g,Minister
+1048,Ling Jiao Gou Teng Tang,Antelope horn,4.5,g,Monarch
+1049,Ling Jiao Gou Teng Tang,Mulberry leaf,6,g,Minister
+1050,Ling Jiao Gou Teng Tang,生地黄,15,g,Assistant
+1051,Ling Jiao Gou Teng Tang,Bamboo shavings,15,g,Assistant
+1071,Liu Wei Di Huang Wan,Poria fungus,9,g,Assistant
+1072,Liu Wei Di Huang Wan,牡丹皮,9,g,Assistant
+1073,Liu Wei Di Huang Wan,Chinese yam rhizome,12,g,Minister
+1074,Liu Wei Di Huang Wan,山茱萸,12,g,Minister
+1075,Liu Wei Di Huang Wan,Prepared Rehmannia root,24,g,Monarch
+1076,Liu Wei Di Huang Wan,Alisma rhizome,9,g,Assistant
+1077,Liu Yi San,Licorice root,30,g,Minister
+1078,Liu Yi San,Talc powder,180,g,Monarch
+1079,Long Dan Xie Gan Tang,Bupleurum root,6,g,"Assistant, Guide"
+1080,Long Dan Xie Gan Tang,Plantain seed,9,g,Assistant
+1081,Long Dan Xie Gan Tang,Angelica sinensis root,3,g,Assistant
+1082,Long Dan Xie Gan Tang,Licorice root,6,g,"Assistant, Guide"
+1083,Long Dan Xie Gan Tang,Scutellaria root,9,g,Minister
+1084,Long Dan Xie Gan Tang,龙胆,6,g,Monarch
+1085,Long Dan Xie Gan Tang,Akebia stem,6,g,Assistant
+1086,Long Dan Xie Gan Tang,生地黄,9,g,Assistant
+1087,Long Dan Xie Gan Tang,Alisma rhizome,12,g,Assistant
+1088,Long Dan Xie Gan Tang,Gardenia fruit,9,g,Minister
+1094,Ma Huang Tang,Licorice root,3,g,"Assistant, Guide"
+1095,Ma Huang Tang,Cinnamon twig,6,g,Minister
+1096,Ma Huang Tang,Apricot seed,6,g,Assistant
+1097,Ma Huang Tang,Ephedra herb,9,g,Monarch
+1098,Ma Huang Xi Xin Fu Zi Tang,Processed aconite root,9,g,Minister
+1099,Ma Huang Xi Xin Fu Zi Tang,Ephedra herb,6,g,Monarch
+1100,Ma Huang Xi Xin Fu Zi Tang,Asarum herb,3,g,Assistant
+1101,Ma Huang Xing Ren Gan Cao Shi Gao Tang,Licorice root,6,g,"Assistant, Guide"
+1102,Ma Huang Xing Ren Gan Cao Shi Gao Tang,Apricot seed,9,g,Minister
+1103,Ma Huang Xing Ren Gan Cao Shi Gao Tang,Ephedra herb,9,g,Monarch
+1104,Ma Huang Xing Ren Gan Cao Shi Gao Tang,Gypsum mineral,18,g,Monarch
+1109,Ma Zi Ren Wan,Rhubarb root and rhizome,500,g,Assistant
+1110,Ma Zi Ren Wan,Honey,,,"Assistant, Guide"
+1111,Ma Zi Ren Wan,Magnolia bark,250,g,Assistant
+1112,Ma Zi Ren Wan,Cannabis seed,500,g,Monarch
+1113,Ma Zi Ren Wan,Apricot seed,250,g,Minister
+1114,Ma Zi Ren Wan,芍药,250,g,Minister
+1115,Ma Zi Ren Wan,Immature bitter orange fruit,250,g,Assistant
+1116,Mai Men Dong Tang,Pinellia tuber,6,g,Assistant
+1117,Mai Men Dong Tang,Jujube fruit,4,Piece,Assistant
+1118,Mai Men Dong Tang,Licorice root,6,g,"Assistant, Guide"
+1119,Mai Men Dong Tang,Non-glutinous rice,3,g,Assistant
+1120,Mai Men Dong Tang,麦冬,42,g,Monarch
+1121,Mai Men Dong Tang,Ginseng root,9,g,Minister
+1122,Mu Li San,Astragalus root,30,g,Minister
+1123,Mu Li San,Ephedra root,30,g,Assistant
+1124,Mu Li San,Oyster shell,30,g,Monarch
+1125,Mu Li San,Wheat grain,30,g,"Assistant, Guide"
+1143,Nuan Gan Jian,Agarwood resin,3,g,Minister
+1144,Nuan Gan Jian,Angelica sinensis root,6,g,Minister
+1145,Nuan Gan Jian,Poria fungus,6,g,Assistant
+1146,Nuan Gan Jian,Lycium fruit,9,g,Minister
+1147,Nuan Gan Jian,Cinnamon bark,3,g,Monarch
+1148,Nuan Gan Jian,Lindera root,6,g,Minister
+1149,Nuan Gan Jian,Fennel fruit,6,g,Monarch
+1150,Ping Wei San,Atractylodes lancea rhizome,120,g,Monarch
+1151,Ping Wei San,陈皮,60,g,Assistant
+1152,Ping Wei San,Licorice root,30,g,Guide
+1153,Ping Wei San,Magnolia bark,90,g,Minister
+1154,Pu Ji Xiao Du Yin,Isatis root,3,g,Assistant
+1155,Pu Ji Xiao Du Yin,Mentha herb,3,g,Minister
+1156,Pu Ji Xiao Du Yin,Bupleurum root,6,g,"Assistant, Guide"
+1157,Pu Ji Xiao Du Yin,陈皮,6,g,Assistant
+1158,Pu Ji Xiao Du Yin,Licorice root,6,g,Assistant
+1159,Pu Ji Xiao Du Yin,Coptis rhizome,15,g,Monarch
+1160,Pu Ji Xiao Du Yin,Scutellaria root,15,g,Monarch
+1161,Pu Ji Xiao Du Yin,僵蚕,2,g,Minister
+1162,Pu Ji Xiao Du Yin,Platycodon root,6,g,Assistant
+1163,Pu Ji Xiao Du Yin,Forsythia fruit,3,g,Minister
+1164,Pu Ji Xiao Du Yin,Puffball fungus,3,g,Assistant
+1165,Pu Ji Xiao Du Yin,Arctium fruit,3,g,Minister
+1166,Pu Ji Xiao Du Yin,Cimicifuga rhizome,2,g,"Assistant, Guide"
+1167,Pu Ji Xiao Du Yin,Scrophularia root,6,g,Assistant
+1185,Qian Zheng San,Typhonium tuber,3,g,Monarch
+1186,Qian Zheng San,僵蚕,3,g,Minister
+1187,Qian Zheng San,Scorpion,3,g,Minister
+1188,Qiang Huo Sheng Shi Tang,Chuanxiong rhizome,1.5,g,Assistant
+1189,Qiang Huo Sheng Shi Tang,Angelica pubescens root,6,g,Monarch
+1190,Qiang Huo Sheng Shi Tang,Saposhnikovia root,3,g,Minister
+1191,Qiang Huo Sheng Shi Tang,Licorice root,3,g,Guide
+1192,Qiang Huo Sheng Shi Tang,Ligusticum root,3,g,Minister
+1193,Qiang Huo Sheng Shi Tang,Vitex fruit,2,g,Assistant
+1194,Qiang Huo Sheng Shi Tang,Notopterygium rhizome,6,g,Monarch
+1201,Qing Hao Bie Jia Tang,Turtle shell,15,g,Monarch
+1202,Qing Hao Bie Jia Tang,牡丹皮,9,g,Assistant
+1203,Qing Hao Bie Jia Tang,Artemisia annua herb,6,g,Monarch
+1204,Qing Hao Bie Jia Tang,生地黄,12,g,Minister
+1205,Qing Hao Bie Jia Tang,Anemarrhena rhizome,6,g,Minister
+1212,Qing Gu San,Turtle shell,3,g,Assistant
+1213,Qing Gu San,Lycium bark,3,g,Minister
+1214,Qing Gu San,Licorice root,2,g,Guide
+1215,Qing Gu San,Picrorhiza rhizome,3,g,Minister
+1216,Qing Gu San,Gentiana macrophylla root,3,g,Assistant
+1217,Qing Gu San,Artemisia annua herb,3,g,Assistant
+1218,Qing Gu San,Stellaria root,5,g,Monarch
+1219,Qing Gu San,Anemarrhena rhizome,3,g,Minister
+1233,Qing Luo Yin,Hyacinth bean flower,6,g,Monarch
+1234,Qing Luo Yin,Lotus leaf,6,g,"Assistant, Guide"
+1235,Qing Luo Yin,Honeysuckle flower,6,g,Monarch
+1236,Qing Luo Yin,Loofah peel,6,g,Minister
+1237,Qing Luo Yin,Watermelon rind,6,g,Minister
+1238,Qing Luo Yin,竹叶心,6,g,"Assistant, Guide"
+1239,Qing Qi Hua Tan Wan,Pinellia tuber,45,g,Minister
+1240,Qing Qi Hua Tan Wan,陈皮,30,g,Assistant
+1241,Qing Qi Hua Tan Wan,Prepared Arisaema,45,g,Monarch
+1242,Qing Qi Hua Tan Wan,Poria fungus,30,g,Assistant
+1243,Qing Qi Hua Tan Wan,Trichosanthes seed,30,g,Monarch
+1244,Qing Qi Hua Tan Wan,Scutellaria root,30,g,Minister
+1245,Qing Qi Hua Tan Wan,Apricot seed,30,g,Assistant
+1246,Qing Qi Hua Tan Wan,Immature bitter orange fruit,30,g,Assistant
+1247,Qing Shu Yi Qi Tang,Licorice root,3,g,Guide
+1248,Qing Shu Yi Qi Tang,Lotus stem,15,g,Minister
+1249,Qing Shu Yi Qi Tang,Coptis rhizome,3,g,Assistant
+1250,Qing Shu Yi Qi Tang,Non-glutinous rice,15,g,Guide
+1251,Qing Shu Yi Qi Tang,麦冬,9,g,Minister
+1252,Qing Shu Yi Qi Tang,Dendrobium stem,15,g,Minister
+1253,Qing Shu Yi Qi Tang,Watermelon rind,30,g,Monarch
+1254,Qing Shu Yi Qi Tang,American ginseng root,5,g,Monarch
+1255,Qing Shu Yi Qi Tang,Anemarrhena rhizome,6,g,Assistant
+1256,Qing Shu Yi Qi Tang,Bamboo leaf,6,g,Assistant
+1257,Qing Wei San,Angelica sinensis root,6,g,Assistant
+1258,Qing Wei San,Coptis rhizome,6,g,Monarch
+1259,Qing Wei San,牡丹皮,9,g,Minister
+1260,Qing Wei San,Cimicifuga rhizome,9,g,臣、使
+1261,Qing Wei San,生地黄,6,g,Minister
+1271,Qing Ying Tang,Danshen root,6,g,Assistant
+1272,Qing Ying Tang,Coptis rhizome,5,g,Assistant
+1273,Qing Ying Tang,Honeysuckle flower,9,g,Assistant
+1274,Qing Ying Tang,Forsythia fruit,6,g,Assistant
+1275,Qing Ying Tang,麦冬,9,g,Minister
+1276,Qing Ying Tang,生地黄,15,g,Minister
+1277,Qing Ying Tang,Rhinoceros horn,30,g,Monarch
+1278,Qing Ying Tang,Scrophularia root,9,g,Minister
+1279,Qing Ying Tang,竹叶心,3,g,Assistant
+1280,Qing Zao Jiu Fei Tang,Donkey-hide gelatin,3,g,Assistant
+1281,Qing Zao Jiu Fei Tang,Licorice root,3,g,"Assistant, Guide"
+1282,Qing Zao Jiu Fei Tang,Apricot seed,2,g,Assistant
+1283,Qing Zao Jiu Fei Tang,麦冬,4,g,Minister
+1284,Qing Zao Jiu Fei Tang,Loquat leaf,3,g,Assistant
+1285,Qing Zao Jiu Fei Tang,Ginseng root,2,g,Assistant
+1286,Qing Zao Jiu Fei Tang,Mulberry leaf,9,g,Monarch
+1287,Qing Zao Jiu Fei Tang,Gypsum mineral,8,g,Minister
+1288,Qing Zao Jiu Fei Tang,Flax seed,3,g,Assistant
+1305,San Ren Tang,Pinellia tuber,15,g,Assistant
+1306,San Ren Tang,豆蔻,6,g,Monarch
+1307,San Ren Tang,Magnolia bark,6,g,Assistant
+1308,San Ren Tang,Talc powder,18,g,Minister
+1309,San Ren Tang,Apricot seed,15,g,Monarch
+1310,San Ren Tang,Tetrapanax pith,6,g,Minister
+1311,San Ren Tang,Coix seed,18,g,Monarch
+1312,San Ren Tang,Bamboo leaf,6,g,Minister
+1313,Sang Ju Yin,Mentha herb,2.5,g,Minister
+1314,Sang Ju Yin,Licorice root,2.5,g,Guide
+1315,Sang Ju Yin,Platycodon root,6,g,Minister
+1316,Sang Ju Yin,Chrysanthemum flower,3,g,Monarch
+1317,Sang Ju Yin,Apricot seed,6,g,Minister
+1318,Sang Ju Yin,Forsythia fruit,5,g,Assistant
+1319,Sang Ju Yin,Reed rhizome,6,g,Assistant
+1320,Sang Ju Yin,Mulberry leaf,7.5,g,Monarch
+1321,Sang Piao Shao San,Angelica sinensis root,30,g,Assistant
+1322,Sang Piao Shao San,Poria with host wood,30,g,Assistant
+1323,Sang Piao Shao San,龟甲,30,g,Minister
+1324,Sang Piao Shao San,Fossil bone,30,g,Minister
+1325,Sang Piao Shao San,Ginseng root,30,g,Assistant
+1326,Sang Piao Shao San,Mantis egg-case,30,g,Monarch
+1327,Sang Piao Shao San,Acorus rhizome,30,g,Assistant
+1328,Sang Piao Shao San,Polygala root,30,g,Assistant
+1329,Sang Xing Tang,Fermented soybean,3,g,Minister
+1330,Sang Xing Tang,Apricot seed,4.5,g,Monarch
+1331,Sang Xing Tang,Pear peel,3,g,Assistant
+1332,Sang Xing Tang,Mulberry leaf,3,g,Monarch
+1333,Sang Xing Tang,Adenophora root,6,g,Minister
+1334,Sang Xing Tang,Fritillaria thunbergii bulb,3,g,Minister
+1335,Sang Xing Tang,Gardenia fruit,3,g,Assistant
+1336,Shao Yao Tang,Areca nut,6,g,Minister
+1337,Shao Yao Tang,Costus root,6,g,Minister
+1338,Shao Yao Tang,Rhubarb root and rhizome,9,g,Assistant
+1339,Shao Yao Tang,Angelica sinensis root,15,g,Minister
+1340,Shao Yao Tang,Licorice root,6,g,"Assistant, Guide"
+1341,Shao Yao Tang,Coptis rhizome,15,g,Monarch
+1342,Shao Yao Tang,Scutellaria root,15,g,Monarch
+1343,Shao Yao Tang,Cinnamon bark,5,g,Assistant
+1344,Shao Yao Tang,芍药,30,g,Minister
+1388,Shen Qi Wan,Poria fungus,90,g,Assistant
+1389,Shen Qi Wan,Processed aconite root,30,g,Monarch
+1390,Shen Qi Wan,Cinnamon twig,30,g,Monarch
+1391,Shen Qi Wan,牡丹皮,90,g,Assistant
+1392,Shen Qi Wan,Chinese yam rhizome,120,g,Minister
+1393,Shen Qi Wan,山茱萸,120,g,Minister
+1394,Shen Qi Wan,生地黄,240,g,Minister
+1395,Shen Qi Wan,Alisma rhizome,90,g,Assistant
+1396,Sheng Ma Ge Gen Tang,Licorice root,300,g,Guide
+1397,Sheng Ma Ge Gen Tang,Kudzu root,450,g,Minister
+1398,Sheng Ma Ge Gen Tang,芍药,300,g,Assistant
+1399,Sheng Ma Ge Gen Tang,Cimicifuga rhizome,300,g,Monarch
+1419,Sheng Hua Tang,Chuanxiong rhizome,9,g,Minister
+1420,Sheng Hua Tang,Angelica sinensis root,24,g,Monarch
+1421,Sheng Hua Tang,Licorice root,2,g,Guide
+1422,Sheng Hua Tang,Dried ginger,2,g,Assistant
+1423,Sheng Hua Tang,Peach kernel,6,g,Minister
+1435,Shi Xiao San,Cattail pollen,6,g,Monarch
+1436,Shi Xiao San,Trogopterus dung,6,g,Monarch
+1447,Shi Hui San,Cogongrass rhizome,9,g,Minister
+1448,Shi Hui San,Arborvitae leaf,9,g,Minister
+1449,Shi Hui San,Rhubarb root and rhizome,9,g,Assistant
+1450,Shi Hui San,Greater thistle herb,9,g,Monarch
+1451,Shi Hui San,Lotus leaf,9,g,Minister
+1452,Shi Hui San,牡丹皮,9,g,Assistant
+1453,Shi Hui San,Madder root,9,g,Minister
+1454,Shi Hui San,Lesser thistle herb,9,g,Monarch
+1455,Shi Hui San,Gardenia fruit,9,g,Assistant
+1456,Shi Hui San,棕榈皮,9,Grain,Minister
+1457,Shi Zao Tang,Euphorbia root,,,Minister
+1458,Shi Zao Tang,Jujube fruit,10,Piece,Assistant
+1459,Shi Zao Tang,Kansui root,,,Monarch
+1460,Shi Zao Tang,Daphne flower bud,,,Minister
+1461,Shi Pi San,Atractylodes rhizome,30,g,Minister
+1462,Shi Pi San,Areca nut,30,g,Assistant
+1463,Shi Pi San,Tsaoko fruit,30,g,Assistant
+1464,Shi Pi San,Costus root,30,g,Assistant
+1465,Shi Pi San,Poria fungus,30,g,Minister
+1466,Shi Pi San,Processed aconite root,30,g,Monarch
+1467,Shi Pi San,Licorice root,15,g,"Assistant, Guide"
+1468,Shi Pi San,Dried ginger,30,g,Monarch
+1469,Shi Pi San,Magnolia bark,30,g,Assistant
+1470,Shi Pi San,Chaenomeles fruit,30,g,Assistant
+1487,Si Ni San,Bupleurum root,6,g,Monarch
+1488,Si Ni San,Licorice root,6,g,Guide
+1489,Si Ni San,芍药,6,g,Minister
+1490,Si Ni San,Immature bitter orange fruit,6,g,Assistant
+1491,Si Ni Tang,Processed aconite root,15,g,Monarch
+1492,Si Ni Tang,Licorice root,6,g,"Assistant, Guide"
+1493,Si Ni Tang,Dried ginger,6,g,Minister
+1494,Si Shen Wan,Psoralea fruit,120,g,Monarch
+1495,Si Shen Wan,Nutmeg seed,60,g,Minister
+1496,Si Shen Wan,Evodia fruit,30,g,Assistant
+1497,Si Shen Wan,Schisandra fruit,60,g,Assistant
+1498,Si Wu Tang,White peony root,9,g,Assistant
+1499,Si Wu Tang,Chuanxiong rhizome,6,g,Assistant
+1500,Si Wu Tang,Angelica sinensis root,9,g,Minister
+1501,Si Wu Tang,Prepared Rehmannia root,12,g,Monarch
+1502,Su He Xiang Wan,Benzoin resin,30,g,Monarch
+1503,Su He Xiang Wan,Atractylodes rhizome,30,g,Assistant
+1504,Su He Xiang Wan,Long pepper fruit,30,g,Assistant
+1505,Su He Xiang Wan,Agarwood resin,30,g,Minister
+1506,Su He Xiang Wan,Clove flower,30,g,Minister
+1507,Su He Xiang Wan,Chebula fruit (Terminalia chebula),30,g,Assistant
+1508,Su He Xiang Wan,Borneol,15,g,Monarch
+1509,Su He Xiang Wan,Costus root,30,g,Minister
+1510,Su He Xiang Wan,Frankincense,15,g,Minister
+1511,Su He Xiang Wan,Musk,30,g,Monarch
+1512,Su He Xiang Wan,Styrax resin,15,g,Monarch
+1513,Su He Xiang Wan,Sandalwood,30,g,Minister
+1514,Su He Xiang Wan,Rhinoceros horn,30,g,Assistant
+1515,Su He Xiang Wan,Cyperus rhizome,30,g,Minister
+1516,Su He Xiang Wan,Cinnabar,30,g,Assistant
+1517,Su Zi Jiang Qi Tang,Pinellia tuber,75,g,Minister
+1518,Su Zi Jiang Qi Tang,Jujube fruit,1,Piece,Guide
+1519,Su Zi Jiang Qi Tang,Angelica sinensis root,45,g,Assistant
+1520,Su Zi Jiang Qi Tang,Licorice root,60,g,Guide
+1521,Su Zi Jiang Qi Tang,Magnolia bark,30,g,Minister
+1522,Su Zi Jiang Qi Tang,Peucedanum root,30,g,Minister
+1523,Su Zi Jiang Qi Tang,Cinnamon bark,45,g,Assistant
+1524,Su Zi Jiang Qi Tang,Fresh ginger rhizome,2,Slice,Assistant
+1525,Su Zi Jiang Qi Tang,Perilla leaf,5,Slice,Assistant
+1526,Su Zi Jiang Qi Tang,紫苏子,75,g,Monarch
+1527,Suan Zao Ren Tang,Chuanxiong rhizome,6,g,Assistant
+1528,Suan Zao Ren Tang,Poria fungus,6,g,Minister
+1529,Suan Zao Ren Tang,Licorice root,3,g,Guide
+1530,Suan Zao Ren Tang,Ziziphus seed,15,g,Monarch
+1531,Suan Zao Ren Tang,Anemarrhena rhizome,6,g,Minister
+1544,Tao He Cheng Qi Tang,Rhubarb root and rhizome,12,g,Monarch
+1545,Tao He Cheng Qi Tang,Licorice root,6,g,"Assistant, Guide"
+1546,Tao He Cheng Qi Tang,Cinnamon twig,6,g,Minister
+1547,Tao He Cheng Qi Tang,Mirabilite,6,g,Minister
+1548,Tao He Cheng Qi Tang,Peach kernel,12,g,Monarch
+1552,Tian Ma Gou Teng Yin,Achyranthes root,12,g,Minister
+1553,Tian Ma Gou Teng Yin,Eucommia bark,9,g,Assistant
+1554,Tian Ma Gou Teng Yin,Poria with host wood,9,g,Assistant
+1555,Tian Ma Gou Teng Yin,Uncaria stem,12,g,Monarch
+1556,Tian Ma Gou Teng Yin,Scutellaria root,9,g,Assistant
+1557,Tian Ma Gou Teng Yin,Mulberry mistletoe,9,g,Assistant
+1558,Tian Ma Gou Teng Yin,Abalone shell,18,g,Minister
+1559,Tian Ma Gou Teng Yin,Polygonum multiflorum vine,9,g,Assistant
+1560,Tian Ma Gou Teng Yin,Gastrodia rhizome,9,g,Monarch
+1561,Tian Ma Gou Teng Yin,Motherwort herb,9,g,Assistant
+1562,Tian Ma Gou Teng Yin,Gardenia fruit,9,g,Minister
+1563,Tian Tai Wu Yao San,Croton seed,12,Grain,"Assistant, Guide"
+1564,Tian Tai Wu Yao San,Areca nut,9,g,"Assistant, Guide"
+1565,Tian Tai Wu Yao San,Melia fruit,12,g,"Assistant, Guide"
+1566,Tian Tai Wu Yao San,Costus root,15,g,Minister
+1567,Tian Tai Wu Yao San,Galangal rhizome,15,g,Minister
+1568,Tian Tai Wu Yao San,Green tangerine peel,15,g,Minister
+1569,Tian Tai Wu Yao San,Lindera root,15,g,Monarch
+1570,Tian Tai Wu Yao San,Fennel fruit,15,g,Minister
+1571,Tian Wang Bu Xin Dan,Platycladus seed,30,g,Minister
+1572,Tian Wang Bu Xin Dan,Danshen root,15,g,Assistant
+1573,Tian Wang Bu Xin Dan,Angelica sinensis root,30,g,Minister
+1574,Tian Wang Bu Xin Dan,Poria fungus,15,g,Assistant
+1575,Tian Wang Bu Xin Dan,Platycodon root,15,g,Guide
+1576,Tian Wang Bu Xin Dan,麦冬,30,g,Minister
+1577,Tian Wang Bu Xin Dan,Ginseng root,15,g,Assistant
+1578,Tian Wang Bu Xin Dan,生地黄,120,g,Monarch
+1579,Tian Wang Bu Xin Dan,Ziziphus seed,30,g,Minister
+1580,Tian Wang Bu Xin Dan,天冬,30,g,Minister
+1581,Tian Wang Bu Xin Dan,Schisandra fruit,30,g,Assistant
+1582,Tian Wang Bu Xin Dan,Scrophularia root,15,g,Assistant
+1583,Tian Wang Bu Xin Dan,Polygala root,15,g,Assistant
+1584,Tian Wang Bu Xin Dan,Cinnabar,,,Assistant
+1602,Tong Xie Yao Fang,White peony root,60,g,Minister
+1603,Tong Xie Yao Fang,Atractylodes rhizome,90,g,Monarch
+1604,Tong Xie Yao Fang,陈皮,45,g,Assistant
+1605,Tong Xie Yao Fang,Saposhnikovia root,30,g,"Assistant, Guide"
+1616,Wei Jing Tang,冬瓜子,24,g,Minister
+1617,Wei Jing Tang,Reed rhizome,60,g,Monarch
+1618,Wei Jing Tang,Peach kernel,9,g,Assistant
+1619,Wei Jing Tang,Coix seed,30,g,Minister
+1620,Wen Dan Tang,Pinellia tuber,60,g,Monarch
+1621,Wen Dan Tang,陈皮,90,g,Minister
+1622,Wen Dan Tang,Poria fungus,45,g,Assistant
+1623,Wen Dan Tang,Licorice root,30,g,Guide
+1624,Wen Dan Tang,Immature bitter orange fruit,60,g,Minister
+1625,Wen Dan Tang,Bamboo shavings,60,g,Minister
+1626,Wen Jing Tang,Donkey-hide gelatin,6,g,Assistant
+1627,Wen Jing Tang,Pinellia tuber,6,g,Assistant
+1628,Wen Jing Tang,Chuanxiong rhizome,6,g,Minister
+1629,Wen Jing Tang,Angelica sinensis root,6,g,Minister
+1630,Wen Jing Tang,Licorice root,6,g,"Assistant, Guide"
+1631,Wen Jing Tang,Cinnamon twig,6,g,Monarch
+1632,Wen Jing Tang,麦冬,9,g,Assistant
+1633,Wen Jing Tang,牡丹皮,6,g,Minister
+1634,Wen Jing Tang,Ginseng root,6,g,Assistant
+1635,Wen Jing Tang,芍药,6,g,Assistant
+1636,Wen Jing Tang,Fresh ginger rhizome,6,g,Assistant
+1637,Wen Jing Tang,Evodia fruit,9,g,Monarch
+1638,Wen Pi Tang,Rhubarb root and rhizome,15,g,Monarch
+1639,Wen Pi Tang,Angelica sinensis root,9,g,Assistant
+1640,Wen Pi Tang,Processed aconite root,6,g,Monarch
+1641,Wen Pi Tang,Licorice root,6,g,"Assistant, Guide"
+1642,Wen Pi Tang,Dried ginger,9,g,Minister
+1643,Wen Pi Tang,Mirabilite,6,g,Minister
+1644,Wen Pi Tang,Ginseng root,6,g,Assistant
+1645,Wu Mei Wan,Angelica sinensis root,120,g,Assistant
+1646,Wu Mei Wan,Processed aconite root,180,g,Assistant
+1647,Wu Mei Wan,Dried ginger,300,g,Assistant
+1648,Wu Mei Wan,Cinnamon twig,180,g,Assistant
+1649,Wu Mei Wan,Sichuan pepper,120,g,Minister
+1650,Wu Mei Wan,Phellodendron bark,180,g,Assistant
+1651,Wu Mei Wan,Coptis rhizome,480,g,Assistant
+1652,Wu Mei Wan,Ginseng root,180,g,Assistant
+1653,Wu Mei Wan,Mume fruit,480,g,Monarch
+1654,Wu Mei Wan,Asarum herb,180,g,Minister
+1655,Wu Zhu Yu Tang,Jujube fruit,4,Piece,"Assistant, Guide"
+1656,Wu Zhu Yu Tang,Ginseng root,9,g,Assistant
+1657,Wu Zhu Yu Tang,Fresh ginger rhizome,18,g,Minister
+1658,Wu Zhu Yu Tang,Evodia fruit,9,g,Monarch
+1664,Wu Ling San,Atractylodes rhizome,9,g,Assistant
+1665,Wu Ling San,Poria fungus,9,g,Minister
+1666,Wu Ling San,Cinnamon twig,6,g,Assistant
+1667,Wu Ling San,Alisma rhizome,15,g,Monarch
+1668,Wu Ling San,Polyporus fungus,9,g,Minister
+1669,Wu Pi San,陈皮,9,g,Minister
+1670,Wu Pi San,Areca husk,9,g,Minister
+1671,Wu Pi San,Poria peel,9,g,Monarch
+1672,Wu Pi San,Mulberry root bark,9,g,Assistant
+1673,Wu Pi San,Fresh ginger peel,9,g,Assistant
+1685,Xi Jiao Di Huang Tang,牡丹皮,9,g,Assistant
+1686,Xi Jiao Di Huang Tang,芍药,12,g,Assistant
+1687,Xi Jiao Di Huang Tang,生地黄,24,g,Minister
+1688,Xi Jiao Di Huang Tang,Rhinoceros horn,30,g,Monarch
+1689,Xian Fang Huo Ming Yin,Angelica dahurica root,3,g,Assistant
+1690,Xian Fang Huo Ming Yin,Fritillaria bulb,6,g,Assistant
+1691,Xian Fang Huo Ming Yin,陈皮,9,g,Minister
+1692,Xian Fang Huo Ming Yin,Red peony root,6,g,Minister
+1693,Xian Fang Huo Ming Yin,Pangolin scale,6,g,Assistant
+1694,Xian Fang Huo Ming Yin,Angelica sinensis root,6,g,Minister
+1695,Xian Fang Huo Ming Yin,Saposhnikovia root,6,g,Assistant
+1696,Xian Fang Huo Ming Yin,Licorice root,6,g,Guide
+1697,Xian Fang Huo Ming Yin,Honeysuckle flower,9,g,Monarch
+1698,Xian Fang Huo Ming Yin,Myrrh,6,g,Minister
+1699,Xian Fang Huo Ming Yin,Frankincense,6,g,Minister
+1700,Xian Fang Huo Ming Yin,Trichosanthes root,6,g,Assistant
+1701,Xian Fang Huo Ming Yin,Gleditsia thorn,6,g,Assistant
+1702,Xiang Ru San,白扁豆,250,g,Assistant
+1703,Xiang Ru San,Magnolia bark,250,g,Minister
+1704,Xiang Ru San,Mosla herb,500,g,Monarch
+1713,Xiang Su San,陈皮,60,g,Assistant
+1714,Xiang Su San,Licorice root,30,g,"Assistant, Guide"
+1715,Xiang Su San,Cyperus rhizome,120,g,Minister
+1716,Xiang Su San,Perilla leaf,120,g,Monarch
+1717,Xiao Yao San,White peony root,30,Tael,Minister
+1718,Xiao Yao San,Atractylodes rhizome,30,Tael,Assistant
+1719,Xiao Yao San,Bupleurum root,30,Tael,Monarch
+1720,Xiao Yao San,Angelica sinensis root,30,Tael,Minister
+1721,Xiao Yao San,Poria fungus,30,Tael,Assistant
+1722,Xiao Yao San,Licorice root,15,Tael,"Assistant, Guide"
+1723,Xiao Feng San,Atractylodes lancea rhizome,6,g,Minister
+1724,Xiao Feng San,Cicada slough,6,g,Monarch
+1725,Xiao Feng San,Angelica sinensis root,6,g,Assistant
+1726,Xiao Feng San,Saposhnikovia root,6,g,Monarch
+1727,Xiao Feng San,Licorice root,3,g,"Assistant, Guide"
+1728,Xiao Feng San,黑芝麻,6,g,Assistant
+1729,Xiao Feng San,Schizonepeta herb,6,g,Monarch
+1730,Xiao Feng San,Sophora root,6,g,Minister
+1731,Xiao Feng San,Akebia stem,3,g,Minister
+1732,Xiao Feng San,Arctium fruit,6,g,Monarch
+1733,Xiao Feng San,生地黄,6,g,Assistant
+1734,Xiao Feng San,Gypsum mineral,6,g,Minister
+1735,Xiao Feng San,Anemarrhena rhizome,6,g,Minister
+1736,Xiao Ban Xia Tang,Pinellia tuber,20,g,Monarch
+1737,Xiao Ban Xia Tang,Fresh ginger rhizome,10,g,"Minister, Assistant"
+1738,Xiao Chai Hu Tang,Pinellia tuber,9,g,Assistant
+1739,Xiao Chai Hu Tang,Bupleurum root,24,g,Monarch
+1740,Xiao Chai Hu Tang,Jujube fruit,12,Piece,Assistant
+1741,Xiao Chai Hu Tang,Licorice root,9,g,Guide
+1742,Xiao Chai Hu Tang,Scutellaria root,9,g,Minister
+1743,Xiao Chai Hu Tang,Ginseng root,9,g,Assistant
+1744,Xiao Chai Hu Tang,Fresh ginger rhizome,9,g,Assistant
+1748,Xiao Huo Luo Dan,Aconite root,180,g,Monarch
+1749,Xiao Huo Luo Dan,Sichuan aconite root,180,g,Monarch
+1750,Xiao Huo Luo Dan,Earthworm,180,g,Assistant
+1751,Xiao Huo Luo Dan,Myrrh,66,g,Assistant
+1752,Xiao Huo Luo Dan,Frankincense,66,g,Assistant
+1753,Xiao Huo Luo Dan,Arisaema tuber,180,g,Minister
+1754,Xiao Ji Yin Zi,Lophatherum herb,9,g,Assistant
+1755,Xiao Ji Yin Zi,Angelica sinensis root,9,g,Assistant
+1756,Xiao Ji Yin Zi,Talc powder,9,g,Assistant
+1757,Xiao Ji Yin Zi,Akebia stem,9,g,Assistant
+1758,Xiao Ji Yin Zi,Lotus node,9,g,Minister
+1759,Xiao Ji Yin Zi,Cattail pollen,9,g,Minister
+1760,Xiao Ji Yin Zi,生地黄,9,g,Minister
+1761,Xiao Ji Yin Zi,Lesser thistle herb,9,g,Monarch
+1762,Xiao Ji Yin Zi,Gardenia fruit,9,g,Assistant
+1763,Xiao Ji Yin Zi,Honey-fried licorice root,9,g,Guide
+1764,Xiao Jian Zhong Tang,Jujube fruit,12,Piece,Assistant
+1765,Xiao Jian Zhong Tang,Cinnamon twig,9,g,Minister
+1766,Xiao Jian Zhong Tang,芍药,18,g,Minister
+1767,Xiao Jian Zhong Tang,Fresh ginger rhizome,9,g,Assistant
+1768,Xiao Jian Zhong Tang,Maltose syrup,30,g,Monarch
+1769,Xiao Jian Zhong Tang,Honey-fried licorice root,6,g,"Assistant, Guide"
+1770,Xiao Qing Long Tang,Pinellia tuber,9,g,Assistant
+1771,Xiao Qing Long Tang,Licorice root,6,g,"Assistant, Guide"
+1772,Xiao Qing Long Tang,Dried ginger,6,g,Minister
+1773,Xiao Qing Long Tang,Cinnamon twig,9,g,Monarch
+1774,Xiao Qing Long Tang,Ephedra herb,9,g,Monarch
+1775,Xiao Qing Long Tang,芍药,9,g,Assistant
+1776,Xiao Qing Long Tang,Schisandra fruit,6,g,Assistant
+1777,Xiao Qing Long Tang,Asarum herb,6,g,Minister
+1778,Xiao Xian Xiong Tang,Pinellia tuber,12,g,Minister
+1779,Xiao Xian Xiong Tang,Trichosanthes fruit,20,g,Monarch
+1780,Xiao Xian Xiong Tang,Coptis rhizome,6,g,Minister
+1781,Xie Bai San,Lycium bark,30,g,Minister
+1782,Xie Bai San,Licorice root,3,g,"Assistant, Guide"
+1783,Xie Bai San,Non-glutinous rice,,,"Assistant, Guide"
+1784,Xie Bai San,Mulberry root bark,30,g,Monarch
+1808,Xing Su San,Pinellia tuber,9,g,Assistant
+1809,Xing Su San,Jujube fruit,3,Piece,Assistant
+1810,Xing Su San,Poria fungus,9,g,Assistant
+1811,Xing Su San,Licorice root,3,g,"Assistant, Guide"
+1812,Xing Su San,Platycodon root,6,g,Minister
+1813,Xing Su San,陈皮,6,g,Assistant
+1814,Xing Su San,Apricot seed,9,g,Monarch
+1815,Xing Su San,Peucedanum root,9,g,Minister
+1816,Xing Su San,Fresh ginger rhizome,3,Piece,Assistant
+1817,Xing Su San,Mature bitter orange fruit,6,g,Minister
+1818,Xing Su San,Perilla leaf,9,g,Monarch
+1828,Xuan Fu Dai Zhe Tang,Pinellia tuber,9,g,Minister
+1829,Xuan Fu Dai Zhe Tang,Jujube fruit,4,Piece,"Assistant, Guide"
+1830,Xuan Fu Dai Zhe Tang,Hematite,6,g,Minister
+1831,Xuan Fu Dai Zhe Tang,Licorice root,9,g,"Assistant, Guide"
+1832,Xuan Fu Dai Zhe Tang,Ginseng root,6,g,"Assistant, Guide"
+1833,Xuan Fu Dai Zhe Tang,Fresh ginger rhizome,15,g,Minister
+1834,Xuan Fu Dai Zhe Tang,旋覆花,9,g,Monarch
+1835,Xue Fu Zhu Yu Tang,Bupleurum root,3,g,Assistant
+1836,Xue Fu Zhu Yu Tang,Red peony root,6,g,Minister
+1837,Xue Fu Zhu Yu Tang,Achyranthes root,9,g,Minister
+1838,Xue Fu Zhu Yu Tang,Chuanxiong rhizome,4.5,g,Minister
+1839,Xue Fu Zhu Yu Tang,Angelica sinensis root,9,g,Assistant
+1840,Xue Fu Zhu Yu Tang,Licorice root,6,g,Guide
+1841,Xue Fu Zhu Yu Tang,Safflower flower,9,g,Monarch
+1842,Xue Fu Zhu Yu Tang,Platycodon root,4.5,g,"Assistant, Guide"
+1843,Xue Fu Zhu Yu Tang,生地黄,9,g,Assistant
+1844,Xue Fu Zhu Yu Tang,Peach kernel,12,g,Monarch
+1845,Xue Fu Zhu Yu Tang,Mature bitter orange fruit,6,g,Assistant
+1846,Yang He Tang,White mustard seed,6,g,Assistant
+1847,Yang He Tang,Licorice root,3,g,Guide
+1848,Yang He Tang,Deer horn glue,9,g,Monarch
+1849,Yang He Tang,Ephedra herb,2,g,Assistant
+1850,Yang He Tang,Roasted ginger,2,g,Minister
+1851,Yang He Tang,Cinnamon bark,3,g,Minister
+1852,Yang He Tang,Prepared Rehmannia root,30,g,Monarch
+1853,Yang Yin Qing Fei Tang,White peony root,5,g,Assistant
+1854,Yang Yin Qing Fei Tang,Mentha herb,3,g,Assistant
+1855,Yang Yin Qing Fei Tang,Fritillaria bulb,5,g,Assistant
+1856,Yang Yin Qing Fei Tang,Licorice root,3,g,"Assistant, Guide"
+1857,Yang Yin Qing Fei Tang,麦冬,9,g,Minister
+1858,Yang Yin Qing Fei Tang,牡丹皮,5,g,Assistant
+1859,Yang Yin Qing Fei Tang,生地黄,6,g,Monarch
+1860,Yang Yin Qing Fei Tang,Scrophularia root,9,g,Minister
+1861,Yi Guan Jian,Glehnia root,9,g,Minister
+1862,Yi Guan Jian,Melia fruit,4.5,g,Assistant
+1863,Yi Guan Jian,Angelica sinensis root,9,g,Minister
+1864,Yi Guan Jian,Lycium fruit,,g,Minister
+1865,Yi Guan Jian,麦冬,9,g,Minister
+1866,Yi Guan Jian,生地黄,,g,Monarch
+1867,Yi Huang Tang,Ginkgo seed,12,g,Minister
+1868,Yi Huang Tang,Plantain seed,3,g,Assistant
+1869,Yi Huang Tang,Phellodendron bark,6,g,Assistant
+1870,Yi Huang Tang,Gorgon fruit,30,g,Monarch
+1871,Yi Huang Tang,Chinese yam rhizome,30,g,Monarch
+1872,Yi Wei Tang,Rock sugar,3,g,"Assistant, Guide"
+1873,Yi Wei Tang,麦冬,15,g,Monarch
+1874,Yi Wei Tang,Adenophora root,9,g,Minister
+1875,Yi Wei Tang,生地黄,15,g,Monarch
+1876,Yi Wei Tang,Polygonatum rhizome,4.5,g,Minister
+1880,Yin Chen Hao Tang,Rhubarb root and rhizome,6,g,Assistant
+1881,Yin Chen Hao Tang,茵陈,18,g,Monarch
+1882,Yin Chen Hao Tang,Gardenia fruit,12,g,Minister
+1883,Yin Qiao San,Mentha herb,18,g,Minister
+1884,Yin Qiao San,Fermented soybean,15,g,Minister
+1885,Yin Qiao San,Licorice root,15,g,Guide
+1886,Yin Qiao San,Honeysuckle flower,30,g,Monarch
+1887,Yin Qiao San,Schizonepeta spike,12,g,Minister
+1888,Yin Qiao San,Platycodon root,18,g,Assistant
+1889,Yin Qiao San,Forsythia fruit,30,g,Monarch
+1890,Yin Qiao San,Reed rhizome,,,Assistant
+1891,Yin Qiao San,Arctium fruit,18,g,Minister
+1892,Yin Qiao San,Bamboo leaf,12,g,Assistant
+1893,You Gui Wan,Angelica sinensis root,90,g,Assistant
+1894,You Gui Wan,Eucommia bark,120,g,Assistant
+1895,You Gui Wan,Processed aconite root,,g,Monarch
+1896,You Gui Wan,Lycium fruit,90,g,Minister
+1897,You Gui Wan,Deer horn glue,120,g,Monarch
+1898,You Gui Wan,Cinnamon bark,60,g,Monarch
+1899,You Gui Wan,Chinese yam rhizome,120,g,Minister
+1900,You Gui Wan,山茱萸,90,g,Minister
+1901,You Gui Wan,Prepared Rehmannia root,240,g,Minister
+1902,You Gui Wan,Cuscuta seed,120,g,Assistant
+1911,Yu Nv Jian,Achyranthes root,5,g,"Assistant, Guide"
+1912,Yu Nv Jian,麦冬,6,g,Assistant
+1913,Yu Nv Jian,Gypsum mineral,,g,Monarch
+1914,Yu Nv Jian,Prepared Rehmannia root,,g,Minister
+1915,Yu Nv Jian,Anemarrhena rhizome,5,g,Assistant
+1926,Yu Zhen San,Typhonium tuber,4.5,g,Monarch
+1927,Yu Zhen San,Angelica dahurica root,4.5,g,Minister
+1928,Yu Zhen San,Saposhnikovia root,4.5,g,Minister
+1929,Yu Zhen San,南星,4.5,g,Monarch
+1930,Yu Zhen San,Notopterygium rhizome,4.5,g,Minister
+1931,Yu Zhen San,Gastrodia rhizome,4.5,g,Assistant
+1937,Yue Ju Wan,Atractylodes lancea rhizome,,g,"Minister, Assistant"
+1938,Yue Ju Wan,Chuanxiong rhizome,,g,"Minister, Assistant"
+1939,Yue Ju Wan,Medicated leaven,,g,"Minister, Assistant"
+1940,Yue Ju Wan,Cyperus rhizome,,g,Monarch
+1941,Yue Ju Wan,Gardenia fruit,,g,"Minister, Assistant"
+1957,Zeng Ye Tang,麦冬,24,g,Minister
+1958,Zeng Ye Tang,生地黄,24,g,Minister
+1959,Zeng Ye Tang,Scrophularia root,30,g,Monarch
+1960,Zhen Ren Yang Zang Tang,White peony root,48,g,Assistant
+1961,Zhen Ren Yang Zang Tang,Atractylodes rhizome,18,g,Assistant
+1962,Zhen Ren Yang Zang Tang,Costus root,42,g,Assistant
+1963,Zhen Ren Yang Zang Tang,Angelica sinensis root,18,g,Assistant
+1964,Zhen Ren Yang Zang Tang,Chebula fruit (Terminalia chebula),36,g,Minister
+1965,Zhen Ren Yang Zang Tang,Ginseng root,18,g,Assistant
+1966,Zhen Ren Yang Zang Tang,Nutmeg seed,15,g,Minister
+1967,Zhen Ren Yang Zang Tang,Cinnamon bark,24,g,Assistant
+1968,Zhen Ren Yang Zang Tang,Poppy capsule,108,g,Monarch
+1969,Zhen Ren Yang Zang Tang,Honey-fried licorice root,24,g,"Assistant, Guide"
+1970,Zhen Wu Tang,Atractylodes rhizome,6,g,Minister
+1971,Zhen Wu Tang,Poria fungus,9,g,Minister
+1972,Zhen Wu Tang,Processed aconite root,9,g,Monarch
+1973,Zhen Wu Tang,芍药,9,g,Assistant
+1974,Zhen Wu Tang,Fresh ginger rhizome,9,g,Assistant
+1975,Zhen Gan Xi Feng Tang,White peony root,15,g,Minister
+1976,Zhen Gan Xi Feng Tang,Melia fruit,6,g,Assistant
+1977,Zhen Gan Xi Feng Tang,Hematite,30,g,Monarch
+1978,Zhen Gan Xi Feng Tang,Licorice root,4.5,g,Guide
+1979,Zhen Gan Xi Feng Tang,龟甲,15,g,Minister
+1980,Zhen Gan Xi Feng Tang,Fossil bone,15,g,Minister
+1981,Zhen Gan Xi Feng Tang,Barley malt,6,g,Assistant
+1982,Zhen Gan Xi Feng Tang,Oyster shell,15,g,Minister
+1983,Zhen Gan Xi Feng Tang,牛膝,30,g,Minister
+1984,Zhen Gan Xi Feng Tang,天冬,15,g,Assistant
+1985,Zhen Gan Xi Feng Tang,Scrophularia root,15,g,Assistant
+1986,Zhen Gan Xi Feng Tang,茵陈,6,g,Assistant
+1987,Zheng Chai Hu Yin,Bupleurum root,9,g,Monarch
+1988,Zheng Chai Hu Yin,陈皮,4.5,g,Assistant
+1989,Zheng Chai Hu Yin,Saposhnikovia root,3,g,Minister
+1990,Zheng Chai Hu Yin,Licorice root,3,g,Guide
+1991,Zheng Chai Hu Yin,芍药,6,g,Assistant
+1992,Zheng Chai Hu Yin,Fresh ginger rhizome,,Piece,Assistant
+1996,Zhi Sou San,Stemona root,1000,g,Minister
+1997,Zhi Sou San,Stemona root,1000,g,Monarch
+1998,Zhi Sou San,陈皮,500,g,Assistant
+1999,Zhi Sou San,Licorice root,375,g,"Assistant, Guide"
+2000,Zhi Sou San,Schizonepeta herb,1000,g,Assistant
+2001,Zhi Sou San,Platycodon root,1000,g,Minister
+2002,Zhi Sou San,紫菀,1000,g,Monarch
+2003,Zhi Shi Dao Zhi Wan,Atractylodes rhizome,9,g,Assistant
+2004,Zhi Shi Dao Zhi Wan,Rhubarb root and rhizome,30,g,Monarch
+2005,Zhi Shi Dao Zhi Wan,Poria fungus,9,g,Assistant
+2006,Zhi Shi Dao Zhi Wan,Coptis rhizome,9,g,Assistant
+2007,Zhi Shi Dao Zhi Wan,Scutellaria root,9,g,Assistant
+2008,Zhi Shi Dao Zhi Wan,Medicated leaven,15,g,Assistant
+2009,Zhi Shi Dao Zhi Wan,Alisma rhizome,6,g,Assistant
+2010,Zhi Shi Dao Zhi Wan,Immature bitter orange fruit,15,g,Minister
+2011,Zhi Shi Xiao Pi Wan,Atractylodes rhizome,6,g,Assistant
+2012,Zhi Shi Xiao Pi Wan,Pinellia tuber,9,g,Assistant
+2013,Zhi Shi Xiao Pi Wan,Poria fungus,6,g,Assistant
+2014,Zhi Shi Xiao Pi Wan,Dried ginger,6,g,Assistant
+2015,Zhi Shi Xiao Pi Wan,Magnolia bark,12,g,Minister
+2016,Zhi Shi Xiao Pi Wan,Coptis rhizome,15,g,Assistant
+2017,Zhi Shi Xiao Pi Wan,Barley malt,6,g,Assistant
+2018,Zhi Shi Xiao Pi Wan,Ginseng root,9,g,Assistant
+2019,Zhi Shi Xiao Pi Wan,Immature bitter orange fruit,15,g,Monarch
+2020,Zhi Shi Xiao Pi Wan,Honey-fried licorice root,6,g,"Assistant, Guide"
+2021,Zhi Shi Xie Bai Gui Zhi Tang,Trichosanthes fruit,12,g,Monarch
+2022,Zhi Shi Xie Bai Gui Zhi Tang,Cinnamon twig,6,g,Assistant
+2023,Zhi Shi Xie Bai Gui Zhi Tang,Magnolia bark,12,g,Minister
+2024,Zhi Shi Xie Bai Gui Zhi Tang,Bulb of Chinese chive,9,g,Monarch
+2025,Zhi Shi Xie Bai Gui Zhi Tang,Immature bitter orange fruit,12,g,Minister
+2028,Zhi Bao Dan,Benzoin resin,45,g,Minister
+2029,Zhi Bao Dan,Tortoiseshell,30,g,Minister
+2030,Zhi Bao Dan,Amber,30,g,Assistant
+2031,Zhi Bao Dan,Gold leaf,50,Piece,Assistant
+2032,Zhi Bao Dan,Borneol,0.3,g,Minister
+2033,Zhi Bao Dan,Bovine bezoar,0.3,g,Monarch
+2034,Zhi Bao Dan,Musk,0.3,g,Monarch
+2035,Zhi Bao Dan,Rhinoceros horn,30,g,Monarch
+2036,Zhi Bao Dan,Realgar,30,g,Assistant
+2037,Zhi Bao Dan,Silver leaf,50,Slice,Assistant
+2038,Zhi Bao Dan,Cinnabar,30,g,Assistant
+2039,Zhi Gan Cao Tang,Donkey-hide gelatin,6,g,Minister
+2040,Zhi Gan Cao Tang,Jujube fruit,10,Piece,Minister
+2041,Zhi Gan Cao Tang,Licorice root,12,g,Minister
+2042,Zhi Gan Cao Tang,Cinnamon twig,9,g,Assistant
+2043,Zhi Gan Cao Tang,Cannabis seed,10,g,Minister
+2044,Zhi Gan Cao Tang,麦冬,10,g,Minister
+2045,Zhi Gan Cao Tang,Rice wine,7,ml,Guide
+2046,Zhi Gan Cao Tang,Ginseng root,6,g,Minister
+2047,Zhi Gan Cao Tang,生地黄,30,g,Monarch
+2048,Zhi Gan Cao Tang,Fresh ginger rhizome,9,g,Assistant
+2049,Zhu Sha An Shen Wan,Angelica sinensis root,7.5,g,Assistant
+2050,Zhu Sha An Shen Wan,Coptis rhizome,18,g,Minister
+2051,Zhu Sha An Shen Wan,生地黄,4.5,g,Assistant
+2052,Zhu Sha An Shen Wan,Honey-fried licorice root,16.5,g,"Assistant, Guide"
+2053,Zhu Sha An Shen Wan,Cinnabar,15,g,Monarch
+2054,Zhu Ling Tang,Donkey-hide gelatin,10,g,Assistant
+2055,Zhu Ling Tang,Poria fungus,10,g,Minister
+2056,Zhu Ling Tang,Talc powder,10,g,Assistant
+2057,Zhu Ling Tang,Alisma rhizome,10,g,Minister
+2058,Zhu Ling Tang,Polyporus fungus,10,g,Monarch
+2070,Zhu Ye Shi Gao Tang,Pinellia tuber,9,g,Assistant
+2071,Zhu Ye Shi Gao Tang,Licorice root,6,g,Guide
+2072,Zhu Ye Shi Gao Tang,Non-glutinous rice,10,g,Guide
+2073,Zhu Ye Shi Gao Tang,麦冬,20,g,Minister
+2074,Zhu Ye Shi Gao Tang,Ginseng root,6,g,Minister
+2075,Zhu Ye Shi Gao Tang,Gypsum mineral,50,g,Monarch
+2076,Zhu Ye Shi Gao Tang,Bamboo leaf,6,g,Monarch
+2084,Zuo Gui Wan,Achyranthes root,90,g,Assistant
+2085,Zuo Gui Wan,Lycium fruit,120,g,Minister
+2086,Zuo Gui Wan,Tortoise shell glue,120,g,Minister
+2087,Zuo Gui Wan,Deer horn glue,120,g,Minister
+2088,Zuo Gui Wan,Chinese yam rhizome,120,g,Minister
+2089,Zuo Gui Wan,山茱萸,120,g,Minister
+2090,Zuo Gui Wan,Prepared Rehmannia root,240,g,Monarch
+2091,Zuo Gui Wan,Cuscuta seed,120,g,Assistant
+2098,Zuo Jin Wan,Coptis rhizome,180,g,Monarch
+2099,Zuo Jin Wan,Evodia fruit,30,g,"Assistant, Guide"
