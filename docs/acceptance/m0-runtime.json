@@ -1,0 +1,158 @@
+{
+  "checked_at": "2026-10-10",
+  "previous_schema_preserved": true,
+  "previous_build_rows": 1,
+  "rollback_with_backend_restart": true,
+  "restored_current_batch": true,
+  "private_config_backup": true,
+  "health": {
+    "status": "degraded",
+    "services": {
+      "database": {
+        "status": "ready",
+        "engine": "postgresql",
+        "version": "PostgreSQL 18.6 (Debian 18.6-1.pgdg12+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+        "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a"
+      },
+      "neo4j": {
+        "status": "ready",
+        "version": "5.26.31",
+        "projection": "sample",
+        "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a"
+      },
+      "model": {
+        "status": "not_configured",
+        "code": "model_not_configured",
+        "message": "model 配置缺失或格式不正确"
+      }
+    }
+  },
+  "stats": {
+    "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+    "entities": 20374,
+    "edges": 179502,
+    "business_records": 199876,
+    "evidence": 291305,
+    "entity_types": {
+      "formula": 112,
+      "herb": 365,
+      "herbal_piece": 6207,
+      "icd11_code": 2758,
+      "medicinal_property": 23,
+      "patent_medicine": 8977,
+      "pattern": 84,
+      "tcm_term": 1810,
+      "text": 38
+    },
+    "relations": {
+      "ASSOCIATED_WITH_PATTERN": 86,
+      "ASSOCIATED_WITH_TERM": 11184,
+      "CITED_IN": 449,
+      "CONTAINS": 751,
+      "HAS_HERBAL_PIECE": 74084,
+      "HAS_MEDICINAL_PROPERTY": 23517,
+      "MAPPED_TO_ICD11": 69431
+    },
+    "datasets": [
+      {
+        "id": "bencaodian",
+        "title": "本草典开放数据",
+        "version_label": "v1 · generated 2026-04-17T05:37:00.984Z"
+      },
+      {
+        "id": "tcm-mkg",
+        "title": "Traditional Chinese Medicine Multidimensional Knowledge Graph",
+        "version_label": "V1.0"
+      }
+    ]
+  },
+  "graph/sample": {
+    "nodes": [
+      {
+        "id": "bencaodian:formula:si_jun_zi_tang",
+        "label": "四君子汤",
+        "type": "formula"
+      },
+      {
+        "id": "bencaodian:herb:bai_zhu",
+        "label": "白术",
+        "type": "herb"
+      },
+      {
+        "id": "bencaodian:herb:fu_ling",
+        "label": "茯苓",
+        "type": "herb"
+      },
+      {
+        "id": "bencaodian:herb:gan_cao",
+        "label": "甘草",
+        "type": "herb"
+      },
+      {
+        "id": "bencaodian:herb:ren_shen",
+        "label": "人参",
+        "type": "herb"
+      },
+      {
+        "id": "bencaodian:pattern:pi_qi_xu",
+        "label": "脾气虚证",
+        "type": "pattern"
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge:17d8c5fd2a3e045b422c5d9c56edbefccf1d4e78a76320867e4d7d88e2740a3e",
+        "source_id": "bencaodian:formula:si_jun_zi_tang",
+        "target_id": "bencaodian:herb:ren_shen",
+        "relation": "CONTAINS",
+        "evidence_ids": [
+          "evidence:72340d34a2f1acaf0dee984198dcb9ea60beda6d11d8168122cecd6c1f19e33c",
+          "evidence:cf0907925b8fd3f4833665d5d7e13408733e9d3d33747a9d38cb45c9a162c9ef"
+        ]
+      },
+      {
+        "id": "edge:76dd65166e484077fb9dbc981bfc079e36c01de7808fba39065f6fa9c1709f04",
+        "source_id": "bencaodian:formula:si_jun_zi_tang",
+        "target_id": "bencaodian:herb:fu_ling",
+        "relation": "CONTAINS",
+        "evidence_ids": [
+          "evidence:27618203333077f217149f2f3897ab1f632fc2efc5f941bc22828015e3ffb9b8",
+          "evidence:6f38a8984de45604434c1e7e27ce10d060648ba6f9aa2b13f229f3743e3c4431"
+        ]
+      },
+      {
+        "id": "edge:996ed53400325645c2fc6291d11612917e9ece156af4b3ac2a4f7cf77164c479",
+        "source_id": "bencaodian:formula:si_jun_zi_tang",
+        "target_id": "bencaodian:herb:gan_cao",
+        "relation": "CONTAINS",
+        "evidence_ids": [
+          "evidence:470e04a1802a935538b42e4c079122a1a304ca39e1a2aa632ce4ffc12d0e7cd9",
+          "evidence:c703c471d2406a8341c657f72453f57745c877bb6199db587a81ed760669dbbf"
+        ]
+      },
+      {
+        "id": "edge:af9d1e41bff211896967895299fb70e6db0aa98902098644f063312f609a2e13",
+        "source_id": "bencaodian:formula:si_jun_zi_tang",
+        "target_id": "bencaodian:pattern:pi_qi_xu",
+        "relation": "ASSOCIATED_WITH_PATTERN",
+        "evidence_ids": [
+          "evidence:0d1d71ebb390addaff65ca6559badf80afa8d2038e22164b37dbe95a1fad6ee1"
+        ]
+      },
+      {
+        "id": "edge:e5c70d965a54fe4888889faf5f97a7b7028d20882dfa5675ce16a5bdaba6c7f2",
+        "source_id": "bencaodian:formula:si_jun_zi_tang",
+        "target_id": "bencaodian:herb:bai_zhu",
+        "relation": "CONTAINS",
+        "evidence_ids": [
+          "evidence:e2eba51c4c921ac766ef4831bc0feae6c2ae35032d928c858c8590e4e850bfab",
+          "evidence:e54c918ca07feb69aa2c5b62e13c4e4e6ba794bd6019539d5ecc30d6f467d2ec"
+        ]
+      }
+    ],
+    "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+    "scope": "bootstrap"
+  },
+  "compose": "NAME                    IMAGE                                                                                          COMMAND                  SERVICE    CREATED      STATUS                    PORTS\nqihuang-kg-neo4j-1      neo4j:5.26-community@sha256:d9cfe82983d27f5a75b3aaae8f316d04f9a698a3b7f6103a508f7caf8362f255   \"tini -g -- /startup…\"   neo4j      5 days ago   Up 46 hours (healthy)     7473/tcp, 127.0.0.1:17474->7474/tcp, 127.0.0.1:17687->7687/tcp\nqihuang-kg-postgres-1   postgres:18-bookworm@sha256:3725f4e2499eef5134592b3b4ab79a543ed7f8e533b05b5b637af926630f6650   \"docker-entrypoint.s…\"   postgres   5 days ago   Up 31 seconds (healthy)   127.0.0.1:15432->5432/tcp\n",
+  "dependencies": "Resolved 20 packages in 3ms\nChecked 20 packages in 0.15ms\n"
+}

@@ -237,22 +237,83 @@ F-13 原文把空指针证据误认为方剂整条记录。实际 `evidence:cf09
 
 开发文档补充了 64 KB 截断的具体形式：`content=null`、`content_truncated=true`，`raw_value` 保持所引用字段的原值。
 
-## 10. 验收记录（执行时填写）
+## 10. 验收记录
 
-被验收的 commit：`________`。执行日期：`________`。执行人：`________`。环境：`________`。
+被验收的实现 commit：`cac1396`（后续验收提交只补充报告与文档）。执行日期：2026-10-10。执行人：Codex。环境：本机 Linux、Python 3.12、PostgreSQL 18.6、Neo4j 5.26，回环 HTTP。
 
-| ID | 结果（通过 / 失败 / 不适用） | 实际值或备注 | 证据位置 |
+前置条件：两个容器 healthy；`uv pip sync --offline` 验证锁定依赖；实现 commit 已推送到 `codex/m0-m1a-implementation`；后端在 `127.0.0.1:8000` 运行。证据见 [运行记录](../acceptance/m0-runtime.json) 和 [交付检查](../acceptance/m1a-delivery.json)。
+
+| ID | 结果 | 实际值或备注 | 证据位置 |
 | --- | --- | --- | --- |
-| M0-01 | | | |
-| M0-02 | | | |
-| … | | | |
-| D-06 | | | |
+| M0-01 | 通过 | 2026-10-10；两库批次一致；20,374 实体、179,502 关系；图为 6 节点 / 5 边 | [运行记录](../acceptance/m0-runtime.json) |
+| M0-02 | 通过 | 2026-10-10；两库批次一致；20,374 实体、179,502 关系；图为 6 节点 / 5 边 | [运行记录](../acceptance/m0-runtime.json) |
+| M0-03 | 通过 | 2026-10-10；两库批次一致；20,374 实体、179,502 关系；图为 6 节点 / 5 边 | [运行记录](../acceptance/m0-runtime.json) |
+| M0-04 | 通过 | 2026-10-10；旧 schema 保留；恢复配置并重启后端验证回滚，再切回当前批次 | [运行记录](../acceptance/m0-runtime.json) |
+| M0-08 | 通过 | 2026-10-10；旧 schema 保留；恢复配置并重启后端验证回滚，再切回当前批次 | [运行记录](../acceptance/m0-runtime.json) |
+| M0-05 | 通过 | 2026-10-10；已跟踪文件中的旧批次 ID 只留在两份历史报告 | [交付检查](../acceptance/m1a-delivery.json) |
+| M0-06 | 通过 | 2026-10-10；示例配置、导入命令和 search_path 已更新 | [示例配置](../../config/app.example.json)、[迁移说明](../vastbase-import.md) |
+| M0-07 | 通过 | 2026-10-10；四个既有测试文件全部 PASS | [回归输出](../acceptance/m1a-regression.json) |
+| M0-09 | 通过 | 2026-10-10；环境报告已重建；变更文件扫描未发现实际配置凭据值 | [交付检查](../acceptance/m1a-delivery.json) |
+| F-01 | 通过 | 2026-10-10；固定实体字段、关系汇总、别名和九种类型通过；S5 响应 3,479 字节 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-02 | 通过 | 2026-10-10；固定实体字段、关系汇总、别名和九种类型通过；S5 响应 3,479 字节 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-03 | 通过 | 2026-10-10；固定实体字段、关系汇总、别名和九种类型通过；S5 响应 3,479 字节 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-04 | 通过 | 2026-10-10；固定实体字段、关系汇总、别名和九种类型通过；S5 响应 3,479 字节 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-05 | 通过 | 2026-10-10；固定实体字段、关系汇总、别名和九种类型通过；S5 响应 3,479 字节 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-06 | 通过 | 2026-10-10；固定实体字段、关系汇总、别名和九种类型通过；S5 响应 3,479 字节 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-07 | 通过 | 2026-10-10；固定实体字段、关系汇总、别名和九种类型通过；S5 响应 3,479 字节 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-08 | 通过 | 2026-10-10；3,439 个证据 ID 全分页无重复；末页、空页及稳定顺序通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-09 | 通过 | 2026-10-10；3,439 个证据 ID 全分页无重复；末页、空页及稳定顺序通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-10 | 通过 | 2026-10-10；3,439 个证据 ID 全分页无重复；末页、空页及稳定顺序通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-11 | 通过 | 2026-10-10；3,439 个证据 ID 全分页无重复；末页、空页及稳定顺序通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-12 | 通过 | 2026-10-10；原始组成、关系整条记录、引文、修复标记和冲突边均符合修订预期 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-13 | 通过 | 2026-10-10；原始组成、关系整条记录、引文、修复标记和冲突边均符合修订预期 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-14 | 通过 | 2026-10-10；原始组成、关系整条记录、引文、修复标记和冲突边均符合修订预期 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-15 | 通过 | 2026-10-10；原始组成、关系整条记录、引文、修复标记和冲突边均符合修订预期 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-16 | 通过 | 2026-10-10；原始组成、关系整条记录、引文、修复标记和冲突边均符合修订预期 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-17 | 通过 | 2026-10-10；固化 201 个等间隔样本、15 条引文、15 条书目证据，231 次请求通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt)、[样本 ID](../../tests/fixtures/m1a-evidence.json) |
+| F-18 | 通过 | 2026-10-10；组成顺序、证据排序、冲突 null、反向路径及 61 条分页通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-19 | 通过 | 2026-10-10；组成顺序、证据排序、冲突 null、反向路径及 61 条分页通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-20 | 通过 | 2026-10-10；组成顺序、证据排序、冲突 null、反向路径及 61 条分页通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-21 | 通过 | 2026-10-10；组成顺序、证据排序、冲突 null、反向路径及 61 条分页通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-22 | 通过 | 2026-10-10；组成顺序、证据排序、冲突 null、反向路径及 61 条分页通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-23 | 通过 | 2026-10-10；组成顺序、证据排序、冲突 null、反向路径及 61 条分页通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| F-24 | 通过 | 2026-10-10；四次 curl 请求与响应全文已保存；最终原值为人参、jun、9g | [curl 链路](../acceptance/m1a-chain.json) |
+| E-01 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-02 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-03 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-04 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-05 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-06 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-07 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-08 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-09 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-10 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-11 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-12 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-13 | 通过 | 2026-10-10；404 / 409 / 422、格式和范围边界通过；不合法参数先于连接拒绝 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| E-14 | 通过 | 2026-10-10；真实停止 PostgreSQL；4 接口 503、存活 200，恢复后自动返回 200 | [停机记录](../acceptance/m1a-outage.json) |
+| E-15 | 通过 | 2026-10-10；错误响应只含中文提示和错误码，无凭据、SQL、路径或堆栈 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt)、[停机记录](../acceptance/m1a-outage.json) |
+| S-01 | 通过 | 2026-10-10；注入和路径穿越请求被拒绝，未返回私有文件 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| S-02 | 通过 | 2026-10-10；注入和路径穿越请求被拒绝，未返回私有文件 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| S-03 | 通过 | 2026-10-10；审查确认参数绑定、固定模板、单个可重复读只读事务、3 秒超时和批次核对 | [数据访问](../../backend/queries.py)、[连接](../../backend/services.py) |
+| S-04 | 通过 | 2026-10-10；审查确认参数绑定、固定模板、单个可重复读只读事务、3 秒超时和批次核对 | [数据访问](../../backend/queries.py)、[连接](../../backend/services.py) |
+| S-05 | 通过 | 2026-10-10；实际只读事务拒绝写入 | [回归输出](../acceptance/m1a-regression.json) |
+| P-01 | 通过 | 2026-10-10；30 份实际执行计划，四张大表无 Seq Scan；未禁用顺序扫描 | [执行计划](../query-plans/m1a.md) |
+| P-02 | 通过 | 2026-10-10；8 场景各预热 5 次、采样 50 次；零失败，P95 均低于 2 秒；硬件和资源配置已记录 | [性能记录](../acceptance/m1a-performance.json) |
+| P-03 | 通过 | 2026-10-10；8 场景各预热 5 次、采样 50 次；零失败，P95 均低于 2 秒；硬件和资源配置已记录 | [性能记录](../acceptance/m1a-performance.json) |
+| D-01 | 通过 | 2026-10-10；四个新接口和统一错误映射已同步 | [架构](../architecture.md) |
+| D-02 | 通过 | 2026-10-10；/docs 返回 200；OpenAPI 参数说明和响应模型自动断言通过 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| D-03 | 通过 | 2026-10-10；M0 完成状态和 M1a 四个接口已标注；保留 M1b 待办 | [规格](../../spec.md) |
+| D-04 | 通过 | 2026-10-10；固定数据测试通过；mock 仅补充不可连接断言及罕见错误，不替代真实库验收 | [API 测试](../../tests/test_api.py)、[测试输出](../acceptance/m1a-tests.txt) |
+| D-05 | 通过 | 2026-10-10；任务 1–8 分别提交；开发分支已推送；私有配置和 var 未提交 | [交付检查](../acceptance/m1a-delivery.json) |
+| D-06 | 通过 | 2026-10-10；新增及修改 Markdown 全部通过仓库规则检查 | [lint 输出](../acceptance/m1a-markdownlint.txt) |
 
 **结论**：
 
-- [ ] 所有"必须"项都已通过，M0 + M1a 验收通过，可以开始 M1b 或 M2。
-- [ ] 存在未通过的项目，问题清单如下：
+- [x] 所有“必须”项通过，M0 + M1a 验收通过。M1b 和 M2 尚未实施。
+- [x] F-13 的错误来源预期已说明并修订，随后重跑所有 API 用例。
+- [x] 错误中间件最后调整后，已重跑 M0 回归、M1a 功能/错误/安全、执行计划、性能和停机恢复。
 
-| 问题 | 影响的验收项 | 处理结论 | 复验日期 |
-| --- | --- | --- | --- |
-| | | | |
+当前边界：仅验证 PostgreSQL 开发环境，Vastbase 最终迁移和真实模型调用留待后续里程碑。性能数据为本机单用户，不能代替最终 5 并发验收。关系模板对当前最多 61 条结果在内存中排序/分页，规模扩大后应改为 SQL 分页。
+
+已知非阻断提示：锁定的 Starlette/TestClient 组合产生弃用警告；本阶段不改动依赖锁。当前环境没有 `mise`，Markdown 使用 `npx markdownlint-cli2` 和仓库配置完成验证。

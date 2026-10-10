@@ -105,6 +105,7 @@ M1a 完成后，不需要前端，就能用 curl 走通"检索四君子汤 → �
 | 404 | `entity_not_found` | 实体 ID 格式合法，但当前批次中不存在 | 新增 |
 | 404 | `evidence_not_found` | 证据 ID 格式合法，但不存在 | 新增 |
 | 404 | `not_found` | 未定义的 `/api/*` 路径 | 新增 |
+| 405 | `method_not_allowed` | 请求方法不适用于接口，保留 Allow 响应头 | 新增 |
 | 409 | `snapshot_changed` | 请求携带的 `build_id` 与当前配置不一致 | 新增 |
 | 422 | `invalid_query` | 参数格式、范围或长度不合法，包括 FastAPI 默认的校验错误 | 新增（统一格式） |
 | 422 | `invalid_type` | 实体类型不在白名单内 | 已有 |

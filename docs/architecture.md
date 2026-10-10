@@ -102,12 +102,12 @@ erDiagram
 | `GET /api/v1/evidence/{id}` | 实体或边的目标、JSON Pointer 原值、来源记录与许可署名 |
 | `GET /api/v1/relation-queries` | `formula_herbs` / `herb_formulas`；返回本页路径、节点、边、原始属性和有序证据 ID |
 
-
 检索针对规范名称和来源别名，`%`、`_` 转义为字面字符，按规范名与 ID 稳定排序。SQL 参数绑定；schema 来自受校验的本地配置并以驱动标识符引用。所有错误统一为 `{"error":{"code":"…","message":"中文提示"}}`，不回传 SQL、路径、凭据或底层异常。映射集中在 `services.ERROR_STATUS`；依赖错误默认 503。
 
 | HTTP | 错误码 |
 | --- | --- |
 | 404 | `entity_not_found`、`evidence_not_found`、`not_found` |
+| 405 | `method_not_allowed`（保留 Allow 响应头） |
 | 409 | `snapshot_changed` |
 | 422 | `invalid_query`（含参数校验）、`invalid_type`、`unsupported_entity_type` |
 | 500 | `evidence_pointer_invalid`、`internal_error` |

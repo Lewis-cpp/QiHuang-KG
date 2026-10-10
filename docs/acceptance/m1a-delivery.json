@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-10",
+  "branch": "codex/m0-m1a-implementation",
+  "tested_implementation_commit": "cac13964e0ce9ba86b670df59d3c00125b2224de",
+  "remote_implementation_commit": "cac13964e0ce9ba86b670df59d3c00125b2224de",
+  "private_files_untracked": true,
+  "credential_value_scan": "passed",
+  "historical_batch_references_only": [
+    "docs/data-pipeline-report.json",
+    "docs/data-quality-report.json"
+  ],
+  "data_pipeline_ddl_and_raw_files_unchanged": true,
+  "task_commits": [
+    "cac1396 fix(m1a-3): give unsupported HTTP methods a consistent error code",
+    "8203734 test(m1a-7): record query plans and HTTP benchmarks with API documentation",
+    "5fbe1d8 feat(m1a-6): add formula composition and reverse herb queries",
+    "4123d55 feat(m1a-5): resolve evidence pointers and preserve actual source records",
+    "572823f feat(m1a-4): add entity details and bounded evidence pages",
+    "6a7d7f8 feat(m1a-3): unify API errors and guard read-only snapshots",
+    "a10748c docs(m0-2): align active batch references and preserve rollback instructions",
+    "2dc9b52 chore(m0-1): verify current database batch and rebuild graph sample"
+  ],
+  "acceptance_record_commit": "The task 8 commit containing this file; implementation unchanged"
+}
