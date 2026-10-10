@@ -18,6 +18,7 @@ TYPES = ("herb", "formula", "pattern", "text", "tcm_term", "patent_medicine",
 SAMPLE_FORMULA = "bencaodian:formula:si_jun_zi_tang"
 ERROR_STATUS = {
     "entity_not_found": 404, "evidence_not_found": 404, "not_found": 404,
+    "method_not_allowed": 405,
     "snapshot_changed": 409, "invalid_query": 422, "invalid_type": 422,
     "unsupported_entity_type": 422, "evidence_pointer_invalid": 500, "internal_error": 500,
 }

@@ -30,8 +30,10 @@ def invalid_query(request, error):
 def http_error(request, error):
     if error.status_code == 404:
         return service_error(request, services.ServiceError("not_found", "请求的接口不存在"))
-    return JSONResponse(status_code=error.status_code, headers=error.headers,
-                        content={"error": {"code": "invalid_query", "message": "请求方法或参数不正确"}})
+    code = "method_not_allowed" if error.status_code == 405 else "invalid_query"
+    response = service_error(request, services.ServiceError(code, "请求方法或参数不正确"))
+    response.headers.update(error.headers or {})
+    return response
 
 
 @app.middleware("http")

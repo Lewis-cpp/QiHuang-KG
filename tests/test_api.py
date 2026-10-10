@@ -47,6 +47,9 @@ def error(path, status, code, **params):
 
 
 def common_errors():
+    method = client.post(API + '/entities')
+    assert method.status_code == 405 and method.json()['error']['code'] == 'method_not_allowed'
+    assert method.headers['allow'] == 'GET'
     error('/entities', 422, 'invalid_query', limit=51)
     error('/entities', 422, 'invalid_type', type='unsupported')
     for path in ('/nope', '/entities/x/y/z', '/evidence/..%2F..%2Fconfig%2Fpostgresql.json'):
