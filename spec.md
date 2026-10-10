@@ -122,6 +122,15 @@
 
 ## 4. M1：关系库业务 API（T09–T11）
 
+M1 分两步实施：
+
+- **M1a**：统一错误处理；实体详情、实体证据分页、证据详情；`formula_herbs` 和 `herb_formulas` 两个模板。
+  - 开发文档：[docs/dev/m0-m1a-development.md](docs/dev/m0-m1a-development.md)
+  - 验收文档：[docs/dev/m0-m1a-acceptance.md](docs/dev/m0-m1a-acceptance.md)
+- **M1b**：本节其余内容。
+
+注意：实体证据数量差别很大，最多一个实体有 3,439 条。所以 M1a 中，实体详情只预览前 20 条证据，另外提供 `GET /entities/{id}/evidence` 分页接口。这一点对 §4.3 做了补充。
+
 ### 4.1 接口清单
 
 | 方法与路径 | 状态 | 说明 |
