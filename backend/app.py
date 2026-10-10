@@ -1,9 +1,13 @@
 """Run with .venv/bin/python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000."""
 
 from concurrent.futures import ThreadPoolExecutor
+import logging
+from typing import Annotated
 
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Path, Query
+from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
+from starlette.exceptions import HTTPException
 
 from backend import model_client, services
 
@@ -12,7 +16,35 @@ app = FastAPI(title="QiHuang-KG", version="0.1.0", description="中医药知识�
 
 @app.exception_handler(services.ServiceError)
 def service_error(request, error):
-    return JSONResponse(status_code=503, content={"error": {"code": error.code, "message": str(error)}})
+    return JSONResponse(status_code=services.ERROR_STATUS.get(error.code, 503),
+                        content={"error": {"code": error.code, "message": str(error)}})
+
+
+@app.exception_handler(RequestValidationError)
+def invalid_query(request, error):
+    return service_error(request, services.ServiceError("invalid_query", "请求参数格式、范围或长度不正确"))
+
+
+@app.exception_handler(HTTPException)
+def http_error(request, error):
+    if error.status_code == 404:
+        return service_error(request, services.ServiceError("not_found", "请求的接口不存在"))
+    return JSONResponse(status_code=error.status_code, headers=error.headers,
+                        content={"error": {"code": "invalid_query", "message": "请求方法或参数不正确"}})
+
+
+@app.exception_handler(Exception)
+def internal_error(request, error):
+    logging.getLogger(__name__).error("Unhandled API exception: %s", type(error).__name__)
+    return service_error(request, services.ServiceError("internal_error", "服务暂时无法处理请求"))
+
+
+ENTITY_PATTERN = r"^(bencaodian|tcm-mkg):(" + "|".join(services.TYPES) + r"):[A-Za-z0-9_.-]{1,160}$"
+EntityID = Annotated[str, Path(pattern=ENTITY_PATTERN, description="来源:实体类型:键")]
+EvidenceID = Annotated[str, Path(pattern=r"^evidence:[a-f0-9]{64}$", description="证据的稳定 ID")]
+BuildID = Annotated[str | None, Query(pattern=r"^[a-f0-9]{64}$", description="可选发布批次，不一致时返回 409")]
+Limit = Annotated[int, Query(ge=1, le=50, description="每页条数")]
+Offset = Annotated[int, Query(ge=0, le=10000, description="跳过的条数")]
 
 
 @app.get("/api/v1/health/live")
@@ -48,7 +80,7 @@ def stats():
 def entities(q: str = Query("", max_length=100), type: str | None = None,
              limit: int = Query(20, ge=1, le=50), offset: int = Query(0, ge=0, le=10000)):
     if type is not None and type not in services.TYPES:
-        return JSONResponse(status_code=422, content={"error": {"code": "invalid_type", "message": "不支持的实体类型"}})
+        raise services.ServiceError("invalid_type", "不支持的实体类型")
     return services.entities(q, type, limit, offset)
 
 

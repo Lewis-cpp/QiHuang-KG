@@ -16,6 +16,11 @@ ROOT = Path(__file__).resolve().parents[1]
 TYPES = ("herb", "formula", "pattern", "text", "tcm_term", "patent_medicine",
          "herbal_piece", "icd11_code", "medicinal_property")
 SAMPLE_FORMULA = "bencaodian:formula:si_jun_zi_tang"
+ERROR_STATUS = {
+    "entity_not_found": 404, "evidence_not_found": 404, "not_found": 404,
+    "snapshot_changed": 409, "invalid_query": 422, "invalid_type": 422,
+    "unsupported_entity_type": 422, "evidence_pointer_invalid": 500, "internal_error": 500,
+}
 
 
 class ServiceError(RuntimeError):
@@ -45,15 +50,17 @@ def application():
 
 
 @contextmanager
-def relational():
+def relational(build_id=None):
     settings = application()
+    if build_id is not None and build_id != settings["build_id"]:
+        raise ServiceError("snapshot_changed", "数据批次已更新，请刷新后重试")
     params = config(settings["database_engine"])
     params["connect_timeout"] = 3
-    # ponytail: one connection per request; add a pool when measured concurrency requires it.
+    # shortcut: one connection per request; add a pool when measured concurrency requires it.
     try:
         db = psycopg2.connect(**params)
         try:
-            db.set_session(readonly=True)
+            db.set_session(readonly=True, isolation_level="REPEATABLE READ")
             with db.cursor(cursor_factory=RealDictCursor) as cursor:
                 cursor.execute(sql.SQL("SET LOCAL search_path TO {}, pg_catalog").format(sql.Identifier(settings["schema"])))
                 cursor.execute("SET LOCAL statement_timeout='3000ms'")
