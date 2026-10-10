@@ -66,8 +66,65 @@ def common_errors():
             assert e.code == 'snapshot_changed'
 
 
+def detail_checks():
+    formula = ok('/entities/' + FORMULA)
+    assert (formula['label'], formula['type'], formula['category'], formula['review_status'],
+            formula['review_status_raw']) == ('四君子汤', 'formula', '补益剂', 'editor_reviewed', 'editor-reviewed')
+    assert formula['attributes']['treatment_principle']['zh'] == '益气健脾'
+    assert formula['aliases'] == []
+    assert formula['relation_summary'] == [
+        dict(relation='ASSOCIATED_WITH_PATTERN', direction='out', count=1),
+        dict(relation='CITED_IN', direction='out', count=1), dict(relation='CONTAINS', direction='out', count=4)]
+    assert formula['evidence_total'] == len(formula['evidence_preview']) == 1
+    assert formula['evidence_preview'][0]['id'].startswith('evidence:dba0589b')
+    assert formula['evidence_preview'][0]['kind'] == 'curated'
+    assert formula['evidence_preview'][0]['field_path'] == ''
+    page = ok('/entities/' + FORMULA + '/evidence')
+    assert [{k: item[k] for k in ('id', 'kind', 'field_path', 'excerpt')} for item in page['items']] == formula['evidence_preview']
+    herb = ok('/entities/' + GINSENG)
+    assert herb['relation_summary'] == [dict(relation='CITED_IN', direction='out', count=1),
+                                         dict(relation='CONTAINS', direction='in', count=21)]
+    assert herb['evidence_total'] == 2 and herb['evidence_preview'][0]['kind'] == 'source_quote'
+    high = ok('/entities/' + BITTER)
+    assert high['evidence_total'] == 3439 and len(high['evidence_preview']) == 20
+    assert high['relation_summary'] == [dict(relation='HAS_MEDICINAL_PROPERTY', direction='in', count=3439)]
+    assert len(client.get(API + '/entities/' + BITTER).content) < 50 * 1024
+    repair = ok('/entities/' + ASTRAGALUS)
+    assert [a['name'] for a in repair['aliases']] == ['沙苑子', '炙黄芪', '生黄芪', '白芪', '膜荚黄芪', '蒙古黄芪', '蜜芪', '蜜黄芪', '黄耆']
+    assert repair['dataset']['id'] == 'tcm-mkg' and repair['review_status'] == 'unknown'
+    ids = [FORMULA, GINSENG, ASTRAGALUS, BITTER, 'tcm-mkg:icd11_code:1A00',
+           'tcm-mkg:patent_medicine:CPM00001', 'bencaodian:pattern:da_chang_jin_ye_kui_xu',
+           'tcm-mkg:tcm_term:TCMT00001', 'bencaodian:text:bei_ji_qian_jin_yao_fang']
+    for entity in ids:
+        item = ok('/entities/' + entity)
+        assert isinstance(item['attributes'], dict)
+        if item['type'] == 'icd11_code': assert item['attributes'] == {'code': '1A00'}
+    seen = []
+    for offset in range(0, 3439, 50):
+        page = ok('/entities/' + BITTER + '/evidence', limit=50, offset=offset)
+        assert page['total'] == 3439 and len(page['items']) <= 50
+        seen += [item['id'] for item in page['items']]
+    assert len(seen) == len(set(seen)) == 3439
+    assert len(ok('/entities/' + BITTER + '/evidence', offset=3420)['items']) == 19
+    assert ok('/entities/' + BITTER + '/evidence', offset=3439)['items'] == []
+    assert ok('/entities/' + BITTER + '/evidence')['items'] == ok('/entities/' + BITTER + '/evidence')['items']
+    for suffix in ('', '/evidence'):
+        error('/entities/bencaodian:formula:does_not_exist' + suffix, 404, 'entity_not_found')
+        ok('/entities/' + FORMULA + suffix, build_id=BUILD)
+        error('/entities/' + FORMULA + suffix, 409, 'snapshot_changed', build_id='0' * 64)
+        error('/entities/' + FORMULA + suffix, 422, 'invalid_query', build_id='abc')
+        with patch.object(services, 'relational', side_effect=AssertionError('Must not query')):
+            for entity in ('abc', 'bencaodian:unknown_type:x', 'bencaodian:formula:',
+                           'bencaodian:formula:' + 'x' * 201, 'bencaodian:formula:a%20b',
+                           "bencaodian:formula:x' OR '1'='1", "bencaodian:formula:x%27%20OR%20%271%27=%271"):
+                error('/entities/' + entity + suffix, 422, 'invalid_query')
+    for params in ({'limit': 0}, {'limit': 51}, {'offset': -1}, {'offset': 10001}):
+        error('/entities/' + FORMULA + '/evidence', 422, 'invalid_query', **params)
+
+
 def main():
     common_errors()
+    detail_checks()
     print('PASS: unified errors, redaction, repeatable read, snapshot guard')
 
 

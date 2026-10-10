@@ -9,9 +9,10 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException
 
-from backend import model_client, services
+from backend import model_client, queries, schemas, services
 
-app = FastAPI(title="QiHuang-KG", version="0.1.0", description="中医药知识检索与学习 · 最小开发链路")
+app = FastAPI(title="QiHuang-KG", version="0.2.0", description="中医药知识检索与学习 · 详情与来源证据",
+              responses={status: {"model": schemas.ErrorResponse} for status in (404, 409, 422, 500, 503)})
 
 
 @app.exception_handler(services.ServiceError)
@@ -87,3 +88,13 @@ def entities(q: str = Query("", max_length=100), type: str | None = None,
 @app.get("/api/v1/graph/sample")
 def sample_graph():
     return services.sample_graph()
+
+
+@app.get("/api/v1/entities/{id}", response_model=schemas.EntityDetail, summary="实体详情")
+def entity_detail(id: EntityID, build_id: BuildID = None):
+    return queries.entity_detail(id, build_id)
+
+
+@app.get("/api/v1/entities/{id}/evidence", response_model=schemas.EvidencePage, summary="实体证据分页")
+def entity_evidence(id: EntityID, limit: Limit = 20, offset: Offset = 0, build_id: BuildID = None):
+    return queries.entity_evidence(id, limit, offset, build_id)
