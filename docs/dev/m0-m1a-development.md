@@ -32,10 +32,10 @@ M1a 完成后，不需要前端，就能用 curl 走通"检索四君子汤 → �
 | --- | --- | --- |
 | 当前代码 `prepare_data.py` 生成的批次 | `5a76218e…` | 2026-10-10 本地重跑 |
 | PostgreSQL 中最近一次导入并校验的 schema | `qihuang_5a76218e52001d45e4bd75e0` | `docs/data-quality-report.json` → `environment.import_result` |
-| 应用配置 `config/app.json` | `1fe2300d…`（旧） | 同一报告的 `application_selection` |
-| Neo4j 样例投影 | `1fe2300d…`（旧） | `docs/environment-report.json` |
-| `config/app.example.json` | `1fe2300d…`（旧） | 仓库文件 |
-| `docs/vastbase-import.md` 中的"当前批次"、导入命令和 SQL 示例 | `1fe2300d…`（旧） | 仓库文件 |
+| 应用配置 `config/app.json` | 旧批次（旧） | 同一报告的 `application_selection` |
+| Neo4j 样例投影 | 旧批次（旧） | `docs/environment-report.json` |
+| `config/app.example.json` | 旧批次（旧） | 仓库文件 |
+| `docs/vastbase-import.md` 中的"当前批次"、导入命令和 SQL 示例 | 旧批次（旧） | 仓库文件 |
 
 `data-quality-report.json` 的 `remaining` 字段已经写明："应用与 Neo4j 样例仍使用原批次；新校验批次单独入库，两批业务内容摘要相同。"所以 M0 **不需要重新清洗数据**，只需要切换应用配置并重建样例。
 
@@ -55,7 +55,7 @@ M1a 完成后，不需要前端，就能用 curl 走通"检索四君子汤 → �
    - 读取 `var/postgresql-report.json`，确认 `status=passed`，且 `import_result.build_id` 为 `5a76218e…`。
    - 如果不是，先用 `import_vastbase.py --engine postgresql --release var/prepared/5a76218e…` 重新导入。导入会复用或校验已有 schema，不会删除数据。
 3. **切换应用配置**
-   - 把现有的 `config/app.json` 备份为 `var/app.json.1fe2300d.bak`。
+   - 把现有的 `config/app.json` 备份为 `var/app.json.previous.bak`。
    - 删除原文件，重新运行 `python3 scripts/setup_services.py`，由它从导入报告中选出批次。
    - 不建议手工编辑 JSON，以免 schema 名与 build id 不对应。
 4. **重建 Neo4j 样例**
@@ -78,14 +78,14 @@ M1a 完成后，不需要前端，就能用 curl 走通"检索四君子汤 → �
 
 ### 2.4 规则
 
-- **旧 schema `qihuang_1fe2300d…` 保留**，作为 M1a 验收前的回滚点。DDL 约定是"不做破坏性 DDL"，清理旧批次另行决定，不放在本次范围内。
+- **旧 schema （schema 名读取配置备份） 保留**，作为 M1a 验收前的回滚点。DDL 约定是"不做破坏性 DDL"，清理旧批次另行决定，不放在本次范围内。
 - 回滚方法：把备份的 `app.json` 放回原位，然后重启后端。应用会核对库中 `build` 表的 id，所以不会出现"配置是新批次、读到的却是旧数据"的情况。
 
 ### 2.5 完成定义
 
 - `GET /api/v1/health` 中 `database.build_id` 和 `neo4j.build_id` 都是 `5a76218e…`，`neo4j.projection` 为 `sample`。
 - `GET /api/v1/stats` 的数值不变：实体 20,374，关系 179,502，证据 291,305，业务记录 199,876。
-- 仓库中除两份历史报告外，不再出现 `1fe2300d`。
+- 仓库中除两份历史报告外，不再出现 旧批次 ID（读取配置备份）。
 
 ---
 
@@ -420,4 +420,4 @@ ID 先在路由层校验格式，不合法时直接返回 422，不查询数据�
    - 让后端只读加载批次报告：不需要改数据。
    - 默认：M1a 不展示，页面通过证据查看原始记录。
 2. **英文和拼音名称是否参与检索**：属于 M1b 的检索改进，与本次无关，在这里先记下。
-3. **旧批次 `qihuang_1fe2300d…` 何时清理**：建议 M1a 验收通过后再决定，清理需要单独的脚本和确认步骤。
+3. **旧批次 （schema 名读取配置备份） 何时清理**：建议 M1a 验收通过后再决定，清理需要单独的脚本和确认步骤。

@@ -117,8 +117,8 @@
 | M0-01 | 必须 | `GET $API/health` | `services.database.build_id` 和 `services.neo4j.build_id` 都等于 `$B`；`neo4j.projection=sample` |
 | M0-02 | 必须 | `GET $API/stats` | `entities=20374`，`edges=179502`，`evidence=291305`，`business_records=199876`，`build_id=$B` |
 | M0-03 | 必须 | `GET $API/graph/sample` | 6 个节点、5 条边，`build_id=$B`，每条边的 `evidence_ids` 都不为空 |
-| M0-04 | 必须 | 在开发库中查询旧 schema `qihuang_1fe2300d6005081f99274e8b` | 仍然存在，`build` 表中有一行。确认旧批次已保留，可以回滚 |
-| M0-05 | 必须 | 在仓库中搜索 `1fe2300d`，排除 `.git` 和 `var/` | 只在 `docs/data-pipeline-report.json` 和 `docs/data-quality-report.json` 两份历史报告中出现 |
+| M0-04 | 必须 | 在开发库中查询旧 schema （schema 名读取配置备份） | 仍然存在，`build` 表中有一行。确认旧批次已保留，可以回滚 |
+| M0-05 | 必须 | 在仓库中搜索 旧批次 ID（读取配置备份），排除 `.git` 和 `var/` | 只在 `docs/data-pipeline-report.json` 和 `docs/data-quality-report.json` 两份历史报告中出现 |
 | M0-06 | 必须 | 查看 `config/app.example.json` 和 `docs/vastbase-import.md` | 批次、schema、导入命令和 `search_path` 示例都已改为新批次 |
 | M0-07 | 必须 | 依次运行 `tests/test_app.py`、`test_database_config.py`、`test_data_pipeline.py`、`test_import_core.py` | 4 个文件全部输出 `PASS` |
 | M0-08 | 必须 | 演练回滚：恢复备份的 `app.json`，重启后端，查看 `GET $API/health`；然后再切回新批次 | 回滚后 `database.build_id` 为旧批次。切回后，M0-01 重新通过 |

@@ -48,13 +48,11 @@
   - 实体与证据 ID 只含 `[A-Za-z0-9_.:-]`，最长 91 字符。
   - 因此可以直接作为 URL 路径参数。
 
-### 1.3 进入 M1 前须先清理的不一致
+### 1.3 批次统一（M0 已完成，2026-10-10）
 
-- **批次 ID 不一致**
-  - 当前代码生成的批次是 `5a76218e…`，`docs/data-quality-report.json` 记录的也是它。
-  - `config/app.example.json`、`docs/vastbase-import.md` 和 `docs/data-pipeline-report.json` 仍指向旧批次 `1fe2300d…`。
-  - 处理：统一到当前批次。如果开发库中实际运行的仍是旧批次，就重新导入，并记录在运行说明中。
-- **测试断言**：`tests/test_app.py` 断言 `graph.projection == "sample"`。M3 引入全量投影后需要同步修改。
+应用配置、示例配置、PostgreSQL 和 Neo4j 样例已统一到 `5a76218e…` 批次。统计仍为 199,876 条业务记录，旧 schema 和私有配置备份保留，真实 HTTP 回滚及恢复已验证。
+
+`docs/data-quality-report.json` 和 `docs/data-pipeline-report.json` 保留历史内容。`tests/test_app.py` 当前仍断言 `graph.projection == "sample"`，M3 引入全量投影后再同步修改。
 
 ---
 
