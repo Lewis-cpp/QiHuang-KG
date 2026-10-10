@@ -2,7 +2,7 @@
 
 from concurrent.futures import ThreadPoolExecutor
 import logging
-from typing import Annotated
+from typing import Annotated, Literal
 
 from fastapi import FastAPI, Path, Query
 from fastapi.exceptions import RequestValidationError
@@ -104,3 +104,9 @@ def entity_evidence(id: EntityID, limit: Limit = 20, offset: Offset = 0, build_i
 def evidence_detail(id: EvidenceID, build_id: BuildID = None):
     return queries.evidence_detail(id, build_id)
 
+
+@app.get("/api/v1/relation-queries", response_model=schemas.RelationPage, summary="方剂组成与药物反查")
+def relation_query(template: Annotated[Literal['formula_herbs', 'herb_formulas'], Query(description="查询模板")],
+                   entity_id: Annotated[str, Query(pattern=ENTITY_PATTERN, description="起点实体 ID")],
+                   limit: Limit = 20, offset: Offset = 0, build_id: BuildID = None):
+    return queries.relation_query(template, entity_id, limit, offset, build_id)

@@ -125,3 +125,45 @@ def evidence_detail(evidence_id, build_id=None):
                 excerpt=evidence['excerpt'] if evidence['kind'] == 'source_quote' else None,
                 target=target, raw_value=raw_value, source_record=source, dataset=dataset, build_id=build)
 
+
+RELATION_SQL = {
+    'formula_herbs': "SELECT e.*,n.id AS node_id,n.label,n.type FROM edge e JOIN entity n ON n.id=e.target_id "
+                     "WHERE e.source_id=%s AND e.relation='CONTAINS'",
+    'herb_formulas': "SELECT e.*,n.id AS node_id,n.label,n.type FROM edge e JOIN entity n ON n.id=e.source_id "
+                     "WHERE e.target_id=%s AND e.relation='CONTAINS' ORDER BY n.label,n.id",
+}
+
+
+def relation_query(template, entity_id, limit, offset, build_id=None):
+    with services.relational(build_id) as c:
+        build = current_build(c)
+        entity = require_entity(c, entity_id)
+        expected = 'formula' if template == 'formula_herbs' else 'herb'
+        if entity['type'] != expected:
+            raise services.ServiceError('unsupported_entity_type', '该实体类型不适用于所选关系模板')
+        c.execute(RELATION_SQL[template], (entity_id,))
+        rows = c.fetchall()
+        for row in rows:
+            row['properties'] = json.loads(row.pop('properties_json'))
+        # shortcut: these templates have at most 61 matches; move paging into SQL if this grows.
+        if template == 'formula_herbs':
+            rows.sort(key=lambda r: (r['properties'].get('position') is None,
+                                    r['properties'].get('position'), r['label'], r['node_id']))
+        total = len(rows)
+        page = rows[offset:offset + limit]
+        evidence_ids = {row['id']: [] for row in page}
+        if page:
+            c.execute('SELECT id,edge_id FROM evidence WHERE edge_id=ANY(%s) ORDER BY ' + EVIDENCE_ORDER,
+                      (list(evidence_ids),))
+            for item in c.fetchall():
+                evidence_ids[item['edge_id']].append(item['id'])
+        paths, nodes, edges = [], {}, {}
+        for row in page:
+            nodes[entity_id] = node(entity)
+            nodes[row['node_id']] = dict(id=row['node_id'], label=row['label'], type=row['type'])
+            edges[row['id']] = {key: row[key] for key in
+                               ('id', 'relation', 'source_id', 'target_id', 'properties', 'quality_state')}
+            edges[row['id']]['evidence_ids'] = evidence_ids[row['id']]
+            paths.append(dict(node_ids=[entity_id, row['node_id']], edge_ids=[row['id']]))
+    return dict(template=template, entity_id=entity_id, paths=paths, nodes=nodes, edges=edges,
+                total=total, limit=limit, offset=offset, build_id=build)

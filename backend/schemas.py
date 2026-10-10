@@ -112,3 +112,29 @@ class EvidenceDetail(EvidencePreview):
     dataset: Dataset
     build_id: str
 
+
+class RelationPath(BaseModel):
+    node_ids: list[str]
+    edge_ids: list[str]
+
+
+class RelationEdge(BaseModel):
+    id: str
+    relation: str
+    source_id: str
+    target_id: str
+    properties: dict[str, Any]
+    quality_state: str
+    evidence_ids: list[str]
+
+
+class RelationPage(BaseModel):
+    template: Literal['formula_herbs', 'herb_formulas']
+    entity_id: str
+    paths: list[RelationPath]
+    nodes: dict[str, Node]
+    edges: dict[str, RelationEdge]
+    total: int
+    limit: int
+    offset: int
+    build_id: str

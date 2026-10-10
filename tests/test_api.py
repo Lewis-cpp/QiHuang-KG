@@ -192,12 +192,79 @@ def pointer_checks():
         error('/evidence/' + QUOTE, 500, 'evidence_pointer_invalid')
 
 
+def relation_checks():
+    result = ok('/relation-queries', template='formula_herbs', entity_id=FORMULA)
+    assert result['total'] == len(result['paths']) == len(result['edges']) == 4
+    assert len(result['nodes']) == 5
+    expected = [('人参', 'jun', '9g', 'edge:17d8c5fd'), ('白术', 'chen', '9g', 'edge:e5c70d96'),
+                ('茯苓', 'zuo', '9g', 'edge:76dd6516'), ('甘草', 'shi', '6g', 'edge:996ed534')]
+    for position, (path, (label, role, dosage, prefix)) in enumerate(zip(result['paths'], expected)):
+        assert path['node_ids'][0] == FORMULA
+        assert result['nodes'][path['node_ids'][1]]['label'] == label
+        edge = result['edges'][path['edge_ids'][0]]
+        assert edge['id'].startswith(prefix)
+        assert (edge['source_id'], edge['target_id']) == tuple(path['node_ids'])
+        assert edge['properties'] == dict(position=position, role=role, dosage_raw=dosage,
+                                          position_source='composition', missing_claim_fields=[])
+        assert len(edge['evidence_ids']) == 2
+        assert [ok('/evidence/' + eid)['field_path'] for eid in edge['evidence_ids']] == ['/composition/' + str(position), '']
+    first = result['edges'][result['paths'][0]['edge_ids'][0]]
+    assert first['evidence_ids'] == [COMPOSITION, WHOLE]
+    conflict = ok('/relation-queries', template='formula_herbs', entity_id=CONFLICT)
+    expected = [('猪苓', 'jun', 'consistent'), ('泽泻', None, 'conflicting'), ('茯苓', 'chen', 'consistent'),
+                ('滑石', 'zuo', 'consistent'), ('阿胶', 'zuo', 'consistent')]
+    for path, (label, role, quality) in zip(conflict['paths'], expected):
+        edge = conflict['edges'][path['edge_ids'][0]]
+        assert conflict['nodes'][path['node_ids'][1]]['label'] == label
+        assert edge['properties']['role'] == role and edge['quality_state'] == quality
+        if label == '泽泻':
+            assert ok('/evidence/' + edge['evidence_ids'][0])['target']['edge']['target']['label'] == '泽泻'
+    reverse = ok('/relation-queries', template='herb_formulas', entity_id=GINSENG, limit=50)
+    assert reverse['total'] == len(reverse['paths']) == 21
+    for path in reverse['paths']:
+        assert path['node_ids'][0] == GINSENG
+        edge = reverse['edges'][path['edge_ids'][0]]
+        assert edge['target_id'] == GINSENG and edge['source_id'] == path['node_ids'][1]
+    rows = []
+    for offset in (0, 20, 40, 60):
+        page = ok('/relation-queries', template='herb_formulas', entity_id=LICORICE, offset=offset)
+        assert page['total'] == 61 and len(page['paths']) == (1 if offset == 60 else 20)
+        assert set(page['nodes']) == {n for path in page['paths'] for n in path['node_ids']}
+        assert set(page['edges']) == {e for path in page['paths'] for e in path['edge_ids']}
+        rows += [(page['nodes'][p['node_ids'][1]]['label'], p['node_ids'][1]) for p in page['paths']]
+    assert len(rows) == len(set(rows)) == 61 and rows == sorted(rows)
+    empty = ok('/relation-queries', template='herb_formulas', entity_id=LICORICE, offset=61)
+    assert empty['paths'] == [] and empty['nodes'] == empty['edges'] == {}
+    for template, entity in [('formula_herbs', GINSENG), ('herb_formulas', FORMULA)]:
+        error('/relation-queries', 422, 'unsupported_entity_type', template=template, entity_id=entity)
+    error('/relation-queries', 404, 'entity_not_found', template='formula_herbs', entity_id='bencaodian:formula:does_not_exist')
+    error('/relation-queries', 422, 'invalid_query', entity_id=FORMULA)
+    with patch.object(services, 'relational', side_effect=AssertionError('Must not query')):
+        for template in ('formula_patterns', '', "formula_herbs' OR 1=1"):
+            error('/relation-queries', 422, 'invalid_query', template=template, entity_id=FORMULA)
+        for entity in ('abc', 'tcm-mkg:unknown:x', 'bencaodian:formula:', 'bencaodian:formula:' + 'x' * 161,
+                       "bencaodian:formula:x' OR '1'='1"):
+            error('/relation-queries', 422, 'invalid_query', template='formula_herbs', entity_id=entity)
+    params = dict(template='formula_herbs', entity_id=FORMULA)
+    for invalid in ({'limit': 0}, {'limit': 51}, {'offset': -1}, {'offset': 10001}, {'build_id': 'abc'}):
+        error('/relation-queries', 422, 'invalid_query', **params, **invalid)
+    error('/relation-queries', 409, 'snapshot_changed', **params, build_id='0' * 64)
+    ok('/relation-queries', **params, build_id=BUILD)
+    # Reproduce the user-facing chain against the same real database.
+    found = ok('/entities', q='四君子汤', type='formula')['items'][0]['id']
+    assert ok('/entities/' + found)['id'] == FORMULA
+    path = ok('/relation-queries', template='formula_herbs', entity_id=found)
+    evidence = path['edges'][path['paths'][0]['edge_ids'][0]]['evidence_ids'][0]
+    assert ok('/evidence/' + evidence)['raw_value']['herb_key'] == 'ren_shen'
+
+
 def main():
     common_errors()
     detail_checks()
     evidence_checks()
     pointer_checks()
-    print('PASS: unified errors, redaction, repeatable read, snapshot guard')
+    relation_checks()
+    print('PASS: F-01–F-24 fixed data, 3439 paged IDs, 231 evidence samples, E/S boundaries, pointer and size guards')
 
 
 if __name__ == '__main__':
