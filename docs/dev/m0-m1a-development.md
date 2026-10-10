@@ -279,7 +279,7 @@ ID 先在路由层校验格式，不合法时直接返回 422，不查询数据�
     - TCM-MKG：`content_json` 是包装对象，包含 `fields`、`raw_cells`、`raw_tsv`、`line_start`、`line_end`、`aliases`、`repair`，证据路径一般是 `/fields`。
   - 数据管线的发布检查 `evidence_pointers` 已保证所有路径可以解析。解析失败就说明数据损坏，返回 500 `evidence_pointer_invalid`。
 - **`source_record.content`**：解析后的完整 `content_json`。
-  - 超过 64 KB 时截断，并把 `content_truncated` 设为 `true`。实测最大记录约 13.7 KB（`classical_texts.json`），目前不会触发截断，但这条保护要保留。
+  - 超过 64 KB（按存储 JSON 的 UTF-8 字节计）时省略完整记录，返回 `content=null`，并把 `content_truncated` 设为 `true`。`raw_value` 保持原值；这不是整个响应体的大小上限。实测最大记录约 13.7 KB（`classical_texts.json`），目前不会触发截断，但这条保护要保留。
   - TCM-MKG 记录中的 `repair` 字段会跟随 `content` 一起返回。例如黄芪（CHP01717）的值为 `remove_exact_extra_empty_column_4`，对应 D6 文件第 1,718 行的定点修复，验收时会检查。
 - **`filename`**：只返回数据集内的文件名，不暴露服务器路径。
 - **`excerpt`**：只有 `source_quote` 类证据有值，其他类型为 `null`。

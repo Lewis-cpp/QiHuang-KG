@@ -68,3 +68,47 @@ class EvidencePage(BaseModel):
     limit: int
     offset: int
     build_id: str
+
+
+class Dataset(DatasetSummary):
+    version_label: str
+    source_url: str
+    license_statement: str
+    attribution: str
+
+
+class SourceRecord(BaseModel):
+    id: str
+    dataset_id: str
+    filename: str
+    record_key: str
+    record_locator: str
+    file_sha256: str
+    content: dict[str, Any] | None
+    content_truncated: bool
+
+
+class EvidenceEdge(BaseModel):
+    id: str
+    relation: str
+    source: Node
+    target: Node
+
+
+class EntityTarget(BaseModel):
+    kind: Literal['entity']
+    entity: Node
+
+
+class EdgeTarget(BaseModel):
+    kind: Literal['edge']
+    edge: EvidenceEdge
+
+
+class EvidenceDetail(EvidencePreview):
+    target: EntityTarget | EdgeTarget
+    raw_value: Any
+    source_record: SourceRecord
+    dataset: Dataset
+    build_id: str
+

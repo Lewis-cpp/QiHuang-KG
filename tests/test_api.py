@@ -9,7 +9,7 @@ from fastapi.testclient import TestClient
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from backend import services
+from backend import queries, services
 from backend.app import app
 
 BUILD = '5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a'
@@ -122,9 +122,81 @@ def detail_checks():
         error('/entities/' + FORMULA + '/evidence', 422, 'invalid_query', **params)
 
 
+COMPOSITION = 'evidence:72340d34a2f1acaf0dee984198dcb9ea60beda6d11d8168122cecd6c1f19e33c'
+# The IDs below are fixed from the acceptance release, never discovered during a test.
+WHOLE = 'evidence:cf0907925b8fd3f4833665d5d7e13408733e9d3d33747a9d38cb45c9a162c9ef'
+
+
+def evidence_checks():
+    composition = ok('/evidence/' + COMPOSITION)
+    assert composition['target']['kind'] == 'edge'
+    edge = composition['target']['edge']
+    assert (edge['source']['label'], edge['target']['label'], edge['relation']) == ('四君子汤', '人参', 'CONTAINS')
+    assert (composition['raw_value']['role'], composition['raw_value']['dosage']) == ('jun', '9g')
+    assert composition['source_record']['filename'] == 'formulas.json'
+    assert composition['source_record']['record_key'] == 'si_jun_zi_tang'
+    assert composition['dataset']['id'] == 'bencaodian' and composition['dataset']['license_statement']
+    whole = ok('/evidence/' + WHOLE)
+    assert whole['field_path'] == '' and whole['raw_value'] == whole['source_record']['content']
+    assert whole['source_record']['filename'] == 'relationships.json'
+    assert whole['raw_value'] == {'dosage': '9g', 'formula': 'si_jun_zi_tang', 'herb': 'ren_shen', 'role': 'jun'}
+    quote = ok('/evidence/' + QUOTE)
+    assert quote['kind'] == 'source_quote' and quote['target']['kind'] == 'entity'
+    assert quote['target']['entity']['id'] == LICORICE
+    assert quote['field_path'] == '/classical_references/0/passage'
+    assert quote['raw_value'] == quote['excerpt'] == '味甘，平。主五脏六腑寒热邪气，坚筋骨，长肌肉，倍力，金疮肿，解毒。久服轻身延年。'
+    repair = ok('/evidence/' + REPAIR)
+    assert repair['raw_value']['CHP_ID'] == 'CHP01717'
+    assert repair['source_record']['filename'] == 'D6_Chinese_herbal_pieces.tsv'
+    assert repair['source_record']['record_locator'] == 'record:1717;lines:1718-1718'
+    assert repair['source_record']['content']['repair'] == 'remove_exact_extra_empty_column_4'
+    assert repair['source_record']['content_truncated'] is False
+    samples = json.loads((ROOT / 'tests/fixtures/m1a-evidence.json').read_text())
+    assert samples.pop('build_id') == BUILD
+    for group, ids in samples.items():
+        for evidence_id in ids:
+            result = ok('/evidence/' + evidence_id)
+            assert '/' not in result['source_record']['filename']
+            assert chr(92) not in result['source_record']['filename']
+            if group != 'stride':
+                expected = 'source_quote' if group == 'source_quote' else 'bibliographic'
+                assert result['kind'] == expected
+            if group == 'bibliographic_entity': assert result['target']['kind'] == 'entity'
+    error('/evidence/evidence:' + '0' * 64, 404, 'evidence_not_found')
+    with patch.object(services, 'relational', side_effect=AssertionError('Must not query')):
+        for evidence_id in ('evidence:123', 'evidence:' + 'A' * 64, 'edge:' + 'a' * 64):
+            error('/evidence/' + evidence_id, 422, 'invalid_query')
+    ok('/evidence/' + QUOTE, build_id=BUILD)
+    error('/evidence/' + QUOTE, 409, 'snapshot_changed', build_id='0' * 64)
+    error('/evidence/' + QUOTE, 422, 'invalid_query', build_id='abc')
+
+
+def pointer_checks():
+    data = {'a/b': {'~c': [None, '药']}, '~1': 'literal', '': 7, '01': 'key'}
+    assert queries.json_pointer(data, '') == data
+    assert queries.json_pointer(data, '/a~1b/~0c/1') == '药'
+    assert queries.json_pointer(data, '/a~1b/~0c/0') is None
+    assert queries.json_pointer(data, '/~01') == 'literal'
+    assert queries.json_pointer(data, '/') == 7
+    assert queries.json_pointer(data, '/01') == 'key'
+    for pointer in ('bad', '/missing', '/~2', '/~', '/a~1b/~0c/-1', '/a~1b/~0c/01',
+                    '/a~1b/~0c/-', '/a~1b/~0c/3', '/a~1b/~0c/0/x', '/a~1b/~0c/١'):
+        try: queries.json_pointer(data, pointer)
+        except services.ServiceError as e: assert e.code == 'evidence_pointer_invalid'
+        else: raise AssertionError(pointer)
+    limit = json.dumps({'x': 'a' * (65536 - 9)})
+    assert len(limit.encode()) == 65536
+    assert queries.source_content(limit) == (json.loads(limit), False)
+    assert queries.source_content(limit.replace('a', '药', 1)) == (None, True)
+    with patch.object(queries, 'json_pointer', side_effect=services.ServiceError('evidence_pointer_invalid', '证据定位失效')):
+        error('/evidence/' + QUOTE, 500, 'evidence_pointer_invalid')
+
+
 def main():
     common_errors()
     detail_checks()
+    evidence_checks()
+    pointer_checks()
     print('PASS: unified errors, redaction, repeatable read, snapshot guard')
 
 

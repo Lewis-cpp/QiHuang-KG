@@ -98,3 +98,9 @@ def entity_detail(id: EntityID, build_id: BuildID = None):
 @app.get("/api/v1/entities/{id}/evidence", response_model=schemas.EvidencePage, summary="实体证据分页")
 def entity_evidence(id: EntityID, limit: Limit = 20, offset: Offset = 0, build_id: BuildID = None):
     return queries.entity_evidence(id, limit, offset, build_id)
+
+
+@app.get("/api/v1/evidence/{id}", response_model=schemas.EvidenceDetail, summary="证据详情与原始字段值")
+def evidence_detail(id: EvidenceID, build_id: BuildID = None):
+    return queries.evidence_detail(id, build_id)
+

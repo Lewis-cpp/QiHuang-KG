@@ -154,7 +154,7 @@
 | ID | 级别 | 输入 | 预期结果 |
 | --- | --- | --- | --- |
 | F-12 | 必须 | `evidence:72340d34…`（S1 人参的组成证据） | 状态 200。`target.kind=edge`，`target.edge.source.label=四君子汤`，`target.edge.target.label=人参`，`relation=CONTAINS`。`raw_value.role=jun`，`raw_value.dosage=9g`。`source_record` 中 `filename=formulas.json`，`record_key=si_jun_zi_tang`。`dataset.id=bencaodian`，`license_statement` 不为空 |
-| F-13 | 必须 | `evidence:cf090792…`（S1 人参边的整条记录证据） | `field_path` 为空字符串。`raw_value` 与 `source_record.content` 完全相同，都是四君子汤的整条记录，含 `composition` 数组 |
+| F-13 | 必须 | `evidence:cf090792…`（S1 人参边的整条记录证据） | `field_path` 为空字符串。`raw_value` 与 `source_record.content` 完全相同，都是 `relationships.json` 中的组成关系记录，含 `formula=si_jun_zi_tang`、`herb=ren_shen`、`role=jun`、`dosage=9g` |
 | F-14 | 必须 | S6 | `kind=source_quote`。`target.kind=entity`，`target.entity.id=bencaodian:herb:gan_cao`。`excerpt` 与 `raw_value` 都等于 S6 中的原文 |
 | F-15 | 必须 | S7 的证据 | `raw_value` 是 `fields` 对象，其中 `CHP_ID=CHP01717`。`source_record.record_locator=record:1717;lines:1718-1718`。`source_record.content.repair=remove_exact_extra_empty_column_4`。`content_truncated=false` |
 | F-16 | 必须 | 从 S2 猪苓汤→泽泻边的证据中任选一条 | 状态 200，`target.edge.target.label=泽泻` |
@@ -230,6 +230,12 @@
 | D-06 | 必须 | markdownlint（使用仓库中的 `.markdownlint.json`） | 新增和修改的 Markdown 文件都通过 |
 
 ---
+
+## 验收预期修订（2026-10-10）
+
+F-13 原文把空指针证据误认为方剂整条记录。实际 `evidence:cf090792…` 指向 `relationships.json` 的组成关系记录。空指针应返回这条来源记录本身，不能改指到 `formulas.json`；已修正预期，原始数据与管线不变。
+
+开发文档补充了 64 KB 截断的具体形式：`content=null`、`content_truncated=true`，`raw_value` 保持所引用字段的原值。
 
 ## 10. 验收记录（执行时填写）
 

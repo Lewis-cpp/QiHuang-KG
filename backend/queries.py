@@ -1,6 +1,7 @@
 """Read-only detail, evidence and relation queries for the selected release."""
 
 import json
+import re
 
 from backend import services
 
@@ -58,3 +59,69 @@ def entity_evidence(entity_id, limit, offset, build_id=None):
         require_entity(c, entity_id)
         page = evidence_page(c, entity_id, limit, offset)
     return dict(**page, build_id=build)
+
+
+def json_pointer(content, pointer):
+    """Resolve an RFC 6901 pointer, rejecting invalid escapes and array indices."""
+    value = content
+    if pointer == '':
+        return value
+    try:
+        if not pointer.startswith('/'):
+            raise ValueError()
+        for token in pointer[1:].split('/'):
+            if re.search(r'~(?![01])', token):
+                raise ValueError()
+            token = token.replace('~1', '/').replace('~0', '~')
+            if isinstance(value, list):
+                if not re.fullmatch(r'0|[1-9][0-9]*', token):
+                    raise ValueError()
+                value = value[int(token)]
+            elif isinstance(value, dict):
+                value = value[token]
+            else:
+                raise ValueError()
+        return value
+    except (KeyError, IndexError, ValueError, TypeError):
+        raise services.ServiceError('evidence_pointer_invalid', '证据定位失效，请联系数据维护人员') from None
+
+
+def source_content(content_json):
+    # Preserve the JSON type; an oversized record is omitted instead of returning broken JSON.
+    if len(content_json.encode('utf-8')) > 64 * 1024:
+        return None, True
+    return json.loads(content_json), False
+
+
+def node(entity):
+    return {key: entity[key] for key in ('id', 'label', 'type')}
+
+
+def evidence_detail(evidence_id, build_id=None):
+    with services.relational(build_id) as c:
+        build = current_build(c)
+        c.execute('SELECT * FROM evidence WHERE id=%s', (evidence_id,))
+        evidence = c.fetchone()
+        if evidence is None:
+            raise services.ServiceError('evidence_not_found', '当前批次中不存在该证据')
+        c.execute('SELECT * FROM source_record WHERE id=%s', (evidence['source_record_id'],))
+        source = c.fetchone()
+        c.execute('SELECT * FROM dataset WHERE id=%s', (source['dataset_id'],))
+        dataset = c.fetchone()
+        content_json = source.pop('content_json')
+        raw_value = json_pointer(json.loads(content_json), evidence['field_path'])
+        source['content'], source['content_truncated'] = source_content(content_json)
+        source['filename'] = source['filename'].replace('\\', '/').rsplit('/', 1)[-1]
+        if evidence['entity_id'] is not None:
+            target = dict(kind='entity', entity=node(require_entity(c, evidence['entity_id'])))
+        else:
+            c.execute('SELECT id,relation,source_id,target_id FROM edge WHERE id=%s', (evidence['edge_id'],))
+            edge = c.fetchone()
+            c.execute('SELECT id,label,type FROM entity WHERE id=ANY(%s)', ([edge['source_id'], edge['target_id']],))
+            nodes = {row['id']: row for row in c.fetchall()}
+            target = dict(kind='edge', edge=dict(id=edge['id'], relation=edge['relation'],
+                          source=nodes[edge['source_id']], target=nodes[edge['target_id']]))
+    return dict(id=evidence['id'], kind=evidence['kind'], field_path=evidence['field_path'],
+                excerpt=evidence['excerpt'] if evidence['kind'] == 'source_quote' else None,
+                target=target, raw_value=raw_value, source_record=source, dataset=dataset, build_id=build)
+
