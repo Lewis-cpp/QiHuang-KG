@@ -97,10 +97,29 @@ erDiagram
 | `GET /api/v1/stats` | 实际实体、关系、证据、分类计数、来源与 `build_id` |
 | `GET /api/v1/entities` | `q` 最多100字，`type` 白名单，`limit` 1～50，`offset` 0～10000；返回 `items/total/limit/offset/build_id` |
 | `GET /api/v1/graph/sample` | 固定样例的节点、关系、证据 ID 与批次；`scope=bootstrap` |
+| `GET /api/v1/entities/{id}` | 实体属性、别名、关系汇总、前 20 条实体证据与总数 |
+| `GET /api/v1/entities/{id}/evidence` | 按证据类型和字段定位稳定分页，`limit` 1～50、`offset` 0～10000 |
+| `GET /api/v1/evidence/{id}` | 实体或边的目标、JSON Pointer 原值、来源记录与许可署名 |
+| `GET /api/v1/relation-queries` | `formula_herbs` / `herb_formulas`；返回本页路径、节点、边、原始属性和有序证据 ID |
 
-检索针对规范名称和来源别名，`%`、`_` 转义为字面字符，按规范名与 ID 稳定排序。SQL 参数绑定；schema 来自受校验的本地配置并以驱动标识符引用。错误返回503及 `{error:{code,message}}`，不回传凭据或底层异常；非法参数422。
 
-完整详情、证据、来源、任意根节点局部图以及 `/ai/query`、`/ai/explain` 尚未实现。后续单次局部图最多50节点、100关系的需求不由当前固定样例替代。
+检索针对规范名称和来源别名，`%`、`_` 转义为字面字符，按规范名与 ID 稳定排序。SQL 参数绑定；schema 来自受校验的本地配置并以驱动标识符引用。所有错误统一为 `{"error":{"code":"…","message":"中文提示"}}`，不回传 SQL、路径、凭据或底层异常。映射集中在 `services.ERROR_STATUS`；依赖错误默认 503。
+
+| HTTP | 错误码 |
+| --- | --- |
+| 404 | `entity_not_found`、`evidence_not_found`、`not_found` |
+| 409 | `snapshot_changed` |
+| 422 | `invalid_query`（含参数校验）、`invalid_type`、`unsupported_entity_type` |
+| 500 | `evidence_pointer_invalid`、`internal_error` |
+| 503 | `database_unavailable`、`build_mismatch`、`*_not_configured`、`invalid_app_config` 等依赖错误 |
+
+四个 M1a 接口接受可选 `build_id`，不匹配时拒绝请求，成功响应均包含实际读取批次。实体 ID 只接受两个来源、九种类型和 1～160 位键；证据 ID 与批次 ID 限定为小写十六进制。非法参数在建立数据库连接前拒绝。
+
+每个新请求在一个 `services.relational()` 可重复读事务中完成所有查询；继续使用只读事务、3 秒语句超时和库内批次核对。关系模板仅加载单实体的组成关系，当前最多 61 条，在内存中分页；数据规模变化时再将分页移入 SQL。
+
+证据排序为 `source_quote → curated → bibliographic → auto_extracted → rule_inferred`，其次字段指针非空优先、指针字典序和 ID。JSON Pointer 支持 `~0`/`~1`，无效指针返回 500。来源文件名不含服务器目录；原始 JSON 超过 64 KB 时返回 `content=null` 和 `content_truncated=true`，引用字段 `raw_value` 保持原值。
+
+来源目录、通用关系列表、任意根节点局部图以及 `/ai/query`、`/ai/explain` 尚未实现。后续单次局部图最多50节点、100关系的需求不由当前固定样例替代。
 
 ## 模型边界
 

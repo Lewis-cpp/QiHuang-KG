@@ -105,3 +105,24 @@ npm run build
 API 测试依赖实际主库和已构建的 Neo4j 样例；模型传输模拟测试不当作真实连接验收。
 
 `verify_environment.py` 可从主库重新构建同批次样例，使用事务和稳定 ID，重复执行不增生数据。当前为四君子汤、四味药与脾气虚证的 6 节点、5 关系；一跳验证 4 条组成，两跳验证“人参 ← 四君子汤 → 脾气虚证”1 条。样例可重建不等于已完成全量图备份恢复演练。
+
+## M0 + M1a 接口验收
+
+2026-10-10 应用与 Neo4j 样例已切换到 `5a76218e…` 批次。模型继续保持未配置；环境脚本的 `incomplete` 只表示真实模型验证尚未完成。
+
+启动后端后运行：
+
+```sh
+.venv/bin/python tests/test_api.py
+.venv/bin/python tests/measure_m1a.py
+```
+
+需演练数据库故障恢复时，显式运行以下命令。它会短暂停止本机 PostgreSQL，随后在 `finally` 中恢复容器，不重启后端。
+
+```sh
+.venv/bin/python tests/test_api.py --with-outage
+```
+
+详情及证据接口文档位于 `/docs`。固定样例、预期修订及实测记录见 [M0 + M1a 验收文档](dev/m0-m1a-acceptance.md)。证据抽样 ID 已固化在 `tests/fixtures/m1a-evidence.json`，测试时不从数据库生成预期值。
+
+回滚时将 `var/app.json.previous.bak` 恢复为 `config/app.json` 并重启后端；该文件只包含旧批次选择。旧 schema 和旧 Neo4j 样例继续保留。

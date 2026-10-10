@@ -1,0 +1,426 @@
+[
+  {
+    "command": [
+      "curl",
+      "--fail-with-body",
+      "--silent",
+      "--show-error",
+      "--get",
+      "http://127.0.0.1:8000/api/v1/entities",
+      "--data-urlencode",
+      "q=四君子汤",
+      "--data-urlencode",
+      "type=formula"
+    ],
+    "response": {
+      "items": [
+        {
+          "id": "bencaodian:formula:si_jun_zi_tang",
+          "label": "四君子汤",
+          "type": "formula",
+          "dataset_id": "bencaodian",
+          "category": "补益剂",
+          "review_status": "editor_reviewed"
+        }
+      ],
+      "total": 1,
+      "limit": 20,
+      "offset": 0,
+      "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a"
+    }
+  },
+  {
+    "command": [
+      "curl",
+      "--fail-with-body",
+      "--silent",
+      "--show-error",
+      "--get",
+      "http://127.0.0.1:8000/api/v1/entities/bencaodian:formula:si_jun_zi_tang"
+    ],
+    "response": {
+      "id": "bencaodian:formula:si_jun_zi_tang",
+      "type": "formula",
+      "label": "四君子汤",
+      "dataset": {
+        "id": "bencaodian",
+        "title": "本草典开放数据"
+      },
+      "category": "补益剂",
+      "review_status": "editor_reviewed",
+      "review_status_raw": "editor-reviewed",
+      "source_record_id": "source:7b97ace64c20ac073aa2d3c9b66d21366722aea1dd65c1a4fdf61e13567f4fa4",
+      "attributes": {
+        "category": "补益剂",
+        "description_en": "Composed of ren shen, bai zhu, fu ling, and zhi gan cao, this is the foundational formula for Spleen-Stomach qi vacuity. Its four mild, tonifying herbs are all 'gentlemanly' in nature (hence the name), and it inaugurated the entire lineage of qi-supplementing formulas in Chinese medicine.",
+        "description_zh": "脾胃气虚证之代表方，以药性平和、四味皆为君子之品，故名四君子。开补气方剂之先河。",
+        "modifications": [
+          {
+            "add": [
+              "半夏"
+            ],
+            "condition": "呕吐",
+            "rationale": "胃气上逆"
+          },
+          {
+            "add": [
+              "陈皮",
+              "半夏"
+            ],
+            "condition": "胸膈痞满，不思饮食",
+            "rationale": "气滞痰阻"
+          },
+          {
+            "add": [
+              "陈皮",
+              "半夏",
+              "木香",
+              "砂仁"
+            ],
+            "condition": "痰多",
+            "rationale": "脾虚生痰"
+          }
+        ],
+        "name_en": "Four Gentlemen Decoction",
+        "name_pinyin": "Sì Jūn Zǐ Tāng",
+        "preparation_en": "Decoct in water and take orally.",
+        "preparation_zh": "水煎服。",
+        "source_chapter": "卷之三 治一切气",
+        "source_text_key": "tai_ping_hui_min_he_ji_ju_fang",
+        "subcategory": "补气",
+        "treatment_principle": {
+          "en": "Augment qi and fortify the Spleen",
+          "zh": "益气健脾"
+        }
+      },
+      "aliases": [],
+      "relation_summary": [
+        {
+          "relation": "ASSOCIATED_WITH_PATTERN",
+          "direction": "out",
+          "count": 1
+        },
+        {
+          "relation": "CITED_IN",
+          "direction": "out",
+          "count": 1
+        },
+        {
+          "relation": "CONTAINS",
+          "direction": "out",
+          "count": 4
+        }
+      ],
+      "evidence_total": 1,
+      "evidence_preview": [
+        {
+          "id": "evidence:dba0589be0c6aa1ec748ef96515426334f26c27978650f0a6a9b91d6fb1cb4b3",
+          "kind": "curated",
+          "field_path": "",
+          "excerpt": null
+        }
+      ],
+      "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a"
+    }
+  },
+  {
+    "command": [
+      "curl",
+      "--fail-with-body",
+      "--silent",
+      "--show-error",
+      "--get",
+      "http://127.0.0.1:8000/api/v1/relation-queries",
+      "--data-urlencode",
+      "template=formula_herbs",
+      "--data-urlencode",
+      "entity_id=bencaodian:formula:si_jun_zi_tang"
+    ],
+    "response": {
+      "template": "formula_herbs",
+      "entity_id": "bencaodian:formula:si_jun_zi_tang",
+      "paths": [
+        {
+          "node_ids": [
+            "bencaodian:formula:si_jun_zi_tang",
+            "bencaodian:herb:ren_shen"
+          ],
+          "edge_ids": [
+            "edge:17d8c5fd2a3e045b422c5d9c56edbefccf1d4e78a76320867e4d7d88e2740a3e"
+          ]
+        },
+        {
+          "node_ids": [
+            "bencaodian:formula:si_jun_zi_tang",
+            "bencaodian:herb:bai_zhu"
+          ],
+          "edge_ids": [
+            "edge:e5c70d965a54fe4888889faf5f97a7b7028d20882dfa5675ce16a5bdaba6c7f2"
+          ]
+        },
+        {
+          "node_ids": [
+            "bencaodian:formula:si_jun_zi_tang",
+            "bencaodian:herb:fu_ling"
+          ],
+          "edge_ids": [
+            "edge:76dd65166e484077fb9dbc981bfc079e36c01de7808fba39065f6fa9c1709f04"
+          ]
+        },
+        {
+          "node_ids": [
+            "bencaodian:formula:si_jun_zi_tang",
+            "bencaodian:herb:gan_cao"
+          ],
+          "edge_ids": [
+            "edge:996ed53400325645c2fc6291d11612917e9ece156af4b3ac2a4f7cf77164c479"
+          ]
+        }
+      ],
+      "nodes": {
+        "bencaodian:formula:si_jun_zi_tang": {
+          "id": "bencaodian:formula:si_jun_zi_tang",
+          "type": "formula",
+          "label": "四君子汤"
+        },
+        "bencaodian:herb:ren_shen": {
+          "id": "bencaodian:herb:ren_shen",
+          "type": "herb",
+          "label": "人参"
+        },
+        "bencaodian:herb:bai_zhu": {
+          "id": "bencaodian:herb:bai_zhu",
+          "type": "herb",
+          "label": "白术"
+        },
+        "bencaodian:herb:fu_ling": {
+          "id": "bencaodian:herb:fu_ling",
+          "type": "herb",
+          "label": "茯苓"
+        },
+        "bencaodian:herb:gan_cao": {
+          "id": "bencaodian:herb:gan_cao",
+          "type": "herb",
+          "label": "甘草"
+        }
+      },
+      "edges": {
+        "edge:17d8c5fd2a3e045b422c5d9c56edbefccf1d4e78a76320867e4d7d88e2740a3e": {
+          "id": "edge:17d8c5fd2a3e045b422c5d9c56edbefccf1d4e78a76320867e4d7d88e2740a3e",
+          "relation": "CONTAINS",
+          "source_id": "bencaodian:formula:si_jun_zi_tang",
+          "target_id": "bencaodian:herb:ren_shen",
+          "properties": {
+            "dosage_raw": "9g",
+            "missing_claim_fields": [],
+            "position": 0,
+            "position_source": "composition",
+            "role": "jun"
+          },
+          "quality_state": "consistent",
+          "evidence_ids": [
+            "evidence:72340d34a2f1acaf0dee984198dcb9ea60beda6d11d8168122cecd6c1f19e33c",
+            "evidence:cf0907925b8fd3f4833665d5d7e13408733e9d3d33747a9d38cb45c9a162c9ef"
+          ]
+        },
+        "edge:e5c70d965a54fe4888889faf5f97a7b7028d20882dfa5675ce16a5bdaba6c7f2": {
+          "id": "edge:e5c70d965a54fe4888889faf5f97a7b7028d20882dfa5675ce16a5bdaba6c7f2",
+          "relation": "CONTAINS",
+          "source_id": "bencaodian:formula:si_jun_zi_tang",
+          "target_id": "bencaodian:herb:bai_zhu",
+          "properties": {
+            "dosage_raw": "9g",
+            "missing_claim_fields": [],
+            "position": 1,
+            "position_source": "composition",
+            "role": "chen"
+          },
+          "quality_state": "consistent",
+          "evidence_ids": [
+            "evidence:e2eba51c4c921ac766ef4831bc0feae6c2ae35032d928c858c8590e4e850bfab",
+            "evidence:e54c918ca07feb69aa2c5b62e13c4e4e6ba794bd6019539d5ecc30d6f467d2ec"
+          ]
+        },
+        "edge:76dd65166e484077fb9dbc981bfc079e36c01de7808fba39065f6fa9c1709f04": {
+          "id": "edge:76dd65166e484077fb9dbc981bfc079e36c01de7808fba39065f6fa9c1709f04",
+          "relation": "CONTAINS",
+          "source_id": "bencaodian:formula:si_jun_zi_tang",
+          "target_id": "bencaodian:herb:fu_ling",
+          "properties": {
+            "dosage_raw": "9g",
+            "missing_claim_fields": [],
+            "position": 2,
+            "position_source": "composition",
+            "role": "zuo"
+          },
+          "quality_state": "consistent",
+          "evidence_ids": [
+            "evidence:6f38a8984de45604434c1e7e27ce10d060648ba6f9aa2b13f229f3743e3c4431",
+            "evidence:27618203333077f217149f2f3897ab1f632fc2efc5f941bc22828015e3ffb9b8"
+          ]
+        },
+        "edge:996ed53400325645c2fc6291d11612917e9ece156af4b3ac2a4f7cf77164c479": {
+          "id": "edge:996ed53400325645c2fc6291d11612917e9ece156af4b3ac2a4f7cf77164c479",
+          "relation": "CONTAINS",
+          "source_id": "bencaodian:formula:si_jun_zi_tang",
+          "target_id": "bencaodian:herb:gan_cao",
+          "properties": {
+            "dosage_raw": "6g",
+            "missing_claim_fields": [],
+            "position": 3,
+            "position_source": "composition",
+            "role": "shi"
+          },
+          "quality_state": "consistent",
+          "evidence_ids": [
+            "evidence:470e04a1802a935538b42e4c079122a1a304ca39e1a2aa632ce4ffc12d0e7cd9",
+            "evidence:c703c471d2406a8341c657f72453f57745c877bb6199db587a81ed760669dbbf"
+          ]
+        }
+      },
+      "total": 4,
+      "limit": 20,
+      "offset": 0,
+      "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a"
+    }
+  },
+  {
+    "command": [
+      "curl",
+      "--fail-with-body",
+      "--silent",
+      "--show-error",
+      "--get",
+      "http://127.0.0.1:8000/api/v1/evidence/evidence:72340d34a2f1acaf0dee984198dcb9ea60beda6d11d8168122cecd6c1f19e33c"
+    ],
+    "response": {
+      "id": "evidence:72340d34a2f1acaf0dee984198dcb9ea60beda6d11d8168122cecd6c1f19e33c",
+      "kind": "curated",
+      "field_path": "/composition/0",
+      "excerpt": null,
+      "target": {
+        "kind": "edge",
+        "edge": {
+          "id": "edge:17d8c5fd2a3e045b422c5d9c56edbefccf1d4e78a76320867e4d7d88e2740a3e",
+          "relation": "CONTAINS",
+          "source": {
+            "id": "bencaodian:formula:si_jun_zi_tang",
+            "type": "formula",
+            "label": "四君子汤"
+          },
+          "target": {
+            "id": "bencaodian:herb:ren_shen",
+            "type": "herb",
+            "label": "人参"
+          }
+        }
+      },
+      "raw_value": {
+        "dosage": "9g",
+        "explanation_en": "Greatly tonifies original qi, fortifies the Spleen and nourishes the Stomach — the sovereign herb.",
+        "explanation_zh": "大补元气，健脾养胃，为君药",
+        "herb_key": "ren_shen",
+        "role": "jun"
+      },
+      "source_record": {
+        "id": "source:7b97ace64c20ac073aa2d3c9b66d21366722aea1dd65c1a4fdf61e13567f4fa4",
+        "dataset_id": "bencaodian",
+        "filename": "formulas.json",
+        "record_key": "si_jun_zi_tang",
+        "record_locator": "/0",
+        "file_sha256": "a31a02c6325e744f9722993bec3a942624442e7d1b3830494b05672d5a44b598",
+        "content": {
+          "category": "补益剂",
+          "composition": [
+            {
+              "dosage": "9g",
+              "explanation_en": "Greatly tonifies original qi, fortifies the Spleen and nourishes the Stomach — the sovereign herb.",
+              "explanation_zh": "大补元气，健脾养胃，为君药",
+              "herb_key": "ren_shen",
+              "role": "jun"
+            },
+            {
+              "dosage": "9g",
+              "explanation_en": "Strengthens the Spleen and dries dampness, reinforcing the qi-tonifying action of Ren Shen.",
+              "explanation_zh": "健脾燥湿，加强人参补气健脾之力",
+              "herb_key": "bai_zhu",
+              "role": "chen"
+            },
+            {
+              "dosage": "9g",
+              "explanation_en": "Strengthens the Spleen and percolates dampness, paired with Bai Zhu for amplified effect.",
+              "explanation_zh": "健脾渗湿，与白术相配，健脾祛湿之功更强",
+              "herb_key": "fu_ling",
+              "role": "zuo"
+            },
+            {
+              "dosage": "6g",
+              "explanation_en": "Augments qi, harmonizes the middle, and harmonizes the actions of the other herbs (use honey-fried).",
+              "explanation_zh": "益气和中，调和诸药；用炙甘草",
+              "herb_key": "gan_cao",
+              "role": "shi"
+            }
+          ],
+          "description_en": "Composed of ren shen, bai zhu, fu ling, and zhi gan cao, this is the foundational formula for Spleen-Stomach qi vacuity. Its four mild, tonifying herbs are all 'gentlemanly' in nature (hence the name), and it inaugurated the entire lineage of qi-supplementing formulas in Chinese medicine.",
+          "description_zh": "脾胃气虚证之代表方，以药性平和、四味皆为君子之品，故名四君子。开补气方剂之先河。",
+          "key": "si_jun_zi_tang",
+          "modifications": [
+            {
+              "add": [
+                "半夏"
+              ],
+              "condition": "呕吐",
+              "rationale": "胃气上逆"
+            },
+            {
+              "add": [
+                "陈皮",
+                "半夏"
+              ],
+              "condition": "胸膈痞满，不思饮食",
+              "rationale": "气滞痰阻"
+            },
+            {
+              "add": [
+                "陈皮",
+                "半夏",
+                "木香",
+                "砂仁"
+              ],
+              "condition": "痰多",
+              "rationale": "脾虚生痰"
+            }
+          ],
+          "name_en": "Four Gentlemen Decoction",
+          "name_pinyin": "Sì Jūn Zǐ Tāng",
+          "name_zh": "四君子汤",
+          "preparation_en": "Decoct in water and take orally.",
+          "preparation_zh": "水煎服。",
+          "slug": "si-jun-zi-tang",
+          "source_chapter": "卷之三 治一切气",
+          "source_text_key": "tai_ping_hui_min_he_ji_ju_fang",
+          "subcategory": "补气",
+          "treatment_principle": {
+            "en": "Augment qi and fortify the Spleen",
+            "zh": "益气健脾"
+          },
+          "verification": {
+            "last_reviewed": "2026-04-08",
+            "reviewer": "Bencaodian Editorial / 本草典编辑部",
+            "status": "editor-reviewed"
+          }
+        },
+        "content_truncated": false
+      },
+      "dataset": {
+        "id": "bencaodian",
+        "title": "本草典开放数据",
+        "version_label": "v1 · generated 2026-04-17T05:37:00.984Z",
+        "source_url": "https://bencaodian.org/en/about/data/",
+        "license_statement": "CC BY-SA 4.0；衍生数据保留署名并按相同许可共享。声明依据本地 _source-page.md。",
+        "attribution": "Bencaodian Editorial / 本草典编辑部"
+      },
+      "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a"
+    }
+  }
+]

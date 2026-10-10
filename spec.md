@@ -122,7 +122,7 @@
 
 M1 分两步实施：
 
-- **M1a**：统一错误处理；实体详情、实体证据分页、证据详情；`formula_herbs` 和 `herb_formulas` 两个模板。
+- **M1a（2026-10-10 已实现）**：统一错误处理；实体详情、实体证据分页、证据详情；`formula_herbs` 和 `herb_formulas` 两个模板。
   - 开发文档：[docs/dev/m0-m1a-development.md](docs/dev/m0-m1a-development.md)
   - 验收文档：[docs/dev/m0-m1a-acceptance.md](docs/dev/m0-m1a-acceptance.md)
 - **M1b**：本节其余内容。
@@ -134,10 +134,11 @@ M1 分两步实施：
 | 方法与路径 | 状态 | 说明 |
 | --- | --- | --- |
 | `GET /entities` | 改进 | 增加命中排序、命中说明和 `dataset` 过滤 |
-| `GET /entities/{id}` | 新增 | 实体详情 |
+| `GET /entities/{id}` | M1a 已完成 | 实体详情与证据预览 |
+| `GET /entities/{id}/evidence` | M1a 已完成 | 实体证据分页 |
 | `GET /entities/{id}/relations` | 新增 | 按关系类型和方向分页列出邻居（关系库） |
-| `GET /relation-queries` | 新增 | 固定模板查询，支持一跳和两跳（关系库） |
-| `GET /evidence/{id}` | 新增 | 证据详情与原始值 |
+| `GET /relation-queries` | M1a 部分完成 | 已实现 `formula_herbs`、`herb_formulas`；其余模板留待 M1b |
+| `GET /evidence/{id}` | M1a 已完成 | 证据详情与原始值 |
 | `GET /datasets` | 新增 | 来源、版本、许可与署名 |
 | `GET /stats` / `GET /health` | 保留 | 健康检查补充 `projection` 的取值（`sample` / `full` / `not_ready`） |
 

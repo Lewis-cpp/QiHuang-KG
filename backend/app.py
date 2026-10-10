@@ -34,10 +34,13 @@ def http_error(request, error):
                         content={"error": {"code": "invalid_query", "message": "请求方法或参数不正确"}})
 
 
-@app.exception_handler(Exception)
-def internal_error(request, error):
-    logging.getLogger(__name__).error("Unhandled API exception: %s", type(error).__name__)
-    return service_error(request, services.ServiceError("internal_error", "服务暂时无法处理请求"))
+@app.middleware("http")
+async def unexpected_errors(request, call_next):
+    try:
+        return await call_next(request)
+    except Exception as error:
+        logging.getLogger(__name__).error("Unhandled API exception: %s", type(error).__name__)
+        return service_error(request, services.ServiceError("internal_error", "服务暂时无法处理请求"))
 
 
 ENTITY_PATTERN = r"^(bencaodian|tcm-mkg):(" + "|".join(services.TYPES) + r"):[A-Za-z0-9_.-]{1,160}$"

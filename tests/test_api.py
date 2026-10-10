@@ -1,6 +1,8 @@
 """M1a fixed acceptance samples; run with .venv/bin/python tests/test_api.py."""
 
+import argparse
 import json
+import subprocess
 import sys
 from pathlib import Path
 from unittest.mock import patch
@@ -258,12 +260,56 @@ def relation_checks():
     assert ok('/evidence/' + evidence)['raw_value']['herb_key'] == 'ren_shen'
 
 
+def outage_checks():
+    # Opt-in only: this check stops the local development database temporarily.
+    import httpx
+    with httpx.Client(base_url='http://127.0.0.1:8000', timeout=10) as http:
+        assert http.get(API + '/health').status_code == 200
+        requests = [('/entities/' + FORMULA, {}), ('/entities/' + FORMULA + '/evidence', {}),
+                    ('/evidence/' + QUOTE, {}),
+                    ('/relation-queries', dict(template='formula_herbs', entity_id=FORMULA))]
+        results = []
+        try:
+            subprocess.run(['docker', 'compose', 'stop', '-t', '3', 'postgres'], cwd=ROOT, check=True)
+            for path, params in requests:
+                response = http.get(API + path, params=params)
+                assert response.status_code == 503
+                assert response.json() == {'error': {'code': 'database_unavailable', 'message': '关系数据库暂时不可用'}}
+                results.append(dict(path=path, status=response.status_code, body=response.json()))
+            assert http.get(API + '/health/live').status_code == 200
+        finally:
+            subprocess.run(['docker', 'compose', 'up', '-d', '--wait', 'postgres'], cwd=ROOT, check=True)
+        for path, params in requests:
+            response = http.get(API + path, params=params)
+            assert response.status_code == 200 and response.json()['build_id'] == BUILD
+        assert http.get(API + '/health').status_code == 200
+    (ROOT / 'var/m1a-outage.json').write_text(json.dumps(dict(failures=results, recovered=True,
+            backend_restarted=False), ensure_ascii=False, indent=2) + chr(10))
+    print('PASS: E-14/E-15 actual PostgreSQL outage, live endpoint, automatic recovery without backend restart')
+
+
+def openapi_checks():
+    schema = client.get('/openapi.json').json()
+    for path in ('/entities/{id}', '/entities/{id}/evidence', '/evidence/{id}', '/relation-queries'):
+        endpoint = schema['paths'][API + path]['get']
+        assert endpoint['responses']['200']['content']['application/json']['schema']['$ref']
+        assert all(p.get('description') for p in endpoint['parameters'])
+        assert any(p['name'] == 'build_id' for p in endpoint['parameters'])
+        assert endpoint['responses']['422']['content']['application/json']['schema']['$ref'].endswith('/ErrorResponse')
+    assert client.get('/docs').status_code == 200
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--with-outage', action='store_true', help='Temporarily stop local PostgreSQL; needs API on :8000')
+    args = parser.parse_args()
     common_errors()
     detail_checks()
     evidence_checks()
     pointer_checks()
     relation_checks()
+    openapi_checks()
+    if args.with_outage: outage_checks()
     print('PASS: F-01–F-24 fixed data, 3439 paged IDs, 231 evidence samples, E/S boundaries, pointer and size guards')
 
 
