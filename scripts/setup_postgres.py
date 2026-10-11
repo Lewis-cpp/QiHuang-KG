@@ -1,4 +1,4 @@
-"""Create/reuse private credentials for the project-local Docker Compose database."""
+"""Create/reuse private credentials for the project-local Docker Compose database and its read-only role."""
 
 import json
 import os
@@ -6,6 +6,7 @@ import secrets
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+READER = "qihuang_reader"
 
 
 def private_write(path, text):
@@ -38,7 +39,26 @@ def main():
         private_write(config, json.dumps(settings, indent=2) + "\n")
     private_write(password_file, password + "\n")
     config.chmod(0o600)
-    print("Ready: config/postgresql.json and var/postgres-password (private, reused on rerun)")
+    reader_config(settings)
+    print("Ready: config/postgresql.json, config/postgresql_reader.json and var/postgres-password "
+          "(private, reused on rerun)")
+
+
+def reader_config(settings):
+    """The application connects as a separate role; scripts/setup_reader.py creates it in the database."""
+    path = ROOT / "config/postgresql_reader.json"
+    expected = dict(host=settings["host"], port=settings["port"], dbname=settings["dbname"], user=READER)
+    if path.exists():
+        existing = json.loads(path.read_text())
+        if any(existing.get(k) != v for k, v in expected.items()):
+            raise ValueError("Existing reader config differs from the import connection; configure it manually")
+        password = existing.get("password")
+        if not isinstance(password, str) or not password.strip() or password == settings["password"]:
+            raise ValueError("Reader config requires its own nonempty password")
+    else:
+        private_write(path, json.dumps(dict(expected, password=secrets.token_urlsafe(32), connect_timeout=10,
+                                            sslmode=settings.get("sslmode", "disable")), indent=2) + "\n")
+    path.chmod(0o600)
 
 
 if __name__ == "__main__":

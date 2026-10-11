@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-11T12:47:12.082973+08:00",
+  "database": "PostgreSQL 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit",
+  "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "role": "qihuang_reader",
+  "default_transaction_read_only": "on",
+  "sqlstate": {
+    "default_session_update": "25006",
+    "insert": "42501",
+    "update": "42501",
+    "delete": "42501",
+    "create_table": "42501",
+    "create_view": "42501",
+    "create_public": "42501",
+    "create_schema": "42501"
+  },
+  "meaning": {
+    "25006": "read_only_sql_transaction",
+    "42501": "insufficient_privilege"
+  },
+  "note": "Each write runs after SET TRANSACTION READ WRITE, so the failure comes from privileges, not the setting"
+}

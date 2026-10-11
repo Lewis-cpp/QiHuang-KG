@@ -7,7 +7,9 @@ datasets/processed/
 .env.*
 !.env.example
 config/vastbase.json
+config/vastbase_reader.json
 config/postgresql.json
+config/postgresql_reader.json
 config/neo4j.json
 config/neo4j.env
 config/model.json

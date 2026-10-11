@@ -54,7 +54,7 @@ SELECT type, count(*) FROM entity GROUP BY type ORDER BY type;
 SELECT relation, count(*) FROM edge GROUP BY relation ORDER BY relation;
 ```
 
-容器重建仍使用同一个命名卷；`docker compose down` 保留数据卷，`docker compose down -v` 会删除数据。维护账号用于本地数据导入；业务只读账号仍按后续 API 开发任务配置。
+容器重建仍使用同一个命名卷；`docker compose down` 保留数据卷，`docker compose down -v` 会删除数据。维护账号用于本地数据导入；应用使用只读账号 `qihuang_reader`，由 `scripts/setup_reader.py` 创建和授权，见[阶段启动说明](bootstrap.md#m1-只读账号与业务视图)。导入时在同一事务中执行 `docs/schema-views.sql` 创建业务视图并校验；复用已有 schema 时只追加视图。环境探测同样在随机 schema 中创建视图，提前暴露 Vastbase 的 JSON 兼容问题。
 
 ## 当前结果
 
