@@ -7,7 +7,7 @@ from backend import services
 
 EVIDENCE_ORDER = """CASE kind WHEN 'source_quote' THEN 0 WHEN 'curated' THEN 1
     WHEN 'bibliographic' THEN 2 WHEN 'auto_extracted' THEN 3 WHEN 'rule_inferred' THEN 4 END,
-    CASE WHEN field_path='' THEN 1 ELSE 0 END, field_path, id"""
+    CASE WHEN field_path='' THEN 1 ELSE 0 END, field_path COLLATE "C", id"""
 
 
 def current_build(c):
@@ -130,7 +130,7 @@ RELATION_SQL = {
     'formula_herbs': "SELECT e.*,n.id AS node_id,n.label,n.type FROM edge e JOIN entity n ON n.id=e.target_id "
                      "WHERE e.source_id=%s AND e.relation='CONTAINS'",
     'herb_formulas': "SELECT e.*,n.id AS node_id,n.label,n.type FROM edge e JOIN entity n ON n.id=e.source_id "
-                     "WHERE e.target_id=%s AND e.relation='CONTAINS' ORDER BY n.label,n.id",
+                     "WHERE e.target_id=%s AND e.relation='CONTAINS'",
 }
 
 
@@ -146,9 +146,12 @@ def relation_query(template, entity_id, limit, offset, build_id=None):
         for row in rows:
             row['properties'] = json.loads(row.pop('properties_json'))
         # shortcut: these templates have at most 61 matches; move paging into SQL if this grows.
+        # Sort in Python so label order is code point order, independent of the database collation.
         if template == 'formula_herbs':
             rows.sort(key=lambda r: (r['properties'].get('position') is None,
                                     r['properties'].get('position'), r['label'], r['node_id']))
+        else:
+            rows.sort(key=lambda r: (r['label'], r['node_id']))
         total = len(rows)
         page = rows[offset:offset + limit]
         evidence_ids = {row['id']: [] for row in page}
