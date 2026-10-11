@@ -20,7 +20,7 @@
 - 七个模板和通用关系列表共用 `queries.TEMPLATES` 与 `fetch_paths`。SQL 中的列名和关系方向只来自固定表，关系类型、实体 ID、分页值全部参数绑定。
 - 排序与 M1a 修复保持一致：文本排序键一律 `COLLATE "C"`，即码位顺序，不随数据库区域设置变化；最后一个排序键总是 `id`。
 - 方剂组成（`CONTAINS` 出边）按 `properties.position` 排序，空值在后，再按中药名称和 ID。位置保存在 JSON 文本中，所以这一种查询取全部组成后在 Python 中排序（单个方剂最多几十味药）。其余查询在 SQL 中计数和分页，甘草饮片的 2,278 个中成药、Bitter medicinal 的 3,439 个饮片都按页读取。
-- `CONTAINS` 入边（药物反查方剂）按方剂名称排序，与 `herb_formulas` 一致。spec §4.4 只写了"`CONTAINS` 按 position"；药物在不同方剂中的位置没有可比性，所以本次只对出边使用位置排序。
+- `CONTAINS` 入边（药物反查方剂）按方剂名称排序，与 `herb_formulas` 一致；药物在不同方剂中的位置没有可比性。spec §4.4 已按此修订（2026-10-11 确认）。
 - `herb_patterns_via_formula` 按完整路径返回，同一证候经由不同方剂到达时保留为不同路径；响应带固定的 `note`："该药出现在某方剂中，该方剂在来源数据中关联某证候"。一跳模板的 `note` 为 `null`。
 - 关系类型与实体类型不匹配时，`/entities/{id}/relations` 返回 200 空列表；`/relation-queries` 仍返回 422 `unsupported_entity_type`。
 - `/datasets` 中的关系数按起点实体所属来源统计；当前数据中每条关系的两端都属于同一来源。

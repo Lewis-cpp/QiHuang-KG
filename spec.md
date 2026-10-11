@@ -190,8 +190,10 @@ M1 分两步实施：
 - **校验**：关系类型与实体类型不匹配时（比如中药使用 `HAS_HERBAL_PIECE`）返回 200 空列表，不报 422，因为这只是没有数据。
 - **每项字段**：`edge {id, relation, properties, quality_state, evidence_ids}` 和 `neighbor {id, type, label, category}`。
 - **排序**
-  - `CONTAINS` 按 `properties.position` 排序，为空的排在最后，再按邻居 `label`、`id`。
-  - 其他关系按邻居 `label`、`id`。
+  - `CONTAINS` 出边（方剂组成）按 `properties.position` 排序，为空的排在最后，再按邻居 `label`、`id`。
+  - `HAS_MEDICINAL_PROPERTY` 出边按邻居 `category`（药性类别）、`label`、`id`，与 `piece_properties` 一致。
+  - `CONTAINS` 入边（药物反查方剂）和其他关系按邻居 `label`、`id`。同一味药在不同方剂中的位置不可比较，所以入边不按位置排序。
+  - 文本排序键按码位顺序比较（`COLLATE "C"`），不随数据库区域设置变化。
 - 返回 `total`。甘草这类节点会有数千条，分页是必需的。
 
 ### 4.5 `GET /relation-queries`
