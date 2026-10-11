@@ -1,0 +1,536 @@
+{
+  "checked_at": "2026-10-11",
+  "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "environment": {
+    "database": "PostgreSQL 16.15（云端容器本地实例）",
+    "neo4j": "未运行",
+    "model": "未配置",
+    "browser": "Chromium（Playwright 1.56.1，无头）",
+    "viewport": [
+      "1280x900",
+      "390x844"
+    ]
+  },
+  "vite_dev": [
+    {
+      "name": "首页初始状态显示示例检索",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "检索写入 URL",
+      "ok": true,
+      "detail": "http://127.0.0.1:5174/?q=%E5%9B%9B%E5%90%9B%E5%AD%90%E6%B1%A4"
+    },
+    {
+      "name": "检索结果含四君子汤与命中说明",
+      "ok": true,
+      "detail": "四君子汤经典方剂 |  | 补益剂 · 名称命中 |  | 本草典 | 编辑已审核"
+    },
+    {
+      "name": "方剂详情深链接",
+      "ok": true,
+      "detail": "http://127.0.0.1:5174/entity/bencaodian%3Aformula%3Asi_jun_zi_tang"
+    },
+    {
+      "name": "页面标题",
+      "ok": true,
+      "detail": "四君子汤 · 岐黄知图"
+    },
+    {
+      "name": "组成表含位置、剂量、君臣佐使",
+      "ok": true,
+      "detail": "组成 4 | 位置\t药名\t剂量原文\t君臣佐使\t证据 | 1\t人参\t9g\t君\t | 2 条证据 |  | 2\t白术\t9g\t臣\t | 2 条证据 | "
+    },
+    {
+      "name": "治法双语显示",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "中药详情有“收录该药的方剂”分区",
+      "ok": true,
+      "detail": "收录该药的方剂 61 / 出处古籍 1"
+    },
+    {
+      "name": "注意事项分区带固定说明",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "从药物跳到其他方剂",
+      "ok": true,
+      "detail": "九味羌活汤"
+    },
+    {
+      "name": "打开组成证据",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "证据对象显示起点 → 关系 → 终点",
+      "ok": true,
+      "detail": "九味羌活汤 包含 → 羌活"
+    },
+    {
+      "name": "证据对象链接回到方剂",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "浏览器后退逐步返回",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "猪苓汤泽泻冲突标记",
+      "ok": true,
+      "detail": "2 泽泻 9g ⚠ 来源记载不一致 2 条证据"
+    },
+    {
+      "name": "冲突说明脚注",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "冲突证据可看到各来源原值",
+      "ok": true,
+      "detail": "{ \"dosage\": \"9g\", \"explanation_en\": \"Sweet and bland, assists Zhu Ling in promoting urination and directing damp-heat do || { \"dosage\": \"9g\", \"formula\": \"zhu_ling_tang\", \"herb\": \"ze_xie\", \"role\": \"jun\" }"
+    },
+    {
+      "name": "甘草（饮片）2,278 条分页",
+      "ok": true,
+      "detail": "第 1 / 114 页，共 2,278 条"
+    },
+    {
+      "name": "翻页到第 4 页",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "最后一页可取到",
+      "ok": true,
+      "detail": "items=18"
+    },
+    {
+      "name": "ICD-11 只显示编码",
+      "ok": true,
+      "detail": "编码 1F68.1"
+    },
+    {
+      "name": "给药途径括注原值",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "来源页两张卡片",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "统计算式",
+      "ok": true,
+      "detail": "业务记录总量 | 199,876 | 实体 20,374 + 业务关系 179,502 = 199,876 | 验收口径：去重实体 + 业务关系。证据、别名和来源记录不计入。"
+    },
+    {
+      "name": "运行状态显示图投影",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "刷新深链接 /?q=%E7%94%98%E8%8D%89&type=herb",
+      "ok": true,
+      "detail": "从一味药，读懂知识的关联。"
+    },
+    {
+      "name": "刷新深链接 /entity/bencaodian:herb:gan_cao",
+      "ok": true,
+      "detail": "甘草中药"
+    },
+    {
+      "name": "刷新深链接 /datasets",
+      "ok": true,
+      "detail": "数据来源"
+    },
+    {
+      "name": "刷新深链接 /stats",
+      "ok": true,
+      "detail": "数据统计"
+    },
+    {
+      "name": "刷新深链接 /evidence/...",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "不存在的实体显示未找到",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "不存在的证据显示未找到",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "格式不合法的 ID 显示未找到",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "不存在的路径",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "空结果说明",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "批次不一致出现横幅",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "点刷新后恢复",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "窄屏无横向滚动 /",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "窄屏无横向滚动 /entity/bencaodian:formula:si_jun_zi_tang",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "窄屏无横向滚动 /stats",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "窄屏无横向滚动 /datasets",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "无前端运行时错误",
+      "ok": true,
+      "detail": "Failed to load resource: the server responded with a status of 404 (Not Found) || Failed to load resource: the server responded with a status of 422 (Unprocessable Entity) || Failed to load resource: the server responded with a status of 422 (Unprocessable Entity) || Failed to load resource: the server responded with a status of 409 (Conflict)"
+    }
+  ],
+  "backend_stopped": [
+    {
+      "name": "后端停止时显示服务不可用 /?q=%E7%94%98%E8%8D%89",
+      "ok": true,
+      "detail": "无法连接服务，请检查后端是否启动。  重试"
+    },
+    {
+      "name": "后端停止时显示服务不可用 /entity/bencaodian:herb:gan_cao",
+      "ok": true,
+      "detail": "无法连接服务，请检查后端是否启动。  重试"
+    },
+    {
+      "name": "后端停止时显示服务不可用 /evidence/evidence:x",
+      "ok": true,
+      "detail": "无法连接服务，请检查后端是否启动。  重试"
+    },
+    {
+      "name": "后端停止时显示服务不可用 /datasets",
+      "ok": true,
+      "detail": "无法连接服务，请检查后端是否启动。  重试"
+    },
+    {
+      "name": "后端停止时显示服务不可用 /stats",
+      "ok": true,
+      "detail": "无法连接服务，请检查后端是否启动。  重试"
+    },
+    {
+      "name": "后端恢复后正常显示",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "点重试后恢复",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "database_stopped": [
+    {
+      "name": "数据库停止时详情页显示后端 message 和重试",
+      "ok": true,
+      "detail": "关系数据库暂时不可用  重试"
+    },
+    {
+      "name": "数据库停止时统计页仍渲染运行状态",
+      "ok": true,
+      "detail": "关系主库 暂不可用 / Neo4j 图库 · 图投影：未就绪 暂不可用 / 模型服务 尚未配置"
+    }
+  ],
+  "vite_preview": [
+    {
+      "name": "首页初始状态显示示例检索",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "检索写入 URL",
+      "ok": true,
+      "detail": "http://127.0.0.1:4174/?q=%E5%9B%9B%E5%90%9B%E5%AD%90%E6%B1%A4"
+    },
+    {
+      "name": "检索结果含四君子汤与命中说明",
+      "ok": true,
+      "detail": "四君子汤经典方剂 |  | 补益剂 · 名称命中 |  | 本草典 | 编辑已审核"
+    },
+    {
+      "name": "方剂详情深链接",
+      "ok": true,
+      "detail": "http://127.0.0.1:4174/entity/bencaodian%3Aformula%3Asi_jun_zi_tang"
+    },
+    {
+      "name": "页面标题",
+      "ok": true,
+      "detail": "四君子汤 · 岐黄知图"
+    },
+    {
+      "name": "组成表含位置、剂量、君臣佐使",
+      "ok": true,
+      "detail": "组成 4 | 位置\t药名\t剂量原文\t君臣佐使\t证据 | 1\t人参\t9g\t君\t | 2 条证据 |  | 2\t白术\t9g\t臣\t | 2 条证据 | "
+    },
+    {
+      "name": "治法双语显示",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "中药详情有“收录该药的方剂”分区",
+      "ok": true,
+      "detail": "收录该药的方剂 61 / 出处古籍 1"
+    },
+    {
+      "name": "注意事项分区带固定说明",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "从药物跳到其他方剂",
+      "ok": true,
+      "detail": "九味羌活汤"
+    },
+    {
+      "name": "打开组成证据",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "证据对象显示起点 → 关系 → 终点",
+      "ok": true,
+      "detail": "九味羌活汤 包含 → 羌活"
+    },
+    {
+      "name": "证据对象链接回到方剂",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "浏览器后退逐步返回",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "猪苓汤泽泻冲突标记",
+      "ok": true,
+      "detail": "2 泽泻 9g ⚠ 来源记载不一致 2 条证据"
+    },
+    {
+      "name": "冲突说明脚注",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "冲突证据可看到各来源原值",
+      "ok": true,
+      "detail": "{ \"dosage\": \"9g\", \"explanation_en\": \"Sweet and bland, assists Zhu Ling in promoting urination and directing damp-heat do || { \"dosage\": \"9g\", \"formula\": \"zhu_ling_tang\", \"herb\": \"ze_xie\", \"role\": \"jun\" }"
+    },
+    {
+      "name": "甘草（饮片）2,278 条分页",
+      "ok": true,
+      "detail": "第 1 / 114 页，共 2,278 条"
+    },
+    {
+      "name": "翻页到第 4 页",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "最后一页可取到",
+      "ok": true,
+      "detail": "items=18"
+    },
+    {
+      "name": "ICD-11 只显示编码",
+      "ok": true,
+      "detail": "编码 1F68.1"
+    },
+    {
+      "name": "给药途径括注原值",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "来源页两张卡片",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "统计算式",
+      "ok": true,
+      "detail": "业务记录总量 | 199,876 | 实体 20,374 + 业务关系 179,502 = 199,876 | 验收口径：去重实体 + 业务关系。证据、别名和来源记录不计入。"
+    },
+    {
+      "name": "运行状态显示图投影",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "刷新深链接 /?q=%E7%94%98%E8%8D%89&type=herb",
+      "ok": true,
+      "detail": "从一味药，读懂知识的关联。"
+    },
+    {
+      "name": "刷新深链接 /entity/bencaodian:herb:gan_cao",
+      "ok": true,
+      "detail": "甘草中药"
+    },
+    {
+      "name": "刷新深链接 /datasets",
+      "ok": true,
+      "detail": "数据来源"
+    },
+    {
+      "name": "刷新深链接 /stats",
+      "ok": true,
+      "detail": "数据统计"
+    },
+    {
+      "name": "刷新深链接 /evidence/...",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "不存在的实体显示未找到",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "不存在的证据显示未找到",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "格式不合法的 ID 显示未找到",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "不存在的路径",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "空结果说明",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "批次不一致出现横幅",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "点刷新后恢复",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "窄屏无横向滚动 /",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "窄屏无横向滚动 /entity/bencaodian:formula:si_jun_zi_tang",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "窄屏无横向滚动 /stats",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "窄屏无横向滚动 /datasets",
+      "ok": true,
+      "detail": "overflow=0"
+    },
+    {
+      "name": "无前端运行时错误",
+      "ok": true,
+      "detail": "Failed to load resource: the server responded with a status of 404 (Not Found) || Failed to load resource: the server responded with a status of 422 (Unprocessable Entity) || Failed to load resource: the server responded with a status of 422 (Unprocessable Entity) || Failed to load resource: the server responded with a status of 409 (Conflict)"
+    }
+  ],
+  "summary": {
+    "vite_dev": "42/42",
+    "backend_stopped": "7/7",
+    "database_stopped": "2/2",
+    "vite_preview": "42/42",
+    "review_fixes": "8/8"
+  },
+  "review_fixes": [
+    {
+      "name": "后到的来源响应来自另一批次时出现横幅",
+      "ok": true,
+      "detail": "banner=1"
+    },
+    {
+      "name": "已保存批次没有被覆盖",
+      "ok": true,
+      "detail": "stored=5a76218e5200"
+    },
+    {
+      "name": "只选“中药”显示中药目录",
+      "ok": true,
+      "detail": "http://127.0.0.1:5174/?type=herb"
+    },
+    {
+      "name": "切回“全部类型”后 URL 去掉 type",
+      "ok": true,
+      "detail": "http://127.0.0.1:5174/"
+    },
+    {
+      "name": "切回后不再显示旧目录",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "只选来源时 URL 同步",
+      "ok": true,
+      "detail": "http://127.0.0.1:5174/?dataset=tcm-mkg"
+    },
+    {
+      "name": "第 2 页越界时回到有结果的页",
+      "ok": true,
+      "detail": "items=1 url=http://127.0.0.1:5174/?q=%E5%9B%9B%E5%90%9B%E5%AD%90%E6%B1%A4"
+    },
+    {
+      "name": "中药目录第 99 页回到最后一页",
+      "ok": true,
+      "detail": "第 19 / 19 页，共 365 条 url=http://127.0.0.1:5174/?type=herb&page=19"
+    }
+  ]
+}
