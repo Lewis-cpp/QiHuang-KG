@@ -39,16 +39,22 @@ watch(criteria, value => {
   else void load()
 }, { immediate: true })
 
-function navigate(state: { q: string; type: string; dataset: string }, page = 1) {
+function navigate(state: { q: string; type: string; dataset: string }, page = 1, replace = false) {
   const query: Record<string, string> = {}
   if (state.q.trim()) query.q = state.q.trim()
   if (state.type) query.type = state.type
   if (state.dataset) query.dataset = state.dataset
   if (page > 1) query.page = String(page)
-  void router.push({ path: '/', query })
+  void (replace ? router.replace : router.push)({ path: '/', query })
 }
 const apply = () => navigate(form.value)
-const filtersChanged = () => { if (form.value.q.trim() || form.value.type) apply() }
+
+// A page past the end (e.g. a stale link) moves to the last page that has results.
+watch(data, result => {
+  if (result && !result.items.length && result.total > 0 && criteria.value.page > 1) {
+    navigate(criteria.value, Math.min(MAX_PAGE, Math.ceil(result.total / LIMIT)), true)
+  }
+})
 </script>
 
 <template>
@@ -75,12 +81,12 @@ const filtersChanged = () => { if (form.value.q.trim() || form.value.type) apply
       <label class="sr-only" for="query">关键词</label>
       <input id="query" v-model="form.q" maxlength="100" placeholder="输入方剂、中药或术语名称" />
       <label class="sr-only" for="kind">实体类型</label>
-      <select id="kind" v-model="form.type" @change="filtersChanged">
+      <select id="kind" v-model="form.type" @change="apply()">
         <option value="">全部类型</option>
         <option v-for="(name, value) in typeNames" :key="value" :value="value">{{ name }}</option>
       </select>
       <label class="sr-only" for="dataset">来源</label>
-      <select id="dataset" v-model="form.dataset" @change="filtersChanged">
+      <select id="dataset" v-model="form.dataset" @change="apply()">
         <option value="">全部来源</option>
         <option v-for="(name, value) in datasetNames" :key="value" :value="value">{{ name }}</option>
       </select>

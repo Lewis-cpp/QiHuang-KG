@@ -488,6 +488,49 @@
     "vite_dev": "42/42",
     "backend_stopped": "7/7",
     "database_stopped": "2/2",
-    "vite_preview": "42/42"
-  }
+    "vite_preview": "42/42",
+    "review_fixes": "8/8"
+  },
+  "review_fixes": [
+    {
+      "name": "后到的来源响应来自另一批次时出现横幅",
+      "ok": true,
+      "detail": "banner=1"
+    },
+    {
+      "name": "已保存批次没有被覆盖",
+      "ok": true,
+      "detail": "stored=5a76218e5200"
+    },
+    {
+      "name": "只选“中药”显示中药目录",
+      "ok": true,
+      "detail": "http://127.0.0.1:5174/?type=herb"
+    },
+    {
+      "name": "切回“全部类型”后 URL 去掉 type",
+      "ok": true,
+      "detail": "http://127.0.0.1:5174/"
+    },
+    {
+      "name": "切回后不再显示旧目录",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "只选来源时 URL 同步",
+      "ok": true,
+      "detail": "http://127.0.0.1:5174/?dataset=tcm-mkg"
+    },
+    {
+      "name": "第 2 页越界时回到有结果的页",
+      "ok": true,
+      "detail": "items=1 url=http://127.0.0.1:5174/?q=%E5%9B%9B%E5%90%9B%E5%AD%90%E6%B1%A4"
+    },
+    {
+      "name": "中药目录第 99 页回到最后一页",
+      "ok": true,
+      "detail": "第 19 / 19 页，共 365 条 url=http://127.0.0.1:5174/?type=herb&page=19"
+    }
+  ]
 }

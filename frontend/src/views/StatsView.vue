@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, watch } from 'vue'
-import { get, rememberBuild, snapshotChanged, storedBuild, useLoader } from '../api/client'
+import { get, reconcileBuild, useLoader } from '../api/client'
 import type { DatasetPage, Health, Stats } from '../api/types'
 import { label, number, projectionNames, relationNames, serviceStates, setTitle, typeNames } from '../labels'
 import CopyText from '../components/CopyText.vue'
@@ -14,12 +14,7 @@ const datasets = useLoader(signal => get<DatasetPage>('/datasets', {}, { signal 
 onMounted(() => { void stats.load(); void health.load(); void datasets.load() })
 setTitle('数据统计')
 
-watch(stats.data, value => {
-  if (!value) return
-  const stored = storedBuild()
-  if (!stored) rememberBuild(value.build_id)
-  else if (stored !== value.build_id) snapshotChanged.value = true
-})
+watch(stats.data, value => { if (value) reconcileBuild(value.build_id) })
 const sorted = (counts: Record<string, number>) => Object.entries(counts).sort((a, b) => b[1] - a[1])
 const sum = (counts: Record<string, number>) => Object.values(counts).reduce((a, b) => a + b, 0)
 </script>
