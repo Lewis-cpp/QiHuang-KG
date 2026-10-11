@@ -40,9 +40,8 @@ def http_error(request, error):
 async def unexpected_errors(request, call_next):
     try:
         return await call_next(request)
-    except Exception:
-        # Full traceback stays in the server log; the client only gets the generic error body.
-        logging.getLogger(__name__).exception("Unhandled API exception: %s %s", request.method, request.url.path)
+    except Exception as error:
+        logging.getLogger(__name__).error("Unhandled API exception: %s", type(error).__name__)
         return service_error(request, services.ServiceError("internal_error", "服务暂时无法处理请求"))
 
 

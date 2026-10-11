@@ -1,7 +1,9 @@
 """M1a fixed acceptance samples; run with .venv/bin/python tests/test_api.py."""
 
 import argparse
+import io
 import json
+import logging
 import subprocess
 import sys
 from pathlib import Path
@@ -54,8 +56,17 @@ def common_errors():
     error('/entities', 422, 'invalid_type', type='unsupported')
     for path in ('/nope', '/entities/x/y/z', '/evidence/..%2F..%2Fconfig%2Fpostgresql.json'):
         error(path, 404, 'not_found')
-    with patch.object(services, 'stats', side_effect=ValueError('secret-test-value SELECT /home/')):
-        error('/stats', 500, 'internal_error')
+    log = io.StringIO()
+    handler = logging.StreamHandler(log)
+    logger = logging.getLogger('backend.app')
+    logger.addHandler(handler)
+    try:
+        with patch.object(services, 'stats', side_effect=ValueError('secret-test-value SELECT /home/')):
+            error('/stats', 500, 'internal_error')
+        assert log.getvalue().strip() == 'Unhandled API exception: ValueError'
+    finally:
+        logger.removeHandler(handler)
+        handler.close()
     with services.relational() as c:
         c.execute('SHOW transaction_isolation')
         assert c.fetchone()['transaction_isolation'] == 'repeatable read'
@@ -263,6 +274,31 @@ def relation_checks():
     assert ok('/evidence/' + evidence)['raw_value']['herb_key'] == 'ren_shen'
 
 
+def ordering_checks():
+    # Existing Chinese names do not distinguish locale order from code point order.
+    rows = [dict(id='edge:' + key, source_id=key, target_id=LICORICE, relation='CONTAINS',
+                 properties_json='{}', quality_state='consistent', node_id=key, label=label, type='formula')
+            for key, label in [('d', 'ä'), ('c', 'z'), ('b', 'A'), ('a', 'A')]]
+    for offset, expected in [(0, ['a', 'b']), (2, ['c', 'd'])]:
+        with patch.object(services, 'relational') as relational:
+            c = relational.return_value.__enter__.return_value
+            c.fetchone.side_effect = [{'id': BUILD}, dict(id=LICORICE, label='甘草', type='herb')]
+            c.fetchall.side_effect = [[dict(row) for row in rows], []]
+            page = queries.relation_query('herb_formulas', LICORICE, 2, offset)
+        assert page['total'] == 4
+        assert [p['node_ids'][1] for p in page['paths']] == expected
+    with services.relational() as c:
+        c.execute("SELECT collname FROM pg_collation WHERE collname='en-US-x-icu'")
+        if c.fetchone() is None:
+            print('SKIP: evidence locale comparison needs PostgreSQL en-US-x-icu collation')
+            return
+        source = """SELECT field_path COLLATE "en-US-x-icu" AS field_path, 'curated' AS kind, 'id' AS id
+                    FROM unnest(%s::text[]) AS field_path"""
+        paths = ['/ab', '/a', '/A', '/a-b', '']
+        c.execute('SELECT field_path FROM (' + source + ') sample ORDER BY ' + queries.EVIDENCE_ORDER, (paths,))
+        assert [r['field_path'] for r in c.fetchall()] == ['/A', '/a', '/a-b', '/ab', '']
+
+
 def outage_checks():
     # Opt-in only: this check stops the local development database temporarily.
     import httpx
@@ -311,6 +347,7 @@ def main():
     evidence_checks()
     pointer_checks()
     relation_checks()
+    ordering_checks()
     openapi_checks()
     if args.with_outage: outage_checks()
     print('PASS: F-01–F-24 fixed data, 3439 paged IDs, 231 evidence samples, E/S boundaries, pointer and size guards')
