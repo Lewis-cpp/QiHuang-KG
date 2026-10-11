@@ -1,20 +1,19 @@
 <script setup lang="ts">
-import { onMounted, watch } from 'vue'
-import { get, reconcileBuild, useLoader } from '../api/client'
+import { onMounted } from 'vue'
+import { get, useLoader } from '../api/client'
 import type { DatasetPage, Health, Stats } from '../api/types'
 import { label, number, projectionNames, relationNames, serviceStates, setTitle, typeNames } from '../labels'
 import CopyText from '../components/CopyText.vue'
 import StateView from '../components/StateView.vue'
 
 const services = { database: '关系主库', neo4j: 'Neo4j 图库', model: '模型服务' }
-// /stats and /health take no build_id, so the batch check happens here (spec §5.4).
+// These endpoints take no build_id parameter; get() still checks versioned responses.
 const stats = useLoader(signal => get<Stats>('/stats', {}, { signal, pinBuild: false }))
 const health = useLoader(signal => get<Health>('/health', {}, { signal, pinBuild: false, acceptStatus: [503] }))
 const datasets = useLoader(signal => get<DatasetPage>('/datasets', {}, { signal }))
 onMounted(() => { void stats.load(); void health.load(); void datasets.load() })
 setTitle('数据统计')
 
-watch(stats.data, value => { if (value) reconcileBuild(value.build_id) })
 const sorted = (counts: Record<string, number>) => Object.entries(counts).sort((a, b) => b[1] - a[1])
 const sum = (counts: Record<string, number>) => Object.values(counts).reduce((a, b) => a + b, 0)
 </script>

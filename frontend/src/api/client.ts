@@ -21,10 +21,13 @@ export function rememberBuild(id: string) {
 }
 
 // A response from another batch than the pinned one is a snapshot change, even when it raced the pinning request.
-export function reconcileBuild(id: string) {
+function reconcileBuild(id: string) {
   const stored = storedBuild()
   if (!stored) rememberBuild(id)
-  else if (stored !== id) snapshotChanged.value = true
+  else if (stored !== id) {
+    snapshotChanged.value = true
+    throw new ApiError(409, 'snapshot_changed', '数据批次已更新，请刷新后重试')
+  }
 }
 
 export function forgetBuild() {
@@ -61,7 +64,7 @@ export async function get<T>(path: string, params: Params = {}, options: Options
     if (code === 'snapshot_changed') snapshotChanged.value = true
     throw new ApiError(response.status, code, message)
   }
-  if (pinBuild && typeof body?.build_id === 'string') reconcileBuild(body.build_id)
+  if (typeof body?.build_id === 'string') reconcileBuild(body.build_id)
   return body as T
 }
 
