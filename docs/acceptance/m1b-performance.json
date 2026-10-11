@@ -1,0 +1,132 @@
+{
+  "checked_at": "2026-10-11T11:38:34.887741+08:00",
+  "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "commit": "84ccfce54ca4c2124905db72293f9a1f08aa5470",
+  "database": "PostgreSQL 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "concurrency": 1,
+  "transport": "real HTTP on loopback with persistent client; API opens one database connection per request",
+  "timings": [
+    {
+      "case": "search exact 甘草",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 15.879,
+      "p95_ms": 21.344,
+      "max_ms": 22.035,
+      "failures": [],
+      "response_bytes_max": 3780
+    },
+    {
+      "case": "search single char 草",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 21.637,
+      "p95_ms": 30.402,
+      "max_ms": 31.903,
+      "failures": [],
+      "response_bytes_max": 4121
+    },
+    {
+      "case": "search alias 黄耆",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 15.602,
+      "p95_ms": 20.502,
+      "max_ms": 23.033,
+      "failures": [],
+      "response_bytes_max": 726
+    },
+    {
+      "case": "catalog medicinal_property",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 7.078,
+      "p95_ms": 11.026,
+      "max_ms": 35.089,
+      "failures": [],
+      "response_bytes_max": 5109
+    },
+    {
+      "case": "relations CONTAINS out S3",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 8.046,
+      "p95_ms": 9.352,
+      "max_ms": 9.615,
+      "failures": [],
+      "response_bytes_max": 2847
+    },
+    {
+      "case": "relations HAS_MEDICINAL_PROPERTY in S5 deep page",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 28.749,
+      "p95_ms": 33.574,
+      "max_ms": 43.5,
+      "failures": [],
+      "response_bytes_max": 17293
+    },
+    {
+      "case": "formula_patterns S3",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 8.839,
+      "p95_ms": 10.948,
+      "max_ms": 11.332,
+      "failures": [],
+      "response_bytes_max": 2487
+    },
+    {
+      "case": "herb_patterns_via_formula 甘草",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 12.92,
+      "p95_ms": 17.035,
+      "max_ms": 19.008,
+      "failures": [],
+      "response_bytes_max": 27583
+    },
+    {
+      "case": "patent_medicine_pieces",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 9.783,
+      "p95_ms": 11.474,
+      "max_ms": 15.247,
+      "failures": [],
+      "response_bytes_max": 6724
+    },
+    {
+      "case": "piece_patent_medicines 甘草饮片 deep page",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 25.274,
+      "p95_ms": 29.964,
+      "max_ms": 34.585,
+      "failures": [],
+      "response_bytes_max": 20689
+    },
+    {
+      "case": "piece_properties 黄芪",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 8.779,
+      "p95_ms": 10.595,
+      "max_ms": 11.244,
+      "failures": [],
+      "response_bytes_max": 4350
+    },
+    {
+      "case": "datasets",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 64.704,
+      "p95_ms": 81.772,
+      "max_ms": 88.817,
+      "failures": [],
+      "response_bytes_max": 820
+    }
+  ]
+}

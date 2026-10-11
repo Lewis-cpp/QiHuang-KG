@@ -2,6 +2,7 @@
 
 import json
 import re
+import unicodedata
 
 from backend import services
 
@@ -126,47 +127,207 @@ def evidence_detail(evidence_id, build_id=None):
                 target=target, raw_value=raw_value, source_record=source, dataset=dataset, build_id=build)
 
 
-RELATION_SQL = {
-    'formula_herbs': "SELECT e.*,n.id AS node_id,n.label,n.type FROM edge e JOIN entity n ON n.id=e.target_id "
-                     "WHERE e.source_id=%s AND e.relation='CONTAINS'",
-    'herb_formulas': "SELECT e.*,n.id AS node_id,n.label,n.type FROM edge e JOIN entity n ON n.id=e.source_id "
-                     "WHERE e.target_id=%s AND e.relation='CONTAINS'",
+# Hops are (relation, direction) from the start entity; column names come only from this table.
+TEMPLATES = {
+    'formula_herbs': ('formula', [('CONTAINS', 'out')]),
+    'herb_formulas': ('herb', [('CONTAINS', 'in')]),
+    'formula_patterns': ('formula', [('ASSOCIATED_WITH_PATTERN', 'out')]),
+    'herb_patterns_via_formula': ('herb', [('CONTAINS', 'in'), ('ASSOCIATED_WITH_PATTERN', 'out')]),
+    'patent_medicine_pieces': ('patent_medicine', [('HAS_HERBAL_PIECE', 'out')]),
+    'piece_patent_medicines': ('herbal_piece', [('HAS_HERBAL_PIECE', 'in')]),
+    'piece_properties': ('herbal_piece', [('HAS_MEDICINAL_PROPERTY', 'out')]),
 }
+RELATIONS = ('CONTAINS', 'ASSOCIATED_WITH_PATTERN', 'CITED_IN', 'HAS_HERBAL_PIECE',
+             'ASSOCIATED_WITH_TERM', 'MAPPED_TO_ICD11', 'HAS_MEDICINAL_PROPERTY')
+ENDS = {'out': ('source_id', 'target_id'), 'in': ('target_id', 'source_id')}
+TWO_HOP_NOTE = '该药出现在某方剂中，该方剂在来源数据中关联某证候'
+
+
+def path_sql(hops):
+    """Build the fixed join for a template; returns (FROM/WHERE clause, parameters before the entity ID)."""
+    near, far = ENDS[hops[0][1]]
+    joins = [f'edge e0 JOIN entity n0 ON n0.id=e0.{far}']
+    for i, (relation, direction) in enumerate(hops[1:], 1):
+        near_i, far_i = ENDS[direction]
+        joins.append(f'JOIN edge e{i} ON e{i}.{near_i}=n{i - 1}.id AND e{i}.relation=%s '
+                     f'JOIN entity n{i} ON n{i}.id=e{i}.{far_i}')
+    return ' '.join(joins) + f' WHERE e0.{near}=%s AND e0.relation=%s', [r for r, _ in hops[1:]]
+
+
+def path_order(hops):
+    # Collation "C" compares UTF-8 bytes, i.e. code point order, whatever the database locale.
+    last = len(hops) - 1
+    if hops == [('HAS_MEDICINAL_PROPERTY', 'out')]:
+        keys = ['n0.category COLLATE "C"', 'n0.label COLLATE "C"', 'n0.id']
+    else:
+        keys = [f'n{i}.label COLLATE "C"' for i in range(last, -1, -1)] + [f'n{i}.id' for i in range(last, -1, -1)]
+    return ', '.join(keys)
+
+
+def position_key(row):
+    position = row['e0_properties'].get('position')
+    return (position is None, position, row['n0_label'], row['n0_id'])
+
+
+def fetch_paths(c, entity_id, hops, limit, offset):
+    """Return (total, rows) where each row lists edges and neighbor nodes along the path."""
+    clause, params = path_sql(hops)
+    params = params + [entity_id, hops[0][0]]
+    last = len(hops) - 1
+    columns = ', '.join(f'e{i}.id AS e{i}_id, e{i}.source_id AS e{i}_source_id, e{i}.target_id AS e{i}_target_id, '
+                        f'e{i}.relation AS e{i}_relation, e{i}.properties_json AS e{i}_properties_json, '
+                        f'e{i}.quality_state AS e{i}_quality_state, n{i}.id AS n{i}_id, n{i}.label AS n{i}_label, '
+                        f'n{i}.type AS n{i}_type, n{i}.category AS n{i}_category' for i in range(last + 1))
+    if hops == [('CONTAINS', 'out')]:
+        # Composition order lives in properties JSON; a formula has at most a few dozen herbs.
+        # Python string order is code point order, matching COLLATE "C" below.
+        c.execute('SELECT ' + columns + ' FROM ' + clause, params)
+        rows = parsed(c.fetchall(), last)
+        rows.sort(key=position_key)
+        return len(rows), rows[offset:offset + limit]
+    c.execute('SELECT count(*) AS total FROM ' + clause, params)
+    total = c.fetchone()['total']
+    c.execute('SELECT ' + columns + ' FROM ' + clause + ' ORDER BY ' + path_order(hops) + ' LIMIT %s OFFSET %s',
+              params + [limit, offset])
+    return total, parsed(c.fetchall(), last)
+
+
+def parsed(rows, last):
+    for row in rows:
+        for i in range(last + 1):
+            row[f'e{i}_properties'] = json.loads(row.pop(f'e{i}_properties_json'))
+    return rows
+
+
+def edge_evidence(c, edge_ids):
+    evidence_ids = {edge_id: [] for edge_id in edge_ids}
+    if evidence_ids:
+        c.execute('SELECT id,edge_id FROM evidence WHERE edge_id=ANY(%s) ORDER BY ' + EVIDENCE_ORDER,
+                  (list(evidence_ids),))
+        for item in c.fetchall():
+            evidence_ids[item['edge_id']].append(item['id'])
+    return evidence_ids
+
+
+def row_edges(row, hops):
+    for i in range(len(hops)):
+        yield dict(id=row[f'e{i}_id'], relation=row[f'e{i}_relation'], source_id=row[f'e{i}_source_id'],
+                   target_id=row[f'e{i}_target_id'], properties=row[f'e{i}_properties'],
+                   quality_state=row[f'e{i}_quality_state'])
 
 
 def relation_query(template, entity_id, limit, offset, build_id=None):
+    expected, hops = TEMPLATES[template]
     with services.relational(build_id) as c:
         build = current_build(c)
         entity = require_entity(c, entity_id)
-        expected = 'formula' if template == 'formula_herbs' else 'herb'
         if entity['type'] != expected:
             raise services.ServiceError('unsupported_entity_type', '该实体类型不适用于所选关系模板')
-        c.execute(RELATION_SQL[template], (entity_id,))
-        rows = c.fetchall()
-        for row in rows:
-            row['properties'] = json.loads(row.pop('properties_json'))
-        # shortcut: these templates have at most 61 matches; move paging into SQL if this grows.
-        # Sort in Python so label order is code point order, independent of the database collation.
-        if template == 'formula_herbs':
-            rows.sort(key=lambda r: (r['properties'].get('position') is None,
-                                    r['properties'].get('position'), r['label'], r['node_id']))
-        else:
-            rows.sort(key=lambda r: (r['label'], r['node_id']))
-        total = len(rows)
-        page = rows[offset:offset + limit]
-        evidence_ids = {row['id']: [] for row in page}
-        if page:
-            c.execute('SELECT id,edge_id FROM evidence WHERE edge_id=ANY(%s) ORDER BY ' + EVIDENCE_ORDER,
-                      (list(evidence_ids),))
-            for item in c.fetchall():
-                evidence_ids[item['edge_id']].append(item['id'])
+        total, rows = fetch_paths(c, entity_id, hops, limit, offset)
         paths, nodes, edges = [], {}, {}
-        for row in page:
+        for row in rows:
             nodes[entity_id] = node(entity)
-            nodes[row['node_id']] = dict(id=row['node_id'], label=row['label'], type=row['type'])
-            edges[row['id']] = {key: row[key] for key in
-                               ('id', 'relation', 'source_id', 'target_id', 'properties', 'quality_state')}
-            edges[row['id']]['evidence_ids'] = evidence_ids[row['id']]
-            paths.append(dict(node_ids=[entity_id, row['node_id']], edge_ids=[row['id']]))
-    return dict(template=template, entity_id=entity_id, paths=paths, nodes=nodes, edges=edges,
+            node_ids, edge_ids = [entity_id], []
+            for i, edge in enumerate(row_edges(row, hops)):
+                nodes[row[f'n{i}_id']] = dict(id=row[f'n{i}_id'], label=row[f'n{i}_label'], type=row[f'n{i}_type'])
+                edges[edge['id']] = edge
+                node_ids.append(row[f'n{i}_id'])
+                edge_ids.append(edge['id'])
+            paths.append(dict(node_ids=node_ids, edge_ids=edge_ids))
+        for edge_id, ids in edge_evidence(c, list(edges)).items():
+            edges[edge_id]['evidence_ids'] = ids
+    result = dict(template=template, entity_id=entity_id, paths=paths, nodes=nodes, edges=edges,
+                  total=total, limit=limit, offset=offset, build_id=build)
+    if len(hops) > 1:
+        result['note'] = TWO_HOP_NOTE
+    return result
+
+
+def entity_relations(entity_id, relation, direction, limit, offset, build_id=None):
+    """One-hop neighbors in the relational store; a relation the entity type never has is simply empty."""
+    hops = [(relation, direction)]
+    with services.relational(build_id) as c:
+        build = current_build(c)
+        require_entity(c, entity_id)
+        total, rows = fetch_paths(c, entity_id, hops, limit, offset)
+        evidence_ids = edge_evidence(c, [row['e0_id'] for row in rows])
+        items = []
+        for row in rows:
+            edge = next(row_edges(row, hops))
+            items.append(dict(edge=dict(id=edge['id'], relation=edge['relation'], properties=edge['properties'],
+                                        quality_state=edge['quality_state'], evidence_ids=evidence_ids[edge['id']]),
+                              neighbor=dict(id=row['n0_id'], type=row['n0_type'], label=row['n0_label'],
+                                            category=row['n0_category'])))
+    return dict(entity_id=entity_id, relation=relation, direction=direction, items=items,
                 total=total, limit=limit, offset=offset, build_id=build)
+
+
+def normalize_query(text):
+    return unicodedata.normalize('NFKC', text).strip().casefold()
+
+
+def like_escape(text):
+    return text.replace('\\', '\\\\').replace('%', '\\%').replace('_', '\\_')
+
+
+# Each entity appears once with its best hit: rank, then name before alias, then the alias text.
+SEARCH_HITS = """WITH hits AS (
+    SELECT id AS entity_id, 'name' AS field, label AS text, name_norm AS text_norm,
+           CASE WHEN name_norm=%(q)s THEN 1 WHEN name_norm LIKE %(prefix)s THEN 3 ELSE 5 END AS match_rank
+    FROM entity WHERE name_norm LIKE %(sub)s
+    UNION ALL
+    SELECT entity_id, 'alias', name, name_norm,
+           CASE WHEN name_norm=%(q)s THEN 2 WHEN name_norm LIKE %(prefix)s THEN 4 ELSE 5 END
+    FROM alias WHERE name_norm LIKE %(sub)s
+), best AS (
+    SELECT h.*, row_number() OVER (PARTITION BY entity_id ORDER BY match_rank,
+           CASE field WHEN 'name' THEN 0 ELSE 1 END, text_norm COLLATE "C", text COLLATE "C") AS pick
+    FROM hits h
+)
+"""
+SEARCH_FROM = """ FROM best b JOIN entity e ON e.id=b.entity_id WHERE b.pick=1
+    AND (%(type)s::text IS NULL OR e.type=%(type)s) AND (%(dataset)s::text IS NULL OR e.dataset_id=%(dataset)s)"""
+CATALOG_FROM = """ FROM entity e
+    WHERE (%(type)s::text IS NULL OR e.type=%(type)s) AND (%(dataset)s::text IS NULL OR e.dataset_id=%(dataset)s)"""
+ENTITY_COLUMNS = 'e.id,e.label,e.type,e.dataset_id,e.category,e.review_status'
+
+
+def search_entities(query, kind=None, dataset=None, limit=20, offset=0, build_id=None):
+    query = normalize_query(query)
+    escaped = like_escape(query)
+    params = dict(q=query, prefix=escaped + '%', sub='%' + escaped + '%', type=kind, dataset=dataset,
+                  limit=limit, offset=offset)
+    with services.relational(build_id) as c:
+        build = current_build(c)
+        if query:
+            c.execute(SEARCH_HITS + 'SELECT count(*) AS total' + SEARCH_FROM, params)
+            total = c.fetchone()['total']
+            c.execute(SEARCH_HITS + 'SELECT ' + ENTITY_COLUMNS + ',b.field,b.text' + SEARCH_FROM +
+                      ' ORDER BY b.match_rank, e.name_norm COLLATE "C", e.id LIMIT %(limit)s OFFSET %(offset)s', params)
+            items = [dict(row, match=dict(field=row.pop('field'), text=row.pop('text'))) for row in c.fetchall()]
+        else:
+            # Empty query: the type catalog, as before ranking was added.
+            c.execute('SELECT count(*) AS total' + CATALOG_FROM, params)
+            total = c.fetchone()['total']
+            c.execute('SELECT ' + ENTITY_COLUMNS + CATALOG_FROM +
+                      ' ORDER BY e.name_norm COLLATE "C", e.id LIMIT %(limit)s OFFSET %(offset)s', params)
+            items = [dict(row, match=None) for row in c.fetchall()]
+    return dict(items=items, total=total, limit=limit, offset=offset, build_id=build)
+
+
+def datasets(build_id=None):
+    with services.relational(build_id) as c:
+        build = current_build(c)
+        c.execute('SELECT * FROM dataset ORDER BY id')
+        rows = c.fetchall()
+        counts = {row['id']: dict(entities=0, edges=0, source_records=0) for row in rows}
+        # Every edge connects two entities of the same dataset; count it under its source.
+        for key, statement in [('entities', 'SELECT dataset_id, count(*) AS n FROM entity GROUP BY dataset_id'),
+                               ('edges', 'SELECT s.dataset_id, count(*) AS n FROM edge e JOIN entity s '
+                                         'ON s.id=e.source_id GROUP BY s.dataset_id'),
+                               ('source_records', 'SELECT dataset_id, count(*) AS n FROM source_record '
+                                                  'GROUP BY dataset_id')]:
+            c.execute(statement)
+            for row in c.fetchall():
+                counts[row['dataset_id']][key] = row['n']
+    return dict(items=[dict(row, counts=counts[row['id']]) for row in rows], total=len(rows), build_id=build)

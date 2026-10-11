@@ -1,4 +1,4 @@
-"""M1a response contracts; JSON source fields retain their original structure."""
+"""M1 response contracts; JSON source fields retain their original structure."""
 
 from typing import Any, Literal
 
@@ -129,12 +129,78 @@ class RelationEdge(BaseModel):
 
 
 class RelationPage(BaseModel):
-    template: Literal['formula_herbs', 'herb_formulas']
+    template: Literal['formula_herbs', 'herb_formulas', 'formula_patterns', 'herb_patterns_via_formula',
+                      'patent_medicine_pieces', 'piece_patent_medicines', 'piece_properties']
     entity_id: str
     paths: list[RelationPath]
     nodes: dict[str, Node]
     edges: dict[str, RelationEdge]
+    note: str | None = None
     total: int
     limit: int
     offset: int
+    build_id: str
+
+
+class Match(BaseModel):
+    field: Literal['name', 'alias']
+    text: str
+
+
+class EntityHit(Node):
+    dataset_id: str
+    category: str | None
+    review_status: str
+    match: Match | None
+
+
+class EntityPage(BaseModel):
+    items: list[EntityHit]
+    total: int
+    limit: int
+    offset: int
+    build_id: str
+
+
+class NeighborEdge(BaseModel):
+    id: str
+    relation: str
+    properties: dict[str, Any]
+    quality_state: str
+    evidence_ids: list[str]
+
+
+class Neighbor(Node):
+    category: str | None
+
+
+class NeighborItem(BaseModel):
+    edge: NeighborEdge
+    neighbor: Neighbor
+
+
+class NeighborPage(BaseModel):
+    entity_id: str
+    relation: str
+    direction: Literal['in', 'out']
+    items: list[NeighborItem]
+    total: int
+    limit: int
+    offset: int
+    build_id: str
+
+
+class DatasetCounts(BaseModel):
+    entities: int
+    edges: int
+    source_records: int
+
+
+class DatasetEntry(Dataset):
+    counts: DatasetCounts
+
+
+class DatasetPage(BaseModel):
+    items: list[DatasetEntry]
+    total: int
     build_id: str
