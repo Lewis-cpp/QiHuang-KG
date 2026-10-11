@@ -75,7 +75,7 @@ def grant(db, reader, schemas):
         require(not c.fetchone()[0], "Reader owns database objects; it would hold every privilege on them")
         c.execute(sql.SQL("REVOKE CREATE, TEMPORARY ON DATABASE {} FROM {}").format(database, role))
         c.execute(sql.SQL("GRANT CONNECT ON DATABASE {} TO {}").format(database, role))
-        # PostgreSQL before 15 and PG-compatible servers let PUBLIC create in schema public and temporary tables.
+        # PUBLIC may allow creating tables in public; revoking its default TEMPORARY privilege is extra hardening.
         c.execute("SELECT n.nspname FROM pg_namespace n WHERE has_schema_privilege(%s, n.oid, 'CREATE') "
                   "ORDER BY n.nspname", (name,))
         for (schema,) in c.fetchall():
