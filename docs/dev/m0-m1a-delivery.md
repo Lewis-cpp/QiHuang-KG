@@ -6,9 +6,9 @@ M0 + M1a 已完成：应用与 Neo4j 样例统一到当前批次，新增实体�
 
 | 项目 | 交付状态 |
 | --- | --- |
-| 开发依据 | [M0 + M1a 开发文档](m0-m1a-development.md)，来源分支 `docs/m0-m1a-plan` |
+| 开发依据 | [M0 + M1a 开发文档](m0-m1a-development.md) |
 | 代码与文档分支 | `codex/m0-m1a-implementation` |
-| 受测实现提交 | `cac13964e0ce9ba86b670df59d3c00125b2224de`；后续交付提交只补充文档和报告 |
+| 受测实现提交 | `cac13964e0ce9ba86b670df59d3c00125b2224de`。交付后的审查修复将关系模板与证据排序固定为码点序，并补全异常日志；本页性能与执行计划记录未随之重测 |
 | 应用批次 | `5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a` |
 | PostgreSQL schema | `qihuang_5a76218e52001d45e4bd75e0` |
 | 数据规模 | 20,374 个实体、179,502 条业务关系、291,305 条证据；业务记录合计 199,876 |
@@ -48,12 +48,12 @@ API=http://127.0.0.1:8000/api/v1
 FORMULA=bencaodian:formula:si_jun_zi_tang
 EVIDENCE=evidence:72340d34a2f1acaf0dee984198dcb9ea60beda6d11d8168122cecd6c1f19e33c
 
-curl --fail --silent --show-error --get "$API/entities" \
+curl --fail-with-body --silent --show-error --get "$API/entities" \
   --data-urlencode 'q=四君子汤' --data-urlencode 'type=formula'
-curl --fail --silent --show-error "$API/entities/$FORMULA"
-curl --fail --silent --show-error --get "$API/relation-queries" \
+curl --fail-with-body --silent --show-error "$API/entities/$FORMULA"
+curl --fail-with-body --silent --show-error --get "$API/relation-queries" \
   --data-urlencode 'template=formula_herbs' --data-urlencode "entity_id=$FORMULA"
-curl --fail --silent --show-error "$API/evidence/$EVIDENCE"
+curl --fail-with-body --silent --show-error "$API/evidence/$EVIDENCE"
 ```
 
 示例中的证据 ID 是本批次人参组成边的第一条证据。实际调用应从模板响应的 `edges[edge_id].evidence_ids` 取 ID；`edges` 是以边 ID 为键的字典。最后一步的 `raw_value` 包含 `herb_key=ren_shen`、`role=jun`、`dosage=9g`。[四次实际请求和完整响应](../acceptance/m1a-chain.json)已保存。
@@ -86,7 +86,7 @@ curl --fail --silent --show-error "$API/evidence/$EVIDENCE"
 .venv/bin/python tests/test_api.py --with-outage
 ```
 
-性能脚本会更新仓库中的执行计划、链路和性能报告。`--with-outage` 会短暂停止本机 PostgreSQL，并在 `finally` 中恢复容器；不要在其他工作依赖该数据库时运行。普通测试不主动停库。
+性能脚本会更新仓库中的执行计划、链路和性能报告。`--with-outage` 会短暂停止本机 PostgreSQL，并在 `finally` 中恢复容器；不要在其他工作依赖该数据库时运行。停机记录写入本机 `var/m1a-outage.json`，需要更新验收记录时再复制到 `docs/acceptance/m1a-outage.json`。普通测试不主动停库。
 
 ## 已有验收结果
 
