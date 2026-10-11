@@ -3,6 +3,7 @@
 面向中医药学习者的知识图谱检索与学习系统。已完成两源清洗、PostgreSQL 入库、Neo4j 样例验证、Vue + FastAPI 最小链路及 M1a 详情与证据 API。主库包含 20,374 个实体、179,502 条关系、291,305 条证据，实体与关系合计 199,876 条。当前使用 PostgreSQL，最终交付前迁移到 Vastbase。模型按用户安排暂不配置，已准备自行接入与验证说明。
 
 - [启动、检查与模型接入](docs/bootstrap.md)
+- [M0 + M1a 开发交付说明](docs/dev/m0-m1a-delivery.md)
 - [M0 + M1a 验收记录](docs/dev/m0-m1a-acceptance.md)
 - [首版范围冻结](docs/scope-freeze.md)
 - [环境验证记录](docs/environment-report.json)
