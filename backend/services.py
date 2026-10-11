@@ -3,7 +3,6 @@
 import json
 import os
 import re
-import unicodedata
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -122,23 +121,6 @@ def stats():
     return dict(build_id=application()["build_id"], entities=sum(types.values()), edges=sum(relations.values()),
                 business_records=sum(types.values()) + sum(relations.values()), evidence=evidence,
                 entity_types=types, relations=relations, datasets=datasets)
-
-
-def entities(query, kind, limit, offset):
-    query = unicodedata.normalize("NFKC", query).strip().casefold()
-    term = "%" + query.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_") + "%"
-    where = "(name_norm LIKE %s OR EXISTS (SELECT 1 FROM alias a WHERE a.entity_id=entity.id AND a.name_norm LIKE %s))"
-    params = [term, term]
-    if kind:
-        where += " AND type=%s"
-        params.append(kind)
-    with relational() as c:
-        c.execute("SELECT count(*) AS count FROM entity WHERE " + where, params)
-        total = c.fetchone()["count"]
-        c.execute("SELECT id,label,type,dataset_id,category,review_status FROM entity WHERE " + where +
-                  " ORDER BY name_norm,id LIMIT %s OFFSET %s", params + [limit, offset])
-        items = c.fetchall()
-    return dict(items=items, total=total, limit=limit, offset=offset, build_id=application()["build_id"])
 
 
 def sample_source():

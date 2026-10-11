@@ -82,12 +82,14 @@ def stats():
     return services.stats()
 
 
-@app.get("/api/v1/entities")
-def entities(q: str = Query("", max_length=100), type: str | None = None,
-             limit: int = Query(20, ge=1, le=50), offset: int = Query(0, ge=0, le=10000)):
+@app.get("/api/v1/entities", response_model=schemas.EntityPage, summary="实体检索与类型目录")
+def entities(q: Annotated[str, Query(max_length=100, description="名称或别名；为空时按类型目录返回")] = "",
+             type: Annotated[str | None, Query(description="实体类型")] = None,
+             dataset: Annotated[Literal['bencaodian', 'tcm-mkg'] | None, Query(description="来源数据集")] = None,
+             limit: Limit = 20, offset: Offset = 0, build_id: BuildID = None):
     if type is not None and type not in services.TYPES:
         raise services.ServiceError("invalid_type", "不支持的实体类型")
-    return services.entities(q, type, limit, offset)
+    return queries.search_entities(q, type, dataset, limit, offset, build_id)
 
 
 @app.get("/api/v1/graph/sample")
@@ -110,8 +112,20 @@ def evidence_detail(id: EvidenceID, build_id: BuildID = None):
     return queries.evidence_detail(id, build_id)
 
 
-@app.get("/api/v1/relation-queries", response_model=schemas.RelationPage, summary="方剂组成与药物反查")
-def relation_query(template: Annotated[Literal['formula_herbs', 'herb_formulas'], Query(description="查询模板")],
+@app.get("/api/v1/entities/{id}/relations", response_model=schemas.NeighborPage, summary="按关系类型和方向分页列出邻居")
+def entity_relations(id: EntityID, relation: Annotated[Literal[queries.RELATIONS], Query(description="关系类型")],
+                     direction: Annotated[Literal['out', 'in'], Query(description="out 为出边，in 为入边")],
+                     limit: Limit = 20, offset: Offset = 0, build_id: BuildID = None):
+    return queries.entity_relations(id, relation, direction, limit, offset, build_id)
+
+
+@app.get("/api/v1/datasets", response_model=schemas.DatasetPage, summary="来源、版本、许可与署名")
+def datasets(build_id: BuildID = None):
+    return queries.datasets(build_id)
+
+
+@app.get("/api/v1/relation-queries", response_model=schemas.RelationPage, summary="固定模板的关系查询")
+def relation_query(template: Annotated[Literal[tuple(queries.TEMPLATES)], Query(description="查询模板")],
                    entity_id: Annotated[str, Query(pattern=ENTITY_PATTERN, description="起点实体 ID")],
                    limit: Limit = 20, offset: Offset = 0, build_id: BuildID = None):
     return queries.relation_query(template, entity_id, limit, offset, build_id)

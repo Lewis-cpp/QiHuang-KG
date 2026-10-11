@@ -56,8 +56,8 @@ def plans():
                 queries.relation_query('formula_herbs', entity_id, 20, 0)
                 queries.relation_query('herb_formulas', LICORICE, 20, 0)
             with services.relational() as c:
-                for sql in queries.RELATION_SQL.values():
-                    c.execute(sql, (entity_id,))
+                for template in ('formula_herbs', 'herb_formulas'):
+                    queries.fetch_paths(c, entity_id, queries.TEMPLATES[template][1], 20, 0)
         for number, (statement, params) in enumerate(statements.values(), 1):
             with real_relational() as c:
                 c.execute('EXPLAIN (ANALYZE, BUFFERS) ' + statement, params)

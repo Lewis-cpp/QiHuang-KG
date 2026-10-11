@@ -95,14 +95,16 @@ erDiagram
 | `GET /api/v1/health/live` | 进程存活，200；不访问外部服务 |
 | `GET /api/v1/health` | 主库、图库、模型状态；主库失败503；图/模型未就绪时200且 `degraded` |
 | `GET /api/v1/stats` | 实际实体、关系、证据、分类计数、来源与 `build_id` |
-| `GET /api/v1/entities` | `q` 最多100字，`type` 白名单，`limit` 1～50，`offset` 0～10000；返回 `items/total/limit/offset/build_id` |
+| `GET /api/v1/entities` | `q` 最多100字，`type` 白名单，`dataset` 为 `bencaodian`/`tcm-mkg`，`limit` 1～50，`offset` 0～10000；按命中级别排序，每项带 `match`；返回 `items/total/limit/offset/build_id` |
 | `GET /api/v1/graph/sample` | 固定样例的节点、关系、证据 ID 与批次；`scope=bootstrap` |
 | `GET /api/v1/entities/{id}` | 实体属性、别名、关系汇总、前 20 条实体证据与总数 |
 | `GET /api/v1/entities/{id}/evidence` | 按证据类型和字段定位稳定分页，`limit` 1～50、`offset` 0～10000 |
 | `GET /api/v1/evidence/{id}` | 实体或边的目标、JSON Pointer 原值、来源记录与许可署名 |
-| `GET /api/v1/relation-queries` | `formula_herbs` / `herb_formulas`；返回本页路径、节点、边、原始属性和有序证据 ID |
+| `GET /api/v1/entities/{id}/relations` | `relation` 与 `direction` 必填；邻居分页，每项带边属性、质量状态、证据 ID 和邻居分类 |
+| `GET /api/v1/relation-queries` | 七个固定模板（见 spec §4.5）；返回本页路径、节点、边、原始属性和有序证据 ID，两跳模板附固定说明 |
+| `GET /api/v1/datasets` | 来源、版本、许可、署名及每个来源的实体、关系、来源记录数 |
 
-检索针对规范名称和来源别名，`%`、`_` 转义为字面字符，按规范名与 ID 稳定排序。SQL 参数绑定；schema 来自受校验的本地配置并以驱动标识符引用。所有错误统一为 `{"error":{"code":"…","message":"中文提示"}}`，不回传 SQL、路径、凭据或底层异常。映射集中在 `services.ERROR_STATUS`；依赖错误默认 503。
+检索针对规范名称和来源别名，`%`、`_` 转义为字面字符。命中分五级：名称精确、别名精确、名称前缀、别名前缀、子串；每个实体只出现一次，同级按规范名的码位顺序与 ID 排序。SQL 参数绑定；schema 来自受校验的本地配置并以驱动标识符引用。所有错误统一为 `{"error":{"code":"…","message":"中文提示"}}`，不回传 SQL、路径、凭据或底层异常。映射集中在 `services.ERROR_STATUS`；依赖错误默认 503。
 
 | HTTP | 错误码 |
 | --- | --- |

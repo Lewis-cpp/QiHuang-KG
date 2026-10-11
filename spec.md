@@ -133,13 +133,13 @@ M1 分两步实施：
 
 | 方法与路径 | 状态 | 说明 |
 | --- | --- | --- |
-| `GET /entities` | 改进 | 增加命中排序、命中说明和 `dataset` 过滤 |
+| `GET /entities` | M1b 已完成 | 增加命中排序、命中说明和 `dataset` 过滤 |
 | `GET /entities/{id}` | M1a 已完成 | 实体详情与证据预览 |
 | `GET /entities/{id}/evidence` | M1a 已完成 | 实体证据分页 |
-| `GET /entities/{id}/relations` | 新增 | 按关系类型和方向分页列出邻居（关系库） |
-| `GET /relation-queries` | M1a 部分完成 | 已实现 `formula_herbs`、`herb_formulas`；其余模板留待 M1b |
+| `GET /entities/{id}/relations` | M1b 已完成 | 按关系类型和方向分页列出邻居（关系库） |
+| `GET /relation-queries` | M1b 已完成 | M1a 实现 `formula_herbs`、`herb_formulas`；M1b 补齐其余 5 个模板 |
 | `GET /evidence/{id}` | M1a 已完成 | 证据详情与原始值 |
-| `GET /datasets` | 新增 | 来源、版本、许可与署名 |
+| `GET /datasets` | M1b 已完成 | 来源、版本、许可与署名 |
 | `GET /stats` / `GET /health` | 保留 | 健康检查补充 `projection` 的取值（`sample` / `full` / `not_ready`） |
 
 ### 4.2 `GET /entities`（改进）
