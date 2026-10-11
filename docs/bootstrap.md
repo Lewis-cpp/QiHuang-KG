@@ -139,7 +139,7 @@ python3 scripts/setup_services.py
 .venv/bin/python scripts/setup_reader.py
 ```
 
-第一步只新增只读账号凭据，已有凭据不变。第二步复用已有 schema，不重新导入数据，只追加视图并重新校验。第三步创建或更新角色，授权 `config/app.json` 所选批次，并核对该账号没有任何写入或建对象权限。完成后重启后端。
+第一步只新增只读账号凭据，已有凭据不变。第二步复用已有 schema，不重新导入数据，只追加视图并重新校验。第三步创建或更新角色，授权 `config/app.json` 所选批次，再用该账号登录逐项尝试写入，全部被拒绝才算完成。角色已存在时，它在其他角色中的成员资格、库级设置和遗留授权会被清除；若 `PUBLIC` 能在 `public` schema 建表或建临时表，脚本会撤销这两项并在输出中列出。完成后重启后端。
 
 切换或回滚批次后，对新选择的批次同样执行第二、三步（第三步可用 `--schema` 指定），否则应用账号无权读取该批次。
 
@@ -150,3 +150,5 @@ python3 scripts/setup_services.py
 ```
 
 结果写入 `docs/acceptance/m1-readonly.json` 和 `docs/acceptance/m1-import-rollback.json`。后者会在开发库中真实导入一个新批次号并在校验阶段失败，耗时约半分钟，不改动当前批次。
+
+只读账号加固和重复导入不阻塞查询另由 `.venv/bin/python tests/test_m1_maintenance.py` 验证；它会临时改动角色和权限，结束时恢复为加固后的状态。

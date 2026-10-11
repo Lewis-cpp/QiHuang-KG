@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-11T12:47:12.082973+08:00",
+  "checked_at": "2026-10-11T13:51:11.341722+08:00",
   "database": "PostgreSQL 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit",
   "live_build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
   "failed_schema": "qihuang_ffffffffffffffffffffffff",
@@ -9,7 +9,7 @@
     "edge": 179502,
     "evidence": 291305
   },
-  "elapsed_seconds": 29.3,
+  "elapsed_seconds": 35.3,
   "before": {
     "schemas": [
       "qihuang_5a76218e52001d45e4bd75e0"

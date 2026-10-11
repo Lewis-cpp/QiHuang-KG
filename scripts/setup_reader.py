@@ -11,6 +11,8 @@ from import_core import ROOT, require
 from import_vastbase import connection
 
 WRITE_PRIVILEGES = "INSERT,UPDATE,DELETE,TRUNCATE,REFERENCES,TRIGGER"
+CONNECT_KEYS = ("host", "port", "dbname", "user", "password", "connect_timeout", "sslmode", "sslrootcert",
+                "sslcert", "sslkey")
 
 
 def reader_settings(path, admin):
@@ -25,41 +27,125 @@ def reader_settings(path, admin):
 
 
 def grant(db, reader, schemas):
-    """One transaction: the role can log in, read the given schemas and write nothing."""
+    """One transaction: the role can log in and read the given schemas, and every other way to write is removed."""
     from psycopg2 import sql
-    role = sql.Identifier(reader["user"])
+    name = reader["user"]
+    role = sql.Identifier(name)
+    hardened = []
     with db.cursor() as c:
-        c.execute("SELECT 1 FROM pg_roles WHERE rolname=%s", (reader["user"],))
+        c.execute("SELECT current_database()")
+        database = sql.Identifier(c.fetchone()[0])
+        c.execute("SELECT 1 FROM pg_roles WHERE rolname=%s", (name,))
         verb = "ALTER" if c.fetchone() else "CREATE"
         c.execute(sql.SQL(verb + " ROLE {} LOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE PASSWORD %s").format(role),
                   (reader["password"],))
+        # An existing role may carry attributes this script never set; clear those the server reports.
+        c.execute("SELECT * FROM pg_roles WHERE rolname=%s", (name,))
+        attributes = dict(zip((d[0] for d in c.description), c.fetchone()))
+        for column, option in (("rolreplication", "NOREPLICATION"), ("rolbypassrls", "NOBYPASSRLS")):
+            if attributes.get(column):
+                c.execute(sql.SQL("ALTER ROLE {} " + option).format(role))
+                hardened.append(f"ALTER ROLE {name} {option}")
+        # Membership allows SET ROLE to another account even when its privileges are not inherited.
+        c.execute("SELECT g.rolname FROM pg_auth_members m JOIN pg_roles g ON g.oid=m.roleid "
+                  "JOIN pg_roles u ON u.oid=m.member WHERE u.rolname=%s ORDER BY g.rolname", (name,))
+        for (granted,) in c.fetchall():
+            c.execute(sql.SQL("REVOKE {} FROM {}").format(sql.Identifier(granted), role))
+            hardened.append(f"REVOKE {granted} FROM {name}")
+        # A per-database setting would override the role-wide read-only default.
+        c.execute(sql.SQL("ALTER ROLE {} IN DATABASE {} RESET ALL").format(role, database))
         c.execute(sql.SQL("ALTER ROLE {} SET default_transaction_read_only = on").format(role))
-        c.execute("SELECT current_database()")
-        c.execute(sql.SQL("GRANT CONNECT ON DATABASE {} TO {}").format(sql.Identifier(c.fetchone()[0]), role))
+        c.execute("SELECT EXISTS (SELECT 1 FROM pg_class WHERE relowner=r.oid) OR "
+                  "EXISTS (SELECT 1 FROM pg_namespace WHERE nspowner=r.oid) FROM pg_roles r WHERE r.rolname=%s",
+                  (name,))
+        require(not c.fetchone()[0], "Reader owns database objects; it would hold every privilege on them")
+        c.execute(sql.SQL("REVOKE CREATE, TEMPORARY ON DATABASE {} FROM {}").format(database, role))
+        c.execute(sql.SQL("GRANT CONNECT ON DATABASE {} TO {}").format(database, role))
+        # PostgreSQL before 15 and PG-compatible servers let PUBLIC create in schema public and temporary tables.
+        c.execute("SELECT n.nspname FROM pg_namespace n WHERE has_schema_privilege(%s, n.oid, 'CREATE') "
+                  "ORDER BY n.nspname", (name,))
+        for (schema,) in c.fetchall():
+            c.execute(sql.SQL("REVOKE CREATE ON SCHEMA {} FROM {}").format(sql.Identifier(schema), role))
+            if schema == "public":
+                c.execute("REVOKE CREATE ON SCHEMA public FROM PUBLIC")
+                hardened.append("REVOKE CREATE ON SCHEMA public FROM PUBLIC")
+        c.execute("SELECT has_database_privilege(%s, current_database(), 'TEMPORARY')", (name,))
+        if c.fetchone()[0]:
+            c.execute(sql.SQL("REVOKE TEMPORARY ON DATABASE {} FROM PUBLIC").format(database))
+            hardened.append("REVOKE TEMPORARY ON DATABASE FROM PUBLIC")
         tables = 0
         for schema in schemas:
             c.execute("SELECT count(*) FROM information_schema.tables WHERE table_schema=%s AND table_name='build'",
                       (schema,))
             require(c.fetchone()[0] == 1, f"Not a release schema: {schema}")
-            c.execute(sql.SQL("GRANT USAGE ON SCHEMA {} TO {}").format(sql.Identifier(schema), role))
-            c.execute(sql.SQL("GRANT SELECT ON ALL TABLES IN SCHEMA {} TO {}").format(sql.Identifier(schema), role))
-            c.execute("SELECT c.relname, c.relkind FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace "
+            target = sql.Identifier(schema)
+            # Start from nothing so grants left by earlier runs or by hand cannot survive.
+            c.execute(sql.SQL("REVOKE ALL ON ALL TABLES IN SCHEMA {} FROM {}").format(target, role))
+            c.execute(sql.SQL("REVOKE ALL ON SCHEMA {} FROM {}").format(target, role))
+            c.execute(sql.SQL("GRANT USAGE ON SCHEMA {} TO {}").format(target, role))
+            c.execute(sql.SQL("GRANT SELECT ON ALL TABLES IN SCHEMA {} TO {}").format(target, role))
+            c.execute("SELECT c.relname FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace "
                       "WHERE n.nspname=%s AND c.relkind IN ('r','v') ORDER BY c.relname", (schema,))
-            for name, _ in c.fetchall():
-                qualified = sql.Identifier(schema, name).as_string(c)
+            for (relation,) in c.fetchall():
+                qualified = sql.Identifier(schema, relation).as_string(c)
                 c.execute("SELECT has_table_privilege(%s,%s,'SELECT'), has_table_privilege(%s,%s,%s)",
-                          (reader["user"], qualified, reader["user"], qualified, WRITE_PRIVILEGES))
+                          (name, qualified, name, qualified, WRITE_PRIVILEGES))
                 readable, writable = c.fetchone()
-                require(readable and not writable, f"Unexpected privileges on {schema}.{name}")
+                require(readable and not writable, f"Unexpected privileges on {schema}.{relation}")
                 tables += 1
-            c.execute("SELECT has_schema_privilege(%s,%s,'CREATE')", (reader["user"], schema))
-            require(not c.fetchone()[0], f"Reader can create objects in {schema}")
-        c.execute("SELECT has_database_privilege(%s,current_database(),'CREATE'), rolsuper, rolcreaterole, "
-                  "rolcreatedb FROM pg_roles WHERE rolname=%s", (reader["user"], reader["user"]))
+        c.execute("SELECT n.nspname FROM pg_namespace n WHERE has_schema_privilege(%s, n.oid, 'CREATE')", (name,))
+        require(not c.fetchall(), "Reader can still create objects in a schema")
+        c.execute("SELECT has_database_privilege(%s,current_database(),'CREATE') OR "
+                  "has_database_privilege(%s,current_database(),'TEMPORARY'), rolsuper, rolcreaterole, rolcreatedb "
+                  "FROM pg_roles WHERE rolname=%s", (name, name, name))
         require(not any(c.fetchone()), "Reader has administrative privileges")
     db.commit()
-    return dict(role=reader["user"], action=verb.lower(), schemas=schemas, relations=tables,
+    return dict(role=name, action=verb.lower(), schemas=schemas, relations=tables, hardened=hardened,
                 default_transaction_read_only="on")
+
+
+def verify_as_reader(reader, admin_user, schemas):
+    """Log in as the role and try each way to write; every attempt must fail for lack of privilege."""
+    import psycopg2
+    from psycopg2 import sql
+    statements = [sql.SQL("SET ROLE {}").format(sql.Identifier(admin_user)),
+                  sql.SQL("CREATE TABLE public.reader_probe (id INTEGER)"),
+                  sql.SQL("CREATE TEMPORARY TABLE reader_probe (id INTEGER)"),
+                  sql.SQL("CREATE SCHEMA reader_probe")]
+    for schema in schemas:
+        target = sql.Identifier(schema)
+        statements += [sql.SQL("CREATE TABLE {}.reader_probe (id INTEGER)").format(target),
+                       sql.SQL("INSERT INTO {0}.dataset SELECT * FROM {0}.dataset WHERE false").format(target),
+                       sql.SQL("UPDATE {}.entity SET label=label WHERE false").format(target),
+                       sql.SQL("DELETE FROM {}.evidence WHERE false").format(target)]
+    db = psycopg2.connect(**{k: v for k, v in reader.items() if k in CONNECT_KEYS})
+    try:
+        with db.cursor() as c:
+            c.execute("SHOW default_transaction_read_only")
+            require(c.fetchone()[0] == "on", "Reader sessions do not default to read-only")
+            for schema in schemas:
+                c.execute(sql.SQL("SELECT count(*) FROM {}.build").format(sql.Identifier(schema)))
+                require(c.fetchone()[0] == 1, f"Reader cannot read {schema}")
+            c.execute("SELECT n.nspname, c.relname FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace "
+                      "WHERE c.relkind IN ('r','p','v','m','f') AND n.nspname NOT IN ('pg_catalog','information_schema') "
+                      "AND n.nspname NOT LIKE 'pg\\_toast%%' AND has_table_privilege(c.oid,%s)", (WRITE_PRIVILEGES,))
+            writable = c.fetchall()
+            require(not writable, f"Reader can write to {writable[:3]}")
+            db.rollback()
+            for statement in statements:
+                # Lift the session default first, so only privileges can stop the write.
+                c.execute("SET TRANSACTION READ WRITE")
+                try:
+                    c.execute(statement)
+                except psycopg2.Error as error:
+                    require(error.pgcode == "42501", f"Unexpected SQLSTATE {error.pgcode}: {statement.as_string(c)}")
+                else:
+                    raise ValueError(f"Reader was allowed: {statement.as_string(c)}")
+                finally:
+                    db.rollback()
+    finally:
+        db.close()
+    return len(statements)
 
 
 def main():
@@ -74,7 +160,11 @@ def main():
     for schema in schemas:
         require(re.fullmatch(r"qihuang_[a-f0-9]{24}", schema), "Invalid release schema name")
     with closing(connection(admin_path, args.engine)) as db:
+        with db.cursor() as c:
+            c.execute("SELECT current_user")
+            admin_user = c.fetchone()[0]
         result = grant(db, reader, schemas)
+    result["write_attempts_denied"] = verify_as_reader(reader, admin_user, schemas)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 

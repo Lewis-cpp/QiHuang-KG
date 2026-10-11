@@ -187,11 +187,14 @@ def import_release(db, release):
                     c.execute(DDL.read_text())
                     for table in (*TABLES, "build"):
                         copy_rows(c, table, stage.execute(f"SELECT * FROM {table}"))
-                # Views are replaceable read-only projections, so a reused release also gets the current ones.
-                c.execute(VIEWS.read_text())
                 # Block concurrent writes until the verified transaction is committed.
                 c.execute("LOCK TABLE build,dataset,source_record,entity,alias,edge,evidence IN SHARE MODE")
                 result = verify_target(c, manifest)
+                # Views are replaceable, so a reused release also gets the current ones. Replacing a view locks out
+                # its readers until commit and a reused release may be live: do it last so the lock covers only the
+                # view check, and give up before readers queued behind it reach their 3 s statement timeout.
+                c.execute("SET LOCAL lock_timeout = '2s'")
+                c.execute(VIEWS.read_text())
                 result["views"] = verify_views(c, manifest)
             db.commit()
         except Exception:
