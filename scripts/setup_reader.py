@@ -46,12 +46,26 @@ def grant(db, reader, schemas):
             if attributes.get(column):
                 c.execute(sql.SQL("ALTER ROLE {} " + option).format(role))
                 hardened.append(f"ALTER ROLE {name} {option}")
-        # Membership allows SET ROLE to another account even when its privileges are not inherited.
-        c.execute("SELECT g.rolname FROM pg_auth_members m JOIN pg_roles g ON g.oid=m.roleid "
-                  "JOIN pg_roles u ON u.oid=m.member WHERE u.rolname=%s ORDER BY g.rolname", (name,))
-        for (granted,) in c.fetchall():
-            c.execute(sql.SQL("REVOKE {} FROM {}").format(sql.Identifier(granted), role))
-            hardened.append(f"REVOKE {granted} FROM {name}")
+        # Membership allows SET ROLE to another account even when its privileges are not inherited. PostgreSQL 16
+        # keeps one grant per grantor and a plain REVOKE removes only the current user's, so name each grantor.
+        c.execute("SHOW server_version_num")
+        per_grantor = int(c.fetchone()[0]) >= 160000
+        memberships = ("SELECT g.rolname, r.rolname FROM pg_auth_members m JOIN pg_roles g ON g.oid=m.roleid "
+                       "JOIN pg_roles u ON u.oid=m.member LEFT JOIN pg_roles r ON r.oid=m.grantor "
+                       "WHERE u.rolname=%s ORDER BY g.rolname, r.rolname")
+        c.execute(memberships, (name,))
+        for granted, grantor in c.fetchall():
+            if per_grantor:
+                c.execute(sql.SQL("REVOKE {} FROM {} GRANTED BY {}").format(
+                    sql.Identifier(granted), role, sql.Identifier(grantor)))
+                hardened.append(f"REVOKE {granted} FROM {name} GRANTED BY {grantor}")
+            else:
+                c.execute(sql.SQL("REVOKE {} FROM {}").format(sql.Identifier(granted), role))
+                hardened.append(f"REVOKE {granted} FROM {name}")
+        # REVOKE only warns when it removes nothing, so check the result.
+        c.execute(memberships, (name,))
+        remaining = sorted({granted for granted, _ in c.fetchall()})
+        require(not remaining, f"Reader is still a member of {remaining}; revoke it as a superuser")
         # A per-database setting would override the role-wide read-only default.
         c.execute(sql.SQL("ALTER ROLE {} IN DATABASE {} RESET ALL").format(role, database))
         c.execute(sql.SQL("ALTER ROLE {} SET default_transaction_read_only = on").format(role))
@@ -131,6 +145,11 @@ def verify_as_reader(reader, admin_user, schemas):
                       "AND n.nspname NOT LIKE 'pg\\_toast%%' AND has_table_privilege(c.oid,%s)", (WRITE_PRIVILEGES,))
             writable = c.fetchall()
             require(not writable, f"Reader can write to {writable[:3]}")
+            # Any role the reader belongs to is one it may SET ROLE to, whatever that role can do.
+            c.execute("SELECT rolname FROM pg_roles WHERE rolname <> current_user "
+                      "AND pg_has_role(current_user, oid, 'MEMBER') ORDER BY rolname")
+            roles = [row[0] for row in c.fetchall()]
+            require(not roles, f"Reader is a member of {roles[:3]}")
             db.rollback()
             for statement in statements:
                 # Lift the session default first, so only privileges can stop the write.
@@ -164,7 +183,18 @@ def main():
             c.execute("SELECT current_user")
             admin_user = c.fetchone()[0]
         result = grant(db, reader, schemas)
-    result["write_attempts_denied"] = verify_as_reader(reader, admin_user, schemas)
+        try:
+            result["write_attempts_denied"] = verify_as_reader(reader, admin_user, schemas)
+        except ValueError:
+            # The login found a way to write, and the grants are already committed: lock the role out rather than
+            # leave a writable account in use. A rerun that passes logs it back in.
+            from psycopg2 import sql
+            with db.cursor() as c:
+                c.execute(sql.SQL("ALTER ROLE {} NOLOGIN").format(sql.Identifier(reader["user"])))
+            db.commit()
+            print(f"{reader['user']} can no longer log in; rerun this script after removing the cause",
+                  file=sys.stderr)
+            raise
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
