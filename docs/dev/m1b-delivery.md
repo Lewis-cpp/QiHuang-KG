@@ -1,8 +1,8 @@
-# M1b 交付说明：业务查询接口
+# M1b 交付说明：业务查询、业务视图与只读账号
 
-日期：2026-10-11。上位文档：[spec.md](../../spec.md) §4.1–§4.7。批次：`5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a`。
+日期：2026-10-11。上位文档：[spec.md](../../spec.md) §4。批次：`5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a`。
 
-本次只交付 M1b 中的业务查询接口。业务视图、独立只读账号（T11）和健康检查的 `full` 投影取值不在本次范围内，见第 4 节。
+M1b 分两次合入：第一次是第 1–3 节的业务查询接口（PR #3）；第二次是第 4 节的业务视图、只读账号（T11）、健康检查投影取值和导入回滚演示。存储过程仍待 spec §11 确认，没有实现。
 
 ## 1. 接口
 
@@ -42,9 +42,55 @@
 
 以上记录来自 PostgreSQL 16.15，不是 Compose 中的 PostgreSQL 18.6；在开发机上重跑 `tests/test_api.py` 和 `tests/measure_m1b.py` 可得到目标环境的结果。
 
-## 4. 尚未完成
+## 4. 数据库工作（spec §4.8）
 
-- §4.8 业务视图 `v_formula_composition`、`v_entity_relation_summary` 及其追加 DDL。
-- §4.8 只读账号 `qihuang_reader` 及 `42501` 写入失败实测。
-- §4.1 健康检查的 `projection=full` 取值，依赖 M3 的全量投影标记。
+### 4.1 业务视图
+
+`docs/schema-views.sql` 定义两个视图，追加在共享 DDL 之后：
+
+| 视图 | 列 |
+| --- | --- |
+| `v_formula_composition` | `edge_id`、`formula_id`、`formula_label`、`herb_id`、`herb_label`、`dosage_raw`、`role`、`position`、`quality_state` |
+| `v_entity_relation_summary` | `entity_id`、`relation`、`direction`（`out`/`in`）、`count` |
+
+- `import_vastbase.py` 在导入事务中执行该文件，并校验四君子汤的组成和关系汇总覆盖全部 179,502 条边。复用已有 schema 时只追加视图，所以已有环境重跑一次导入命令即可升级。
+- 替换视图会锁住视图的读者直到提交，而复用的批次可能正在服务。所以视图放在整表校验之后、提交之前执行，并设 `lock_timeout=2s`：锁只覆盖视图校验，排在它后面的详情请求不会等到 3 秒语句超时。修改前，重复导入期间实测有详情请求以 503 失败；修改后多次运行（每次 260–420 次请求）全部成功，最慢 260 ms。
+- 环境探测（`probe`）也在随机 schema 中创建视图，Vastbase 若不支持其中的 JSON 写法会在探测阶段暴露。
+- 实体详情的 `relation_summary` 改为读取 `v_entity_relation_summary`。执行计划显示过滤条件下推到两个分组子查询，分别使用 `edge_outgoing` 和 `edge_incoming` 索引。
+
+### 4.2 只读账号（T11）
+
+- `setup_postgres.py` 生成 `config/postgresql_reader.json`（`0600`，重复执行复用，密码必须与导入账号不同）。
+- `scripts/setup_reader.py` 用导入账号创建或更新 `qihuang_reader`：`LOGIN`，无超级用户、建库和建角色权限，`default_transaction_read_only=on`，只授予 `config/app.json` 所选批次（或 `--schema` 指定批次）的 `USAGE` 与 `SELECT`。授权后逐表核对：可读、不可写、不可在 schema 或数据库中建对象，不满足即回滚。
+- 角色已存在时，脚本先清掉它可能带来的写入途径：撤销它在其他角色中的全部成员资格（否则可 `SET ROLE` 到导入账号或 `pg_write_all_data` 等角色）。PostgreSQL 16 起同一成员资格可由不同授权者各授予一次，普通 `REVOKE` 只撤销当前账号授予的那一份，所以脚本按授权者逐条 `REVOKE … GRANTED BY …`，撤销后再查一次，仍有剩余（例如导入账号不是超级用户、无权代其他授权者撤销）即回滚并报错；重置库级角色设置（否则可覆盖只读默认值）；清除 `REPLICATION`、`BYPASSRLS`；撤销它在目标 schema 上的全部旧授权后重新只授予读权限。角色拥有任何数据库对象时直接拒绝。
+- PostgreSQL 15 起新建数据库默认不再授予 `PUBLIC` 在 `public` schema 中的 `CREATE` 权限；旧库和部分兼容数据库可能仍保留该权限，脚本发现后会执行 `REVOKE CREATE ON SCHEMA public FROM PUBLIC`。数据库的 `TEMPORARY` 权限仍默认授予 `PUBLIC`；本项目额外执行 `REVOKE TEMPORARY ON DATABASE … FROM PUBLIC`，禁止只读账号创建临时表。实际撤销项会在输出的 `hardened` 中列出。
+- 提交后脚本用只读账号的密码登录，确认会话默认只读、库内没有任何可写的表、不属于任何其他角色；随后显式开启读写事务，逐条尝试 `SET ROLE` 到导入账号、在 `public` 和目标 schema 建表、建临时表、建 schema、`INSERT`、`UPDATE`、`DELETE`，每条都必须以 `42501` 失败。授权此时已提交，所以登录核对一旦发现写入途径，脚本会把该角色设为 `NOLOGIN` 再报错，应用连不上而不是带着写权限运行；排除原因后重跑通过即恢复登录。
+- `services.relational()` 改用 `<engine>_reader` 配置连接，导入账号只供脚本使用。Vastbase 使用 `config/vastbase_reader.json`，模板为 `config/vastbase_reader.example.json`。
+- 实测（`tests/test_api.py` 的 `reader_checks`，记录在 [m1-readonly.json](../acceptance/m1-readonly.json)）：默认会话中 `UPDATE` 以 `25006` 失败；显式 `SET TRANSACTION READ WRITE` 后，`INSERT`、`UPDATE`、`DELETE`、`CREATE TABLE`、`CREATE VIEW`、在 `public` 建表、`CREATE SCHEMA` 均以 `42501` 失败。
+
+### 4.3 健康检查投影取值
+
+`/health` 中 `neo4j.projection` 取 `full`（当前批次存在完整的 `scope:'full'` 投影标记，M3 写入）、`sample`（只有完整样例）或 `not_ready`。Neo4j 不可用时也返回 `not_ready`。
+
+### 4.4 导入失败回滚演示
+
+`tests/record_m1.py` 在开发库中把同一份数据以新批次号 `ffff…` 导入：建表、视图和 47 万余行 COPY 都在事务中完成，随后批次校验失败（`Target build mismatch`），整个事务回滚。记录在 [m1-import-rollback.json](../acceptance/m1-import-rollback.json)：失败后不存在新 schema，当前批次七张表的行数与失败前一致，`/stats` 响应不变。该演示为了让失败发生在数据库写入之后，跳过了暂存库校验（篡改过的清单在那一步就会被拒绝）。
+
+### 4.5 验证
+
+| 检查 | 结果 |
+| --- | --- |
+| `tests/test_api.py` | 通过；新增视图、投影取值、只读账号用例 |
+| `tests/test_database_config.py` | 通过；新增只读账号凭据的生成、复用、权限与密码隔离 |
+| `tests/test_import_core.py` | 通过 |
+| `tests/test_m1_maintenance.py` | 通过。逐一制造七种写入途径（`SET ROLE` 到导入账号、由其他授权者授予的 `pg_write_all_data` 成员资格、库级设置、`public` 建表、临时表、遗留表授权、遗留 schema 授权），先确认登录核对能发现，再确认 `setup_reader` 能关闭；另测角色属性清除、拥有对象时拒绝、授权提交后才出现的写入途径会让角色被设为 `NOLOGIN`。每个场景在 `finally` 中独立撤销自己制造的权限，不依赖被测代码，用例中途失败也不会留下提权；最后在复用导入进行中持续请求详情，零失败。用修改前的导入脚本跑同一用例会失败（503，3,047 ms） |
+| `tests/record_m1.py` | 通过，生成上述两份记录 |
+| `scripts/setup_reader.py` | 首次创建、再次执行更新均通过；每次执行都以只读账号登录完成 8 项写入尝试，全部被拒绝 |
+
+环境与第 3 节相同：PostgreSQL 16.15，无 Docker、无 Neo4j。本地库的 TCP 连接使用 `scram-sha-256` 密码认证，只读账号用配置中的密码登录成功，错误密码被拒绝。
+
+## 5. 尚未完成
+
+- 存储过程：等待 spec §11 第 2 项确认。
+- 在 Compose 的 PostgreSQL 18.6 和 Vastbase 上重跑本文全部测试（Vastbase 部分属于 M6）。
 - 前端尚未使用新接口（M2）。

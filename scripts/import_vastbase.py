@@ -17,6 +17,8 @@ from pathlib import Path
 from import_core import ROOT, TABLES, canonical, digest, require, write_json
 from prepare_data import DDL, check_quality, table_hash, validate
 
+VIEWS = ROOT / "docs/schema-views.sql"
+
 
 def copy_rows(cursor, table, rows):
     from psycopg2 import sql
@@ -77,6 +79,7 @@ def probe(db):
             c.execute(sql.SQL("CREATE SCHEMA {}").format(sql.Identifier(name)))
             c.execute(sql.SQL("SET LOCAL search_path TO {}, pg_catalog").format(sql.Identifier(name)))
             c.execute(DDL.read_text())
+            c.execute(VIEWS.read_text())
             c.execute("CREATE TABLE probe_parent (id INTEGER PRIMARY KEY, label TEXT NOT NULL UNIQUE, payload TEXT NOT NULL)")
             c.execute("CREATE TABLE probe_child (id INTEGER PRIMARY KEY, parent_id INTEGER REFERENCES probe_parent(id))")
             payload = canonical({"中文": "黄芪", "quote": "'\\\n\t", "empty": "", "null": None})
@@ -113,7 +116,7 @@ def probe(db):
             c.execute("SELECT count(*) FROM pg_namespace WHERE nspname=%s", (name,))
             require(c.fetchone()[0] == 0, "DDL rollback failed")
         db.rollback()
-        return dict(status="passed", checks=["target_ddl", "unicode", "parameters", "text_json", "copy_batch",
+        return dict(status="passed", checks=["target_ddl", "business_views", "unicode", "parameters", "text_json", "copy_batch",
                     "unique", "foreign_key", "savepoint_rollback", "ddl_rollback", "pagination", "index_plan"], plan=plan)
     finally:
         db.rollback()
@@ -149,6 +152,22 @@ def verify_target(c, manifest):
                 entities_by_dataset=entities, edges_by_dataset=edges, sample_composition=composition)
 
 
+def verify_views(c, manifest):
+    c.execute("SELECT herb_label,dosage_raw,role,position,quality_state FROM v_formula_composition "
+              "WHERE formula_id=%s ORDER BY position", ("bencaodian:formula:si_jun_zi_tang",))
+    composition = [tuple(r) for r in c.fetchall()]
+    require(composition == [("人参", "9g", "jun", 0, "consistent"), ("白术", "9g", "chen", 1, "consistent"),
+                            ("茯苓", "9g", "zuo", 2, "consistent"), ("甘草", "6g", "shi", 3, "consistent")],
+            "Composition view sample mismatch")
+    c.execute("SELECT count(*) FROM v_formula_composition")
+    rows = c.fetchone()[0]
+    c.execute("SELECT direction,sum(count) FROM v_entity_relation_summary GROUP BY direction ORDER BY direction")
+    totals = dict((direction, int(total)) for direction, total in c.fetchall())
+    edges = manifest["counts"]["edge"]
+    require(totals == {"in": edges, "out": edges}, "Relation summary view does not cover every edge")
+    return dict(v_formula_composition=rows, v_entity_relation_summary=totals)
+
+
 def import_release(db, release):
     from psycopg2 import sql
     manifest = json.loads((release / "manifest.json").read_text())
@@ -171,6 +190,12 @@ def import_release(db, release):
                 # Block concurrent writes until the verified transaction is committed.
                 c.execute("LOCK TABLE build,dataset,source_record,entity,alias,edge,evidence IN SHARE MODE")
                 result = verify_target(c, manifest)
+                # Views are replaceable, so a reused release also gets the current ones. Replacing a view locks out
+                # its readers until commit and a reused release may be live: do it last so the lock covers only the
+                # view check, and give up before readers queued behind it reach their 3 s statement timeout.
+                c.execute("SET LOCAL lock_timeout = '2s'")
+                c.execute(VIEWS.read_text())
+                result["views"] = verify_views(c, manifest)
             db.commit()
         except Exception:
             db.rollback()

@@ -29,6 +29,23 @@ def main():
             assert config.stat().st_mode & 0o777 == secret.stat().st_mode & 0o777 == 0o600
             settings = json.loads(config.read_text())
             assert settings["password"] == secret.read_text().strip()
+            reader = base / "config/postgresql_reader.json"
+            reader_before = reader.read_bytes()
+            assert reader.stat().st_mode & 0o777 == 0o600
+            reader_settings = json.loads(reader_before)
+            assert reader_settings["user"] == "qihuang_reader" and reader_settings["password"] != settings["password"]
+            assert {k: reader_settings[k] for k in ("host", "port", "dbname")} == \
+                {k: settings[k] for k in ("host", "port", "dbname")}
+            setup_postgres.main()
+            assert reader.read_bytes() == reader_before
+            reader.write_text(json.dumps(dict(reader_settings, password=settings["password"])))
+            try:
+                setup_postgres.main()
+            except ValueError as error:
+                assert "own nonempty password" in str(error)
+            else:
+                raise AssertionError("Reader shared the import account password")
+            reader.write_bytes(reader_before)
             secret.write_text("different-password\n")
             try:
                 setup_postgres.main()
@@ -86,7 +103,7 @@ def main():
             else:
                 raise AssertionError("Changed mismatched Neo4j credentials")
             assert config.read_bytes() == before[0]
-    print("PASS: private credential permissions/reuse, first boot, mismatch protection, engine-specific connections, Vastbase gate")
+    print("PASS: private credential permissions/reuse, separate reader credentials, first boot, mismatch protection, engine-specific connections, Vastbase gate")
 
 
 if __name__ == "__main__":

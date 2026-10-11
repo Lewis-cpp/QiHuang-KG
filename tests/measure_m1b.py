@@ -42,6 +42,7 @@ CASES = [
     ('piece_properties 黄芪', queries.relation_query, ('piece_properties', ASTRAGALUS, 20, 0), '/relation-queries',
      dict(template='piece_properties', entity_id=ASTRAGALUS)),
     ('datasets', queries.datasets, (), '/datasets', {}),
+    ('detail S5 relation summary view', queries.entity_detail, (BITTER,), '/entities/' + BITTER, {}),
 ]
 
 

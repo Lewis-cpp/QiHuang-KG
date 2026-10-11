@@ -125,7 +125,8 @@ M1 分两步实施：
 - **M1a（2026-10-10 已实现）**：统一错误处理；实体详情、实体证据分页、证据详情；`formula_herbs` 和 `herb_formulas` 两个模板。
   - 开发文档：[docs/dev/m0-m1a-development.md](docs/dev/m0-m1a-development.md)
   - 验收文档：[docs/dev/m0-m1a-acceptance.md](docs/dev/m0-m1a-acceptance.md)
-- **M1b**：本节其余内容。
+- **M1b（2026-10-11 已实现）**：本节其余内容；存储过程仍待 §11 确认。
+  - 交付说明：[docs/dev/m1b-delivery.md](docs/dev/m1b-delivery.md)
 
 注意：实体证据数量差别很大，最多一个实体有 3,439 条。所以 M1a 中，实体详情只预览前 20 条证据，另外提供 `GET /entities/{id}/evidence` 分页接口。这一点对 §4.3 做了补充。
 
@@ -140,7 +141,7 @@ M1 分两步实施：
 | `GET /relation-queries` | M1b 已完成 | M1a 实现 `formula_herbs`、`herb_formulas`；M1b 补齐其余 5 个模板 |
 | `GET /evidence/{id}` | M1a 已完成 | 证据详情与原始值 |
 | `GET /datasets` | M1b 已完成 | 来源、版本、许可与署名 |
-| `GET /stats` / `GET /health` | 保留 | 健康检查补充 `projection` 的取值（`sample` / `full` / `not_ready`） |
+| `GET /stats` / `GET /health` | M1b 已完成 | 健康检查补充 `projection` 的取值（`sample` / `full` / `not_ready`） |
 
 ### 4.2 `GET /entities`（改进）
 
@@ -250,13 +251,13 @@ M1 分两步实施：
 - **业务视图**（课程展示用，同时供 API 复用）
   - `v_formula_composition`：方剂、药、剂量原文、角色、位置、质量状态
   - `v_entity_relation_summary`
-  - 视图写入 `docs/schema-vastbase.sql` 之后的追加 DDL 文件，保持两库共享。
-- **维护事务示例**：直接引用现有的单事务导入流程，并补一段"导入失败后回滚、旧批次不受影响"的演示记录。不额外建在线写接口。
+  - 视图写入 `docs/schema-vastbase.sql` 之后的追加 DDL 文件 `docs/schema-views.sql`，保持两库共享。导入时在同一事务中创建并校验；复用已有 schema 时只追加视图。
+- **维护事务示例**：直接引用现有的单事务导入流程，并补一段"导入失败后回滚、旧批次不受影响"的演示记录。不额外建在线写接口。记录见 `docs/acceptance/m1-import-rollback.json`。
 - **存储过程**：只有任务书明确要求时才补，见 §11 待确认事项。
 - **只读账号（T11）**
-  - `setup_postgres.py` 增加 `qihuang_reader` 角色：只授予目标 schema 的 `USAGE` 和 `SELECT` 权限，并设置 `default_transaction_read_only=on`。
+  - `qihuang_reader` 角色：只授予目标 schema 的 `USAGE` 和 `SELECT` 权限，并设置 `default_transaction_read_only=on`。`setup_postgres.py` 生成它的私有凭据；`setup_reader.py` 在数据库中创建角色并授权，因为数据库要在导入之后才有目标 schema。
   - 应用改用这个账号连接，导入账号只供脚本使用。
-  - 测试用这个账号真实执行 `INSERT`、`UPDATE`、`CREATE`，断言都因权限不足失败（错误码 `42501`），不能只检查配置文件。
+  - 测试用这个账号真实执行 `INSERT`、`UPDATE`、`CREATE`，断言都因权限不足失败（错误码 `42501`），不能只检查配置文件。默认只读会先以 `25006` 拒绝写入，所以测试先显式开启读写事务，确认拦住写入的是权限本身。
 
 ### 4.9 实现结构
 

@@ -468,6 +468,87 @@ def dataset_checks():
     error('/datasets', 422, 'invalid_query', build_id='abc')
 
 
+def reader_checks():
+    """T11: the application role really fails to write, not merely configured read-only."""
+    import psycopg2
+    from psycopg2 import sql
+    with services.relational() as c:
+        c.execute('SELECT current_user AS role')
+        assert c.fetchone()['role'] == 'qihuang_reader'
+    settings = services.application()
+    schema = sql.Identifier(settings['schema'])
+    db = psycopg2.connect(**dict(services.config(settings['database_engine'] + '_reader'), connect_timeout=3))
+    codes = {}
+    try:
+        with db.cursor() as c:
+            c.execute('SHOW default_transaction_read_only')
+            assert c.fetchone()[0] == 'on'
+            try:
+                c.execute(sql.SQL('UPDATE {}.entity SET label=label WHERE false').format(schema))
+            except psycopg2.Error as error:
+                codes['default_session_update'] = error.pgcode
+            db.rollback()
+            statements = dict(
+                insert=sql.SQL("INSERT INTO {}.dataset VALUES ('probe','t','v','https://x','l','a')").format(schema),
+                update=sql.SQL('UPDATE {}.entity SET label=label WHERE false').format(schema),
+                delete=sql.SQL('DELETE FROM {}.evidence WHERE false').format(schema),
+                create_table=sql.SQL('CREATE TABLE {}.reader_probe (id INTEGER)').format(schema),
+                create_view=sql.SQL('CREATE VIEW {}.reader_probe AS SELECT 1 AS id').format(schema),
+                create_public=sql.SQL('CREATE TABLE public.reader_probe (id INTEGER)'),
+                create_schema=sql.SQL('CREATE SCHEMA reader_probe'))
+            for name, statement in statements.items():
+                # Lifting the session default must not help: privileges, not the setting, block writes.
+                c.execute('SET TRANSACTION READ WRITE')
+                try:
+                    c.execute(statement)
+                except psycopg2.Error as error:
+                    codes[name] = error.pgcode
+                db.rollback()
+            c.execute(sql.SQL('SELECT count(*) FROM {}.entity').format(schema))
+            assert c.fetchone()[0] == 20374
+    finally:
+        db.close()
+    assert codes == dict(default_session_update='25006', **{name: '42501' for name in statements}), codes
+    return codes
+
+
+def view_checks():
+    with services.relational() as c:
+        c.execute('SELECT herb_label,dosage_raw,role,position,quality_state FROM v_formula_composition '
+                  'WHERE formula_id=%s ORDER BY position', (CONFLICT,))
+        rows = [tuple(r.values()) for r in c.fetchall()]
+        c.execute('SELECT count(*) AS n FROM v_formula_composition')
+        assert c.fetchone()['n'] == 751
+        c.execute('SELECT count(*) AS n FROM v_formula_composition WHERE role IS NULL')
+        assert c.fetchone()['n'] == 1
+    assert rows == [('猪苓', '9g', 'jun', 0, 'consistent'), ('泽泻', '9g', None, 1, 'conflicting'),
+                    ('茯苓', '9g', 'chen', 2, 'consistent'), ('滑石', '9g', 'zuo', 3, 'consistent'),
+                    ('阿胶', '9g', 'zuo', 4, 'consistent')], rows
+    composition = ok('/entities/' + CONFLICT + '/relations', relation='CONTAINS', direction='out')
+    assert [i['neighbor']['label'] for i in composition['items']] == [r[0] for r in rows]
+
+
+def health_checks():
+    class Session:
+        def __init__(self, scopes):
+            self.scopes = scopes
+
+        def run(self, query, **params):
+            if 'dbms.components' in query:
+                return type('Result', (), {'single': lambda _: {'version': '5.26'}})()
+            assert params == {'build': BUILD}
+            return [{'scope': scope} for scope in self.scopes]
+
+    for scopes, expected in [(['bootstrap', 'full'], 'full'), (['bootstrap'], 'sample'), ([], 'not_ready')]:
+        with patch.object(services, 'graph') as graph:
+            graph.return_value.__enter__.return_value = Session(scopes)
+            result = services.graph_health()
+        assert result['projection'] == expected and result['build_id'] == (BUILD if scopes else None)
+    with patch.object(services, 'graph_health', side_effect=services.ServiceError('neo4j_unavailable', '图数据库暂时不可用')):
+        health = client.get(API + '/health').json()
+    assert health['services']['neo4j']['projection'] == 'not_ready'
+
+
 def outage_checks():
     # Opt-in only: this check stops the local development database temporarily.
     import httpx
@@ -522,10 +603,14 @@ def main():
     neighbor_checks()
     template_checks()
     dataset_checks()
+    view_checks()
+    health_checks()
+    reader_checks()
     openapi_checks()
     if args.with_outage: outage_checks()
     print('PASS: F-01–F-24 fixed data, 3439 paged IDs, 231 evidence samples, E/S boundaries, pointer and size guards; '
-          'M1b ranked search, neighbor paging, seven templates, dataset catalog')
+          'M1b ranked search, neighbor paging, seven templates, dataset catalog, business views, projection states, '
+          'read-only role write failures (42501)')
 
 
 if __name__ == '__main__':

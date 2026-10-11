@@ -42,9 +42,8 @@ def entity_detail(entity_id, build_id=None):
         c.execute('SELECT name,source_record_id,field_path FROM alias WHERE entity_id=%s ORDER BY name_norm,name',
                   (entity_id,))
         aliases = c.fetchall()
-        c.execute("SELECT relation,'out' AS direction,count(*) AS count FROM edge WHERE source_id=%s GROUP BY relation "
-                  "UNION ALL SELECT relation,'in' AS direction,count(*) AS count FROM edge WHERE target_id=%s "
-                  'GROUP BY relation ORDER BY relation,direction', (entity_id, entity_id))
+        c.execute('SELECT relation,direction,count FROM v_entity_relation_summary WHERE entity_id=%s '
+                  'ORDER BY relation COLLATE "C",direction COLLATE "C"', (entity_id,))
         summary = c.fetchall()
         evidence = evidence_page(c, entity_id, 20, 0)
     return dict(id=entity['id'], type=entity['type'], label=entity['label'], dataset=dataset,

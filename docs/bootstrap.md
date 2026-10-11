@@ -12,7 +12,7 @@ docker compose up -d --wait
 .venv/bin/python scripts/verify_environment.py
 ```
 
-`setup_services.py` 复用 PostgreSQL 凭据，生成或复用 Neo4j 凭据，从已验证的 PostgreSQL 导入报告选择应用批次。全新环境没有导入报告时仅准备数据库凭据；启动 Compose 后按[数据运行说明](vastbase-import.md)清洗并导入 PostgreSQL，再运行一次 `setup_services.py` 创建应用配置，最后执行环境验证。
+`setup_services.py` 复用 PostgreSQL 凭据，生成或复用 Neo4j 凭据，从已验证的 PostgreSQL 导入报告选择应用批次。全新环境没有导入报告时仅准备数据库凭据；启动 Compose 后按[数据运行说明](vastbase-import.md)清洗并导入 PostgreSQL，再运行一次 `setup_services.py` 创建应用配置，然后运行 `.venv/bin/python scripts/setup_reader.py` 创建应用只读账号，最后执行环境验证。
 
 一个终端启动后端：
 
@@ -126,3 +126,29 @@ API 测试依赖实际主库和已构建的 Neo4j 样例；模型传输模拟测
 详情及证据接口文档位于 `/docs`。固定样例、预期修订及实测记录见 [M0 + M1a 验收文档](dev/m0-m1a-acceptance.md)。证据抽样 ID 已固化在 `tests/fixtures/m1a-evidence.json`，测试时不从数据库生成预期值。
 
 回滚时将 `var/app.json.previous.bak` 恢复为 `config/app.json` 并重启后端；该文件只包含旧批次选择。旧 schema 和旧 Neo4j 样例继续保留。
+
+## M1 只读账号与业务视图
+
+应用使用独立账号 `qihuang_reader` 连接关系库，凭据在 `config/postgresql_reader.json`（Vastbase 为 `config/vastbase_reader.json`，模板见 `config/vastbase_reader.example.json`）。该账号只有目标 schema 的 `USAGE` 与 `SELECT`，并默认 `default_transaction_read_only=on`。导入账号 `qihuang_import` 只供脚本使用。业务视图 `v_formula_composition`、`v_entity_relation_summary` 定义在 `docs/schema-views.sql`，导入时在批次 schema 中创建。
+
+已有开发环境升级一次即可，三步都可重复执行：
+
+```sh
+python3 scripts/setup_services.py
+.venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a
+.venv/bin/python scripts/setup_reader.py
+```
+
+第一步只新增只读账号凭据，已有凭据不变。第二步复用已有 schema，不重新导入数据，只追加视图并重新校验。第三步创建或更新角色，授权 `config/app.json` 所选批次，再用该账号登录逐项尝试写入，全部被拒绝才算完成。角色已存在时，它在其他角色中的成员资格（含其他授权者授予的）、库级设置和遗留授权会被清除；登录核对失败时脚本会把该角色设为 `NOLOGIN`，排除原因后重跑即恢复；若 `PUBLIC` 能在 `public` schema 建表或建临时表，脚本会撤销这两项并在输出中列出。完成后重启后端。
+
+切换或回滚批次后，对新选择的批次同样执行第二、三步（第三步可用 `--schema` 指定），否则应用账号无权读取该批次。
+
+只读账号写入失败与导入失败回滚的实测：
+
+```sh
+.venv/bin/python tests/record_m1.py
+```
+
+结果写入 `docs/acceptance/m1-readonly.json` 和 `docs/acceptance/m1-import-rollback.json`。后者会在开发库中真实导入一个新批次号并在校验阶段失败，耗时约半分钟，不改动当前批次。
+
+只读账号加固和重复导入不阻塞查询另由 `.venv/bin/python tests/test_m1_maintenance.py` 验证；它会临时改动角色和权限，每个场景结束时（包括失败时）撤销自己制造的权限，完整运行后恢复为加固后的状态。

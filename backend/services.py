@@ -54,7 +54,8 @@ def relational(build_id=None):
     settings = application()
     if build_id is not None and build_id != settings["build_id"]:
         raise ServiceError("snapshot_changed", "数据批次已更新，请刷新后重试")
-    params = config(settings["database_engine"])
+    # The application uses the read-only role; the import account is reserved for scripts.
+    params = config(settings["database_engine"] + "_reader")
     params["connect_timeout"] = 3
     # shortcut: one connection per request; add a pool when measured concurrency requires it.
     try:
@@ -102,10 +103,13 @@ def database_health():
 def graph_health():
     with graph() as session:
         version = session.run("CALL dbms.components() YIELD versions RETURN versions[0] AS version").single()["version"]
-        row = session.run("MATCH (p:Projection {scope:'bootstrap', build_id:$build}) RETURN p.complete AS complete",
-                          build=application()["build_id"]).single()
-    return dict(status="ready", version=version, projection="sample" if row and row["complete"] else "not_ready",
-                build_id=application()["build_id"] if row and row["complete"] else None)
+        scopes = {row["scope"] for row in session.run(
+            "MATCH (p:Projection {build_id:$build, complete:true}) WHERE p.scope IN ['full','bootstrap'] "
+            "RETURN p.scope AS scope", build=application()["build_id"])}
+    # A complete full projection (M3) takes precedence; the bootstrap sample remains the fallback.
+    projection = "full" if "full" in scopes else "sample" if "bootstrap" in scopes else "not_ready"
+    return dict(status="ready", version=version, projection=projection,
+                build_id=application()["build_id"] if scopes else None)
 
 
 def stats():

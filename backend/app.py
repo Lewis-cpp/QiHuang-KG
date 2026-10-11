@@ -71,6 +71,7 @@ def health():
         pg = pool.submit(checked, services.database_health)
         neo4j = pool.submit(checked, services.graph_health)
         components = dict(database=pg.result(), neo4j=neo4j.result(), model=model_client.status())
+    components["neo4j"].setdefault("projection", "not_ready")
     ready = components["database"]["status"] == "ready"
     all_verified = ready and components["neo4j"]["status"] == "ready" and components["model"]["status"] == "verified"
     return JSONResponse(status_code=200 if ready else 503, content=dict(
