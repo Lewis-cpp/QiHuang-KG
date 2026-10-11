@@ -1,0 +1,46 @@
+{
+  "failures": [
+    {
+      "path": "/entities/bencaodian:formula:si_jun_zi_tang",
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "database_unavailable",
+          "message": "关系数据库暂时不可用"
+        }
+      }
+    },
+    {
+      "path": "/entities/bencaodian:formula:si_jun_zi_tang/evidence",
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "database_unavailable",
+          "message": "关系数据库暂时不可用"
+        }
+      }
+    },
+    {
+      "path": "/evidence/evidence:f1e7866ee0971b80d3d27c8cb7fecf221003b29e87cf8c42d8a6947080d71cec",
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "database_unavailable",
+          "message": "关系数据库暂时不可用"
+        }
+      }
+    },
+    {
+      "path": "/relation-queries",
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "database_unavailable",
+          "message": "关系数据库暂时不可用"
+        }
+      }
+    }
+  ],
+  "recovered": true,
+  "backend_restarted": false
+}

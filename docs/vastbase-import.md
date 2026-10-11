@@ -23,8 +23,8 @@ docker compose up -d --wait
 | 数据库 | `qihuang` |
 | 维护账号 | `qihuang_import` |
 | 私有连接文件 | `config/postgresql.json` |
-| 当前数据 schema | `qihuang_1fe2300d6005081f99274e8b` |
-| 当前构建 ID | `1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054` |
+| 当前数据 schema | `qihuang_5a76218e52001d45e4bd75e0` |
+| 当前构建 ID | `5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a` |
 
 安装共享驱动并完成环境验证和入库：
 
@@ -32,7 +32,7 @@ docker compose up -d --wait
 uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python -r requirements-vastbase.txt
 .venv/bin/python scripts/import_vastbase.py --engine postgresql
-.venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054
+.venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a
 ```
 
 新生成的批次使用 `prepare_data.py` 输出的目录。PostgreSQL 模式默认读取 `config/postgresql.json`，也可使用 `POSTGRES_DSN`；默认报告为 `var/postgresql-report.json`，标记 `engine=postgresql`、`purpose=development`，`vastbase=null`。Vastbase 模式继续使用独立的配置、DSN 和报告路径。
@@ -49,7 +49,7 @@ docker compose exec postgres psql -U qihuang_import -d qihuang
 在数据库会话中选择当前发布批次后即可查询：
 
 ```sql
-SET search_path TO qihuang_1fe2300d6005081f99274e8b, pg_catalog;
+SET search_path TO qihuang_5a76218e52001d45e4bd75e0, pg_catalog;
 SELECT type, count(*) FROM entity GROUP BY type ORDER BY type;
 SELECT relation, count(*) FROM edge GROUP BY relation ORDER BY relation;
 ```
@@ -174,3 +174,5 @@ chmod 600 config/vastbase.json
 完成真实入库需要以下二选一：已有 Vastbase 的连接配置；或本机可加载的厂商镜像/安装包及其适用的许可条件。[官方镜像安装文档](https://docs.vastdata.com.cn/zh_CN/VastbaseG100/V3.0.9/1/80b950d86e23435b93cf8bc3fe77e923)说明镜像需联系工程师获取；[官方交互安装文档](https://docs.vastdata.com.cn/zh_CN/VastbaseG100/V3.0.8/1/092436a0aebd419b82ed163f9d3148d4)说明适用版本可在安装时生成 90 天试用许可，具体以所获版本为准。本次未使用非官方镜像。
 
 Neo4j 样例与 Vue + FastAPI 最小链路现已完成，见[阶段运行说明](bootstrap.md)。模型按用户安排留空；全量图谱、完整业务接口、AI 功能及最终 Vastbase 验收仍属后续任务，清洗或 SQL 检查不能代替它们。
+
+2026-10-10 应用切换至 `5a76218e` 批次，Neo4j 样例同步重建。旧 schema 保留，配置备份位于 `var/app.json.previous.bak`；恢复备份并重启后端即可回滚。

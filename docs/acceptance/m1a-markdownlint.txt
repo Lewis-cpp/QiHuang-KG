@@ -1,0 +1,4 @@
+markdownlint-cli2 v0.23.3 (markdownlint v0.41.1)
+Finding: README.md spec.md docs/architecture.md docs/bootstrap.md docs/vastbase-import.md docs/dev/m0-m1a-development.md docs/dev/m0-m1a-acceptance.md docs/query-plans/m1a.md
+Linting: 8 files
+Summary: 0 issues in 0 files

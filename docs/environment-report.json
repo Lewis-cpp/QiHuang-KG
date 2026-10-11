@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T12:31:59.392272+00:00",
+  "checked_at": "2026-10-10T04:33:10.247665+00:00",
   "services": {
     "postgresql": {
       "status": "passed",
@@ -28,7 +28,7 @@
         ]
       },
       "data": {
-        "build_id": "1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054",
+        "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
         "entities": 20374,
         "edges": 179502,
         "business_records": 199876,
@@ -73,10 +73,10 @@
         "status": "ready",
         "version": "5.26.31",
         "projection": "sample",
-        "build_id": "1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054"
+        "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a"
       },
       "scope": "bootstrap",
-      "build_id": "1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054",
+      "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
       "nodes": 6,
       "edges": 5,
       "one_hop": 4,
@@ -90,73 +90,13 @@
         "parameterized_two_hop",
         "source_content_equality"
       ],
-      "plan": "{'args': {'planner-impl': 'IDP', 'Details': 'n', 'planner-version': '5.26.31', 'string-representation': 'Cypher 5\\n\\nPlanner COST\\n\\nRuntime SLOTTED\\n\\nRuntime version 5.26.31\\n\\n+----------------------+----+----------------------------------------------------------------------------------------------------+----------------+\\n| Operator             | Id | Details                                                                                            | Estimated Rows |\\n+----------------------+----+----------------------------------------------------------------------------------------------------+----------------+\\n| +ProduceResults      |  0 | n                                                                                                  |              0 |\\n| |                    +----+----------------------------------------------------------------------------------------------------+----------------+\\n| +NodeUniqueIndexSeek |  1 | UNIQUE n:Entity(build_id, id) WHERE build_id = $build AND id = $id, cache[n.build_id], cache[n.id] |              0 |\\n+----------------------+----+----------------------------------------------------------------------------------------------------+----------------+\\n\\nTotal database accesses: ?\\n', 'runtime-version': '5.26.31', 'runtime': 'SLOTTED', 'Id': 0, 'runtime-impl': 'SLOTTED', 'EstimatedRows': 0.0, 'planner': 'COST', 'version': '5'}, 'children': [{'args': {'Details': 'UNIQUE n:Entity(build_id, id) WHERE build_id = $build AND id = $id, cache[n.build_id], cache[n.id]', 'Id': 1, 'EstimatedRows': 0.0}, 'identifiers': ['n'], 'operatorType': 'NodeUniqueIndexSeek@neo4j'}], 'identifiers': ['n'], 'operatorType': 'ProduceResults@neo4j'}"
+      "plan": "{'args': {'planner-impl': 'IDP', 'Details': 'n', 'planner-version': '5.26.31', 'string-representation': 'Cypher 5\\n\\nPlanner COST\\n\\nRuntime SLOTTED\\n\\nRuntime version 5.26.31\\n\\n+----------------------+----+----------------------------------------------------------------------------------------------------+----------------+\\n| Operator             | Id | Details                                                                                            | Estimated Rows |\\n+----------------------+----+----------------------------------------------------------------------------------------------------+----------------+\\n| +ProduceResults      |  0 | n                                                                                                  |              1 |\\n| |                    +----+----------------------------------------------------------------------------------------------------+----------------+\\n| +NodeUniqueIndexSeek |  1 | UNIQUE n:Entity(build_id, id) WHERE build_id = $build AND id = $id, cache[n.build_id], cache[n.id] |              1 |\\n+----------------------+----+----------------------------------------------------------------------------------------------------+----------------+\\n\\nTotal database accesses: ?\\n', 'runtime-version': '5.26.31', 'runtime': 'SLOTTED', 'Id': 0, 'runtime-impl': 'SLOTTED', 'EstimatedRows': 1.0, 'planner': 'COST', 'version': '5'}, 'children': [{'args': {'Details': 'UNIQUE n:Entity(build_id, id) WHERE build_id = $build AND id = $id, cache[n.build_id], cache[n.id]', 'Id': 1, 'EstimatedRows': 1.0}, 'identifiers': ['n'], 'operatorType': 'NodeUniqueIndexSeek@neo4j'}], 'identifiers': ['n'], 'operatorType': 'ProduceResults@neo4j'}"
     },
     "model": {
-      "status": "blocked",
-      "error": "model 配置缺失或格式不正确"
+      "status": "not_configured",
+      "code": "model_not_configured",
+      "message": "model 配置缺失或格式不正确"
     }
   },
-  "status": "incomplete",
-  "model_policy": {
-    "decision": "deferred_by_user",
-    "actual_requests": 0,
-    "instructions": "docs/bootstrap.md#模型连接"
-  },
-  "neo4j_restart_persistence": {
-    "status": "passed",
-    "nodes": 6,
-    "edges": 5
-  },
-  "application_checks": {
-    "checked_at": "2026-10-04T15:46:44.678520+00:00",
-    "status": "passed",
-    "api": {
-      "command": ".venv/bin/python tests/test_app.py",
-      "checks": [
-        "actual_database_statistics",
-        "Chinese_search",
-        "type_and_pagination_validation",
-        "SQL_binding_and_literal_wildcards",
-        "read_only_transaction",
-        "graph_build_mismatch",
-        "dependency_failure_isolation",
-        "no_model_call_from_health",
-        "mock_model_protocol_and_errors"
-      ]
-    },
-    "configuration": {
-      "command": ".venv/bin/python tests/test_database_config.py",
-      "checks": [
-        "first_boot_before_import",
-        "credential_reuse_and_permissions",
-        "mismatch_rejection",
-        "engine_selection",
-        "Vastbase_identity_gate"
-      ]
-    },
-    "frontend": {
-      "command": "cd frontend && npm run build",
-      "checks": [
-        "TypeScript",
-        "production_build"
-      ]
-    },
-    "browser": {
-      "url": "http://127.0.0.1:5174",
-      "checks": [
-        "real_statistics",
-        "formula_search",
-        "herb_type_filter",
-        "empty_results",
-        "result_limit_message",
-        "real_Neo4j_relations",
-        "model_not_configured",
-        "refresh",
-        "no_console_errors"
-      ],
-      "screenshot": "docs/screenshots/bootstrap.png"
-    }
-  },
-  "scope_note": "本次冻结范围、架构和最小骨架已完成；模型按用户要求延期，环境三服务总状态仍为 incomplete。全量图、AI 业务接口和 Vastbase 最终验收不属于本阶段已完成项。"
+  "status": "incomplete"
 }

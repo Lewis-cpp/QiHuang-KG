@@ -1,0 +1,122 @@
+{
+  "checked_at": "2026-10-10T12:46:43.814016+08:00",
+  "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "commit": "cac13964e0ce9ba86b670df59d3c00125b2224de",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "cpu": "AMD Ryzen AI 9 H 365 w/ Radeon 880M",
+  "memory": "MemTotal:       31595296 kB",
+  "container_limits": [
+    {
+      "service": "postgres",
+      "memory_bytes": 0,
+      "nano_cpus": 0
+    },
+    {
+      "service": "neo4j",
+      "memory_bytes": 0,
+      "nano_cpus": 0
+    }
+  ],
+  "neo4j_heap_mb": 512,
+  "neo4j_pagecache_mb": 256,
+  "concurrency": 1,
+  "transport": "real HTTP on loopback with persistent client; API opens one database connection per request",
+  "timings": [
+    {
+      "case": "detail S1",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 9.76,
+      "p95_ms": 13.206,
+      "max_ms": 13.42,
+      "failures": [],
+      "response_bytes_min": 1906,
+      "response_bytes_max": 1906,
+      "analysis": "无超过 500 ms 的 P95"
+    },
+    {
+      "case": "detail S5",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 13.024,
+      "p95_ms": 13.994,
+      "max_ms": 14.239,
+      "failures": [],
+      "response_bytes_min": 3479,
+      "response_bytes_max": 3479,
+      "analysis": "无超过 500 ms 的 P95"
+    },
+    {
+      "case": "evidence page S1",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 6.482,
+      "p95_ms": 7.174,
+      "max_ms": 7.615,
+      "failures": [],
+      "response_bytes_min": 345,
+      "response_bytes_max": 345,
+      "analysis": "无超过 500 ms 的 P95"
+    },
+    {
+      "case": "evidence page S5",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 11.259,
+      "p95_ms": 12.249,
+      "max_ms": 30.122,
+      "failures": [],
+      "response_bytes_min": 4744,
+      "response_bytes_max": 4744,
+      "analysis": "无超过 500 ms 的 P95"
+    },
+    {
+      "case": "evidence detail S1",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 10.156,
+      "p95_ms": 11.679,
+      "max_ms": 11.962,
+      "failures": [],
+      "response_bytes_min": 3688,
+      "response_bytes_max": 3688,
+      "analysis": "无超过 500 ms 的 P95"
+    },
+    {
+      "case": "evidence detail S5",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 10.874,
+      "p95_ms": 11.497,
+      "max_ms": 11.878,
+      "failures": [],
+      "response_bytes_min": 1481,
+      "response_bytes_max": 1481,
+      "analysis": "无超过 500 ms 的 P95"
+    },
+    {
+      "case": "formula_herbs S1",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 11.411,
+      "p95_ms": 12.42,
+      "max_ms": 12.572,
+      "failures": [],
+      "response_bytes_min": 3644,
+      "response_bytes_max": 3644,
+      "analysis": "无超过 500 ms 的 P95"
+    },
+    {
+      "case": "herb_formulas S4",
+      "samples": 50,
+      "warmup": 5,
+      "p50_ms": 13.403,
+      "p95_ms": 14.617,
+      "max_ms": 15.334,
+      "failures": [],
+      "response_bytes_min": 17582,
+      "response_bytes_max": 17582,
+      "analysis": "无超过 500 ms 的 P95"
+    }
+  ]
+}
