@@ -52,7 +52,7 @@
 
 应用配置、示例配置、PostgreSQL 和 Neo4j 样例已统一到 `5a76218e…` 批次。统计仍为 199,876 条业务记录，旧 schema 和私有配置备份保留，真实 HTTP 回滚及恢复已验证。
 
-`docs/data-quality-report.json` 和 `docs/data-pipeline-report.json` 保留历史内容。`tests/test_app.py` 当前仍断言 `graph.projection == "sample"`，M3 引入全量投影后再同步修改。
+`docs/data-quality-report.json` 和 `docs/data-pipeline-report.json` 保留历史内容。`tests/test_app.py` 的 `graph.projection` 断言已在 M3 改为 `"full"`，运行前需先执行 `scripts/project_graph.py`。
 
 ---
 
@@ -294,7 +294,7 @@ M1 分两步实施：
 ### 5.1 范围
 
 - **包含**：检索、实体详情（属性、别名、关系分区、证据）、证据详情、来源、统计和运行状态五个页面，以及它们共用的请求封装、分页和状态组件。
-- **不包含**：图谱画布（M3）、AI 查询与解释（M4）、两跳模板 `herb_patterns_via_formula` 的页面入口（留给 M3 的路径查询）、移动端专门适配、账户。
+- **不包含**：图谱画布（M3，已在 §6.4 实现）、AI 查询与解释（M4）、两跳模板 `herb_patterns_via_formula` 的页面入口（M3 中放在中药的图谱页，见 §6.5 第 5 项）、移动端专门适配、账户。
 - **接口**：只调用 §4 已上线的接口。实现中如果发现必须改接口，先修订本文再写代码。
 - **`/graph/sample`** 接口保留，供 M3 之前的测试使用；页面不再调用它。
 
@@ -326,7 +326,7 @@ frontend/src/
 | `/evidence/:id` | 证据 | `GET /evidence/{id}` | 无 |
 | `/datasets` | 来源 | `GET /datasets` | 无 |
 | `/stats` | 统计与运行状态 | `GET /stats`、`GET /health`、`GET /datasets` | 无 |
-| `/graph/:id` | 图谱 | M3 实现；M2 不注册这个路由，页面上也不出现图谱入口 | — |
+| `/graph/:id` | 图谱 | M3 实现，见 §6.4；`GET /graph`，中药另调用 `GET /graph/paths` | `relation`（可重复） |
 | 其他路径 | 页面不存在 | 无 | — |
 
 - 路径中的 ID 用 `encodeURIComponent` 编码。ID 字符集见 §1.2，含 `:` 也能直接使用。
@@ -577,7 +577,27 @@ frontend/src/
   - 关系类型同时用颜色和线型或图例文字区分，不只靠颜色。
 - 点击一条边显示它的证据列表，链接到 `/evidence/:id`。
 
-### 6.5 M3 出口
+### 6.5 实现时确定的做法（M3，2026-10-12）
+
+以下各项会影响页面表现，按默认做法实施；需要改动时修订本节。
+
+| # | 问题 | 默认做法 | 另一种做法 |
+| --- | --- | --- | --- |
+| 1 | 点击节点 | 直接展开该节点的一跳并在侧栏显示节点信息；已展开的节点只切换选中 | 先选中，再点"展开" |
+| 2 | 合并后超过画布上限 | 整跳都不合并，画布保持原样；横幅提供"清空画布"和"以该节点为中心" | 合并到上限为止 |
+| 3 | 单跳的 50 节点 / 100 边上限 | 按排序取前缀，遇到第一条放不下的候选即停，`truncated=true`；50 个节点含中心，所以最多 49 个邻居 | 跳过放不下的候选继续填 |
+| 4 | 关系筛选 | 页面顶部按中心节点已有的关系类型显示复选框，写进 URL（`?relation=A&relation=B`）；不选即全部；改动后以中心重新开始，之后的展开也用同一筛选 | 只筛选画布显示，不重新请求 |
+| 5 | 两跳路径入口 | 中药的图谱页显示"经方剂关联的证候"分区，数据来自 `GET /graph/paths`（只查 Neo4j），附 §4.5 的固定说明；可把本页路径加入画布 | 放在详情页 |
+| 6 | 图谱入口 | 详情页页头的"在关系图谱中查看"按钮（实体有关系时显示）；顶部导航不加 | 导航加"图谱" |
+| 7 | 布局与样式 | Cytoscape.js 3.34.3（精确版本）自带的 `cose` 布局，不加布局插件。关系类型用 7 种颜色和 7 种线型区分，实体类型用颜色和形状区分，图例同时给出文字。冲突边加粗并标 ⚠ | 引入 fcose 等插件 |
+| 8 | 图上的边属性 | 只有 `CONTAINS` 带 `role`、`position`、`dosage_raw`；`position_source=target_id_order` 的位置不写入图库（系统补充的顺序不是来源记载） | 原样写入 |
+| 9 | 样例与全量共存 | 节点按 `(build_id, id)` 唯一，样例和全量共用；全量投影新建的节点 `scope='full'`，样例节点保留 `'bootstrap'`。边以 `(build_id, id, scope)` 区分，全量查询只读 `scope='full'` 的边。`verify_environment.py` 的样例写入和一跳、两跳核对同步改为按 `scope='bootstrap'` | 两种投影分库 |
+| 10 | 接口细节 | `/graph` 接受 `build_id`（不一致时 409）；`relation_counts` 来自关系库，`relation_counts_source` 标明引擎，`graph_source` 固定为 `neo4j`。`/graph/paths` 另支持 `offset`；起点类型校验也在 Neo4j 上完成，不经过关系库 | — |
+| 11 | 重跑投影 | 已完成且与主库核对一致的投影直接复用（`status=reused`）；`--rebuild` 才重写，重写期间 `complete=false`，图接口返回 503 | 每次都重写 |
+
+页面只在打开 `/graph/:id` 时加载 Cytoscape（路由懒加载），其余页面的脚本体积不变。
+
+### 6.6 M3 出口
 
 - 投影报告中的数量和 ID 摘要都与主库一致，并记录投影耗时。
 - 图请求实际经过 Neo4j：停掉 Neo4j 后，图页面显示"图数据库暂时不可用"，检索和详情仍然正常。

@@ -69,3 +69,14 @@ test('keeps the existing server-side snapshot error behavior', async () => {
   assert.equal(client.storedBuild(), BUILD_A)
   assert.equal(client.snapshotChanged.value, true)
 })
+
+test('repeats array parameters and skips empty arrays', async () => {
+  const urls = []
+  mock.method(globalThis, 'fetch', async url => {
+    urls.push(url)
+    return Response.json({ build_id: BUILD_A })
+  })
+  await client.get('/graph', { center: 'x', relation: ['CONTAINS', 'CITED_IN'] }, { pinBuild: false })
+  await client.get('/graph', { center: 'x', relation: [] }, { pinBuild: false })
+  assert.deepEqual(urls, ['/api/v1/graph?center=x&relation=CONTAINS&relation=CITED_IN', '/api/v1/graph?center=x'])
+})

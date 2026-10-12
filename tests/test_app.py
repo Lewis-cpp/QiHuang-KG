@@ -50,7 +50,7 @@ def main():
         health = client.get("/api/v1/health")
         assert health.status_code == 200
         assert health.json()["services"]["database"]["status"] == "ready"
-        assert health.json()["services"]["neo4j"]["projection"] == "sample"
+        assert health.json()["services"]["neo4j"]["projection"] == "full"
     stats = client.get("/api/v1/stats").json()
     assert (stats["entities"], stats["edges"], stats["evidence"], stats["business_records"]) == (20374, 179502, 291305, 199876)
     result = client.get("/api/v1/entities", params={"q": "四君子汤", "type": "formula"}).json()

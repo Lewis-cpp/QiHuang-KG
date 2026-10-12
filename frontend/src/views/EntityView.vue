@@ -49,6 +49,7 @@ const relations = computed(() => (data.value?.relation_summary ?? [])
           <span>{{ data.category || '来源未提供分类' }}</span>
         </p>
         <p class="entity-id"><CopyText :text="data.id" label="实体 ID" /></p>
+        <p v-if="relations.length" class="entity-graph"><RouterLink class="ghost-button" :to="`/graph/${encodeURIComponent(data.id)}`">在关系图谱中查看</RouterLink></p>
       </header>
 
       <section v-if="data.aliases.length" class="panel detail-section" aria-labelledby="alias-heading">

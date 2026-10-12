@@ -204,3 +204,25 @@ class DatasetPage(BaseModel):
     items: list[DatasetEntry]
     total: int
     build_id: str
+
+
+class GraphNode(Node):
+    category: str | None
+
+
+class GraphLimits(BaseModel):
+    nodes: int
+    edges: int
+
+
+class GraphPage(BaseModel):
+    center: str
+    nodes: list[GraphNode]
+    edges: list[RelationEdge]
+    truncated: bool
+    limits: GraphLimits
+    relations: list[str]
+    relation_counts: list[RelationSummary]
+    relation_counts_source: str
+    graph_source: Literal['neo4j']
+    build_id: str

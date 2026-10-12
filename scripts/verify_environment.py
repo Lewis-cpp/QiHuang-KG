@@ -39,8 +39,9 @@ def check_neo4j():
                    "SET n.label=row.label,n.type=row.type,n.scope='bootstrap'", rows=data["nodes"], build=build).consume()
             tx.run("UNWIND $rows AS row MATCH (s:Entity {build_id:$build,id:row.source_id}),"
                    "(t:Entity {build_id:$build,id:row.target_id}) "
-                   "MERGE (s)-[r:LINK {build_id:$build,id:row.id}]->(t) "
-                   "SET r.relation=row.relation,r.evidence_ids=row.evidence_ids,r.scope='bootstrap'",
+                   # Keyed by scope: the full projection (M3) has its own LINK with the same edge ID.
+                   "MERGE (s)-[r:LINK {build_id:$build,id:row.id,scope:'bootstrap'}]->(t) "
+                   "SET r.relation=row.relation,r.evidence_ids=row.evidence_ids",
                    rows=data["edges"], build=build).consume()
             nodes = tx.run("MATCH (n:Entity {build_id:$build,scope:'bootstrap'}) "
                            "RETURN n.id AS id,n.label AS label,n.type AS type ORDER BY id", build=build).data()
@@ -69,11 +70,11 @@ def check_neo4j():
             tx.rollback()
         require(session.run("MATCH (n:EnvironmentProbe {id:$id}) RETURN count(n) AS count", id=marker).single()["count"] == 0,
                 "Neo4j transaction rollback failed")
-        one_hop = session.run("MATCH (:Entity {build_id:$build,id:$formula})-[r:LINK]->(:Entity {build_id:$build}) "
+        one_hop = session.run("MATCH (:Entity {build_id:$build,id:$formula})-[r:LINK {scope:'bootstrap'}]->(:Entity {build_id:$build}) "
                               "WHERE r.relation=$relation RETURN count(r) AS count", build=build,
                               formula=services.SAMPLE_FORMULA, relation="CONTAINS").single()["count"]
-        two_hop = session.run("MATCH (:Entity {build_id:$build,id:$herb})<-[a:LINK]-(f:Entity {build_id:$build})"
-                              "-[b:LINK]->(:Entity {build_id:$build,id:$pattern}) "
+        two_hop = session.run("MATCH (:Entity {build_id:$build,id:$herb})<-[a:LINK {scope:'bootstrap'}]-(f:Entity {build_id:$build})"
+                              "-[b:LINK {scope:'bootstrap'}]->(:Entity {build_id:$build,id:$pattern}) "
                               "WHERE a.relation=$contains AND b.relation=$associated RETURN count(f) AS count",
                               build=build, herb="bencaodian:herb:ren_shen", pattern="bencaodian:pattern:pi_qi_xu",
                               contains="CONTAINS", associated="ASSOCIATED_WITH_PATTERN").single()["count"]

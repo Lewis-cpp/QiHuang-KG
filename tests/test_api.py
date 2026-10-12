@@ -1,4 +1,4 @@
-"""M1a and M1b fixed acceptance samples; run with .venv/bin/python tests/test_api.py."""
+"""M1a, M1b and M3 fixed acceptance samples; run with .venv/bin/python tests/test_api.py (needs the Neo4j projection)."""
 
 import argparse
 import io
@@ -13,7 +13,7 @@ from fastapi.testclient import TestClient
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from backend import queries, services
+from backend import graph, queries, services
 from backend.app import app
 
 BUILD = '5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a'
@@ -577,10 +577,127 @@ def outage_checks():
     print('PASS: E-14/E-15 actual PostgreSQL outage, live endpoint, automatic recovery without backend restart')
 
 
+def graph_order(page):
+    labels = {n['id']: n['label'] for n in page['nodes']}
+    def key(edge):
+        neighbor = edge['target_id'] if edge['source_id'] == page['center'] else edge['source_id']
+        return edge['relation'], labels[neighbor], neighbor, edge['id']
+    return [key(e) for e in page['edges']]
+
+
+def graph_consistent(page):
+    ids = [n['id'] for n in page['nodes']]
+    assert page['graph_source'] == 'neo4j' and page['nodes'][0]['id'] == page['center'] and len(ids) == len(set(ids))
+    assert len(ids) <= 50 and len(page['edges']) <= 100 and page['limits'] == {'nodes': 50, 'edges': 100}
+    assert all({e['source_id'], e['target_id']} <= set(ids) and page['center'] in (e['source_id'], e['target_id'])
+               for e in page['edges'])
+    assert graph_order(page) == sorted(graph_order(page))
+
+
+def relational_neighbors(entity_id, relation, direction):
+    items, offset = [], 0
+    while True:
+        page = ok(f'/entities/{entity_id}/relations', relation=relation, direction=direction, limit=50, offset=offset)
+        items += page['items']
+        offset += 50
+        if offset >= page['total']:
+            return items
+
+
+def graph_checks():
+    detail = ok('/entities/' + FORMULA)
+    page = ok('/graph', center=FORMULA)
+    graph_consistent(page)
+    assert not page['truncated'] and page['relation_counts'] == detail['relation_summary']
+    assert page['relation_counts_source'] == services.application()['database_engine']
+    expected = {}
+    for summary in detail['relation_summary']:
+        for item in relational_neighbors(FORMULA, summary['relation'], summary['direction']):
+            ends = (FORMULA, item['neighbor']['id']) if summary['direction'] == 'out' else (item['neighbor']['id'], FORMULA)
+            expected[item['edge']['id']] = (item['edge']['relation'], *ends, item['edge']['quality_state'],
+                                            item['edge']['evidence_ids'])
+    assert {e['id']: (e['relation'], e['source_id'], e['target_id'], e['quality_state'], e['evidence_ids'])
+            for e in page['edges']} == expected
+    composition = [e for e in page['edges'] if e['relation'] == 'CONTAINS']
+    assert len(composition) == 4 and all(set(e['properties']) == {'role', 'position', 'dosage_raw'} for e in composition)
+    conflict = ok('/graph', center=CONFLICT, relation='CONTAINS')
+    graph_consistent(conflict)
+    flagged = [e for e in conflict['edges'] if e['quality_state'] == 'conflicting']
+    assert len(flagged) == 1 and 'role' not in flagged[0]['properties'] and len(flagged[0]['evidence_ids']) == 2
+    assert {n['label'] for n in conflict['nodes'] if n['id'] in (flagged[0]['target_id'],)} == {'泽泻'}
+    # 3,439 incoming edges: cut at the node limit, and the shown neighbors are the relational first page.
+    bitter = ok('/graph', center=BITTER)
+    graph_consistent(bitter)
+    assert bitter['truncated'] and len(bitter['nodes']) == 50 and len(bitter['edges']) == 49
+    assert bitter['relation_counts'] == [{'relation': 'HAS_MEDICINAL_PROPERTY', 'direction': 'in', 'count': 3439}]
+    first = ok(f'/entities/{BITTER}/relations', relation='HAS_MEDICINAL_PROPERTY', direction='in', limit=49)
+    assert [e['source_id'] for e in bitter['edges']] == [i['neighbor']['id'] for i in first['items']]
+    filtered = ok('/graph', center=PIECE_LICORICE, relation='HAS_MEDICINAL_PROPERTY')
+    graph_consistent(filtered)
+    assert filtered['relations'] == ['HAS_MEDICINAL_PROPERTY'] and not filtered['truncated']
+    assert {e['relation'] for e in filtered['edges']} == {'HAS_MEDICINAL_PROPERTY'}
+    assert len(filtered['edges']) == next(c['count'] for c in filtered['relation_counts']
+                                          if c['relation'] == 'HAS_MEDICINAL_PROPERTY')
+    both = ok('/graph', center=PIECE_LICORICE, relation=['HAS_MEDICINAL_PROPERTY', 'HAS_HERBAL_PIECE', 'HAS_HERBAL_PIECE'])
+    graph_consistent(both)
+    assert both['relations'] == ['HAS_HERBAL_PIECE', 'HAS_MEDICINAL_PROPERTY'] and both['truncated']
+    assert {e['relation'] for e in both['edges']} == {'HAS_HERBAL_PIECE'} and len(both['nodes']) == 50
+    error('/graph', 404, 'entity_not_found', center='bencaodian:formula:not_here')
+    error('/graph', 422, 'invalid_query', center=FORMULA, relation='KNOWS')
+    error('/graph', 422, 'invalid_query', center='../config')
+    error('/graph', 422, 'invalid_query')
+    error('/graph', 409, 'snapshot_changed', center=FORMULA, build_id='0' * 64)
+    config = services.application()
+    with patch.object(services, 'application', return_value={**config, 'build_id': '0' * 64}):
+        error('/graph', 503, 'projection_not_ready', center=FORMULA)
+        error('/graph/paths', 503, 'projection_not_ready', template='herb_patterns_via_formula', entity_id=GINSENG)
+    with patch.object(services, 'graph', side_effect=services.ServiceError('neo4j_unavailable', '图数据库暂时不可用')):
+        error('/graph', 503, 'neo4j_unavailable', center=FORMULA)
+        error('/graph/paths', 503, 'neo4j_unavailable', template='herb_patterns_via_formula', entity_id=GINSENG)
+        ok('/entities/' + FORMULA)
+        ok('/relation-queries', template='herb_patterns_via_formula', entity_id=GINSENG)
+
+
+def graph_path_checks():
+    """spec §6.3: the Neo4j two-hop query returns exactly the relational result for every herb that has one."""
+    with services.relational() as c:
+        c.execute("SELECT DISTINCT a.target_id FROM edge a JOIN edge b ON b.source_id=a.source_id "
+                  "AND b.relation='ASSOCIATED_WITH_PATTERN' WHERE a.relation='CONTAINS' ORDER BY 1")
+        herbs = [r['target_id'] for r in c.fetchall()]
+    compared = 0
+    for herb in herbs:
+        offset = 0
+        while True:
+            params = dict(template='herb_patterns_via_formula', entity_id=herb, limit=50, offset=offset)
+            relational, neo4j = ok('/relation-queries', **params), ok('/graph/paths', **params)
+            for key in ('template', 'entity_id', 'paths', 'nodes', 'note', 'total', 'limit', 'offset'):
+                assert relational[key] == neo4j[key], (herb, key)
+            assert relational['edges'].keys() == neo4j['edges'].keys()
+            for edge_id, edge in neo4j['edges'].items():
+                other = relational['edges'][edge_id]
+                for key in ('relation', 'source_id', 'target_id', 'quality_state', 'evidence_ids'):
+                    assert edge[key] == other[key], (edge_id, key)
+                fallback = other['properties'].get('position_source') == 'target_id_order'
+                assert edge['properties'] == {k: v for k, v in other['properties'].items()
+                                              if k in graph.EDGE_PROPERTIES and v is not None
+                                              and not (k == 'position' and fallback)}
+            compared += len(neo4j['paths'])
+            offset += 50
+            if offset >= neo4j['total']:
+                break
+    assert (len(herbs), compared) == (94, 568), (len(herbs), compared)
+    assert ok('/graph/paths', template='herb_patterns_via_formula', entity_id=GINSENG, limit=50)['total'] == 23
+    error('/graph/paths', 422, 'unsupported_entity_type', template='herb_patterns_via_formula', entity_id=FORMULA)
+    error('/graph/paths', 404, 'entity_not_found', template='herb_patterns_via_formula', entity_id='bencaodian:herb:not_here')
+    error('/graph/paths', 422, 'invalid_query', template='formula_herbs', entity_id=FORMULA)
+    error('/graph/paths', 422, 'invalid_query', template='herb_patterns_via_formula', entity_id=GINSENG, limit=51)
+    return len(herbs), compared
+
+
 def openapi_checks():
     schema = client.get('/openapi.json').json()
     for path in ('/entities', '/entities/{id}', '/entities/{id}/evidence', '/entities/{id}/relations',
-                 '/evidence/{id}', '/relation-queries', '/datasets'):
+                 '/evidence/{id}', '/relation-queries', '/datasets', '/graph', '/graph/paths'):
         endpoint = schema['paths'][API + path]['get']
         assert endpoint['responses']['200']['content']['application/json']['schema']['$ref']
         assert all(p.get('description') for p in endpoint['parameters'])
@@ -606,11 +723,14 @@ def main():
     view_checks()
     health_checks()
     reader_checks()
+    graph_checks()
+    herbs, paths = graph_path_checks()
     openapi_checks()
     if args.with_outage: outage_checks()
     print('PASS: F-01–F-24 fixed data, 3439 paged IDs, 231 evidence samples, E/S boundaries, pointer and size guards; '
           'M1b ranked search, neighbor paging, seven templates, dataset catalog, business views, projection states, '
-          'read-only role write failures (42501)')
+          'read-only role write failures (42501); M3 one-hop limits and order, Neo4j/relational two-hop equality '
+          f'({herbs} herbs, {paths} paths), projection and Neo4j outage states')
 
 
 if __name__ == '__main__':

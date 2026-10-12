@@ -1,0 +1,64 @@
+# M3 交付说明：Neo4j 全量投影与图谱
+
+日期：2026-10-12。上位文档：[spec.md](../../spec.md) §6。批次：`5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a`。
+
+实现时确定的 11 项做法写在 spec §6.5，需要改动时修订那一节。
+
+## 1. 交付内容
+
+| 部分 | 文件 | 内容 |
+| --- | --- | --- |
+| 投影构建 | `scripts/project_graph.py` | 从当前批次读取全部实体和关系，每批 5,000 条 `MERGE` 写入；节点加类型标签（`:Formula`、`:Herb` 等）；核对数量和 ID 摘要后写 `Projection.complete=true`；支持复用、`--rebuild`、`--prune` |
+| 图接口 | `backend/graph.py`、`backend/app.py` | `GET /api/v1/graph`（一跳，出入边，50 节点 / 100 边，多取一条判断截断，关系总数来自关系库）；`GET /api/v1/graph/paths`（`herb_patterns_via_formula`，只查 Neo4j，返回结构与 `/relation-queries` 相同） |
+| 页面 | `frontend/src/views/GraphView.vue` 等 | `/graph/:id`：Cytoscape.js 画布、点击展开并按 ID 合并、画布上限 100 / 200、关系筛选、侧栏证据、图例、可键盘操作的关系列表、中药的两跳路径分区 |
+| 入口 | `EntityView.vue` | 详情页页头"在关系图谱中查看" |
+| 修正 | `scripts/verify_environment.py` | 样例写入和一跳、两跳核对改为按 `scope='bootstrap'`，否则全量投影后再跑环境验证会把同 ID 的全量边改成样例边，并因计数翻倍而失败（本次实测发现） |
+
+依赖只新增 `cytoscape` 3.34.3（精确版本，自带类型声明，无下游依赖）。锁文件用 npm 11 生成。图谱页面单独打包（约 145 KB gzip），其余页面不加载。
+
+## 2. 验证环境
+
+云端容器中重建本地 PostgreSQL 16.15，用 `prepare_data.py` 和 `import_vastbase.py --engine postgresql` 导入同一批次，再用 `setup_reader.py` 创建只读账号。
+
+Neo4j 无法从 Docker Hub 拉取（匿名拉取限额），所以用 Maven Central 上的同版本构件 `org.neo4j:neo4j:5.26.31`（与 Compose 镜像摘要对应的 5.26.31 相同）以嵌入方式启动，开启 Bolt `127.0.0.1:17687`，堆上限 512 MB、页缓存 256 MB，与 Compose 一致。备份恢复用同版本构件中的 `neo4j-admin`（`org.neo4j.cli.AdminTool`）。没有配置模型。
+
+以上结果来自这套环境，不是 Compose 中的 PostgreSQL 18.6 和 Neo4j 容器。在开发机上按[运行说明](../bootstrap.md#m3-neo4j-全量投影与图谱)执行 `project_graph.py` 和测试即可复核；其中 Compose 下的 `dump` / `load` 命令没有在容器中实际运行过。
+
+## 3. 结果
+
+| 检查 | 结果 |
+| --- | --- |
+| 投影（空库） | 节点 20,374、边 179,502，与主库一致；ID 摘要 `01acc9d5…`；读取 1.7 秒、写入 23.5 秒、合计 29.8 秒；完成后堆使用 174 MB / 上限 512 MB。见 [m3-projection.json](../acceptance/m3-projection.json) |
+| 重跑 | 已完成的投影复用并重新核对；`--rebuild` 重写后结果不变 |
+| `tests/test_api.py` | 通过。新增：一跳上限与排序、截断时显示的邻居等于关系库第一页、关系筛选、404 / 422 / 409、投影未就绪 503、Neo4j 不可用 503 且详情和关系查询不受影响 |
+| 两库一致性（§6.3） | 有两跳路径的 94 味中药、568 条路径逐页比较：路径顺序、节点、边端点、质量状态、证据 ID 全部一致 |
+| `tests/test_app.py` 及其余 Python 测试 | 通过；`projection` 断言改为 `full` |
+| `npm run build`（含 `vue-tsc`） | 通过 |
+| `npm test` | 11/11；新增画布合并、上限、截断文字、列表排序、样式互不相同和数组参数 |
+| 浏览器核对（Vite 开发服务） | 29/29 |
+| 浏览器核对（`vite preview`） | 29/29 |
+| 停止 Neo4j | 图谱显示"图数据库暂时不可用"和"重试"，详情和检索正常；重启后点"重试"恢复，投影仍在（5/5） |
+| 备份恢复演练 | `dump` 后在空数据目录 `load`，`Projection` 的数量、摘要、投影时间与导出前一致，并与主库重新核对通过。见 [m3-backup-restore.json](../acceptance/m3-backup-restore.json) |
+
+逐项结果见 [m3-browser.json](../acceptance/m3-browser.json)，固定用例见 [tests/cases.md](../../tests/cases.md) 的 M3 部分。浏览器核对用无头 Chromium 驱动，脚本没有提交（spec §8.1 不引入前端测试框架）。
+
+几个值得注意的实测结果：
+
+- **截断**：药性"苦"有 3,439 条入边，画布显示 49 个邻居，正是关系库 `/entities/{id}/relations` 按同一顺序的前 49 条。
+- **冲突边**：猪苓汤 → 泽泻在图上加粗标 ⚠，侧栏不写角色，列出 2 条证据。
+- **两跳**：人参 23 条路径，首条"人参 ← 乌梅丸 → 厥阴病证"，与 M1 关系库模板的结果一致。
+
+## 4. 截图
+
+| 页面 | 文件 |
+| --- | --- |
+| 四君子汤一跳 | [m3-graph.png](../screenshots/m3-graph.png) |
+| 展开甘草后 | [m3-expanded.png](../screenshots/m3-expanded.png) |
+| 画布上限提示 | [m3-limit.png](../screenshots/m3-limit.png) |
+| 人参与两跳路径 | [m3-paths.png](../screenshots/m3-paths.png) |
+| Neo4j 停止 | [m3-neo4j-down.png](../screenshots/m3-neo4j-down.png) |
+| 窄屏 | [m3-narrow.png](../screenshots/m3-narrow.png) |
+
+## 5. 未包含
+
+AI 功能属于 M4。图上只存展示所需的边属性，其他属性和证据正文仍从关系库读取。
