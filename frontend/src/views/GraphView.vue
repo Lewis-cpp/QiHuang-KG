@@ -5,7 +5,7 @@ import { type ApiError, get, toApiError, useLoader } from '../api/client'
 import type { GraphPage, RelationPage } from '../api/types'
 import {
   CANVAS_LIMITS, type Canvas, edgeRows, emptyCanvas, expansionText, type Merge, mergeHop, mergePaths, relationStyles,
-  typeStyles,
+  typeStyles, usageText,
 } from '../graph'
 import { label, number, refocusHeading, relationNames, relationSections, roleNames, setTitle, typeNames } from '../labels'
 import EvidenceLinks from '../components/EvidenceLinks.vue'
@@ -170,6 +170,7 @@ const propertyNames: Record<string, string> = { role: '君臣佐使', position: 
           <template v-if="selectedNode">
             <p class="graph-node-title">{{ selectedNode.label }}<span class="tag">{{ label(typeNames, selectedNode.type) }}</span></p>
             <p v-if="selectedNode.category" class="muted">{{ selectedNode.category }}</p>
+            <p v-if="usageText(selectedNode)" class="graph-note">{{ usageText(selectedNode) }}</p>
             <p v-if="canvas.expanded.get(selectedNode.id)" class="graph-note">{{ expansionText(canvas.expanded.get(selectedNode.id)!) }}</p>
             <p v-else class="graph-note">尚未展开。点击图中节点或下方按钮展开一跳关系。</p>
             <div class="graph-actions">
@@ -217,11 +218,12 @@ const propertyNames: Record<string, string> = { role: '君臣佐使', position: 
           <li v-for="(style, type) in typeStyles" :key="type"><span class="swatch" :style="{ background: style.color }" aria-hidden="true"></span>{{ label(typeNames, String(type)) }}</li>
           <li><span class="swatch center-swatch" aria-hidden="true"></span>中心节点（粗边框）</li>
         </ul>
+        <p class="footnote graph-rule">邻居超过上限时的取舍：关系少的类型先全部显示，再用剩下的名额显示关系多的类型。同一类关系里，包含关系按君、臣、佐、使排，其余按在数据中被用到的次数从多到少排（例如饮片按用到它的中成药数），次数相同再按名称排。次数只反映数据收录情况，不代表临床使用频率。</p>
       </section>
 
       <section class="panel detail-section" aria-labelledby="list-heading">
         <h2 id="list-heading">关系列表 <span class="count">{{ rows.length }}</span></h2>
-        <p class="footnote graph-list-note">与画布内容相同。点名称展开该节点，点关系查看证据。</p>
+        <p class="footnote graph-list-note">与画布内容相同，按加入画布的先后排列。点名称展开该节点，点关系查看证据。</p>
         <div class="table-wrap">
           <table>
             <thead><tr><th scope="col">起点</th><th scope="col">关系</th><th scope="col">终点</th><th scope="col">证据</th></tr></thead>

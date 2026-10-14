@@ -34,8 +34,14 @@ def require_projection(session, build):
         raise services.ServiceError('projection_not_ready', '当前批次的图谱投影尚未完成')
 
 
+# How many full-projection edges point at a node: formulas containing a herb, patent medicines using a piece,
+# formulas linked to a pattern, and so on. A data-coverage count, not a clinical usage frequency.
+USAGE = "COUNT { (n)<-[:LINK {build_id:$build,scope:'full'}]-() }"
+NODE_MAP = 'n{.id,.type,.label,.category,usage:' + USAGE + '}'
+
+
 def require_node(session, build, entity_id):
-    record = session.run('MATCH (n:Entity {build_id:$build,id:$id}) RETURN n{.id,.type,.label,.category} AS node',
+    record = session.run(f'MATCH (n:Entity {{build_id:$build,id:$id}}) RETURN {NODE_MAP} AS node',
                          build=build, id=entity_id).single()
     if record is None:
         raise services.ServiceError('entity_not_found', '当前批次中不存在该实体')
@@ -49,30 +55,48 @@ def graph_edge(edge, source_id, target_id):
 
 
 EDGE_MAP = 'r{.id,.relation,.quality_state,.evidence_ids,.role,.position,.dosage_raw}'
-ONE_HOP = ("MATCH (c:Entity {build_id:$build,id:$center})-[r:LINK {build_id:$build,scope:'full'}]-"
-           "(n:Entity {build_id:$build}) WHERE $relations IS NULL OR r.relation IN $relations "
-           f"RETURN {EDGE_MAP} AS edge, startNode(r)=c AS outgoing, n{{.id,.type,.label,.category}} AS node "
-           "ORDER BY r.relation, n.label, n.id, r.id LIMIT $limit")
+ROLE_RANK = {'jun': 0, 'chen': 1, 'zuo': 2, 'shi': 3}  # CONTAINS role; other relations and conflicts rank last
+# Per relation type: its total and its first candidates. Python re-sorts them with candidate_key below.
+ONE_HOP = ("MATCH (c:Entity {build_id:$build,id:$center}) UNWIND $relations AS relation "
+           "CALL (c, relation) { MATCH (c)-[r:LINK {build_id:$build,scope:'full'}]-(:Entity {build_id:$build}) "
+           "WHERE r.relation = relation RETURN count(r) AS total } "
+           "CALL (c, relation) { MATCH (c)-[r:LINK {build_id:$build,scope:'full'}]-(n:Entity {build_id:$build}) "
+           f"WHERE r.relation = relation WITH c, r, n, {USAGE} AS usage "
+           "ORDER BY CASE r.role WHEN 'jun' THEN 0 WHEN 'chen' THEN 1 WHEN 'zuo' THEN 2 WHEN 'shi' THEN 3 ELSE 4 END, "
+           "usage DESC, n.label, n.id, r.id LIMIT $limit "
+           f"RETURN collect({{edge:{EDGE_MAP}, outgoing:startNode(r)=c, "
+           "node:n{.id,.type,.label,.category,usage:usage}}) AS rows } "
+           "RETURN relation, total, rows")
+
+
+def candidate_key(row):
+    """Within one relation type: CONTAINS role, then the most-pointed-at neighbor, then name in code point order."""
+    return (ROLE_RANK.get(row['edge']['role'], len(ROLE_RANK)), -row['node']['usage'], row['node']['label'],
+            row['node']['id'], row['edge']['id'])
 
 
 def neighborhood(center, relations=None, build_id=None):
-    """One hop around center, both directions, cut at the first candidate that would exceed a limit."""
+    """One hop around center, both directions (spec §6.2).
+
+    Smaller relation types come first so a large one cannot crowd them out; the walk stops at the first
+    candidate that would exceed a limit, so the result is always a prefix of this order.
+    """
     build = selected_build(build_id)
     with services.graph() as session:
         require_projection(session, build)
         center_node = require_node(session, build, center)
-        # One extra candidate tells whether anything was left out.
-        rows = session.run(ONE_HOP, build=build, center=center, relations=relations or None,
-                           limit=LIMITS['edges'] + 1).data()
-    nodes, edges, truncated = {center: center_node}, [], False
-    for row in rows:
+        groups = session.run(ONE_HOP, build=build, center=center, relations=list(relations or queries.RELATIONS),
+                             limit=LIMITS['edges']).data()
+    groups = sorted((g for g in groups if g['total']), key=lambda g: (g['total'], g['relation']))
+    nodes, edges = {center: center_node}, []
+    for row in (row for g in groups for row in sorted(g['rows'], key=candidate_key)):
         neighbor = row['node']
         if len(edges) == LIMITS['edges'] or (neighbor['id'] not in nodes and len(nodes) == LIMITS['nodes']):
-            truncated = True
             break
         nodes.setdefault(neighbor['id'], neighbor)
         ends = (center, neighbor['id']) if row['outgoing'] else (neighbor['id'], center)
         edges.append(graph_edge(row['edge'], *ends))
+    truncated = len(edges) < sum(g['total'] for g in groups)
     # True totals come from the relational store so a truncated canvas can say how much is missing.
     with services.relational(build_id) as c:
         c.execute('SELECT relation,direction,count FROM v_entity_relation_summary WHERE entity_id=%s '

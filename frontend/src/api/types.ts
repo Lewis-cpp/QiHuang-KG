@@ -131,7 +131,8 @@ export interface RelationPage {
   build_id: string
 }
 
-export interface GraphNode extends Node { category?: string | null }
+// usage: edges pointing at the node in the graph (spec §6.2); absent on nodes that came from a path query.
+export interface GraphNode extends Node { category?: string | null; usage?: number }
 
 export interface GraphPage {
   center: string

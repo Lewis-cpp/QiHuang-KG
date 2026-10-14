@@ -577,12 +577,33 @@ def outage_checks():
     print('PASS: E-14/E-15 actual PostgreSQL outage, live endpoint, automatic recovery without backend restart')
 
 
-def graph_order(page):
-    labels = {n['id']: n['label'] for n in page['nodes']}
-    def key(edge):
-        neighbor = edge['target_id'] if edge['source_id'] == page['center'] else edge['source_id']
-        return edge['relation'], labels[neighbor], neighbor, edge['id']
-    return [key(e) for e in page['edges']]
+ROLE_RANK = {'jun': 0, 'chen': 1, 'zuo': 2, 'shi': 3}
+
+
+def expected_hop(center, relations):
+    """spec §6.2 recomputed from the relational store: smaller relation types first; within a type CONTAINS role,
+    edges pointing at the neighbor (most first), name in code point order, neighbor ID, edge ID."""
+    with services.relational() as c:
+        c.execute("SELECT e.id, e.relation, e.properties_json, n.id AS neighbor, n.label, "
+                  "(SELECT count(*) FROM edge u WHERE u.target_id=n.id) AS usage FROM edge e JOIN entity n "
+                  "ON n.id = CASE WHEN e.source_id=%s THEN e.target_id ELSE e.source_id END "
+                  "WHERE e.source_id=%s OR e.target_id=%s", (center, center, center))
+        rows = [r for r in c.fetchall() if not relations or r['relation'] in relations]
+        c.execute('SELECT count(*) AS usage FROM edge WHERE target_id=%s', (center,))
+        usage = {center: c.fetchone()['usage'], **{r['neighbor']: r['usage'] for r in rows}}
+    groups = {}
+    for r in rows:
+        groups.setdefault(r['relation'], []).append(r)
+    ordered = [r for _, items in sorted(groups.items(), key=lambda g: (len(g[1]), g[0])) for r in sorted(
+        items, key=lambda r: (ROLE_RANK.get(json.loads(r['properties_json']).get('role'), 4), -r['usage'],
+                              r['label'], r['neighbor'], r['id']))]
+    nodes, edges = {center}, []
+    for r in ordered:
+        if len(edges) == 100 or (r['neighbor'] not in nodes and len(nodes) == 50):
+            break
+        nodes.add(r['neighbor'])
+        edges.append(r['id'])
+    return edges, len(rows), usage
 
 
 def graph_consistent(page):
@@ -591,7 +612,15 @@ def graph_consistent(page):
     assert len(ids) <= 50 and len(page['edges']) <= 100 and page['limits'] == {'nodes': 50, 'edges': 100}
     assert all({e['source_id'], e['target_id']} <= set(ids) and page['center'] in (e['source_id'], e['target_id'])
                for e in page['edges'])
-    assert graph_order(page) == sorted(graph_order(page))
+    expected, total, usage = expected_hop(page['center'], page['relations'])
+    assert [e['id'] for e in page['edges']] == expected, page['center']
+    assert page['truncated'] == (len(expected) < total)
+    assert {n['id']: n['usage'] for n in page['nodes']} == {i: usage[i] for i in ids}
+
+
+def labels_in_order(page):
+    names = {n['id']: n['label'] for n in page['nodes']}
+    return [names[e['target_id'] if e['source_id'] == page['center'] else e['source_id']] for e in page['edges']]
 
 
 def relational_neighbors(entity_id, relation, direction):
@@ -620,18 +649,27 @@ def graph_checks():
             for e in page['edges']} == expected
     composition = [e for e in page['edges'] if e['relation'] == 'CONTAINS']
     assert len(composition) == 4 and all(set(e['properties']) == {'role', 'position', 'dosage_raw'} for e in composition)
+    # Two single-edge types by code, then the composition by role.
+    assert labels_in_order(page) == ['脾气虚证', '太平惠民和剂局方', '人参', '白术', '茯苓', '甘草']
     conflict = ok('/graph', center=CONFLICT, relation='CONTAINS')
     graph_consistent(conflict)
     flagged = [e for e in conflict['edges'] if e['quality_state'] == 'conflicting']
     assert len(flagged) == 1 and 'role' not in flagged[0]['properties'] and len(flagged[0]['evidence_ids']) == 2
     assert {n['label'] for n in conflict['nodes'] if n['id'] in (flagged[0]['target_id'],)} == {'泽泻'}
-    # 3,439 incoming edges: cut at the node limit, and the shown neighbors are the relational first page.
+    assert conflict['edges'][-1] == flagged[0], 'a conflicting role ranks after 君臣佐使'
+    # 61 formulas: the one where licorice is 君, then 臣, then the 使 formulas by name.
+    licorice = ok('/graph', center=LICORICE)
+    graph_consistent(licorice)
+    assert licorice['truncated'] and len(licorice['nodes']) == 50
+    assert labels_in_order(licorice)[:4] == ['神农本草经', '炙甘草汤', '四逆汤', '九味羌活汤']
+    # 3,439 incoming edges: the pieces used by the most patent medicines come first.
     bitter = ok('/graph', center=BITTER)
     graph_consistent(bitter)
     assert bitter['truncated'] and len(bitter['nodes']) == 50 and len(bitter['edges']) == 49
     assert bitter['relation_counts'] == [{'relation': 'HAS_MEDICINAL_PROPERTY', 'direction': 'in', 'count': 3439}]
-    first = ok(f'/entities/{BITTER}/relations', relation='HAS_MEDICINAL_PROPERTY', direction='in', limit=49)
-    assert [e['source_id'] for e in bitter['edges']] == [i['neighbor']['id'] for i in first['items']]
+    usage = {n['label']: n['usage'] for n in bitter['nodes']}
+    assert labels_in_order(bitter)[:3] == ['芍药', '陈皮', '黄芩'] and [usage[x] for x in ('芍药', '陈皮', '黄芩')] == [1368, 902, 882]
+    assert bitter['nodes'][0]['usage'] == 3439
     filtered = ok('/graph', center=PIECE_LICORICE, relation='HAS_MEDICINAL_PROPERTY')
     graph_consistent(filtered)
     assert filtered['relations'] == ['HAS_MEDICINAL_PROPERTY'] and not filtered['truncated']
@@ -641,7 +679,9 @@ def graph_checks():
     both = ok('/graph', center=PIECE_LICORICE, relation=['HAS_MEDICINAL_PROPERTY', 'HAS_HERBAL_PIECE', 'HAS_HERBAL_PIECE'])
     graph_consistent(both)
     assert both['relations'] == ['HAS_HERBAL_PIECE', 'HAS_MEDICINAL_PROPERTY'] and both['truncated']
-    assert {e['relation'] for e in both['edges']} == {'HAS_HERBAL_PIECE'} and len(both['nodes']) == 50
+    # The six properties are not crowded out by 2,278 patent medicines.
+    assert [e['relation'] for e in both['edges']] == ['HAS_MEDICINAL_PROPERTY'] * 6 + ['HAS_HERBAL_PIECE'] * 43
+    assert ok('/graph', center=PIECE_LICORICE)['edges'] == both['edges']
     error('/graph', 404, 'entity_not_found', center='bencaodian:formula:not_here')
     error('/graph', 422, 'invalid_query', center=FORMULA, relation='KNOWS')
     error('/graph', 422, 'invalid_query', center='../config')
@@ -656,6 +696,21 @@ def graph_checks():
         error('/graph/paths', 503, 'neo4j_unavailable', template='herb_patterns_via_formula', entity_id=GINSENG)
         ok('/entities/' + FORMULA)
         ok('/relation-queries', template='herb_patterns_via_formula', entity_id=GINSENG)
+
+
+def graph_order_checks():
+    """The one-hop order matches the relational recomputation for the busiest and for sampled entities of every type."""
+    with services.relational() as c:
+        c.execute("WITH degree AS (SELECT id, count(*) AS n FROM (SELECT source_id AS id FROM edge UNION ALL "
+                  "SELECT target_id FROM edge) x GROUP BY id) "
+                  "SELECT id FROM (SELECT e.id, e.type, row_number() OVER (PARTITION BY e.type ORDER BY "
+                  "coalesce(d.n, 0) DESC, e.id) AS busy, row_number() OVER (PARTITION BY e.type ORDER BY md5(e.id)) "
+                  "AS sample FROM entity e LEFT JOIN degree d ON d.id=e.id) t "
+                  "WHERE busy <= 3 OR sample <= 15 ORDER BY type, id")
+        centers = [r['id'] for r in c.fetchall()]
+    for center in centers:
+        graph_consistent(ok('/graph', center=center))
+    return len(centers)
 
 
 def graph_path_checks():
@@ -724,12 +779,14 @@ def main():
     health_checks()
     reader_checks()
     graph_checks()
+    centers = graph_order_checks()
     herbs, paths = graph_path_checks()
     openapi_checks()
     if args.with_outage: outage_checks()
     print('PASS: F-01–F-24 fixed data, 3439 paged IDs, 231 evidence samples, E/S boundaries, pointer and size guards; '
           'M1b ranked search, neighbor paging, seven templates, dataset catalog, business views, projection states, '
-          'read-only role write failures (42501); M3 one-hop limits and order, Neo4j/relational two-hop equality '
+          f'read-only role write failures (42501); M3 one-hop limits and order ({centers} centers recomputed), '
+          'Neo4j/relational two-hop equality '
           f'({herbs} herbs, {paths} paths), projection and Neo4j outage states')
 
 

@@ -27,6 +27,8 @@ export function mergeElements(canvas: Canvas, nodes: GraphNode[], edges: Relatio
   if (total.nodes > CANVAS_LIMITS.nodes || total.edges > CANVAS_LIMITS.edges) return { ok: false, ...total }
   const next: Canvas = { nodes: new Map(canvas.nodes), edges: new Map(canvas.edges), expanded: new Map(canvas.expanded) }
   newNodes.forEach(n => next.nodes.set(n.id, n))
+  // A node first added by a path query has no category or usage; a hop that returns it fills them in.
+  nodes.forEach(n => { if (n.usage != null && next.nodes.get(n.id)?.usage == null) next.nodes.set(n.id, n) })
   newEdges.forEach(e => next.edges.set(e.id, e))
   return { ok: true, canvas: next, addedNodes: newNodes.length, addedEdges: newEdges.length }
 }
@@ -78,12 +80,24 @@ export const typeStyles: Record<string, { color: string; shape: string }> = {
   medicinal_property: { color: '#6f6f6f', shape: 'octagon' },
 }
 
-// The text list follows the canvas: by relation, then start and end names, in code point order like the API.
-const compare = (a: string, b: string) => (a < b ? -1 : a > b ? 1 : 0)
+// The text list keeps the order edges joined the canvas: hop by hop, each hop in the API's order (spec §6.2).
 export function edgeRows(canvas: Canvas) {
-  const name = (id: string) => canvas.nodes.get(id)?.label ?? id
   return [...canvas.edges.values()]
     .map(edge => ({ edge, source: canvas.nodes.get(edge.source_id), target: canvas.nodes.get(edge.target_id) }))
-    .sort((a, b) => compare(a.edge.relation, b.edge.relation) || compare(name(a.edge.source_id), name(b.edge.source_id))
-      || compare(name(a.edge.target_id), name(b.edge.target_id)) || compare(a.edge.id, b.edge.id))
+}
+
+// What the usage count means for each type: every type receives edges from exactly one kind of source.
+const usagePhrases: Partial<Record<string, (n: string) => string>> = {
+  herb: n => `收录于 ${n} 首方剂`,
+  herbal_piece: n => `用于 ${n} 种中成药`,
+  pattern: n => `关联 ${n} 首方剂`,
+  text: n => `被 ${n} 个方剂或中药引用`,
+  tcm_term: n => `关联 ${n} 种中成药`,
+  icd11_code: n => `${n} 种中成药映射到该编码`,
+  medicinal_property: n => `${n} 种饮片具有该药性`,
+}
+
+export function usageText(node: GraphNode): string {
+  const phrase = usagePhrases[node.type]
+  return phrase && node.usage != null ? phrase(node.usage.toLocaleString('zh-CN')) : ''
 }

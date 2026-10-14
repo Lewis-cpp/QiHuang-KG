@@ -208,6 +208,7 @@ class DatasetPage(BaseModel):
 
 class GraphNode(Node):
     category: str | None
+    usage: int  # edges pointing at the node in the graph; a data-coverage count, not clinical frequency
 
 
 class GraphLimits(BaseModel):
