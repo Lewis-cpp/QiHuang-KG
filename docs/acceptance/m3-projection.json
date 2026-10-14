@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-10-12",
+  "command": ".venv/bin/python scripts/project_graph.py",
+  "environment": "Neo4j 5.26.31 Community（空库，堆上限 512 MB，页缓存 256 MB）；PostgreSQL 16.15",
+  "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "status": "projected",
+  "batch_size": 5000,
+  "checks": {
+    "node_count": true,
+    "edge_count": true,
+    "id_digest": true
+  },
+  "relational": {
+    "node_count": 20374,
+    "edge_count": 179502,
+    "id_digest": "01acc9d552b09ddfbc34f57cdbea92c5abdc0815e1d149faedc406f051813dc7"
+  },
+  "neo4j": {
+    "node_count": 20374,
+    "edge_count": 179502,
+    "id_digest": "01acc9d552b09ddfbc34f57cdbea92c5abdc0815e1d149faedc406f051813dc7"
+  },
+  "seconds": {
+    "read": 1.7,
+    "write": 23.5,
+    "total": 29.8
+  },
+  "heap_bytes_after_projection": {
+    "used": 182036432,
+    "committed": 283115520,
+    "max": 536870912
+  },
+  "rerun": {
+    "status": "reused",
+    "note": "已完成且校验一致的投影不重写，只重新核对数量和摘要"
+  },
+  "rebuild": {
+    "command": "--rebuild",
+    "seconds": {
+      "read": 1.7,
+      "write": 12.7,
+      "total": 18.3
+    },
+    "note": "在已有数据上按 ID MERGE 重写，结果不变"
+  }
+}

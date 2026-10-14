@@ -13,6 +13,8 @@ const router = createRouter({
     { path: '/', component: SearchView },
     { path: '/entity/:id', component: EntityView, props: true },
     { path: '/evidence/:id', component: EvidenceView, props: true },
+    // Cytoscape is only loaded with the graph page.
+    { path: '/graph/:id', component: () => import('./views/GraphView.vue'), props: true },
     { path: '/datasets', component: DatasetsView },
     { path: '/stats', component: StatsView },
     { path: '/:pathMatch(.*)*', component: NotFoundView },

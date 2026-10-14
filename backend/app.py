@@ -9,9 +9,9 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException
 
-from backend import model_client, queries, schemas, services
+from backend import graph, model_client, queries, schemas, services
 
-app = FastAPI(title="QiHuang-KG", version="0.2.0", description="中医药知识检索与学习 · 详情与来源证据",
+app = FastAPI(title="QiHuang-KG", version="0.3.0", description="中医药知识检索与学习 · 详情、来源证据与图谱",
               responses={status: {"model": schemas.ErrorResponse} for status in (404, 409, 422, 500, 503)})
 
 
@@ -96,6 +96,21 @@ def entities(q: Annotated[str, Query(max_length=100, description="名称或别�
 @app.get("/api/v1/graph/sample")
 def sample_graph():
     return services.sample_graph()
+
+
+@app.get("/api/v1/graph", response_model=schemas.GraphPage, summary="图数据库中的一跳邻域")
+def graph_neighborhood(center: Annotated[str, Query(pattern=ENTITY_PATTERN, description="中心实体 ID")],
+                       relation: Annotated[list[Literal[queries.RELATIONS]] | None,
+                                           Query(description="关系类型，可重复；为空时不过滤")] = None,
+                       build_id: BuildID = None):
+    return graph.neighborhood(center, sorted(set(relation)) if relation else None, build_id)
+
+
+@app.get("/api/v1/graph/paths", response_model=schemas.RelationPage, summary="图数据库中的两跳路径")
+def graph_paths(template: Annotated[Literal[tuple(graph.PATH_TEMPLATES)], Query(description="路径模板")],
+                entity_id: Annotated[str, Query(pattern=ENTITY_PATTERN, description="起点实体 ID")],
+                limit: Limit = 20, offset: Offset = 0, build_id: BuildID = None):
+    return graph.paths(template, entity_id, limit, offset, build_id)
 
 
 @app.get("/api/v1/entities/{id}", response_model=schemas.EntityDetail, summary="实体详情")

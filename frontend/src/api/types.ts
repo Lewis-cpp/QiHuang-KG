@@ -107,3 +107,42 @@ export interface Stats {
 export interface Service { status: string; message?: string; projection?: string; version?: string; engine?: string }
 
 export interface Health { status: string; services: Record<string, Service> }
+
+export interface RelationEdge {
+  id: string
+  relation: string
+  source_id: string
+  target_id: string
+  properties: Record<string, unknown>
+  quality_state: string
+  evidence_ids: string[]
+}
+
+export interface RelationPage {
+  template: string
+  entity_id: string
+  paths: { node_ids: string[]; edge_ids: string[] }[]
+  nodes: Record<string, Node>
+  edges: Record<string, RelationEdge>
+  note: string | null
+  total: number
+  limit: number
+  offset: number
+  build_id: string
+}
+
+// usage: edges pointing at the node in the graph (spec §6.2); absent on nodes that came from a path query.
+export interface GraphNode extends Node { category?: string | null; usage?: number }
+
+export interface GraphPage {
+  center: string
+  nodes: GraphNode[]
+  edges: RelationEdge[]
+  truncated: boolean
+  limits: { nodes: number; edges: number }
+  relations: string[]
+  relation_counts: RelationSummary[]
+  relation_counts_source: string
+  graph_source: 'neo4j'
+  build_id: string
+}

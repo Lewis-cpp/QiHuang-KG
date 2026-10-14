@@ -12,7 +12,7 @@ docker compose up -d --wait
 .venv/bin/python scripts/verify_environment.py
 ```
 
-`setup_services.py` 复用 PostgreSQL 凭据，生成或复用 Neo4j 凭据，从已验证的 PostgreSQL 导入报告选择应用批次。全新环境没有导入报告时仅准备数据库凭据；启动 Compose 后按[数据运行说明](vastbase-import.md)清洗并导入 PostgreSQL，再运行一次 `setup_services.py` 创建应用配置，然后运行 `.venv/bin/python scripts/setup_reader.py` 创建应用只读账号，最后执行环境验证。
+`setup_services.py` 复用 PostgreSQL 凭据，生成或复用 Neo4j 凭据，从已验证的 PostgreSQL 导入报告选择应用批次。全新环境没有导入报告时仅准备数据库凭据；启动 Compose 后按[数据运行说明](vastbase-import.md)清洗并导入 PostgreSQL，再运行一次 `setup_services.py` 创建应用配置，然后运行 `.venv/bin/python scripts/setup_reader.py` 创建应用只读账号，再运行 `.venv/bin/python scripts/project_graph.py` 构建 Neo4j 全量投影，最后执行环境验证。
 
 一个终端启动后端：
 
@@ -102,7 +102,7 @@ cd frontend
 npm run build
 ```
 
-API 测试依赖实际主库和已构建的 Neo4j 样例；模型传输模拟测试不当作真实连接验收。
+API 测试依赖实际主库、已构建的 Neo4j 样例和全量投影；模型传输模拟测试不当作真实连接验收。
 
 `verify_environment.py` 可从主库重新构建同批次样例，使用事务和稳定 ID，重复执行不增生数据。当前为四君子汤、四味药与脾气虚证的 6 节点、5 关系；一跳验证 4 条组成，两跳验证“人参 ← 四君子汤 → 脾气虚证”1 条。样例可重建不等于已完成全量图备份恢复演练。
 
@@ -152,3 +152,25 @@ python3 scripts/setup_services.py
 结果写入 `docs/acceptance/m1-readonly.json` 和 `docs/acceptance/m1-import-rollback.json`。后者会在开发库中真实导入一个新批次号并在校验阶段失败，耗时约半分钟，不改动当前批次。
 
 只读账号加固和重复导入不阻塞查询另由 `.venv/bin/python tests/test_m1_maintenance.py` 验证；它会临时改动角色和权限，每个场景结束时（包括失败时）撤销自己制造的权限，完整运行后恢复为加固后的状态。
+
+## M3 Neo4j 全量投影与图谱
+
+已有开发环境（Compose 已启动、只读账号已创建）执行一次：
+
+```sh
+.venv/bin/python scripts/project_graph.py
+```
+
+脚本用导入账号从当前批次只读取数，按每批 5,000 条写入 20,374 个节点和 179,502 条边，再核对数量和 ID 摘要，全部一致后才把 `Projection.complete` 设为 `true`。报告写到 `var/graph-projection-report.json`。重复执行时，已完成的投影只重新核对、不重写；需要重写时加 `--rebuild`。清理旧批次用 `--prune <build_id>`，不能删除当前批次。投影完成后重启后端不是必需的，图谱页面打开 `/graph/<实体 ID>` 即可，详情页页头也有入口。
+
+备份与恢复（需先停止 Neo4j 容器）：
+
+```sh
+docker compose stop neo4j
+docker compose run --rm -v "$PWD/var/neo4j-dumps:/dumps" neo4j neo4j-admin database dump neo4j --to-path=/dumps
+docker compose run --rm -v "$PWD/var/neo4j-dumps:/dumps" neo4j neo4j-admin database load neo4j --from-path=/dumps --overwrite-destination=true
+docker compose up -d --wait neo4j
+.venv/bin/python scripts/project_graph.py   # 输出 status=reused 且三项核对为 true，即恢复完整
+```
+
+实施记录见 [M3 交付说明](dev/m3-delivery.md)。
