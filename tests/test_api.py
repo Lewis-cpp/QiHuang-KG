@@ -577,10 +577,28 @@ def outage_checks():
     print('PASS: E-14/E-15 actual PostgreSQL outage, live endpoint, automatic recovery without backend restart')
 
 
+def formula_note_checks():
+    # Copied source text only: pattern symptoms through ASSOCIATED_WITH_PATTERN, herb safety fields through CONTAINS.
+    notes = ok(f'/entities/{FORMULA}/formula-notes')
+    assert [(p['label'], p['evidence_ids'] != []) for p in notes['patterns']] == [('脾气虚证', True)]
+    fields = notes['patterns'][0]['fields']
+    assert set(fields) == {'cardinal_symptoms', 'secondary_symptoms', 'tongue', 'pulse'}
+    assert fields['cardinal_symptoms'][0]['zh'] == '食少纳呆' and fields['tongue']['zh'] == '舌淡苔白'
+    assert [h['label'] for h in notes['herbs']] == ['人参', '白术', '茯苓', '甘草']
+    ginseng = notes['herbs'][0]
+    assert ginseng['id'] == GINSENG and ginseng['fields']['contraindications_zh'].startswith('不宜与藜芦同用')
+    assert set(ginseng['fields']) <= set(queries.HERB_NOTE_FIELDS)
+    # No linked pattern is an empty list, not an inferred one.
+    assert ok('/entities/bencaodian:formula:xue_fu_zhu_yu_tang/formula-notes')['patterns'] == []
+    error(f'/entities/{GINSENG}/formula-notes', 422, 'unsupported_entity_type')
+    error('/entities/bencaodian:formula:nope/formula-notes', 404, 'entity_not_found')
+    error(f'/entities/{FORMULA}/formula-notes', 409, 'snapshot_changed', build_id='0' * 64)
+
+
 def openapi_checks():
     schema = client.get('/openapi.json').json()
     for path in ('/entities', '/entities/{id}', '/entities/{id}/evidence', '/entities/{id}/relations',
-                 '/evidence/{id}', '/relation-queries', '/datasets'):
+                 '/evidence/{id}', '/relation-queries', '/datasets', '/entities/{id}/formula-notes'):
         endpoint = schema['paths'][API + path]['get']
         assert endpoint['responses']['200']['content']['application/json']['schema']['$ref']
         assert all(p.get('description') for p in endpoint['parameters'])
@@ -603,6 +621,7 @@ def main():
     neighbor_checks()
     template_checks()
     dataset_checks()
+    formula_note_checks()
     view_checks()
     health_checks()
     reader_checks()

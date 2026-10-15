@@ -141,6 +141,7 @@ M1 分两步实施：
 | `GET /relation-queries` | M1b 已完成 | M1a 实现 `formula_herbs`、`herb_formulas`；M1b 补齐其余 5 个模板 |
 | `GET /evidence/{id}` | M1a 已完成 | 证据详情与原始值 |
 | `GET /datasets` | M1b 已完成 | 来源、版本、许可与署名 |
+| `GET /entities/{id}/formula-notes` | 已完成 | 仅限方剂：关联证候的主症、次症、舌象、脉象，以及各组成药物的禁忌、安全提示、孕期、哺乳期、儿童字段；均为入库字段原样返回，其他类型返回 422 `unsupported_entity_type` |
 | `GET /stats` / `GET /health` | M1b 已完成 | 健康检查补充 `projection` 的取值（`sample` / `full` / `not_ready`） |
 
 ### 4.2 `GET /entities`（改进）
@@ -416,6 +417,10 @@ frontend/src/
   - **禁止 `v-html`**。所有来源文本都按纯文本渲染。
 - **ICD-11 编码**：只显示编码本身，不补造疾病名称。
 - **注意事项分区**：`contraindications_*`、`safety_notes_*`、`pregnancy`、`lactation`、`pediatric`、`acute_use_note` 这些字段单独放在"来源中的注意事项"分区，分区开头固定写"以下为来源原文，仅供学习参考，不构成用药建议"（§5.0 第 5 项）。
+
+- **方剂的症状与注意事项**：本草典方剂条目本身没有主治症状和禁忌字段，方剂详情页另加两个分区，数据来自 `GET /entities/{id}/formula-notes`，不由模型生成，也不补写。
+  - "适用证候及症状"：经 `ASSOCIATED_WITH_PATTERN` 关联的证候条目中的主症、次症、舌象、脉象原文，附关联证据。当前批次 112 首方剂中 56 首有关联证候；没有关联的显示"来源未给本方关联证候，暂无症状记载"。
+  - "组成药物的注意事项"：经 `CONTAINS` 关联的各药物条目中的禁忌、安全提示原文，以及孕期、哺乳期、儿童的类别（`contraindicated` 禁用、`avoid` 忌用、`caution` 慎用）和说明；类别为 `no_data` 的不列出。分区开头固定写"以下为各组成药物条目中的来源原文，不是本方的整体禁忌；仅供学习参考，不构成用药建议"，没有任何记载的药物在分区末尾列出并注明"不代表无禁忌"。
 
 **字段配置**（已用开发库核对每种类型 `attributes_json` 的实际键）：
 

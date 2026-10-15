@@ -204,3 +204,20 @@ class DatasetPage(BaseModel):
     items: list[DatasetEntry]
     total: int
     build_id: str
+
+
+class NoteSource(BaseModel):
+    id: str
+    label: str
+    fields: dict[str, Any]
+
+
+class PatternNote(NoteSource):
+    evidence_ids: list[str]
+
+
+class FormulaNotes(BaseModel):
+    entity_id: str
+    patterns: list[PatternNote]
+    herbs: list[NoteSource]
+    build_id: str

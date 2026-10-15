@@ -51,6 +51,11 @@ nav a.active{color:#102f25;font-weight:600}
 .fold>.attributes,.fold>.attr-list,.fold>.attr-json{margin-top:12px}
 .notice{background:#fffaf0;border-color:#ecdcbc}
 .notice-text{font-size:13px;color:#8a6a2f;margin:-6px 0 14px}
+.note-lead{font-size:13px;color:#788473;margin:-6px 0 14px}
+.note-item{padding:14px 0;border-top:1px solid #edf0e7}
+.note-item:first-child{border-top:0;padding-top:0}
+.note-item h3{font-size:16px;margin-bottom:10px}
+.note-evidence{font-size:12px;margin-left:10px;font-weight:400}
 .alias-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 10px}
 .alias-list li{background:#f1f3eb;border-radius:3px;padding:2px 10px;font-size:13px}
 .relation-section{padding-top:18px;border-top:1px solid #edf0e7;margin-top:18px}
