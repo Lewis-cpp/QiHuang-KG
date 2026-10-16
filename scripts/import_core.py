@@ -134,13 +134,18 @@ def import_rows(db, data, hashes):
         issues.append(issue(code, filename, key, path, raw_value, action))
 
     # Curated key corrections, each backed by quotations from the source itself (datasets/curated/corrections.json).
-    corrections = {(f"bencaodian:formula:{c['formula']}", c["raw_herb"]): c
-                   for c in data["curated/corrections.json"]["corrections"]}
+    corrections = {}
+    for i, c in enumerate(data["curated/corrections.json"]["corrections"]):
+        key = (f"bencaodian:formula:{c['formula']}", c["raw_herb"])
+        if key in corrections:
+            fail("duplicate_correction", "corrections.json", c["formula"], f"/corrections/{i}", c)
+        corrections[key] = c
     applied = defaultdict(list)
 
     def add_claim(source_id, relation, kind, key, sid, path, properties=None, position=None, key_path=""):
         filename, record_key, row = records[sid]
-        correction = corrections.get((source_id, key)) if relation == "CONTAINS" else None
+        # A malformed key (e.g. a list) skips the lookup and fails below as missing_endpoint with its location.
+        correction = corrections.get((source_id, key)) if relation == "CONTAINS" and isinstance(key, str) else None
         if correction:
             key = correction["herb"]
             warn("corrected_reference", sid, path + key_path, correction["raw_herb"],

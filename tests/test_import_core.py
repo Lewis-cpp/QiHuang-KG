@@ -102,6 +102,7 @@ def main():
             ("formulas.json", lambda rows: rows.append(rows[0]), "duplicate_source_key"),
             ("formulas.json", lambda rows: rows[0].update(name_zh="　 "), "missing_label"),
             ("formulas.json", lambda rows: rows[0]["composition"][0].update(herb_key="missing"), "missing_endpoint"),
+            ("formulas.json", lambda rows: rows[0]["composition"][0].update(herb_key=["ren_shen"]), "missing_endpoint"),
             ("relationships.json", lambda rows: rows.update(unmapped=[]), "unknown_relation_mapping"),
             ("formulas.json", lambda rows: rows[0]["verification"].update(status="new-status"), "warning_baseline_changed"),
         ):
@@ -127,6 +128,7 @@ def main():
         for mutate, expected in (
             (lambda c: c[0].update(formula="si_jun_zi_tang"), "stale_correction"),
             (lambda c: c[0]["basis"][0].update(text="大蓟"), "correction_basis_mismatch"),
+            (lambda c: c.append(dict(c[0], basis=[])), "duplicate_correction"),
         ):
             rows = json.loads(canonical(corrections))
             mutate(rows["corrections"])

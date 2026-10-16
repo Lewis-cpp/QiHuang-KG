@@ -73,7 +73,7 @@ const entityLink = (id: string) => `/entity/${encodeURIComponent(id)}`
                 <RouterLink class="text-link" :to="entityLink(neighbor.id)">{{ neighbor.label }}</RouterLink>
                 <span v-if="variant === 'generic' && conflicting(edge)" class="conflict"> ⚠ 来源记载不一致</span>
                 <small v-for="line in conflictValues(edge)" :key="line" class="conflict block">⚠ {{ line }}</small>
-                <small v-if="correction(edge)" class="conflict block">⚠ 已更正：{{ correction(edge) }}</small>
+                <small v-if="correction(edge)" class="corrected block">已更正：{{ correction(edge) }}</small>
                 <details v-if="hasExtras(edge)" class="edge-extras"><summary>边属性</summary><AttributeValue :value="extras(edge)" /></details>
               </td>
               <template v-if="variant === 'composition' || variant === 'formulas'">

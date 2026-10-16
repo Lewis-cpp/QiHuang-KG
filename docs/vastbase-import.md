@@ -23,8 +23,8 @@ docker compose up -d --wait
 | 数据库 | `qihuang` |
 | 维护账号 | `qihuang_import` |
 | 私有连接文件 | `config/postgresql.json` |
-| 当前数据 schema | `qihuang_c0406848c955a1edf6856e30` |
-| 当前构建 ID | `c0406848c955a1edf6856e30cfb5019e4fcd89ae30857830809d0eafb9bb4d99` |
+| 当前数据 schema | `qihuang_cbadd11ea5c86dc3d7654c46` |
+| 当前构建 ID | `cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e` |
 
 安装共享驱动并完成环境验证和入库：
 
@@ -32,7 +32,7 @@ docker compose up -d --wait
 uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python -r requirements-vastbase.txt
 .venv/bin/python scripts/import_vastbase.py --engine postgresql
-.venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/c0406848c955a1edf6856e30cfb5019e4fcd89ae30857830809d0eafb9bb4d99
+.venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e
 ```
 
 新生成的批次使用 `prepare_data.py` 输出的目录。PostgreSQL 模式默认读取 `config/postgresql.json`，也可使用 `POSTGRES_DSN`；默认报告为 `var/postgresql-report.json`，标记 `engine=postgresql`、`purpose=development`，`vastbase=null`。Vastbase 模式继续使用独立的配置、DSN 和报告路径。
@@ -49,7 +49,7 @@ docker compose exec postgres psql -U qihuang_import -d qihuang
 在数据库会话中选择当前发布批次后即可查询：
 
 ```sql
-SET search_path TO qihuang_c0406848c955a1edf6856e30, pg_catalog;
+SET search_path TO qihuang_cbadd11ea5c86dc3d7654c46, pg_catalog;
 SELECT type, count(*) FROM entity GROUP BY type ORDER BY type;
 SELECT relation, count(*) FROM edge GROUP BY relation ORDER BY relation;
 ```
@@ -177,4 +177,4 @@ Neo4j 样例与 Vue + FastAPI 最小链路现已完成，见[阶段运行说明]
 
 2026-10-10 应用切换至 `5a76218e` 批次，Neo4j 样例同步重建。旧 schema 保留，配置备份位于 `var/app.json.previous.bak`；恢复备份并重启后端即可回滚。
 
-2026-10-16 当前批次改为 `c0406848`，唯一的数据差异是十枣汤组成中大蓟改为大戟（见[数据处理说明](data-processing.md#组成键值更正)）。实体、边和来源记录数量不变，引文证据增加 3 条。
+2026-10-16 当前批次改为 `cbadd11e`，唯一的数据差异是十枣汤组成中大蓟改为大戟（见[数据处理说明](data-processing.md#组成键值更正)）。实体、边和来源记录数量不变，引文证据增加 3 条。

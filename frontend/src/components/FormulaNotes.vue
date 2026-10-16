@@ -19,6 +19,10 @@ const STATUS: Record<string, string> = { contraindicated: '禁用', avoid: '忌�
 const TEXT_FIELDS: [string, string][] = [['contraindications', '禁忌'], ['safety_notes', '安全提示']]
 const GROUP_FIELDS: [string, string][] = [['pregnancy', '孕期'], ['lactation', '哺乳期'], ['pediatric', '儿童']]
 
+// Dosage notes mostly say how to decoct; only those with safety wording count as a precaution.
+// Phrases, not single characters: "解毒" and "无毒" must not match, while "仅供外用" and "宜减量" must.
+const SAFETY_WORDING = /有毒|小毒|大毒|毒性|中毒|毒大|十八反|十九畏|禁用|禁服|严禁|忌用|忌服|尤忌|孕妇|妊娠|慎用|慎服|过量|超量|不宜过大|用量过大|剂量不可过大|严格控制|严格炮制|不宜久服|不可长期|不宜生食|仅供外用|减量/
+
 interface Row { label: string; text: string; secondary?: string }
 function herbRows(herb: NoteSource): Row[] {
   const f = herb.fields
@@ -27,7 +31,7 @@ function herbRows(herb: NoteSource): Row[] {
     if (typeof f[`${key}_zh`] === 'string') rows.push({ label, text: f[`${key}_zh`] as string, secondary: f[`${key}_en`] as string | undefined })
   }
   const dosage = f.dosage_range as { notes?: unknown } | undefined
-  if (typeof dosage?.notes === 'string' && dosage.notes.trim()) rows.push({ label: '用量备注', text: dosage.notes })
+  if (typeof dosage?.notes === 'string' && SAFETY_WORDING.test(dosage.notes)) rows.push({ label: '用量备注', text: dosage.notes })
   for (const [key, label] of GROUP_FIELDS) {
     const group = f[key] as { category?: string; note_zh?: string; note_en?: string } | undefined
     // `no_data` means the source has nothing to say, which is not the same as safe; such rows are left out.
@@ -44,15 +48,19 @@ const entityLink = (id: string) => `/entity/${encodeURIComponent(id)}`
 // The 说明 row lives in EntityView's attribute list (id attr-description_zh).
 function showDescription() {
   const target = document.getElementById('attr-description_zh')
-  target?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-  target?.focus({ preventScroll: true })
+  if (!target) return
+  target.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  // Focusable only for this jump, so clicking other labels never focuses them.
+  target.setAttribute('tabindex', '-1')
+  target.addEventListener('blur', () => target.removeAttribute('tabindex'), { once: true })
+  target.focus({ preventScroll: true })
 }
 </script>
 
 <template>
   <section class="panel detail-section" aria-labelledby="symptom-heading">
     <h2 id="symptom-heading">适用证候及症状</h2>
-    <p class="note-lead">本方剂条目本身未记载主治症状<template v-if="data?.patterns.length">。以下为来源中与本方关联的证候条目原文</template>。</p>
+    <p class="note-lead">本方剂条目没有结构化的主治症状字段<template v-if="data?.patterns.length">。以下为来源中与本方关联的证候条目原文</template>。</p>
     <StateView :loading="loading" :error="error" @retry="load">
       <div v-if="data?.patterns.length === 0" class="empty-guide">
         <p>来源未给本方关联证候，因此没有可列出的症状条目。</p>

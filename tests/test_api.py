@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT))
 from backend import queries, services
 from backend.app import app
 
-BUILD = 'c0406848c955a1edf6856e30cfb5019e4fcd89ae30857830809d0eafb9bb4d99'
+BUILD = 'cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e'
 FORMULA = 'bencaodian:formula:si_jun_zi_tang'
 CONFLICT = 'bencaodian:formula:zhu_ling_tang'
 GINSENG = 'bencaodian:herb:ren_shen'
