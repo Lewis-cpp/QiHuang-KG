@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "datasets/raw/bencaodian"
 CURATED = ROOT / "datasets/curated"
 SCHEMA = ROOT / "docs/schema.sql"
-TRANSFORM_VERSION = "1.0.0"
+TRANSFORM_VERSION = "1.1.0"
 ENTITY_FILES = {"herbs.json": "herb", "formulas.json": "formula",
                 "patterns.json": "pattern", "classical_texts.json": "text"}
 CORE_RELATIONS = {"herb_in_formula", "formula_treats_pattern", "formula_cited_in_text"}
@@ -83,7 +83,8 @@ def require(condition, message):
 def read_inputs(raw, curated):
     paths = {f"raw/{name}": raw / name for name in (*ENTITY_FILES, "relationships.json",
                                                     "schema.json", "_source-page.md")}
-    paths.update({f"curated/{name}": curated / name for name in ("bencaodian.json", "known-issues.json")})
+    paths.update({f"curated/{name}": curated / name
+                  for name in ("bencaodian.json", "known-issues.json", "corrections.json")})
     paths.update({"schema.sql": SCHEMA, "import_core.py": Path(__file__)})
     blobs = {}
     for name, path in paths.items():
@@ -132,11 +133,25 @@ def import_rows(db, data, hashes):
         filename, key, _ = records[sid]
         issues.append(issue(code, filename, key, path, raw_value, action))
 
-    def add_claim(source_id, relation, kind, key, sid, path, properties=None, position=None):
-        target = f"bencaodian:{kind}:{key}"
+    # Curated key corrections, each backed by quotations from the source itself (datasets/curated/corrections.json).
+    corrections = {(f"bencaodian:formula:{c['formula']}", c["raw_herb"]): c
+                   for c in data["curated/corrections.json"]["corrections"]}
+    applied = defaultdict(list)
+
+    def add_claim(source_id, relation, kind, key, sid, path, properties=None, position=None, key_path=""):
         filename, record_key, row = records[sid]
+        correction = corrections.get((source_id, key)) if relation == "CONTAINS" else None
+        if correction:
+            key = correction["herb"]
+            warn("corrected_reference", sid, path + key_path, correction["raw_herb"],
+                 f"按 corrections.json 改为 {correction['herb']}，原始记录保持不变")
+        target = f"bencaodian:{kind}:{key}"
         if source_id not in entities or target not in entities:
             fail("missing_endpoint", filename, record_key, path, pointer(row, path))
+        if correction:
+            applied[(source_id, relation, target)].append(dict(
+                source_record_id=sid, field_path=path + key_path, raw_value=correction["raw_herb"],
+                corrected_value=key, reason_zh=correction["reason_zh"]))
         claims[(source_id, relation, target)].append((sid, path, properties or {}, position))
 
     for filename, kind in ENTITY_FILES.items():
@@ -189,7 +204,7 @@ def import_rows(db, data, hashes):
                 if not isinstance(item, dict):
                     fail("invalid_composition", "formulas.json", row["key"], f"/composition/{i}", item)
                 add_claim(entity_id, "CONTAINS", "herb", item.get("herb_key"), sid,
-                          f"/composition/{i}", item, i)
+                          f"/composition/{i}", item, i, "/herb_key")
             if row.get("source_text_key"):
                 add_claim(entity_id, "CITED_IN", "text", row["source_text_key"], sid, "/source_text_key")
         elif kind == "herb":
@@ -239,11 +254,27 @@ def import_rows(db, data, hashes):
                 continue
             formula = f"bencaodian:formula:{row.get('formula')}"
             if relation == "herb_in_formula":
-                add_claim(formula, "CONTAINS", "herb", row.get("herb"), sid, "", row)
+                add_claim(formula, "CONTAINS", "herb", row.get("herb"), sid, "", row, key_path="/herb")
             elif relation == "formula_treats_pattern":
                 add_claim(formula, "ASSOCIATED_WITH_PATTERN", "pattern", row.get("pattern"), sid, "")
             else:
                 add_claim(formula, "CITED_IN", "text", row.get("text"), sid, "")
+
+    correction_quotes = defaultdict(list)
+    for (formula, raw_key), correction in corrections.items():
+        if not any(triple[0] == formula and entry["raw_value"] == raw_key
+                   for triple, entries in applied.items() for entry in entries):
+            fail("stale_correction", "corrections.json", correction["formula"], "/corrections", correction)
+        target = f"bencaodian:herb:{correction['herb']}"
+        for quote in correction["basis"]:
+            sid = "source:" + digest(["bencaodian", quote["filename"], quote["record_key"]])
+            try:
+                value = pointer(records[sid][2], quote["field_path"])
+            except (KeyError, IndexError, ValueError):
+                value = None
+            if not isinstance(value, str) or quote["text"] not in value:
+                fail("correction_basis_mismatch", "corrections.json", correction["formula"], quote["field_path"], quote)
+            correction_quotes[(formula, "CONTAINS", target)].append((sid, quote["field_path"], value))
 
     fallback_positions = defaultdict(list)
     for triple, entries in sorted(claims.items()):
@@ -275,9 +306,13 @@ def import_rows(db, data, hashes):
                     first_sid, first_path, _, _ = entries[0]
                     warn("conflicting_claim", first_sid, first_path + "/" + field, values,
                          "保留双方证据，冲突字段设为 null，关系标记 conflicting")
+        if triple in applied:
+            properties["corrections"] = applied[triple]
         db.execute("INSERT INTO edge VALUES (?,?,?,?,?,?)", (edge_id, *triple, canonical(properties), quality))
         for sid, path, _, _ in entries:
             evidence(edge_id, sid, path, "bibliographic" if triple[1] == "CITED_IN" else "curated")
+        for sid, path, quote in correction_quotes.get(triple, []):
+            evidence(edge_id, sid, path, "source_quote", quote)
     return sorted(issues, key=canonical), raw_counts, deferred
 
 

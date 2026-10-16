@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT))
 from backend import queries, services
 from backend.app import app
 
-BUILD = '5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a'
+BUILD = 'c0406848c955a1edf6856e30cfb5019e4fcd89ae30857830809d0eafb9bb4d99'
 FORMULA = 'bencaodian:formula:si_jun_zi_tang'
 CONFLICT = 'bencaodian:formula:zhu_ling_tang'
 GINSENG = 'bencaodian:herb:ren_shen'
@@ -590,6 +590,16 @@ def formula_note_checks():
     assert set(ginseng['fields']) <= set(queries.HERB_NOTE_FIELDS)
     # No linked pattern is an empty list, not an inferred one.
     assert ok('/entities/bencaodian:formula:xue_fu_zhu_yu_tang/formula-notes')['patterns'] == []
+    # 十枣汤 lists 大戟 (corrected from the source key for 大蓟) and shows its source dosage note.
+    shi_zao = ok('/entities/bencaodian:formula:shi_zao_tang/formula-notes')
+    assert [h['label'] for h in shi_zao['herbs']] == ['芫花', '甘遂', '大戟', '大枣']
+    assert shi_zao['herbs'][2]['id'] == 'bencaodian:herb:da_ji_2'
+    assert '反甘草' in shi_zao['herbs'][2]['fields']['dosage_range']['notes']
+    composition = ok('/entities/bencaodian:formula:shi_zao_tang/relations', relation='CONTAINS', direction='out')
+    fixes = [i['edge']['properties'].get('corrections') for i in composition['items']]
+    assert [bool(f) for f in fixes] == [False, False, True, False]
+    assert {f['raw_value'] for f in fixes[2]} == {'da_ji'} and len(composition['items'][2]['edge']['evidence_ids']) == 5
+    assert ok('/entities/bencaodian:herb:da_ji/relations', relation='CONTAINS', direction='in')['total'] == 0
     error(f'/entities/{GINSENG}/formula-notes', 422, 'unsupported_entity_type')
     error('/entities/bencaodian:formula:nope/formula-notes', 404, 'entity_not_found')
     error(f'/entities/{FORMULA}/formula-notes', 409, 'snapshot_changed', build_id='0' * 64)

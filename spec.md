@@ -23,7 +23,7 @@
 
 ### 1.2 实测的数据特征（影响设计）
 
-以下数字来自当前批次 `5a76218e…`：
+以下数字来自当前批次 `c0406848…`（2026-10-16 起；与 `5a76218e…` 相比只更正了十枣汤的大戟，引文证据多 3 条）：
 
 - **实体分布**
   - 本草典：中药 365、方剂 112、证候 84、古籍 38，均为 `editor_reviewed`。
@@ -42,7 +42,7 @@
   - 中药：`nature` 共 8 种取值，另有 `flavors`、`category`。
   - 中成药：`Routes_of_administration` 分 Oral / Topical / Injection。
 - **证据**
-  - 证据类型：`curated` 290,346、`bibliographic` 531、`source_quote` 428。
+  - 证据类型：`curated` 290,346、`bibliographic` 531、`source_quote` 431。
   - `field_path` 为空字符串时表示整条记录。
 - **ID 字符集**
   - 实体与证据 ID 只含 `[A-Za-z0-9_.:-]`，最长 91 字符。
@@ -141,7 +141,7 @@ M1 分两步实施：
 | `GET /relation-queries` | M1b 已完成 | M1a 实现 `formula_herbs`、`herb_formulas`；M1b 补齐其余 5 个模板 |
 | `GET /evidence/{id}` | M1a 已完成 | 证据详情与原始值 |
 | `GET /datasets` | M1b 已完成 | 来源、版本、许可与署名 |
-| `GET /entities/{id}/formula-notes` | 已完成 | 仅限方剂：关联证候的主症、次症、舌象、脉象，以及各组成药物的禁忌、安全提示、孕期、哺乳期、儿童字段；均为入库字段原样返回，其他类型返回 422 `unsupported_entity_type` |
+| `GET /entities/{id}/formula-notes` | 已完成 | 仅限方剂：关联证候的主症、次症、舌象、脉象，以及各组成药物的禁忌、安全提示、孕期、哺乳期、儿童、用量范围字段；均为入库字段原样返回，其他类型返回 422 `unsupported_entity_type` |
 | `GET /stats` / `GET /health` | M1b 已完成 | 健康检查补充 `projection` 的取值（`sample` / `full` / `not_ready`） |
 
 ### 4.2 `GET /entities`（改进）
@@ -419,8 +419,8 @@ frontend/src/
 - **注意事项分区**：`contraindications_*`、`safety_notes_*`、`pregnancy`、`lactation`、`pediatric`、`acute_use_note` 这些字段单独放在"来源中的注意事项"分区，分区开头固定写"以下为来源原文，仅供学习参考，不构成用药建议"（§5.0 第 5 项）。
 
 - **方剂的症状与注意事项**：本草典方剂条目本身没有主治症状和禁忌字段，方剂详情页另加两个分区，数据来自 `GET /entities/{id}/formula-notes`，不由模型生成，也不补写。
-  - "适用证候及症状"：经 `ASSOCIATED_WITH_PATTERN` 关联的证候条目中的主症、次症、舌象、脉象原文，附关联证据。当前批次 112 首方剂中 56 首有关联证候；没有关联的显示"来源未给本方关联证候，暂无症状记载"。
-  - "组成药物的注意事项"：经 `CONTAINS` 关联的各药物条目中的禁忌、安全提示原文，以及孕期、哺乳期、儿童的类别（`contraindicated` 禁用、`avoid` 忌用、`caution` 慎用）和说明；类别为 `no_data` 的不列出。分区开头固定写"以下为各组成药物条目中的来源原文，不是本方的整体禁忌；仅供学习参考，不构成用药建议"，没有任何记载的药物在分区末尾列出并注明"不代表无禁忌"。
+  - "适用证候及症状"：经 `ASSOCIATED_WITH_PATTERN` 关联的证候条目中的主症、次症、舌象、脉象原文，附关联证据。当前批次 112 首方剂中 56 首有关联证候；没有关联的说明来源未给本方关联证候，并引导查看属性中的"说明"（多数方剂的主治写在其中），附跳转按钮。
+  - "组成药物的注意事项"：经 `CONTAINS` 关联的各药物条目中的禁忌、安全提示、用量备注（`dosage_range.notes`，如"有毒""反甘草""孕妇禁用"）原文，以及孕期、哺乳期、儿童的类别（`contraindicated` 禁用、`avoid` 忌用、`caution` 慎用）和说明；类别为 `no_data` 的不列出。分区开头固定写"以下为各组成药物条目中的来源原文，不是本方的整体禁忌；仅供学习参考，不构成用药建议"，没有任何记载的药物在分区末尾列出并注明"不代表无禁忌"。
 
 **字段配置**（已用开发库核对每种类型 `attributes_json` 的实际键）：
 

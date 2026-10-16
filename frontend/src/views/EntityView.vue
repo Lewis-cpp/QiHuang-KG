@@ -62,7 +62,7 @@ const relations = computed(() => (data.value?.relation_summary ?? [])
         <h2 id="attr-heading">属性</h2>
         <dl class="attributes">
           <template v-for="row in sections.main" :key="row.key">
-            <dt>{{ row.label }}</dt>
+            <dt :id="`attr-${row.key}`" tabindex="-1">{{ row.label }}</dt>
             <dd v-if="row.missing" class="muted">来源未提供</dd>
             <dd v-else>
               <AttributeValue :value="row.value" :field="row.key" />

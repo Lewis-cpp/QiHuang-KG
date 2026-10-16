@@ -26,11 +26,14 @@ const variant = computed(() => {
 })
 
 // Keys rendered as columns or footnotes; anything else goes to the row's collapsed "边属性".
-const SHOWN = new Set(['dosage_raw', 'position', 'role', 'position_source', 'missing_claim_fields', 'conflicts', 'Dosage_ratio'])
+const SHOWN = new Set(['dosage_raw', 'position', 'role', 'position_source', 'missing_claim_fields', 'conflicts', 'Dosage_ratio', 'corrections'])
 const extras = (edge: NeighborEdge) =>
   Object.fromEntries(Object.entries(edge.properties).filter(([k, v]) => !SHOWN.has(k) && v != null && v !== ''))
 const hasExtras = (edge: NeighborEdge) => Object.keys(extras(edge)).length > 0
 const conflicting = (edge: NeighborEdge) => edge.quality_state === 'conflicting'
+// Curated key corrections (datasets/curated/corrections.json): one reason per edge, repeated per corrected source claim.
+const correction = (edge: NeighborEdge) =>
+  ((edge.properties.corrections ?? []) as { reason_zh: string }[])[0]?.reason_zh ?? null
 const conflictValues = (edge: NeighborEdge) =>
   Object.entries((edge.properties.conflicts ?? {}) as Record<string, unknown[]>).map(([k, values]) => `${k}：${values.join(' / ')}`)
 
@@ -45,6 +48,7 @@ const position = (edge: NeighborEdge) =>
   fallbackPosition(edge) || typeof edge.properties.position !== 'number' ? '—' : String(edge.properties.position + 1)
 const anyConflict = computed(() => data.value?.items.some(i => conflicting(i.edge)) ?? false)
 const anyFallback = computed(() => data.value?.items.some(i => fallbackPosition(i.edge)) ?? false)
+const anyCorrection = computed(() => data.value?.items.some(i => correction(i.edge)) ?? false)
 const entityLink = (id: string) => `/entity/${encodeURIComponent(id)}`
 </script>
 
@@ -69,6 +73,7 @@ const entityLink = (id: string) => `/entity/${encodeURIComponent(id)}`
                 <RouterLink class="text-link" :to="entityLink(neighbor.id)">{{ neighbor.label }}</RouterLink>
                 <span v-if="variant === 'generic' && conflicting(edge)" class="conflict"> ⚠ 来源记载不一致</span>
                 <small v-for="line in conflictValues(edge)" :key="line" class="conflict block">⚠ {{ line }}</small>
+                <small v-if="correction(edge)" class="conflict block">⚠ 已更正：{{ correction(edge) }}</small>
                 <details v-if="hasExtras(edge)" class="edge-extras"><summary>边属性</summary><AttributeValue :value="extras(edge)" /></details>
               </td>
               <template v-if="variant === 'composition' || variant === 'formulas'">
@@ -88,6 +93,7 @@ const entityLink = (id: string) => `/entity/${encodeURIComponent(id)}`
       </div>
       <p v-if="anyConflict" class="footnote">⚠ 各来源对该项记载不同，未作取舍，可打开证据查看各来源原值。</p>
       <p v-if="anyFallback" class="footnote">位置为“—”的药物，排列顺序由系统补充，非来源记载。</p>
+      <p v-if="anyCorrection" class="footnote">标有“已更正”的行，来源原始值和更正依据的原文都可在该行证据中查看。</p>
       <Pager v-if="data" :total="data.total" :limit="LIMIT" :offset="offset" :disabled="loading" @change="offset = $event" />
     </StateView>
   </section>

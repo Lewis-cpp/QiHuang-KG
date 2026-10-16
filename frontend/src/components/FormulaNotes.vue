@@ -26,6 +26,8 @@ function herbRows(herb: NoteSource): Row[] {
   for (const [key, label] of TEXT_FIELDS) {
     if (typeof f[`${key}_zh`] === 'string') rows.push({ label, text: f[`${key}_zh`] as string, secondary: f[`${key}_en`] as string | undefined })
   }
+  const dosage = f.dosage_range as { notes?: unknown } | undefined
+  if (typeof dosage?.notes === 'string' && dosage.notes.trim()) rows.push({ label: '用量备注', text: dosage.notes })
   for (const [key, label] of GROUP_FIELDS) {
     const group = f[key] as { category?: string; note_zh?: string; note_en?: string } | undefined
     // `no_data` means the source has nothing to say, which is not the same as safe; such rows are left out.
@@ -39,14 +41,24 @@ const herbs = computed(() => (data.value?.herbs ?? []).map(herb => ({ herb, rows
 const withNotes = computed(() => herbs.value.filter(h => h.rows.length))
 const withoutNotes = computed(() => herbs.value.filter(h => !h.rows.length).map(h => h.herb.label))
 const entityLink = (id: string) => `/entity/${encodeURIComponent(id)}`
+// The 说明 row lives in EntityView's attribute list (id attr-description_zh).
+function showDescription() {
+  const target = document.getElementById('attr-description_zh')
+  target?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  target?.focus({ preventScroll: true })
+}
 </script>
 
 <template>
   <section class="panel detail-section" aria-labelledby="symptom-heading">
     <h2 id="symptom-heading">适用证候及症状</h2>
-    <p class="note-lead">本方剂条目本身未记载主治症状。以下为来源中与本方关联的证候条目原文。</p>
-    <StateView :loading="loading" :error="error" :empty="data?.patterns.length === 0"
-      empty-text="来源未给本方关联证候，暂无症状记载。" @retry="load">
+    <p class="note-lead">本方剂条目本身未记载主治症状<template v-if="data?.patterns.length">。以下为来源中与本方关联的证候条目原文</template>。</p>
+    <StateView :loading="loading" :error="error" @retry="load">
+      <div v-if="data?.patterns.length === 0" class="empty-guide">
+        <p>来源未给本方关联证候，因此没有可列出的症状条目。</p>
+        <p>本方的主治和适用证候可参阅属性中的“说明”。
+          <button type="button" class="text-button" @click="showDescription">查看“说明”</button></p>
+      </div>
       <article v-for="p in data?.patterns" :key="p.id" class="note-item">
         <h3><RouterLink class="text-link" :to="entityLink(p.id)">{{ p.label }}</RouterLink>
           <small class="note-evidence"><EvidenceLinks :ids="p.evidence_ids" /></small></h3>

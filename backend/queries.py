@@ -264,7 +264,7 @@ def entity_relations(entity_id, relation, direction, limit, offset, build_id=Non
 # Fields copied verbatim from linked entities onto the formula page; nothing is summarized or generated.
 PATTERN_NOTE_FIELDS = ('cardinal_symptoms', 'secondary_symptoms', 'tongue', 'pulse')
 HERB_NOTE_FIELDS = ('contraindications_zh', 'contraindications_en', 'safety_notes_zh', 'safety_notes_en',
-                    'pregnancy', 'lactation', 'pediatric')
+                    'pregnancy', 'lactation', 'pediatric', 'dosage_range')
 
 
 def picked(entity, fields):
