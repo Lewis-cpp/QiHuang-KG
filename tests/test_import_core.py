@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from audit_core_data import check_schema
-from import_core import RAW, ImportFailure, build, canonical, digest, normalize, pointer
+from import_core import CURATED, RAW, ImportFailure, build, canonical, digest, normalize, pointer
 
 
 def raw_hashes():
@@ -41,8 +41,8 @@ def main():
         assert manifest["counts"]["entity"] == 599
         assert manifest["counts"]["edge"] == 1286
         assert manifest["counts"]["source_record"] == 2076
-        assert manifest["counts"]["evidence"] == 3146
-        assert manifest["issue_counts"] == {"unresolved_reference": 35, "conflicting_claim": 1}
+        assert manifest["counts"]["evidence"] == 3149
+        assert manifest["issue_counts"] == {"unresolved_reference": 35, "conflicting_claim": 1, "corrected_reference": 2}
         original_bytes = (release / "kg.sqlite").read_bytes()
         original_mtime = (release / "kg.sqlite").stat().st_mtime_ns
         again, repeated, reused = build(releases=base / "releases", processed=base / "processed")
@@ -75,6 +75,18 @@ def main():
                 assert db.execute("SELECT 1 FROM evidence WHERE entity_id=? AND kind='source_quote'", (eid,)).fetchone()
                 assert db.execute("SELECT 1 FROM evidence WHERE entity_id=? AND kind='bibliographic'", (eid,)).fetchone()
             assert db.execute("SELECT count(*) FROM entity WHERE json_type(attributes_json,'$.composition') IS NOT NULL").fetchone()[0] == 0
+            # 十枣汤: the source key da_ji (大蓟) is corrected to da_ji_2 (大戟); the raw values stay traceable.
+            herbs = db.execute("SELECT h.id,h.label,e.properties_json,e.id FROM edge e JOIN entity h ON h.id=e.target_id "
+                               "WHERE e.source_id='bencaodian:formula:shi_zao_tang' AND e.relation='CONTAINS'").fetchall()
+            assert sorted(h[1] for h in herbs) == sorted(["芫花", "甘遂", "大戟", "大枣"])
+            corrected = next(h for h in herbs if h[0] == "bencaodian:herb:da_ji_2")
+            fixes = json.loads(corrected[2])["corrections"]
+            assert {(f["field_path"], f["raw_value"], f["corrected_value"]) for f in fixes} == {
+                ("/composition/2/herb_key", "da_ji", "da_ji_2"), ("/herb", "da_ji", "da_ji_2")}
+            assert all("corrections" not in json.loads(h[2]) for h in herbs if h is not corrected)
+            assert not db.execute("SELECT 1 FROM edge WHERE target_id='bencaodian:herb:da_ji'").fetchone()
+            assert db.execute("SELECT count(*) FROM evidence WHERE edge_id=? AND kind='source_quote'",
+                              (corrected[3],)).fetchone()[0] == 3
             # A two-hop herb -> formula -> pattern query uses actual, evidenced edges.
             assert db.execute("SELECT 1 FROM edge a JOIN edge b ON a.source_id=b.source_id "
                               "WHERE a.target_id=? AND a.relation='CONTAINS' "
@@ -90,6 +102,7 @@ def main():
             ("formulas.json", lambda rows: rows.append(rows[0]), "duplicate_source_key"),
             ("formulas.json", lambda rows: rows[0].update(name_zh="　 "), "missing_label"),
             ("formulas.json", lambda rows: rows[0]["composition"][0].update(herb_key="missing"), "missing_endpoint"),
+            ("formulas.json", lambda rows: rows[0]["composition"][0].update(herb_key=["ren_shen"]), "missing_endpoint"),
             ("relationships.json", lambda rows: rows.update(unmapped=[]), "unknown_relation_mapping"),
             ("formulas.json", lambda rows: rows[0]["verification"].update(status="new-status"), "warning_baseline_changed"),
         ):
@@ -107,6 +120,26 @@ def main():
             (raw / name).write_bytes((RAW / name).read_bytes())
             assert list((base / "releases").iterdir()) == [release]
             assert (release / "kg.sqlite").read_bytes() == original_bytes
+
+        # A correction must still match the source and quote it exactly; otherwise the build stops.
+        curated = base / "curated"
+        shutil.copytree(CURATED, curated)
+        corrections = json.loads((CURATED / "corrections.json").read_text())
+        for mutate, expected in (
+            (lambda c: c[0].update(formula="si_jun_zi_tang"), "stale_correction"),
+            (lambda c: c[0]["basis"][0].update(text="大蓟"), "correction_basis_mismatch"),
+            (lambda c: c.append(dict(c[0], basis=[])), "duplicate_correction"),
+        ):
+            rows = json.loads(canonical(corrections))
+            mutate(rows["corrections"])
+            (curated / "corrections.json").write_text(canonical(rows))
+            try:
+                build(curated=curated, releases=base / "releases", processed=base / "processed")
+            except ImportFailure as error:
+                assert error.issue["code"] == expected, error.issue
+            else:
+                raise AssertionError(f"Accepted bad correction: {expected}")
+            assert list((base / "releases").iterdir()) == [release]
 
         # A duplicate relationship adds neither an edge nor redundant evidence.
         relationships["herb_in_formula"].append(relationships["herb_in_formula"][0])

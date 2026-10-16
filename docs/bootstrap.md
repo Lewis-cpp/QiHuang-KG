@@ -110,6 +110,16 @@ API 测试依赖实际主库和已构建的 Neo4j 样例；模型传输模拟测
 
 2026-10-10 应用与 Neo4j 样例已切换到 `5a76218e…` 批次。模型继续保持未配置；环境脚本的 `incomplete` 只表示真实模型验证尚未完成。
 
+2026-10-16 起当前批次为 `cbadd11e…`：十枣汤组成中的大戟按[组成键值更正](data-processing.md#组成键值更正)从来源误指的大蓟改回，其余数据不变。已有开发环境按以下顺序切换：
+
+1. 重新运行 `prepare_data.py` 和下文的导入命令。
+2. 把 `config/app.json` 复制为 `var/app.json.previous.bak`，这是回滚要用的备份；然后删除 `config/app.json`，运行 `setup_services.py` 重新选择批次。
+3. 运行 `setup_reader.py` 授权新 schema。
+4. 运行 `verify_environment.py` 重建 Neo4j 样例；如果已有 M3 的全量图谱投影，也要按新批次重新投影，否则图谱页面仍是旧数据。
+5. 重启后端。
+
+旧 schema 保留，可按下文回滚。
+
 启动后端后运行：
 
 ```sh
@@ -135,7 +145,7 @@ API 测试依赖实际主库和已构建的 Neo4j 样例；模型传输模拟测
 
 ```sh
 python3 scripts/setup_services.py
-.venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a
+.venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e
 .venv/bin/python scripts/setup_reader.py
 ```
 

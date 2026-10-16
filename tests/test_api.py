@@ -16,7 +16,7 @@ sys.path.insert(0, str(ROOT))
 from backend import queries, services
 from backend.app import app
 
-BUILD = '5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a'
+BUILD = 'cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e'
 FORMULA = 'bencaodian:formula:si_jun_zi_tang'
 CONFLICT = 'bencaodian:formula:zhu_ling_tang'
 GINSENG = 'bencaodian:herb:ren_shen'
@@ -577,10 +577,38 @@ def outage_checks():
     print('PASS: E-14/E-15 actual PostgreSQL outage, live endpoint, automatic recovery without backend restart')
 
 
+def formula_note_checks():
+    # Copied source text only: pattern symptoms through ASSOCIATED_WITH_PATTERN, herb safety fields through CONTAINS.
+    notes = ok(f'/entities/{FORMULA}/formula-notes')
+    assert [(p['label'], p['evidence_ids'] != []) for p in notes['patterns']] == [('脾气虚证', True)]
+    fields = notes['patterns'][0]['fields']
+    assert set(fields) == {'cardinal_symptoms', 'secondary_symptoms', 'tongue', 'pulse'}
+    assert fields['cardinal_symptoms'][0]['zh'] == '食少纳呆' and fields['tongue']['zh'] == '舌淡苔白'
+    assert [h['label'] for h in notes['herbs']] == ['人参', '白术', '茯苓', '甘草']
+    ginseng = notes['herbs'][0]
+    assert ginseng['id'] == GINSENG and ginseng['fields']['contraindications_zh'].startswith('不宜与藜芦同用')
+    assert set(ginseng['fields']) <= set(queries.HERB_NOTE_FIELDS)
+    # No linked pattern is an empty list, not an inferred one.
+    assert ok('/entities/bencaodian:formula:xue_fu_zhu_yu_tang/formula-notes')['patterns'] == []
+    # 十枣汤 lists 大戟 (corrected from the source key for 大蓟) and shows its source dosage note.
+    shi_zao = ok('/entities/bencaodian:formula:shi_zao_tang/formula-notes')
+    assert [h['label'] for h in shi_zao['herbs']] == ['芫花', '甘遂', '大戟', '大枣']
+    assert shi_zao['herbs'][2]['id'] == 'bencaodian:herb:da_ji_2'
+    assert '反甘草' in shi_zao['herbs'][2]['fields']['dosage_range']['notes']
+    composition = ok('/entities/bencaodian:formula:shi_zao_tang/relations', relation='CONTAINS', direction='out')
+    fixes = [i['edge']['properties'].get('corrections') for i in composition['items']]
+    assert [bool(f) for f in fixes] == [False, False, True, False]
+    assert {f['raw_value'] for f in fixes[2]} == {'da_ji'} and len(composition['items'][2]['edge']['evidence_ids']) == 5
+    assert ok('/entities/bencaodian:herb:da_ji/relations', relation='CONTAINS', direction='in')['total'] == 0
+    error(f'/entities/{GINSENG}/formula-notes', 422, 'unsupported_entity_type')
+    error('/entities/bencaodian:formula:nope/formula-notes', 404, 'entity_not_found')
+    error(f'/entities/{FORMULA}/formula-notes', 409, 'snapshot_changed', build_id='0' * 64)
+
+
 def openapi_checks():
     schema = client.get('/openapi.json').json()
     for path in ('/entities', '/entities/{id}', '/entities/{id}/evidence', '/entities/{id}/relations',
-                 '/evidence/{id}', '/relation-queries', '/datasets'):
+                 '/evidence/{id}', '/relation-queries', '/datasets', '/entities/{id}/formula-notes'):
         endpoint = schema['paths'][API + path]['get']
         assert endpoint['responses']['200']['content']['application/json']['schema']['$ref']
         assert all(p.get('description') for p in endpoint['parameters'])
@@ -603,6 +631,7 @@ def main():
     neighbor_checks()
     template_checks()
     dataset_checks()
+    formula_note_checks()
     view_checks()
     health_checks()
     reader_checks()

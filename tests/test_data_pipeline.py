@@ -155,7 +155,8 @@ def main():
     assert manifest["counts"]["business_records"] == 199876
     report = json.loads((release / "report.json").read_text())
     assert report["issue_counts"] == {"repaired_extra_column": 1, "duplicate_relation": 1}
-    assert report["core_issue_counts"] == {"unresolved_reference": 35, "conflicting_claim": 1}
+    assert report["core_issue_counts"] == {"unresolved_reference": 35, "conflicting_claim": 1,
+                                           "corrected_reference": 2}
     assert report["quality"] == dict.fromkeys(QUALITY_CHECKS, 0)
     with closing(sqlite3.connect(release / "kg.sqlite")) as db:
         validate(db, manifest)

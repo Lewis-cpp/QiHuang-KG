@@ -261,6 +261,40 @@ def entity_relations(entity_id, relation, direction, limit, offset, build_id=Non
                 total=total, limit=limit, offset=offset, build_id=build)
 
 
+# Fields copied verbatim from linked entities onto the formula page; nothing is summarized or generated.
+PATTERN_NOTE_FIELDS = ('cardinal_symptoms', 'secondary_symptoms', 'tongue', 'pulse')
+HERB_NOTE_FIELDS = ('contraindications_zh', 'contraindications_en', 'safety_notes_zh', 'safety_notes_en',
+                    'pregnancy', 'lactation', 'pediatric', 'dosage_range')
+
+
+def picked(entity, fields):
+    attributes = json.loads(entity['attributes_json'])
+    return {key: attributes[key] for key in fields if attributes.get(key) not in (None, '', [], {})}
+
+
+def formula_notes(entity_id, build_id=None):
+    """Symptoms of the formula's linked patterns and the source safety text of its herbs."""
+    with services.relational(build_id) as c:
+        build = current_build(c)
+        if require_entity(c, entity_id)['type'] != 'formula':
+            raise services.ServiceError('unsupported_entity_type', '该实体类型不适用于方剂提示')
+        c.execute('SELECT e.id AS edge_id, n.id, n.label, n.attributes_json FROM edge e JOIN entity n ON n.id=e.target_id '
+                  "WHERE e.source_id=%s AND e.relation='ASSOCIATED_WITH_PATTERN' ORDER BY n.label COLLATE \"C\", n.id",
+                  (entity_id,))
+        pattern_rows = c.fetchall()
+        evidence_ids = edge_evidence(c, [row['edge_id'] for row in pattern_rows])
+        patterns = [dict(id=row['id'], label=row['label'], fields=picked(row, PATTERN_NOTE_FIELDS),
+                         evidence_ids=evidence_ids[row['edge_id']]) for row in pattern_rows]
+        c.execute('SELECT e.properties_json, n.id, n.label, n.attributes_json FROM edge e JOIN entity n ON n.id=e.target_id '
+                  "WHERE e.source_id=%s AND e.relation='CONTAINS'", (entity_id,))
+        herb_rows = c.fetchall()
+    for row in herb_rows:
+        row['e0_properties'], row['n0_label'], row['n0_id'] = json.loads(row['properties_json']), row['label'], row['id']
+    herb_rows.sort(key=position_key)
+    herbs = [dict(id=row['id'], label=row['label'], fields=picked(row, HERB_NOTE_FIELDS)) for row in herb_rows]
+    return dict(entity_id=entity_id, patterns=patterns, herbs=herbs, build_id=build)
+
+
 def normalize_query(text):
     return unicodedata.normalize('NFKC', text).strip().casefold()
 
