@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-19",
+  "build_id": "cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e",
+  "environment": {
+    "database": "PostgreSQL 18 (Compose)",
+    "neo4j": "5.26.31 community (Compose image from compose.yaml), heap max 512 MiB, page cache 256 MiB",
+    "note": "Run on the development machine with the real Compose services, after the M3 branch was merged with main."
+  },
+  "projection": {
+    "rebuild_seconds": {"read": 1.3, "write": 7.7, "total": 11.8},
+    "heap_bytes": {"used": 77471560, "committed": 268435456, "max": 536870912},
+    "container_memory_gib": {"idle": 1.358, "sampled_peak_during_rebuild": 1.367, "samples": 4, "note": "docker stats takes about 2 s per sample, so the peak is indicative"}
+  },
+  "neo4j_stop_start": {
+    "stopped": {"/graph": 503, "/graph/paths": 503, "/entities/{id}": 200, "/entities?q=": 200, "/stats": 200, "health.neo4j": "unavailable, projection not_ready"},
+    "after_start": {"/graph": 200, "/graph/paths": 200, "projection": "full", "complete": true, "digest_matches_relational": true}
+  },
+  "dump_load_with_documented_commands": {
+    "dump": "docker compose stop neo4j; docker compose run --rm -v <dir>:/dumps neo4j neo4j-admin database dump neo4j --to-path=/dumps; docker compose up -d --wait neo4j",
+    "load": "docker compose -p qihuang-restore run --rm -v <dir>:/dumps neo4j neo4j-admin database load neo4j --from-path=/dumps --overwrite-destination=true (an isolated Compose project, so the development volume was not overwritten), then a temporary instance on 127.0.0.1:27687",
+    "dump_bytes": 130721083,
+    "seconds": {"stop_and_dump": 14.4, "up_wait": 10.8, "load": 4.1},
+    "restored": {"projection_markers_identical_to_original": true, "markers": 5, "node_count": 20374, "edge_count": 179502, "checks": {"node_count": true, "edge_count": true, "id_digest": true}},
+    "cleanup": "temporary container and volume removed",
+    "pitfall": "The dump directory must be writable by the container's neo4j user (UID 7474). An existing var/neo4j-dumps owned by that user cannot be written or listed by the host user: the dump then fails, and a later load silently restores whatever older dump is in the directory. Check the dump file's size and file count before loading."
+  },
+  "tests": {"tests/test_project_graph.py": "pass", "tests/test_app.py": "pass", "tests/test_api.py": "pass"}
+}

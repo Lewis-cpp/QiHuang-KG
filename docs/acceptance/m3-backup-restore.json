@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-12",
+  "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "steps": [
+    "停止 Neo4j",
+    "neo4j-admin database dump neo4j --to-path=dumps（39 个文件，300.1 MiB 存储，导出文件 62.1 MiB，0.55 秒）",
+    "在新的空数据目录执行 neo4j-admin database load neo4j --from-path=dumps --overwrite-destination=true（0.74 秒）",
+    "用新数据目录启动 Neo4j",
+    "运行 project_graph.py：识别到已完成的投影，与 PostgreSQL 重新核对数量和 ID 摘要"
+  ],
+  "before": {
+    "node_count": 20374,
+    "edge_count": 179502,
+    "id_digest": "01acc9d552b09ddfbc34f57cdbea92c5abdc0815e1d149faedc406f051813dc7",
+    "projected_at": "2026-10-12T01:02:04.400417+00:00"
+  },
+  "after": {
+    "status": "reused",
+    "checks": {
+      "node_count": true,
+      "edge_count": true,
+      "id_digest": true
+    },
+    "node_count": 20374,
+    "edge_count": 179502,
+    "id_digest": "01acc9d552b09ddfbc34f57cdbea92c5abdc0815e1d149faedc406f051813dc7",
+    "projected_at": "2026-10-12T01:02:04.400417+00:00",
+    "complete": true
+  },
+  "restart": {
+    "result": "停止后重新启动同一数据目录，Projection 仍为 complete，图页面点“重试”后恢复（见 m3-browser.json neo4j_outage）"
+  },
+  "passed": true
+}
