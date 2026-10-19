@@ -98,7 +98,7 @@ def neighborhood(center, relations=None, build_id=None):
         edges.append(graph_edge(row['edge'], *ends))
     truncated = len(edges) < sum(g['total'] for g in groups)
     # True totals come from the relational store so a truncated canvas can say how much is missing.
-    with services.relational(build_id) as c:
+    with services.relational(build) as c:
         c.execute('SELECT relation,direction,count FROM v_entity_relation_summary WHERE entity_id=%s '
                   'ORDER BY relation COLLATE "C",direction COLLATE "C"', (center,))
         counts = c.fetchall()

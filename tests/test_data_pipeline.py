@@ -4,6 +4,7 @@ import csv
 import hashlib
 import json
 import os
+import re
 import sqlite3
 import sys
 import tempfile
@@ -168,6 +169,10 @@ def main():
         assert quality == "consistent" and json.loads(props)["Synonyms"]
         assert db.execute("SELECT count(*) FROM evidence WHERE edge_id=?", (edge,)).fetchone()[0] == 2
         assert db.execute("SELECT count(*) FROM entity WHERE type='icd11_code' AND label<>source_key").fetchone()[0] == 0
+        # Same key rule as ENTITY_PATTERN in backend/app.py; an ID outside it imports but its page answers 422.
+        unreachable = [i for (i,) in db.execute("SELECT id FROM entity")
+                       if not re.fullmatch(r"(bencaodian|tcm-mkg):[a-z0-9_]+:[A-Za-z0-9_.-]{1,160}", i)]
+        assert not unreachable, f"Entity IDs the API rejects: {unreachable[:5]}"
         # Roll back a deliberate corruption of the prepared snapshot.
         db.execute("UPDATE entity SET label='tampered' WHERE id='tcm-mkg:herbal_piece:CHP01717'")
         expect_failure(lambda: validate(db, manifest), "Content mismatch")

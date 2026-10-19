@@ -122,7 +122,9 @@ def stats():
         evidence = c.fetchone()["count"]
         c.execute("SELECT id,title,version_label FROM dataset ORDER BY id")
         datasets = c.fetchall()
-    return dict(build_id=application()["build_id"], entities=sum(types.values()), edges=sum(relations.values()),
+        c.execute("SELECT id FROM build")
+        build = c.fetchone()["id"]
+    return dict(build_id=build, entities=sum(types.values()), edges=sum(relations.values()),
                 business_records=sum(types.values()) + sum(relations.values()), evidence=evidence,
                 entity_types=types, relations=relations, datasets=datasets)
 
