@@ -7,6 +7,7 @@ import { label, refocusHeading, relationSections, reviewNames, setTitle, typeNam
 import AttributeValue from '../components/AttributeValue.vue'
 import CopyText from '../components/CopyText.vue'
 import EvidenceSection from '../components/EvidenceSection.vue'
+import FormulaNotes from '../components/FormulaNotes.vue'
 import RelationSection from '../components/RelationSection.vue'
 import StateView from '../components/StateView.vue'
 
@@ -61,7 +62,7 @@ const relations = computed(() => (data.value?.relation_summary ?? [])
         <h2 id="attr-heading">属性</h2>
         <dl class="attributes">
           <template v-for="row in sections.main" :key="row.key">
-            <dt>{{ row.label }}</dt>
+            <dt :id="`attr-${row.key}`">{{ row.label }}</dt>
             <dd v-if="row.missing" class="muted">来源未提供</dd>
             <dd v-else>
               <AttributeValue :value="row.value" :field="row.key" />
@@ -86,6 +87,8 @@ const relations = computed(() => (data.value?.relation_summary ?? [])
           </dl>
         </details>
       </section>
+
+      <FormulaNotes v-if="data.type === 'formula'" :entity-id="data.id" />
 
       <section v-if="sections.safety.length" class="panel detail-section notice" aria-labelledby="safety-heading">
         <h2 id="safety-heading">来源中的注意事项</h2>

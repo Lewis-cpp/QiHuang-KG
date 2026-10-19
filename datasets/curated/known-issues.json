@@ -1,5 +1,5 @@
 {
-  "basis": "docs/data-profile.json 与架构设计 2.1；仅登记结构问题及处理决定，不表示医学内容复核。",
+  "basis": "docs/data-profile.json 与架构设计 2.1；仅登记结构问题、键值更正（见 corrections.json）及处理决定，不表示医学内容复核。",
   "issues": [
     {
       "code": "unresolved_reference",
@@ -255,6 +255,20 @@
         "chen",
         "jun"
       ]
+    },
+    {
+      "code": "corrected_reference",
+      "filename": "formulas.json",
+      "record_key": "shi_zao_tang",
+      "field_path": "/composition/2/herb_key",
+      "raw_value": "da_ji"
+    },
+    {
+      "code": "corrected_reference",
+      "filename": "relationships.json",
+      "record_key": "5fae0ceafa07c1dccfab5f85708eb9b03b654bebcf3cfbf70a8c0b827253f6c0",
+      "field_path": "/herb",
+      "raw_value": "da_ji"
     }
   ]
 }

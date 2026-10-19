@@ -107,3 +107,12 @@ export interface Stats {
 export interface Service { status: string; message?: string; projection?: string; version?: string; engine?: string }
 
 export interface Health { status: string; services: Record<string, Service> }
+
+export interface NoteSource { id: string; label: string; fields: Record<string, unknown> }
+
+export interface FormulaNotes {
+  entity_id: string
+  patterns: (NoteSource & { evidence_ids: string[] })[]
+  herbs: NoteSource[]
+  build_id: string
+}

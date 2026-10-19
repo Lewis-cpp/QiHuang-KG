@@ -1,0 +1,19 @@
+{
+  "basis": "仅登记来源自身记载可以证实的组成键值更正。原始记录保持不变；更正写入边属性，原始值与依据原文作为证据保留，并在质量报告中逐条列出。",
+  "corrections": [
+    {
+      "formula": "shi_zao_tang",
+      "raw_herb": "da_ji",
+      "herb": "da_ji_2",
+      "reason_zh": "来源组成键 da_ji 指向大蓟（菊科，凉血止血），与本方说明“甘遂、大戟、芫花”及组成注释“泻水逐饮”不符；拼音同为 dà jì/dà jǐ，按来源自身说明更正为大戟。",
+      "basis": [
+        {"filename": "formulas.json", "record_key": "shi_zao_tang", "field_path": "/description_zh",
+         "text": "方以甘遂、大戟、芫花三味峻烈逐水药为主"},
+        {"filename": "formulas.json", "record_key": "shi_zao_tang", "field_path": "/composition/2/explanation_zh",
+         "text": "泻水逐饮"},
+        {"filename": "herbs.json", "record_key": "da_ji_2", "field_path": "/actions/0/zh",
+         "text": "泻水逐饮"}
+      ]
+    }
+  ]
+}

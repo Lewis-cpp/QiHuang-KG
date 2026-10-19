@@ -1,15 +1,22 @@
 {
-  "checked_at": "2026-10-08T07:04:04.693496+00:00",
+  "checked_at": "2026-10-16T03:41:44.781445+00:00",
   "status": "postgresql_verified_vastbase_deferred",
-  "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
-  "prepared_release": "var/prepared/5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "build_id": "cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e",
+  "prepared_release": "var/prepared/cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e",
+  "previous_build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+  "changes_from_previous": [
+    "十枣汤组成：来源键 da_ji（大蓟）按 datasets/curated/corrections.json 更正为 da_ji_2（大戟）；原始记录不变。",
+    "边：1 条组成边换了目标（十枣汤→大蓟 改为 十枣汤→大戟），边总数不变；新增 3 条 source_quote 证据作为更正依据。",
+    "core_issue_counts 新增 corrected_reference 2（方剂组成与关系文件各一处）。",
+    "中间批次 c0406848… 与本批次六张表内容哈希完全相同，只因导入脚本增加了两项输入检查而换了批次号。"
+  ],
   "counts": {
     "dataset": 2,
     "source_record": 197287,
     "entity": 20374,
     "alias": 2972,
     "edge": 179502,
-    "evidence": 291305,
+    "evidence": 291308,
     "business_records": 199876,
     "entity_types": {
       "formula": 112,
@@ -96,7 +103,8 @@
   },
   "core_issue_counts": {
     "unresolved_reference": 35,
-    "conflicting_claim": 1
+    "conflicting_claim": 1,
+    "corrected_reference": 2
   },
   "issues": [
     {
@@ -131,16 +139,16 @@
     "source_record": "39d10e43bc624f9c42ed1cb45290ba44d667282eb4ee81afcaafe187392beaec",
     "entity": "3c5aff04a488069ab5c5fda9a8128b57ecb353fdbfd69a4a038262636701df9c",
     "alias": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "edge": "7e84482dff90d86c2f8db208ddcdaa69ae0e0b339bf94e56d930ae21b2d027ca",
-    "evidence": "06d1a27e85f7e48d0129607a8613bf2f0e4c0a8dbb47724ac75e9b0bb41d8120"
+    "edge": "49b6433544fefe4f219d1c124aff21e1e8f984d3c08d6ca3841c3d62d83df653",
+    "evidence": "e168b2ab3e4159173fb793114c9024199b9b36f5ab8eda96a4102d5a45f192d3"
   },
   "table_sha256": {
     "dataset": "0a6b29e7dc0ffcb3f590560ed8bc33554500eb56e75087b7639ce4182cdf7a9d",
     "source_record": "b81d1b6fb309c36d862e1baf14ea87f1e85b12db82336c2ed59f0ee92bb71497",
     "entity": "3f6f9149b48f25c07e89f327712f69eb65e8f8b7b5b7b70fdf64c9a0c12dfcf5",
     "alias": "15a0003522bfc7579441409fcc5f9eec394fa4845e7ad0d430bdb34cf2999c78",
-    "edge": "64b22666e0955eaa240b7699ff80f231ef1e4c6345506d3c35bb3b866d88ff88",
-    "evidence": "8398f361e832946dc326b4ffc11eea91985ee3e557ca4386fdae9f96fc3cfc4e"
+    "edge": "45e8bc4a539f290038c2d03c9b44859b231000cba9e5b6aa2c8c614c7be0d834",
+    "evidence": "7636c4d476c75058378c48ff3dfe2f355fb7f940a9a68c8323c90ff7d3ca0606"
   },
   "checks": {
     "core_row_equality": "passed",
@@ -151,11 +159,13 @@
     "evidence_pointers": "passed",
     "raw_preservation": "passed",
     "business_count": "passed",
-    "table_content_matches_previous_release": "passed",
     "core_import_regression": "passed",
     "data_pipeline_regression": "passed",
     "wrong_id_prefix_rejection": "passed",
     "quality_failure_rejection": "passed",
+    "correction_stale_rejection": "passed",
+    "correction_basis_mismatch_rejection": "passed",
+    "duplicate_correction_rejection": "passed",
     "postgresql_full_import": "passed",
     "postgresql_repeat_import": "passed",
     "postgresql_validation_failure_rollback": "passed",
@@ -169,25 +179,25 @@
   },
   "environment": {
     "status": "passed",
-    "checked_at": "2026-10-08T07:03:07.388995+00:00",
+    "checked_at": "2026-10-16T03:34:20.932367+00:00",
     "engine": "postgresql",
     "purpose": "development",
     "local": {
-      "python": "3.12.15",
-      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
-      "disk_free_bytes": 126545080320
+      "python": "3.12.3",
+      "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+      "disk_free_bytes": 28928806912
     },
     "database": {
       "engine": "postgresql",
-      "version": "PostgreSQL 18.6 (Debian 18.6-1.pgdg12+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+      "version": "PostgreSQL 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit",
       "compatibility": "native",
       "encoding": "UTF8"
     },
     "vastbase": null,
     "import_result": {
       "status": "imported",
-      "schema": "qihuang_5a76218e52001d45e4bd75e0",
-      "build_id": "5a76218e52001d45e4bd75e099a38780408e873342a14e5db0c86d7bb7a3008a",
+      "schema": "qihuang_cbadd11ea5c86dc3d7654c46",
+      "build_id": "cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e",
       "verification": {
         "counts": {
           "dataset": 2,
@@ -195,15 +205,15 @@
           "entity": 20374,
           "alias": 2972,
           "edge": 179502,
-          "evidence": 291305
+          "evidence": 291308
         },
         "table_sha256": {
           "dataset": "0a6b29e7dc0ffcb3f590560ed8bc33554500eb56e75087b7639ce4182cdf7a9d",
           "source_record": "b81d1b6fb309c36d862e1baf14ea87f1e85b12db82336c2ed59f0ee92bb71497",
           "entity": "3f6f9149b48f25c07e89f327712f69eb65e8f8b7b5b7b70fdf64c9a0c12dfcf5",
           "alias": "15a0003522bfc7579441409fcc5f9eec394fa4845e7ad0d430bdb34cf2999c78",
-          "edge": "64b22666e0955eaa240b7699ff80f231ef1e4c6345506d3c35bb3b866d88ff88",
-          "evidence": "8398f361e832946dc326b4ffc11eea91985ee3e557ca4386fdae9f96fc3cfc4e"
+          "edge": "45e8bc4a539f290038c2d03c9b44859b231000cba9e5b6aa2c8c614c7be0d834",
+          "evidence": "7636c4d476c75058378c48ff3dfe2f355fb7f940a9a68c8323c90ff7d3ca0606"
         },
         "quality": {
           "invalid_endpoint_types": 0,
@@ -261,7 +271,14 @@
               "role": "shi"
             }
           ]
-        ]
+        ],
+        "views": {
+          "v_formula_composition": 751,
+          "v_entity_relation_summary": {
+            "in": 179502,
+            "out": 179502
+          }
+        }
       }
     },
     "driver": {
@@ -272,6 +289,7 @@
       "status": "passed",
       "checks": [
         "target_ddl",
+        "business_views",
         "unicode",
         "parameters",
         "text_json",
@@ -291,17 +309,12 @@
   },
   "application_selection": {
     "database_engine": "postgresql",
-    "schema": "qihuang_1fe2300d6005081f99274e8b",
-    "build_id": "1fe2300d6005081f99274e8b30475dc0a96029eb180e44b179825d1a0596d054"
-  },
-  "runtime_repair": {
-    "python": "3.12.15",
-    "dependencies": "requirements.lock",
-    "previous_environment_backup": "var/venv-before-runtime-repair"
+    "schema": "qihuang_cbadd11ea5c86dc3d7654c46",
+    "build_id": "cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e"
   },
   "remaining": [
     "在真实 Vastbase 上验证同批次数据及驱动兼容性，作为最终交付验收。",
-    "35 条书目缺失和 1 处角色冲突保留原值与标记，尚未完成内容复核。",
-    "应用与 Neo4j 样例仍使用原批次；新校验批次单独入库，两批业务内容摘要相同。"
+    "35 条书目缺失和 1 处角色冲突保留原值与标记，尚未完成内容复核；十枣汤以外的组成未做医学内容复核。",
+    "本报告在云端容器的 PostgreSQL 16.15 上生成，不是 Compose 中的 PostgreSQL 18.6；Neo4j 样例与全量投影未在此环境重建。"
   ]
 }
