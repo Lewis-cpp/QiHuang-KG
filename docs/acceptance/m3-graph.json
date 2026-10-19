@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-19",
+  "build_id": "cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e",
+  "environment": {
+    "database": "PostgreSQL 18 (Compose, 127.0.0.1:15432)",
+    "neo4j": "5.26.31 community (Compose), heap max 512 MiB, page cache 256 MiB",
+    "model": "not configured",
+    "browser": "Google Chrome headless via puppeteer-core (script not committed)"
+  },
+  "projection": {
+    "nodes": 20374,
+    "edges": 179502,
+    "id_digest": {
+      "nodes": "18bc60efd459dbd3e11f00aadf448154b6aeedbce6e830a97f2c54500e7b63ab",
+      "edges": "368c2d13317b12c8d40d9eb50814fb473d96c282e43e05205068ebffd159838f"
+    },
+    "seconds": {
+      "first_run": {"read": 1.0, "write": 11.7, "total": 15.6},
+      "rerun_idempotent": {"read": 0.9, "write": 6.0, "total": 8.7}
+    },
+    "neo4j_container_memory_gib": {"before": 1.358, "peak_sampled_during_rerun": 1.367, "samples": 4, "note": "docker stats samples take about 2 s each"},
+    "neo4j_data_size": "1.2G (/data in the container, including old builds' sample and full projections)"
+  },
+  "double_store_consistency": {
+    "one_hop": "formula edge sets from /graph equal /entities/{id}/relations for CONTAINS and ASSOCIATED_WITH_PATTERN",
+    "two_hop": "/graph/paths equals /relation-queries for every bencaodian herb (herb_patterns_via_formula), compared on role, position, dosage_raw",
+    "test": "tests/test_app.py"
+  },
+  "neo4j_stop_start": {
+    "stopped": {"/graph": 503, "/graph/paths": 503, "/entities/{id}": 200, "/entities?q=": 200, "/stats": 200, "health.neo4j": "unavailable, projection not_ready"},
+    "after_start": {"/graph": 200, "/graph/paths": 200, "projection": "full", "complete": true, "node_count": 20374, "edge_count": 179502, "digest_matches_relational": true}
+  },
+  "dump_load": {
+    "method": "docker compose stop neo4j; neo4j-admin database dump neo4j (same image, data volume mounted); compose start. Load into a new volume with --overwrite-destination=true and a temporary instance on 127.0.0.1:27687",
+    "dump_bytes": 130326533,
+    "seconds": {"stop_and_dump": 14.7, "restart_to_healthy": 12.4, "load": 4.2},
+    "restored": {"projection_markers_identical_to_original": true, "markers": 5, "nodes": 20374, "edges": 179502, "digest_matches_relational": true, "constraints": ["entity_identity", "projection_identity"], "link_index": true},
+    "cleanup": "temporary container and volume removed; the original volume was not overwritten"
+  },
+  "tests": {
+    "tests/test_project_graph.py": "pass",
+    "tests/test_app.py": "pass",
+    "tests/test_api.py": "pass",
+    "frontend npm run build + npm test": "pass (5/5)"
+  },
+  "browser_checks": [
+    "canvas click selects the formula node",
+    "expanding 人参 grows the graph from 7 to 28 nodes",
+    "clicking a relation shows its evidence links",
+    "hub node shows the truncation notice; expanding stops at 100 nodes with the cap banner",
+    "stubbed 503 from /graph shows the service message, retry, and the link back to the entity page"
+  ]
+}

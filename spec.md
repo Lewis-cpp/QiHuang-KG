@@ -531,6 +531,8 @@ frontend/src/
 
 ## 6. M3：Neo4j 全量投影与图谱（T12–T13）
 
+状态：**已实现**（2026-10-19）。交付说明与出口实测见 [docs/dev/m3-delivery.md](docs/dev/m3-delivery.md)。
+
 ### 6.1 投影构建：`scripts/project_graph.py`
 
 - **输入**：关系库中当前配置的批次，用导入账号只读访问。
