@@ -59,6 +59,7 @@ class EntityDetail(Node):
     relation_summary: list[RelationSummary]
     evidence_total: int
     evidence_preview: list[EvidencePreview]
+    same_name_entities: list[Node]
     build_id: str
 
 
@@ -226,4 +227,21 @@ class GraphPage(BaseModel):
     relation_counts: list[RelationSummary]
     relation_counts_source: str
     graph_source: Literal['neo4j']
+    build_id: str
+
+
+class NoteSource(BaseModel):
+    id: str
+    label: str
+    fields: dict[str, Any]
+
+
+class PatternNote(NoteSource):
+    evidence_ids: list[str]
+
+
+class FormulaNotes(BaseModel):
+    entity_id: str
+    patterns: list[PatternNote]
+    herbs: list[NoteSource]
     build_id: str

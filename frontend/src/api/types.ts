@@ -34,6 +34,7 @@ export interface EntityDetail extends Node {
   relation_summary: RelationSummary[]
   evidence_total: number
   evidence_preview: EvidencePreview[]
+  same_name_entities: Node[]
   build_id: string
 }
 
@@ -144,5 +145,14 @@ export interface GraphPage {
   relation_counts: RelationSummary[]
   relation_counts_source: string
   graph_source: 'neo4j'
+  build_id: string
+}
+
+export interface NoteSource { id: string; label: string; fields: Record<string, unknown> }
+
+export interface FormulaNotes {
+  entity_id: string
+  patterns: (NoteSource & { evidence_ids: string[] })[]
+  herbs: NoteSource[]
   build_id: string
 }

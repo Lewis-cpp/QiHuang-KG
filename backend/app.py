@@ -135,6 +135,12 @@ def entity_relations(id: EntityID, relation: Annotated[Literal[queries.RELATIONS
     return queries.entity_relations(id, relation, direction, limit, offset, build_id)
 
 
+@app.get("/api/v1/entities/{id}/formula-notes", response_model=schemas.FormulaNotes,
+         summary="方剂关联证候的症状与组成药物的注意事项（来源原文）")
+def formula_notes(id: EntityID, build_id: BuildID = None):
+    return queries.formula_notes(id, build_id)
+
+
 @app.get("/api/v1/datasets", response_model=schemas.DatasetPage, summary="来源、版本、许可与署名")
 def datasets(build_id: BuildID = None):
     return queries.datasets(build_id)
