@@ -222,3 +222,32 @@ class FormulaNotes(BaseModel):
     patterns: list[PatternNote]
     herbs: list[NoteSource]
     build_id: str
+
+
+class GraphEdge(BaseModel):
+    id: str
+    source_id: str
+    target_id: str
+    relation: str
+    quality_state: str
+    evidence_ids: list[str]
+    properties: dict[str, Any]
+
+
+class GraphLimits(BaseModel):
+    nodes: int
+    edges: int
+
+
+class RelationCount(RelationSummary):
+    source: Literal['relational']
+
+
+class GraphResponse(BaseModel):
+    center: str
+    nodes: list[Node]
+    edges: list[GraphEdge]
+    truncated: bool
+    limits: GraphLimits
+    relation_counts: list[RelationCount]
+    build_id: str

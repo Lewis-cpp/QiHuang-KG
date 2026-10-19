@@ -147,9 +147,12 @@ def sample_graph():
         marker = session.run("MATCH (p:Projection {scope:'bootstrap',build_id:$build,complete:true}) RETURN p", build=build).single()
         if not marker:
             raise ServiceError("projection_not_ready", "当前批次的样例图尚未构建")
-        nodes = session.run("MATCH (n:Entity {build_id:$build,scope:'bootstrap'}) "
-                            "RETURN n.id AS id,n.label AS label,n.type AS type ORDER BY id", build=build).data()
-        edges = session.run("MATCH (s:Entity {build_id:$build})-[r:LINK {build_id:$build,scope:'bootstrap'}]->(t:Entity) "
-                            "RETURN r.id AS id,s.id AS source_id,t.id AS target_id,r.relation AS relation," 
-                            "r.evidence_ids AS evidence_ids ORDER BY id", build=build).data()
+        # Read by the fixed sample formula, not by scope: a full projection re-labels the same nodes.
+        edges = session.run("MATCH (s:Entity {build_id:$build,id:$formula})-[r:LINK {build_id:$build}]->(t:Entity {build_id:$build}) "
+                            "WHERE r.relation IN ['CONTAINS','ASSOCIATED_WITH_PATTERN'] "
+                            "RETURN r.id AS id,s.id AS source_id,t.id AS target_id,r.relation AS relation,"
+                            "r.evidence_ids AS evidence_ids ORDER BY id", build=build, formula=SAMPLE_FORMULA).data()
+        ids = sorted({SAMPLE_FORMULA} | {e["target_id"] for e in edges})
+        nodes = session.run("MATCH (n:Entity {build_id:$build}) WHERE n.id IN $ids "
+                            "RETURN n.id AS id,n.label AS label,n.type AS type ORDER BY id", build=build, ids=ids).data()
     return dict(nodes=nodes, edges=edges, build_id=build, scope="bootstrap")
