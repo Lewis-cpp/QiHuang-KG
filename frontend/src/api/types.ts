@@ -117,3 +117,23 @@ export interface FormulaNotes {
   herbs: NoteSource[]
   build_id: string
 }
+
+export interface GraphEdge {
+  id: string
+  source_id: string
+  target_id: string
+  relation: string
+  quality_state: string
+  evidence_ids: string[]
+  properties: Record<string, unknown>
+}
+
+export interface GraphResponse {
+  center: string
+  nodes: Node[]
+  edges: GraphEdge[]
+  truncated: boolean
+  limits: { nodes: number; edges: number }
+  relation_counts: (RelationSummary & { source: 'relational' })[]
+  build_id: string
+}

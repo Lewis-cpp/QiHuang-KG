@@ -61,3 +61,19 @@ export function refocusHeading() {
     if (!active || active === document.body) document.querySelector<HTMLElement>('main h1')?.focus({ preventScroll: true })
   })
 }
+
+// Graph styling (spec §6.4): relations differ by colour and line style, and the legend spells both out.
+export const relationStyles: Record<string, { color: string; line: 'solid' | 'dashed' | 'dotted'; lineName: string }> = {
+  CONTAINS: { color: '#286252', line: 'solid', lineName: '实线' },
+  ASSOCIATED_WITH_PATTERN: { color: '#af7a2f', line: 'dashed', lineName: '虚线' },
+  CITED_IN: { color: '#4f6fa8', line: 'dotted', lineName: '点线' },
+  HAS_HERBAL_PIECE: { color: '#7a4f8f', line: 'solid', lineName: '实线' },
+  ASSOCIATED_WITH_TERM: { color: '#b04f5a', line: 'dashed', lineName: '虚线' },
+  MAPPED_TO_ICD11: { color: '#5f6f68', line: 'dotted', lineName: '点线' },
+  HAS_MEDICINAL_PROPERTY: { color: '#2f7f95', line: 'dashed', lineName: '虚线' },
+}
+
+export const typeColors: Record<string, string> = {
+  formula: '#164c43', herb: '#5b8a4a', pattern: '#af8051', text: '#6b7fa3', tcm_term: '#a35f6d',
+  patent_medicine: '#7a4f8f', herbal_piece: '#7aa05a', icd11_code: '#7d8a82', medicinal_property: '#3f8aa0',
+}

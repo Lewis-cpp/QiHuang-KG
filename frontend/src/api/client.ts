@@ -35,14 +35,15 @@ export function forgetBuild() {
   try { sessionStorage.removeItem(BUILD_KEY) } catch { /* memory only */ }
 }
 
-type Params = Record<string, string | number | undefined | null>
+type Params = Record<string, string | number | string[] | undefined | null>
 interface Options { signal?: AbortSignal; pinBuild?: boolean; acceptStatus?: number[] }
 
 export async function get<T>(path: string, params: Params = {}, options: Options = {}): Promise<T> {
   const { signal, pinBuild = true, acceptStatus = [] } = options
   const search = new URLSearchParams()
   for (const [key, value] of Object.entries(params)) {
-    if (value !== undefined && value !== null && value !== '') search.set(key, String(value))
+    if (Array.isArray(value)) value.forEach(item => search.append(key, item))
+    else if (value !== undefined && value !== null && value !== '') search.set(key, String(value))
   }
   const build = pinBuild ? storedBuild() : null
   if (build) search.set('build_id', build)
