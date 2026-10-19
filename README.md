@@ -1,10 +1,13 @@
 # QiHuang-KG
 
-面向中医药学习者的知识图谱检索与学习系统。已完成两源清洗、PostgreSQL 入库、Neo4j 样例验证、Vue + FastAPI 最小链路及 M1a 详情与证据 API。主库包含 20,374 个实体、179,502 条关系、291,308 条证据，实体与关系合计 199,876 条。当前使用 PostgreSQL，最终交付前迁移到 Vastbase。模型按用户安排暂不配置，已准备自行接入与验证说明。
+面向中医药学习者的知识图谱检索与学习系统。已完成两源清洗、PostgreSQL 入库、详情与证据 API（M1）、资料检索页面（M2）和 Neo4j 全量投影与关系图谱（M3）。主库包含 20,374 个实体、179,502 条关系、291,308 条证据，实体与关系合计 199,876 条。当前使用 PostgreSQL，最终交付前迁移到 Vastbase。模型按用户安排暂不配置，已准备自行接入与验证说明。
 
 - [启动、检查与模型接入](docs/bootstrap.md)
 - [M0 + M1a 开发交付说明](docs/dev/m0-m1a-delivery.md)
 - [M0 + M1a 验收记录](docs/dev/m0-m1a-acceptance.md)
+- [M1b 交付说明](docs/dev/m1b-delivery.md)
+- [M2 交付说明](docs/dev/m2-delivery.md)
+- [M3 交付说明](docs/dev/m3-delivery.md)
 - [首版范围冻结](docs/scope-freeze.md)
 - [环境验证记录](docs/environment-report.json)
 - [原型架构阅读版（历史）](architecture-design.html)
@@ -41,7 +44,7 @@ docker compose up -d --wait
 .venv/bin/python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000
 ```
 
-另一终端在 `frontend/` 执行 `npm ci`、`npm run dev`，打开 `http://127.0.0.1:5174`。页面提供真实统计、名称与类型检索、连接状态、四君子汤关系样例；M1a 详情、证据和组成查询可通过 `/docs` 或 curl 使用；前端详情、交互图谱和 AI 功能留待后续阶段。全新环境的依赖安装与数据导入见[启动说明](docs/bootstrap.md)。
+另一终端在 `frontend/` 执行 `npm ci`、`npm run dev`，打开 `http://127.0.0.1:5174`。页面提供名称与别名检索、实体详情、证据、来源与统计；每条检索结果和详情页都可进入关系图谱 `/graph/<实体ID>`（一跳展开、关系筛选、中药两跳路径）。接口文档见 `http://127.0.0.1:8000/docs`。AI 功能属于 M4，尚未实现。全新环境的依赖安装与数据导入见[启动说明](docs/bootstrap.md)。
 
 开发库位于 `127.0.0.1:15432`，库名 `qihuang`。私有连接配置为 `config/postgresql.json`；密码自动生成并复用，未纳入版本管理。PostgreSQL 与 Neo4j 均通过 Docker 命名卷持久化。
 

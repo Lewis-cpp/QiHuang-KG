@@ -108,6 +108,7 @@ watch(data, result => {
               <p>
                 {{ item.category || '来源未提供分类' }}
                 <span v-if="item.match" class="match">· {{ item.match.field === 'name' ? '名称命中' : `别名命中：${item.match.text}` }}</span>
+                · <RouterLink class="text-link" :to="`/graph/${encodeURIComponent(item.id)}`" :aria-label="`${item.label} 关系图谱`">图谱</RouterLink>
               </p>
             </div>
             <span class="source">{{ label(datasetNames, item.dataset_id) }}<small>{{ label(reviewNames, item.review_status) || '状态未提供' }}</small></span>
