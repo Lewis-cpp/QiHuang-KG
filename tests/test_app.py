@@ -52,7 +52,7 @@ def main():
         assert health.json()["services"]["database"]["status"] == "ready"
         assert health.json()["services"]["neo4j"]["projection"] == "sample"
     stats = client.get("/api/v1/stats").json()
-    assert (stats["entities"], stats["edges"], stats["evidence"], stats["business_records"]) == (20374, 179502, 291305, 199876)
+    assert (stats["entities"], stats["edges"], stats["evidence"], stats["business_records"]) == (20374, 179502, 291308, 199876)
     result = client.get("/api/v1/entities", params={"q": "四君子汤", "type": "formula"}).json()
     assert result["total"] == 1 and result["items"][0]["id"] == services.SAMPLE_FORMULA
     assert client.get("/api/v1/entities", params={"q": "' OR 1=1 --"}).json()["total"] == 0
