@@ -12,7 +12,7 @@
 
 | 方面 | 状态 | 依据 |
 | --- | --- | --- |
-| 数据 | 两源清洗完成：20,374 实体、179,502 业务关系、291,305 证据，业务记录合计 199,876 | `prepare_data.py`；`test_data_pipeline.py` 于 2026-10-10 重跑通过 |
+| 数据 | 两源清洗完成：20,374 实体、179,502 业务关系、291,308 证据，业务记录合计 199,876 | `prepare_data.py`；`test_data_pipeline.py` 于 2026-10-10 重跑通过 |
 | 关系库 | PostgreSQL 18.6 开发库已入库，每个批次一个独立 schema | `docs/vastbase-import.md` |
 | 图库 | Neo4j 5.26，四君子汤样例：6 节点、5 关系 | `verify_environment.py` |
 | 后端 | 5 个接口：`health/live`、`health`、`stats`、`entities`、`graph/sample` | `backend/app.py` |
