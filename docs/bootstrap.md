@@ -173,7 +173,7 @@ python3 scripts/setup_services.py
 
 脚本用导入账号从当前批次只读取数，按每批 5,000 条写入 20,374 个节点和 179,502 条边，再核对数量和 ID 摘要，全部一致后才把 `Projection.complete` 设为 `true`。报告写到 `var/graph-projection-report.json`。重复执行时，已完成的投影只重新核对、不重写；需要重写时加 `--rebuild`。清理旧批次用 `--prune <build_id>`，不能删除当前批次。投影完成后重启后端不是必需的，图谱页面打开 `/graph/<实体 ID>` 即可，详情页页头也有入口。
 
-备份与恢复（需先停止 Neo4j 容器）：
+备份与恢复（需先停止 Neo4j 容器）。备份目录要允许容器内的 `neo4j` 用户（UID 7474）写入；若 `var/neo4j-dumps` 已被该用户占用，请换一个目录，并在 `load` 前核对备份文件的大小：
 
 ```sh
 docker compose stop neo4j

@@ -22,7 +22,7 @@
 
 Neo4j 无法从 Docker Hub 拉取（匿名拉取限额），所以用 Maven Central 上的同版本构件 `org.neo4j:neo4j:5.26.31`（与 Compose 镜像摘要对应的 5.26.31 相同）以嵌入方式启动，开启 Bolt `127.0.0.1:17687`，堆上限 512 MB、页缓存 256 MB，与 Compose 一致。备份恢复用同版本构件中的 `neo4j-admin`（`org.neo4j.cli.AdminTool`）。没有配置模型。
 
-以上结果来自这套环境，不是 Compose 中的 PostgreSQL 18.6 和 Neo4j 容器。在开发机上按[运行说明](../bootstrap.md#m3-neo4j-全量投影与图谱)执行 `project_graph.py` 和测试即可复核；其中 Compose 下的 `dump` / `load` 命令没有在容器中实际运行过。
+以上结果来自这套环境，不是 Compose 中的 PostgreSQL 18.6 和 Neo4j 容器。在开发机上按[运行说明](../bootstrap.md#m3-neo4j-全量投影与图谱)执行 `project_graph.py` 和测试即可复核。
 
 ## 3. 结果
 
@@ -49,6 +49,20 @@ Neo4j 无法从 Docker Hub 拉取（匿名拉取限额），所以用 Maven Cent
 - **君臣佐使**：四君子汤依次为人参（君）、白术（臣）、茯苓（佐）、甘草（使）；中药甘草收录于 61 首方剂，先显示以它为君的炙甘草汤、为臣的四逆汤，其余 59 首中它都是使药，按名称排。
 - **冲突边**：猪苓汤 → 泽泻在图上加粗标 ⚠，侧栏不写角色，列出 2 条证据。
 - **两跳**：人参 23 条路径，首条"人参 ← 乌梅丸 → 厥阴病证"，与 M1 关系库模板的结果一致。
+
+### 3.1 在 Compose 开发环境中的复核（2026-10-19）
+
+在开发机的真实 Compose 服务（Neo4j 5.26.31 镜像、PostgreSQL 18）上复核，结果见 [m3-compose-drills.json](../acceptance/m3-compose-drills.json)：
+
+| 检查 | 结果 |
+| --- | --- |
+| `project_graph.py --rebuild` | 11.8 s；堆已用约 74 MiB（上限 512 MiB）；容器内存约 1.36 GiB |
+| 停止 Neo4j | `/graph`、`/graph/paths` 返回 503；详情、检索、统计 200 |
+| 重新启动 | 投影仍为 `complete`，数量与摘要和主库一致 |
+| `docs/bootstrap.md` 中的 `dump` / `load` 命令 | 备份 130 MB；停机导出约 14 s，恢复约 4 s；`load` 在独立的 Compose 项目中执行，没有覆盖开发数据卷；恢复实例与原实例的 5 条 `Projection` 标记一致，三项核对为 `true` |
+| `tests/test_project_graph.py` | 通过：重复写入不增加数据，写入本身不产生完成标记，`verify` 能识别缺边、多余节点和被改的 ID，`--prune` 拒绝当前批次 |
+
+备份目录必须允许容器内的 `neo4j` 用户（UID 7474）写入。若 `var/neo4j-dumps` 已存在且属于该用户，宿主用户无法读写，导出会失败，随后的 `load` 会静默恢复目录中更早的备份。恢复前请核对备份文件的大小和文件数。
 
 ## 4. 截图
 
