@@ -49,11 +49,17 @@ def application():
     return settings
 
 
-@contextmanager
-def relational(build_id=None):
+def selected(build_id):
+    """The release settings, refusing a request pinned to another batch."""
     settings = application()
     if build_id is not None and build_id != settings["build_id"]:
         raise ServiceError("snapshot_changed", "数据批次已更新，请刷新后重试")
+    return settings
+
+
+@contextmanager
+def relational(build_id=None):
+    settings = selected(build_id)
     # The application uses the read-only role; the import account is reserved for scripts.
     params = config(settings["database_engine"] + "_reader")
     params["connect_timeout"] = 3
@@ -122,7 +128,9 @@ def stats():
         evidence = c.fetchone()["count"]
         c.execute("SELECT id,title,version_label FROM dataset ORDER BY id")
         datasets = c.fetchall()
-    return dict(build_id=application()["build_id"], entities=sum(types.values()), edges=sum(relations.values()),
+        c.execute("SELECT id FROM build")
+        build = c.fetchone()["id"]
+    return dict(build_id=build, entities=sum(types.values()), edges=sum(relations.values()),
                 business_records=sum(types.values()) + sum(relations.values()), evidence=evidence,
                 entity_types=types, relations=relations, datasets=datasets)
 

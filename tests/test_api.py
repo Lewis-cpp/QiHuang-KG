@@ -795,6 +795,20 @@ def openapi_checks():
     assert client.get('/docs').status_code == 200
 
 
+def switch_checks():
+    """The release config moves to another batch after the request's first read of it."""
+    real = services.application()
+    def switched_after_first_read():
+        calls = iter([real])
+        return lambda: next(calls, dict(real, build_id='0' * 64))
+    # Graph read from the old batch, counts from the new one: refuse instead of mixing them.
+    with patch.object(services, 'application', side_effect=switched_after_first_read()):
+        error('/graph', 409, 'snapshot_changed', center=FORMULA)
+    # Counts came from the old batch's snapshot, so the response must name that batch.
+    with patch.object(services, 'application', side_effect=switched_after_first_read()):
+        ok('/stats')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--with-outage', action='store_true', help='Temporarily stop local PostgreSQL; needs API on :8000')
@@ -814,6 +828,7 @@ def main():
     health_checks()
     reader_checks()
     graph_checks()
+    switch_checks()
     centers = graph_order_checks()
     herbs, paths = graph_path_checks()
     openapi_checks()
