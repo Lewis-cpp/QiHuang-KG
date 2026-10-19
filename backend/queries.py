@@ -33,6 +33,22 @@ def evidence_page(c, entity_id, limit, offset):
     return dict(items=c.fetchall(), total=total, limit=limit, offset=offset)
 
 
+COUNTERPART = {'herb': 'herbal_piece', 'herbal_piece': 'herb'}
+
+
+def same_name_counterpart(c, entity):
+    """The other source's herb/herbal piece with the identical name, only when the pairing is one-to-one."""
+    other = COUNTERPART.get(entity['type'])
+    if other is None:
+        return []
+    c.execute('SELECT id,type,label FROM entity WHERE name_norm=%s AND type IN (%s,%s)',
+              (entity['name_norm'], entity['type'], other))
+    rows = c.fetchall()
+    same = [row for row in rows if row['type'] == entity['type']]
+    match = [row for row in rows if row['type'] == other]
+    return match if len(same) == 1 and len(match) == 1 else []
+
+
 def entity_detail(entity_id, build_id=None):
     with services.relational(build_id) as c:
         build = current_build(c)
@@ -46,11 +62,12 @@ def entity_detail(entity_id, build_id=None):
                   'ORDER BY relation COLLATE "C",direction COLLATE "C"', (entity_id,))
         summary = c.fetchall()
         evidence = evidence_page(c, entity_id, 20, 0)
+        same_name = same_name_counterpart(c, entity)
     return dict(id=entity['id'], type=entity['type'], label=entity['label'], dataset=dataset,
                 category=entity['category'], review_status=entity['review_status'],
                 review_status_raw=entity['review_status_raw'], source_record_id=entity['source_record_id'],
                 attributes=json.loads(entity['attributes_json']), aliases=aliases, relation_summary=summary,
-                evidence_total=evidence['total'], evidence_preview=evidence['items'], build_id=build)
+                evidence_total=evidence['total'], evidence_preview=evidence['items'], same_name_entities=same_name, build_id=build)
 
 
 def entity_evidence(entity_id, limit, offset, build_id=None):

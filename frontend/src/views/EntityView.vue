@@ -52,6 +52,15 @@ const relations = computed(() => (data.value?.relation_summary ?? [])
         <p class="entity-id"><CopyText :text="data.id" label="实体 ID" /></p>
       </header>
 
+      <section v-if="data.type === 'herbal_piece' || data.same_name_entities.length" class="panel detail-section" aria-labelledby="same-name-heading">
+        <h2 id="same-name-heading">同名条目</h2>
+        <p v-if="data.same_name_entities.length">
+          {{ data.type === 'herb' ? '另一来源中有同名饮片：' : '本草典中有同名药材，含功效、主治与安全信息：' }}
+          <RouterLink v-for="item in data.same_name_entities" :key="item.id" class="text-link" :to="`/entity/${encodeURIComponent(item.id)}`">{{ item.label }}（{{ label(typeNames, item.type) }}）</RouterLink>
+        </p>
+        <p v-else class="muted">该来源只提供名称、同义词与分类，不含功效和主治；本草典中没有可唯一对应的同名药材。</p>
+      </section>
+
       <section v-if="data.aliases.length" class="panel detail-section" aria-labelledby="alias-heading">
         <h2 id="alias-heading">别名 <span class="count">{{ data.aliases.length }}</span></h2>
         <ul class="alias-list"><li v-for="alias in aliases" :key="`${alias.name}|${alias.source_record_id}|${alias.field_path}`">{{ alias.name }}</li></ul>
