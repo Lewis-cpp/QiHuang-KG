@@ -98,6 +98,12 @@ def detail_checks():
     page = ok('/entities/' + FORMULA + '/evidence')
     assert [{k: item[k] for k in ('id', 'kind', 'field_path', 'excerpt')} for item in page['items']] == formula['evidence_preview']
     herb = ok('/entities/' + GINSENG)
+    piece = [dict(id='tcm-mkg:herbal_piece:CHP03319', type='herbal_piece', label='人参')]
+    assert herb['same_name_entities'] == piece
+    assert ok('/entities/tcm-mkg:herbal_piece:CHP03319')['same_name_entities'] == [dict(id=GINSENG, type='herb', label='人参')]
+    for ambiguous in ('tcm-mkg:herbal_piece:CHP00520', 'bencaodian:herb:da_ji', 'bencaodian:herb:da_ji_cao'):
+        assert ok('/entities/' + ambiguous)['same_name_entities'] == []
+    assert formula['same_name_entities'] == []
     assert herb['relation_summary'] == [dict(relation='CITED_IN', direction='out', count=1),
                                          dict(relation='CONTAINS', direction='in', count=21)]
     assert herb['evidence_total'] == 2 and herb['evidence_preview'][0]['kind'] == 'source_quote'

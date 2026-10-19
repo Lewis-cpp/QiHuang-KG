@@ -59,6 +59,7 @@ class EntityDetail(Node):
     relation_summary: list[RelationSummary]
     evidence_total: int
     evidence_preview: list[EvidencePreview]
+    same_name_entities: list[Node]
     build_id: str
 
 

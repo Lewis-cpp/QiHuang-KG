@@ -34,6 +34,7 @@ export interface EntityDetail extends Node {
   relation_summary: RelationSummary[]
   evidence_total: number
   evidence_preview: EvidencePreview[]
+  same_name_entities: Node[]
   build_id: string
 }
 
