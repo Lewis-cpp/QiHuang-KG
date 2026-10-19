@@ -20,8 +20,8 @@ const TEXT_FIELDS: [string, string][] = [['contraindications', '禁忌'], ['safe
 const GROUP_FIELDS: [string, string][] = [['pregnancy', '孕期'], ['lactation', '哺乳期'], ['pediatric', '儿童']]
 
 // Dosage notes mostly say how to decoct; only those with safety wording count as a precaution.
-// Phrases, not single characters: "解毒" and "无毒" must not match, while "仅供外用" and "宜减量" must.
-const SAFETY_WORDING = /有毒|小毒|大毒|毒性|中毒|毒大|十八反|十九畏|禁用|禁服|严禁|忌用|忌服|尤忌|孕妇|妊娠|慎用|慎服|过量|超量|不宜过大|用量过大|剂量不可过大|严格控制|严格炮制|不宜久服|不可长期|不宜生食|仅供外用|减量/
+// Phrases, not single characters: "解毒", "无毒" and "清热解毒大剂量" must not match, while "仅供外用" and "宜减量" must.
+const SAFETY_WORDING = /有毒|小毒|大毒|毒性|中毒|十八反|十九畏|禁用|禁服|严禁|忌用|忌服|尤忌|孕妇|妊娠|慎用|慎服|过量|超量|不宜过大|用量过大|剂量不可过大|严格控制|严格炮制|不宜久服|不可长期|不宜生食|仅供外用|减量/
 
 interface Row { label: string; text: string; secondary?: string }
 function herbRows(herb: NoteSource): Row[] {
