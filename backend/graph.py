@@ -20,13 +20,6 @@ def id_digest(node_ids, edge_ids):
     return hashlib.sha256(text.encode('utf-8')).hexdigest()
 
 
-def selected_build(build_id):
-    build = services.application()['build_id']
-    if build_id is not None and build_id != build:
-        raise services.ServiceError('snapshot_changed', '数据批次已更新，请刷新后重试')
-    return build
-
-
 def require_projection(session, build):
     marker = session.run("MATCH (p:Projection {build_id:$build,scope:'full'}) RETURN p.complete AS complete",
                          build=build).single()
@@ -81,7 +74,7 @@ def neighborhood(center, relations=None, build_id=None):
     Smaller relation types come first so a large one cannot crowd them out; the walk stops at the first
     candidate that would exceed a limit, so the result is always a prefix of this order.
     """
-    build = selected_build(build_id)
+    build = services.selected(build_id)['build_id']
     with services.graph() as session:
         require_projection(session, build)
         center_node = require_node(session, build, center)
@@ -123,7 +116,7 @@ PATH_TEMPLATES = {
 def paths(template, entity_id, limit, offset, build_id=None):
     """Two-hop paths read from Neo4j only, shaped like GET /relation-queries (spec §4.5)."""
     expected, cypher = PATH_TEMPLATES[template]
-    build = selected_build(build_id)
+    build = services.selected(build_id)['build_id']
     with services.graph() as session:
         require_projection(session, build)
         start = require_node(session, build, entity_id)

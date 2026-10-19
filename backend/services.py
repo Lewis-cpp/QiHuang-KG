@@ -49,11 +49,17 @@ def application():
     return settings
 
 
-@contextmanager
-def relational(build_id=None):
+def selected(build_id):
+    """The release settings, refusing a request pinned to another batch."""
     settings = application()
     if build_id is not None and build_id != settings["build_id"]:
         raise ServiceError("snapshot_changed", "数据批次已更新，请刷新后重试")
+    return settings
+
+
+@contextmanager
+def relational(build_id=None):
+    settings = selected(build_id)
     # The application uses the read-only role; the import account is reserved for scripts.
     params = config(settings["database_engine"] + "_reader")
     params["connect_timeout"] = 3
