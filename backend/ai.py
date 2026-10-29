@@ -1,10 +1,14 @@
 """M4 AI query: whitelist checks, entity resolution and parameterized SQL over model-proposed conditions."""
 
 from collections import Counter
+from pathlib import Path
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
-from backend import queries, services, vocab
+from backend import model_client, queries, services, vocab
+
+QUERY_PROMPT = 'query_v1'
+QUERY_SYSTEM = (Path(__file__).parent / 'prompts' / f'{QUERY_PROMPT}.md').read_text(encoding='utf-8')
 
 TARGETS = ('formula', 'herb', 'patent_medicine', 'herbal_piece')
 # Field → target types it applies to (spec §7.1); any other combination is unsupported.
@@ -163,7 +167,8 @@ def answer(target_type, conditions, unsupported=(), build_id=None):
                 if len(rows) == 1:
                     item['entity_id'] = rows[0]['id']
                 elif rows:
-                    ambiguous.append(dict(field=item['field'], value=item['value'], items=rows))
+                    ambiguous.append(dict(field=item['field'], value=item['value'],
+                                          items=[dict(row, match=None) for row in rows]))
                 else:
                     missing.append(dict(field=item['field'], value=item['value'],
                                         items=queries.search_page(c, item['value'], kind, limit=5)['items']))
@@ -184,3 +189,21 @@ def answer(target_type, conditions, unsupported=(), build_id=None):
         result['coverage_note'] = COVERAGE_NOTE
     result['status'] = 'ok'
     return result
+
+
+def ask(question, build_id=None):
+    """/ai/query for a question: the model proposes conditions, answer() decides what runs.
+
+    The model call stays outside the read-only transaction; answer() reopens it pinned to the same build.
+    """
+    with services.relational(build_id) as c:
+        build = queries.current_build(c)
+        system = QUERY_SYSTEM.replace('{formula_categories}', '、'.join(categories(c, 'formula'))).replace(
+            '{herb_categories}', '、'.join(categories(c, 'herb')))
+    # Dropping the closing marker keeps the whole question inside the data delimiters.
+    content = '<question>\n' + question.replace('</question>', '') + '\n</question>'
+    data, meta = model_client.complete_json(system, content, log=dict(
+        endpoint='query', prompt_version=QUERY_PROMPT, question=question))
+    output = parse_output(data)
+    return dict(answer(output['target_type'], output['conditions'], output['unsupported'], build),
+                model=meta['model'], prompt_version=QUERY_PROMPT)

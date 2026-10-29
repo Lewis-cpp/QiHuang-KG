@@ -9,7 +9,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException
 
-from backend import graph, model_client, queries, schemas, services
+from backend import ai, graph, model_client, queries, schemas, services
 
 app = FastAPI(title="QiHuang-KG", version="0.3.0", description="中医药知识检索与学习 · 详情、来源证据与图谱",
               responses={status: {"model": schemas.ErrorResponse} for status in (404, 409, 422, 500, 502, 503)})
@@ -151,3 +151,16 @@ def relation_query(template: Annotated[Literal[tuple(queries.TEMPLATES)], Query(
                    entity_id: Annotated[str, Query(pattern=ENTITY_PATTERN, description="起点实体 ID")],
                    limit: Limit = 20, offset: Offset = 0, build_id: BuildID = None):
     return queries.relation_query(template, entity_id, limit, offset, build_id)
+
+
+@app.post("/api/v1/ai/query", response_model=schemas.AIQueryResult,
+          summary="自然语言条件查询：模型只提出白名单条件，后端校验、解析后执行参数化查询")
+def ai_query(body: schemas.AIQueryRequest):
+    with_conditions = body.conditions is not None
+    if (body.question is None) != with_conditions or with_conditions != (body.target_type is not None):
+        raise services.ServiceError("invalid_query", "请只提供 question，或同时提供 conditions 与 target_type")
+    if body.question is not None:
+        return ai.ask(body.question, body.build_id)
+    # Disambiguated conditions skip the model: a second call could propose different conditions (M4 doc §8).
+    conditions = [item.model_dump() for item in body.conditions]
+    return dict(ai.answer(body.target_type, conditions, build_id=body.build_id), model=None, prompt_version=None)
