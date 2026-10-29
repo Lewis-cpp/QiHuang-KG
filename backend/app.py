@@ -12,7 +12,7 @@ from starlette.exceptions import HTTPException
 from backend import graph, model_client, queries, schemas, services
 
 app = FastAPI(title="QiHuang-KG", version="0.3.0", description="中医药知识检索与学习 · 详情、来源证据与图谱",
-              responses={status: {"model": schemas.ErrorResponse} for status in (404, 409, 422, 500, 503)})
+              responses={status: {"model": schemas.ErrorResponse} for status in (404, 409, 422, 500, 502, 503)})
 
 
 @app.exception_handler(services.ServiceError)
