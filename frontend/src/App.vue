@@ -17,6 +17,7 @@ function reloadBatch() {
       <RouterLink class="brand" to="/"><span class="seal" aria-hidden="true">岐</span><span>岐黄知图<small>QIHUANG KNOWLEDGE GRAPH</small></span></RouterLink>
       <nav aria-label="页面导航">
         <RouterLink to="/" :class="{ active: route.path === '/' }">检索</RouterLink>
+        <RouterLink to="/ai" active-class="active">AI 查询</RouterLink>
         <RouterLink to="/datasets" active-class="active">来源</RouterLink>
         <RouterLink to="/stats" active-class="active">统计</RouterLink>
       </nav>

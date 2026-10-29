@@ -80,3 +80,19 @@ test('repeats array parameters and skips empty arrays', async () => {
   await client.get('/graph', { center: 'x', relation: [] }, { pinBuild: false })
   assert.deepEqual(urls, ['/api/v1/graph?center=x&relation=CONTAINS&relation=CITED_IN', '/api/v1/graph?center=x'])
 })
+
+test('post sends JSON with the pinned batch in the body and keeps model error codes', async () => {
+  const sent = []
+  mock.method(globalThis, 'fetch', async (url, init) => {
+    sent.push({ url, init })
+    return sent.length === 1
+      ? Response.json({ build_id: BUILD_A, status: 'ok' })
+      : Response.json({ error: { code: 'model_invalid_response', message: '模型响应不符合 JSON 接口约定' } }, { status: 502 })
+  })
+  assert.deepEqual(await client.post('/ai/query', { question: '含甘草的补益剂' }), { build_id: BUILD_A, status: 'ok' })
+  assert.deepEqual(JSON.parse(sent[0].init.body), { question: '含甘草的补益剂' })
+  await assert.rejects(client.post('/ai/query', { question: 'x' }), { status: 502, code: 'model_invalid_response' })
+  assert.equal(sent[1].url, '/api/v1/ai/query')
+  assert.equal(sent[1].init.method, 'POST')
+  assert.deepEqual(JSON.parse(sent[1].init.body), { question: 'x', build_id: BUILD_A })
+})

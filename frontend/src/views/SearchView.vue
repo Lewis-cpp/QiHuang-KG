@@ -3,7 +3,8 @@ import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter, type LocationQuery } from 'vue-router'
 import { get, useLoader } from '../api/client'
 import type { EntityPage } from '../api/types'
-import { datasetNames, label, number, reviewNames, setTitle, typeNames } from '../labels'
+import { datasetNames, number, setTitle, typeNames } from '../labels'
+import EntityHitItem from '../components/EntityHitItem.vue'
 import Pager from '../components/Pager.vue'
 import StateView from '../components/StateView.vue'
 
@@ -102,17 +103,7 @@ watch(data, result => {
       <template v-if="data">
         <p class="results-meta">找到 {{ number(data.total) }} 条记录</p>
         <ul class="results">
-          <li v-for="item in data.items" :key="item.id">
-            <div>
-              <h3><RouterLink :to="`/entity/${encodeURIComponent(item.id)}`">{{ item.label }}</RouterLink><span class="tag">{{ label(typeNames, item.type) }}</span></h3>
-              <p>
-                {{ item.category || '来源未提供分类' }}
-                <span v-if="item.match" class="match">· {{ item.match.field === 'name' ? '名称命中' : `别名命中：${item.match.text}` }}</span>
-                · <RouterLink class="text-link" :to="`/graph/${encodeURIComponent(item.id)}`" :aria-label="`${item.label} 关系图谱`">图谱</RouterLink>
-              </p>
-            </div>
-            <span class="source">{{ label(datasetNames, item.dataset_id) }}<small>{{ label(reviewNames, item.review_status) || '状态未提供' }}</small></span>
-          </li>
+          <EntityHitItem v-for="item in data.items" :key="item.id" :item="item" />
         </ul>
         <Pager :total="data.total" :limit="LIMIT" :offset="(criteria.page - 1) * LIMIT" :disabled="loading" @change="navigate(criteria, $event / LIMIT + 1)" />
       </template>

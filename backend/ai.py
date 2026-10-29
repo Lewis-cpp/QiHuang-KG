@@ -33,7 +33,7 @@ COVERAGE_NOTE = '出处朝代覆盖本草典 112 首方剂；证候关联仅覆�
 
 class Condition(BaseModel):
     model_config = ConfigDict(extra='forbid')
-    field: str
+    field: str = Field(max_length=40)
     value: str = Field(min_length=1, max_length=40)
 
 
@@ -69,7 +69,7 @@ def check(target_type, conditions, unsupported=()):
     """Split conditions into whitelisted ones with stored values, and unsupported descriptions."""
     unsupported = list(unsupported)
     if target_type not in TARGETS:
-        return [], unsupported + [f'查询对象：{target_type}']
+        return [], unsupported + ['查询对象不在支持范围内']
     counts = Counter(item['field'] for item in conditions)
     kept = []
     for item in conditions:
@@ -77,7 +77,7 @@ def check(target_type, conditions, unsupported=()):
         stored = stored_value(field, value) if value else None
         # A repeated single-valued field has no defined meaning; drop every copy rather than pick one.
         if target_type not in FIELDS.get(field, ()) or stored is None or (counts[field] > 1 and field not in HERB_FIELDS):
-            unsupported.append(f'{field}：{value}')
+            unsupported.append(LABELS[field].format(value) if field in LABELS else f'{field}：{value}')
         else:
             kept.append(dict(field=field, value=value, stored=stored,
                              entity_id=item.get('entity_id') if field in ENTITY_FIELDS else None))
@@ -148,14 +148,15 @@ def answer(target_type, conditions, unsupported=(), build_id=None):
     A condition may carry the entity_id chosen after disambiguation; it must be one of the value's candidates.
     """
     kept, unsupported = check(target_type, conditions, unsupported)
-    result = dict(status='unsupported', target_type=target_type, conditions=[], unsupported=unsupported,
+    result = dict(status='unsupported', target_type=target_type if target_type in TARGETS else '',
+                  conditions=[], unsupported=unsupported,
                   candidates=None, suggestions=None, coverage_note=None, results=None)
     with services.relational(build_id) as c:
         result['build_id'] = queries.current_build(c)
         resolved, ambiguous, missing = [], [], []
         for item in kept:
             if item['field'] == 'category' and item['stored'] not in categories(c, target_type):
-                unsupported.append(f"category：{item['value']}")
+                unsupported.append(LABELS['category'].format(item['value']))
                 continue
             if item['field'] in ENTITY_FIELDS:
                 kind = link(item['field'], target_type)[1]
@@ -205,5 +206,9 @@ def ask(question, build_id=None):
     data, meta = model_client.complete_json(system, content, log=dict(
         endpoint='query', prompt_version=QUERY_PROMPT, question=question))
     output = parse_output(data)
-    return dict(answer(output['target_type'], output['conditions'], output['unsupported'], build),
+    # The page shows `unsupported`; keep only fragments of the question so the model cannot answer through it.
+    quoted = [text.strip() for text in output['unsupported'] if text.strip() and text.strip() in question]
+    if len(quoted) < len(output['unsupported']):
+        quoted.append('问题中有部分内容未能转换为条件')
+    return dict(answer(output['target_type'], output['conditions'], quoted, build),
                 model=meta['model'], prompt_version=QUERY_PROMPT)

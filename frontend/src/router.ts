@@ -5,6 +5,7 @@ import EntityView from './views/EntityView.vue'
 import EvidenceView from './views/EvidenceView.vue'
 import DatasetsView from './views/DatasetsView.vue'
 import StatsView from './views/StatsView.vue'
+import AIQueryView from './views/AIQueryView.vue'
 import NotFoundView from './views/NotFoundView.vue'
 
 const router = createRouter({
@@ -17,6 +18,7 @@ const router = createRouter({
     { path: '/graph/:id', component: () => import('./views/GraphView.vue'), props: true },
     { path: '/datasets', component: DatasetsView },
     { path: '/stats', component: StatsView },
+    { path: '/ai', component: AIQueryView },
     { path: '/:pathMatch(.*)*', component: NotFoundView },
   ],
   scrollBehavior: (to, from, saved) => saved ?? (to.path === from.path ? undefined : { top: 0 }),

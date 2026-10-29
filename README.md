@@ -44,7 +44,7 @@ docker compose up -d --wait
 .venv/bin/python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000
 ```
 
-另一终端在 `frontend/` 执行 `npm ci`、`npm run dev`，打开 `http://127.0.0.1:5174`。页面提供名称与别名检索、实体详情、证据、来源与统计；每条检索结果和详情页都可进入关系图谱 `/graph/<实体ID>`（一跳展开、关系筛选、中药两跳路径）。接口文档见 `http://127.0.0.1:8000/docs`。AI 功能属于 M4，尚未实现。全新环境的依赖安装与数据导入见[启动说明](docs/bootstrap.md)。
+另一终端在 `frontend/` 执行 `npm ci`、`npm run dev`，打开 `http://127.0.0.1:5174`。页面提供名称与别名检索、实体详情、证据、来源与统计；每条检索结果和详情页都可进入关系图谱 `/graph/<实体ID>`（一跳展开、关系筛选、中药两跳路径）。接口文档见 `http://127.0.0.1:8000/docs`。`/ai` 页面提供 AI 条件查询：模型只把问题转换为白名单条件，查询由后端参数化执行（M4a）；带引用的方剂解释（M4b）尚未实现。全新环境的依赖安装与数据导入见[启动说明](docs/bootstrap.md)。
 
 开发库位于 `127.0.0.1:15432`，库名 `qihuang`。私有连接配置为 `config/postgresql.json`；密码自动生成并复用，未纳入版本管理。PostgreSQL 与 Neo4j 均通过 Docker 命名卷持久化。
 

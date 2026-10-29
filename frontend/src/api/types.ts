@@ -156,3 +156,23 @@ export interface FormulaNotes {
   herbs: NoteSource[]
   build_id: string
 }
+
+export type AIStatus = 'ok' | 'ambiguous' | 'unresolved' | 'unsupported'
+
+export interface AICondition { field: string; value: string; entity_id: string | null; label: string }
+
+export interface AIChoice { field: string; value: string; items: EntityHit[] }
+
+export interface AIQueryResult {
+  status: AIStatus
+  target_type: string
+  conditions: AICondition[]
+  unsupported: string[]
+  candidates: AIChoice[] | null
+  suggestions: AIChoice[] | null
+  coverage_note: string | null
+  results: { items: EntityHit[]; total: number } | null
+  model: string | null
+  prompt_version: string | null
+  build_id: string
+}

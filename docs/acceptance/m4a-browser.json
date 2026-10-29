@@ -1,0 +1,131 @@
+{
+  "checked_at": "2026-10-29T08:19:55.156Z",
+  "browser": "Google Chrome（playwright-core 1.56.1，无头）",
+  "viewports": [
+    "1280x900",
+    "390x844"
+  ],
+  "model": "deepseek-flash（真实调用）",
+  "results": [
+    {
+      "name": "导航含 AI 查询入口",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "模型已验证，无未就绪提示",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "免责声明",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 字数显示",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 ok：结果 7 条",
+      "ok": true,
+      "detail": "实际执行的条件 · 经典方剂"
+    },
+    {
+      "name": "1280 ok：显示执行条件",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 ambiguous：2 个候选，未执行查询",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 ambiguous：未选择时按钮禁用",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 ambiguous：点击条目即选中",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 ambiguous → 选择后执行",
+      "ok": true,
+      "detail": "找到 0 条记录"
+    },
+    {
+      "name": "1280 unsupported：未执行查询",
+      "ok": true,
+      "detail": "未支持、未执行：列出所有表"
+    },
+    {
+      "name": "1280 unresolved：提示无此条目",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 无横向滚动",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "390 字数显示",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 ok：结果 7 条",
+      "ok": true,
+      "detail": "实际执行的条件 · 经典方剂"
+    },
+    {
+      "name": "390 ok：显示执行条件",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 ambiguous：2 个候选，未执行查询",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 ambiguous：未选择时按钮禁用",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 ambiguous：点击条目即选中",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 ambiguous → 选择后执行",
+      "ok": true,
+      "detail": "找到 0 条记录"
+    },
+    {
+      "name": "390 unsupported：未执行查询",
+      "ok": true,
+      "detail": "未支持、未执行：列出所有表"
+    },
+    {
+      "name": "390 unresolved：提示无此条目",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 无横向滚动",
+      "ok": true,
+      "detail": "overflow 0px"
+    },
+    {
+      "name": "无控制台错误（favicon.ico 404 除外，项目未提供图标）",
+      "ok": true,
+      "detail": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ]
+}
