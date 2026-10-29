@@ -1,6 +1,6 @@
 # QiHuang-KG 后续开发规格（spec）
 
-版本：0.1（草案）。编写日期：2026-10-10。适用范围：从当前状态到最终交付的剩余开发工作。
+版本：0.2（草案）。编写日期：2026-10-10；2026-10-29 按 M4a 实现修订 §7.1–7.3（差异见 [M4 开发文档](docs/dev/m4-development.md) §8）。适用范围：从当前状态到最终交付的剩余开发工作。
 
 本文档把 [开发计划](docs/development-plan.md) 第 6 节尚未完成的任务（T09–T22，以及 T02/T03/T04/T08 的剩余部分）细化为可直接编码和验收的规格：接口契约、查询规则、图投影、AI 链路、测试与里程碑。范围边界仍以 [首版范围冻结](docs/scope-freeze.md) 为准，数据模型以 [v2 架构](docs/architecture.md) 和 [共享 DDL](docs/schema-vastbase.sql) 为准；本文与它们冲突时，先修订本文再动代码。
 
@@ -624,7 +624,7 @@ frontend/src/
 
 ### 7.1 `POST /api/v1/ai/query`：自然语言条件查询
 
-请求为 `{"question": "...", "build_id?": "..."}`，问题不超过 200 字。
+请求为 `{"question": "...", "build_id?": "..."}`，问题不超过 200 字。消歧之后改为提交 `{"target_type": "...", "conditions": [{"field": "...", "value": "...", "entity_id?": "..."}], "build_id?": "..."}`：这种形式不调用模型，条件同样经过白名单校验和实体解析。两种形式必须且只能提供一种，否则返回 422 `invalid_query`。
 
 **处理链路**：问题 → 模型输出条件 JSON → 后端校验白名单 → 实体名解析 → 参数化 SQL 查询 → 返回结果。
 
@@ -638,7 +638,7 @@ frontend/src/
     { "field": "category", "value": "补益剂" },
     { "field": "includes_herb", "value": "甘草" },
     { "field": "excludes_herb", "value": "人参" },
-    { "field": "associated_pattern", "value": "脾胃气虚证" },
+    { "field": "associated_pattern", "value": "脾气虚证" },
     { "field": "source_dynasty", "value": "宋" },
     { "field": "herb_nature", "value": "warm" },
     { "field": "route", "value": "Oral" }
@@ -659,19 +659,20 @@ frontend/src/
 | `herb_nature` | — | ✓ | — | — | `attributes.nature`，8 个枚举值 |
 | `route` | — | — | ✓ | — | `Routes_of_administration`，3 个枚举值 |
 
-- **实体名解析**：`includes_herb`、`associated_pattern` 等字段的值，按"名称精确 → 别名精确"解析为实体 ID。
-  - 0 个候选：`status=unresolved`，返回原词，不执行查询。
-  - 多个候选：`status=ambiguous`，返回候选列表，由用户选择后带上 `resolved` 参数重新提交。**不能猜一个执行。**
+- **实体名解析**：`includes_herb`、`associated_pattern` 等字段的值，在目标实体类型内按名称**或**别名精确匹配，按实体 ID 去重后解析为实体 ID。同一个词可能是一个实体的名称、另一个实体的别名（如"熟地黄"），两者都列为候选。
+  - 0 个候选：`status=unresolved`，返回原词和最多 5 条子串检索建议，不执行查询。证候没有别名，库中名称与常见说法可能不同（如库中为"脾气虚证"，没有"脾胃气虚证"）。
+  - 多个候选：`status=ambiguous`，返回候选列表。用户选择后，把选中的 `entity_id` 写入对应条件，以 `conditions` 形式重新提交；所选 ID 必须是该值的候选之一，否则返回 422。**不能猜一个执行。** 重新提交不调用模型，因为再次调用可能得到不同的条件，也多一次费用。
 - **朝代归一表**（`backend/vocab.py`，有版本号）
   - "宋" → {宋, 北宋, 南宋}
   - "汉" → {汉, 东汉, 战国至汉}
   - 其他朝代同理，表中只收当前 38 部古籍中实际出现的取值。
   - 表外的朝代返回 `unsupported`。
-- **覆盖说明**：`source_dynasty` 和 `associated_pattern` 只覆盖本草典的 112 首方剂，响应中要附上这条覆盖说明。这两个条件不涉及中成药。
+- **覆盖说明**：`source_dynasty` 覆盖本草典的 112 首方剂；`associated_pattern` 只覆盖其中 56 首（实测只有 56 首方剂有 `ASSOCIATED_WITH_PATTERN` 边）。使用这两个条件时，响应中要附上覆盖说明。这两个条件不涉及中成药。
 - **返回**
-  - `status`：`ok` / `ambiguous` / `unresolved` / `unsupported` / `failed`。
+  - `status`：`ok` / `ambiguous` / `unresolved` / `unsupported`，HTTP 状态均为 200。模型调用失败不用 `status` 表示，而是返回 §7.3 的错误码。
   - `conditions`：经过校验和解析、实际执行的条件。前端照原样显示"查询实际执行了什么"。
-  - `results`：最多 50 条，复用 §4.2 的结果项。
+  - `unsupported`：未执行的部分。只包含用户问题中的原文片段和后端生成的说明（如"出处朝代 = 晋"），模型写的其他文字不回显，避免模型借此输出与查询无关的内容。
+  - `results`：最多 50 条，复用 §4.2 的结果项，另附 `total`。
   - 另附 `model`、`prompt_version`、`build_id`。
 - **安全**
   - 问题文本不能改变允许的操作。
@@ -684,7 +685,7 @@ frontend/src/
 **材料组装**（不经模型，直接从关系库取）：
 
 - 方剂属性：`description_zh`、`treatment_principle`、`preparation_zh`、`category`、`subcategory`、`source_chapter`。每项附实体级证据 ID。
-- 组成：`CONTAINS` 边的药名、剂量原文、角色、位置、`quality_state` 和边的证据 ID。
+- 组成：`CONTAINS` 边的药名、剂量原文、角色、位置、`quality_state`（`edge` 表的列，不在 `properties_json` 中）和边的证据 ID。
 - 关联证候：`ASSOCIATED_WITH_PATTERN`，附证据 ID。
 - 出处：`CITED_IN`→古籍，附书名、朝代和证据 ID。
 - 每条材料编号 `M1…Mn`，并映射到真实证据 ID。模型只能看到材料编号，后端负责换回证据 ID。
@@ -720,6 +721,7 @@ frontend/src/
 
 - **单次调用**：超时 30 秒，最大输出 1,024 token，沿用 `model_client.settings` 的范围校验。
 - **并发**：进程内用信号量把同时进行的模型调用限制为 2 个，超出时返回 503 `model_busy`，用来控制成本。
+- **错误码**：问题出在模型服务一侧时返回 502，包括返回非 2xx（`model_http_error`，消息中保留状态码）、返回内容不符合约定（`model_invalid_response`）、未完整结束（`model_incomplete`）；本地不可用时返回 503，包括连接失败、超时、代理配置无效（`model_unavailable`），以及未配置和繁忙。
 - **调用日志**：每次调用追加一行到 `var/ai-calls.jsonl`，记录时间、端点、`request_id`、模型、提示词版本、token 用量、耗时、状态和校验失败原因。日志不写入 key，问题原文需要截断。
 - **降级**：模型未配置或不可用时，AI 入口显示明确状态，检索、详情和图谱不受影响。
 - **页面**
