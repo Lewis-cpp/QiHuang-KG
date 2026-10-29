@@ -342,27 +342,32 @@ CATALOG_FROM = """ FROM entity e
 ENTITY_COLUMNS = 'e.id,e.label,e.type,e.dataset_id,e.category,e.review_status'
 
 
-def search_entities(query, kind=None, dataset=None, limit=20, offset=0, build_id=None):
+def search_page(c, query, kind=None, dataset=None, limit=20, offset=0):
     query = normalize_query(query)
     escaped = like_escape(query)
     params = dict(q=query, prefix=escaped + '%', sub='%' + escaped + '%', type=kind, dataset=dataset,
                   limit=limit, offset=offset)
+    if query:
+        c.execute(SEARCH_HITS + 'SELECT count(*) AS total' + SEARCH_FROM, params)
+        total = c.fetchone()['total']
+        c.execute(SEARCH_HITS + 'SELECT ' + ENTITY_COLUMNS + ',b.field,b.text' + SEARCH_FROM +
+                  ' ORDER BY b.match_rank, e.name_norm COLLATE "C", e.id LIMIT %(limit)s OFFSET %(offset)s', params)
+        items = [dict(row, match=dict(field=row.pop('field'), text=row.pop('text'))) for row in c.fetchall()]
+    else:
+        # Empty query: the type catalog, as before ranking was added.
+        c.execute('SELECT count(*) AS total' + CATALOG_FROM, params)
+        total = c.fetchone()['total']
+        c.execute('SELECT ' + ENTITY_COLUMNS + CATALOG_FROM +
+                  ' ORDER BY e.name_norm COLLATE "C", e.id LIMIT %(limit)s OFFSET %(offset)s', params)
+        items = [dict(row, match=None) for row in c.fetchall()]
+    return dict(items=items, total=total, limit=limit, offset=offset)
+
+
+def search_entities(query, kind=None, dataset=None, limit=20, offset=0, build_id=None):
     with services.relational(build_id) as c:
         build = current_build(c)
-        if query:
-            c.execute(SEARCH_HITS + 'SELECT count(*) AS total' + SEARCH_FROM, params)
-            total = c.fetchone()['total']
-            c.execute(SEARCH_HITS + 'SELECT ' + ENTITY_COLUMNS + ',b.field,b.text' + SEARCH_FROM +
-                      ' ORDER BY b.match_rank, e.name_norm COLLATE "C", e.id LIMIT %(limit)s OFFSET %(offset)s', params)
-            items = [dict(row, match=dict(field=row.pop('field'), text=row.pop('text'))) for row in c.fetchall()]
-        else:
-            # Empty query: the type catalog, as before ranking was added.
-            c.execute('SELECT count(*) AS total' + CATALOG_FROM, params)
-            total = c.fetchone()['total']
-            c.execute('SELECT ' + ENTITY_COLUMNS + CATALOG_FROM +
-                      ' ORDER BY e.name_norm COLLATE "C", e.id LIMIT %(limit)s OFFSET %(offset)s', params)
-            items = [dict(row, match=None) for row in c.fetchall()]
-    return dict(items=items, total=total, limit=limit, offset=offset, build_id=build)
+        page = search_page(c, query, kind, dataset, limit, offset)
+    return dict(**page, build_id=build)
 
 
 def datasets(build_id=None):

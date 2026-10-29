@@ -395,3 +395,4 @@ env -u all_proxy -u ALL_PROXY .venv/bin/python tests/record_m4.py explain   # M4
 （实施过程中补充：§6.6 的实测结果、提示词版本变更、开发样本的通过率。）
 
 - 2026-10-21 第 1 步完成。`complete_json` 增加可选参数 `log`（`endpoint`、`prompt_version`、`question`），不传时 `endpoint` 记为 `verify`。`model_busy` 在获取并发名额之前就返回，没有发出调用，因此不写调用日志。真实复验：保留 SOCKS 代理时报“代理配置无效”；去掉后 `--check-model` 通过，两次调用的日志 `request_id` 为响应体 `id`。
+- 2026-10-29 第 2 步完成：`vocab.py`、`ai.py`（`parse_output`、`check`、实体解析、`answer`），测试见 `tests/test_ai.py`，所有白名单字段都与独立计算的结果集比对。实现时定下的细节：实体解析同时按名称和别名精确匹配，按实体 ID 去重（“熟地黄”是饮片 CHP03791 的名称，也是“地黄”CHP00689 的别名，两者都列为候选，由用户选择）；单值字段重复出现时所有副本都移入 `unsupported`，不挑其中一个；包含与排除的矛盾在解析后按实体 ID 判断；重新提交的 `entity_id` 必须在该值的候选中，否则返回 422 `invalid_query`。待确认：药性、给药途径和朝代条件用了 `attributes_json::jsonb`，迁移到 Vastbase（M6）时要复验；“脾胃气虚证”用子串检索找不到“脾气虚证”，`unresolved` 时的建议列表对这类词是空的。
