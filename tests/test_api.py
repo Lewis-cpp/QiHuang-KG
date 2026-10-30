@@ -208,8 +208,9 @@ def pointer_checks():
         else: raise AssertionError(pointer)
     limit = json.dumps({'x': 'a' * (65536 - 9)})
     assert len(limit.encode()) == 65536
-    assert queries.source_content(limit) == (json.loads(limit), False)
-    assert queries.source_content(limit.replace('a', '药', 1)) == (None, True)
+    assert queries.source_content(limit, json.loads(limit)) == (json.loads(limit), False)
+    big = limit.replace('a', '药', 1)
+    assert queries.source_content(big, json.loads(big)) == (None, True)
     with patch.object(queries, 'json_pointer', side_effect=services.ServiceError('evidence_pointer_invalid', '证据定位失效')):
         error('/evidence/' + QUOTE, 500, 'evidence_pointer_invalid')
 

@@ -33,6 +33,12 @@ def evidence_page(c, entity_id, limit, offset):
     return dict(items=c.fetchall(), total=total, limit=limit, offset=offset)
 
 
+def relation_summary(c, entity_id):
+    c.execute('SELECT relation,direction,count FROM v_entity_relation_summary WHERE entity_id=%s '
+              'ORDER BY relation COLLATE "C",direction COLLATE "C"', (entity_id,))
+    return c.fetchall()
+
+
 COUNTERPART = {'herb': 'herbal_piece', 'herbal_piece': 'herb'}
 
 
@@ -58,9 +64,7 @@ def entity_detail(entity_id, build_id=None):
         c.execute('SELECT name,source_record_id,field_path FROM alias WHERE entity_id=%s ORDER BY name_norm,name',
                   (entity_id,))
         aliases = c.fetchall()
-        c.execute('SELECT relation,direction,count FROM v_entity_relation_summary WHERE entity_id=%s '
-                  'ORDER BY relation COLLATE "C",direction COLLATE "C"', (entity_id,))
-        summary = c.fetchall()
+        summary = relation_summary(c, entity_id)
         evidence = evidence_page(c, entity_id, 20, 0)
         same_name = same_name_counterpart(c, entity)
     return dict(id=entity['id'], type=entity['type'], label=entity['label'], dataset=dataset,
@@ -103,11 +107,11 @@ def json_pointer(content, pointer):
         raise services.ServiceError('evidence_pointer_invalid', '证据定位失效，请联系数据维护人员') from None
 
 
-def source_content(content_json):
+def source_content(content_json, content):
     # Preserve the JSON type; an oversized record is omitted instead of returning broken JSON.
     if len(content_json.encode('utf-8')) > 64 * 1024:
         return None, True
-    return json.loads(content_json), False
+    return content, False
 
 
 def node(entity):
@@ -126,8 +130,9 @@ def evidence_detail(evidence_id, build_id=None):
         c.execute('SELECT * FROM dataset WHERE id=%s', (source['dataset_id'],))
         dataset = c.fetchone()
         content_json = source.pop('content_json')
-        raw_value = json_pointer(json.loads(content_json), evidence['field_path'])
-        source['content'], source['content_truncated'] = source_content(content_json)
+        content = json.loads(content_json)
+        raw_value = json_pointer(content, evidence['field_path'])
+        source['content'], source['content_truncated'] = source_content(content_json, content)
         source['filename'] = source['filename'].replace('\\', '/').rsplit('/', 1)[-1]
         if evidence['entity_id'] is not None:
             target = dict(kind='entity', entity=node(require_entity(c, evidence['entity_id'])))
