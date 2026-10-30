@@ -2,12 +2,20 @@
 
 import hashlib
 import json
+import logging
 import os
+import threading
+import time
+from datetime import datetime, timezone
 from urllib.parse import urlparse
 
 import httpx
 
 from backend.services import ROOT, ServiceError, config
+
+# Caps concurrent billed calls; extra requests fail fast instead of queueing.
+SLOTS = threading.BoundedSemaphore(2)
+CALL_LOG = ROOT / "var/ai-calls.jsonl"
 
 
 def settings():
@@ -48,14 +56,23 @@ def status():
                 message="最近一次真实调用通过；健康检查不会调用模型" if verified else "已配置，尚未完成真实调用验证")
 
 
-def complete_json(system, content):
+def complete_json(system, content, log=None):
+    """Return (parsed JSON object, call metadata); `log` adds endpoint/prompt_version/question to the call log."""
     selected = settings()
     payload = dict(model=selected["model"], messages=[dict(role="system", content=system),
                    dict(role="user", content=content)], response_format={"type": "json_object"},
                    max_completion_tokens=selected["tokens"])
     headers = {"Authorization": "Bearer " + selected["api_key"]} if selected["api_key"] else {}
+    if not SLOTS.acquire(blocking=False):
+        raise ServiceError("model_busy", "模型调用繁忙，请稍后再试")
+    entry = {"endpoint": "verify", "prompt_version": None, "question": None, **(log or {})}
+    started, data, response, status = time.monotonic(), {}, None, "failed"
     try:
-        with httpx.Client(timeout=selected["timeout"], follow_redirects=False) as client:
+        try:
+            client = httpx.Client(timeout=selected["timeout"], follow_redirects=False)
+        except ValueError:
+            raise ServiceError("model_unavailable", "代理配置无效，请检查 all_proxy 等环境变量") from None
+        with client:
             response = client.post(selected["base_url"] + "/chat/completions", headers=headers, json=payload)
             response.raise_for_status()
             data = response.json()
@@ -65,11 +82,41 @@ def complete_json(system, content):
         result = json.loads(choice["message"]["content"])
         if not isinstance(result, dict):
             raise ValueError()
+        status = "ok"
         return result, dict(model=data.get("model", selected["model"]), usage=data.get("usage"),
-                            request_id=response.headers.get("x-request-id"))
+                            request_id=request_id(data, response))
+    except ServiceError as error:
+        status = error.code
+        raise
     except httpx.HTTPStatusError as error:
+        status = "model_http_error"
         raise ServiceError("model_http_error", f"模型服务返回 HTTP {error.response.status_code}") from None
     except httpx.RequestError:
+        status = "model_unavailable"
         raise ServiceError("model_unavailable", "模型服务连接失败或超时") from None
     except (KeyError, IndexError, ValueError, TypeError):
+        status = "model_invalid_response"
         raise ServiceError("model_invalid_response", "模型响应不符合 JSON 接口约定") from None
+    finally:
+        SLOTS.release()
+        record(dict(entry, request_id=request_id(data, response), model=selected["model"],
+                    usage=data.get("usage") if isinstance(data, dict) else None,
+                    elapsed_ms=round((time.monotonic() - started) * 1000), status=status))
+
+
+def request_id(data, response):
+    # DeepSeek has no x-request-id header; the completion id identifies the call instead.
+    body_id = data.get("id") if isinstance(data, dict) else None
+    return body_id or (response.headers.get("x-request-id") if response is not None else None)
+
+
+def record(entry):
+    entry = dict(at=datetime.now(timezone.utc).isoformat(), **entry)
+    if entry["question"]:
+        entry["question"] = entry["question"][:80]
+    try:
+        CALL_LOG.parent.mkdir(exist_ok=True)
+        with CALL_LOG.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    except OSError as error:
+        logging.getLogger(__name__).warning("Model call log not written: %s", type(error).__name__)

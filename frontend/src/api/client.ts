@@ -49,9 +49,24 @@ export async function get<T>(path: string, params: Params = {}, options: Options
   const build = pinBuild ? storedBuild() : null
   if (build) search.set('build_id', build)
   const query = search.toString()
+  return send<T>(`/api/v1${path}${query ? `?${query}` : ''}`, { signal, headers: { Accept: 'application/json' } }, acceptStatus)
+}
+
+// POST bodies carry build_id like query parameters do (AI endpoints).
+export async function post<T>(path: string, body: Record<string, unknown>, options: Options = {}): Promise<T> {
+  const { signal, pinBuild = true, acceptStatus = [] } = options
+  const build = pinBuild ? storedBuild() : null
+  return send<T>(`/api/v1${path}`, {
+    method: 'POST', signal, body: JSON.stringify(build ? { ...body, build_id: build } : body),
+    headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+  }, acceptStatus)
+}
+
+async function send<T>(url: string, init: RequestInit, acceptStatus: number[]): Promise<T> {
+  const signal = init.signal
   let response: Response
   try {
-    response = await fetch(`/api/v1${path}${query ? `?${query}` : ''}`, { signal, headers: { Accept: 'application/json' } })
+    response = await fetch(url, init)
   } catch (error) {
     if (signal?.aborted) throw error
     throw new ApiError(0, 'network_error', '无法连接服务，请检查后端是否启动。')

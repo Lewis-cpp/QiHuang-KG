@@ -20,6 +20,7 @@ ERROR_STATUS = {
     "method_not_allowed": 405,
     "snapshot_changed": 409, "invalid_query": 422, "invalid_type": 422,
     "unsupported_entity_type": 422, "evidence_pointer_invalid": 500, "internal_error": 500,
+    "model_http_error": 502, "model_invalid_response": 502, "model_incomplete": 502,
 }
 
 

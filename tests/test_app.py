@@ -2,6 +2,7 @@
 
 import json
 import sys
+import tempfile
 from pathlib import Path
 from unittest.mock import patch
 
@@ -25,7 +26,8 @@ def model_contract_checks():
         assert request.headers["Authorization"] == "Bearer private-test-value"
         return httpx.Response(200, json={"model": "test-model", "choices": [{"finish_reason": "stop",
                               "message": {"content": '{"q":"四君子汤"}'}}]})
-    with patch.object(model_client, "settings", return_value=selected):
+    with tempfile.TemporaryDirectory() as tmp, patch.object(model_client, "settings", return_value=selected), \
+            patch.object(model_client, "CALL_LOG", Path(tmp) / "ai-calls.jsonl"):
         with patch.object(model_client.httpx, "Client", side_effect=lambda **kw: real_client(transport=httpx.MockTransport(handler), **kw)):
             result, meta = model_client.complete_json("Return JSON", "query")
             assert result == {"q": "四君子汤"} and meta["model"] == "test-model"
@@ -41,6 +43,53 @@ def model_contract_checks():
                     assert error.code == code and "private-test-value" not in str(error)
                 else:
                     raise AssertionError("Invalid model response accepted")
+        with patch.object(model_client.httpx, "Client", side_effect=ValueError("Unknown scheme for proxy URL")):
+            try:
+                model_client.complete_json("Return JSON", "query")
+            except services.ServiceError as error:
+                assert error.code == "model_unavailable" and "代理" in str(error)
+            else:
+                raise AssertionError("Invalid proxy setting not reported")
+        held = [model_client.SLOTS.acquire(blocking=False) for _ in range(2)]
+        try:
+            try:
+                model_client.complete_json("Return JSON", "query")
+            except services.ServiceError as error:
+                assert error.code == "model_busy"
+            else:
+                raise AssertionError("Third concurrent model call allowed")
+        finally:
+            for ok in held:
+                ok and model_client.SLOTS.release()
+    assert services.ERROR_STATUS["model_http_error"] == 502 and "model_busy" not in services.ERROR_STATUS
+
+
+def model_log_checks():
+    selected = dict(base_url="https://model.example.invalid/v1", model="test-model", api_key="private-test-value",
+                    timeout=2, tokens=64, fingerprint="test")
+    real_client = httpx.Client
+    response = httpx.Response(200, json={"id": "call-1", "usage": {"total_tokens": 9}, "choices": [
+        {"finish_reason": "stop", "message": {"content": '{"ok":true}'}}]})
+    with tempfile.TemporaryDirectory() as tmp, patch.object(model_client, "settings", return_value=selected), \
+            patch.object(model_client, "CALL_LOG", Path(tmp) / "ai-calls.jsonl"), \
+            patch.object(model_client.httpx, "Client", side_effect=lambda **kw: real_client(
+                transport=httpx.MockTransport(lambda request: response), **kw)):
+        _, meta = model_client.complete_json("Return JSON", "query", log=dict(
+            endpoint="query", prompt_version="query_v1", question="问" * 100))
+        assert meta["request_id"] == "call-1"
+        with patch.object(model_client.httpx, "Client", side_effect=ValueError("proxy")):
+            try:
+                model_client.complete_json("Return JSON", "query")
+            except services.ServiceError:
+                pass
+        text = (Path(tmp) / "ai-calls.jsonl").read_text()
+        assert "private-test-value" not in text
+        ok, failed = [json.loads(line) for line in text.splitlines()]
+        assert (ok["endpoint"], ok["prompt_version"], ok["status"], ok["request_id"]) == ("query", "query_v1", "ok", "call-1")
+        assert ok["question"] == "问" * 80 and ok["usage"] == {"total_tokens": 9} and ok["elapsed_ms"] >= 0
+        assert (failed["endpoint"], failed["status"]) == ("verify", "model_unavailable")
+    assert model_client.SLOTS.acquire(blocking=False) and model_client.SLOTS.acquire(blocking=False)
+    model_client.SLOTS.release(); model_client.SLOTS.release()
 
 
 def main():
@@ -80,6 +129,7 @@ def main():
     else:
         raise AssertionError("Application connection allowed writes")
     model_contract_checks()
+    model_log_checks()
     print("PASS: actual database API, limits, SQL binding/LIKE escaping, graph batch, read-only transaction, "
           "failure isolation, no billed health checks, mocked model contract/error redaction (not a real model call)")
 

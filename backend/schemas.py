@@ -1,8 +1,8 @@
 """M1 response contracts; JSON source fields retain their original structure."""
 
-from typing import Any, Literal
+from typing import Annotated, Any, Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict, Field, StringConstraints
 
 
 class ErrorDetail(BaseModel):
@@ -244,4 +244,52 @@ class FormulaNotes(BaseModel):
     entity_id: str
     patterns: list[PatternNote]
     herbs: list[NoteSource]
+    build_id: str
+
+
+class AICondition(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    field: str = Field(max_length=40)
+    value: str = Field(min_length=1, max_length=40)
+    entity_id: str | None = Field(default=None, max_length=200)
+
+
+class AIQueryRequest(BaseModel):
+    """Either a question for the model, or conditions chosen after disambiguation (no model call)."""
+    model_config = ConfigDict(extra='forbid')
+    question: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=200)] | None = None
+    conditions: list[AICondition] | None = Field(default=None, max_length=6)
+    target_type: str | None = Field(default=None, max_length=40)
+    build_id: str | None = Field(default=None, pattern=r'^[a-f0-9]{64}$')
+
+
+class AIConditionResult(BaseModel):
+    field: str
+    value: str
+    entity_id: str | None
+    label: str
+
+
+class AIChoice(BaseModel):
+    field: str
+    value: str
+    items: list[EntityHit]
+
+
+class AIResults(BaseModel):
+    items: list[EntityHit]
+    total: int
+
+
+class AIQueryResult(BaseModel):
+    status: Literal['ok', 'ambiguous', 'unresolved', 'unsupported']
+    target_type: str
+    conditions: list[AIConditionResult]
+    unsupported: list[str]
+    candidates: list[AIChoice] | None
+    suggestions: list[AIChoice] | None
+    coverage_note: str | None
+    results: AIResults | None
+    model: str | None
+    prompt_version: str | None
     build_id: str
