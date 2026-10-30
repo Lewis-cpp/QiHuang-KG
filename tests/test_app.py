@@ -34,7 +34,8 @@ def model_contract_checks():
         for response, code in (
                 (httpx.Response(429, json={"error": "private-test-value"}), "model_http_error"),
                 (httpx.Response(200, json={"choices": [{"finish_reason": "length", "message": {"content": "{}"}}]}), "model_incomplete"),
-                (httpx.Response(200, json={"choices": [{"finish_reason": "stop", "message": {"content": "not json"}}]}), "model_invalid_response")):
+                (httpx.Response(200, json={"choices": [{"finish_reason": "stop", "message": {"content": "not json"}}]}), "model_invalid_response"),
+                (httpx.Response(200, json={"choices": [{"finish_reason": "stop", "message": None}]}), "model_invalid_response")):
             with patch.object(model_client.httpx, "Client", side_effect=lambda **kw: real_client(
                     transport=httpx.MockTransport(lambda request: response), **kw)):
                 try:

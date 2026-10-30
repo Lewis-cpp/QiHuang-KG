@@ -29,6 +29,7 @@ HERB_LINKS = {'formula': ('CONTAINS', 'herb'), 'patent_medicine': ('HAS_HERBAL_P
 ENUMS = {'herb_nature': (vocab.NATURE_V1, 'nature'), 'route': (vocab.ROUTE_V1, 'Routes_of_administration')}
 RESULT_LIMIT = 50
 COVERAGE_NOTE = '出处朝代覆盖本草典 112 首方剂；证候关联仅覆盖其中 56 首。'
+NOT_CONVERTED = '问题中有部分内容未能转换为条件'
 
 
 class Condition(BaseModel):
@@ -76,8 +77,12 @@ def check(target_type, conditions, unsupported=()):
         field, value = item['field'], item['value'].strip()
         stored = stored_value(field, value) if value else None
         # A repeated single-valued field has no defined meaning; drop every copy rather than pick one.
-        if target_type not in FIELDS.get(field, ()) or stored is None or (counts[field] > 1 and field not in HERB_FIELDS):
-            unsupported.append(LABELS[field].format(value) if field in LABELS else f'{field}：{value}')
+        if field not in LABELS:
+            # An unknown field name is model text; never echo it (spec §7.1).
+            if NOT_CONVERTED not in unsupported:
+                unsupported.append(NOT_CONVERTED)
+        elif target_type not in FIELDS[field] or stored is None or (counts[field] > 1 and field not in HERB_FIELDS):
+            unsupported.append(LABELS[field].format(value))
         else:
             kept.append(dict(field=field, value=value, stored=stored,
                              entity_id=item.get('entity_id') if field in ENTITY_FIELDS else None))
@@ -209,6 +214,6 @@ def ask(question, build_id=None):
     # The page shows `unsupported`; keep only fragments of the question so the model cannot answer through it.
     quoted = [text.strip() for text in output['unsupported'] if text.strip() and text.strip() in question]
     if len(quoted) < len(output['unsupported']):
-        quoted.append('问题中有部分内容未能转换为条件')
+        quoted.append(NOT_CONVERTED)
     return dict(answer(output['target_type'], output['conditions'], quoted, build),
                 model=meta['model'], prompt_version=QUERY_PROMPT)

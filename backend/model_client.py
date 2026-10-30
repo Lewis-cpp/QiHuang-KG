@@ -94,7 +94,7 @@ def complete_json(system, content, log=None):
     except httpx.RequestError:
         status = "model_unavailable"
         raise ServiceError("model_unavailable", "模型服务连接失败或超时") from None
-    except (KeyError, IndexError, ValueError, TypeError):
+    except (KeyError, IndexError, ValueError, TypeError, AttributeError):
         status = "model_invalid_response"
         raise ServiceError("model_invalid_response", "模型响应不符合 JSON 接口约定") from None
     finally:
