@@ -306,6 +306,9 @@ def role_problems(where, masked, occurrences, bundle):
     problems = []
     for start, end in clauses(masked):
         here = [marker for marker in markers if start <= marker[0] and marker[1] <= end]
+        if not here:
+            # A clause without any marker makes no role claim, whatever herbs it mentions.
+            continue
         for occ_start, occ_end, name in occurrences:
             if not (start <= occ_start and occ_end <= end) or name not in bundle['name_info']:
                 continue

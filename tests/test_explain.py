@@ -161,6 +161,8 @@ def role_checks():
     passes(b, output(('四君子汤以人参为君。', [r['人参']])))
     passes(b, output(('人参使脾气健运。', [r['人参']])))  # 使 as a verb is not a role marker
     passes(b, output(('人参为君、白术为臣。', [r['人参'], r['白术']])))
+    # A herb in a clause without any marker makes no role claim (regression: nearest() saw no markers at all).
+    passes(b, output(('白术助脾，人参为君药。', [r['白术'], r['人参']])))
     fails(b, output(('白术为君药。', [r['白术']])), '白术')
     fails(b, output(('人参、白术同为臣药。', [r['人参'], r['白术']])), '人参')
     fails(b, output(('佐以甘草调和诸药。', [r['甘草']])), '甘草')

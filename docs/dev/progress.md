@@ -21,10 +21,21 @@
 
 | 日期 | 用途 | 调用次数 | 累计 |
 | --- | --- | --- | --- |
+| 2026-11-02 | `record_m4.py explain --probe`（3 首最大方剂，m4b-spec §8） | 3 | 3 |
+| 2026-11-02 | 页面验收调试期的真实调用（1 次经页面、1 次 curl、3 次定位 500 根因的直接调用） | 5 | 8 |
+| 2026-11-02 | 页面验收 `m4b_check.mjs`（两轮 × 每轮 1280/390 各生成 1 次） | 4 | 12 |
+| 2026-11-02 | `record_m4.py explain`（10 首，各 1 次，无重试） | 10 | 22 |
 
 ## 日志
 
 （每步一条，最新的在最下面：日期、步骤、结果、提交、下一步。）
+
+- 2026-11-02 基线确认：`tests/run_all.sh` 全绿（`test_explain.py` 因模块未写而跳过）。提交提供的脚手架（6e13b2f）并切出 `feat/m4b-explain`。
+- 2026-11-02 M4b 步骤 1–4：`backend/explain.py`、`prompts/explain_v1.md`、schemas、`POST /api/v1/ai/explain`。`tests/test_explain.py` 一次通过；`run_all.sh` 全绿。提交 5011b9b。
+- 2026-11-02 M4b 步骤 2（probe）：3 首最大方剂全部 `finish_reason=stop`；completion token 含推理（2630/3211/1846），正文约 560，未触发 1024 上限 → 保持 20 句/120 字，不建 v2。见 `m4-explain-probe.json`。期间定位并修复一个 500：句子有角色标记但某分句没有标记且含组成药名时 `nearest()` 返回 `None`；已修复并在 `tests/test_explain.py` 增加回归用例（新增用例，未改动任何原有断言）。
+- 2026-11-02 M4b 步骤 5：`AIExplanation.vue` + EntityView 挂载 + types + 样式；`npm run build` 通过。页面验收 `m4b-browser.json` 23/23 全过（1280/390 两宽度：按钮不自动请求、角标进证据页可后退、降级原因、模型未就绪、390 无横向滚动；生成用真实模型，降级/未就绪用 `tests/browser/stub_backend.py`）。验收脚本与替身后端在 `tests/browser/`（`node_modules` 已被 Git 忽略）。
+- 2026-11-02 M4b 步骤 6：`record_m4.py explain` 10 首全部 `ok`，引用 241/241 可回查（100%），`zhu_ling_ze_xie_role_stated=false`，降级演练通过。`m4-explain.json` 已生成。
+- 2026-11-02 M4b 步骤 7：spec.md §7.2 指向 m4b-spec（已由脚手架完成）；m4-development.md §11 追加实施记录；README 进度更新；cases.md 增加 M4、M4B、M5 三节。下一步：推送并开 M4b PR，然后进入 M5。
 
 ## 测试争议
 
