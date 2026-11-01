@@ -1,0 +1,2070 @@
+{
+  "recorded_at": "2026-11-02T00:34:18+08:00",
+  "model": "deepseek-flash",
+  "prompt_version": "explain_v1",
+  "build_id": "cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e",
+  "samples": [
+    {
+      "entity_id": "bencaodian:formula:si_jun_zi_tang",
+      "label": "四君子汤",
+      "status": "ok",
+      "code": null,
+      "attempts": 1,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "本方由人参、白术、茯苓、甘草四味药组成。",
+              "refs": [
+                "M2",
+                "M3",
+                "M4",
+                "M5"
+              ],
+              "citations": [
+                "evidence:72340d34a2f1acaf0dee984198dcb9ea60beda6d11d8168122cecd6c1f19e33c",
+                "evidence:cf0907925b8fd3f4833665d5d7e13408733e9d3d33747a9d38cb45c9a162c9ef",
+                "evidence:e2eba51c4c921ac766ef4831bc0feae6c2ae35032d928c858c8590e4e850bfab",
+                "evidence:e54c918ca07feb69aa2c5b62e13c4e4e6ba794bd6019539d5ecc30d6f467d2ec",
+                "evidence:27618203333077f217149f2f3897ab1f632fc2efc5f941bc22828015e3ffb9b8",
+                "evidence:6f38a8984de45604434c1e7e27ce10d060648ba6f9aa2b13f229f3743e3c4431",
+                "evidence:470e04a1802a935538b42e4c079122a1a304ca39e1a2aa632ce4ffc12d0e7cd9",
+                "evidence:c703c471d2406a8341c657f72453f57745c877bb6199db587a81ed760669dbbf"
+              ]
+            },
+            {
+              "text": "人参为君药，剂量 9g。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:72340d34a2f1acaf0dee984198dcb9ea60beda6d11d8168122cecd6c1f19e33c",
+                "evidence:cf0907925b8fd3f4833665d5d7e13408733e9d3d33747a9d38cb45c9a162c9ef"
+              ]
+            },
+            {
+              "text": "白术为臣药，剂量 9g。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:e2eba51c4c921ac766ef4831bc0feae6c2ae35032d928c858c8590e4e850bfab",
+                "evidence:e54c918ca07feb69aa2c5b62e13c4e4e6ba794bd6019539d5ecc30d6f467d2ec"
+              ]
+            },
+            {
+              "text": "茯苓为佐药，剂量 9g。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:27618203333077f217149f2f3897ab1f632fc2efc5f941bc22828015e3ffb9b8",
+                "evidence:6f38a8984de45604434c1e7e27ce10d060648ba6f9aa2b13f229f3743e3c4431"
+              ]
+            },
+            {
+              "text": "甘草为使药，剂量 6g。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:470e04a1802a935538b42e4c079122a1a304ca39e1a2aa632ce4ffc12d0e7cd9",
+                "evidence:c703c471d2406a8341c657f72453f57745c877bb6199db587a81ed760669dbbf"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "本方分类为补益剂（补气）。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:dba0589be0c6aa1ec748ef96515426334f26c27978650f0a6a9b91d6fb1cb4b3"
+              ]
+            },
+            {
+              "text": "其治法为益气健脾。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:dba0589be0c6aa1ec748ef96515426334f26c27978650f0a6a9b91d6fb1cb4b3"
+              ]
+            },
+            {
+              "text": "本方为脾胃气虚证之代表方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:dba0589be0c6aa1ec748ef96515426334f26c27978650f0a6a9b91d6fb1cb4b3"
+              ]
+            },
+            {
+              "text": "关联证候为脾气虚证。",
+              "refs": [
+                "M6"
+              ],
+              "citations": [
+                "evidence:0d1d71ebb390addaff65ca6559badf80afa8d2038e22164b37dbe95a1fad6ee1"
+              ]
+            },
+            {
+              "text": "方剂说明称其开补气方剂之先河。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:dba0589be0c6aa1ec748ef96515426334f26c27978650f0a6a9b91d6fb1cb4b3"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "出处为《太平惠民和剂局方》，宋。",
+              "refs": [
+                "M7"
+              ],
+              "citations": [
+                "evidence:4099119e032695da522b9c56765df71a99968ffc98c5f57087d7a9299ea6924e",
+                "evidence:41d36cda7f370cc9ac94ca323dcc3a73047968e9519b31c51e3e17b11fa92d81"
+              ]
+            },
+            {
+              "text": "材料记载出处篇章为卷之三 治一切气。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:dba0589be0c6aa1ec748ef96515426334f26c27978650f0a6a9b91d6fb1cb4b3"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "制法与服法为水煎服。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:dba0589be0c6aa1ec748ef96515426334f26c27978650f0a6a9b91d6fb1cb4b3"
+              ]
+            },
+            {
+              "text": "方名四君子与药性平和、四味皆为君子之品有关。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:dba0589be0c6aa1ec748ef96515426334f26c27978650f0a6a9b91d6fb1cb4b3"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [
+        "材料未说明具体症状表现。",
+        "材料未说明禁忌与不良反应。",
+        "材料未说明加减化裁。",
+        "材料未说明各药的具体功效。"
+      ],
+      "citations_total": 26,
+      "citations_resolved": 26,
+      "usage": [
+        {
+          "prompt_tokens": 889,
+          "completion_tokens": 1684,
+          "total_tokens": 2573,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1226
+          },
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 249
+        }
+      ],
+      "elapsed_ms": 8136
+    },
+    {
+      "entity_id": "bencaodian:formula:zhu_ling_tang",
+      "label": "猪苓汤",
+      "status": "ok",
+      "code": null,
+      "attempts": 1,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "猪苓为君药，剂量9g。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:52cb88e4d2a46173c151bc8000010f392799cd554b8c6acc5606f449d7f582d8",
+                "evidence:cd7c1782bc637271fffaab04b0dd9b6020bcc04c1a00b9265a17a139997c9751"
+              ]
+            },
+            {
+              "text": "茯苓为臣药，剂量9g。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:6da91277fd146e68fa5ece88d1263a95591dda2c6fad2676e7055771c708aae9",
+                "evidence:d393785e9e820ae0f6129882b69579a78e2d33c1a7c392c6fa68df1e2e8e5e71"
+              ]
+            },
+            {
+              "text": "滑石为佐药，剂量9g。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:53b9c7b2aece2b37ddbaf46fa24a4c3576c92e8f8022e41a12224faeaf29842a",
+                "evidence:c71a04cbfe1b48c325fa519d1c8e5cb67b440943523be2ebd4cb571e97ef672e"
+              ]
+            },
+            {
+              "text": "阿胶为佐药，剂量9g。",
+              "refs": [
+                "M6"
+              ],
+              "citations": [
+                "evidence:2346bffbb69de89a2fda92487a5ba4b7dc1c867f530090c9ec1799cd079bd224",
+                "evidence:be6eaadcd2f81c569bf50e23a8a3c2aa28bb017b6172cf50e621fa9da5a6ba4d"
+              ]
+            },
+            {
+              "text": "泽泻剂量9g，角色资料未给出或存在冲突。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:1c2fd712b97d53a29debcfaaaa4cb44d2c71254027b5278f4118ba301f5f769f",
+                "evidence:5bdbfa908c21f02031875273f22f51c153ff6df0875be40ca1a85c94646f6f90"
+              ]
+            },
+            {
+              "text": "原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "治法为利水养阴清热。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            },
+            {
+              "text": "主治阳明病、少阴病水热互结伤阴证。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            },
+            {
+              "text": "可见小便不利、发热口渴、心烦不寐。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            },
+            {
+              "text": "或见咳、呕、下利。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            },
+            {
+              "text": "本方重在利水清热兼养阴，适于阴虚有热之水停。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            },
+            {
+              "text": "关联证候包括下焦湿热证、肾阴虚证、膀胱湿热证。",
+              "refs": [
+                "M7",
+                "M8",
+                "M9"
+              ],
+              "citations": [
+                "evidence:339dcdbe4f6250a2463bf810edea6dd422c08e0667d256804d18a87066b28383",
+                "evidence:35f6cd2e4f846bbdebc700fb1126148fd7eb866aa9ad05a061fb899265df0d36",
+                "evidence:541b6881de26d5f093c83799a6d20b94283bf91fbabb788be300b995303303de"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "出处为《伤寒论》，东汉。",
+              "refs": [
+                "M10"
+              ],
+              "citations": [
+                "evidence:177cfb7cd61b5894742bb6aa80b42697663efa79995a85fffe0e9a2a1bc5a0ce",
+                "evidence:d8980c74a428547e19d5b3e7c0b3d62d570e2a911fb94bbce75b92bef77678e0"
+              ]
+            },
+            {
+              "text": "出处篇章为辨阳明病脉证并治。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "分类为祛湿剂（利水渗湿）。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            },
+            {
+              "text": "本方与五苓散同属利水之剂。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            },
+            {
+              "text": "制法与服法为水煎服。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            },
+            {
+              "text": "阿胶另烊化兑服。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:8b1189ac83d35e725b5302f50d449b34398c3807d44bdce865f2607f7fe5d54d"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [
+        "材料未说明本方的加减法。",
+        "材料未说明本方的禁忌证。",
+        "材料未说明各药的炮制方法。",
+        "材料未说明本方煎煮时间。"
+      ],
+      "citations_total": 26,
+      "citations_resolved": 26,
+      "usage": [
+        {
+          "prompt_tokens": 1038,
+          "completion_tokens": 2430,
+          "total_tokens": 3468,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1931
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 526
+        }
+      ],
+      "elapsed_ms": 13917
+    },
+    {
+      "entity_id": "bencaodian:formula:wu_ling_san",
+      "label": "五苓散",
+      "status": "ok",
+      "code": null,
+      "attempts": 1,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "五苓散由泽泻、猪苓、茯苓、白术、桂枝五味组成。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:82131d52881dd7228bd4617da18244f27000f6222fe2c084ac597d7ec311872e"
+              ]
+            },
+            {
+              "text": "猪苓用量 9g，角色为君。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:abecce4fc82078df26a61a767857cec077f78d4b45792179dc1cf4c7ea8a8e36",
+                "evidence:e4166e640ef29e90deab1151f670931302ca8d6bb4b0f26acebd57576dfb2bcd"
+              ]
+            },
+            {
+              "text": "泽泻用量 15g，角色为君。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:3d5d3e06b264cabbb946b316272748737837a5825da2fd2c023c98a62e6ee2ef",
+                "evidence:70c05a432537d1d6529b192f884e9981f19c127c6e32b0a39f241f0e0e603088"
+              ]
+            },
+            {
+              "text": "茯苓用量 9g，角色为臣。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:0c3a5678df3b2f460d80e7deadbf28aa859681c819801f64e605be5974fb38ad",
+                "evidence:ad09dd348213b914155a93e9fb569fb085ef963c7fc62dacbfb4d11297a36493"
+              ]
+            },
+            {
+              "text": "白术用量 9g，角色为臣。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:5587cee6293e37a4ab2b982184a1cd1218797f06e8f71ed77c29273ea9916442",
+                "evidence:81abd0a7d7d589c114b41ed599a2860aaa16366f31205ae4751b5be1d2a79967"
+              ]
+            },
+            {
+              "text": "桂枝用量 6g，角色为佐。",
+              "refs": [
+                "M6"
+              ],
+              "citations": [
+                "evidence:8425b05cf45bbe0be36cc117ebc7806be6bbdc176b9e3b125621494ef5c1e227",
+                "evidence:a79d5330aaaa39c7a3364afcc811113c63d3aa0c2b79233480f1f035d8c6357c"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "本方治法为利水渗湿、温阳化气。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:82131d52881dd7228bd4617da18244f27000f6222fe2c084ac597d7ec311872e"
+              ]
+            },
+            {
+              "text": "《伤寒论》五苓散为太阳蓄水证而设。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:82131d52881dd7228bd4617da18244f27000f6222fe2c084ac597d7ec311872e"
+              ]
+            },
+            {
+              "text": "其证见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:82131d52881dd7228bd4617da18244f27000f6222fe2c084ac597d7ec311872e"
+              ]
+            },
+            {
+              "text": "病机涉及表邪未解、内传太阳之腑、膀胱气化失司。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:82131d52881dd7228bd4617da18244f27000f6222fe2c084ac597d7ec311872e"
+              ]
+            },
+            {
+              "text": "材料列痰湿证为关联证候。",
+              "refs": [
+                "M7"
+              ],
+              "citations": [
+                "evidence:e4c7196c6768ad455e1ac548cb3cc6f440af7a3f285f1b6aced5858a3a926bb7"
+              ]
+            },
+            {
+              "text": "材料列膀胱湿热证为关联证候。",
+              "refs": [
+                "M8"
+              ],
+              "citations": [
+                "evidence:9b11540c9f66f8bc0bedbe263c886665d053212ed7e148aeea8823c81ed9052e"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "五苓散出自《伤寒论》。",
+              "refs": [
+                "M9"
+              ],
+              "citations": [
+                "evidence:101c41a8c5cc95aca2374751ed1980d0d5489829d41b681d61b6612a94e80f47",
+                "evidence:6e462980318e6f4624719971929c674c0ecf3f8c7f70be6e508589d008d882a9"
+              ]
+            },
+            {
+              "text": "材料标注《伤寒论》为东汉文献。",
+              "refs": [
+                "M9"
+              ],
+              "citations": [
+                "evidence:101c41a8c5cc95aca2374751ed1980d0d5489829d41b681d61b6612a94e80f47",
+                "evidence:6e462980318e6f4624719971929c674c0ecf3f8c7f70be6e508589d008d882a9"
+              ]
+            },
+            {
+              "text": "其出处篇章为辨太阳病脉证并治中。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:82131d52881dd7228bd4617da18244f27000f6222fe2c084ac597d7ec311872e"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "本方属祛湿剂中的利水渗湿类。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:82131d52881dd7228bd4617da18244f27000f6222fe2c084ac597d7ec311872e"
+              ]
+            },
+            {
+              "text": "材料称其为利水渗湿、温阳化气之祖方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:82131d52881dd7228bd4617da18244f27000f6222fe2c084ac597d7ec311872e"
+              ]
+            },
+            {
+              "text": "制法与服法为上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:82131d52881dd7228bd4617da18244f27000f6222fe2c084ac597d7ec311872e"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [
+        "材料未给出主治的舌象、脉象。",
+        "材料未说明各药的具体功效。",
+        "材料未给出各药的炮制方法。"
+      ],
+      "citations_total": 25,
+      "citations_resolved": 25,
+      "usage": [
+        {
+          "prompt_tokens": 1016,
+          "completion_tokens": 3013,
+          "total_tokens": 4029,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2478
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 504
+        }
+      ],
+      "elapsed_ms": 14349
+    },
+    {
+      "entity_id": "bencaodian:formula:gui_pi_tang",
+      "label": "归脾汤",
+      "status": "ok",
+      "code": null,
+      "attempts": 1,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "黄芪为君药，剂量12g。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:051fa5761b6bc331b5ee9d0b21f57b34543490b0e9098b6ed7d1d3edc6ba0a58",
+                "evidence:96624440b30a996f2ca060e91639d3a083ee5b1a97548c06762726f9a9c007b7"
+              ]
+            },
+            {
+              "text": "人参为君药，剂量9g。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:0a043f81d8c7fb4b5a6aa647bebe6f234247d64d19eff8091b1746c1ec6ca346",
+                "evidence:44613c84c7d501684c1759fa1bac1cf73bb727eae9cbdb60b58b4cbca0fa582b"
+              ]
+            },
+            {
+              "text": "白术为臣药，剂量9g。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:4ff52133906656d400a8f8961b3d2e3582a58dc299a50931ef6060c1e29f4e21",
+                "evidence:a837e6cc0c254f98feb914613255631b2b20c49d6ce04bcc8504a78246d9d616"
+              ]
+            },
+            {
+              "text": "当归为臣药，剂量9g。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:77ae8ca4c3cf923c413e73f7c7e66f41817b08722f9269a23682386df74021bb",
+                "evidence:91c8f2888a1e8e166f5e77f3878ca52800ca9bc32b0602b063d8201f3dc70043"
+              ]
+            },
+            {
+              "text": "茯苓为臣药，剂量9g。",
+              "refs": [
+                "M6"
+              ],
+              "citations": [
+                "evidence:0cf661b3140c755efd5a1c7a0ae4924a1bf2187e19e6067a2a558d064b599c22",
+                "evidence:ab89814a5a317dd27b1822658026b25ee25e22092de6d9bdf3fbe38e19928ca0"
+              ]
+            },
+            {
+              "text": "酸枣仁为佐药，剂量9g。",
+              "refs": [
+                "M7"
+              ],
+              "citations": [
+                "evidence:623126294f1f92e1e70c602cb5ecbe4abef1bf30ae211568707e916c6df62eb9",
+                "evidence:7843b86c1632b503db4c11b2b92bfb494af2ab5fe315ea6f7c0571bd6cf40d39"
+              ]
+            },
+            {
+              "text": "龙眼肉为佐药，剂量9g。",
+              "refs": [
+                "M8"
+              ],
+              "citations": [
+                "evidence:31d59bfc052f1f744ef4693c5a8bf849e686234b5f595fce168965d1d16b9fc5",
+                "evidence:458bd7a4b31921ea8216f6e53e6a8a22d499cd8668f7a0e975405cfe0513ee06"
+              ]
+            },
+            {
+              "text": "远志为佐药，剂量6g。",
+              "refs": [
+                "M9"
+              ],
+              "citations": [
+                "evidence:9bdcf51b5c8add67d5536674bad93eb7acbab5b26f13be3d2abf27f86403d58b",
+                "evidence:bfc4e5d00e7b3e34d4f1d4b43b5adae7e2ae0d89871ddd144684ab753f16aefd"
+              ]
+            },
+            {
+              "text": "木香为佐药，剂量6g。",
+              "refs": [
+                "M10"
+              ],
+              "citations": [
+                "evidence:02ce4c2c898c9441627e6016a16985155d37c748f43c3a88ed5a9fc0f4d1a9d3",
+                "evidence:6e8dd5bbf0c004f64c372f92d3de2f73cf45eba0d13e4a1733c52510b97db544"
+              ]
+            },
+            {
+              "text": "生姜为使药，剂量3g。",
+              "refs": [
+                "M11"
+              ],
+              "citations": [
+                "evidence:1e02d57cb18338d7a391cb267e772be107daf2e6b746327eb644aae26f0f0f59",
+                "evidence:b91717c7d83ab8d0fbaff66c4a968a102fc0cd41899c33d14818c192b3c1f6a1"
+              ]
+            },
+            {
+              "text": "大枣为使药，剂量3 枚。",
+              "refs": [
+                "M12"
+              ],
+              "citations": [
+                "evidence:263c79d44d6232ee9a89016b0f865ed803184fc028017329a58600e31036c758",
+                "evidence:2bbdc84e8c0eaef5f5610f2965fead2762be0b5c297c158d4622f17c2c863913"
+              ]
+            },
+            {
+              "text": "甘草为使药，剂量6g。",
+              "refs": [
+                "M13"
+              ],
+              "citations": [
+                "evidence:4ae94ffed46c13521b2bcb9f71fe355d6cb2efd0d66b38c16bdaaab3a5c9a163",
+                "evidence:a874f5b949a43ee6b753da7bc7857c3838613bbb75dff8d6e3ef749e1e4a4dcb"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "治法为益气补血，健脾养心。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:14cb6b08d11de70af2a5e2d70859ddb48066684959c5918b9a996e5bd6e769ab"
+              ]
+            },
+            {
+              "text": "主治心脾两虚、气血不足所致心悸怔忡、失眠健忘、体倦食少、崩漏便血等。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:14cb6b08d11de70af2a5e2d70859ddb48066684959c5918b9a996e5bd6e769ab"
+              ]
+            },
+            {
+              "text": "关联证候包括心血虚证、气血两虚证和脾气虚证。",
+              "refs": [
+                "M14",
+                "M15",
+                "M16"
+              ],
+              "citations": [
+                "evidence:0e1e0438a04801a40e09958586d5786fada36bbad184dda82956019cd1718225",
+                "evidence:ee8ada220c50cfd3481dc1601cf97e25b587fb2cdc615b026ed339990d056079",
+                "evidence:ec20ff1fe68bcfc9baf7ddcd417221f9f1cf5738f5efe5d6ed642bd0d532c5f6"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "材料记载本方首载于严用和《济生方》。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:14cb6b08d11de70af2a5e2d70859ddb48066684959c5918b9a996e5bd6e769ab"
+              ]
+            },
+            {
+              "text": "后薛己《正体类要》增当归、远志而成今通行方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:14cb6b08d11de70af2a5e2d70859ddb48066684959c5918b9a996e5bd6e769ab"
+              ]
+            },
+            {
+              "text": "材料另记出处为《医方集解》（清），与前者存在不一致。",
+              "refs": [
+                "M1",
+                "M17"
+              ],
+              "citations": [
+                "evidence:14cb6b08d11de70af2a5e2d70859ddb48066684959c5918b9a996e5bd6e769ab",
+                "evidence:936c460a611f74a4be1a430594dc42849379f766fbdd937d4cc1612275281a1a"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "特点为气血双补而以补脾为主、补中有行。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:14cb6b08d11de70af2a5e2d70859ddb48066684959c5918b9a996e5bd6e769ab"
+              ]
+            },
+            {
+              "text": "制法与服法为水煎服，加生姜、大枣同煎。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:14cb6b08d11de70af2a5e2d70859ddb48066684959c5918b9a996e5bd6e769ab"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [
+        "材料未给出方剂名称",
+        "材料未给出各药单独功效",
+        "材料未给出随证加减法"
+      ],
+      "citations_total": 35,
+      "citations_resolved": 35,
+      "usage": [
+        {
+          "prompt_tokens": 1181,
+          "completion_tokens": 3366,
+          "total_tokens": 4547,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2814
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 669
+        }
+      ],
+      "elapsed_ms": 17326
+    },
+    {
+      "entity_id": "bencaodian:formula:shi_zao_tang",
+      "label": "十枣汤",
+      "status": "ok",
+      "code": null,
+      "attempts": 2,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "芫花为君药，剂量为1.5g。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:5135aa9a3ad027a70aa571bc67790370dfb5a3a147c37701e98b6e86e2a3f27d",
+                "evidence:7e9ea90dff28dbd4f003cc2b26da5e9352fa1ed273cc91f94a06ab913be69b99"
+              ]
+            },
+            {
+              "text": "甘遂为君药，剂量为1g。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:085d0b58102a802147549fd8c3259e71bcec2e75a57c45397c1cf2ac4368cc8d",
+                "evidence:5847ccd12bda7e28d43cabad323a8211e7797086b692e9ef41e96c16c2fb600a"
+              ]
+            },
+            {
+              "text": "大戟为君药，剂量为1.5g。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:21bf5c6e5a11653f39d32b821f1474f01a3876f1fee8d3fafa947a310bf807c5",
+                "evidence:2b2ed37c7960b8bc71012e7540c7289f2e57f06de05f5bc39492f7362929794c",
+                "evidence:2b6e07611162bf002094efa34639c56714fb09e0ecae0d3e2fc6b785116c6712",
+                "evidence:8b9bc72bfa1ac389dabde6e9b0c0133396bf8c559f1ac76233f2bc1214ba9107",
+                "evidence:8edfc74a795430bbbb0ab76d439a8d7d2d4fcb61d309ed6c5cf07d08e7a3f726"
+              ]
+            },
+            {
+              "text": "大枣为使药，剂量为10枚。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:69ff837d217ab6b077942094ec78da73926d0de046c228b7bb102770339fbc76",
+                "evidence:a0a09d4dab413e825baa1110b271f407e8562eefb0431efe7b64ff52d4a77738"
+              ]
+            },
+            {
+              "text": "方以甘遂、大戟、芫花三味峻烈逐水药为主。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:4e7073804a3b8b44048a5394fd018911df10451fe49de6a7bca5448ef1ba8a1c"
+              ]
+            },
+            {
+              "text": "大枣益气护胃，以缓药性之峻。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:4e7073804a3b8b44048a5394fd018911df10451fe49de6a7bca5448ef1ba8a1c"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "本方分类为泻下剂（逐水）。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:4e7073804a3b8b44048a5394fd018911df10451fe49de6a7bca5448ef1ba8a1c"
+              ]
+            },
+            {
+              "text": "治法为攻逐水饮。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:4e7073804a3b8b44048a5394fd018911df10451fe49de6a7bca5448ef1ba8a1c"
+              ]
+            },
+            {
+              "text": "本方为逐水峻剂。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:4e7073804a3b8b44048a5394fd018911df10451fe49de6a7bca5448ef1ba8a1c"
+              ]
+            },
+            {
+              "text": "适用于悬饮、水肿等水饮壅盛之实证。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:4e7073804a3b8b44048a5394fd018911df10451fe49de6a7bca5448ef1ba8a1c"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "十枣汤的出处为《伤寒论》，东汉。",
+              "refs": [
+                "M1",
+                "M6"
+              ],
+              "citations": [
+                "evidence:4e7073804a3b8b44048a5394fd018911df10451fe49de6a7bca5448ef1ba8a1c",
+                "evidence:fe88cfb4aa71333d0074e4028e0e3bb8ba56f69f5a2d6e25075112cfa0864e49"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "制法载为三味等分为末，先煮大枣，去渣后纳药末。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:4e7073804a3b8b44048a5394fd018911df10451fe49de6a7bca5448ef1ba8a1c"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [
+        "材料未给出本方的禁忌人群与注意事项",
+        "材料未给出各药的具体归经",
+        "材料未给出方剂的现代剂量换算"
+      ],
+      "citations_total": 20,
+      "citations_resolved": 20,
+      "usage": [
+        {
+          "prompt_tokens": 942,
+          "completion_tokens": 1712,
+          "total_tokens": 2654,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1297
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 430
+        },
+        {
+          "prompt_tokens": 1020,
+          "completion_tokens": 3113,
+          "total_tokens": 4133,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2746
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 252
+        }
+      ],
+      "elapsed_ms": 24787
+    },
+    {
+      "entity_id": "bencaodian:formula:ma_huang_tang",
+      "label": "麻黄汤",
+      "status": "ok",
+      "code": null,
+      "attempts": 1,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "麻黄为君药，剂量 9g。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:538613318458ff90c88c87bcf2010ad76152235d711a4b01ce1045ea2d15b83e",
+                "evidence:9bd82c12e633e502ec9bafb7dca20f5b303fe50cf812d253f9fb42f399eb526d"
+              ]
+            },
+            {
+              "text": "桂枝为臣药，剂量 6g。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:1bf503e9ebc95948cd23f38a63c330c4eb014a77b5777c71ff658bbb5b1cbbca",
+                "evidence:4c9a9c1bbd3dcf24acaa7600b476ccc60be7a062c453c14b8f6449852e6aaf91"
+              ]
+            },
+            {
+              "text": "杏仁为佐药，剂量 9g。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:862553aaf410b587de2cd68cc54d74f1e86c6752acb7fc2f01ca6fca697af3d1",
+                "evidence:c8f953541ab40d06729445f7e7829d478618e2e54d163c1f46d66dd2bfe37e5c"
+              ]
+            },
+            {
+              "text": "甘草为使药，剂量 3g。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:c19c32e45eb773845e84df38e5a84b1531ace9ffffecb75fa7709f77ddd3cce1",
+                "evidence:c725318f07c020ec6d5d0cf2d0568c3384a1d990dfd7fd7c7ac403eb3c9363b3"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "本方功用为发汗解表、宣肺平喘。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:be95e9e7892ac1f4103fa1f8f3870e63138ae3d09de3f122440483597edb7ab5"
+              ]
+            },
+            {
+              "text": "本方为治外感风寒表实证的代表方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:be95e9e7892ac1f4103fa1f8f3870e63138ae3d09de3f122440483597edb7ab5"
+              ]
+            },
+            {
+              "text": "关联证候为外感风寒表实证。",
+              "refs": [
+                "M6"
+              ],
+              "citations": [
+                "evidence:5356aedf6ec23808032ea70d47090942e51ac60b15a5d72cce17cdb68b234822"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "本方出处为《伤寒论》，成书于东汉。",
+              "refs": [
+                "M7"
+              ],
+              "citations": [
+                "evidence:d91e7114fa56ff829487823668933b5360b9fddb3b15cdf824e9a31b6e85a11e",
+                "evidence:f4e580680bb00430023f32aacc5237374773c2ab56613e431df3bb653ea0b473"
+              ]
+            },
+            {
+              "text": "相关篇章为辨太阳病脉证并治中。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:be95e9e7892ac1f4103fa1f8f3870e63138ae3d09de3f122440483597edb7ab5"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "本方属解表剂中的辛温解表类。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:be95e9e7892ac1f4103fa1f8f3870e63138ae3d09de3f122440483597edb7ab5"
+              ]
+            },
+            {
+              "text": "制法和服法为水煎服。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:be95e9e7892ac1f4103fa1f8f3870e63138ae3d09de3f122440483597edb7ab5"
+              ]
+            },
+            {
+              "text": "服后覆取微似汗，不须啜粥。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:be95e9e7892ac1f4103fa1f8f3870e63138ae3d09de3f122440483597edb7ab5"
+              ]
+            },
+            {
+              "text": "本方与桂枝汤为太阳病表实、表虚证的对照方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:be95e9e7892ac1f4103fa1f8f3870e63138ae3d09de3f122440483597edb7ab5"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [],
+      "citations_total": 18,
+      "citations_resolved": 18,
+      "usage": [
+        {
+          "prompt_tokens": 904,
+          "completion_tokens": 1384,
+          "total_tokens": 2288,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1043
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 392
+        }
+      ],
+      "elapsed_ms": 7867
+    },
+    {
+      "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+      "label": "小柴胡汤",
+      "status": "ok",
+      "code": null,
+      "attempts": 1,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "材料记载本方原方含七味药。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:d93fe88835979d646b9ea67c25fa117f07a4266a12b517d7e5d9debf682a061a"
+              ]
+            },
+            {
+              "text": "柴胡为君药，剂量 12g。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:0027782eb92b0624711c1985c26c8237a8ffb23b376e0653742a3db713ef812e",
+                "evidence:6fb45b8e8c23b77ece105b6c1fd9870037ce667d8da5ac7bc1808af1991e8fb2"
+              ]
+            },
+            {
+              "text": "黄芩为臣药，剂量 9g。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:836ebf524a8dea8ae26a3f9be50ed85162ea1f29749da4db8a596fdd13128cb4",
+                "evidence:a418991f28192d9ba5e50d403a660d6097da7f74c83de58d16099591461ec480"
+              ]
+            },
+            {
+              "text": "人参为佐药，剂量 6g。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:cd708b894667f478889d71791f1ebe95d3248e398fd9017ae88a513c8e918b6e",
+                "evidence:ea089c455af8bca750464950d37dcae611b80cbfa46681c8a159539e10463c32"
+              ]
+            },
+            {
+              "text": "半夏为佐药，剂量 9g。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:164fc5ec0010a240d82309b3749fc82b124f02858ff2b8f8f55951c59dcb7360",
+                "evidence:6bfbb5333065ec808e4ba540fe0358ce96f4b3ba3ef178ca2932f6fe510b77ed"
+              ]
+            },
+            {
+              "text": "生姜为佐药，剂量 9g。",
+              "refs": [
+                "M6"
+              ],
+              "citations": [
+                "evidence:7137f04e43ae9ce8e79d561ccfebc24c44c66acdcfb885ab8f26c79c9d590b2e",
+                "evidence:8ad177677342f4e783ec41d8d885429b54ba417520955fe8ccd4f048f55319b7"
+              ]
+            },
+            {
+              "text": "大枣为使药，剂量 12g。",
+              "refs": [
+                "M7"
+              ],
+              "citations": [
+                "evidence:3e5dbb12fe06c845751cb0a859800a2d5ed0622dccefa7d2dfda425da90a2937",
+                "evidence:b6caad2f7c8a5b231ce92c6ee43c6ba8f4b7fbf3aabc60b975c2e1a1fc39dc05"
+              ]
+            },
+            {
+              "text": "甘草为使药，剂量 6g。",
+              "refs": [
+                "M8"
+              ],
+              "citations": [
+                "evidence:c250f5fd8f6572b87919a3a0193e70d59db071965ce0b7b62623a4032e60f971",
+                "evidence:cdfde9ccb9c931d269481220cd57c3229fbd9d0c83417c162cbc5965ed2589ab"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "本方分类为和解剂（和解少阳）。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:d93fe88835979d646b9ea67c25fa117f07a4266a12b517d7e5d9debf682a061a"
+              ]
+            },
+            {
+              "text": "治法为和解少阳。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:d93fe88835979d646b9ea67c25fa117f07a4266a12b517d7e5d9debf682a061a"
+              ]
+            },
+            {
+              "text": "材料称本方为少阳病主方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:d93fe88835979d646b9ea67c25fa117f07a4266a12b517d7e5d9debf682a061a"
+              ]
+            },
+            {
+              "text": "关联证候为少阳证。",
+              "refs": [
+                "M9"
+              ],
+              "citations": [
+                "evidence:9cb452af9b6256388013d160823a1a5e726fd468c2f9f7bedd94a183e56a5a61"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "出处为《伤寒论》，东汉。",
+              "refs": [
+                "M10"
+              ],
+              "citations": [
+                "evidence:3012482cd4d04a479d7fba7d8fab0972f5ec8d2a078f88bcb8189013ca3f737b",
+                "evidence:b27ee5940fe3dbd4fe11d057fd23488c288da4ef469538ff35794ef109349bbc"
+              ]
+            },
+            {
+              "text": "出处篇章为辨太阳病脉证并治中。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:d93fe88835979d646b9ea67c25fa117f07a4266a12b517d7e5d9debf682a061a"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "制法与服法为水煎服。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:d93fe88835979d646b9ea67c25fa117f07a4266a12b517d7e5d9debf682a061a"
+              ]
+            },
+            {
+              "text": "材料称本方具有最丰富的加减法。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:d93fe88835979d646b9ea67c25fa117f07a4266a12b517d7e5d9debf682a061a"
+              ]
+            },
+            {
+              "text": "材料注明此处简记主要药味。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:d93fe88835979d646b9ea67c25fa117f07a4266a12b517d7e5d9debf682a061a"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [
+        "材料未给出少阳证的具体症状。",
+        "材料未说明加减法的具体内容。",
+        "材料未给出各药的具体功效。"
+      ],
+      "citations_total": 25,
+      "citations_resolved": 25,
+      "usage": [
+        {
+          "prompt_tokens": 955,
+          "completion_tokens": 1915,
+          "total_tokens": 2870,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1495
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 443
+        }
+      ],
+      "elapsed_ms": 10483
+    },
+    {
+      "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+      "label": "六味地黄丸",
+      "status": "ok",
+      "code": null,
+      "attempts": 1,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "熟地黄为君药，剂量 24g。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:064344127d9d40c88e0008941b9987a6c4793950d7787da032127fd109f5b20c",
+                "evidence:c9c1ad2fa035a92e1660aed54a98ce09cf5b7d04a5a6d015415fc0447130f695"
+              ]
+            },
+            {
+              "text": "山茱萸为臣药，剂量 12g。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:c718936d9a981128876c11b591eb1e2fdd81e77cb6ca43b6acab28825c17f773",
+                "evidence:fb15db96ff0a5492fce76d47a0b6c3cfe995cbb156dcde2b692bad05f6c8536c"
+              ]
+            },
+            {
+              "text": "山药为臣药，剂量 12g。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:3b2787d1a40519390185b325dce51697e5bf80c78a47da58a8b74776a5102ac8",
+                "evidence:501427b88a7c8294c4ccecbc10c07d80e145dd6b54acf3f4ed3c8c6a3d108c67"
+              ]
+            },
+            {
+              "text": "泽泻为佐药，剂量 9g。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:472c256c83ed0b08263bae1c97ab4e95592566a27dffa33f7eb6873f0245163a",
+                "evidence:722025f6ffd8e54e16c8a838bf758ebe200a6a410b51d1c6db8bea67571b8343"
+              ]
+            },
+            {
+              "text": "牡丹皮为佐药，剂量 9g。",
+              "refs": [
+                "M6"
+              ],
+              "citations": [
+                "evidence:bcc1cf979c0cc81499fd14d77c182b3ce0ad809449e709676f27c9292fbb4d54",
+                "evidence:d38ddf6928d7c2c5d55041d8a2e32db5a92628414c86c89878331f0f1a230fae"
+              ]
+            },
+            {
+              "text": "茯苓为佐药，剂量 9g。",
+              "refs": [
+                "M7"
+              ],
+              "citations": [
+                "evidence:76c9aafe324e1a2f0d43d2b8b19656cfe31d2cc18cf782e51662564c239075b1",
+                "evidence:bb7194b013a7adccf21a40b9210e2a9daa62f1cf9dfb16247165f2b34852d8c1"
+              ]
+            },
+            {
+              "text": "全方体现三补三泻，配伍精当。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:22b28839fff125720fd274c6684fd6608f87bcab5f2e1fb22fd261e240ecfcf2"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "本方属补益剂中的补阴剂。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:22b28839fff125720fd274c6684fd6608f87bcab5f2e1fb22fd261e240ecfcf2"
+              ]
+            },
+            {
+              "text": "治法为滋补肝肾。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:22b28839fff125720fd274c6684fd6608f87bcab5f2e1fb22fd261e240ecfcf2"
+              ]
+            },
+            {
+              "text": "本方为滋补肝肾阴虚之代表方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:22b28839fff125720fd274c6684fd6608f87bcab5f2e1fb22fd261e240ecfcf2"
+              ]
+            },
+            {
+              "text": "关联证候为阴虚证。",
+              "refs": [
+                "M8"
+              ],
+              "citations": [
+                "evidence:0d8b9e0b4930fd74b0dc37c363b45506cb5cb14c128ee78e3d9fb803e33e5228"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "本方出自《小儿药证直诀》，为宋代文献。",
+              "refs": [
+                "M9"
+              ],
+              "citations": [
+                "evidence:2aa3e6d733a50e1b8b36e825d2ab8cc666a60f70b0667c4654feb61d26e5b7cf"
+              ]
+            },
+            {
+              "text": "材料记载钱乙创制本方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:22b28839fff125720fd274c6684fd6608f87bcab5f2e1fb22fd261e240ecfcf2"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "原剂型为蜜丸。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:22b28839fff125720fd274c6684fd6608f87bcab5f2e1fb22fd261e240ecfcf2"
+              ]
+            },
+            {
+              "text": "现亦可作汤剂或浓缩丸服用。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:22b28839fff125720fd274c6684fd6608f87bcab5f2e1fb22fd261e240ecfcf2"
+              ]
+            },
+            {
+              "text": "本方开创了滋补肝肾方剂之范式。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:22b28839fff125720fd274c6684fd6608f87bcab5f2e1fb22fd261e240ecfcf2"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [
+        "材料未列出具体主治症状。",
+        "材料未提供禁忌与不良反应。",
+        "材料未提供方剂别名。",
+        "材料未提供各药炮制方法。"
+      ],
+      "citations_total": 22,
+      "citations_resolved": 22,
+      "usage": [
+        {
+          "prompt_tokens": 941,
+          "completion_tokens": 1243,
+          "total_tokens": 2184,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 825
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 429
+        }
+      ],
+      "elapsed_ms": 6895
+    },
+    {
+      "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+      "label": "补中益气汤",
+      "status": "ok",
+      "code": null,
+      "attempts": 1,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "黄芪为君药，剂量18g。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:a674787e1ca9494aa2c0121d8e8c28f9d8ab837677e554afc84f57cb0822c5de",
+                "evidence:f23d3fc0559f4eed54cb3f066ff99d8bff72ae30bca9c5286b1b88e57ce5caab"
+              ]
+            },
+            {
+              "text": "人参为臣药，剂量6g。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:7e73288a0986c5e92a31b87613203c534090436f125fe33886f9cf28a258de38",
+                "evidence:d71a3487166d501f8736feccc3403542e7d7cfe0ce8c1615eded114b09771b4f"
+              ]
+            },
+            {
+              "text": "白术为臣药，剂量9g。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:0705e7e935be6b800817141369c302aea35cb0f234af00551a3ee5b03354b800",
+                "evidence:dab312fbb801bb3936754999e1544060a440ca5f8464c561aee0c858c98bf249"
+              ]
+            },
+            {
+              "text": "当归为佐药，剂量3g。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:4222c98cec7d7494f6f1d958ba1ccf8f3e941394e9ba46ea2f3e7efcbdf4b27b",
+                "evidence:f766f5274d048626edc94a189fa7bc63875cedff1c8bcf3e1793f88bfa0d1470"
+              ]
+            },
+            {
+              "text": "陈皮为佐药，剂量6g。",
+              "refs": [
+                "M6"
+              ],
+              "citations": [
+                "evidence:54b43e09cf0c59de5cc657f07f2b73d819cf3dd20d73d56d56a1c4d181574ccd",
+                "evidence:5b914ddf2c396707367313597b36841bfbb058865cadf2d1b93332ac9b0b03f1"
+              ]
+            },
+            {
+              "text": "升麻为佐药，剂量3g。",
+              "refs": [
+                "M7"
+              ],
+              "citations": [
+                "evidence:95f355261ebe8218bbe08eaa8a88ea441e93efec66d81be36b8e054bd2689041",
+                "evidence:f891bb1b62d29f0b22fd9eac520e5faf62efc945a7ae96eb75da5117ebe55276"
+              ]
+            },
+            {
+              "text": "柴胡为佐药，剂量3g。",
+              "refs": [
+                "M8"
+              ],
+              "citations": [
+                "evidence:607ff5ac9f89c99fe15db498433dd7977f7bd826c5a1061d4148d0bc6c721198",
+                "evidence:fdcc3eaba7040f4f66361f7fb533b605783882a4f9dfd508f65050e88925f509"
+              ]
+            },
+            {
+              "text": "甘草为使药，剂量9g。",
+              "refs": [
+                "M9"
+              ],
+              "citations": [
+                "evidence:0dbaa9b673e60267f103d9c48cf8b6ed1df15cfd3dc80d9ee59eb35d9e3d116e",
+                "evidence:80bd206c4576f7f43402a951357bf70a3e42ada3f27a32401c40d9dd25779923"
+              ]
+            },
+            {
+              "text": "本方在四君子汤基础上增黄芪、升麻、柴胡、当归、陈皮而成。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:7f207b9a26b4a8ca8fb0582209ff6255e99a82163f8857d9ddc6bd8878c247fc"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "治法为补中益气、升阳举陷。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:7f207b9a26b4a8ca8fb0582209ff6255e99a82163f8857d9ddc6bd8878c247fc"
+              ]
+            },
+            {
+              "text": "用于脾气虚弱、清阳下陷诸证。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:7f207b9a26b4a8ca8fb0582209ff6255e99a82163f8857d9ddc6bd8878c247fc"
+              ]
+            },
+            {
+              "text": "关联证候为脾气下陷证。",
+              "refs": [
+                "M10"
+              ],
+              "citations": [
+                "evidence:ba3dba632d6a64551e1051f7617247deb834c3a61a58a9332546b2284ef3e4c9"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "出处标注为《脾胃论》，朝代标注为金。",
+              "refs": [
+                "M11"
+              ],
+              "citations": [
+                "evidence:6f9fb639c14cbd9c77007a1cbdfe5f3341466d76a068583170d00585144c5729",
+                "evidence:dd8b49f0c5bf0cf818e0e3220e681d5596d0a5b238551599392f6c2b964241d3"
+              ]
+            },
+            {
+              "text": "材料称其为李东垣脾胃论代表方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:7f207b9a26b4a8ca8fb0582209ff6255e99a82163f8857d9ddc6bd8878c247fc"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "制法与服法为水煎服。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:7f207b9a26b4a8ca8fb0582209ff6255e99a82163f8857d9ddc6bd8878c247fc"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [
+        "材料未列出具体症状清单。",
+        "材料未说明各药单独功效。"
+      ],
+      "citations_total": 24,
+      "citations_resolved": 24,
+      "usage": [
+        {
+          "prompt_tokens": 970,
+          "completion_tokens": 1829,
+          "total_tokens": 2799,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1443
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 458
+        }
+      ],
+      "elapsed_ms": 9856
+    },
+    {
+      "entity_id": "bencaodian:formula:li_zhong_tang",
+      "label": "理中汤",
+      "status": "ok",
+      "code": null,
+      "attempts": 1,
+      "failure": null,
+      "sections": [
+        {
+          "heading": "组成与配伍",
+          "sentences": [
+            {
+              "text": "干姜为君药，剂量 9g。",
+              "refs": [
+                "M2"
+              ],
+              "citations": [
+                "evidence:56903659cdf24f2daccd72cb65ec013a1fde24043eaf149626ffba8ca7ad6f5b",
+                "evidence:7f5a8673a47cf8ce0539fe61172b9b7ecdade0ee09d618d0eff73d5c8958f9dc"
+              ]
+            },
+            {
+              "text": "人参为臣药，剂量 9g。",
+              "refs": [
+                "M3"
+              ],
+              "citations": [
+                "evidence:6dc29a138c4f28603bffe6a84185e3c9e991bb3c542664fc51264af6f10e22bf",
+                "evidence:af3f793269b5a799c2c053e26c5324092f9c4bca16401a3f63a03bed24b05221"
+              ]
+            },
+            {
+              "text": "白术为佐药，剂量 9g。",
+              "refs": [
+                "M4"
+              ],
+              "citations": [
+                "evidence:6e731d628e03a5fabc0f96e3ad56308d760d4470a2fea2b23f86886144407dd5",
+                "evidence:aa02559d983b57556284a67322796fc7f7c83809fd69a7c3fb5b2a1df90b3e93"
+              ]
+            },
+            {
+              "text": "甘草为使药，剂量 9g。",
+              "refs": [
+                "M5"
+              ],
+              "citations": [
+                "evidence:3afb52ad477633decf95a925cb98f5d80a09488dcce410914331fa9c292ad930",
+                "evidence:8e83c391e13ecdc3a7a5b2d2bd158475d4ff94a553d12a803d7ea3a0a8fbf0af"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "功用与主治",
+          "sentences": [
+            {
+              "text": "本方治法为温中祛寒、补气健脾。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:acadaf0f97e04f47aecea8ba295d654a30fcb946d148925a402f28e2f2025604"
+              ]
+            },
+            {
+              "text": "主治脾胃虚寒之脘腹疼痛、喜温喜按、自利不渴、呕吐、食少、畏寒肢冷、舌淡苔白、脉沉细或迟缓。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:acadaf0f97e04f47aecea8ba295d654a30fcb946d148925a402f28e2f2025604"
+              ]
+            },
+            {
+              "text": "亦治阳虚失血、胸痹虚寒、小儿慢惊、病后喜唾涎沫等。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:acadaf0f97e04f47aecea8ba295d654a30fcb946d148925a402f28e2f2025604"
+              ]
+            },
+            {
+              "text": "关联证候为太阴病证与胃寒证。",
+              "refs": [
+                "M6",
+                "M7"
+              ],
+              "citations": [
+                "evidence:5a3c85abf1f1ded4922fdc871e62f07e3bc40cb77bfc0d14700645e74fdfbc84",
+                "evidence:09602299b975b1c2b7646dbd933db256dde9d4e9b937336af8f0fd036d766912"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "出处",
+          "sentences": [
+            {
+              "text": "出处为《伤寒论》，东汉。",
+              "refs": [
+                "M8"
+              ],
+              "citations": [
+                "evidence:d464e9df5bb4d97c73e14b2cc0d2b267e9ea9138bb65efeb5753607b435aff45",
+                "evidence:fd1eab50c9fd103a894326d51f57ab33f15fc4f6dee5c9b986f6d6f191e689e6"
+              ]
+            },
+            {
+              "text": "相关篇章为辨霍乱病脉证并治第386条。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:acadaf0f97e04f47aecea8ba295d654a30fcb946d148925a402f28e2f2025604"
+              ]
+            },
+            {
+              "text": "《伤寒论》中本方为温中祛寒之代表方。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:acadaf0f97e04f47aecea8ba295d654a30fcb946d148925a402f28e2f2025604"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "说明",
+          "sentences": [
+            {
+              "text": "本方分类为温里剂（温中祛寒）。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:acadaf0f97e04f47aecea8ba295d654a30fcb946d148925a402f28e2f2025604"
+              ]
+            },
+            {
+              "text": "制法与服法为水煎服。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:acadaf0f97e04f47aecea8ba295d654a30fcb946d148925a402f28e2f2025604"
+              ]
+            },
+            {
+              "text": "亦可作丸剂，即理中丸。",
+              "refs": [
+                "M1"
+              ],
+              "citations": [
+                "evidence:acadaf0f97e04f47aecea8ba295d654a30fcb946d148925a402f28e2f2025604"
+              ]
+            }
+          ]
+        }
+      ],
+      "insufficient": [
+        "材料未说明各药的具体炮制方法",
+        "材料未说明丸剂的具体用量"
+      ],
+      "citations_total": 20,
+      "citations_resolved": 20,
+      "usage": [
+        {
+          "prompt_tokens": 976,
+          "completion_tokens": 2318,
+          "total_tokens": 3294,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1839
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 464
+        }
+      ],
+      "elapsed_ms": 11934
+    }
+  ],
+  "summary": {
+    "ok": 10,
+    "explanation_unavailable": 0,
+    "error": 0,
+    "citations_total": 241,
+    "citations_resolved": 241
+  },
+  "degradation_drill": {
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "status": "explanation_unavailable",
+    "failure": [
+      "第 1 句把“泽泻”写成了臣，但材料中它的角色未给出或存在冲突"
+    ]
+  },
+  "zhu_ling_ze_xie_role_stated": false
+}

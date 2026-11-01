@@ -1,6 +1,17 @@
 # QiHuang-KG 后续开发规格（spec）
 
-版本：0.2（草案）。编写日期：2026-10-10；2026-10-29 按 M4a 实现修订 §7.1–7.3（差异见 [M4 开发文档](docs/dev/m4-development.md) §8）。适用范围：从当前状态到最终交付的剩余开发工作。
+版本：0.3。编写日期：2026-10-10；2026-10-29 按 M4a 实现修订 §7.1–7.3（差异见 [M4 开发文档](docs/dev/m4-development.md) §8）；2026-11-01 为剩余阶段补充分阶段规格。适用范围：从当前状态到最终交付的剩余开发工作。
+
+**剩余阶段的分阶段规格**（实现以它们为准，本文对应章节只保留摘要）：
+
+| 阶段 | 规格 | 验收测试 |
+| --- | --- | --- |
+| M4b 方剂解释 | [docs/dev/m4b-spec.md](docs/dev/m4b-spec.md) | `tests/test_explain.py` |
+| M5 评测与回归 | [docs/dev/m5-spec.md](docs/dev/m5-spec.md) | `tests/test_eval_sets.py`、`eval/` |
+| M6 Vastbase 与性能 | [docs/dev/m6-spec.md](docs/dev/m6-spec.md) | `tests/test_delivery.py`（m6 部分） |
+| M7 部署与交付 | [docs/dev/m7-spec.md](docs/dev/m7-spec.md) | `tests/test_deploy.py`、`tests/test_delivery.py` |
+
+全量回归：`tests/run_all.sh`。自动化开发代理的任务提示：[docs/dev/agent-prompt.md](docs/dev/agent-prompt.md)，进度记录：[docs/dev/progress.md](docs/dev/progress.md)。
 
 本文档把 [开发计划](docs/development-plan.md) 第 6 节尚未完成的任务（T09–T22，以及 T02/T03/T04/T08 的剩余部分）细化为可直接编码和验收的规格：接口契约、查询规则、图投影、AI 链路、测试与里程碑。范围边界仍以 [首版范围冻结](docs/scope-freeze.md) 为准，数据模型以 [v2 架构](docs/architecture.md) 和 [共享 DDL](docs/schema-vastbase.sql) 为准；本文与它们冲突时，先修订本文再动代码。
 
@@ -680,6 +691,8 @@ frontend/src/
 
 ### 7.2 `POST /api/v1/ai/explain`：带引用的方剂解释
 
+> 实现细节（材料模板、校验算法、响应字段 `refs`/`attempts`、日志）以 [m4b-spec.md](docs/dev/m4b-spec.md) 为准，差异见其 §11。
+
 请求为 `{"entity_id": "bencaodian:formula:...", "build_id?": "..."}`。首版只支持 `formula` 类型（112 首），其他类型返回 422 `unsupported_entity_type`。
 
 **材料组装**（不经模型，直接从关系库取）：
@@ -737,6 +750,8 @@ frontend/src/
 
 ## 8. M5：测试、评测与联调（T19–T20）
 
+> 评测集已写好并冻结（`eval/`），评测脚本、报告格式、故障演练见 [m5-spec.md](docs/dev/m5-spec.md)。下表中的 `test_ai_contract.py` 已由 `tests/test_ai.py` 与 `tests/test_explain.py` 代替。
+
 ### 8.1 测试组织
 
 - 沿用现有风格：`tests/*.py` 可以用 `python` 直接运行，带断言，不引入新的测试框架。
@@ -777,6 +792,8 @@ frontend/src/
 
 ### 9.1 Vastbase 迁移
 
+> 分为无需实例的 6A 与需要实例的 6B，报告格式见 [m6-spec.md](docs/dev/m6-spec.md)。
+
 1. 记录产品版本、兼容模式和驱动版本，然后执行 `import_vastbase.py --engine vastbase` 的 probe 步骤。
 2. 用同一个 `var/prepared/<build_id>` 批次导入，执行导入后校验。
 3. 比较两库摘要：各表行数、`table_sha256`、M1 视图的查询结果。
@@ -794,6 +811,8 @@ PostgreSQL 上的结果**不能代替** Vastbase 的验收。每一项都要在�
 - 报告记录硬件、版本、批次、并发数、样本和返回规模。失败和超时单独列出，不能剔除后宣称达标。
 
 ### 9.3 部署与恢复（T21）
+
+> SPA 托管规则、恢复演练与交付材料见 [m7-spec.md](docs/dev/m7-spec.md)。
 
 - 生产形态：`vite build` 生成静态资源，由 FastAPI 托管 `/assets` 并处理 SPA 回退。`/api/*` 的路由优先于 SPA 回退。
 - 恢复演练：关系库从批次重新导入，图库通过 dump/load 或重新投影恢复。演练后两库回到同一批次，接口复验通过。

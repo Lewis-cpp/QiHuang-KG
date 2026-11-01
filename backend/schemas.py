@@ -4,6 +4,11 @@ from typing import Annotated, Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, StringConstraints
 
+from backend import services
+
+# Same shape as the path-parameter pattern in app.py, reused for AI request bodies.
+ENTITY_PATTERN = r'^(bencaodian|tcm-mkg):(' + '|'.join(services.TYPES) + r'):[A-Za-z0-9_.-]{1,160}$'
+
 
 class ErrorDetail(BaseModel):
     code: str
@@ -292,4 +297,35 @@ class AIQueryResult(BaseModel):
     results: AIResults | None
     model: str | None
     prompt_version: str | None
+    build_id: str
+
+
+class AIExplainRequest(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    entity_id: Annotated[str, StringConstraints(pattern=ENTITY_PATTERN)]
+    build_id: str | None = Field(default=None, pattern=r'^[a-f0-9]{64}$')
+
+
+class ExplainSentence(BaseModel):
+    text: str
+    refs: list[str]
+    citations: list[str]
+
+
+class ExplainSection(BaseModel):
+    heading: str
+    sentences: list[ExplainSentence]
+
+
+class AIExplainResult(BaseModel):
+    status: Literal['ok', 'explanation_unavailable']
+    entity_id: str
+    sections: list[ExplainSection]
+    insufficient: list[str]
+    materials: list[dict[str, Any]]
+    failure: list[str] | None
+    attempts: int
+    model: str | None
+    prompt_version: str
+    usage: list[dict[str, Any] | None]
     build_id: str

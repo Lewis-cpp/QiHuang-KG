@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-11-02T00:10:51+08:00",
+  "model": "deepseek-flash",
+  "prompt_version": "explain_v1",
+  "max_completion_tokens": 1024,
+  "samples": [
+    {
+      "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+      "label": "独活寄生汤",
+      "composition_count": 15,
+      "finish_reason": "stop",
+      "completion_tokens": 2630,
+      "reasoning_tokens": 2072,
+      "elapsed_ms": 14677
+    },
+    {
+      "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+      "label": "普济消毒饮",
+      "composition_count": 13,
+      "finish_reason": "stop",
+      "completion_tokens": 3211,
+      "reasoning_tokens": 2635,
+      "elapsed_ms": 17742
+    },
+    {
+      "entity_id": "bencaodian:formula:xiao_feng_san",
+      "label": "消风散",
+      "composition_count": 13,
+      "finish_reason": "stop",
+      "completion_tokens": 1846,
+      "reasoning_tokens": 1273,
+      "elapsed_ms": 11732
+    }
+  ],
+  "conclusion": "全部 finish_reason=stop，保持 20 句 / 120 字上限与 1024 输出 token"
+}

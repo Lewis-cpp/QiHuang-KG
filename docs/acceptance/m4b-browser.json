@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-11-01T16:31:53.584Z",
+  "browser": "Google Chrome（playwright-core 1.56.1，无头）",
+  "viewports": [
+    "1280x900",
+    "390x844"
+  ],
+  "model": "deepseek-flash（生成用真实调用；降级与未就绪用替身后端）",
+  "results": [
+    {
+      "name": "1280 方剂详情显示 AI 解释区与按钮",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 点击前不发起解释请求",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 生成解释并显示引用角标",
+      "ok": true,
+      "detail": "status ok, 17 badges"
+    },
+    {
+      "name": "1280 角标进入证据页",
+      "ok": true,
+      "detail": "evidence%3A72340d34a…"
+    },
+    {
+      "name": "1280 后退回到方剂详情",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 无意外控制台错误",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 方剂详情显示 AI 解释区与按钮",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 点击前不发起解释请求",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 生成解释并显示引用角标",
+      "ok": true,
+      "detail": "status ok, 12 badges"
+    },
+    {
+      "name": "390 角标进入证据页",
+      "ok": true,
+      "detail": "evidence%3A72340d34a…"
+    },
+    {
+      "name": "390 后退回到方剂详情",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 无意外控制台错误",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 方剂详情显示 AI 解释区与按钮",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 降级状态显示原因",
+      "ok": true,
+      "detail": "AI 解释 重新生成  未能生成通过校验的解释： 第 1 句把“泽泻”写成了臣药，但材料中它的角色未给出或存在冲突；第 2 句的剂量“12g”与材料中白术的剂量"
+    },
+    {
+      "name": "1280 降级时页面其余分区仍在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 降级时不显示任何句子角标",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "1280 模型未就绪提示且按钮可用",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 方剂详情显示 AI 解释区与按钮",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 降级状态显示原因",
+      "ok": true,
+      "detail": "AI 解释 重新生成  未能生成通过校验的解释： 第 1 句把“泽泻”写成了臣药，但材料中它的角色未给出或存在冲突；第 2 句的剂量“12g”与材料中白术的剂量"
+    },
+    {
+      "name": "390 降级时页面其余分区仍在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 降级时不显示任何句子角标",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 模型未就绪提示且按钮可用",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "390 无横向滚动",
+      "ok": true,
+      "detail": "scrollWidth=390"
+    }
+  ]
+}
