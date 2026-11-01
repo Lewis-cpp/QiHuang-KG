@@ -9,7 +9,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException
 
-from backend import ai, graph, model_client, queries, schemas, services
+from backend import ai, explain, graph, model_client, queries, schemas, services
 
 app = FastAPI(title="QiHuang-KG", version="0.3.0", description="中医药知识检索与学习 · 详情、来源证据与图谱",
               responses={status: {"model": schemas.ErrorResponse} for status in (404, 409, 422, 500, 502, 503)})
@@ -45,7 +45,7 @@ async def unexpected_errors(request, call_next):
         return service_error(request, services.ServiceError("internal_error", "服务暂时无法处理请求"))
 
 
-ENTITY_PATTERN = r"^(bencaodian|tcm-mkg):(" + "|".join(services.TYPES) + r"):[A-Za-z0-9_.-]{1,160}$"
+ENTITY_PATTERN = schemas.ENTITY_PATTERN  # one definition guards path parameters and AI request bodies alike
 EntityID = Annotated[str, Path(pattern=ENTITY_PATTERN, description="来源:实体类型:键")]
 EvidenceID = Annotated[str, Path(pattern=r"^evidence:[a-f0-9]{64}$", description="证据的稳定 ID")]
 BuildID = Annotated[str | None, Query(pattern=r"^[a-f0-9]{64}$", description="可选发布批次，不一致时返回 409")]
@@ -164,3 +164,9 @@ def ai_query(body: schemas.AIQueryRequest):
     # Disambiguated conditions skip the model: a second call could propose different conditions (M4 doc §8).
     conditions = [item.model_dump() for item in body.conditions]
     return dict(ai.answer(body.target_type, conditions, build_id=body.build_id), model=None, prompt_version=None)
+
+
+@app.post("/api/v1/ai/explain", response_model=schemas.AIExplainResult,
+          summary="带引用的方剂解释：模型只依据后端材料生成，逐句校验通过后返回")
+def ai_explain(body: schemas.AIExplainRequest):
+    return explain.explain(body.entity_id, body.build_id)
