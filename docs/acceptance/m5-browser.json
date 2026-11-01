@@ -1,0 +1,256 @@
+{
+  "checked_at": "2026-11-01T18:23:12.434Z",
+  "browser": "Google Chrome（playwright-core 1.56.1，无头）",
+  "viewports": [
+    "1280x900",
+    "390x844"
+  ],
+  "model": "deepseek-flash（AI 用例真实调用；降级/未就绪/停机用替身后端与 Docker 停服）",
+  "results": [
+    {
+      "name": "M2-01 首页简介与示例链接",
+      "ok": true,
+      "detail": "三个示例检索链接都在，未自动请求"
+    },
+    {
+      "name": "M2-02 检索四君子汤",
+      "ok": true,
+      "detail": "URL 带 q，首条四君子汤，显示名称命中"
+    },
+    {
+      "name": "M2-03 四君子汤详情组成",
+      "ok": true,
+      "detail": "标题正确，组成 4 行，含位置/剂量/君臣佐使"
+    },
+    {
+      "name": "M2-04 组成往返跳转",
+      "ok": true,
+      "detail": "甘草 → 收录该药的方剂 → 另一方剂详情"
+    },
+    {
+      "name": "M2-05 证据页与对象链接",
+      "ok": true,
+      "detail": "证据页显示起点→包含→终点，链接回到方剂"
+    },
+    {
+      "name": "M2-06 连续后退",
+      "ok": true,
+      "detail": "后退依次回到方剂与甘草"
+    },
+    {
+      "name": "M2-07 猪苓汤冲突标记",
+      "ok": true,
+      "detail": "泽泻行 ⚠ 与说明齐全"
+    },
+    {
+      "name": "M2-08 甘草饮片翻页",
+      "ok": true,
+      "detail": "2,278 条可翻页（第 1 → 2 页）"
+    },
+    {
+      "name": "M2-09 ICD-11 只显示编码",
+      "ok": true,
+      "detail": "只显示编码 1F68.1"
+    },
+    {
+      "name": "M2-10 中成药给药途径",
+      "ok": true,
+      "detail": "显示\"口服（Oral）\""
+    },
+    {
+      "name": "M2-11 来源与统计页",
+      "ok": true,
+      "detail": "来源卡片与 199,876 算式齐全"
+    },
+    {
+      "name": "M2-12 深链接刷新（开发服务与构建产物）",
+      "ok": true,
+      "detail": "两个宿主下刷新均回到原页面"
+    },
+    {
+      "name": "M2-13 不存在的记录与页面",
+      "ok": true,
+      "detail": "三种未找到状态正确"
+    },
+    {
+      "name": "M2-14 空结果说明",
+      "ok": true,
+      "detail": "显示空结果说明"
+    },
+    {
+      "name": "M2-17 批次横幅与刷新恢复",
+      "ok": true,
+      "detail": "横幅出现，刷新后恢复"
+    },
+    {
+      "name": "M2-19 响应顺序与批次覆盖",
+      "ok": true,
+      "detail": "两种顺序都出现横幅，保存的批次不被覆盖"
+    },
+    {
+      "name": "M2-20 类型目录与清除",
+      "ok": true,
+      "detail": "选类型出目录，切回全部后 URL 去掉 type 并回到初始态"
+    },
+    {
+      "name": "M2-15 后端不可达与重试",
+      "ok": true,
+      "detail": "断连显示\"无法连接服务\"，恢复后重试正常"
+    },
+    {
+      "name": "M2-16 数据库停机",
+      "ok": true,
+      "detail": "详情页显示后端消息，统计页头部与运行状态仍在；恢复后正常"
+    },
+    {
+      "name": "M2-18 390px 无横向滚动",
+      "ok": true,
+      "detail": "四个页面均无横向滚动"
+    },
+    {
+      "name": "M3-01 投影重跑幂等",
+      "ok": true,
+      "detail": "两次均 reused，节点 20,374、边 179,502"
+    },
+    {
+      "name": "M3-02 四君子汤一跳",
+      "ok": true,
+      "detail": "7 节点 6 边，已全部显示，列表 6 行"
+    },
+    {
+      "name": "M3-03 展开甘草",
+      "ok": true,
+      "detail": "55 节点 54 边，62 条仅显示 49，usage 文本在侧栏"
+    },
+    {
+      "name": "M3-04 边详情与证据",
+      "ok": true,
+      "detail": "边侧栏显示君/位置/9g，证据可进可退"
+    },
+    {
+      "name": "M3-05 键盘操作关系列表",
+      "ok": true,
+      "detail": "键盘展开茯苓并查看关联证候"
+    },
+    {
+      "name": "M3-06 药性苦的截断一跳",
+      "ok": true,
+      "detail": "50 节点 49 边，3,439 仅显示 49"
+    },
+    {
+      "name": "M3-07 饮片甘草筛选",
+      "ok": true,
+      "detail": "默认药性在前；勾选后 URL 带筛选且刷新保留"
+    },
+    {
+      "name": "M3-08 画布上限横幅",
+      "ok": true,
+      "detail": "累积超限横幅出现，清空画布回到中心一跳"
+    },
+    {
+      "name": "M3-09 猪苓汤冲突边",
+      "ok": true,
+      "detail": "泽泻行 ⚠，侧栏无角色陈述，证据 2 条"
+    },
+    {
+      "name": "M3-10 人参两跳路径",
+      "ok": true,
+      "detail": "两跳分区 23 条，可在图中显示"
+    },
+    {
+      "name": "M3-11 图谱未找到",
+      "ok": true,
+      "detail": "不存在的 ID 显示未找到"
+    },
+    {
+      "name": "M3-14 恢复演练由既有记录覆盖",
+      "ok": true,
+      "detail": "dump/load 演练前后摘要一致（非页面用例，引用 m3-backup-restore.json）"
+    },
+    {
+      "name": "M3-12 390px 图谱无横向滚动",
+      "ok": true,
+      "detail": "scrollWidth=390"
+    },
+    {
+      "name": "M3-13 Neo4j 停机与恢复",
+      "ok": true,
+      "detail": "停机时图页报错其余正常，恢复后重试成功"
+    },
+    {
+      "name": "M4-01 导航与免责声明",
+      "ok": true,
+      "detail": "导航进入 /ai，免责声明在页"
+    },
+    {
+      "name": "M4-02 ok 查询",
+      "ok": true,
+      "detail": "条件两行，结果 7 条"
+    },
+    {
+      "name": "M4-03 ambiguous 消歧",
+      "ok": true,
+      "detail": "未选择时按钮禁用 ✓（选择后同页面提交，不重复调用模型）"
+    },
+    {
+      "name": "M4-04 unresolved 建议",
+      "ok": true,
+      "detail": "unresolved 且未执行查询"
+    },
+    {
+      "name": "M4-05 unsupported 朝代",
+      "ok": true,
+      "detail": "显示\"出处朝代 = 晋\"，未执行查询"
+    },
+    {
+      "name": "M4-06 注入问题",
+      "ok": true,
+      "detail": "只有 unsupported 提示，无 SQL"
+    },
+    {
+      "name": "M4-08 字数上限",
+      "ok": true,
+      "detail": "上限 200 字，计数显示 200 / 200"
+    },
+    {
+      "name": "M4-07 模型未就绪",
+      "ok": true,
+      "detail": "显示模型未就绪，检索页正常"
+    },
+    {
+      "name": "M4B-01 不点击不请求",
+      "ok": true,
+      "detail": "解释区在页，未自动请求"
+    },
+    {
+      "name": "M4B-02 生成与角标跳转",
+      "ok": true,
+      "detail": "解释生成，角标进入证据页并可后退"
+    },
+    {
+      "name": "M4B-03 猪苓汤不写泽泻角色",
+      "ok": true,
+      "detail": "解释 ok，泽泻分句无角色标记"
+    },
+    {
+      "name": "M4B-06 非方剂无解释区",
+      "ok": true,
+      "detail": "中药详情无 AI 解释区"
+    },
+    {
+      "name": "M4B-04 降级原因与页面其余分区",
+      "ok": true,
+      "detail": "显示原因，证候与关系分区仍在"
+    },
+    {
+      "name": "M4B-05 模型 503 显示消息与重试",
+      "ok": true,
+      "detail": "503 显示消息与重试按钮"
+    },
+    {
+      "name": "M4B-07 390px 无横向滚动",
+      "ok": true,
+      "detail": "scrollWidth=390"
+    }
+  ]
+}

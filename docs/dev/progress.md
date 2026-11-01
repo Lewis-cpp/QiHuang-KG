@@ -19,12 +19,15 @@
 
 ## 真实模型调用计数
 
-| 日期 | 用途 | 调用次数 | 累计 |
-| --- | --- | --- | --- |
-| 2026-11-02 | `record_m4.py explain --probe`（3 首最大方剂，m4b-spec §8） | 3 | 3 |
-| 2026-11-02 | 页面验收调试期的真实调用（1 次经页面、1 次 curl、3 次定位 500 根因的直接调用） | 5 | 8 |
-| 2026-11-02 | 页面验收 `m4b_check.mjs`（两轮 × 每轮 1280/390 各生成 1 次） | 4 | 12 |
-| 2026-11-02 | `record_m4.py explain`（10 首，各 1 次，无重试） | 10 | 22 |
+以 `var/ai-calls.jsonl`（每次真实调用一行，含失败重试）为准；本任务自 2026-11-01 起共 **161 次**（截至 M5 步骤 5），预算 1000 次。
+
+| 日期 | 用途 | 调用次数 |
+| --- | --- | --- |
+| 2026-11-02 | M4b：probe 3 + 调试/页面验收 + 10 首记录（explain 端点合计） | 70 |
+| 2026-11-02 | M5：dev 集 + 页面回归 AI 用例 + test 集（query 端点合计） | 88 |
+| — | 其中 explain-probe 子命令 3 次、`record_m4.py explain` 11 行、test 集 66 行、dev 集 24 行，其余为页面回归与调试 | — |
+
+（说明：早期手记的 22 次与后续会话的多次页面验收存在重复/遗漏，最终以日志行数为准；日志中 `usage=null` 的 validation_failed 行不是调用，不计入。）
 
 ## 日志
 
@@ -37,6 +40,10 @@
 - 2026-11-02 M4b 步骤 6：`record_m4.py explain` 10 首全部 `ok`，引用 241/241 可回查（100%），`zhu_ling_ze_xie_role_stated=false`，降级演练通过。`m4-explain.json` 已生成。
 - 2026-11-02 M4b 步骤 7：spec.md §7.2 指向 m4b-spec（已由脚手架完成）；m4-development.md §11 追加实施记录；README 进度更新；cases.md 增加 M4、M4B、M5 三节。下一步：推送并开 M4b PR，然后进入 M5。
 - 2026-11-02 M4b 收尾（中断恢复）：会话在最终回归失败后中断，由监控会话接手。失败原因：app.py 未处理异常日志在收尾时被改为 `exc_info=True`（带 traceback），违反 test_api.py 对日志恰为 `Unhandled API exception: ValueError` 的合同断言；按"验收测试是合同"恢复原格式（只记类型名，客户端仍不见细节）。重跑 `tests/run_all.sh` 全绿（exit=0）。提交 3b3d38a（19+1 个文件），随后推送分支并开 M4b PR。下一步：进入 M5。
+- 2026-11-02 M5 步骤 1–2（恢复续作）：接手时发现 `feat/m5-eval-regression` 分支上有一笔把 M5 半成品混进 M4b 提交信息的历史（88c43db，未推送）。软回退后按规格改名为 `feat/m5-eval`，把 run_eval.py 与 dev 报告以正确的 `feat(m5)` 信息重新提交（5655740）。dev 集一次达标（查询 11/11、解释 5/5 引用 120/120、对抗 4/4），提示词保持 v1 无需迭代；修复 run_eval.py 两处：人工审核表须写顶层数组（交付合同）、`--score-review` 在 0 句已填时崩溃。
+- 2026-11-02 M5 步骤 3：`tests/drill_m5.py` 八项检查全过（M5-01…M5-06，含 Neo4j/PostgreSQL 停机与恢复），`m5-drills.json` 已生成（7348fc6）。期间修复演练脚本自身两处：M5-01 未排除 model.json、M5-03 的查询替身用错输出形态。
+- 2026-11-02 M5 步骤 4：`tests/browser/m5_check.mjs` 驱动 cases.md 全部 49 条页面用例（M2/M3/M4/M4B），无头 Chrome 1280/390 两宽度，AI 用例用真实模型、降级与停机用替身后端和 Docker 停服，最终 49/49 全过，`m5-browser.json` 已生成（57699bd）。期间修复 `scripts/project_graph.py` 复用路径的崩溃（driver 5 把时间属性返回为 neo4j.time.DateTime，json.dumps 抛 TypeError；归一为 ISO 字符串）。页面回归迭代中发现并修正脚本自身的选择器竞态与断言错误（如 M3-07 的真实总数是 2,284=2,278 饮片+6 药性，而非 2,278）。经验：Vite dev server 长时间跨编辑运行会进入坏状态，重启后 /graph 懒加载恢复正常。
+- 2026-11-02 M5 步骤 5：冻结 test 集（60 样本）完整运行一次：查询 25/25=1.0、解释 19/20=0.95（引用 503/503=1.0）、对抗 15/15（关键 13/13），全部达标。唯一未过样本 T-E15（银翘散）：查库证实模型两次都编造剂量（写 6g/5g/6g，材料为 9g/4g/9g），校验正确拦截并降级，非误判，已记 I-002。`m5-eval-test.json/.md` 与 `m5-explain-review.json`（301 句，reviewer 留空）已生成。模型调用总计以 var/ai-calls.jsonl 为准（见下表）。下一步：run_all.sh 全绿、推送并开 M5 PR。
 
 ## 测试争议
 

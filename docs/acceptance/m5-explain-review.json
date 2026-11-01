@@ -1,0 +1,5215 @@
+[
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "原方由猪苓、茯苓、泽泻、滑石、阿胶五味配伍。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "猪苓为君药，剂量 9g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：猪苓：剂量 9g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "茯苓为臣药，剂量 9g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：茯苓：剂量 9g；角色 臣；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "滑石为佐药，剂量 9g。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：滑石：剂量 9g；角色 佐；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "阿胶为佐药，剂量 9g。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] composition：阿胶：剂量 9g；角色 佐；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "泽泻剂量 9g，其角色资料未给出或存在冲突。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：泽泻：剂量 9g；角色：资料未给出或存在冲突；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "本方治法为利水养阴清热。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "材料载本方主治阳明病、少阴病水热互结伤阴证。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "证见小便不利、发热口渴、心烦不寐。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "或见咳、呕、下利。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "本方重在利水清热兼养阴，适于阴虚有热之水停。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 12,
+    "heading": "功用与主治",
+    "text": "关联证候包括下焦湿热证、肾阴虚证、膀胱湿热证。",
+    "refs": [
+      "M7",
+      "M8",
+      "M9"
+    ],
+    "materials": [
+      "[M7] pattern：关联证候：下焦湿热证",
+      "[M8] pattern：关联证候：肾阴虚证",
+      "[M9] pattern：关联证候：膀胱湿热证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 13,
+    "heading": "出处",
+    "text": "本方出自《伤寒论》。",
+    "refs": [
+      "M10"
+    ],
+    "materials": [
+      "[M10] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 14,
+    "heading": "出处",
+    "text": "《伤寒论》为东汉时期著作。",
+    "refs": [
+      "M10"
+    ],
+    "materials": [
+      "[M10] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 15,
+    "heading": "出处",
+    "text": "材料载其出处篇章为辨阳明病脉证并治。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 16,
+    "heading": "说明",
+    "text": "本方分类为祛湿剂（利水渗湿）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 17,
+    "heading": "说明",
+    "text": "原方水煎服，阿胶另烊化兑服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E01",
+    "entity_id": "bencaodian:formula:zhu_ling_tang",
+    "sentence_index": 18,
+    "heading": "说明",
+    "text": "本方与五苓散同属利水之剂，但本方重在利水清热兼养阴。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水养阴清热；方剂说明：《伤寒论》猪苓汤主治阳明病、少阴病水热互结伤阴证，证见小便不利、发热口渴、心烦不寐，或咳或呕，或下利。与五苓散同属利水之剂，但本方重在利水清热兼养阴，适于阴虚有热之水停；原方以猪苓、茯苓、泽泻、滑石、阿胶五味配伍。；制法与服法：水煎服。原方五味（猪苓、茯苓、泽泻、滑石、阿胶），其中阿胶另烊化兑服。；出处篇章：辨阳明病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "原方由泽泻、猪苓、茯苓、白术、桂枝五味组成。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水渗湿，温阳化气；方剂说明：《伤寒论》五苓散为太阳蓄水证而设，以表邪未解、内传太阳之腑、膀胱气化失司，见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）为主。为利水渗湿、温阳化气之祖方。原方由泽泻、猪苓、茯苓、白术、桂枝五味组成。；制法与服法：上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "猪苓剂量9g，角色为君。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：猪苓：剂量 9g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "泽泻剂量15g，角色为君。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：泽泻：剂量 15g；角色 君；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "茯苓剂量9g，角色为臣。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：茯苓：剂量 9g；角色 臣；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "白术剂量9g，角色为臣。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：白术：剂量 9g；角色 臣；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "桂枝剂量6g，角色为佐。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] composition：桂枝：剂量 6g；角色 佐；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "本方治法为利水渗湿、温阳化气。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水渗湿，温阳化气；方剂说明：《伤寒论》五苓散为太阳蓄水证而设，以表邪未解、内传太阳之腑、膀胱气化失司，见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）为主。为利水渗湿、温阳化气之祖方。原方由泽泻、猪苓、茯苓、白术、桂枝五味组成。；制法与服法：上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "《伤寒论》五苓散为太阳蓄水证而设。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水渗湿，温阳化气；方剂说明：《伤寒论》五苓散为太阳蓄水证而设，以表邪未解、内传太阳之腑、膀胱气化失司，见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）为主。为利水渗湿、温阳化气之祖方。原方由泽泻、猪苓、茯苓、白术、桂枝五味组成。；制法与服法：上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "其病机为表邪未解、内传太阳之腑、膀胱气化失司。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水渗湿，温阳化气；方剂说明：《伤寒论》五苓散为太阳蓄水证而设，以表邪未解、内传太阳之腑、膀胱气化失司，见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）为主。为利水渗湿、温阳化气之祖方。原方由泽泻、猪苓、茯苓、白术、桂枝五味组成。；制法与服法：上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "可见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水渗湿，温阳化气；方剂说明：《伤寒论》五苓散为太阳蓄水证而设，以表邪未解、内传太阳之腑、膀胱气化失司，见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）为主。为利水渗湿、温阳化气之祖方。原方由泽泻、猪苓、茯苓、白术、桂枝五味组成。；制法与服法：上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "材料称本方为利水渗湿、温阳化气之祖方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水渗湿，温阳化气；方剂说明：《伤寒论》五苓散为太阳蓄水证而设，以表邪未解、内传太阳之腑、膀胱气化失司，见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）为主。为利水渗湿、温阳化气之祖方。原方由泽泻、猪苓、茯苓、白术、桂枝五味组成。；制法与服法：上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 12,
+    "heading": "功用与主治",
+    "text": "材料另列关联证候为痰湿证。",
+    "refs": [
+      "M7"
+    ],
+    "materials": [
+      "[M7] pattern：关联证候：痰湿证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 13,
+    "heading": "功用与主治",
+    "text": "材料另列关联证候为膀胱湿热证。",
+    "refs": [
+      "M8"
+    ],
+    "materials": [
+      "[M8] pattern：关联证候：膀胱湿热证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 14,
+    "heading": "出处",
+    "text": "出处为《伤寒论》，东汉。",
+    "refs": [
+      "M9"
+    ],
+    "materials": [
+      "[M9] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 15,
+    "heading": "出处",
+    "text": "出处篇章为辨太阳病脉证并治中。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水渗湿，温阳化气；方剂说明：《伤寒论》五苓散为太阳蓄水证而设，以表邪未解、内传太阳之腑、膀胱气化失司，见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）为主。为利水渗湿、温阳化气之祖方。原方由泽泻、猪苓、茯苓、白术、桂枝五味组成。；制法与服法：上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E02",
+    "entity_id": "bencaodian:formula:wu_ling_san",
+    "sentence_index": 16,
+    "heading": "说明",
+    "text": "制法与服法为上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（利水渗湿）；治法：利水渗湿，温阳化气；方剂说明：《伤寒论》五苓散为太阳蓄水证而设，以表邪未解、内传太阳之腑、膀胱气化失司，见小便不利、头痛微热、烦渴欲饮、水入即吐（水逆证）为主。为利水渗湿、温阳化气之祖方。原方由泽泻、猪苓、茯苓、白术、桂枝五味组成。；制法与服法：上五味，捣为散，以白饮和服方寸匕，日三服，多饮暖水，汗出愈。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "独活为君药，剂量9g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：独活：剂量 9g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "桑寄生为臣药，剂量9g；杜仲为臣药，剂量9g；牛膝为臣药，剂量9g。",
+    "refs": [
+      "M3",
+      "M4",
+      "M5"
+    ],
+    "materials": [
+      "[M3] composition：桑寄生：剂量 9g；角色 臣；位置 2",
+      "[M4] composition：杜仲：剂量 9g；角色 臣；位置 3",
+      "[M5] composition：牛膝：剂量 9g；角色 臣；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "细辛为臣药，剂量3g。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] composition：细辛：剂量 3g；角色 臣；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "秦艽为臣药，剂量6g；防风为臣药，剂量6g。",
+    "refs": [
+      "M7",
+      "M8"
+    ],
+    "materials": [
+      "[M7] composition：秦艽：剂量 6g；角色 臣；位置 6",
+      "[M8] composition：防风：剂量 6g；角色 臣；位置 7"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "肉桂为佐药，剂量3g。",
+    "refs": [
+      "M9"
+    ],
+    "materials": [
+      "[M9] composition：肉桂：剂量 3g；角色 佐；位置 8"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "当归为佐药，剂量6g；川芎为佐药，剂量6g；白芍为佐药，剂量6g。",
+    "refs": [
+      "M10",
+      "M11",
+      "M13"
+    ],
+    "materials": [
+      "[M10] composition：当归：剂量 6g；角色 佐；位置 9",
+      "[M11] composition：川芎：剂量 6g；角色 佐；位置 10",
+      "[M13] composition：白芍：剂量 6g；角色 佐；位置 12"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 7,
+    "heading": "组成与配伍",
+    "text": "熟地黄为佐药，剂量9g。",
+    "refs": [
+      "M12"
+    ],
+    "materials": [
+      "[M12] composition：熟地黄：剂量 9g；角色 佐；位置 11"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 8,
+    "heading": "组成与配伍",
+    "text": "人参为佐药，剂量6g；茯苓为佐药，剂量6g。",
+    "refs": [
+      "M14",
+      "M15"
+    ],
+    "materials": [
+      "[M14] composition：人参：剂量 6g；角色 佐；位置 13",
+      "[M15] composition：茯苓：剂量 6g；角色 佐；位置 14"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 9,
+    "heading": "组成与配伍",
+    "text": "甘草为使药，剂量6g。",
+    "refs": [
+      "M16"
+    ],
+    "materials": [
+      "[M16] composition：甘草：剂量 6g；角色 使；位置 15"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "治法为祛风湿、止痹痛、补肝肾、益气血。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（祛风胜湿）；治法：祛风湿，止痹痛，补肝肾，益气血；方剂说明：孙思邈《备急千金要方》独活寄生汤为痹证日久、肝肾两亏、气血不足之代表方。主治腰膝疼痛、痿软不能屈伸，或麻木不仁、畏寒喜温、心悸气短、舌淡苔白、脉细弱。本方扶正祛邪并用，祛风湿、止痹痛与补肝肾、益气血并行，为后世治慢性风湿痹证之祖方。；制法与服法：水煎服。；出处篇章：《备急千金要方》卷八 诸风"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "主治腰膝疼痛、痿软不能屈伸，或麻木不仁。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（祛风胜湿）；治法：祛风湿，止痹痛，补肝肾，益气血；方剂说明：孙思邈《备急千金要方》独活寄生汤为痹证日久、肝肾两亏、气血不足之代表方。主治腰膝疼痛、痿软不能屈伸，或麻木不仁、畏寒喜温、心悸气短、舌淡苔白、脉细弱。本方扶正祛邪并用，祛风湿、止痹痛与补肝肾、益气血并行，为后世治慢性风湿痹证之祖方。；制法与服法：水煎服。；出处篇章：《备急千金要方》卷八 诸风"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 12,
+    "heading": "功用与主治",
+    "text": "兼见畏寒喜温、心悸气短、舌淡苔白、脉细弱。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（祛风胜湿）；治法：祛风湿，止痹痛，补肝肾，益气血；方剂说明：孙思邈《备急千金要方》独活寄生汤为痹证日久、肝肾两亏、气血不足之代表方。主治腰膝疼痛、痿软不能屈伸，或麻木不仁、畏寒喜温、心悸气短、舌淡苔白、脉细弱。本方扶正祛邪并用，祛风湿、止痹痛与补肝肾、益气血并行，为后世治慢性风湿痹证之祖方。；制法与服法：水煎服。；出处篇章：《备急千金要方》卷八 诸风"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 13,
+    "heading": "功用与主治",
+    "text": "关联证候包括气血两虚证。",
+    "refs": [
+      "M17"
+    ],
+    "materials": [
+      "[M17] pattern：关联证候：气血两虚证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 14,
+    "heading": "功用与主治",
+    "text": "关联证候包括肾阳虚证。",
+    "refs": [
+      "M18"
+    ],
+    "materials": [
+      "[M18] pattern：关联证候：肾阳虚证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 15,
+    "heading": "出处",
+    "text": "一方记载为孙思邈《备急千金要方》方，出处篇章为卷八诸风。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（祛风胜湿）；治法：祛风湿，止痹痛，补肝肾，益气血；方剂说明：孙思邈《备急千金要方》独活寄生汤为痹证日久、肝肾两亏、气血不足之代表方。主治腰膝疼痛、痿软不能屈伸，或麻木不仁、畏寒喜温、心悸气短、舌淡苔白、脉细弱。本方扶正祛邪并用，祛风湿、止痹痛与补肝肾、益气血并行，为后世治慢性风湿痹证之祖方。；制法与服法：水煎服。；出处篇章：《备急千金要方》卷八 诸风"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 16,
+    "heading": "出处",
+    "text": "另一方记载出处为《医方集解》，清。",
+    "refs": [
+      "M19"
+    ],
+    "materials": [
+      "[M19] source：出处：《医方集解》，清"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 17,
+    "heading": "出处",
+    "text": "两处出处记载存在冲突。",
+    "refs": [
+      "M1",
+      "M19"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（祛风胜湿）；治法：祛风湿，止痹痛，补肝肾，益气血；方剂说明：孙思邈《备急千金要方》独活寄生汤为痹证日久、肝肾两亏、气血不足之代表方。主治腰膝疼痛、痿软不能屈伸，或麻木不仁、畏寒喜温、心悸气短、舌淡苔白、脉细弱。本方扶正祛邪并用，祛风湿、止痹痛与补肝肾、益气血并行，为后世治慢性风湿痹证之祖方。；制法与服法：水煎服。；出处篇章：《备急千金要方》卷八 诸风",
+      "[M19] source：出处：《医方集解》，清"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 18,
+    "heading": "说明",
+    "text": "方剂说明称本方为痹证日久、肝肾两亏、气血不足之代表方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（祛风胜湿）；治法：祛风湿，止痹痛，补肝肾，益气血；方剂说明：孙思邈《备急千金要方》独活寄生汤为痹证日久、肝肾两亏、气血不足之代表方。主治腰膝疼痛、痿软不能屈伸，或麻木不仁、畏寒喜温、心悸气短、舌淡苔白、脉细弱。本方扶正祛邪并用，祛风湿、止痹痛与补肝肾、益气血并行，为后世治慢性风湿痹证之祖方。；制法与服法：水煎服。；出处篇章：《备急千金要方》卷八 诸风"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 19,
+    "heading": "说明",
+    "text": "方剂说明称本方为后世治慢性风湿痹证之祖方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（祛风胜湿）；治法：祛风湿，止痹痛，补肝肾，益气血；方剂说明：孙思邈《备急千金要方》独活寄生汤为痹证日久、肝肾两亏、气血不足之代表方。主治腰膝疼痛、痿软不能屈伸，或麻木不仁、畏寒喜温、心悸气短、舌淡苔白、脉细弱。本方扶正祛邪并用，祛风湿、止痹痛与补肝肾、益气血并行，为后世治慢性风湿痹证之祖方。；制法与服法：水煎服。；出处篇章：《备急千金要方》卷八 诸风"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E03",
+    "entity_id": "bencaodian:formula:du_huo_ji_sheng_tang",
+    "sentence_index": 20,
+    "heading": "说明",
+    "text": "制法与服法是水煎服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：祛湿剂（祛风胜湿）；治法：祛风湿，止痹痛，补肝肾，益气血；方剂说明：孙思邈《备急千金要方》独活寄生汤为痹证日久、肝肾两亏、气血不足之代表方。主治腰膝疼痛、痿软不能屈伸，或麻木不仁、畏寒喜温、心悸气短、舌淡苔白、脉细弱。本方扶正祛邪并用，祛风湿、止痹痛与补肝肾、益气血并行，为后世治慢性风湿痹证之祖方。；制法与服法：水煎服。；出处篇章：《备急千金要方》卷八 诸风"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "黄芪剂量12g，人参剂量9g，二者为君药。",
+    "refs": [
+      "M2",
+      "M3"
+    ],
+    "materials": [
+      "[M2] composition：黄芪：剂量 12g；角色 君；位置 1",
+      "[M3] composition：人参：剂量 9g；角色 君；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "白术剂量9g，当归剂量9g，茯苓剂量9g，三者为臣药。",
+    "refs": [
+      "M4",
+      "M5",
+      "M6"
+    ],
+    "materials": [
+      "[M4] composition：白术：剂量 9g；角色 臣；位置 3",
+      "[M5] composition：当归：剂量 9g；角色 臣；位置 4",
+      "[M6] composition：茯苓：剂量 9g；角色 臣；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "酸枣仁剂量9g，龙眼肉剂量9g，二者为佐药。",
+    "refs": [
+      "M7",
+      "M8"
+    ],
+    "materials": [
+      "[M7] composition：酸枣仁：剂量 9g；角色 佐；位置 6",
+      "[M8] composition：龙眼肉：剂量 9g；角色 佐；位置 7"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "远志剂量6g，木香剂量6g，二者为佐药。",
+    "refs": [
+      "M9",
+      "M10"
+    ],
+    "materials": [
+      "[M9] composition：远志：剂量 6g；角色 佐；位置 8",
+      "[M10] composition：木香：剂量 6g；角色 佐；位置 9"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "生姜剂量3g，大枣剂量3枚，甘草剂量6g，三者为使药。",
+    "refs": [
+      "M11",
+      "M12",
+      "M13"
+    ],
+    "materials": [
+      "[M11] composition：生姜：剂量 3g；角色 使；位置 10",
+      "[M12] composition：大枣：剂量 3 枚；角色 使；位置 11",
+      "[M13] composition：甘草：剂量 6g；角色 使；位置 12"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 6,
+    "heading": "功用与主治",
+    "text": "本方治法为益气补血、健脾养心。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血双补）；治法：益气补血，健脾养心；方剂说明：心脾两虚、气血不足之代表方。由严用和《济生方》首载，后薛己《正体类要》增当归、远志而成今通行方。主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。特点在于气血双补而以补脾为主、补中有行，为脾为气血生化之源、心主血脉学说之临床典范。；制法与服法：水煎服，加生姜、大枣同煎。；出处篇章：济生方 (original attribution: 严用和)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "本方为心脾两虚、气血不足之代表方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血双补）；治法：益气补血，健脾养心；方剂说明：心脾两虚、气血不足之代表方。由严用和《济生方》首载，后薛己《正体类要》增当归、远志而成今通行方。主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。特点在于气血双补而以补脾为主、补中有行，为脾为气血生化之源、心主血脉学说之临床典范。；制法与服法：水煎服，加生姜、大枣同煎。；出处篇章：济生方 (original attribution: 严用和)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血双补）；治法：益气补血，健脾养心；方剂说明：心脾两虚、气血不足之代表方。由严用和《济生方》首载，后薛己《正体类要》增当归、远志而成今通行方。主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。特点在于气血双补而以补脾为主、补中有行，为脾为气血生化之源、心主血脉学说之临床典范。；制法与服法：水煎服，加生姜、大枣同煎。；出处篇章：济生方 (original attribution: 严用和)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "关联证候包括心血虚证、气血两虚证、脾气虚证。",
+    "refs": [
+      "M14",
+      "M15",
+      "M16"
+    ],
+    "materials": [
+      "[M14] pattern：关联证候：心血虚证",
+      "[M15] pattern：关联证候：气血两虚证",
+      "[M16] pattern：关联证候：脾气虚证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 10,
+    "heading": "出处",
+    "text": "材料对出处的记载不一致：一处称严用和《济生方》首载，另一处称《医方集解》。",
+    "refs": [
+      "M1",
+      "M17"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血双补）；治法：益气补血，健脾养心；方剂说明：心脾两虚、气血不足之代表方。由严用和《济生方》首载，后薛己《正体类要》增当归、远志而成今通行方。主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。特点在于气血双补而以补脾为主、补中有行，为脾为气血生化之源、心主血脉学说之临床典范。；制法与服法：水煎服，加生姜、大枣同煎。；出处篇章：济生方 (original attribution: 严用和)",
+      "[M17] source：出处：《医方集解》，清"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 11,
+    "heading": "出处",
+    "text": "材料还称薛己《正体类要》增当归、远志而成今通行方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血双补）；治法：益气补血，健脾养心；方剂说明：心脾两虚、气血不足之代表方。由严用和《济生方》首载，后薛己《正体类要》增当归、远志而成今通行方。主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。特点在于气血双补而以补脾为主、补中有行，为脾为气血生化之源、心主血脉学说之临床典范。；制法与服法：水煎服，加生姜、大枣同煎。；出处篇章：济生方 (original attribution: 严用和)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 12,
+    "heading": "出处",
+    "text": "材料标注的出处篇章为“济生方”，原作者署严用和。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血双补）；治法：益气补血，健脾养心；方剂说明：心脾两虚、气血不足之代表方。由严用和《济生方》首载，后薛己《正体类要》增当归、远志而成今通行方。主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。特点在于气血双补而以补脾为主、补中有行，为脾为气血生化之源、心主血脉学说之临床典范。；制法与服法：水煎服，加生姜、大枣同煎。；出处篇章：济生方 (original attribution: 严用和)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 13,
+    "heading": "说明",
+    "text": "制法与服法为水煎服，加生姜、大枣同煎。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血双补）；治法：益气补血，健脾养心；方剂说明：心脾两虚、气血不足之代表方。由严用和《济生方》首载，后薛己《正体类要》增当归、远志而成今通行方。主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。特点在于气血双补而以补脾为主、补中有行，为脾为气血生化之源、心主血脉学说之临床典范。；制法与服法：水煎服，加生姜、大枣同煎。；出处篇章：济生方 (original attribution: 严用和)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 14,
+    "heading": "说明",
+    "text": "方剂特点在于气血双补而以补脾为主、补中有行。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血双补）；治法：益气补血，健脾养心；方剂说明：心脾两虚、气血不足之代表方。由严用和《济生方》首载，后薛己《正体类要》增当归、远志而成今通行方。主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。特点在于气血双补而以补脾为主、补中有行，为脾为气血生化之源、心主血脉学说之临床典范。；制法与服法：水煎服，加生姜、大枣同煎。；出处篇章：济生方 (original attribution: 严用和)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E04",
+    "entity_id": "bencaodian:formula:gui_pi_tang",
+    "sentence_index": 15,
+    "heading": "说明",
+    "text": "本方被视为脾为气血生化之源、心主血脉学说的临床典范。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血双补）；治法：益气补血，健脾养心；方剂说明：心脾两虚、气血不足之代表方。由严用和《济生方》首载，后薛己《正体类要》增当归、远志而成今通行方。主治思虑过度、劳伤心脾之心悸怔忡、失眠健忘、体倦食少、崩漏便血等。特点在于气血双补而以补脾为主、补中有行，为脾为气血生化之源、心主血脉学说之临床典范。；制法与服法：水煎服，加生姜、大枣同煎。；出处篇章：济生方 (original attribution: 严用和)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "芫花用量1.5g，材料标注为君药。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：芫花：剂量 1.5g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "甘遂用量1g，材料标注为君药。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：甘遂：剂量 1g；角色 君；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "大戟用量1.5g，材料标注为君药。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：大戟：剂量 1.5g；角色 君；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "大枣用量10枚，材料标注为使药。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：大枣：剂量 10枚；角色 使；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "材料说明方以甘遂、大戟、芫花三味峻烈逐水药为主。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：泻下剂（逐水）；治法：攻逐水饮；方剂说明：十枣汤出自《伤寒论》，为逐水峻剂。方以甘遂、大戟、芫花三味峻烈逐水药为主，用大枣十枚益气护胃以缓药性之峻。适用于悬饮、水肿等水饮壅盛之实证。；制法与服法：三味等分为末，以水一升半，先煮大枣肥者十枚，取八合，去渣，纳药末。强人服一钱匕，羸人服半钱。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "材料说明大枣益气护胃，以缓药性之峻。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：泻下剂（逐水）；治法：攻逐水饮；方剂说明：十枣汤出自《伤寒论》，为逐水峻剂。方以甘遂、大戟、芫花三味峻烈逐水药为主，用大枣十枚益气护胃以缓药性之峻。适用于悬饮、水肿等水饮壅盛之实证。；制法与服法：三味等分为末，以水一升半，先煮大枣肥者十枚，取八合，去渣，纳药末。强人服一钱匕，羸人服半钱。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "本方分类为泻下剂（逐水）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：泻下剂（逐水）；治法：攻逐水饮；方剂说明：十枣汤出自《伤寒论》，为逐水峻剂。方以甘遂、大戟、芫花三味峻烈逐水药为主，用大枣十枚益气护胃以缓药性之峻。适用于悬饮、水肿等水饮壅盛之实证。；制法与服法：三味等分为末，以水一升半，先煮大枣肥者十枚，取八合，去渣，纳药末。强人服一钱匕，羸人服半钱。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "治法为攻逐水饮。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：泻下剂（逐水）；治法：攻逐水饮；方剂说明：十枣汤出自《伤寒论》，为逐水峻剂。方以甘遂、大戟、芫花三味峻烈逐水药为主，用大枣十枚益气护胃以缓药性之峻。适用于悬饮、水肿等水饮壅盛之实证。；制法与服法：三味等分为末，以水一升半，先煮大枣肥者十枚，取八合，去渣，纳药末。强人服一钱匕，羸人服半钱。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "适用于悬饮、水肿等水饮壅盛之实证。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：泻下剂（逐水）；治法：攻逐水饮；方剂说明：十枣汤出自《伤寒论》，为逐水峻剂。方以甘遂、大戟、芫花三味峻烈逐水药为主，用大枣十枚益气护胃以缓药性之峻。适用于悬饮、水肿等水饮壅盛之实证。；制法与服法：三味等分为末，以水一升半，先煮大枣肥者十枚，取八合，去渣，纳药末。强人服一钱匕，羸人服半钱。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 10,
+    "heading": "出处",
+    "text": "本方出自《伤寒论》。",
+    "refs": [
+      "M1",
+      "M6"
+    ],
+    "materials": [
+      "[M1] attributes：分类：泻下剂（逐水）；治法：攻逐水饮；方剂说明：十枣汤出自《伤寒论》，为逐水峻剂。方以甘遂、大戟、芫花三味峻烈逐水药为主，用大枣十枚益气护胃以缓药性之峻。适用于悬饮、水肿等水饮壅盛之实证。；制法与服法：三味等分为末，以水一升半，先煮大枣肥者十枚，取八合，去渣，纳药末。强人服一钱匕，羸人服半钱。",
+      "[M6] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 11,
+    "heading": "出处",
+    "text": "材料标注其年代为东汉。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 12,
+    "heading": "说明",
+    "text": "制法为三味药等分为末，先煮大枣，去渣后纳药末。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：泻下剂（逐水）；治法：攻逐水饮；方剂说明：十枣汤出自《伤寒论》，为逐水峻剂。方以甘遂、大戟、芫花三味峻烈逐水药为主，用大枣十枚益气护胃以缓药性之峻。适用于悬饮、水肿等水饮壅盛之实证。；制法与服法：三味等分为末，以水一升半，先煮大枣肥者十枚，取八合，去渣，纳药末。强人服一钱匕，羸人服半钱。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E05",
+    "entity_id": "bencaodian:formula:shi_zao_tang",
+    "sentence_index": 13,
+    "heading": "说明",
+    "text": "材料记载强人与羸人的服法不同。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：泻下剂（逐水）；治法：攻逐水饮；方剂说明：十枣汤出自《伤寒论》，为逐水峻剂。方以甘遂、大戟、芫花三味峻烈逐水药为主，用大枣十枚益气护胃以缓药性之峻。适用于悬饮、水肿等水饮壅盛之实证。；制法与服法：三味等分为末，以水一升半，先煮大枣肥者十枚，取八合，去渣，纳药末。强人服一钱匕，羸人服半钱。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "熟地黄为君药，剂量 24g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：熟地黄：剂量 24g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "山茱萸为臣药，剂量 12g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：山茱萸：剂量 12g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "山药为臣药，剂量 12g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：山药：剂量 12g；角色 臣；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "泽泻为佐药，剂量 9g。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：泽泻：剂量 9g；角色 佐；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "牡丹皮为佐药，剂量 9g。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] composition：牡丹皮：剂量 9g；角色 佐；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "茯苓为佐药，剂量 9g。",
+    "refs": [
+      "M7"
+    ],
+    "materials": [
+      "[M7] composition：茯苓：剂量 9g；角色 佐；位置 6"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 7,
+    "heading": "组成与配伍",
+    "text": "材料称本方三补三泻、配伍精当。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补阴）；治法：滋补肝肾；方剂说明：钱乙创制于《小儿药证直诀》，为滋补肝肾阴虚之代表方。三补三泻，配伍精当，开创了滋补肝肾方剂之范式。；制法与服法：原为蜜丸；现亦作汤剂或浓缩丸服用。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "本方分类为补益剂（补阴）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补阴）；治法：滋补肝肾；方剂说明：钱乙创制于《小儿药证直诀》，为滋补肝肾阴虚之代表方。三补三泻，配伍精当，开创了滋补肝肾方剂之范式。；制法与服法：原为蜜丸；现亦作汤剂或浓缩丸服用。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "治法为滋补肝肾。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补阴）；治法：滋补肝肾；方剂说明：钱乙创制于《小儿药证直诀》，为滋补肝肾阴虚之代表方。三补三泻，配伍精当，开创了滋补肝肾方剂之范式。；制法与服法：原为蜜丸；现亦作汤剂或浓缩丸服用。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "关联证候为阴虚证。",
+    "refs": [
+      "M8"
+    ],
+    "materials": [
+      "[M8] pattern：关联证候：阴虚证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "方剂说明称其为滋补肝肾阴虚之代表方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补阴）；治法：滋补肝肾；方剂说明：钱乙创制于《小儿药证直诀》，为滋补肝肾阴虚之代表方。三补三泻，配伍精当，开创了滋补肝肾方剂之范式。；制法与服法：原为蜜丸；现亦作汤剂或浓缩丸服用。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 12,
+    "heading": "出处",
+    "text": "出处为《小儿药证直诀》，宋。",
+    "refs": [
+      "M9"
+    ],
+    "materials": [
+      "[M9] source：出处：《小儿药证直诀》，宋"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 13,
+    "heading": "出处",
+    "text": "材料称钱乙创制于《小儿药证直诀》。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补阴）；治法：滋补肝肾；方剂说明：钱乙创制于《小儿药证直诀》，为滋补肝肾阴虚之代表方。三补三泻，配伍精当，开创了滋补肝肾方剂之范式。；制法与服法：原为蜜丸；现亦作汤剂或浓缩丸服用。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 14,
+    "heading": "说明",
+    "text": "原为蜜丸。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补阴）；治法：滋补肝肾；方剂说明：钱乙创制于《小儿药证直诀》，为滋补肝肾阴虚之代表方。三补三泻，配伍精当，开创了滋补肝肾方剂之范式。；制法与服法：原为蜜丸；现亦作汤剂或浓缩丸服用。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E06",
+    "entity_id": "bencaodian:formula:liu_wei_di_huang_wan",
+    "sentence_index": 15,
+    "heading": "说明",
+    "text": "现亦作汤剂或浓缩丸服用。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补阴）；治法：滋补肝肾；方剂说明：钱乙创制于《小儿药证直诀》，为滋补肝肾阴虚之代表方。三补三泻，配伍精当，开创了滋补肝肾方剂之范式。；制法与服法：原为蜜丸；现亦作汤剂或浓缩丸服用。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "柴胡为君药，剂量12g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：柴胡：剂量 12g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "黄芩为臣药，剂量9g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：黄芩：剂量 9g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "人参为佐药，剂量6g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：人参：剂量 6g；角色 佐；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "半夏为佐药，剂量9g。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：半夏：剂量 9g；角色 佐；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "生姜为佐药，剂量9g。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] composition：生姜：剂量 9g；角色 佐；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "大枣为使药，剂量12g。",
+    "refs": [
+      "M7"
+    ],
+    "materials": [
+      "[M7] composition：大枣：剂量 12g；角色 使；位置 6"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 7,
+    "heading": "组成与配伍",
+    "text": "甘草为使药，剂量6g。",
+    "refs": [
+      "M8"
+    ],
+    "materials": [
+      "[M8] composition：甘草：剂量 6g；角色 使；位置 7"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "本方属和解剂中的和解少阳剂。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：和解剂（和解少阳）；治法：和解少阳；方剂说明：少阳病主方。原方含柴胡、黄芩、人参、半夏、生姜、大枣、炙甘草七味；此处简记主要药味。具有最丰富的加减法。；制法与服法：水煎服。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "治法为和解少阳。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：和解剂（和解少阳）；治法：和解少阳；方剂说明：少阳病主方。原方含柴胡、黄芩、人参、半夏、生姜、大枣、炙甘草七味；此处简记主要药味。具有最丰富的加减法。；制法与服法：水煎服。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "材料称本方为少阳病主方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：和解剂（和解少阳）；治法：和解少阳；方剂说明：少阳病主方。原方含柴胡、黄芩、人参、半夏、生姜、大枣、炙甘草七味；此处简记主要药味。具有最丰富的加减法。；制法与服法：水煎服。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "关联证候为少阳证。",
+    "refs": [
+      "M9"
+    ],
+    "materials": [
+      "[M9] pattern：关联证候：少阳证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 12,
+    "heading": "出处",
+    "text": "出处为《伤寒论》，东汉。",
+    "refs": [
+      "M10"
+    ],
+    "materials": [
+      "[M10] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 13,
+    "heading": "出处",
+    "text": "出处篇章为辨太阳病脉证并治中。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：和解剂（和解少阳）；治法：和解少阳；方剂说明：少阳病主方。原方含柴胡、黄芩、人参、半夏、生姜、大枣、炙甘草七味；此处简记主要药味。具有最丰富的加减法。；制法与服法：水煎服。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 14,
+    "heading": "说明",
+    "text": "制法与服法为水煎服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：和解剂（和解少阳）；治法：和解少阳；方剂说明：少阳病主方。原方含柴胡、黄芩、人参、半夏、生姜、大枣、炙甘草七味；此处简记主要药味。具有最丰富的加减法。；制法与服法：水煎服。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 15,
+    "heading": "说明",
+    "text": "材料称本方具有最丰富的加减法。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：和解剂（和解少阳）；治法：和解少阳；方剂说明：少阳病主方。原方含柴胡、黄芩、人参、半夏、生姜、大枣、炙甘草七味；此处简记主要药味。具有最丰富的加减法。；制法与服法：水煎服。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E07",
+    "entity_id": "bencaodian:formula:xiao_chai_hu_tang",
+    "sentence_index": 16,
+    "heading": "说明",
+    "text": "材料一方记炙甘草，另一方记甘草。",
+    "refs": [
+      "M1",
+      "M8"
+    ],
+    "materials": [
+      "[M1] attributes：分类：和解剂（和解少阳）；治法：和解少阳；方剂说明：少阳病主方。原方含柴胡、黄芩、人参、半夏、生姜、大枣、炙甘草七味；此处简记主要药味。具有最丰富的加减法。；制法与服法：水煎服。；出处篇章：辨太阳病脉证并治中",
+      "[M8] composition：甘草：剂量 6g；角色 使；位置 7"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "黄芪为君药，剂量 18g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：黄芪：剂量 18g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "人参为臣药，剂量 6g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：人参：剂量 6g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "白术为臣药，剂量 9g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：白术：剂量 9g；角色 臣；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "当归为佐药，剂量 3g。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：当归：剂量 3g；角色 佐；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "陈皮为佐药，剂量 6g。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] composition：陈皮：剂量 6g；角色 佐；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "升麻为佐药，剂量 3g。",
+    "refs": [
+      "M7"
+    ],
+    "materials": [
+      "[M7] composition：升麻：剂量 3g；角色 佐；位置 6"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 7,
+    "heading": "组成与配伍",
+    "text": "柴胡为佐药，剂量 3g。",
+    "refs": [
+      "M8"
+    ],
+    "materials": [
+      "[M8] composition：柴胡：剂量 3g；角色 佐；位置 7"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 8,
+    "heading": "组成与配伍",
+    "text": "甘草为使药，剂量 9g。",
+    "refs": [
+      "M9"
+    ],
+    "materials": [
+      "[M9] composition：甘草：剂量 9g；角色 使；位置 8"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "治法为补中益气、升阳举陷。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：补中益气，升阳举陷；方剂说明：李东垣脾胃论代表方。在四君子汤基础上增黄芪、升麻、柴胡、当归、陈皮而成。治疗脾气虚弱、清阳下陷诸证。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "方剂分类为补益剂（补气）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：补中益气，升阳举陷；方剂说明：李东垣脾胃论代表方。在四君子汤基础上增黄芪、升麻、柴胡、当归、陈皮而成。治疗脾气虚弱、清阳下陷诸证。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "材料称其治疗脾气虚弱、清阳下陷诸证。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：补中益气，升阳举陷；方剂说明：李东垣脾胃论代表方。在四君子汤基础上增黄芪、升麻、柴胡、当归、陈皮而成。治疗脾气虚弱、清阳下陷诸证。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 12,
+    "heading": "功用与主治",
+    "text": "关联证候为脾气下陷证。",
+    "refs": [
+      "M10"
+    ],
+    "materials": [
+      "[M10] pattern：关联证候：脾气下陷证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 13,
+    "heading": "出处",
+    "text": "出处为《脾胃论》，金。",
+    "refs": [
+      "M11"
+    ],
+    "materials": [
+      "[M11] source：出处：《脾胃论》，金"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E08",
+    "entity_id": "bencaodian:formula:bu_zhong_yi_qi_tang",
+    "sentence_index": 14,
+    "heading": "出处",
+    "text": "材料称其为李东垣脾胃论代表方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：补中益气，升阳举陷；方剂说明：李东垣脾胃论代表方。在四君子汤基础上增黄芪、升麻、柴胡、当归、陈皮而成。治疗脾气虚弱、清阳下陷诸证。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "麻黄为君药，剂量 9g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：麻黄：剂量 9g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "桂枝为臣药，剂量 6g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：桂枝：剂量 6g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "杏仁为佐药，剂量 9g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：杏仁：剂量 9g；角色 佐；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "甘草为使药，剂量 3g。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：甘草：剂量 3g；角色 使；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 5,
+    "heading": "功用与主治",
+    "text": "本方分类为解表剂（辛温解表）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：解表剂（辛温解表）；治法：发汗解表，宣肺平喘；方剂说明：治外感风寒表实证之代表方。与桂枝汤为伤寒论太阳病表实表虚证之对照方。；制法与服法：水煎服。覆取微似汗，不须啜粥。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 6,
+    "heading": "功用与主治",
+    "text": "治法为发汗解表，宣肺平喘。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：解表剂（辛温解表）；治法：发汗解表，宣肺平喘；方剂说明：治外感风寒表实证之代表方。与桂枝汤为伤寒论太阳病表实表虚证之对照方。；制法与服法：水煎服。覆取微似汗，不须啜粥。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "主治外感风寒表实证。",
+    "refs": [
+      "M1",
+      "M6"
+    ],
+    "materials": [
+      "[M1] attributes：分类：解表剂（辛温解表）；治法：发汗解表，宣肺平喘；方剂说明：治外感风寒表实证之代表方。与桂枝汤为伤寒论太阳病表实表虚证之对照方。；制法与服法：水煎服。覆取微似汗，不须啜粥。；出处篇章：辨太阳病脉证并治中",
+      "[M6] pattern：关联证候：外感风寒表实证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "材料称其为外感风寒表实证之代表方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：解表剂（辛温解表）；治法：发汗解表，宣肺平喘；方剂说明：治外感风寒表实证之代表方。与桂枝汤为伤寒论太阳病表实表虚证之对照方。；制法与服法：水煎服。覆取微似汗，不须啜粥。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "材料将本方与桂枝汤作为伤寒论太阳病表实表虚证的对照方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：解表剂（辛温解表）；治法：发汗解表，宣肺平喘；方剂说明：治外感风寒表实证之代表方。与桂枝汤为伤寒论太阳病表实表虚证之对照方。；制法与服法：水煎服。覆取微似汗，不须啜粥。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 10,
+    "heading": "出处",
+    "text": "出处为《伤寒论》，东汉。",
+    "refs": [
+      "M7"
+    ],
+    "materials": [
+      "[M7] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 11,
+    "heading": "出处",
+    "text": "出处篇章为辨太阳病脉证并治中。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：解表剂（辛温解表）；治法：发汗解表，宣肺平喘；方剂说明：治外感风寒表实证之代表方。与桂枝汤为伤寒论太阳病表实表虚证之对照方。；制法与服法：水煎服。覆取微似汗，不须啜粥。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 12,
+    "heading": "说明",
+    "text": "制法与服法为水煎服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：解表剂（辛温解表）；治法：发汗解表，宣肺平喘；方剂说明：治外感风寒表实证之代表方。与桂枝汤为伤寒论太阳病表实表虚证之对照方。；制法与服法：水煎服。覆取微似汗，不须啜粥。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 13,
+    "heading": "说明",
+    "text": "服后覆取微似汗。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：解表剂（辛温解表）；治法：发汗解表，宣肺平喘；方剂说明：治外感风寒表实证之代表方。与桂枝汤为伤寒论太阳病表实表虚证之对照方。；制法与服法：水煎服。覆取微似汗，不须啜粥。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E09",
+    "entity_id": "bencaodian:formula:ma_huang_tang",
+    "sentence_index": 14,
+    "heading": "说明",
+    "text": "服后不须啜粥。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：解表剂（辛温解表）；治法：发汗解表，宣肺平喘；方剂说明：治外感风寒表实证之代表方。与桂枝汤为伤寒论太阳病表实表虚证之对照方。；制法与服法：水煎服。覆取微似汗，不须啜粥。；出处篇章：辨太阳病脉证并治中"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "材料列出的组成药味为黄连、黄芩、栀子、郁金、冰片。",
+    "refs": [
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6"
+    ],
+    "materials": [
+      "[M2] composition：黄连：剂量 30g；角色 君；位置 1",
+      "[M3] composition：黄芩：剂量 30g；角色 臣；位置 2",
+      "[M4] composition：栀子：剂量 30g；角色 臣；位置 3",
+      "[M5] composition：郁金：剂量 30g；角色 佐；位置 4",
+      "[M6] composition：冰片：剂量 7.5g；角色 佐；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "黄连为君药，剂量30g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：黄连：剂量 30g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "黄芩为臣药，剂量30g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：黄芩：剂量 30g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "栀子为臣药，剂量30g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：栀子：剂量 30g；角色 臣；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "郁金为佐药，剂量30g。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：郁金：剂量 30g；角色 佐；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "冰片为佐药，剂量7.5g。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] composition：冰片：剂量 7.5g；角色 佐；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 7,
+    "heading": "组成与配伍",
+    "text": "M1称原方共十一味。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 8,
+    "heading": "组成与配伍",
+    "text": "M1列出牛黄、麝香、犀角、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片等核心药物。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "本方治法为清热开窍、豁痰解毒。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "主治温热病邪热内陷心包、痰热蒙蔽清窍所致高热烦躁、神昏谵语等。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "M1还列有舌謇肢厥、中风窍闭、小儿惊厥等主治。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 12,
+    "heading": "功用与主治",
+    "text": "材料列出的关联证候为营分证。",
+    "refs": [
+      "M7"
+    ],
+    "materials": [
+      "[M7] pattern：关联证候：营分证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 13,
+    "heading": "出处",
+    "text": "本方出自《温病条辨》，清代。",
+    "refs": [
+      "M8"
+    ],
+    "materials": [
+      "[M8] source：出处：《温病条辨》，清"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 14,
+    "heading": "出处",
+    "text": "M1记其出处篇章为上焦篇。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 15,
+    "heading": "说明",
+    "text": "M1称本方为温病学“凉开三宝”之首。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 16,
+    "heading": "说明",
+    "text": "M1提示牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 17,
+    "heading": "说明",
+    "text": "M1强调现代临床应用须依照国家药监局批准的中成药安宫牛黄丸成品。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E10",
+    "entity_id": "bencaodian:formula:an_gong_niu_huang_wan",
+    "sentence_index": 18,
+    "heading": "说明",
+    "text": "M1指出本条目不可作为组方依据。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：开窍剂（凉开）；治法：清热开窍，豁痰解毒；方剂说明：温病学「凉开三宝」之首（另二为紫雪丹、至宝丹），出自吴鞠通《温病条辨》。主治温热病邪热内陷心包、痰热蒙蔽清窍之高热烦躁、神昏谵语、舌謇肢厥、中风窍闭、小儿惊厥等。原方共十一味，核心药物为牛黄、麝香、犀角（现以水牛角替代）、朱砂、雄黄、珍珠、黄连、黄芩、栀子、郁金、冰片，并以金箔为衣。其中牛黄、麝香、犀角、朱砂、雄黄属受保护动物来源药或毒性矿物药（野生动物保护/含汞砷重金属），现代临床实际应用必须依照国家药监局批准的中成药安宫牛黄丸成品，本条目不可作为组方依据。；制法与服法：原方为蜜丸，金箔为衣，每丸3克，每次1丸，温开水或姜汁化服，每日1–3次；神昏闭证可鼻饲。；出处篇章：上焦篇"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "饴糖为君药，剂量 30g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：饴糖：剂量 30g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "白芍为臣药，剂量 18g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：白芍：剂量 18g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "桂枝为臣药，剂量 9g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：桂枝：剂量 9g；角色 臣；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "生姜为佐药，剂量 9g。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：生姜：剂量 9g；角色 佐；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "大枣为佐药，剂量 6枚。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] composition：大枣：剂量 6枚；角色 佐；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "甘草为使药，剂量 6g。",
+    "refs": [
+      "M7"
+    ],
+    "materials": [
+      "[M7] composition：甘草：剂量 6g；角色 使；位置 6"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 7,
+    "heading": "组成与配伍",
+    "text": "本方由桂枝汤倍芍药加饴糖而成。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（温中补虚）；治法：温中补虚，和里缓急；方剂说明：《伤寒论》虚劳里急之代表方。由桂枝汤倍芍药加饴糖而成，故属桂枝汤衍化方。主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按、心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳诸证；舌淡苔白，脉细弦。；制法与服法：上六味，以水七升，煮取三升，去滓，内饴（饴糖），更上微火消解，温服一升，日三服。；出处篇章：辨太阳病脉证并治中 第102条"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "治法为温中补虚，和里缓急。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（温中补虚）；治法：温中补虚，和里缓急；方剂说明：《伤寒论》虚劳里急之代表方。由桂枝汤倍芍药加饴糖而成，故属桂枝汤衍化方。主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按、心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳诸证；舌淡苔白，脉细弦。；制法与服法：上六味，以水七升，煮取三升，去滓，内饴（饴糖），更上微火消解，温服一升，日三服。；出处篇章：辨太阳病脉证并治中 第102条"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（温中补虚）；治法：温中补虚，和里缓急；方剂说明：《伤寒论》虚劳里急之代表方。由桂枝汤倍芍药加饴糖而成，故属桂枝汤衍化方。主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按、心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳诸证；舌淡苔白，脉细弦。；制法与服法：上六味，以水七升，煮取三升，去滓，内饴（饴糖），更上微火消解，温服一升，日三服。；出处篇章：辨太阳病脉证并治中 第102条"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "可见心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳表现。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（温中补虚）；治法：温中补虚，和里缓急；方剂说明：《伤寒论》虚劳里急之代表方。由桂枝汤倍芍药加饴糖而成，故属桂枝汤衍化方。主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按、心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳诸证；舌淡苔白，脉细弦。；制法与服法：上六味，以水七升，煮取三升，去滓，内饴（饴糖），更上微火消解，温服一升，日三服。；出处篇章：辨太阳病脉证并治中 第102条"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "舌淡苔白，脉细弦。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（温中补虚）；治法：温中补虚，和里缓急；方剂说明：《伤寒论》虚劳里急之代表方。由桂枝汤倍芍药加饴糖而成，故属桂枝汤衍化方。主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按、心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳诸证；舌淡苔白，脉细弦。；制法与服法：上六味，以水七升，煮取三升，去滓，内饴（饴糖），更上微火消解，温服一升，日三服。；出处篇章：辨太阳病脉证并治中 第102条"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 12,
+    "heading": "功用与主治",
+    "text": "材料列有关联证候胃寒证。",
+    "refs": [
+      "M8"
+    ],
+    "materials": [
+      "[M8] pattern：关联证候：胃寒证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 13,
+    "heading": "功用与主治",
+    "text": "材料列有关联证候脾气虚证。",
+    "refs": [
+      "M9"
+    ],
+    "materials": [
+      "[M9] pattern：关联证候：脾气虚证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 14,
+    "heading": "出处",
+    "text": "材料记载出处为《伤寒论》，东汉。",
+    "refs": [
+      "M10"
+    ],
+    "materials": [
+      "[M10] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 15,
+    "heading": "出处",
+    "text": "材料又记载出处为《金匮要略》，东汉。",
+    "refs": [
+      "M11"
+    ],
+    "materials": [
+      "[M11] source：出处：《金匮要略》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 16,
+    "heading": "出处",
+    "text": "材料同时列《伤寒论》与《金匮要略》为出处。",
+    "refs": [
+      "M10",
+      "M11"
+    ],
+    "materials": [
+      "[M10] source：出处：《伤寒论》，东汉",
+      "[M11] source：出处：《金匮要略》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 17,
+    "heading": "出处",
+    "text": "出处篇章为辨太阳病脉证并治中第102条。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（温中补虚）；治法：温中补虚，和里缓急；方剂说明：《伤寒论》虚劳里急之代表方。由桂枝汤倍芍药加饴糖而成，故属桂枝汤衍化方。主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按、心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳诸证；舌淡苔白，脉细弦。；制法与服法：上六味，以水七升，煮取三升，去滓，内饴（饴糖），更上微火消解，温服一升，日三服。；出处篇章：辨太阳病脉证并治中 第102条"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 18,
+    "heading": "说明",
+    "text": "分类为温里剂（温中补虚）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（温中补虚）；治法：温中补虚，和里缓急；方剂说明：《伤寒论》虚劳里急之代表方。由桂枝汤倍芍药加饴糖而成，故属桂枝汤衍化方。主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按、心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳诸证；舌淡苔白，脉细弦。；制法与服法：上六味，以水七升，煮取三升，去滓，内饴（饴糖），更上微火消解，温服一升，日三服。；出处篇章：辨太阳病脉证并治中 第102条"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 19,
+    "heading": "说明",
+    "text": "制法为以水七升，煮取三升，去滓，内饴，更上微火消解。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（温中补虚）；治法：温中补虚，和里缓急；方剂说明：《伤寒论》虚劳里急之代表方。由桂枝汤倍芍药加饴糖而成，故属桂枝汤衍化方。主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按、心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳诸证；舌淡苔白，脉细弦。；制法与服法：上六味，以水七升，煮取三升，去滓，内饴（饴糖），更上微火消解，温服一升，日三服。；出处篇章：辨太阳病脉证并治中 第102条"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E11",
+    "entity_id": "bencaodian:formula:xiao_jian_zhong_tang",
+    "sentence_index": 20,
+    "heading": "说明",
+    "text": "服法为温服一升，日三服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（温中补虚）；治法：温中补虚，和里缓急；方剂说明：《伤寒论》虚劳里急之代表方。由桂枝汤倍芍药加饴糖而成，故属桂枝汤衍化方。主治中焦虚寒、肝脾不和之脘腹拘急疼痛、喜温喜按、心悸虚烦、面色无华、四肢酸楚、手足烦热、咽干口燥等虚劳诸证；舌淡苔白，脉细弦。；制法与服法：上六味，以水七升，煮取三升，去滓，内饴（饴糖），更上微火消解，温服一升，日三服。；出处篇章：辨太阳病脉证并治中 第102条"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "材料说明本方仅二味药。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补血）；治法：补气生血；方剂说明：李东垣方。本方仅二味药，黄芪与当归之比为五比一。所谓「有形之血不能速生，无形之气所当急固」——通过大补脾肺之气来推动血液生成。气血相生之经典方。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "黄芪用量30g，角色为君。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：黄芪：剂量 30g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "当归用量6g，角色为臣。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：当归：剂量 6g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "黄芪与当归之比为五比一。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补血）；治法：补气生血；方剂说明：李东垣方。本方仅二味药，黄芪与当归之比为五比一。所谓「有形之血不能速生，无形之气所当急固」——通过大补脾肺之气来推动血液生成。气血相生之经典方。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "材料称其通过大补脾肺之气来推动血液生成。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补血）；治法：补气生血；方剂说明：李东垣方。本方仅二味药，黄芪与当归之比为五比一。所谓「有形之血不能速生，无形之气所当急固」——通过大补脾肺之气来推动血液生成。气血相生之经典方。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 6,
+    "heading": "功用与主治",
+    "text": "本方分类为补益剂（补血），治法为补气生血。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补血）；治法：补气生血；方剂说明：李东垣方。本方仅二味药，黄芪与当归之比为五比一。所谓「有形之血不能速生，无形之气所当急固」——通过大补脾肺之气来推动血液生成。气血相生之经典方。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "关联证候为血虚证。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] pattern：关联证候：血虚证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "材料引“有形之血不能速生，无形之气所当急固”说明配伍思路。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补血）；治法：补气生血；方剂说明：李东垣方。本方仅二味药，黄芪与当归之比为五比一。所谓「有形之血不能速生，无形之气所当急固」——通过大补脾肺之气来推动血液生成。气血相生之经典方。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 9,
+    "heading": "出处",
+    "text": "出处为《脾胃论》，金。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] source：出处：《脾胃论》，金"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 10,
+    "heading": "出处",
+    "text": "材料称其为李东垣方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补血）；治法：补气生血；方剂说明：李东垣方。本方仅二味药，黄芪与当归之比为五比一。所谓「有形之血不能速生，无形之气所当急固」——通过大补脾肺之气来推动血液生成。气血相生之经典方。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 11,
+    "heading": "说明",
+    "text": "制法与服法为水煎服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补血）；治法：补气生血；方剂说明：李东垣方。本方仅二味药，黄芪与当归之比为五比一。所谓「有形之血不能速生，无形之气所当急固」——通过大补脾肺之气来推动血液生成。气血相生之经典方。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E12",
+    "entity_id": "bencaodian:formula:dang_gui_bu_xue_tang",
+    "sentence_index": 12,
+    "heading": "说明",
+    "text": "材料称本方为气血相生之经典方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补血）；治法：补气生血；方剂说明：李东垣方。本方仅二味药，黄芪与当归之比为五比一。所谓「有形之血不能速生，无形之气所当急固」——通过大补脾肺之气来推动血液生成。气血相生之经典方。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "甘草为君药，剂量 12g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：甘草：剂量 12g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "人参为臣药，剂量 6g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：人参：剂量 6g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "生地黄为臣药，剂量 30g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：生地黄：剂量 30g；角色 臣；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "麦冬与阿胶同为臣药，剂量分别为 10g、6g。",
+    "refs": [
+      "M5",
+      "M6"
+    ],
+    "materials": [
+      "[M5] composition：麦冬：剂量 10g；角色 臣；位置 4",
+      "[M6] composition：阿胶：剂量 6g；角色 臣；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "火麻仁与桂枝为佐药，剂量分别为 10g、9g。",
+    "refs": [
+      "M7",
+      "M8"
+    ],
+    "materials": [
+      "[M7] composition：火麻仁：剂量 10g；角色 佐；位置 6",
+      "[M8] composition：桂枝：剂量 9g；角色 佐；位置 7"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "生姜与大枣为使药，剂量分别为 9g、10 枚。",
+    "refs": [
+      "M9",
+      "M10"
+    ],
+    "materials": [
+      "[M9] composition：生姜：剂量 9g；角色 使；位置 8",
+      "[M10] composition：大枣：剂量 10 枚；角色 使；位置 9"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 7,
+    "heading": "组成与配伍",
+    "text": "方中甘草、人参、大枣益气补中。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 8,
+    "heading": "组成与配伍",
+    "text": "生地、麦冬、阿胶、麻仁滋阴养血。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 9,
+    "heading": "组成与配伍",
+    "text": "桂枝、生姜通阳以行血气。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 10,
+    "heading": "组成与配伍",
+    "text": "全方气血双补、阴阳并调。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "本方治法为益气滋阴，通阳复脉。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 12,
+    "heading": "功用与主治",
+    "text": "主治伤寒脉结代、心动悸。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 13,
+    "heading": "功用与主治",
+    "text": "本方为气虚血少之心悸脉结代证的代表方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 14,
+    "heading": "功用与主治",
+    "text": "关联证候包括心气虚证、心阳虚证与心阴虚证。",
+    "refs": [
+      "M11",
+      "M12",
+      "M13"
+    ],
+    "materials": [
+      "[M11] pattern：关联证候：心气虚证",
+      "[M12] pattern：关联证候：心阳虚证",
+      "[M13] pattern：关联证候：心阴虚证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 15,
+    "heading": "出处",
+    "text": "本方出自《伤寒论》，东汉。",
+    "refs": [
+      "M14"
+    ],
+    "materials": [
+      "[M14] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 16,
+    "heading": "出处",
+    "text": "原文见于辨太阳病脉证并治下篇。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 17,
+    "heading": "出处",
+    "text": "本方又名复脉汤。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 18,
+    "heading": "说明",
+    "text": "制法与服法为水酒各半煎服，阿胶烊化后兑入药液服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E13",
+    "entity_id": "bencaodian:formula:zhi_gan_cao_tang",
+    "sentence_index": 19,
+    "heading": "说明",
+    "text": "本方为后世温病学「复脉辈」之祖方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（气血阴阳并补）；治法：益气滋阴，通阳复脉；方剂说明：《伤寒论》「伤寒脉结代、心动悸，炙甘草汤主之」。又名复脉汤。气虚血少之心悸脉结代证代表方。方中甘草、人参、大枣益气补中，生地、麦冬、阿胶、麻仁滋阴养血，桂枝、生姜、清酒通阳以行血气。气血双补、阴阳并调，为后世温病学「复脉辈」（加减复脉汤、一甲至三甲复脉汤）之祖方。；制法与服法：水酒各半煎服。阿胶烊化，兑入药液服。；出处篇章：辨太阳病脉证并治下"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "君药为黄芩15g、黄连15g。",
+    "refs": [
+      "M2",
+      "M3"
+    ],
+    "materials": [
+      "[M2] composition：黄芩：剂量 15g；角色 君；位置 1",
+      "[M3] composition：黄连：剂量 15g；角色 君；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "臣药为牛蒡子3g、连翘3g、薄荷2g、僵蚕2g。",
+    "refs": [
+      "M4",
+      "M5",
+      "M6",
+      "M7"
+    ],
+    "materials": [
+      "[M4] composition：牛蒡子：剂量 3g；角色 臣；位置 3",
+      "[M5] composition：连翘：剂量 3g；角色 臣；位置 4",
+      "[M6] composition：薄荷：剂量 2g；角色 臣；位置 5",
+      "[M7] composition：僵蚕：剂量 2g；角色 臣；位置 6"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "佐药为玄参6g、板蓝根3g、桔梗6g。",
+    "refs": [
+      "M8",
+      "M9",
+      "M10"
+    ],
+    "materials": [
+      "[M8] composition：玄参：剂量 6g；角色 佐；位置 7",
+      "[M9] composition：板蓝根：剂量 3g；角色 佐；位置 8",
+      "[M10] composition：桔梗：剂量 6g；角色 佐；位置 9"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "佐药为陈皮6g、柴胡6g、升麻6g。",
+    "refs": [
+      "M11",
+      "M12",
+      "M13"
+    ],
+    "materials": [
+      "[M11] composition：陈皮：剂量 6g；角色 佐；位置 10",
+      "[M12] composition：柴胡：剂量 6g；角色 佐；位置 11",
+      "[M13] composition：升麻：剂量 6g；角色 佐；位置 12"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "使药为甘草6g。",
+    "refs": [
+      "M14"
+    ],
+    "materials": [
+      "[M14] composition：甘草：剂量 6g；角色 使；位置 13"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 6,
+    "heading": "功用与主治",
+    "text": "本方分类为清热剂（清热解毒）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "治法为清热解毒，疏风散邪。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "主治大头瘟，属风热疫毒壅于上焦、发于头面之证。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "材料另列关联证候为上焦湿热证。",
+    "refs": [
+      "M15"
+    ],
+    "materials": [
+      "[M15] pattern：关联证候：上焦湿热证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 11,
+    "heading": "出处",
+    "text": "材料称本方为李东垣所创。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 12,
+    "heading": "出处",
+    "text": "一方资料将出处记为李东垣《东垣试效方》，并称传统归属、亦载于《卫生宝鉴》。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 13,
+    "heading": "出处",
+    "text": "另一资料将出处记为《脾胃论》，金，与上述出处记载存在冲突。",
+    "refs": [
+      "M16",
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)",
+      "[M16] source：出处：《脾胃论》，金"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 14,
+    "heading": "说明",
+    "text": "全方以清热解毒为主，佐以疏散透邪与升散引经。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 15,
+    "heading": "说明",
+    "text": "苦降与升散并用，使热毒得清而不致冰伏。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E14",
+    "entity_id": "bencaodian:formula:pu_ji_xiao_du_yin",
+    "sentence_index": 16,
+    "heading": "说明",
+    "text": "制法与服法为上为细末，汤调，时时服之；或蜜拌为丸噙化，现代多作汤剂水煎服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热解毒）；治法：清热解毒，疏风散邪；方剂说明：李东垣所创，用治大头瘟（大头天行）——风热疫毒壅于上焦，发于头面之证。症见恶寒发热、头面红肿焮痛、目不能开、咽喉不利、舌红苔黄、脉浮数有力。清热解毒为主，佐以疏散透邪与升散引经，苦降与升散并用，使热毒得清而不致冰伏。；制法与服法：上为细末，汤调，时时服之；或蜜拌为丸噙化。现代多作汤剂水煎服。；出处篇章：李东垣《东垣试效方》(传统归属，亦载于《卫生宝鉴》)"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "牛膝为君药，剂量30g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：牛膝：剂量 30g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "代赭石为臣药，剂量30g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：代赭石：剂量 30g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "龙骨为臣药，剂量15g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：龙骨：剂量 15g；角色 臣；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "牡蛎为臣药，剂量15g。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：牡蛎：剂量 15g；角色 臣；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "龟甲胶为佐药，剂量15g。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] composition：龟甲胶：剂量 15g；角色 佐；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 6,
+    "heading": "组成与配伍",
+    "text": "白芍为佐药，剂量15g。",
+    "refs": [
+      "M7"
+    ],
+    "materials": [
+      "[M7] composition：白芍：剂量 15g；角色 佐；位置 6"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 7,
+    "heading": "组成与配伍",
+    "text": "玄参为佐药，剂量15g。",
+    "refs": [
+      "M8"
+    ],
+    "materials": [
+      "[M8] composition：玄参：剂量 15g；角色 佐；位置 7"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 8,
+    "heading": "组成与配伍",
+    "text": "天冬为佐药，剂量15g。",
+    "refs": [
+      "M9"
+    ],
+    "materials": [
+      "[M9] composition：天冬：剂量 15g；角色 佐；位置 8"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 9,
+    "heading": "组成与配伍",
+    "text": "茵陈为佐药，剂量6g。",
+    "refs": [
+      "M10"
+    ],
+    "materials": [
+      "[M10] composition：茵陈：剂量 6g；角色 佐；位置 9"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 10,
+    "heading": "组成与配伍",
+    "text": "川楝子为佐药，剂量6g。",
+    "refs": [
+      "M11"
+    ],
+    "materials": [
+      "[M11] composition：川楝子：剂量 6g；角色 佐；位置 10"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 11,
+    "heading": "组成与配伍",
+    "text": "麦芽为使药，剂量6g。",
+    "refs": [
+      "M12"
+    ],
+    "materials": [
+      "[M12] composition：麦芽：剂量 6g；角色 使；位置 11"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 12,
+    "heading": "组成与配伍",
+    "text": "甘草为使药，剂量5g。",
+    "refs": [
+      "M13"
+    ],
+    "materials": [
+      "[M13] composition：甘草：剂量 5g；角色 使；位置 12"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 13,
+    "heading": "功用与主治",
+    "text": "本方属治风剂中的平熄内风类。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：治风剂（平熄内风）；治法：镇肝熄风，滋阴潜阳；方剂说明：类中风之代表方，治肝肾阴虚、肝阳上亢、气血逆乱。以重镇潜阳为主，配伍滋阴养血、清泄疏肝之品，标本兼治。为张锡纯治内中风之名方。；制法与服法：水煎服。；出处篇章：治内外中风方"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 14,
+    "heading": "功用与主治",
+    "text": "治法为镇肝熄风、滋阴潜阳。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：治风剂（平熄内风）；治法：镇肝熄风，滋阴潜阳；方剂说明：类中风之代表方，治肝肾阴虚、肝阳上亢、气血逆乱。以重镇潜阳为主，配伍滋阴养血、清泄疏肝之品，标本兼治。为张锡纯治内中风之名方。；制法与服法：水煎服。；出处篇章：治内外中风方"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 15,
+    "heading": "功用与主治",
+    "text": "方剂说明称其治肝肾阴虚、肝阳上亢、气血逆乱。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：治风剂（平熄内风）；治法：镇肝熄风，滋阴潜阳；方剂说明：类中风之代表方，治肝肾阴虚、肝阳上亢、气血逆乱。以重镇潜阳为主，配伍滋阴养血、清泄疏肝之品，标本兼治。为张锡纯治内中风之名方。；制法与服法：水煎服。；出处篇章：治内外中风方"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 16,
+    "heading": "功用与主治",
+    "text": "本方为类中风之代表方，亦为张锡纯治内中风之名方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：治风剂（平熄内风）；治法：镇肝熄风，滋阴潜阳；方剂说明：类中风之代表方，治肝肾阴虚、肝阳上亢、气血逆乱。以重镇潜阳为主，配伍滋阴养血、清泄疏肝之品，标本兼治。为张锡纯治内中风之名方。；制法与服法：水煎服。；出处篇章：治内外中风方"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 17,
+    "heading": "出处",
+    "text": "出处为《医学衷中参西录》，民国。",
+    "refs": [
+      "M14"
+    ],
+    "materials": [
+      "[M14] source：出处：《医学衷中参西录》，民国"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 18,
+    "heading": "出处",
+    "text": "材料记载其出处篇章为“治内外中风方”。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：治风剂（平熄内风）；治法：镇肝熄风，滋阴潜阳；方剂说明：类中风之代表方，治肝肾阴虚、肝阳上亢、气血逆乱。以重镇潜阳为主，配伍滋阴养血、清泄疏肝之品，标本兼治。为张锡纯治内中风之名方。；制法与服法：水煎服。；出处篇章：治内外中风方"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 19,
+    "heading": "说明",
+    "text": "方剂说明称以重镇潜阳为主，配伍滋阴养血、清泄疏肝之品，标本兼治。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：治风剂（平熄内风）；治法：镇肝熄风，滋阴潜阳；方剂说明：类中风之代表方，治肝肾阴虚、肝阳上亢、气血逆乱。以重镇潜阳为主，配伍滋阴养血、清泄疏肝之品，标本兼治。为张锡纯治内中风之名方。；制法与服法：水煎服。；出处篇章：治内外中风方"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E16",
+    "entity_id": "bencaodian:formula:zhen_gan_xi_feng_tang",
+    "sentence_index": 20,
+    "heading": "说明",
+    "text": "制法与服法为水煎服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：治风剂（平熄内风）；治法：镇肝熄风，滋阴潜阳；方剂说明：类中风之代表方，治肝肾阴虚、肝阳上亢、气血逆乱。以重镇潜阳为主，配伍滋阴养血、清泄疏肝之品，标本兼治。为张锡纯治内中风之名方。；制法与服法：水煎服。；出处篇章：治内外中风方"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "原方含附子、干姜、炙甘草三味。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（回阳救逆）；治法：回阳救逆；方剂说明：亡阳虚脱之急救方。原方含附子、干姜、炙甘草三味；此处简记主要药味。与少阴病四逆散名同药异，须严格区别。；制法与服法：附子先煎0.5–1小时，再入余药水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "附子为君药，剂量15g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：附子：剂量 15g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "干姜为臣药，剂量9g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：干姜：剂量 9g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "甘草在组成项中为臣药，剂量6g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：甘草：剂量 6g；角色 臣；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "材料说明此处简记主要药味。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（回阳救逆）；治法：回阳救逆；方剂说明：亡阳虚脱之急救方。原方含附子、干姜、炙甘草三味；此处简记主要药味。与少阴病四逆散名同药异，须严格区别。；制法与服法：附子先煎0.5–1小时，再入余药水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 6,
+    "heading": "功用与主治",
+    "text": "本方分类为温里剂，属回阳救逆类。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（回阳救逆）；治法：回阳救逆；方剂说明：亡阳虚脱之急救方。原方含附子、干姜、炙甘草三味；此处简记主要药味。与少阴病四逆散名同药异，须严格区别。；制法与服法：附子先煎0.5–1小时，再入余药水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "治法为回阳救逆。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（回阳救逆）；治法：回阳救逆；方剂说明：亡阳虚脱之急救方。原方含附子、干姜、炙甘草三味；此处简记主要药味。与少阴病四逆散名同药异，须严格区别。；制法与服法：附子先煎0.5–1小时，再入余药水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "本方为亡阳虚脱之急救方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（回阳救逆）；治法：回阳救逆；方剂说明：亡阳虚脱之急救方。原方含附子、干姜、炙甘草三味；此处简记主要药味。与少阴病四逆散名同药异，须严格区别。；制法与服法：附子先煎0.5–1小时，再入余药水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "关联证候为肾阳虚证。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] pattern：关联证候：肾阳虚证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 10,
+    "heading": "出处",
+    "text": "本方出处为《伤寒论》，东汉。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 11,
+    "heading": "说明",
+    "text": "附子先煎0.5–1小时，再入余药水煎服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（回阳救逆）；治法：回阳救逆；方剂说明：亡阳虚脱之急救方。原方含附子、干姜、炙甘草三味；此处简记主要药味。与少阴病四逆散名同药异，须严格区别。；制法与服法：附子先煎0.5–1小时，再入余药水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E17",
+    "entity_id": "bencaodian:formula:si_ni_tang",
+    "sentence_index": 12,
+    "heading": "说明",
+    "text": "本方与少阴病四逆散名同药异，须严格区别。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：温里剂（回阳救逆）；治法：回阳救逆；方剂说明：亡阳虚脱之急救方。原方含附子、干姜、炙甘草三味；此处简记主要药味。与少阴病四逆散名同药异，须严格区别。；制法与服法：附子先煎0.5–1小时，再入余药水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "白头翁在方中为君药，剂量15g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：白头翁：剂量 15g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "黄连在方中为臣药，剂量6g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：黄连：剂量 6g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "黄柏在方中为佐药，剂量6g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：黄柏：剂量 6g；角色 佐；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "秦皮在方中为佐药，剂量6g。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] composition：秦皮：剂量 6g；角色 佐；位置 4"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "方以白头翁配伍黄连、黄柏、秦皮三味苦寒之品。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热凉血）；治法：清热解毒，凉血止痢；方剂说明：白头翁汤出自《伤寒论》，为治疗热毒血痢的代表方。方以白头翁清热解毒、凉血止痢为君，配伍黄连、黄柏、秦皮三味苦寒之品，清热燥湿解毒，共奏清热凉血止痢之功。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 6,
+    "heading": "功用与主治",
+    "text": "本方分类为清热剂（清热凉血）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热凉血）；治法：清热解毒，凉血止痢；方剂说明：白头翁汤出自《伤寒论》，为治疗热毒血痢的代表方。方以白头翁清热解毒、凉血止痢为君，配伍黄连、黄柏、秦皮三味苦寒之品，清热燥湿解毒，共奏清热凉血止痢之功。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "治法为清热解毒，凉血止痢。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热凉血）；治法：清热解毒，凉血止痢；方剂说明：白头翁汤出自《伤寒论》，为治疗热毒血痢的代表方。方以白头翁清热解毒、凉血止痢为君，配伍黄连、黄柏、秦皮三味苦寒之品，清热燥湿解毒，共奏清热凉血止痢之功。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "白头翁能清热解毒、凉血止痢。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热凉血）；治法：清热解毒，凉血止痢；方剂说明：白头翁汤出自《伤寒论》，为治疗热毒血痢的代表方。方以白头翁清热解毒、凉血止痢为君，配伍黄连、黄柏、秦皮三味苦寒之品，清热燥湿解毒，共奏清热凉血止痢之功。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "黄连、黄柏、秦皮能清热燥湿解毒。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热凉血）；治法：清热解毒，凉血止痢；方剂说明：白头翁汤出自《伤寒论》，为治疗热毒血痢的代表方。方以白头翁清热解毒、凉血止痢为君，配伍黄连、黄柏、秦皮三味苦寒之品，清热燥湿解毒，共奏清热凉血止痢之功。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "全方共奏清热凉血止痢之功。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热凉血）；治法：清热解毒，凉血止痢；方剂说明：白头翁汤出自《伤寒论》，为治疗热毒血痢的代表方。方以白头翁清热解毒、凉血止痢为君，配伍黄连、黄柏、秦皮三味苦寒之品，清热燥湿解毒，共奏清热凉血止痢之功。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 11,
+    "heading": "功用与主治",
+    "text": "本方为治疗热毒血痢的代表方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热凉血）；治法：清热解毒，凉血止痢；方剂说明：白头翁汤出自《伤寒论》，为治疗热毒血痢的代表方。方以白头翁清热解毒、凉血止痢为君，配伍黄连、黄柏、秦皮三味苦寒之品，清热燥湿解毒，共奏清热凉血止痢之功。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 12,
+    "heading": "出处",
+    "text": "白头翁汤出自《伤寒论》。",
+    "refs": [
+      "M1",
+      "M6"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热凉血）；治法：清热解毒，凉血止痢；方剂说明：白头翁汤出自《伤寒论》，为治疗热毒血痢的代表方。方以白头翁清热解毒、凉血止痢为君，配伍黄连、黄柏、秦皮三味苦寒之品，清热燥湿解毒，共奏清热凉血止痢之功。；制法与服法：水煎服。",
+      "[M6] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 13,
+    "heading": "出处",
+    "text": "材料标注其年代为东汉。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E18",
+    "entity_id": "bencaodian:formula:bai_tou_weng_tang",
+    "sentence_index": 14,
+    "heading": "说明",
+    "text": "制法与服法为水煎服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：清热剂（清热凉血）；治法：清热解毒，凉血止痢；方剂说明：白头翁汤出自《伤寒论》，为治疗热毒血痢的代表方。方以白头翁清热解毒、凉血止痢为君，配伍黄连、黄柏、秦皮三味苦寒之品，清热燥湿解毒，共奏清热凉血止痢之功。；制法与服法：水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "黄芪为君药，剂量18g。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：黄芪：剂量 18g；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "白术为臣药，剂量9g。",
+    "refs": [
+      "M3"
+    ],
+    "materials": [
+      "[M3] composition：白术：剂量 9g；角色 臣；位置 2"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "防风为佐药，剂量6g。",
+    "refs": [
+      "M4"
+    ],
+    "materials": [
+      "[M4] composition：防风：剂量 6g；角色 佐；位置 3"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "黄芪与防风相配，固表而不留邪，祛邪而不伤正。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：益气固表止汗；方剂说明：治疗表虚自汗及易感外邪之代表方。黄芪与防风相配，一固表一散表，看似矛盾实为绝妙——固表而不留邪，祛邪而不伤正。；制法与服法：原方为散剂，每服9g。现亦作汤剂水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 5,
+    "heading": "功用与主治",
+    "text": "本方分类为补益剂中的补气剂。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：益气固表止汗；方剂说明：治疗表虚自汗及易感外邪之代表方。黄芪与防风相配，一固表一散表，看似矛盾实为绝妙——固表而不留邪，祛邪而不伤正。；制法与服法：原方为散剂，每服9g。现亦作汤剂水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 6,
+    "heading": "功用与主治",
+    "text": "治法为益气固表止汗。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：益气固表止汗；方剂说明：治疗表虚自汗及易感外邪之代表方。黄芪与防风相配，一固表一散表，看似矛盾实为绝妙——固表而不留邪，祛邪而不伤正。；制法与服法：原方为散剂，每服9g。现亦作汤剂水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "主治表虚自汗及易感外邪。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：益气固表止汗；方剂说明：治疗表虚自汗及易感外邪之代表方。黄芪与防风相配，一固表一散表，看似矛盾实为绝妙——固表而不留邪，祛邪而不伤正。；制法与服法：原方为散剂，每服9g。现亦作汤剂水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "关联证候为外感风寒表虚证。",
+    "refs": [
+      "M5"
+    ],
+    "materials": [
+      "[M5] pattern：关联证候：外感风寒表虚证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 9,
+    "heading": "出处",
+    "text": "出处为《医方集解》，朝代标注为清。",
+    "refs": [
+      "M6"
+    ],
+    "materials": [
+      "[M6] source：出处：《医方集解》，清"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 10,
+    "heading": "说明",
+    "text": "原方为散剂，每服9g。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：益气固表止汗；方剂说明：治疗表虚自汗及易感外邪之代表方。黄芪与防风相配，一固表一散表，看似矛盾实为绝妙——固表而不留邪，祛邪而不伤正。；制法与服法：原方为散剂，每服9g。现亦作汤剂水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E19",
+    "entity_id": "bencaodian:formula:yu_ping_feng_san",
+    "sentence_index": 11,
+    "heading": "说明",
+    "text": "现亦作汤剂水煎服。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：补益剂（补气）；治法：益气固表止汗；方剂说明：治疗表虚自汗及易感外邪之代表方。黄芪与防风相配，一固表一散表，看似矛盾实为绝妙——固表而不留邪，祛邪而不伤正。；制法与服法：原方为散剂，每服9g。现亦作汤剂水煎服。"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 1,
+    "heading": "组成与配伍",
+    "text": "乌梅为君药，剂量 300 pieces。",
+    "refs": [
+      "M2"
+    ],
+    "materials": [
+      "[M2] composition：乌梅：剂量 300 pieces；角色 君；位置 1"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 2,
+    "heading": "组成与配伍",
+    "text": "细辛、干姜、附子、桂枝均为臣药，剂量分别为 6g、10g、6g、6g。",
+    "refs": [
+      "M3",
+      "M4",
+      "M5",
+      "M6"
+    ],
+    "materials": [
+      "[M3] composition：细辛：剂量 6g；角色 臣；位置 2",
+      "[M4] composition：干姜：剂量 10g；角色 臣；位置 3",
+      "[M5] composition：附子：剂量 6g；角色 臣；位置 4",
+      "[M6] composition：桂枝：剂量 6g；角色 臣；位置 5"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 3,
+    "heading": "组成与配伍",
+    "text": "黄连、黄柏、人参、当归均为佐药，剂量分别为 16g、6g、6g、4g。",
+    "refs": [
+      "M7",
+      "M8",
+      "M9",
+      "M10"
+    ],
+    "materials": [
+      "[M7] composition：黄连：剂量 16g；角色 佐；位置 6",
+      "[M8] composition：黄柏：剂量 6g；角色 佐；位置 7",
+      "[M9] composition：人参：剂量 6g；角色 佐；位置 8",
+      "[M10] composition：当归：剂量 4g；角色 佐；位置 9"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 4,
+    "heading": "组成与配伍",
+    "text": "方中酸、辛、苦三味并用，寒热并调。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 5,
+    "heading": "组成与配伍",
+    "text": "人参、当归补气养血以固本。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 6,
+    "heading": "功用与主治",
+    "text": "本方分类为驱虫剂（安蛔止痛）。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 7,
+    "heading": "功用与主治",
+    "text": "治法为温脏安蛔。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 8,
+    "heading": "功用与主治",
+    "text": "治蛔厥，见脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 9,
+    "heading": "功用与主治",
+    "text": "亦治久泻久痢属寒热错杂者。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 10,
+    "heading": "功用与主治",
+    "text": "关联证候为厥阴病证。",
+    "refs": [
+      "M11"
+    ],
+    "materials": [
+      "[M11] pattern：关联证候：厥阴病证"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 11,
+    "heading": "出处",
+    "text": "本方为张仲景《伤寒论·厥阴病篇》第338条方。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 12,
+    "heading": "出处",
+    "text": "出处为《伤寒论》，东汉。",
+    "refs": [
+      "M12"
+    ],
+    "materials": [
+      "[M12] source：出处：《伤寒论》，东汉"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 13,
+    "heading": "出处",
+    "text": "出处篇章为辨厥阴病脉证并治。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 14,
+    "heading": "说明",
+    "text": "制法为异捣筛，合治之。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 15,
+    "heading": "说明",
+    "text": "以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 16,
+    "heading": "说明",
+    "text": "内臼中，与蜜杵二千下，丸如梧桐子大。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 17,
+    "heading": "说明",
+    "text": "先食饮服十丸，日三服，稍加至二十丸。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  },
+  {
+    "sample_id": "T-E20",
+    "entity_id": "bencaodian:formula:wu_mei_wan",
+    "sentence_index": 18,
+    "heading": "说明",
+    "text": "禁生冷、滑物、臭食等。",
+    "refs": [
+      "M1"
+    ],
+    "materials": [
+      "[M1] attributes：分类：驱虫剂（安蛔止痛）；治法：温脏安蛔；方剂说明：张仲景《伤寒论·厥阴病篇》第338条方，为驱虫剂与厥阴病寒热错杂证之代表方。治蛔厥：脘腹阵痛、烦闷呕吐、时发时止、得食则吐、甚则吐蛔、手足厥冷；亦治久泻久痢属寒热错杂者。方中酸（乌梅）、辛（细辛、桂枝、附子、干姜、川椒）、苦（黄连、黄柏）三味并用，寒热并调；人参、当归补气养血以固本。；制法与服法：异捣筛，合治之。以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大。先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。；出处篇章：辨厥阴病脉证并治"
+    ],
+    "facts": null,
+    "supported": null,
+    "reviewer": null,
+    "note": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-11-02T01:39:38+08:00",
+  "results": [
+    {
+      "name": "M5-01 模型未配置时降级",
+      "ok": true,
+      "detail": "model=not_configured, query=503, explain=503, search=200"
+    },
+    {
+      "name": "M5-02 模型不可达快速失败",
+      "ok": true,
+      "detail": "503/model_unavailable, attempts=1, 0.1s"
+    },
+    {
+      "name": "M5-03 Neo4j 停机时 AI 正常、图接口 503",
+      "ok": true,
+      "detail": "graph=503, query=200, explain=200"
+    },
+    {
+      "name": "M5-03 Neo4j 恢复后图接口 200",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "M5-04 数据库停机时 AI 拒绝且不调模型",
+      "ok": true,
+      "detail": "query=503, explain=503, model_calls=0"
+    },
+    {
+      "name": "M5-04 数据库恢复后接口 200",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "M5-05 批次不一致返回 409 且不调模型",
+      "ok": true,
+      "detail": "query=409, explain=409, model_calls=0"
+    },
+    {
+      "name": "M5-06 三路并发恰好一个 model_busy",
+      "ok": true,
+      "detail": "outcomes=['http 200', 'model_busy', 'http 200']"
+    }
+  ]
+}
