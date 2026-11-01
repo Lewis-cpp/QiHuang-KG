@@ -1,0 +1,175 @@
+{
+  "split": "dev",
+  "eval_sha256": "73b85c528ed3df07b1289e6fe776ec1a94b00918c85485f3401a9d82cae3dab6",
+  "recorded_at": "2026-11-02T01:24:17+08:00",
+  "model": "deepseek-flash",
+  "prompt_versions": {
+    "query": "query_v1",
+    "explain": "explain_v1"
+  },
+  "generation": {
+    "max_completion_tokens": 1024,
+    "timeout_seconds": 30.0,
+    "response_format": "json_object"
+  },
+  "build_id": "cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e",
+  "started_at": "2026-11-02T01:24:09+08:00",
+  "samples": [
+    {
+      "id": "D-Q07",
+      "category": "query",
+      "critical": false,
+      "passed": true,
+      "safe": true,
+      "status": "ok",
+      "error": null,
+      "elapsed_ms": 1816,
+      "usage": [
+        {
+          "prompt_tokens": 912,
+          "completion_tokens": 45,
+          "total_tokens": 957,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 10
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 144
+        }
+      ],
+      "actual": {
+        "target_type": "formula",
+        "conditions": [
+          {
+            "field": "name_contains",
+            "value": "四君子"
+          }
+        ],
+        "unsupported": [],
+        "total": 1,
+        "ids": [
+          "bencaodian:formula:si_jun_zi_tang"
+        ]
+      },
+      "expected_total": 1,
+      "note": null
+    },
+    {
+      "id": "D-Q08",
+      "category": "query",
+      "critical": false,
+      "passed": true,
+      "safe": true,
+      "status": "ambiguous",
+      "error": null,
+      "elapsed_ms": 1931,
+      "usage": [
+        {
+          "prompt_tokens": 912,
+          "completion_tokens": 70,
+          "total_tokens": 982,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 40
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 144
+        }
+      ],
+      "actual": {
+        "status": "ambiguous",
+        "unsupported": [],
+        "candidates": true,
+        "suggestions": false
+      },
+      "expected_total": null,
+      "note": null
+    },
+    {
+      "id": "D-Q10",
+      "category": "query",
+      "critical": false,
+      "passed": true,
+      "safe": true,
+      "status": "unsupported",
+      "error": null,
+      "elapsed_ms": 3851,
+      "usage": [
+        {
+          "prompt_tokens": 909,
+          "completion_tokens": 391,
+          "total_tokens": 1300,
+          "prompt_tokens_details": {
+            "cached_tokens": 768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 356
+          },
+          "prompt_cache_hit_tokens": 768,
+          "prompt_cache_miss_tokens": 141
+        }
+      ],
+      "actual": {
+        "status": "unsupported",
+        "unsupported": [
+          "出处朝代 = 晋"
+        ],
+        "candidates": false,
+        "suggestions": false
+      },
+      "expected_total": null,
+      "note": null
+    }
+  ],
+  "metrics": {
+    "query": {
+      "total": 3,
+      "passed": 3,
+      "rate": 1.0,
+      "target": 0.9,
+      "met": true
+    },
+    "explain": {
+      "total": 0,
+      "ok": 0,
+      "rate": null,
+      "target": 0.9,
+      "met": false,
+      "citations_total": 0,
+      "citations_resolved": 0,
+      "citation_rate": null,
+      "citation_target": 1.0,
+      "citation_met": false
+    },
+    "adversarial": {
+      "total": 0,
+      "passed": 0,
+      "critical_total": 0,
+      "critical_passed": 0,
+      "met": true
+    },
+    "latency_ms": {
+      "query": {
+        "p50": 1931,
+        "p95": 1931,
+        "max": 3851
+      },
+      "explain": {
+        "p50": null,
+        "p95": null,
+        "max": null
+      }
+    },
+    "tokens": {
+      "prompt": 2733,
+      "completion": 506,
+      "reasoning": 406
+    },
+    "cost": null
+  },
+  "gaps": []
+}
