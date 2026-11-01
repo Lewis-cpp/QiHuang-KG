@@ -86,6 +86,11 @@ def write(session, build, nodes, edges):
             rows=chunk, build=build).consume())
 
 
+def jsonable(node_map):
+    """Driver 5 hands temporal properties back as neo4j.time.DateTime, which json.dumps rejects."""
+    return {key: getattr(value, "iso_format", lambda: value)() for key, value in node_map.items()}
+
+
 def verify(session, build, nodes, edges):
     node_ids = session.run("MATCH (n:Entity {build_id:$build}) RETURN n.id AS id", build=build).value("id")
     edge_ids = session.run("MATCH (:Entity {build_id:$build})-[r:LINK {build_id:$build,scope:'full'}]->"
@@ -122,7 +127,7 @@ def project(rebuild):
         if marker and marker["p"].get("complete") is True and not rebuild:
             result = verify(session, build, nodes, edges)
             require(all(result["checks"].values()), "Existing projection differs from PostgreSQL; rerun with --rebuild")
-            return dict(status="reused", build_id=build, **result, projection=marker["p"], heap=memory(session))
+            return dict(status="reused", build_id=build, **result, projection=jsonable(marker["p"]), heap=memory(session))
         # Readers get 503 projection_not_ready until verification passes again.
         session.run("MERGE (p:Projection {build_id:$build,scope:'full'}) SET p.complete=false", build=build).consume()
         write_started = time.monotonic()
