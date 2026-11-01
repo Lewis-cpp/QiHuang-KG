@@ -1,0 +1,21 @@
+{
+  "status": "blocked",
+  "reason": "未提供 Vastbase 实例连接配置（config/vastbase.json 与 config/vastbase_reader.json 不存在），无法执行 6B 的实机验收；不得以 PostgreSQL 结果代替（spec §9.1 末段）",
+  "checked_at": "2026-11-02T12:40:00+08:00",
+  "precondition_check": {
+    "config_vastbase": "不存在",
+    "config_vastbase_reader": "不存在",
+    "driver": "psycopg2（Vastbase 兼容模式预期可用，未实测）"
+  },
+  "next_steps": [
+    "提供一台 Vastbase 实例（版本、兼容模式、主机/端口），把连接信息填入 config/vastbase.json（导入账号）与 config/vastbase_reader.json（只读账号），参照 config/vastbase.example.json 与 config/vastbase_reader.example.json；两文件已被 Git 忽略，不要提交",
+    "实例就绪后按 docs/dev/m6-spec.md §2 的 7 步执行：probe（python3 scripts/import_vastbase.py --engine vastbase，默认即 vastbase）→ 导入批次 var/prepared/<build_id> → 两库对照（表行数、table_sha256、视图 count(*) 与前 100 行摘要）→ setup_reader.py 建只读账号并复跑写入失败测试 → 临时把 config/app.json 的 database_engine 改为 vastbase 跑 tests/test_api.py、tests/test_ai.py、tests/test_explain.py 与 eval/run_eval.py --split dev --only D-Q01 D-Q03 D-E01 → 核对 Neo4j 投影 build_id 一致后 /graph 恢复 → scripts/bench.py --purpose acceptance（结果存 docs/acceptance/m6-bench-vastbase.json）",
+    "每一步把命令、输出摘要与判定写入 docs/acceptance/m6-vastbase.json，全部通过置 status=passed；遇到兼容性问题先改两库共享写法（对照 docs/dev/m6-compat.md 的 13 项检查表）",
+    "验收后应用配置默认切回 PostgreSQL（报告 final_engine 注明），是否保留 Vastbase 由使用者决定"
+  ],
+  "6a_done_independent_of_instance": {
+    "sql_portability": "backend/ 无 ::jsonb；ai.py 的 attributes 读取改为 CAST(x AS json)->>（tests/test_ai.py、test_eval_sets.py 复跑通过）",
+    "compat_checklist": "docs/dev/m6-compat.md（13 项，PostgreSQL 已验证列已填）",
+    "performance_baseline": "docs/acceptance/m6-bench.json（PostgreSQL，24 个非 AI 采样行全部 P95<2000ms；ai_query 达标；ai_explain p95 约 19.6s 超目标，原因与接受理由见 gaps）"
+  }
+}

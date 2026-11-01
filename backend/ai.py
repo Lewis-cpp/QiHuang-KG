@@ -127,10 +127,12 @@ def fragment(target_type, item):
         clause = 'EXISTS (SELECT 1 FROM edge x WHERE x.source_id=e.id AND x.relation=%s AND x.target_id=%s)'
         return ('NOT ' if field == 'excludes_herb' else '') + clause, [link(field, target_type)[0], item['entity_id']]
     # shortcut: attributes_json is parsed per row (365 herbs, ~9,000 patent medicines); index it if M5 timings need.
+    # CAST(text AS json) instead of ::jsonb keeps the SQL shared with Vastbase (m6-spec §1.1).
     if field == 'source_dynasty':
         return ("EXISTS (SELECT 1 FROM edge x JOIN entity t ON t.id=x.target_id WHERE x.source_id=e.id "
-                "AND x.relation='CITED_IN' AND t.attributes_json::jsonb->>'dynasty_zh'=ANY(%s))", [list(item['stored'])])
-    return 'e.attributes_json::jsonb->>%s=%s', [ENUMS[field][1], item['stored']]
+                "AND x.relation='CITED_IN' AND CAST(t.attributes_json AS json)->>'dynasty_zh'=ANY(%s))",
+                [list(item['stored'])])
+    return 'CAST(e.attributes_json AS json)->>%s=%s', [ENUMS[field][1], item['stored']]
 
 
 def run(c, target_type, conditions):
