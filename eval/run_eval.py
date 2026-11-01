@@ -304,7 +304,7 @@ def write_report(report, partial):
 
 
 def write_review_table(report):
-    """test 集 status=ok 解释的逐句人工审核表；reviewer 留给人填，代理只写 note 初查。"""
+    """test 集 status=ok 解释的逐句人工审核表；顶层为条目数组（交付合同如此），reviewer 留给人填。"""
     entries = []
     for r in report['samples']:
         body = EXPLAIN_BODY.get(r['id'])
@@ -320,8 +320,7 @@ def write_review_table(report):
                                                if m['ref'] in sentence['refs']],
                                     facts=None, supported=None, reviewer=None, note=None))
     path = ACCEPT / 'm5-explain-review.json'
-    path.write_text(json.dumps(dict(recorded_at=report['recorded_at'], sentences=entries), ensure_ascii=False, indent=2) + '\n',
-                    encoding='utf-8')
+    path.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return path
 
 
@@ -329,7 +328,7 @@ def score_review():
     report_path = ACCEPT / 'm5-eval-test.json'
     review_path = ACCEPT / 'm5-explain-review.json'
     report = json.loads(report_path.read_text(encoding='utf-8'))
-    entries = json.loads(review_path.read_text(encoding='utf-8'))['sentences']
+    entries = json.loads(review_path.read_text(encoding='utf-8'))
     filled = [e for e in entries if e.get('facts') is not None]
     facts = sum(e['facts'] for e in filled)
     supported = sum(min(e.get('supported') or 0, e['facts']) for e in filled)
