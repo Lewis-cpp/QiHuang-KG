@@ -278,7 +278,9 @@ def markdown_summary(report):
         lines.append(f"| {name} | {got} | {target} | {'✅' if met else '❌'} |")
     if m.get('fact_support'):
         fs = m['fact_support']
-        lines.append(f"| 事实支持率（人工审核） | {fs['supported']}/{fs['facts']} = {fs['rate']} | {fs['target']} | {'✅' if fs['rate'] >= fs['target'] else '❌'} |")
+        shown = '待人工审核' if fs['rate'] is None else f"{fs['supported']}/{fs['facts']} = {fs['rate']}"
+        met = fs['rate'] is not None and fs['rate'] >= fs['target']
+        lines.append(f"| 事实支持率（人工审核） | {shown} | {fs['target']} | {'✅' if met else '❌'} |")
     lines += ['', '## 延迟与开销', '',
               f"- 查询 p50/p95/max：{m['latency_ms']['query']['p50']} / {m['latency_ms']['query']['p95']} / {m['latency_ms']['query']['max']} ms",
               f"- 解释 p50/p95/max：{m['latency_ms']['explain']['p50']} / {m['latency_ms']['explain']['p95']} / {m['latency_ms']['explain']['max']} ms",
