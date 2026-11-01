@@ -44,7 +44,16 @@ docker compose up -d --wait
 .venv/bin/python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000
 ```
 
-另一终端在 `frontend/` 执行 `npm ci`、`npm run dev`，打开 `http://127.0.0.1:5174`。页面提供名称与别名检索、实体详情、证据、来源与统计；每条检索结果和详情页都可进入关系图谱 `/graph/<实体ID>`（一跳展开、关系筛选、中药两跳路径）。接口文档见 `http://127.0.0.1:8000/docs`。`/ai` 页面提供 AI 条件查询：模型只把问题转换为白名单条件，查询由后端参数化执行（M4a）；方剂详情页提供带引用的 AI 解释：模型只依据后端组装的材料生成，逐句校验引用、角色与剂量，失败时降级为只展示材料（M4b）。全新环境的依赖安装与数据导入见[启动说明](docs/bootstrap.md)。
+另一终端在 `frontend/` 执行 `npm ci`、`npm run dev`，打开 `http://127.0.0.1:5174`。页面提供名称与别名检索、实体详情、证据、来源与统计；每条检索结果和详情页都可进入关系图谱 `/graph/<实体ID>`（一跳展开、关系筛选、中药两跳路径）。接口文档见 `http://127.0.0.1:8000/docs`。`/ai` 页面提供 AI 条件查询：模型只把问题转换为白名单条件，查询由后端参数化执行（M4a）；方剂详情页提供带引用的 AI 解释：模型只依据后端组装的材料生成，逐句校验引用、角色与剂量，失败时降级为只展示材料（M4b）。执行 `npm run build` 后，FastAPI 直接托管 `frontend/dist`（同一 8000 端口提供页面与接口）。**全新环境的部署步骤（依赖、私有配置、导入、模型验证、构建运行、备份恢复与常见故障）见[部署说明](docs/deploy.md)**，另有[启动说明](docs/bootstrap.md)。
+
+## 项目进度
+
+- **M0–M3 已完成**：数据管线、关系库业务 API、检索/详情/证据/来源/统计页面、Neo4j 全量投影与图谱页（验收记录见 `docs/acceptance/`）。
+- **M4a/M4b 已完成**：AI 条件查询与带引用的方剂解释（`docs/acceptance/m4-query.json`、`m4-explain.json`、`m4b-browser.json`）。
+- **M5 已完成**：冻结评测集一次运行达标（查询 25/25、解释 19/20、对抗关键 13/13，引用可回查 100%），故障演练与 49 条页面回归全过（`m5-eval-test.json`、`m5-drills.json`、`m5-browser.json`）。
+- **M6A 已完成**：SQL 可移植性、兼容检查表、PostgreSQL 性能基线（`docs/dev/m6-compat.md`、`m6-bench.json`）；**M6B 阻塞外部**：等待 Vastbase 实例（`m6-vastbase.json`，问题清单 I-003）。
+- **M7 已完成**：FastAPI 托管构建产物、部署说明、恢复演练 6/6、交付材料（`m7-recovery.json`、`docs/deploy.md`、`docs/acceptance/final-checklist.md`）。
+- 工作日志与真实模型调用计数：`docs/dev/progress.md`；遗留事项：`docs/dev/issues.md`。
 
 开发库位于 `127.0.0.1:15432`，库名 `qihuang`。私有连接配置为 `config/postgresql.json`；密码自动生成并复用，未纳入版本管理。PostgreSQL 与 Neo4j 均通过 Docker 命名卷持久化。
 

@@ -2,6 +2,7 @@
 
 from concurrent.futures import ThreadPoolExecutor
 import logging
+import pathlib
 from typing import Annotated, Literal
 
 from fastapi import FastAPI, Path, Query
@@ -170,3 +171,25 @@ def ai_query(body: schemas.AIQueryRequest):
           summary="带引用的方剂解释：模型只依据后端材料生成，逐句校验通过后返回")
 def ai_explain(body: schemas.AIExplainRequest):
     return explain.explain(body.entity_id, body.build_id)
+
+
+# --- 生产托管（m7-spec §1）：构建产物存在时，同一进程提供页面与接口；否则与开发模式完全一致。 ---
+# pathlib 而非 fastapi.Path：后者遮蔽了标准库 Path。
+DIST = pathlib.Path(__file__).resolve().parents[1] / "frontend" / "dist"
+
+if (DIST / "index.html").is_file():
+    from fastapi.responses import FileResponse
+    from starlette.staticfiles import StaticFiles
+
+    app.mount("/assets", StaticFiles(directory=DIST / "assets"), name="assets")
+
+    @app.get("/{path:path}", include_in_schema=False)
+    def spa_fallback(path: str):
+        if path == "api" or path.startswith("api/"):
+            raise services.ServiceError("not_found", "请求的接口不存在")
+        # Only files inside dist are ever served; the request path is never mapped onto the repository.
+        candidate = (DIST / path).resolve()
+        if path and candidate.is_file() and candidate.is_relative_to(DIST):
+            return FileResponse(candidate)
+        return FileResponse(DIST / "index.html", media_type="text/html",
+                            headers={"Cache-Control": "no-cache"})
