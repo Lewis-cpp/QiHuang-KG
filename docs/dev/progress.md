@@ -36,6 +36,7 @@
 - 2026-11-02 M4b 步骤 5：`AIExplanation.vue` + EntityView 挂载 + types + 样式；`npm run build` 通过。页面验收 `m4b-browser.json` 23/23 全过（1280/390 两宽度：按钮不自动请求、角标进证据页可后退、降级原因、模型未就绪、390 无横向滚动；生成用真实模型，降级/未就绪用 `tests/browser/stub_backend.py`）。验收脚本与替身后端在 `tests/browser/`（`node_modules` 已被 Git 忽略）。
 - 2026-11-02 M4b 步骤 6：`record_m4.py explain` 10 首全部 `ok`，引用 241/241 可回查（100%），`zhu_ling_ze_xie_role_stated=false`，降级演练通过。`m4-explain.json` 已生成。
 - 2026-11-02 M4b 步骤 7：spec.md §7.2 指向 m4b-spec（已由脚手架完成）；m4-development.md §11 追加实施记录；README 进度更新；cases.md 增加 M4、M4B、M5 三节。下一步：推送并开 M4b PR，然后进入 M5。
+- 2026-11-02 M4b 收尾（中断恢复）：会话在最终回归失败后中断，由监控会话接手。失败原因：app.py 未处理异常日志在收尾时被改为 `exc_info=True`（带 traceback），违反 test_api.py 对日志恰为 `Unhandled API exception: ValueError` 的合同断言；按"验收测试是合同"恢复原格式（只记类型名，客户端仍不见细节）。重跑 `tests/run_all.sh` 全绿（exit=0）。提交 3b3d38a（19+1 个文件），随后推送分支并开 M4b PR。下一步：进入 M5。
 
 ## 测试争议
 
