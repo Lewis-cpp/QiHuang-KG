@@ -11,11 +11,11 @@
 
 ## 里程碑清单
 
-- [ ] M4b 带引用的方剂解释（[m4b-spec.md](m4b-spec.md) §12 步骤 1–7）
-- [ ] M5 评测、演练与回归（[m5-spec.md](m5-spec.md) §8 步骤 1–6）
-- [ ] M6A 可移植性与性能基线（[m6-spec.md](m6-spec.md) §1）
-- [ ] M6B Vastbase 验收或记录阻塞（[m6-spec.md](m6-spec.md) §2）
-- [ ] M7 部署、恢复与交付（[m7-spec.md](m7-spec.md)）
+- [x] M4b 带引用的方剂解释（[m4b-spec.md](m4b-spec.md) §12 步骤 1–7）
+- [x] M5 评测、演练与回归（[m5-spec.md](m5-spec.md) §8 步骤 1–6）
+- [x] M6A 可移植性与性能基线（[m6-spec.md](m6-spec.md) §1）
+- [x] M6B Vastbase 验收或记录阻塞（[m6-spec.md](m6-spec.md) §2）——阻塞外部
+- [x] M7 部署、恢复与交付（[m7-spec.md](m7-spec.md)）
 
 ## 真实模型调用计数
 
@@ -48,3 +48,49 @@
 ## 测试争议
 
 （认为某条已提供的验收测试与 spec 矛盾时写在这里：哪条断言、为什么、怎么改的。没有就留空。）
+
+## 最终总结
+
+撰写日期：2026-11-02。总入口：[final-checklist.md](../acceptance/final-checklist.md)。
+
+### 各里程碑结果
+
+- **M4b 带引用的方剂解释：完成。** `POST /api/v1/ai/explain` + 方剂详情页解释区；probe 3/3 未触发输出上限；10 首方剂真实生成全部 ok，引用 241/241 可回查（100%），猪苓汤未给冲突角色，降级演练成功。记录：[m4-explain-probe.json](../acceptance/m4-explain-probe.json)、[m4-explain.json](../acceptance/m4-explain.json)、[m4b-browser.json](../acceptance/m4b-browser.json)（23/23）。PR #16。
+- **M5 评测、演练与回归：完成。** dev 集首跑达标未改提示词；冻结 test 集一次运行：查询 25/25=1.0、解释 19/20=0.95（引用 503/503=1.0）、对抗 15/15（关键 13/13 硬性要求全过）；六项故障演练 8/8 检查全过；cases.md 全部 49 条页面用例 49/49。记录：[m5-eval-dev.json](../acceptance/m5-eval-dev.json)、[m5-eval-test.json](../acceptance/m5-eval-test.json)、[m5-drills.json](../acceptance/m5-drills.json)、[m5-browser.json](../acceptance/m5-browser.json)、[m5-explain-review.json](../acceptance/m5-explain-review.json)（301 句待人工审核）。PR #17。
+- **M6A 可移植性与性能基线：完成。** `backend/` 无 `::jsonb`（改 `CAST(x AS json)`）；兼容检查表 13 项（[m6-compat.md](m6-compat.md)）；PostgreSQL 基线：12 接口 × 并发 1/5 全部 P95 ≤ 2000ms（最慢 185ms），ai_query 达标。记录：[m6-bench.json](../acceptance/m6-bench.json)。
+- **M6B Vastbase 实机验收：阻塞外部。** 无实例连接配置，`m6-vastbase.json` 状态 `blocked` 并附 7 步验收流程；问题清单 I-003。未以 PostgreSQL 结果代替。
+- **M7 部署、恢复与交付：完成。** FastAPI 托管 `frontend/dist`（SPA 回退、无仓库文件泄露，`test_deploy.py` 通过）；恢复演练 6/6（临时库导入摘要与主库一致、只读账号写入 42501、接口复验、清理后主库无变化）；部署手册、演示脚本、论文图表源、最终检查表齐备。记录：[m7-recovery.json](../acceptance/m7-recovery.json)、[docs/deploy.md](../deploy.md)、[docs/demo-script.md](../demo-script.md)、[docs/thesis/figures.md](../thesis/figures.md)、[final-checklist.md](../acceptance/final-checklist.md)。分支 `feat/m7-delivery`。
+
+### 四项硬性要求（与 final-checklist.md 一致）
+
+| 要求 | 状态 |
+| --- | --- |
+| Vastbase | **阻塞外部**（无实例；6A 完成，6B 待实例后按 m6-spec §2 执行） |
+| NoSQL（Neo4j） | **已通过**（全量投影 + dump/load 演练 + 图接口实测） |
+| AI | **已通过**（条件查询与解释均真实模型参与，评测达标） |
+| 十万条数据 | **已通过**（业务记录 199,876 = 实体 20,374 + 关系 179,502，另有证据 291,308） |
+
+### 未达标指标与原因
+
+1. `/ai/explain` p95 ≈ 19.6s，超过 15s 目标——耗时是模型生成（推理 token）而非服务端；已接受并记录 I-004（`m6-bench.json` gaps）。30s 超时上限内无服务端错误。
+2. 解释完成率 19/20：唯一降级样本 T-E15（银翘散）经查库证实是模型编造剂量被校验拦截（非误判），设计行为，I-002 已接受。
+3. 事实支持率（≥0.95）：待人工审核 301 句后运行 `--score-review` 得出，代理不代签。
+4. Vastbase：全部 6B 项目待实例（I-003）。
+
+### 需要使用者做的事
+
+1. **提供 Vastbase 实例**后执行 [m6-spec §2](m6-spec.md) 的 7 步验收（详见 [m6-vastbase.json](../acceptance/m6-vastbase.json) 的 next_steps），更新 I-003 与 final-checklist 第 1 行。
+2. **人工填写解释审核表**：`docs/acceptance/m5-explain-review.json` 的 `facts`/`supported`/`reviewer`，然后 `.venv/bin/python eval/run_eval.py --score-review`（≥0.95 达标）。
+3. **录制演示视频**：按 [docs/demo-script.md](../demo-script.md)（含模型不可用时的备用方案）。
+4. 合并顺序建议：PR #16（M4b）→ #17（M5）→ #18（M6）→ M7 的 PR 逐个合并到 `main`。
+
+### 真实模型调用与费用
+
+- 总计 **161 次**（2026-11-01 起，`var/ai-calls.jsonl` 为准，含失败重试）：query 88、explain 70、explain-probe 3。预算 1000 次，未触顶。
+- 费用未计价（运行时未提供单价）；如需，用 `eval/run_eval.py --split test --price-input 元/百万 --price-output 元/百万` 可在报告中附带。
+
+### 过程记录
+
+- 会话中断一次：M4b 收尾由监控会话完成（app.py 日志格式按合同恢复）；M5 分支上一笔混提交被软回退并以正确信息重交（见 2026-11-02 日志）。
+- 过程中修复的既有缺陷：`nearest()` 无标记分句 500（含回归用例）、`project_graph.py` 复用路径 DateTime 序列化、`run_eval.py` 审核表格式与空表打分、`setup_reader.py` 支持 `QIHUANG_CONFIG_DIR`（默认行为不变）。
+- 测试争议：无（未修改任何已提供验收测试的断言；`tests/test_explain.py` 仅新增一条回归用例）。

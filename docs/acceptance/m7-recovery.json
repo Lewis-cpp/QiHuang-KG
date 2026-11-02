@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-11-02T03:13:40+08:00",
+  "build_id": "cbadd11ea5c86dc3d7654c4652b06e23a77245af728fee2f1c46c9382ced867e",
+  "steps": [
+    {
+      "name": "relational_restore",
+      "ok": true,
+      "command": "python3 scripts/import_vastbase.py --engine postgresql --config <临时>/postgresql.json --release var/prepared/cbadd11ea5c8… --report <临时>/restore-report.json",
+      "detail": "import 28s; status=imported, counts 一致 True, table_sha256 一致 True, 业务记录 199876"
+    },
+    {
+      "name": "reader_setup",
+      "ok": true,
+      "command": "QIHUANG_CONFIG_DIR=<临时> python3 scripts/setup_reader.py --engine postgresql",
+      "detail": "只读可查 20,374 行；读写事务下 INSERT/UPDATE/DELETE/CREATE 全部 42501：['42501', '42501', '42501', '42501']"
+    },
+    {
+      "name": "api_recheck",
+      "ok": true,
+      "command": "QIHUANG_CONFIG_DIR=<临时> python3 tests/test_api.py",
+      "detail": "27s；PASS: F-01–F-24 fixed data, 3439 paged IDs, 231 evidence samples, E/S boundaries, pointer and size guards; M1b ranked search, neighbor paging, seven templates, dataset catalog, business views, projection states, read-only role write failure"
+    },
+    {
+      "name": "graph_restore",
+      "ok": true,
+      "command": "引用 docs/acceptance/m3-backup-restore.json；python3 scripts/project_graph.py（主 Neo4j 重跑投影）",
+      "detail": "dump/load 演练：20374 节点 / 179502 边，摘要一致；project_graph 复用 reused=True"
+    },
+    {
+      "name": "cleanup",
+      "ok": true,
+      "command": "DROP DATABASE qihuang_restore；删除临时配置目录",
+      "detail": "主库 ready，build_id 未变（cbadd11ea5c8…）"
+    },
+    {
+      "name": "deploy_check",
+      "ok": true,
+      "command": "npm run build 后以独立 uvicorn（127.0.0.1:8001）托管 frontend/dist；node tests/browser/deploy_check.mjs 无头 Chrome 打开并刷新实体、图谱、/ai 三个深链接",
+      "detail": "三个深链接刷新后标题正确，无控制台错误（favicon 404 除外）"
+    }
+  ]
+}
