@@ -40,8 +40,11 @@ def credentials(config_name, dbname):
 
 
 def run(cmd, env=None, timeout=1800):
+    # A DSN outranks --config/QIHUANG_CONFIG_DIR in import_vastbase.connection(), so it would aim the
+    # drill's import and grants at whatever database it names instead of qihuang_restore.
+    inherited = {k: v for k, v in os.environ.items() if k not in ('POSTGRES_DSN', 'VASTBASE_DSN')}
     return subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=timeout,
-                          env={**os.environ, **(env or {})})
+                          env={**inherited, **(env or {})})
 
 
 TEMP = Path(tempfile.mkdtemp(prefix='qihuang-restore-'))

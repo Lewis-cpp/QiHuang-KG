@@ -11,6 +11,7 @@ run() { echo "== $*"; "$@" 2>&1 | { grep -v -E 'StarletteDeprecationWarning|from
 run python3 tests/test_data_pipeline.py
 run python3 tests/test_import_core.py
 run $PY tests/test_database_config.py
+run $PY tests/test_drill_m7.py
 run $PY tests/test_app.py
 run $PY tests/test_api.py
 run $PY tests/test_project_graph.py
