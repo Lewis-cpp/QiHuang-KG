@@ -2,7 +2,7 @@
 
 Run with .venv/bin/python tests/drill_m7.py → docs/acceptance/m7-recovery.json.
 Nothing touches the main environment destructively: the restore target is a fresh database
-qihuang_restore, dropped at the end; the Neo4j step only re-runs the idempotent projection.
+qihuang_restore, created by the drill (it refuses to run if one already exists) and dropped at the end; the Neo4j step only re-runs the idempotent projection.
 """
 
 import json
@@ -59,6 +59,7 @@ def main():
         data['dbname'] = 'qihuang_restore'
         (TEMP / name).write_text(json.dumps(data))
 
+    create_restore_database()  # only after this succeeds is the database ours for cleanup() to drop
     try:
         relational_restore(main_report)
         reader_setup()
@@ -78,20 +79,25 @@ def main():
         sys.exit(f'FAILED: {failed}')
 
 
+def create_restore_database():
+    """Create qihuang_restore; an existing one is not ours to drop, so stop before cleanup() can run."""
+    connection = psycopg2.connect(**{**json.loads((ROOT / 'config/postgresql.json').read_text()), 'dbname': 'qihuang'})
+    connection.autocommit = True
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute('SELECT 1 FROM pg_database WHERE datname=%s', ('qihuang_restore',))
+            if cursor.fetchone():
+                shutil.rmtree(TEMP, ignore_errors=True)
+                sys.exit('qihuang_restore already exists; drop or rename it yourself, then rerun the drill')
+            cursor.execute('CREATE DATABASE qihuang_restore OWNER qihuang_import')
+    finally:
+        connection.close()
+
+
 def relational_restore(main_report):
     """A fresh database, the same prepared release, and digest-equal verification (m7-spec §3)."""
-    created = False
     # Guard: the import must target the restore database, never the main one.
     assert json.loads((TEMP / 'postgresql.json').read_text())['dbname'] == 'qihuang_restore'
-    connection = psycopg2.connect(**{**json.loads((TEMP / 'postgresql.json').read_text()), 'dbname': 'qihuang'})
-    connection.autocommit = True
-    with connection.cursor() as cursor:
-        cursor.execute('SELECT 1 FROM pg_database WHERE datname=%s', ('qihuang_restore',))
-        if cursor.fetchone():
-            cursor.execute('DROP DATABASE qihuang_restore')
-        cursor.execute('CREATE DATABASE qihuang_restore OWNER qihuang_import')
-        created = True
-    connection.close()
     command = ['.venv/bin/python', 'scripts/import_vastbase.py', '--engine', 'postgresql',
                '--config', str(TEMP / 'postgresql.json'),
                '--release', f'var/prepared/{BUILD}', '--report', str(TEMP / 'restore-report.json')]
@@ -99,7 +105,7 @@ def relational_restore(main_report):
     result = run(command)
     elapsed = round(time.monotonic() - started)
     detail = f'import {elapsed}s; '
-    ok = result.returncode == 0 and created
+    ok = result.returncode == 0
     restore = {}
     if ok:
         restore = json.loads((TEMP / 'restore-report.json').read_text())

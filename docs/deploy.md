@@ -28,21 +28,22 @@ python3 -m venv .venv
 
 ## 3. 私有配置
 
-从示例复制并填写（权限 600，**绝不提交**，`.gitignore` 已排除）：
+数据库凭据由脚本生成，其余从示例复制并填写（权限 600，**绝不提交**，`.gitignore` 已排除）：
 
 | 文件 | 内容 |
 | --- | --- |
-| `config/app.json` | `database_engine`（postgresql/vastbase）、`schema`、`build_id`（导入后自动写入，见第 4 步输出） |
-| `config/postgresql.json` / `config/postgresql_reader.json` | 导入账号与只读账号连接（host/port/dbname/user/password） |
-| `config/neo4j.json` | `uri`、`user`、`password`、`database` |
+| `config/postgresql.json` / `config/postgresql_reader.json`、`var/postgres-password` | `setup_services.py` 生成：导入账号与只读账号连接、Compose 的 PostgreSQL secret |
+| `config/neo4j.json`、`config/neo4j.env` | `setup_services.py` 生成：Neo4j 连接与 Compose 的 `NEO4J_AUTH` |
+| `config/app.json` | 第 4 步导入完成后再次运行 `setup_services.py` 按导入报告生成，**不要从示例复制** |
 | `config/model.json` | `base_url`、`model`、`api_key` 或 `api_key_env`、`timeout_seconds`、`max_completion_tokens` |
 
 ```sh
-for f in config/*.example.json; do cp "$f" "${f%.example.json}.json"; chmod 600 "${f%.example.json}.json"; done
+python3 scripts/setup_services.py              # 生成数据库与 Neo4j 凭据（重跑复用，不轮换）
+cp config/model.example.json config/model.json && chmod 600 config/model.json
 export QIHUANG_MODEL_API_KEY='sk-…'   # 模型 key 优先走环境变量，不落盘
 ```
 
-成功标志：`ls config/*.json` 存在且 `git status` 不显示它们。模型 key、数据库密码不进入 Git、日志与报告。
+成功标志：`config/neo4j.env`、`var/postgres-password` 与上表 JSON 存在且 `git status` 不显示它们；此时尚无 `config/app.json`。用 Vastbase 时另从 `vastbase*.example.json` 复制。模型 key、数据库密码不进入 Git、日志与报告。
 
 ## 4. 数据准备与导入（PostgreSQL + Neo4j）
 
@@ -50,12 +51,13 @@ export QIHUANG_MODEL_API_KEY='sk-…'   # 模型 key 优先走环境变量，不
 docker compose up -d --wait                     # PostgreSQL 18 + Neo4j 5.26，等待健康
 python3 scripts/prepare_data.py                 # 清洗两源，产出 var/prepared/<build_id>/
 .venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/<build_id>
+python3 scripts/setup_services.py              # 按导入报告生成 config/app.json（选择应用批次）
 .venv/bin/python scripts/setup_reader.py --engine postgresql
 .venv/bin/python scripts/project_graph.py       # 全量投影 Neo4j（幂等，重跑 reused）
 ```
 
 成功标志：
-- `import_vastbase.py` 输出 `"status": "imported"`，并把 `schema` 与 `build_id` 写入提示——把它们填进 `config/app.json`；
+- `import_vastbase.py` 输出 `"status": "imported"`；再次运行的 `setup_services.py` 据此写出 `config/app.json`（`schema`、`build_id`）；
 - `setup_reader.py` 结尾 JSON 显示 `hardened` 与只读账号写入全部失败；
 - `project_graph.py` 输出 `status: projected`（首跑）且节点 20,374、边 179,502。
 
