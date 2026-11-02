@@ -17,7 +17,7 @@ from pathlib import Path
 from import_core import ROOT, TABLES, canonical, digest, require, write_json
 from prepare_data import DDL, check_quality, table_hash, validate
 
-VIEWS = ROOT / "docs/schema-views.sql"
+VIEWS = ROOT / "scripts/schema-views.sql"
 
 
 def copy_rows(cursor, table, rows):

@@ -14,6 +14,9 @@ setTitle('AI 条件查询')
 const question = ref('')
 const request = shallowRef<Record<string, unknown>>({})
 const choices = ref<Record<string, string>>({})
+// A resubmission sends only resolved conditions; keep showing what the original question could not run.
+const carried = ref<string[]>([])
+const unsupported = computed(() => [...new Set([...carried.value, ...(data.value?.unsupported ?? [])])])
 const { data, error, loading, load } = useLoader(signal => post<AIQueryResult>('/ai/query', request.value, { signal }))
 const health = useLoader(signal => get<Health>('/health', {}, { signal, pinBuild: false, acceptStatus: [503] }))
 onMounted(() => void health.load())
@@ -22,9 +25,10 @@ const modelReady = computed(() => !health.data.value || health.data.value.servic
 const key = (item: { field: string; value: string }) => `${item.field}\u0000${item.value}`
 const ready = computed(() => (data.value?.candidates ?? []).every(group => choices.value[key(group)]))
 
-function submit(body: Record<string, unknown>) {
+function submit(body: Record<string, unknown>, keep: string[] = []) {
   request.value = body
   choices.value = {}
+  carried.value = keep
   void load()
 }
 function ask(text = question.value) {
@@ -36,7 +40,7 @@ function resubmit(result: AIQueryResult) {
   const conditions = result.conditions.map((item: AICondition) => ({
     field: item.field, value: item.value, entity_id: item.entity_id ?? choices.value[key(item)] ?? null,
   }))
-  submit({ target_type: result.target_type, conditions })
+  submit({ target_type: result.target_type, conditions }, unsupported.value)
 }
 </script>
 
@@ -69,7 +73,7 @@ function resubmit(result: AIQueryResult) {
             <li v-for="item in data.conditions" :key="key(item)" class="chip">{{ item.label }}</li>
           </ul>
           <p v-else class="muted">没有可执行的条件。</p>
-          <p v-if="data.unsupported.length" class="notice-text">未支持、未执行：{{ data.unsupported.join('；') }}</p>
+          <p v-if="unsupported.length" class="notice-text">未支持、未执行：{{ unsupported.join('；') }}</p>
         </section>
 
         <form v-if="data.status === 'ambiguous'" @submit.prevent="resubmit(data)">

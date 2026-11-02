@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "datasets/raw/bencaodian"
 CURATED = ROOT / "datasets/curated"
-SCHEMA = ROOT / "docs/schema.sql"
+SCHEMA = ROOT / "scripts/schema.sql"
 TRANSFORM_VERSION = "1.1.0"
 ENTITY_FILES = {"herbs.json": "herb", "formulas.json": "formula",
                 "patterns.json": "pattern", "classical_texts.json": "text"}

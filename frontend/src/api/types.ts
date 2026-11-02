@@ -176,3 +176,23 @@ export interface AIQueryResult {
   prompt_version: string | null
   build_id: string
 }
+
+export interface ExplainMaterial { ref: string; kind: string; text: string; evidence_ids: string[] }
+
+export interface ExplainSentence { text: string; refs: string[]; citations: string[] }
+
+export interface ExplainSection { heading: string; sentences: ExplainSentence[] }
+
+export interface AIExplanation {
+  status: 'ok' | 'explanation_unavailable'
+  entity_id: string
+  sections: ExplainSection[]
+  insufficient: string[]
+  materials: ExplainMaterial[]
+  failure: string[] | null
+  attempts: number
+  model: string | null
+  prompt_version: string
+  usage: { prompt_tokens?: number; completion_tokens?: number }[] | null
+  build_id: string
+}

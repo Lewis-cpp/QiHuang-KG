@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 import re
 import sys
 from contextlib import closing
@@ -172,10 +173,12 @@ def main():
     parser.add_argument("--engine", choices=("vastbase", "postgresql"), default="postgresql")
     parser.add_argument("--schema", action="append", help="Release schema; default: config/app.json. Repeatable")
     args = parser.parse_args()
-    admin_path = ROOT / f"config/{args.engine}.json"
+    # QIHUANG_CONFIG_DIR redirects every read (services.config does the same); unset means the repo config/.
+    config_dir = Path(os.environ.get("QIHUANG_CONFIG_DIR", ROOT / "config"))
+    admin_path = config_dir / f"{args.engine}.json"
     admin = json.loads(admin_path.read_text()) if admin_path.is_file() else {}
-    reader = reader_settings(ROOT / f"config/{args.engine}_reader.json", admin)
-    schemas = args.schema or [json.loads((ROOT / "config/app.json").read_text())["schema"]]
+    reader = reader_settings(config_dir / f"{args.engine}_reader.json", admin)
+    schemas = args.schema or [json.loads((config_dir / "app.json").read_text())["schema"]]
     for schema in schemas:
         require(re.fullmatch(r"qihuang_[a-f0-9]{24}", schema), "Invalid release schema name")
     with closing(connection(admin_path, args.engine)) as db:

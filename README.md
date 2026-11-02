@@ -1,76 +1,156 @@
 # QiHuang-KG
 
-面向中医药学习者的知识图谱检索与学习系统。已完成两源清洗、PostgreSQL 入库、详情与证据 API（M1）、资料检索页面（M2）和 Neo4j 全量投影与关系图谱（M3）。主库包含 20,374 个实体、179,502 条关系、291,308 条证据，实体与关系合计 199,876 条。当前使用 PostgreSQL，最终交付前迁移到 Vastbase。模型按用户安排暂不配置，已准备自行接入与验证说明。
+面向中医药学习者的知识图谱检索与学习系统，提供名称与别名检索、实体详情、来源证据、关系图谱、AI 条件查询和带引用的方剂解释。AI 解释会校验引用、药物角色与剂量；校验失败时降级展示原始材料。
 
-- [启动、检查与模型接入](docs/bootstrap.md)
-- [M0 + M1a 开发交付说明](docs/dev/m0-m1a-delivery.md)
-- [M0 + M1a 验收记录](docs/dev/m0-m1a-acceptance.md)
-- [M1b 交付说明](docs/dev/m1b-delivery.md)
-- [M2 交付说明](docs/dev/m2-delivery.md)
-- [M3 交付说明](docs/dev/m3-delivery.md)
-- [首版范围冻结](docs/scope-freeze.md)
-- [环境验证记录](docs/environment-report.json)
-- [原型架构阅读版（历史）](architecture-design.html)
-- [开发计划与课程验收要求](docs/development-plan.md)
-- [架构设计正文](docs/architecture.md)
-- [项目范围分析](project-scope-analysis.html)
-- [数据集指南](datasets/dataset-guide.html)
-- [SQLite 建表脚本](docs/schema.sql)
-- [核心数据结构审计](docs/data-profile.json)
-- [数据处理结果与运行说明](docs/data-processing.md)
-- [两源数据质量复核](docs/data-quality-report.json)
-- [PostgreSQL 开发库与 Vastbase 迁移说明](docs/vastbase-import.md)
+当前使用 PostgreSQL 保存业务数据，Neo4j 提供图谱查询，Vue 前端由 FastAPI 托管。
+数据包含 20,374 个实体、179,502 条关系和 291,308 条证据。
+Vastbase 的导入与连接入口已准备，尚待真实实例验证。
 
-SQLite 用于保留本草典原型及生成离线清洗批次，不作为正式主库验收。最终交付要求 Vastbase、NoSQL、AI 和十万条以上数据，范围与实现以[冻结说明](docs/scope-freeze.md)和[v2 架构](docs/architecture.md)为准。
+`main` 只保留运行所需代码、数据、配置示例和本说明。完整开发文档、测试、评测及验收记录保留在 `feat/m7-delivery` 分支。
 
-## 克隆仓库
+## 环境要求
 
-原始古籍方剂文件 `datasets/raw/ancient-formulas-sqlite/metadata.sqlite` 由 Git LFS 管理。先在本机安装 Git LFS，再执行：
+- Python 3.12
+- Node.js 24（含 npm）
+- Docker 与 Docker Compose v2
+
+以下命令在仓库根目录执行。服务默认只监听本机，数据库数据保存在 Docker 命名卷中。
+
+## 首次安装
 
 ```sh
-git lfs install
 git clone https://github.com/Lewis-cpp/QiHuang-KG.git
 cd QiHuang-KG
-git lfs pull
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.lock
+python3.12 scripts/setup_services.py
+docker compose up -d --wait
+.venv/bin/python scripts/prepare_data.py
 ```
 
-## 运行项目
-
-恢复已有开发环境：
+最后一步输出 `release` 路径和 `build_id`。将下面的 `BUILD_ID` 替换为该值，再继续：
 
 ```sh
-python3 scripts/setup_services.py
-docker compose up -d --wait
+.venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/BUILD_ID
+python3.12 scripts/setup_services.py
+.venv/bin/python scripts/setup_reader.py --engine postgresql
+.venv/bin/python scripts/project_graph.py
+```
+
+导入成功时状态为 `imported`（重复导入为 `reused`）。
+第二次运行 `setup_services.py` 根据导入报告生成应用配置；`setup_reader.py` 创建应用只读账号。
+图谱首次投影状态为 `projected`，重复执行为 `reused`。
+
+## 构建与启动
+
+```sh
+npm --prefix frontend ci
+npm --prefix frontend run build
 .venv/bin/python -m uvicorn backend.app:app --host 127.0.0.1 --port 8000
 ```
 
-另一终端在 `frontend/` 执行 `npm ci`、`npm run dev`，打开 `http://127.0.0.1:5174`。页面提供名称与别名检索、实体详情、证据、来源与统计；每条检索结果和详情页都可进入关系图谱 `/graph/<实体ID>`（一跳展开、关系筛选、中药两跳路径）。接口文档见 `http://127.0.0.1:8000/docs`。`/ai` 页面提供 AI 条件查询：模型只把问题转换为白名单条件，查询由后端参数化执行（M4a）；带引用的方剂解释（M4b）尚未实现。全新环境的依赖安装与数据导入见[启动说明](docs/bootstrap.md)。
+打开 [项目首页](http://127.0.0.1:8000/)，
+[接口文档](http://127.0.0.1:8000/docs)提供全部接口说明。
+[健康检查](http://127.0.0.1:8000/api/v1/health)分别返回关系库、图谱和模型状态；
+模型未配置时整体为 `degraded`，普通检索与图谱仍可使用。
 
-开发库位于 `127.0.0.1:15432`，库名 `qihuang`。私有连接配置为 `config/postgresql.json`；密码自动生成并复用，未纳入版本管理。PostgreSQL 与 Neo4j 均通过 Docker 命名卷持久化。
+已有环境再次启动，只需执行 `docker compose up -d --wait`，然后启动后端。前端源码变更后重新构建。
 
-生成两源标准化批次并验证（Python 标准库即可）：
-
-```sh
-python3 scripts/prepare_data.py
-python3 tests/test_data_pipeline.py
-```
-
-导入上述命令输出的批次（需要安装 `requirements-vastbase.txt` 中的共享驱动）：
+开发时可在另一终端运行以下命令，使用 [前端开发页面](http://127.0.0.1:5174/)；后端仍在 8000 端口运行：
 
 ```sh
-.venv/bin/python scripts/import_vastbase.py --engine postgresql --release var/prepared/实际构建ID
+npm --prefix frontend run dev
 ```
 
-两种数据库共享 DDL、导入与校验流程。最终迁移时显式使用 `--engine vastbase` 和实际实例配置，具体步骤见[运行说明](docs/vastbase-import.md)。运行报告区分 PostgreSQL 开发入库与 Vastbase 最终验收。
+## 配置 AI 模型
 
-原本草典基线继续保留，使用 Python 3.10 或以上版本，无需安装第三方依赖：
+AI 功能需要支持聊天补全、`response_format=json_object` 和 `max_completion_tokens` 的兼容模型服务。普通检索与图谱不依赖模型。
 
 ```sh
-python3 scripts/import_core.py
-python3 scripts/audit_core_data.py --check
-python3 tests/test_import_core.py
+cp config/model.example.json config/model.json
+chmod 600 config/model.json
 ```
 
-导入命令输出数据库绝对路径与构建 ID。数据库位于 `var/releases/<build_id>/kg.sqlite`，同目录包含发布清单 `manifest.json` 和问题报告 `report.json`；同一输入重复执行会验证并复用快照。报告另存于 `datasets/processed/<build_id>.json`。
+在 `config/model.json` 中填写服务的 `base_url` 和准确的 `model` 名称。`base_url` 不包含 `/chat/completions`。示例使用环境变量提供密钥：
 
-开发顺序与最终验收标准见开发计划，原型接口约定见架构设计。`datasets/raw/` 中原始文件保持不变。本草典别名表为空，TCM-MKG 提供 2,972 条来源别名；1 处角色冲突与 35 条未关联书目已按具体记录登记，处理规则见运行说明。
+```sh
+export QIHUANG_MODEL_API_KEY='替换为你的模型密钥'
+env -u all_proxy -u ALL_PROXY .venv/bin/python scripts/verify_environment.py --check-model
+```
+
+验证最多产生两次计费调用，通过后模型状态为 `verified`。
+验证和后端启动需要使用同一密钥环境变量；修改环境变量后重启后端。
+也可在私有 `model.json` 中填写 `api_key`，同名环境变量优先。
+
+模型调用默认超时 30 秒。解释生成可能需要约 20 秒；服务不可用或内容未通过校验时，页面显示原因及原始材料。
+
+## 配置与数据维护
+
+| 文件或目录 | 用途 |
+| --- | --- |
+| `backend/`、`backend/prompts/` | 业务接口、模型调用、内容校验与运行时提示词 |
+| `frontend/` | 页面源码与构建配置，`dist/` 由构建生成 |
+| `scripts/` | 数据准备、导入、只读账号、图谱投影、环境验证及建表 SQL |
+| `datasets/raw/`、`datasets/curated/` | 两个实际使用的数据源、来源记录和更正依据 |
+| `config/*.example.json` | 应用、模型与 Vastbase 配置示例 |
+| `config/app.json` | 当前数据库类型、schema 与 `build_id`，由初始化脚本生成 |
+| `config/postgresql*.json` | PostgreSQL 导入账号与应用只读账号 |
+| `config/neo4j.json`、`config/neo4j.env` | Neo4j 连接与容器认证 |
+| `var/` | 私有凭据、数据批次、模型验证及运行报告 |
+
+私有配置、密钥、构建产物与运行数据均被 Git 忽略。初始化脚本复用已有数据库凭据；数据库初始化后，不要仅修改配置文件中的密码。
+
+默认连接地址：PostgreSQL 为 `127.0.0.1:15432`（数据库 `qihuang`），
+Neo4j Bolt 为 `127.0.0.1:17687`，
+[Neo4j Browser](http://127.0.0.1:17474/)可检查图数据库。
+
+数据准备脚本对原始输入、转换代码与 SQL 计算指纹，生成可重复校验的批次。
+更新转换代码后，重新准备数据可能得到新的 `build_id`。
+切换已有环境的批次前备份 `config/app.json`；新批次导入成功后，再更新其中的 `schema` 和 `build_id`，
+运行 `setup_reader.py`、`project_graph.py` 并重启后端。保留旧 schema 与图谱批次，便于回滚。
+
+### 备份与恢复
+
+保留 `datasets/`、已准备的 `var/prepared/` 批次目录以及私有配置。
+关系库可用同一批次重新导入，随后恢复应用配置并重建只读账号授权。
+Neo4j 可通过 `project_graph.py` 从当前关系库重新构建；已有完整投影需要重写时使用 `--rebuild`。
+
+`docker compose down` 保留数据库卷；`docker compose down -v` 会删除数据库数据。恢复后检查两库批次一致及健康状态。
+
+### 使用 Vastbase
+
+复制 `config/vastbase.example.json` 与 `config/vastbase_reader.example.json`
+为去掉 `.example` 的私有文件，填写真实连接信息。
+先运行连接与兼容性检查，再导入同一准备批次：
+
+```sh
+.venv/bin/python scripts/import_vastbase.py --engine vastbase
+.venv/bin/python scripts/import_vastbase.py --engine vastbase --release var/prepared/BUILD_ID
+```
+
+导入成功后，将 `config/app.json` 的 `database_engine` 改为 `vastbase`，
+并使用导入报告中的 `schema` 和 `build_id`，
+再运行 `setup_reader.py --engine vastbase`、`project_graph.py` 并重启后端。
+真实 Vastbase 兼容性与性能仍需在目标实例上验证，PostgreSQL 结果不能代替。
+
+## 常见问题
+
+| 现象 | 处理 |
+| --- | --- |
+| 图数据库不可用或投影未完成 | 启动 Neo4j 后重新运行 `scripts/project_graph.py` |
+| AI 显示模型未就绪 | 检查私有配置、密钥与模型名称，重新执行 `--check-model` 验证 |
+| 409 `snapshot_changed` | 页面点击“刷新”，清除保存的旧批次 |
+| 503 `build_mismatch` | 核对应用配置与关系库、图谱的 `build_id`，完成授权和投影 |
+| 模型返回 401 或 429 | 检查密钥、配额与服务限流 |
+| 提示代理配置无效 | 在验证和后端启动命令前加 `env -u all_proxy -u ALL_PROXY` |
+
+## 数据来源与许可
+
+- 本草典开放数据：Bencaodian Editorial / 本草典编辑部，CC BY-SA 4.0。
+  来源声明保留在 `datasets/raw/bencaodian/_source-page.md`，
+  署名信息在 `datasets/curated/bencaodian.json`。
+- TCM-MKG V1.0：Zeng, Jingqi；Jia, Xiaobin，CC BY-NC 4.0。
+  原始元数据保留在 `datasets/raw/tcm-mkg/_record.json`，
+  数据标识为 DOI `10.5281/zenodo.13763953`。
+
+保留两源数据各自的署名与许可约束。系统用于资料检索与学习，数据及 AI 解释不构成诊疗建议。

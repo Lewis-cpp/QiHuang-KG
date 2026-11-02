@@ -17,7 +17,7 @@ from pathlib import Path
 from import_core import ROOT, TABLES, build as build_core, canonical, digest, normalize, pointer, require, write_json
 
 RAW = ROOT / "datasets/raw/tcm-mkg"
-DDL = ROOT / "docs/schema-vastbase.sql"
+DDL = ROOT / "scripts/schema-vastbase.sql"
 VERSION = "2.0.0"
 FILES = {
     "D1_TCM_terminology.tsv": "TCMT_ID Chinese_group English_group Chinese_term Pinyin_term Chinese_synonyms English_term Synonyms English_definition_description",
